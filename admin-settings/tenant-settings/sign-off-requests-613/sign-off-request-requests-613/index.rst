@@ -29,8 +29,8 @@ To create a new request, do the following:
 
 When you have selected type, some or all of these settings can be available: 
 
-+ **Name**: Add a name for the request here, in any of the tenant languages.
-+ **Description**: You can add a description of the request, in any of the tenant languages.
++ **Name**: You can add a name for the request here. In some cases when you select a type, a code for the name is added automatically.   
++ **Description**: You can add a description of the request here (recommended).
 + **Properties**: Available properties (if any) depends on the type used. The properties are useful for tagging the request. This can then be used as filters for what is to be displayed in a certain Sign-off requests rollup block. 
 + **To be signed off**: Here you add the pages that should be signed off, using the page picker. If the type was based on a template, the list of pages will most likely be pre populated with a number of pages. You can add or remove pages as needed. See below for more details.
 + **Sign-off type**: Select how the sign-off request will be handled. If the type is based on a template, Sign-off type, and the following two fields can be pre populated with siggestions. If you select "Individual", all users added to "Request sent to" will receive a personal request. Everyone has to sign-off individually. If you select "Group", it works as one group request, meaning it's enough that any one of the recipients signs-off the request. All other recipients can see that the request was sent to them and can see if someone in the group has signed off, they can see if the task is done or not.
