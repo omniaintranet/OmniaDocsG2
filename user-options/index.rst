@@ -9,6 +9,7 @@ In this section you will find an overview of the Omnia user options that are not
 
    create-news/index
    current-user-language/index
+   edit-user-profile-card/index
    my-links/index
    my-subscriptions/index
    notification-panel/index
