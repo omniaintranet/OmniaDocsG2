@@ -11,11 +11,11 @@ You can open your profile card in a number of ways, depending on how Omnia is se
 
 .. image:: my-profile-open.png
 
-The user profil card is opened in the private voiew, meaning the information only you can see.
+The user profil card is opened in private view, meaning some information only you can see.
 
 .. image:: my-profile-open-private.png
  
-How the card looks can vary a lot depending on how it's set up. It can also look different for different groups of colleagues. The provate view can also look quite different from the public view, again depending on ho it's set up. What see here is just an example.
+How the card looks can vary a lot depending on how it's set up. It can also look different for different groups of colleagues. The private view can also look quite different from the public view, again depending on how it's set up. What you see here is just an example.
 
 Note that you can always switch to the public way to evaluate what others can see on your card. 
 
@@ -43,7 +43,7 @@ Select one or more metadata from the list.
 
 .. image:: my-profile-edit-metadata-clocktag-select.png
 
-When you're finished editing a section, click here to save the cahnges (or the x to not save):
+When you're finished editing a section, click here to save the changes (or the x to not save):
 
 .. image:: my-profile-edit-metadata-clocktag-select-save.png
 
