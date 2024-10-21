@@ -35,7 +35,7 @@ When editing a text field, you can use th RTF editor, for example:
 
 .. image:: card-edit-text.png
 
-For more information on how you can use the RTF editor, see: :doc:`General block settings </blocks/general-block-settings/index>`
+For more information on how you can use the RTF editor, see: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
 Generally, when you have finished editing a section, click here to save the changes (or the x to not save):
 
@@ -54,4 +54,6 @@ Click the x to remove a metadata. Click the tag to add new:
 Select one or more metadata from the list.
 
 .. image:: my-profile-edit-metadata-clocktag-select.png
+
+(Don't forget to save the changes, see above).
 
