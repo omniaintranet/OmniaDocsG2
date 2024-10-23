@@ -1,5 +1,5 @@
-Analytics counter
-==================================
+Analytics counter (Real-time visitor count)
+==============================================
 
 This is a new block in Omnia 7.7.
 
