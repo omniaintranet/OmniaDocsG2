@@ -34,7 +34,6 @@ Blocks
    media/index
    media-rollup-block/index
    mega-menu/index
-   metrics-block-612/index
    my-subscriptions/index
    notification-panel/index
    omnia-block-webpart/index
