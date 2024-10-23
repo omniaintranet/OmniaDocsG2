@@ -21,6 +21,7 @@ Blocks
    breadcrumb/index
    calendar-rollup/index
    channel-rollup/index
+   controlled-documents-library/index
    create-app/index
    create-teamwork/index
    community-rollup/index
