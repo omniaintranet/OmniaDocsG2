@@ -9,7 +9,8 @@ The following blocks can be available for analytics:
    /blocks/analytics-counter/index
    /blocks/analytics-filters/index
    /blocks/analytics-table-block/index
-   /blocks/analytics-widget/index   
+   /blocks/analytics-widget/index
+   /blocks/metrics-block-612/index
 
 Note that the tenant feature "Anslytics core setup" must be activated for the analytics blocks to be available. 
 
