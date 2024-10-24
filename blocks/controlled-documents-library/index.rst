@@ -52,7 +52,7 @@ For the Published tab, the following settings are available:
 
 Default document types
 --------------------------
-Here you can selevt one or more document types to be the default ones when creating a controlled document.
+Here you can select one or more document types to be the default ones when creating a controlled document.
 
 Just click in the field to open the list:
 
