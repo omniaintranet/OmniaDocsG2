@@ -31,10 +31,10 @@ The view can be either a line or a circle. Line has no further settings. For Cir
 .. image:: user-profile-progress-settings-display.png
 
 + **Header text**: You can add a text that is shown over the circle.
-+ **Not completed text**: A default text for this message is always shown. If you would like the message when the profile is not completed to be something different. add the text here.
-+ **Completed text**: A default text for this message is always shown. If you would like the message when the profile is completed to be something different. add the text here.
++ **Not completed text**: A default text for this message is always shown. If you would like the message when the profile is not completed to be something slese, add the text here.
++ **Completed text**: A default text for this message is always shown. If you would like the message when the profile is completed to be something else. add the text here.
 + **Hide user name in text**: If the user's name should not be shown in the block, select this option.
-+ **Hide the perecentage in text**: If the percentage should not be shown in the message, select this option. The precantage is still shown in the circle.
++ **Hide the perecentage in text**: If the percentage should not be shown in the message, select this option. The percentage is still shown in the circle.
 + **Size**: Using the slider you can set the size of the circle.
 + **Border size**: Using the slider you can set the thickness of the line of the circle.
 
