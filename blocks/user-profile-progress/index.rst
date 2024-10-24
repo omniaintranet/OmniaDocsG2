@@ -1,13 +1,13 @@
 User profile progress
 =====================================
 
-This block is available in Omnia 7.7 and later. It's meant to be used with the new settings for user types. The block is displaying the user profile progress as a percantage.
+This block is available in Omnia 7.7 and later. It's meant to be used with the new settings for user types. The block is displaying the user profile progress as a percentage.
 
-The completeness impact for variuos user information blocks is set in the user type settings. It can be Low, Medium or High. For every information block that is completed, Low is 1 point, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
+The completeness impact for various user information blocks on the user profile card is set in the user type settings. It can be Low, Medium or High. For every information block that is completed, Low is 1 point, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
 
-For more information about the user type settings, see the heading "User profile completion", on this page: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
+For more information about the user type settings, see the heading *User profile completion*, on this page: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
 
-Also note that different templates can be created for different user types, meaning how the percentage is calculated can differ between user groups.
+Also note that different templates can be created for different user types, meaning the way the percentage is calculated can differ between user groups.
 
 Settings
 ***********
@@ -21,7 +21,7 @@ The following settings are found under General:
 
 .. image:: user-profile-progress-settings-general.png
 
-+ **Title**: You can adda title for the block if needed.
++ **Title**: You can add a title for the block if needed.
 + **Hide block when completed**: If the block shouldn't be shown at all if the user's progress is att 100%, select this option.
 
 Display
