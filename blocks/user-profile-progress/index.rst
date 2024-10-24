@@ -46,6 +46,8 @@ This is available for Style:
 
 You can set some padding if needed. You can also set different colors to be shown for three different levels of progress. What the levels should be is up to you.
 
-
+LAYOUT and WRITE
+******************
+The WRITE tab is not available for this block. The LAYOUT tab contains general block settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
 
 
