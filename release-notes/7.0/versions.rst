@@ -1,3 +1,12 @@
+7.6.41
+========================================
+(Omnia 7.6.41 / Workplace 7.6.30 / WCM 7.6.32 / MS 7.6.23 / Analytics 7.6.2)
+
+- Fixed an issue in move page collection that could cause broken images (#159029).
+- Variation targeting now correctly handles scenarios when a variation only exists as draft (#161182)
+- Communication sites can now be created both as Teamwork and as Publishing sites (#161363).
+
+
 7.6.40
 ========================================
 (Omnia 7.6.40 / Workplace 7.6.29 / WCM 7.6.31 / MS 7.6.23 / Analytics 7.6.2)
