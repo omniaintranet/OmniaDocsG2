@@ -14,7 +14,6 @@ Here you can activate, remove or upgrade the Omnia Add-ons.
 For more information, see the links below:
 
 + :doc:`Working with Documents </working-with-documents/index>` 
-+ :doc:`Info Screen </admin-settings/business-group-settings/settings/info-screen/index>`
 + :doc:`Working with Events </working-with-events/index>`
 + :doc:`Working with Processes </working-with-processes/index>`
 + :doc:`Using Communities </using-communities/index>`
