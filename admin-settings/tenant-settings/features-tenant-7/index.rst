@@ -13,11 +13,12 @@ Here you can activate, remove or upgrade the Omnia Add-ons.
 
 For more information, see the links below:
 
-+ :doc:`Working with Documents </working-with-documents/index>` 
-+ :doc:`Working with Events </working-with-events/index>`
-+ :doc:`Working with Processes </working-with-processes/index>`
-+ :doc:`Using Communities </using-communities/index>`
-+ :doc:`Digital Signage </admin-settings/tenant-settings/settings/digital-signage-613/index>`
++ :doc:`Working with documents </working-with-documents/index>` 
++ :doc:`See changes in a controlled document </user-options/see-changes-in-controlled-document/index>` 
++ :doc:`Working with events </working-with-events/index>`
++ :doc:`Working with processes </working-with-processes/index>`
++ :doc:`Using communities </using-communities/index>`
++ :doc:`Digital signage </admin-settings/tenant-settings/settings/digital-signage-613/index>`
 
 Default configuration
 ******************************
