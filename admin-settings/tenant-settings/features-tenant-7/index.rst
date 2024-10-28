@@ -54,7 +54,7 @@ For more information on how to set up Viva Engage (former Yammer) in Omnia, see:
 
 System
 **********
-The following features may be found here:
+The following is an example of features that may be avaialable here:
 
 .. image:: tenant-features-system-75.png
 
