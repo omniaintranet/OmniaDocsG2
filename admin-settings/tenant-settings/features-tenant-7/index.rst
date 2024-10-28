@@ -20,7 +20,7 @@ For more information, see the links below:
 + :doc:`Using Omnia Feed </using-omnia-feed/index>`
 + :doc:`Working with documents </working-with-documents/index>` 
 + :doc:`Working with events </working-with-events/index>`
-+ :doc:`Working with processes </working-with-processes/index>`
++ :doc:`Working with processes </working-with-processes-v7/index>`
 
 Default configuration
 ******************************
