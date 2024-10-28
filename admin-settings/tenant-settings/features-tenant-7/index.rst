@@ -9,16 +9,18 @@ Add-ons
 *********
 Here you can activate, remove or upgrade the Omnia Add-ons. 
 
-.. image:: tenant-features-add-ons-75.png
+.. image:: tenant-features-add-ons-77.png
 
 For more information, see the links below:
 
-+ :doc:`Working with documents </working-with-documents/index>` 
++ :doc:`Digital signage </admin-settings/tenant-settings/settings/digital-signage-613/index>`
 + :doc:`See changes in a controlled document </user-options/see-changes-in-controlled-document/index>` 
++ :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
++ :doc:`Using communities </using-communities/index>`
++ :doc:`Using Omnia Feed </using-omnia-feed/index>`
++ :doc:`Working with documents </working-with-documents/index>` 
 + :doc:`Working with events </working-with-events/index>`
 + :doc:`Working with processes </working-with-processes/index>`
-+ :doc:`Using communities </using-communities/index>`
-+ :doc:`Digital signage </admin-settings/tenant-settings/settings/digital-signage-613/index>`
 
 Default configuration
 ******************************
