@@ -1,7 +1,7 @@
 Sign-off requests rollup
 =============================================
 
-The block can be used for different purposes regarding sign-off requests. 
+The block can be used for different purposes regarding sign-off requests for pages. In Omnia 7.7 and later, controlled documents can also be requested for sign-off. 
 
 Settings for Sign-off requests are available in tenant settings: :doc:`Settings for Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
 
