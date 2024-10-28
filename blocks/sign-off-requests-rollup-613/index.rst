@@ -29,6 +29,16 @@ It's also possible to "undo" a request, really meaning reading the information a
 
 The other two scopes - "Requested by me" and "All requests" can be useful for administrators. The "Requested by me" scope can be very useful for an administrator to keep track of sign-off requests that administrator has sent.
 
+Signing off documents
+-------------------------
+In Omnia 7.7and later, controlled documents can also be part of a sig-off request. A single sign-off request can contain both pages and documents.
+
+In this example, the first two posts are documents, the last one is a page:
+
+.. image:: sign-off-both.png
+
+(More info will be added soon).
+
 Settings
 **********
 The following settings can be available:
