@@ -1,4 +1,4 @@
-Page style
+Layout
 ====================
 
 Here you can use the following settings:
