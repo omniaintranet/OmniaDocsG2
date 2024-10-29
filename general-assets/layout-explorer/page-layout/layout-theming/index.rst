@@ -1,7 +1,7 @@
 Layout theming
 ================
 
-Here you can choose to set a custom theme for this page. 
+Here you can choose to set a custom theme for this page or page type. 
 
 .. image:: layout-theming.png
 
