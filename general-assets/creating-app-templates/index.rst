@@ -77,7 +77,7 @@ To edit settings, click "Publishing app settings" and use the following settings
 + **Review date property**: Select the default property for review date.
 + **Permisson**: Users, or groups, that should be able to take part in the sites activites should be added in this field. A suggestion can be added here, but it can be edited when a site is created from this template.
 
-Information about how to create a page collection, and more information about page collections can be found here: :doc:`Page collections </pages/page-collections/index>`
+More information about page collections, and how to create a page collection, can be found here: :doc:`Page collections </pages/page-collections/index>`
 
 When you have added one or more page collections, you can use the the icons to sort the order in which they are shown (left-most icon) or delete the page collection. 
 
