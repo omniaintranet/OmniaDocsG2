@@ -60,7 +60,7 @@ If any custom steps has been developed for the creation of publishing apps, you 
 
 .. image:: publishing-edit-custom-steps-v7.png
 
-Note the option to reset all custim steps to default.
+Note the option to reset all custom steps to default.
 
 Setup
 -------
