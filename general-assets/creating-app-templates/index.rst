@@ -1,7 +1,7 @@
 Creating app templates
 =============================================
 
-In Omnia, templates for publishing apps, communities and teamwork are created in a simlar way. This page describes the general options for these three types of templates. See the respective page in Omnia admin for more information (links at the bottom of this page).
+In Omnia, templates for publishing apps, communities and teamwork are created in a simlar way. This page describes the general options for these three types of templates. Available options can differ depending on type of app/site is being created. See the respective page in Omnia admin for more information (links at the bottom of this page).
 
 Images in this description from templates for publishing Apps.
 
@@ -38,17 +38,17 @@ You can add a property set to the template.
 
 + **Property Set**: Select property set here. The properties in the set can or will have to be filled in when an app is created from this template, depending on settings for the property. The property sets are set up using the tenant settings. See this page for more information: :doc:`Property sets </admin-settings/tenant-settings/properties/property-sets/index>`
 
-When you have selected a property set someting like the following is shown:
+When you have selected a property set something like the following is shown:
 
 .. image:: publishing-edit-properties-details-v7.png
 
-+ **Default values**: Chose to add default values or nor. You can set default values for suitable properties in a set, valid for this template. Default values can be edited when an app is created from this template. 
-+ **Show in new form**: Select for to properties to be available when an app is created from this template.
-+ **Show in edit form**: Select for the properties to be available when the settings for the app is edited.
++ **Default values**: Choose to add default values or not. You can set default values for suitable properties in a set, valid for this template. Default values can be edited when an app is created from this template. 
++ **Show in new form**: Select for properties to be available when an app is created from this template.
++ **Show in edit form**: Select for properties to be available when the settings for the app is edited.
 
 Features
 ----------
-Activate the features that should be available for the publishing app. Available features depends on how the tenant is set up. Here's an example:
+Activate the features that should be available for the app. Available features depends on how the tenant is set up. Here's an example:
 
 .. image:: publishing-edit-features-v7.png
 
@@ -56,7 +56,7 @@ The features can be updated in Omnia admin using app features for the app. There
 
 Custom steps
 ---------------
-If any custom steps has been developed for the creation of publishing apps, you can select them using this option. Here's an example:
+If any custom steps has been developed, you can select them using this option. Here's an example:
 
 .. image:: publishing-edit-custom-steps-v7.png
 
@@ -64,15 +64,15 @@ Note the option to reset all custom steps to default.
 
 Setup
 -------
-Using the options here you set ublishing app settings and can create one or more page collections to be set up automatically when this template is used.
+Using the options here you set app settings and can create one or more page collections to be set up automatically when this template is used.
 
 .. image:: publishing-edit-setup-v7.png
 
-To edit settings, click "Publishing app settings" and use the following settings (can be edited later by a publishing app administrator):
+To edit settings, click "Publishing app settings" or similar, and use the following settings (can be edited later by an administrator):
 
 .. image:: publishing-edit-setup-settings-v7.png
 
-+ **Allow reuse content**: If publishing apps created from this template should allow reuse of content, select "Enable reuse content". 
++ **Allow reuse content**: If apps created from this template should allow reuse of content, select "Enable reuse content". 
 + **Contact property**: Select the default property for page contact.
 + **Review date property**: Select the default property for review date.
 + **Permisson**: Users, or groups, that should be able to take part in the sites activites should be added in this field. A suggestion can be added here, but it can be edited when a site is created from this template.
@@ -87,7 +87,7 @@ You edit the settings for a page collection as is described here: :doc:`Page col
 
 Policies
 ***********
-Use this for further policies settings, that will be applied to apps created from this template. 
+Use this for further policies settings, that will be applied when using from this template. 
 
 The following can be set here:
 
