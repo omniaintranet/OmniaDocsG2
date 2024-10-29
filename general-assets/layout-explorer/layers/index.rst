@@ -1,7 +1,7 @@
 Layers
 ==========
 
-In the Layout explorer (Layers) you can see an overview over all sections and blocks used on the page, for example:
+In the Layout explorer (Layers) you can see an overview over all sections and blocks used on the page or page type, for example:
 
 .. image:: layout-explorer-76.png
 
