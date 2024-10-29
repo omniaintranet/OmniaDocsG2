@@ -1,5 +1,5 @@
-Layout
-====================
+Style (Layout explorer)
+==========================
 
 Here you can use the following settings:
 
