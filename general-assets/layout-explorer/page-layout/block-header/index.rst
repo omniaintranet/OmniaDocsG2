@@ -1,7 +1,7 @@
 Block header
 ==============
 
-You can set custom settings for the block headers on this page, by clicking the button.
+You can set custom settings for the block headers on this page or page type, by clicking the button.
 
 .. image:: page-toolbar-block-header.png
 
