@@ -1,9 +1,7 @@
 Layout
 ==================
 
-This functionality was called Page style in earlier Omnia versions and was available in the action menu for page editing.
-
-Here, the following is available:
+This functionality is found under the cogwheel, in Layout explorer:
 
 .. image:: page-toolbar-layout-76.png
 
