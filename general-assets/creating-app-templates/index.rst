@@ -87,15 +87,15 @@ You edit the settings for a page collection as is described here: :doc:`Page col
 
 Policies
 ***********
-Use this for further policies settings, that will be applied to publishing apps created from this template. 
+Use this for further policies settings, that will be applied to apps created from this template. 
 
 The following can be set here:
 
 .. image:: publishing-templates-policies-v7.png
 
-+ **Minimum number of characters in description**: Here you can set a number of characters for the description of the publishing app, to force users to add a description of a certain length. 
-+ **Minimim number of administrators**: Click a number to set the minimum number of administrators. There must always be at least one administrator for a publishing app, but you can decide that more administrators should be required, up to 5.
-+ **Default administrators**: Use this to add one or more default administrators for publisning apps created from this template. These administrators will always be added, and can not be removed in the create publishing app wizard. Must be persons, can not be groups.
++ **Minimum number of characters in description**: Here you can set a number of characters for the description of the app, to force users to add a description of a certain length. 
++ **Minimim number of administrators**: Click a number to set the minimum number of administrators. There must always be at least one administrator for an app, but you can decide that more administrators should be required, up to 5.
++ **Default administrators**: Use this to add one or more default administrators for apps created from this template. These administrators will always be added, and can not be removed in the create publishing app wizard. Must be persons, can not be groups.
 
 Additional information
 ***********************
