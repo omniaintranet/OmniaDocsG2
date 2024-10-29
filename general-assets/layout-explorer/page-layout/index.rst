@@ -1,4 +1,4 @@
-Page layout
+Layout
 ==================
 
 This functionality was called Page style in earlier Omnia versions and was available in the action menu for page editing.
