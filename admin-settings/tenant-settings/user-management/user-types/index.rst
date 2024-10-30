@@ -97,6 +97,12 @@ You can set the schedule to Never (meaning not set), Daily, Weekly or Monthly.
 
 The check is executed when the page containing the User profile progress block is updated.
 
+For more information about the block, see: :doc:`User profile progress </blocks/general-block-settings/index>`
+
+An action button can be used to open the user's profile card for editing, see the heading "Strengthen profile", on this page: :doc:`Action button </blocks/general-block-settingsblocks/button-link/index>`
+
+**Note!** The action button "Strengthen profile legacy" is used for the older Strengthen profile functionality.
+
 Create a custom user profile card
 ************************************
 You can create a custom user profile card for each user user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. In Omnia 7.7 and later, the private view of the card can be used to edit the information shown on the public view. 
