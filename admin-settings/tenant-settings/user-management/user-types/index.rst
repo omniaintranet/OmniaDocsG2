@@ -57,7 +57,7 @@ Here you decide which properties should be available for this user type. A few p
 
 User profile completion
 *****************************
-This is a new tab in Omnia 7.7. User profile completion can work quite differently in Omnia 7.7 and later. All can now be done through the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is also available).
+This is a new tab in Omnia 7.7. User profile completion can work quite differently in Omnia 7.7 and later. All edits can now be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is also available).
 
 .. image:: tab-profile-completion.png
 
@@ -77,7 +77,7 @@ The following settings are available:
 
 + **Data source**: Select the data source to get the properties from; User (meaning Omnia user), User (Microsoft Graph) or User (Sharepoint). 
 + **Select properties**: Select the property here.
-+ **Completeness impact**: You can set the completeness impact to Low, Medium or High.
++ **Completeness impact**: You can set the completeness impact to Low, Medium or High. When the completeness impact is calculated, Low is 1, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
 
 When editing the settings for a property (using the pen), an additional setting is available:
 
@@ -95,6 +95,8 @@ You can set the schedule to Never (meaning not set), Daily, Weekly or Monthly.
 
 .. image:: tab-profile-completion-schedule-set.png
 
+The check is executed when the page containing the User profile progress block is updated.
+
 Create a custom user profile card
 ************************************
 You can create a custom user profile card for each user user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. In Omnia 7.7 and later, the private view of the card can be used to edit the information shown on the public view. 
@@ -111,7 +113,7 @@ Here's an example of a user profile card layout (shown in edit mode):
 
 .. image:: user-card-layout.png
 
-At the top, a User information block is added. Next, a Tab section is added, for navigation purposes, for three tabs with information. The first tab is a Properties block (Contact), the second is an Organization tree block, and the third (Experience) is a Properties block.
+At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for three tabs with information. The first tab is a properties block (Contact), the second is an organization tree block, and the third (Experience) is a properties block.
 
 For more information about the blocks, see: 
 
