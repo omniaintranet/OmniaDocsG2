@@ -61,7 +61,7 @@ This is a new tab in Omnia 7.7. User profile completion can work quite different
 
 .. image:: tab-profile-completion.png
 
-The selected properties are listed here (in a new user type, this list is empty). Use the pen to edit the settings and the dust bin to remove a property from the list. Of course, these properties must also be present in the card layout for the follow up on profile completion to be meaningful.
+The selected properties are listed here (in a new user type, this list is empty). Use the pen to edit the settings and the dust bin to remove a property from the list. Of course, these properties must also be present in the card layout for the follow up on profile completion to be meaningful. See below for more information on custom profile card layouts.
 
 Add a property
 ----------------
