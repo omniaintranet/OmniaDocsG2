@@ -285,7 +285,17 @@ A new request can be created the same way as described on this page: :doc:`Reque
 
 Strengthen profile
 ----------------------
-Strengthen profile can be available as a block (Profile completion) or available in the action menu. It can also be added as an action button.
+This is a new button in Omnia 7.7 and later. The button opens the user's profile card for editing. It belongs to the new user profile profile completion functionality, where the settings are done under User types. For more information, see the heading *User profile completion* on this page: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
+
+One way to use this button is to place it near the block User profile progress, for a convenient way for the user to open the profile card for editing. For more information about that block, see: :doc:`User profile progress </blocks/user-profile-progress/index>`
+
+(Only general settings for the button are available, see above).
+
+Strengthen profile legacy
+----------------------------
+This button is used for the older strengthen profile functionality. 
+
+Strengthen profile can be available as a (legacy) block, Profile completion. It can also be added as an action button.
 
 It works the same way as in the Profile completion block: :doc:`The Profile completion block </blocks/user-profile-completion/index>`
 
