@@ -48,7 +48,7 @@ Or:
 
 .. image:: select-children-all-new2.png
 
-4. To add more targeting filter, repeat the process.
+4. To add more targeting filters, repeat the process.
   
 To delete a targeting filter, just click the x.
 
