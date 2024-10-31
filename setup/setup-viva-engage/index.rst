@@ -1,7 +1,7 @@
 Setup Viva Engage in Omnia
 ============================
 
-**This page is being updated. Will be finished soon. The step-by-step instruction is not finished, but should still work as a general guideline.**
+**This page is being updated. Will be finished soon. The step-by-step instruction is not finished, but should still work as a general guideline. Images will be added.**
 
 Follow these steps to setup Viva Engage (former Yammer) in Omnia Online. 
 
@@ -12,36 +12,25 @@ Follow these steps to setup Viva Engage (former Yammer) in Omnia Online.
 https://www.yammer.com/m365x249588.onmicrosoft.com/client_applications
 
 **3**. Create the Viva Engage App.
-
-.. image:: viva-1.png
-
 **4**. After creating the new app, click the link to generate the app token.
-
-.. image:: viva-2.png
-
-.. image:: viva-3.png
-
 **5**. Go to Network admin -> Security settings to enable Office 365 Identity Enforcement. You need it for the Viva Engage group auto to create a Sharepoint site when the Viva Engage group is created.
-
-.. image:: viva-4.png
-	 
 **6**. Setup a Viva Engage group template in omnia. Add above viva angage app -> client id to the Viva Engage group template as below:
 
-.. image:: viva-5.png
+(Image to be added)
 
 **7**. Setup omnia Secret key for the Business Profile scope and the same with that provisioning template. Add above Viva Engage app token to Secret key as below.
 
-.. image:: viva-6.png
- 
+(Image to be added)
+
 **8**. Finally create app provisioning from Viva Engage group template.
 
 Example: Result when done creating Viva Engage group name like nhanyamer8:
  
-.. image:: viva-7.png
+(Image to be added)
 
 And Sharepoint site:
 
-.. image:: viva-8.png
+(Image to be added)
 
 **Note!** If you want to use the new, improved Viva Engage integration, the Viva Engage integration Tenant Feature must also be activated, see: :doc:`Features - Tenant </admin-settings/tenant-settings/features/index>`
 
