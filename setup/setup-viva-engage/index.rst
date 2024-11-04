@@ -23,6 +23,8 @@ This is the info you have to enter. Note the question marks. You can click them 
 
 .. image:: setup-viva-3.png
 
+**Note!** Don't forget to copy the token, it will disappear when the page is closed, as stated on the page.
+
 **5**. Go to Network admin -> Security settings to enable Office 365 Identity Enforcement. You need it for the Viva Engage group auto to create a Sharepoint site when the Viva Engage group is created.
 
 
