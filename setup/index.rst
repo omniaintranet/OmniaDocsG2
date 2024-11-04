@@ -7,7 +7,6 @@ This part of the documentaton contains setup instructions for different parts of
 .. toctree::
    :titlesonly:
 
-   basicsetup/index
    documentmanagement/index
    processmanagement/index
    eventmanagement/index
