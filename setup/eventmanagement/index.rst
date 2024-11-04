@@ -1,8 +1,6 @@
 Setup Event management
 ===========================================
 
-**This page is being edited. Will be finished soon.**
-
 Below you will find the steps needed in order to create a basic setup of Event Management.
 
 1. Go to Omnia admin and activate the tenant feature "Event management". 
