@@ -15,7 +15,7 @@ https://www.yammer.com/m365x249588.onmicrosoft.com/client_applications
 
 .. image:: setup-viva-1.png
 
-This is the info you have to enter. Note the question marks. You can click the, for instructions.
+This is the info you have to enter. Note the question marks. You can click them for instructions.
 
 .. image:: setup-viva-2.png
 
