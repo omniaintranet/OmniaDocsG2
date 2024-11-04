@@ -1,7 +1,7 @@
 Setup Communities
 ===========================================
 
-** This page is being edited.**
+**This page is being edited.**
 
 1. Go to Omnia Admin > Features (Tenant).
 2. Activate the feature "Default Community Properties and Page Types".
