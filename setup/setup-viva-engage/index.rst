@@ -13,9 +13,19 @@ https://www.yammer.com/m365x249588.onmicrosoft.com/client_applications
 
 **3**. Create the Viva Engage App.
 
+.. image:: setup-viva-1.png
+
+This is the info you have to enter. Note the question marks. You can click the, for instructions.
+
+.. image:: setup-viva-2.png
+
 **4**. After creating the new app, click the link to generate the app token.
 
+.. image:: setup-viva-3.png
+
 **5**. Go to Network admin -> Security settings to enable Office 365 Identity Enforcement. You need it for the Viva Engage group auto to create a Sharepoint site when the Viva Engage group is created.
+
+
 
 **6**. Setup a Viva Engage group template in omnia. Add above viva angage app -> client id to the Viva Engage group template as below:
 
