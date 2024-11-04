@@ -1,7 +1,7 @@
 Templates for publishing apps
 =============================================
 
-Here you can work with templates for publishing apps - Omnia Publishing apps and SharePoint Communication sites.
+Here you can work with templates for publishing apps - Omnia Publishing apps and SharePoint Communication sites. (In Omnia 7.6.41 and later, a communication site can also be created as a teamwork).
 
 .. image:: publishing-templates-v7.png
 
