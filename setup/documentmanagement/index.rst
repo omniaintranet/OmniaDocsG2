@@ -1,7 +1,7 @@
 Setup Document management
 ===========================================
 
-**Note!** This description has not been updated for a while. You can still see it as a general guideline, but not fully as a stepo-by-step instruction.**
+**Note!** This description has not been updated for a while. You can still see it as a general guideline, but not fully as a step-by-step instruction.
 
 Below you will find the steps needed in order to create a basic setup of Document management.
 
