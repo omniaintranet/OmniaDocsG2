@@ -15,9 +15,11 @@ https://www.yammer.com/m365x249588.onmicrosoft.com/client_applications
 
 .. image:: setup-viva-1.png
 
-This is the info you have to enter. Note the question marks. You can click them for instructions.
+This is what you have to enter:
 
 .. image:: setup-viva-2.png
+
+Note the question marks. You can click them for info.
 
 **4**. After creating the new app, click the link to generate the app token.
 
