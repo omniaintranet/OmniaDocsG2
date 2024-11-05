@@ -13,7 +13,7 @@ Just click the image for the news you want to read. When reading, it can look li
 
 .. image:: news-list-example-reading-v7.png
 
-Note the metadata info indicatig that this news relates to Human resources. Also note the two lists to the right: Related news and Latest news. You can read additional news by just clicking there.
+Note the metadata info indicating that this news relates to Human resources. Also note the two lists to the right: Related news and Latest news. You can read additional news by just clicking there.
 
 The page rollup block can be used on any publishing page in Omnia in can be setup in a number of ways. 
 
@@ -29,7 +29,7 @@ Liking, sharing and commenting works the same way here as for publishing pages i
 
 A news center
 ******************
-A news center can also be setup in a number of ways. Here's an example using card views and where the news articles are divied into four types.
+A news center can also be set up in a number of ways. Here's an example using card views and where the news articles are divied into four types.
 
 .. image:: news-archive-v7.png
 
