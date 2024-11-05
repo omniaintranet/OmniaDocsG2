@@ -1,3 +1,14 @@
+7.6.43
+========================================
+(Omnia 7.6.43 / Workplace 7.6.31 / WCM 7.6.33 / MS 7.6.24 / Analytics 7.6.2)
+
+- Major performance improvement for the people picker for bigger tenants (#161407).
+- Fixed a theme bug causing the filter block setting button to become invisible (#161407).
+- Fixed an issue in the page rollup accelerator that would occur if a page were added to a channel as a draft.
+- User profile images are now synced automatically to Omnia (#160285).
+- Added the correct completed date to the Sign-off request excel export (#161454).
+- OnPrem: Improved compatibility for ODM in team sites (#159794).
+
 7.6.41
 ========================================
 (Omnia 7.6.41 / Workplace 7.6.30 / WCM 7.6.32 / MS 7.6.23 / Analytics 7.6.2)
