@@ -42,11 +42,11 @@ Available settings depend on type of property. Here's some common examples:
 
 .. image:: property-set-add-drag-v7-border.png
 
-9. When you're finished, click "Save".
+9. When you're finished, click SAVE.
 
 Edit or delete a property set
 ***********************************
-To edit a property Set, click the pen. To delete a Property Set, click the dust bin.
+To edit a property set, click the pen. To delete a property set, click the dust bin.
 
 .. image:: property-set-edit-list-v7.png
 
