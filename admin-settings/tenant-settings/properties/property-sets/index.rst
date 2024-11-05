@@ -40,7 +40,7 @@ Available settings depend on type of property. Here's some common examples:
 7. Continue the same way until you have added all the properties for the set. (Click the dustbin to remove a property if needed).
 8. To change the order, use the icon to the far right, and drag and drop.
 
-.. image:: property-set-add-drag-v7.png
+.. image:: property-set-add-drag-v7-border.png
 
 9. When you're finished, click "Save".
 
