@@ -22,7 +22,7 @@ Use the following settings:
 2. Add a title for the property set. You can add a title in all langauges active in the tenant. Default language is mandatory.
 3. Change category if needed.
 4. Open the list and select a property.
-5. Click "Add".
+5. Click ADD.
 6. Set additional settings for the property, if required, by clicking the pen:
 
 .. image:: property-set-clickpen-v7.png
