@@ -29,7 +29,7 @@ Note the question marks. You can click them for info.
 
 **5**. Go to Network admin -> Security settings to enable Office 365 Identity Enforcement. You need it for the Viva Engage group auto to create a Sharepoint site when the Viva Engage group is created.
 
-
+.. image:: setup-viva-4.png
 
 **6**. Setup a Viva Engage group template in omnia. Add above viva angage app -> client id to the Viva Engage group template as below:
 
