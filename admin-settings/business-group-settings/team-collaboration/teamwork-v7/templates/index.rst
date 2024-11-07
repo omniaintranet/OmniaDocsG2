@@ -46,7 +46,7 @@ For a SharePoint teamsite, these settings are available for Setup:
 + **Default Site Collection Administrators**: You can add (several) additional administrators here, if needed.
 + **Default Visitors**: You can use this to set a default visitor group (read permissions) to all sites created from this template. 
 
-SharePoint communcation site
+SharePoint communication site
 ------------------------------
 A SharePoint communication site can be created as a publishing app. In Omnia 7.6.41 and later, another alternative is to create a SharePoint communication site as a teamwork.
 
