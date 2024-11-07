@@ -23,6 +23,8 @@ If you need additional mapping, just select properties from the lists and click 
 
 **Note!** It's very important that you set up rules for user types, as a user that doesn't match any such rules will have an "Undefined" user group and are not, for example, available in people picker lists. On the other hand, accounts that are not users (for example system accounts) should be "Undefined" according to the rules set up, as they should not appear in people picker lists.
 
+**Note!** If the properties are of type “SharePoint term set” they will not show up in the lists for mappings. You need to either have the feature “Legacy permissions” activated or have the feature “App-only read access to SharePoint termstore for Omnia users” activated, for these properties to be available here.
+
 FULL SYNC or FULL USER SYNC
 *****************************
 FULL SYNC syncs all properties for all users and groups. FULL USER SYNC syncs all properties for all users, but not for the groups.
