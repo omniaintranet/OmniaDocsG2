@@ -1,7 +1,7 @@
 Teamwork templates
 =======================================
 
-Here you can work with templates for teamwork; Microsoft 365 group, SharePoint teamsite, Microsoft Teams, private Viva Engage (former Yammer) community and Facebook workplace group. In Omnia 7.6.41 and later, a Sharepoint communication site can be created either as a publishing app, or as a teamwork.
+Here you can work with templates for teamwork; Microsoft 365 group, SharePoint teamsite, Microsoft Teams, private Viva Engage (former Yammer) community and Facebook workplace group. In Omnia 7.6.41 and later, a Sharepoint communication site can be created either as a publishing app, or as a teamwork. This option is new for teamworks.
 
 The first list displays all templates that has been created so far, for example:
 
