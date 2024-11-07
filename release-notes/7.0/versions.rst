@@ -1,6 +1,6 @@
 7.6.44
 ========================================
-(Omnia 7.6.43 / Workplace 7.6.31 / WCM 7.6.33 / MS 7.6.24 / Analytics 7.6.2)
+(Omnia 7.6.44 / Workplace 7.6.32 / WCM 7.6.35 / MS 7.6.25 / Analytics 7.6.2)
 
 - The 404 page is now displayed if clicking on a link using the page redirect service (#161933).
 - Certain actions are now blocked in the WCM editor while the page is loading to prevent accidental deletes.
