@@ -1,7 +1,7 @@
 Templates for communities
 =======================================
 
-Here  you can work with templates for communities - Omnia community apps and Viova Engage (former Yammer) communities. The first list displays all templates that has been created so far, for example:
+Here  you can work with templates for communities - Omnia community apps and Viva Engage (former Yammer) communities. The first list displays all templates that has been created so far, for example:
 
 .. image:: community-templates-v7.png
 
@@ -17,7 +17,7 @@ All settings for Omnia community apps works as described on the page linked abov
 
 Creating a template for a Viva Enagage community
 **************************************************
-Firstly, there are no features available for a Viva Engage (former Yammer) community template. Besides that, the only settings that are available in the Setup step are these:
+Firstly, there are no features available for a Viva Engage community template. Besides that, the only settings that are available in the Setup step are these:
 
 .. image:: community-template-yammer-v75.png
 
