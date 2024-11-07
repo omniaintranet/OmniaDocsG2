@@ -15,7 +15,7 @@ To edit a template, you can also just click the name. When you edit a template, 
 
 You create templates for publishing apps, community sites and Teamwork the same way, see this page: :doc:`Creating app templates </general-assets/creating-app-templates/index>`
 
-The settings for General, Properties and Custom steps are handled as described on the page linked above, even if available property sets and available features can differ. Available settings under Setup differ depending on type of teamwork. The differences is descibed here. A few additional settings for Policies are also described here.
+The settings for General, Properties and Custom steps are handled as described on the page linked above, even if available property sets and available features can differ. Available settings under Setup differ depending on type of teamwork. The differences are descibed here. A few additional settings for Policies are also described here.
 
 Microsoft 365 Group
 -----------------------
@@ -45,6 +45,16 @@ For a SharePoint teamsite, these settings are available for Setup:
 + **Primary Site Collection Administrator**: If empty, the user creating or requesting the site will automatically become the default administrator (Owner) of the site. If a specific group or user should be administrator for all sites created from this template, add that group or user. Only on group or user can be added in this field.
 + **Default Site Collection Administrators**: You can add (several) additional administrators here, if needed.
 + **Default Visitors**: You can use this to set a default visitor group (read permissions) to all sites created from this template. 
+
+SharePoint communcation site
+------------------------------
+A SharePoint communication site can be created as a publishing app. In Omnia 7.6.41 and later, another alternative is to create a SharePoint communication site as a teamwork.
+
+What is different from the general setup description is the Setup tab. These settings are available there:
+
+.. image:: teamwork-settings-setup-communicationsite-v7.png
+
+This is exactly the same settings as when a SharePoint communication site is created as a publishing app. See the heading *Setup step in a SharePoint Communication site* on this page: :doc:`Templates for publishing apps </admin-settings/business-group-settings/publishing-apps/publishing-v7/templates-v7/index>`
 
 Microsoft Teams
 ---------------------
