@@ -1,3 +1,13 @@
+7.6.44
+========================================
+(Omnia 7.6.43 / Workplace 7.6.31 / WCM 7.6.33 / MS 7.6.24 / Analytics 7.6.2)
+
+- The 404 page is now displayed if clicking on a link using the page redirect service (#161933).
+- Certain actions are now blocked in the WCM editor while the page is loading to prevent accidental deletes.
+- When having a variation on a page collection root page, page creation settings are now always read from the default page (#161145).
+- Better end user error messages when a controlled document fails to publish (#161347).
+
+
 7.6.43
 ========================================
 (Omnia 7.6.43 / Workplace 7.6.31 / WCM 7.6.33 / MS 7.6.24 / Analytics 7.6.2)
