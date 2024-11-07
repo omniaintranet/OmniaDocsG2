@@ -22,12 +22,12 @@ General
 The following settings are available here (see image above):
 
 + **Type**: You may be able to select a type if more than one is available.
-+ **Title**: Add a title for the template. You can add titles in the languages available in the tenant. Default language is mandatory. 
-+ **Description**: Add a description if needed. You can add a description in the languages available in the tenant.
++ **Title**: Add a title for the template.
++ **Description**: Add a description if needed. 
 + **Icon type**: An icon is always shown for a template. If you would like another icon for this template, select the set of icons here: Font Awesome, Microsoft, Flags or Custom. When selecting "Custom" you can choose any image as the icon.
 + **Template visible to**: Here you choose who can see and use the template. If you select "Specific users", an "Add targeting filter" option is shown. You use it the same way as the similar options in Omnia, see: :doc:`Use targeting </general-assets/targeting-in-omnia/index>`
 + **Icon**: When you have select icon type, use this list to select the icon. If you select "Custom", a URL field is shown, where you enter the URL for the image.
-+ **Available To**: Here you select who the template should be available for. What "All users" and "Admins only" means is obvious. When you select "Specific users" you click "Add targeting filter", choose a property (for example Administration roles or Language) and set the necessary settings to create the targeting filter for the group of users you have in mind.
++ **Available to**: Here you select who the template should be available for. What "All users" and "Admins only" means is obvious. When you select "Specific users" you click "Add targeting filter", choose a property (for example Administration roles or Language) and set the necessary settings to create the targeting filter for the group of users you have in mind.
 + **Approval**: Here you select if approval is required when users create sites from this template. When you select "Require approval" you must also select one or more approvers.
 
 Properties
@@ -36,7 +36,7 @@ You can add a property set to the template.
 
 .. image:: publishing-edit-properties-v7.png
 
-+ **Property Set**: Select property set here. The properties in the set can or will have to be filled in when an app is created from this template, depending on settings for the property. The property sets are set up using the tenant settings. See this page for more information: :doc:`Property sets </admin-settings/tenant-settings/properties/property-sets/index>`
++ **Property set**: Select property set here. The properties in the set can or will have to be filled in when an app is created from this template, depending on settings for the property. The property sets are set up using the tenant settings. See this page for more information: :doc:`Property sets </admin-settings/tenant-settings/properties/property-sets/index>`
 
 When you have selected a property set something like the following is shown:
 
@@ -79,7 +79,7 @@ To edit settings, click "Publishing app settings" or similar, and use the follow
 
 More information about page collections, and how to create a page collection, can be found here: :doc:`Page collections </pages/page-collections/index>`
 
-When you have added one or more page collections, you can use the the icons to sort the order in which they are shown (left-most icon) or delete the page collection. 
+When you have added one or more page collections, you can use the icons to sort the order in which they are shown (left-most icon) or delete the page collection. 
 
 .. image:: publishing-edit-setup-page-collections-v7.png
 
@@ -87,7 +87,7 @@ You edit the settings for a page collection as is described here: :doc:`Page col
 
 Policies
 ***********
-Use this for further policies settings, that will be applied when using from this template. 
+Use this for further policies settings, that will be applied when using this template. 
 
 The following can be set here:
 
@@ -103,7 +103,7 @@ In some cases, additional settings are available.
 
 When creating a template for a **Viva Engage community**, the setup step is different. See the bottom of this page: :doc:`Templates for communities </admin-settings/business-group-settings/communities/communities-v7/templates/index>`
 
-When creating a template for a **SharePoint communication site**, the setup step is slightly different. See the bottom of this page: :doc:`Templates for publishing apps </admin-settings/business-group-settings/publishing-apps/publishing-v7/templates-v7/index>`
+When creating a template for a **SharePoint communication site** as a publishing app, the setup step is slightly different. See the bottom of this page: :doc:`Templates for publishing apps </admin-settings/business-group-settings/publishing-apps/publishing-v7/templates-v7/index>`
 
-Regarding templates for **Teamwork**, there are differences for Microsoft 365 Group, SharePoint team site, Microsoft Team and Private Yammer community. See this page for more information: :doc:`Teamwork templates </admin-settings/business-group-settings/team-collaboration/teamwork-v7/templates/index>`
+Regarding templates for **Teamwork**, there are differences for Microsoft 365 Group, SharePoint team site, SharePoint Communication site, Microsoft Team and Private Yammer community. See this page for more information: :doc:`Teamwork templates </admin-settings/business-group-settings/team-collaboration/teamwork-v7/templates/index>`
 
