@@ -31,13 +31,13 @@ The other two scopes - "Requested by me" and "All requests" can be useful for co
 
 Signing off documents
 -------------------------
-In Omnia 7.7and later, controlled documents can also be part of a sig-off request. A single sign-off request can contain both pages and documents.
+In Omnia 7.7and later, controlled documents can also be part of a sig-off request. A single sign-off request can contain both pages and documents. The links look the same.
 
-In this example, the first two posts are documents, the last one is a page:
+Here's an example of two documents being requested for sign-off :
 
-.. image:: sign-off-both.png
+.. image:: sign-off-document-new.png
 
-(More info will be added soon).
+A document opens the usual way and after having read it, the user then goes back to this list and selects the box.
 
 Settings
 **********
