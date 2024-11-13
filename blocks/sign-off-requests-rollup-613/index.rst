@@ -5,13 +5,15 @@ The block can be used for different purposes regarding sign-off requests for pag
 
 Settings for Sign-off requests are available in tenant settings: :doc:`Settings for Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
 
-One way of using this block is a listing of sign-off requests that is sent to the logged in user or a group that the user belongs to. Here's an example of such a listing with one of the requests opened:
+One way of using this block is a listing of sign-off requests that is sent to the logged in user or a group that the user belongs to. Here's an example:
 
-.. image:: sign-off-block-example-613.png
-
-In this example, the user has read and signed off two of the posts, but not yet the third.
+.. image:: sign-off-block-example-77.png
 
 The colored dots indicates the progress for the whole request, meaning the progress for all recipients: green for all has signed off, yellow for some and white for none.
+
+A request contains one or more pages/documents to sign-off. In this example, the user has read and signed off seven of the posts, but has yet to read and sign-off two more.
+
+.. image:: sign-off-block-example-signed-off.png
 
 The user can read the information by clicking the link and can then sign off using a button. Here's two examples of how that button can look:
 
