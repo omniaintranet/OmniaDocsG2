@@ -17,7 +17,7 @@ A request contains one or more pages/documents to sign-off. In this example, the
 
 The user can read the information by clicking the link and can then sign off using a button. Here's two examples of how that button can look:
 
-.. image:: sign-off-request-rollup-example-signedoff-613-1.png
+.. image:: sign-off-request-rollup-example-signedoff-77.png
 
 Or:
 
@@ -25,11 +25,9 @@ Or:
 
 Of course, the user can also sign-off by simply ticking the box in the list.
 
-It's also possible to "undo" a request, really meaning reading the information again. "Undo" is simply done by unchecking the box:
+It's also possible to "undo" a request, really meaning reading the information again. "Undo" is simply done by unchecking the box.
 
-.. image:: sign-off-request-rollup-example-undo.png
-
-The other two scopes - "Requested by me" and "All requests" can be useful for administrators. The "Requested by me" scope can be very useful for an administrator to keep track of sign-off requests that administrator has sent.
+The other two scopes - "Requested by me" and "All requests" can be useful for colleagues creating requests. The "Requested by me" scope can be very useful to keep track of sign-off requests that a colleague has sent.
 
 Signing off documents
 -------------------------
