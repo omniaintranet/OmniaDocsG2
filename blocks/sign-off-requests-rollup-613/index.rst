@@ -15,29 +15,25 @@ A request contains one or more pages/documents to sign-off. In this example, the
 
 .. image:: sign-off-block-example-signed-off.png
 
-The user can read the information by clicking the link and can then sign off using a button. Here's two examples of how that button can look:
+The user can read the information by clicking the link and can then sign off using a button. Here's an example of how that button can look:
 
 .. image:: sign-off-request-rollup-example-signedoff-77.png
-
-Or:
-
-.. image:: sign-off-request-rollup-example-signedoff-613-2.png
 
 Of course, the user can also sign-off by simply ticking the box in the list.
 
 It's also possible to "undo" a request, really meaning reading the information again. "Undo" is simply done by unchecking the box.
 
-The other two scopes - "Requested by me" and "All requests" can be useful for colleagues creating requests. The "Requested by me" scope can be very useful to keep track of sign-off requests that a colleague has sent.
+The other two scopes: "Requested by me" and "All requests" can be useful for colleagues creating requests. The "Requested by me" scope can be very useful to keep track of sign-off requests that a colleague has sent.
 
 Signing off documents
 -------------------------
-In Omnia 7.7and later, controlled documents can also be part of a sig-off request. A single sign-off request can contain both pages and documents. The links look the same.
+In Omnia 7.7and later, controlled documents can also be part of a sign-off request. A single sign-off request can contain both pages and documents. The links look the same.
 
 Here's an example of two documents being requested for sign-off :
 
 .. image:: sign-off-document-new.png
 
-A document opens the usual way and after having read it, the user then goes back to this list and selects the box.
+A document opens the usual way and after having read it, the user then returns to this list and ticks the box.
 
 Settings
 **********
