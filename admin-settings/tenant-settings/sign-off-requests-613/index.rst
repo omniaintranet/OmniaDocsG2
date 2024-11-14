@@ -19,5 +19,5 @@ Select section for more information:
    sign-off-types-613/index
    recurring-requests/index
 
-A rollup block for sign-off requests, useful both for making sign-off requests available and for keeping track status for the requests, is also be available: :doc:`Sign-off requests block </blocks/sign-off-requests-rollup-613/index>`
+A rollup block for sign-off requests, useful both for making sign-off requests available and for keeping track of status for the requests, is also be available: :doc:`Sign-off requests block </blocks/sign-off-requests-rollup-613/index>`
 
