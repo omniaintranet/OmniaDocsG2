@@ -58,7 +58,7 @@ On this tab you decide what the block should display and for whom.
 + **Scope**: You can choose to display "All requests", "Requested by me", meaning all sign-off request the logged in user has sent, or "Targeted to me", meaning sign-off requests targeted to the logged in user, or a group the logged in user belongs to.
 + **(First list)**: Use the first list to set the type of query within the scope, for example Status, as shown in the image. 
 + **(Second list)**: Use the second list for further settings. An example: if you select "Progress status" in the first list, in the second list you can choose any or all of "Not started", "In progress" or "Completed".
-+ **Add filter**: Add a filter for the query, if you don't want all the requests within the scope to be displayed. You can select "Requested by", "Progress status", "Status" or "Type". Besides that, som general filters are available. For information about what the default filters can display, see: :doc:`Requests </admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index>`
++ **Add filter**: Add a filter for the query, if you don't want all the requests within the scope to be displayed. You can select "Requested by", "Progress status", "Status" or "Type". Besides that, some general filters are available. 
 + **Page size**: To limit the number of items being displayed per “page”, add a fixed number here or use the slider.
 
 Custom date filtering
@@ -90,7 +90,7 @@ When you add a column, first select the column in the list:
 
 .. image:: sign-off-requests-block-settings-display-column-613.png
 
-It's then possible to set a fixed width for the column, if needed, an decide to show the label or set a custom label.
+It's then possible to set a fixed width for the column, if needed, and decide to show the label or set a custom label.
 
 If you need to edit the settings for a column, you can click the cogwheel to display them:
 
