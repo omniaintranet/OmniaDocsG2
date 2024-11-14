@@ -96,9 +96,7 @@ If you need to edit the settings for a column, you can click the cogwheel to dis
 
 .. image:: sign-off-requests-block-settings-display-column-cogwheel-613.png
 
-STYLE
+Filter
 --------
-The following settings are available for filter style:
-
-.. image:: sign-off-rollup-filter-style.png
+The filters available are the same in most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
