@@ -23,7 +23,7 @@ To create a new request, do the following:
 
 .. image:: sign-off-requests-settings-1-v77.png
 
-+ **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's used automaticalley and the properties for the type are available, but the "Types" option is not shown here. 
++ **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's used automaticalley and the settings for the type are available directly. The "Types" option is then not shown. 
 + **Template**: If more than one template has been added to the type, this option is shown and you must select a template for the the other settings to be shown. 
 
 For more information, see:
