@@ -106,7 +106,7 @@ If you select "Specific document", a list of all published documents in the tena
 
 .. image:: sign-off-document-list-clickadd-77.png
 
-(If you don't see the ADD button, scroll down to the bottom of the ist).
+(If you don't see the ADD button, scroll down to the bottom of the list).
 
 5. Repeat the process til all documents for the sign-off request are added.
 6. Set all other settings for the sign-off request as described for pages.
