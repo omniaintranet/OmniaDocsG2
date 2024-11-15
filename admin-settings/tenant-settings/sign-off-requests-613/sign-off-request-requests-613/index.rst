@@ -21,7 +21,7 @@ To create a new request, do the following:
 
 2. The following is now shown:
 
-  .. image:: sign-off-requests-settings-1-v77.png
+.. image:: sign-off-requests-settings-1-v77.png
 
 + **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's used automaticalley and the properties for the type are available, but the "Types" option is not shown here. 
 + **Template**: If more than one template has been added to the type, this option is shown and you must select a template for the the other settings to be shown. 
@@ -33,7 +33,7 @@ For more information, see:
 
 When you have selected type, a number of settings are available, for example:
 
-  .. image:: sign-off-requests-settings-1b-v77.png
+.. image:: sign-off-requests-settings-1b-v77.png
 
 Some or all of these settings can be available for pages: 
 
@@ -41,12 +41,12 @@ Some or all of these settings can be available for pages:
 + **Description**: You can add a description of the request here (recommended).
 + **Properties**: Available properties (if any) depends on the type used. The properties are useful for tagging the request. This can then be used as filters for what is to be displayed in a certain Sign-off requests rollup block. 
 + **To be signed off**: Here you add the pages that should be signed off, using the page picker. If the type was based on a template, the list of pages will most likely be pre populated with a number of pages. You can add or remove pages as needed. See below for more details.
-+ **Sign-off type**: Select how the sign-off request will be handled. If the type is based on a template, Sign-off type, and the following two fields can be pre populated with siggestions. If you select "Individual", all users added to "Request sent to" will receive a personal request. Everyone has to sign-off individually. If you select "Group", it works as one group request, meaning it's enough that any one of the recipients signs-off the request. All other recipients can see that the request was sent to them and can see if someone in the group has signed off, they can see if the task is done or not.
-+ **Requested by**: Add one or more users, or groups, that will be shown as the "sender" of this request. Will be shown to the receivers. Your name will most lilkely be pre populated, but it can be removed. This field must always contain at least one person or group. To add several users or a group here can be useful, then all users, or the whole group, will be able to follow up on the request. This field is mandatory.
-+ **Request sent to**: Select one or more users or groups to send to. Single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). This field is mandatory. 
-+ **Schedule send-out**: Available in Omnia 7.6 and later. Select to set date, hour and minutes for when to send. You can also select what standard time to calculate on.
++ **Sign-off type**: Choose how the sign-off request will be handled. If the type is based on a template, Sign-off type, and the following two fields can be pre populated with suggestions. If you select "Individual", all users added to "Request sent to" will receive a personal request. Everyone has to sign-off individually. If you select "Group", it works as one group request, meaning it's enough that any one of the recipients signs-off the request. All other recipients can see that the request was sent to them and can see if someone in the group has signed off, they can see if the task is done or not.
++ **Requested by**: Add one or more users, or groups, that will be shown as the "sender" of this request. Will be shown to the receivers. Your name will most lilkely be pre populated, but it can be removed. This field must always contain at least one person or group. To add several users or a group here can be useful, then all users, or the whole group, will be able to follow up on the request, for example through a Sign-off requests rollup on a suitable page. This field is mandatory.
++ **Request sent to**: If you selected "Indiviual", single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). If you selected "Group", only groups can added to this field. The field is mandatory. 
++ **Schedule send-out**: Select to set date, hour and minutes for when to send. You can also select the standard time to calculate on.
 
-(For options for controlled documents, see bewlow).
+(For options for controlled documents, see below).
 
 3. Add or remove pages/documents as needed.
 4. Add a message for each page/document, if needed (for more information, see below).
@@ -55,25 +55,25 @@ Some or all of these settings can be available for pages:
 
 To add or remove pages
 ----------------------------
-Here's how to add or remove pages for a sign-off request. In Omnia 7.7 and later, you can also create sign-off requests for controlled documents, see below.
+Here's how to add or remove pages for a sign-off request. 
 
 If you use a template, this list can be pre populated, for example:
 
-.. image:: sign-off-requests-settings-2-613-new.png
+.. image:: sign-off-requests-settings-2a-77.png
 
 By clicking the pen, you can add a message for each page, if needed (not mandatory), in any tenant language. Here's an example:
 
-.. image:: sign-off-requests-settings-2-613-message.png
+.. image:: sign-off-requests-settings-2-77-message.png
 
 To remove a page from the list, click the dust bin (this does not affect the template). To add additional pages, click the plus.
 
-.. image:: sign-off-requests-settings-2-613-clickplus-new.png
+.. image:: sign-off-requests-settings-2-77-clickplus.png
 
 The following is shown:
 
-.. image:: sign-off-requests-settings-3-613-new.png
+.. image:: sign-off-requests-settings-3-77.png
 
-If you select "Current page" the actual page where the sign-off request is placed can be signed off, wherever that is.
+If you select "Current page" the actual page where the sign-off request is placed can be signed off, wherever that is, and no further settings are needed.
 
 When you select "Specific page", continue like this:
 
@@ -81,7 +81,7 @@ When you select "Specific page", continue like this:
 
 2. Click ADD when you have selected one or more pages to add to the sign-off request.
 
-.. image:: sign-off-requests-settings-3-613-pages-add.png
+.. image:: sign-off-requests-settings-3-77-pages-add.png
 
 The selected pages are now added to the list of pages, see above.
 
@@ -93,15 +93,19 @@ This option is available in Omnia 7.7 and later. You use it this way:
 
 1. Select "Published document" at the top.
 
-A list of all published documents in the tenant is shown, for example:
+If you select "Current document", no further settings are needed, just click ADD.
 
-.. image:: sign-off-document-list.png
+If you select "Specific document", a list of all published documents in the tenant is shown, for example:
+
+.. image:: sign-off-document-list-77.png
 
 2. Browse the list or search for part of, or the whole document name.
 3. Select one or more documents to be signed off.
 4. Click ADD.
 
-.. image:: sign-off-document-list-clickadd.png
+.. image:: sign-off-document-list-clickadd-77.png
+
+(If you don't see the ADD button, scrol down to the bottom of the ist).
 
 5. Repeat the process til all documents for the sign-off request is added.
 6. Set all other settings for the sign-off request as described for pages.
