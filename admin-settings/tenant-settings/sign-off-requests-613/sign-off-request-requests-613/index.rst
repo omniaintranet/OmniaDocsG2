@@ -1,7 +1,7 @@
 Requests
 =============================================
 
-All created requests are listed here. You can filter on "Requested by" and "Progress status" (Not started, In progress or Completed).
+All created requests are listed here, for example:
 
 Here's an example of a list:
 
@@ -9,7 +9,7 @@ Here's an example of a list:
 
 The "Status" column indicates if the request is open or closed. the "Progress status" column to the right indicates the number of answers; white for none, yellow for some/ongoing and green for all that the request was sent to.
 
-You can search for a request and you can filter the list on "Requested by" and "Progress status".
+You can search for a request and you can filter the list on "Requested by" and "Progress status" (Not started, In progress or Completed).
 
 For more details and the possibiblty to delete a request, click the link (title).
 
