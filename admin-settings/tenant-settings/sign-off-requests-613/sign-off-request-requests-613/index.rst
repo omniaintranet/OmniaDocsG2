@@ -119,16 +119,16 @@ You can check up on a Sign-off request to see what has happened.
 
 Something like the following is shown:
 
-.. image:: sign-off-requests-checking-1-613-new.png
+.. image:: sign-off-requests-checking-1-77.png
 
-Here you can see, for example, the status and the number of recipients that has completed the request. You can check the message (if any) for a page by clicking the pen.
+Here you can see, for example, the status and the number of recipients that has completed the request (look for "Signed off by 1 or Signed off by 0). You can check the message (if any) for a page/document by clicking the pen.
 
 For more information, you can click "Download details" to download an Excel file.
 
-Additionally, you can send a reminder to all participants.
+Additionally, you can send a reminder to all participants, close the request or delete it.
 
 Close or delete a request
-****************************
+-------------------------------
 You can close a request that should no longer be active. You can delete a request no longer needed.
 
 .. image:: sign-off-requests-checking-1a-613-new.png
