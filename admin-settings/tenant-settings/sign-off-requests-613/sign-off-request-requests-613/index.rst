@@ -145,7 +145,7 @@ A closed request can be reopened, a deleted request can (of course) not.
 
 Sign-off requests rollup block
 *********************************
-There's a block available to be used for listing the sign-off requests that is sent to the logged in user or a group that the user belongs to.
+There's a block available to be used for listing the sign-off requests that is sent to the logged in user or a group that the user belongs to. This block can also be used for follow-upp purposes.
 
 More information about the block is found here: :doc:`Sign-off requests rollup </blocks/sign-off-requests-rollup-613/index>`
 
