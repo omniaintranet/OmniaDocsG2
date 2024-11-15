@@ -98,17 +98,17 @@ If you select "Current document", no further settings are needed, just click ADD
 
 If you select "Specific document", a list of all published documents in the tenant is shown, for example:
 
-.. image:: sign-off-document-list-77.png
+.. image:: sign-off-document-list-77-frame.png
 
-2. Browse the list or search for part of, or the whole document name.
+2. Browse the list or search for part of or the whole document name.
 3. Select one or more documents to be signed off.
 4. Click ADD.
 
 .. image:: sign-off-document-list-clickadd-77.png
 
-(If you don't see the ADD button, scrol down to the bottom of the ist).
+(If you don't see the ADD button, scroll down to the bottom of the ist).
 
-5. Repeat the process til all documents for the sign-off request is added.
+5. Repeat the process til all documents for the sign-off request are added.
 6. Set all other settings for the sign-off request as described for pages.
 
 Checking up on a request
