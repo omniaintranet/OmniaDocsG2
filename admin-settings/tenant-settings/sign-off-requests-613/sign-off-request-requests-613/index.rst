@@ -3,8 +3,6 @@ Requests
 
 All created requests are listed here, for example:
 
-Here's an example of a list:
-
 .. image:: sign-off-requests-requests-v77.png
 
 The "Status" column indicates if the request is open or closed. the "Progress status" column to the right indicates the number of answers; white for none, yellow for some/ongoing and green for all that the request was sent to.
