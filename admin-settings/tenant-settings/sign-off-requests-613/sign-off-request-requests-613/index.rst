@@ -86,6 +86,7 @@ When you select "Specific page", continue like this:
 The selected pages are now added to the list of pages, see above.
 
 3. Continue this way until you have added all pages that should be signed off.
+4. Add specific messages for pages, where needed.
 
 To add or remove documents
 ----------------------------
