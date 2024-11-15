@@ -131,11 +131,11 @@ Close or delete a request
 -------------------------------
 You can close a request that should no longer be active. You can delete a request no longer needed.
 
-.. image:: sign-off-requests-checking-1a-613-new.png
+.. image:: sign-off-requests-checking-1a-77.png
 
 When you close a request, you can choose to send an Email notification to the users that has not completed the request:
 
-.. image:: sign-off-requests-checking-2-613.png
+.. image:: sign-off-requests-checking-2-77.png
 
 Just deselect if you don't need to send a message, and then click CLOSE REQUEST. If you choose to send a message, it's sent immediately.
 
