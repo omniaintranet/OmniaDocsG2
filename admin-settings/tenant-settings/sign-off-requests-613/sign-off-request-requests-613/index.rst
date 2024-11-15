@@ -24,6 +24,12 @@ To create a new request, do the following:
   .. image:: sign-off-requests-settings-1-v77.png
 
 + **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's used automaticalley and the properties for the type are available, but the "Types" option is not shown here. 
++ **Template**: If more than one template has been added to the type, this option is shown and you must select a template for the the other settings to be shown. 
+
+For more information, see:
+
++ :doc:`Types for sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/sign-off-types-613/index>`
++ :doc:`Templates for sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/sign-off-templates-613/index>`
 
 When you have selected type, a number of settings are available, for example:
 
@@ -31,7 +37,7 @@ When you have selected type, a number of settings are available, for example:
 
 Some or all of these settings can be available for pages: 
 
-+ **Name**: You can add a name for the request here. In some cases when you select a type, a code for the name is added automatically.   
++ **Name**: You can add a name for the request here. In some cases when you select a type, a code for the name is added automatically.
 + **Description**: You can add a description of the request here (recommended).
 + **Properties**: Available properties (if any) depends on the type used. The properties are useful for tagging the request. This can then be used as filters for what is to be displayed in a certain Sign-off requests rollup block. 
 + **To be signed off**: Here you add the pages that should be signed off, using the page picker. If the type was based on a template, the list of pages will most likely be pre populated with a number of pages. You can add or remove pages as needed. See below for more details.
