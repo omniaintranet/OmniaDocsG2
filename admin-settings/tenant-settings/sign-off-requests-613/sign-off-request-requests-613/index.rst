@@ -5,11 +5,11 @@ All created requests are listed here. You can filter on "Requested by" and "Prog
 
 Here's an example of a list:
 
-.. image:: sign-off-requests-requests-v76.png
+.. image:: sign-off-requests-requests-v77.png
 
 The "Status" column indicates if the request is open or closed. the "Progress status" column to the right indicates the number of answers; white for none, yellow for some/ongoing and green for all that the request was sent to.
 
-You can search for a request and you can filter the list using the list where it says "Progress status".
+You can search for a request and you can filter the list on "Requested by" and "Progress status".
 
 For more details and the possibiblty to delete a request, click the link (title).
 
@@ -19,15 +19,19 @@ To create a new request, do the following:
 
 1. Click the plus.
 
-.. image:: sign-off-requests-click-plus-v7.png
+.. image:: sign-off-requests-click-plus-v77.png
 
 2. The following is now shown:
 
-.. image:: sign-off-requests-settings-1-v7.png
+  .. image:: sign-off-requests-settings-1-v77.png
 
 + **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's still used (the properties are available) but the "Types" option is not shown here. 
 
-When you have selected type, some or all of these settings can be available: 
+When you have selected type, a number of settings are available, for example:
+
+  .. image:: sign-off-requests-settings-1b-v77.png
+
+Some or all of these settings can be available for pages: 
 
 + **Name**: You can add a name for the request here. In some cases when you select a type, a code for the name is added automatically.   
 + **Description**: You can add a description of the request here (recommended).
@@ -38,9 +42,11 @@ When you have selected type, some or all of these settings can be available:
 + **Request sent to**: Select one or more users or groups to send to. Single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). This field is mandatory. 
 + **Schedule send-out**: Available in Omnia 7.6 and later. Select to set date, hour and minutes for when to send. You can also select what standard time to calculate on.
 
-3. Add or remove pages as needed.
-4. Add a message for each page, if needed (for more information, see below).
-5. Schedule the send-out if needed. Available in Omnia 7.6 and later.
+(For options for controlled documents, see bewlow).
+
+3. Add or remove pages/documents as needed.
+4. Add a message for each page/document, if needed (for more information, see below).
+5. Schedule the send-out if needed. 
 6. Click SEND REQUEST to save the Sign-off request and send it. If you don't, nothing is saved.
 
 To add or remove pages
