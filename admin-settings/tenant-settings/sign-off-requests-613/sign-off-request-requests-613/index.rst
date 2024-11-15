@@ -23,7 +23,7 @@ To create a new request, do the following:
 
   .. image:: sign-off-requests-settings-1-v77.png
 
-+ **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's still used (the properties are available) but the "Types" option is not shown here. 
++ **Types**: Only available if more than one type has been set up, and is then mandatory. If just one type exists, it's used automaticalley and the properties for the type are available, but the "Types" option is not shown here. 
 
 When you have selected type, a number of settings are available, for example:
 
