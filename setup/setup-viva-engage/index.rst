@@ -27,39 +27,26 @@ Note the question marks. You can click them for info.
 
 **Note!** Don't forget to copy the token, it will disappear when the page is closed.
 
-**5**. Go to Network admin -> Security settings to enable Office 365 Identity Enforcement. You need it for the Viva Engage group auto to create a Sharepoint site when the Viva Engage group is created.
+**5**. Go to Network admin -> Security settings. 
+**6**. Check "Enforce Office 365 identity". If it's not ticked, select it.
 
 .. image:: setup-viva-4.png
 
-**6**. Setup a Viva Engage group template in omnia. Add above viva angage app -> client id to the Viva Engage group template as below:
+**7**. Activate the tenant feature "Viva Engage integration" (Note: consent is needed).
+**8**. Add the Viva Engage secret, using the token created in step 4, in all business profiles where Viva Engage will be used.
 
-(Image to be added)
+.. image:: setup-viva-5.png
 
-**7**. Setup omnia Secret key for the Business Profile scope and the same with that provisioning template. Add above Viva Engage app token to Secret key as below.
+**9**. Setup templates (Teamwork and/or Community for Viva Engage groups), as needed.
+**10**. Additional setup as needed: Promotion channels and Viva Engage integration for page collections.
 
-(Image to be added)
+For more information, see:
 
-**8**. Finally create app provisioning from Viva Engage group template.
++ :doc:`Teamwork templates </admin-settings/business-group-settings/team-collaboration/teamwork-v7/templates/index>`
 
-Example: Result when done creating Viva Engage group name like nhanyamer8:
- 
-(Image to be added)
++ :doc:`Templates for communities </admin-settings/business-group-settings/communities/communities-v7/templates/index>`
 
-And Sharepoint site:
++ :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
-(Image to be added)
-
-**Note!** If you want to use the new, improved Viva Engage integration, the Viva Engage integration Tenant Feature must also be activated, see: :doc:`Features - Tenant </admin-settings/tenant-settings/features/index>`
-
-
-
- 
-
-
-
-
-
-
-
-
++ :doc:`The Viva Engage feed block </blocks/yammer-feed/index>`
 
