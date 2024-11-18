@@ -1,8 +1,6 @@
 Setup Viva Engage in Omnia
 ============================
 
-**This page is being updated. Will be finished soon. The step-by-step instruction is not finished, but should still work as a general guideline.**
-
 Follow these steps to setup Viva Engage (former Yammer) in Omnia Online. 
 
 **1**. The account used to create the Viva Engage App needs to be at least Verified Admin in Viva Engage (Network Admin level is not enough), or alternatively Global Administrator in Microsoft 365. We recommend using a non-personal service account for creating the Viva Engage App, as the app stops working if the account used to create the app is deleted.
