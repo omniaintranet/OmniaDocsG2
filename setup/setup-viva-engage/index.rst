@@ -26,16 +26,19 @@ Note the question marks. You can click them for info.
 **Note!** Don't forget to copy the token, it will disappear when the page is closed.
 
 **5**. Go to Network admin -> Security settings. 
+
 **6**. Check "Enforce Office 365 identity". If it's not ticked, select it.
 
 .. image:: setup-viva-4.png
 
 **7**. Activate the tenant feature "Viva Engage integration" (Note: consent is needed).
+
 **8**. Add the Viva Engage secret, using the token created in step 4, in all business profiles where Viva Engage will be used.
 
 .. image:: setup-viva-5.png
 
 **9**. Setup templates (Teamwork and/or Community for Viva Engage groups), as needed.
+
 **10**. Additional setup as needed: Promotion channels and Viva Engage integration for page collections.
 
 For more information, see:
