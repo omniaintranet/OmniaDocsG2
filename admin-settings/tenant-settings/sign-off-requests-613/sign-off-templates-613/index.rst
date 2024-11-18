@@ -62,7 +62,7 @@ When you select "Specific page", continue like this:
 
 The selected pages are now added to the section, for example:
 
-.. image:: sign-off-requests-pages-section-77.png
+.. image:: sign-off-requests-pages-sections-77.png
 
 To remove a page from the list, click the dust bin.
 
