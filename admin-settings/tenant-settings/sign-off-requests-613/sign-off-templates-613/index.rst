@@ -3,7 +3,7 @@ Templates
 
 Here you can work with templates for sign-off requests. A template can then be used in a type. When creating sign-off requests a type is always used, where pages, or documents (Omnia 7.7 and later) from the template can be removed, and additional pages/documents added, if needed.
 
-.. image:: sign-off-requests-templates-new2.png
+.. image:: sign-off-requests-templates-77.png
 
 To edit a template, click the pen, to delete, click the dust bin.
 
@@ -13,15 +13,15 @@ To create a new template, do the following:
 
 1. click the plus.
 
-.. image:: sign-off-requests-templates-clickplus-new.png
+.. image:: sign-off-requests-templates-clickplus-77.png
 
 2. Use these options:
 
-.. image:: sign-off-requests-templates-options-613-1-frame.png
+.. image:: sign-off-requests-templates-options-77-1.png
 
 and these:
 
-.. image:: sign-off-requests-templates-options-613-2.png
+.. image:: sign-off-requests-templates-options-77-2.png
 
 3. Add a name for the template in any of the tenant languages.
 
