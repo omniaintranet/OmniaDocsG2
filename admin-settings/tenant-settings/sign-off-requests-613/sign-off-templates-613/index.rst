@@ -80,16 +80,25 @@ This option is available in Omnia 7.7 and later. You use it this way:
 
 1. Select "Published document" at the top.
 
-A list of all published documents in the tenant is shown, for example:
+If it is the current document that should signed-off, no further settings are needed, just click ADD.
 
-.. image:: sign-off-document-list-template.png
+.. image:: sign-off-document-current-template-77.png
 
-2. Browse the list or search for part of, or the whole document name.
-3. Select one or more documents to be signed off.
-4. Click ADD.
+2. If-it's other document(s) that should be added to the list, select "Specific document".
 
-.. image:: sign-off-document-list-clickadd-template.png
+A list of all published controlled documents in the tenant is shown, for example:
 
-5. Repeat the process til all documents for the sign-off request is added.
-6. Set all other settings for the sign-off request as described for pages.
+.. image:: sign-off-document-list-template-77-new.png
+
+3. Browse the list or search for part of, or the whole document name.
+4. Select one or more documents to be signed off.
+
+.. image:: sign-off-document-list-clickadd-template-new.png
+
+5. Click ADD.
+
+(The ADD button is found at the bottom of the list).
+
+6. Repeat the process til all documents for the sign-off request is added.
+7. Set all other settings for the sign-off request as described for pages.
 
