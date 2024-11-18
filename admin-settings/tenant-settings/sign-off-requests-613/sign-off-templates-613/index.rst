@@ -1,7 +1,7 @@
 Templates
 =============================================
 
-Here you can work with templates for sign-off requests. A template can then be used in a type. When creating sign-off requests a type is always used, where pages, or documents (Omnia 7.7 and later) from the template can be removed, and additional pages/documents added, if needed.
+Here you can work with templates for sign-off requests. A template can then be used in a type. When creating sign-off requests a type is always used, where pages, or published controlled documents (Omnia 7.7 and later) from the template can be removed, and additional pages/documents added, if needed.
 
 .. image:: sign-off-requests-templates-77.png
 
@@ -23,17 +23,17 @@ and these:
 
 .. image:: sign-off-requests-templates-options-77-2.png
 
-3. Add a name for the template in any of the tenant languages.
+3. Add a name for the template.
 
 4. Decide what settings should be possible to edit when the template is used to create a type, by activating/deactivating sections.
 
-.. image:: sign-off-requests-templates-sections.png
+.. image:: sign-off-requests-templates-sections-77.png
 
 5. Use the following possible settings:
 
 + **Title**: A title can be shown for the request and if activated (default) you can add a suggested title. 
-+ **Descriptiopn**: A descriprion can be shown for the request and if activated (default) you can add a suggested description. 
-+ **To be signed off**: Here you add pages that should be read and signed off. See below for more information.
++ **Descriptiopn**: A description can be shown for the request and if activated (default) you can add a suggested description. 
++ **To be signed off**: Here you add pages or controlled documents that should be read and signed off. See below for more information.
 + **Sign-off type**: Select how the sign-off request will be handled. If you select “Individual”, all users added to “Request sent to” will receive a personal request. Everyone has to sign-off individually. If you select “Group”, it works as one group request, meaning it’s enough that any one of the recipients signs-off the request. All other recipients can see that the request was sent to them and can see if someone in the group has signed off, they can see if the task is done or not.
 + **Requested by**: Add one or more users, or groups, that will be shown as the “sender” of this request. Will be shown to the receivers. Your name will be pre populated but it can be removed. This field must always contain at least one person or group. To add several users or a group here can be useful, then all users, or the whole group, will be able to follow up on the request. 
 + **Request sent to**: Select one or more users or groups to send to. Single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). 
@@ -46,13 +46,13 @@ Here's how to add pages to be signed off:
 
 1. Click ADD.
 
-.. image:: sign-off-requests-pages-add.png
+.. image:: sign-off-requests-pages-add-77.png
 
 2. Choose "Current page" or a "Specific page".
 
-.. image:: sign-off-requests-pages-current.png
+.. image:: sign-off-requests-pages-current-77.png
 
-If you select "Current page" the actual page where the sign-off request is placed can be signed off, wherever that is.
+If you select "Current page" the actual page where the sign-off request is placed can be signed off, wherever that is. No further settings are needed.
 
 When you select "Specific page", continue like this:
 
@@ -62,13 +62,13 @@ When you select "Specific page", continue like this:
 
 The selected pages are now added to the section, for example:
 
-.. image:: sign-off-requests-pages-section.png
+  .. image:: sign-off-requests-pages-section-77.png
 
 To remove a page from the list, click the dust bin.
 
 6. If you would like to add a message about a page, click the pen and add the message.
 
-.. image:: sign-off-requests-pages-section-message.png
+.. image:: sign-off-requests-pages-section-message-77.png
 
 7. Repeat adding pages the same way until all pages you want in the template are in place.
 
