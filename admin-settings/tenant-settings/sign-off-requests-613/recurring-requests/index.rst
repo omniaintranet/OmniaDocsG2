@@ -1,17 +1,15 @@
 Recurring requests
 ========================
 
-This is a new option in Omnia 7.6. 
-
 Use this option to set up sign-off requests that occurs with regular intervals, with an end date, or just rolling until you change it.
 
 If any recurring requests has been set up, they are shown in the list. All settings, as described below, can be edited. Click the pen. A recurring request you no longer need can be deleted (the dust bin). But remember, you can easily edit a request for another use.
 
-.. image:: recurring-requests-main.png
+.. image:: recurring-requests-main-77.png
 
 The following settings are available for a new, recurring request:
 
-.. image:: recurring-requests-new.png
+.. image:: recurring-requests-new-77.png
 
 + **Name**: Add a name for the list of recurring requests. Not shown for users.
 + **Type**: Select a type of request. Types are set up using the "Type" option for requests.
