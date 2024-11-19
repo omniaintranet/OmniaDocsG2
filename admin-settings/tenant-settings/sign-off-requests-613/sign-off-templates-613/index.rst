@@ -75,8 +75,10 @@ To remove a page from the list, click the dust bin.
 8. Click SAVE to save the template.
 
 Add documents to be signed off
-------------------------------------
-This option is available in Omnia 7.7 and later. You use it this way:
+---------------------------------
+In Omnia 7.7 and later, published controlled documents can be signed-off. A sign-off request can contain bot pages and documents.
+
+You use it this way:
 
 1. Select "Published document" at the top.
 
