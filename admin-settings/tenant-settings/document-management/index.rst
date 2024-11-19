@@ -3,9 +3,9 @@ Document management
 
 Here you handle all the settings for Document management.
 
-Prerequisite: The tenant feature "Controlled documents" must be active for these options to be available. (Image from Omnia 7.6).
+Prerequisite: The tenant feature "Controlled documents" must be active for these options to be available.
 
-.. image:: document-management-all-nv76.png
+.. image:: document-management-all-77.png
 
 Select section for a description:
 
