@@ -7,7 +7,7 @@ General
 *********
 You can set this on the "General" tab:
 
-.. image:: document-management-settings-general-v7.png
+.. image:: document-management-settings-general-v77.png
 
 + **Authors of controlled documents**: Here you can set the type of permissions to be used in controlled documents libraries in the tenant. 
 
@@ -22,7 +22,7 @@ Document Id format
 *********************
 Here you set the prefix for the Document id for this tenant.
 
-.. image:: document-management-settings-format-v7.png
+.. image:: document-management-settings-format-v77.png
 
 When a new controlled document is published the first time, a document id is set for the document, based on the prefix from the settings. This document id is then the same in all future editions of the document and is an important part of tracking published editions of the document. 
 
