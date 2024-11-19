@@ -9,7 +9,7 @@ If you have created any, they will be listed here:
 
 .. image:: sign-off-types-list-77.png
 
-When editing a type (the pen) all settings can be changed, see below. And as usual, click the dust bin tp delete a type that is no longer needed. A type that is curently used in a request can not be deleted.
+When editing a type (the pen) all settings can be changed, see below. And as usual, click the dust bin to delete a type that is no longer needed. A type that is currently used in a request can not be deleted.
 
 Create a new type
 *********************
