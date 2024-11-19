@@ -62,7 +62,7 @@ When you select "Specific page", continue like this:
 
 The selected pages are now added to the section, for example:
 
-.. image:: sign-off-requests-pages-sections-77.png
+.. image:: sign-off-requests-pages-sections-77-frame.png
 
 To remove a page from the list, click the dust bin.
 
@@ -80,11 +80,11 @@ This option is available in Omnia 7.7 and later. You use it this way:
 
 1. Select "Published document" at the top.
 
-If it is the current document that should signed-off, no further settings are needed, just click ADD.
+If it's the current document that should be signed-off, no further settings are needed, just click ADD.
 
 .. image:: sign-off-document-current-template-77.png
 
-2. If-it's other document(s) that should be added to the list, select "Specific document".
+2. If it's one or more other documents that should be added to the list, select "Specific document".
 
 A list of all published controlled documents in the tenant is shown, for example:
 
