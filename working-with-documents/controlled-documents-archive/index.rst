@@ -5,7 +5,7 @@ There is always at least one archive for a Document management installation, reg
 
 The addresses to the archive(s) are shown in Document managment settings in Omnia admin.
 
-.. image:: dm-archive-address-new2.png
+.. image:: dm-archive-address-77.png
 
 To be able to access the archive, you must have permission to do so. This permission is completely separate from any set in the teamsite. The archive exists in a different page collection. 
 
