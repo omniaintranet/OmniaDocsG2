@@ -34,7 +34,7 @@ Here you can add one or more base queries that always should be executed in the 
 
 Here's an example of a base query:
 
-.. image:: document-management-base-query-v7.png
+.. image:: document-management-base-query-v77.png
 
 You use Keyword Query Language (KQL) here. To learn more about KQL, see this Microsoft page: https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
 
