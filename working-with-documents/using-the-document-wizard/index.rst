@@ -1,6 +1,8 @@
 Using the Create new document wizard
 ============================================
 
+**This page is bening edited**.
+
 The Create new document wizard can be used to create either controlled documents or standard documents. A new document created in the wizard can be saved in any libray the logged in user has access to (a controlled documents library for a controlled document or a documents library for a standard document). It can also be possible to save new standard documents to the user's OneDrive.
 
 This wizard is always available in all controlled documents libraries.
@@ -9,9 +11,11 @@ To be available in other document libraries, the Create new document wizard must
 
 The wizard can also be available in the action menu:
 
-.. image:: action-menu-document-wizard.png
+.. image:: action-menu-document-wizard-77.png
 
 The setting for making the wizard available in the action menu is found in the header settings for the business profile. See the heading "Action menu" on this page for more information about the setting: :doc:`Header settings for the business profile </admin-settings/business-group-settings/settings/header/index>`
+
+An action button can also be used to start the wizard. An action button block can be placed on any publishing page. For more information, see this page: :doc:`The Action button block </blocks/button-link/index>` 
 
 Creating a new controlled document
 ************************************
@@ -19,32 +23,32 @@ Use the wizard this way to create a new controlled document:
 
 1. See to that "Controlled document" is selected.
 
-.. image:: new-controlled-1-new3.png
-
 2. Select language if needed.
 
-.. image:: document-wizard-language-new3.png
+.. image:: new-controlled-1-77.png
 
 There can be different sets of document types depending on language chosen. If your organization is producing controlled documents in several languages, you may have to select language to see the correct set of document types.
 
 3. If the suggested document type is not the one you want, click ALL and the complete list is shown.
 
-.. image:: document-wizard-all.png
+(Image to be added)
 
 4. Select the document type the template belongs to.
 
 The document types are set up in Omnia admin. The first list you will see here is normally the most commonly used document types. A document type contains a number of templates. You may have to open a group to find the document type you're after.
 
+.. image:: document-wizard-types-group.png
+
 An i-icon is displayed if a description has been added to a ducment type. Point at the i-icon to read the description.
 
-.. image:: document-wizard-i-icon-frame.png
+.. image:: document-wizard-i-icon-77.png
 
-5. Select template document. You must click on the template, even if there's only one.
+5. Select template. You must click on the template, even if there's only one.
 6. Add a title for the new document.
 7. Select/add document owner.
 8. Set the other settings that may be needed, depending on document type.
 
-.. image:: new-controlled-5-new4.png
+.. image:: new-controlled-5-77.png
 
 **Note!** A term that has been translated in the term store will be shown in the document's language here. Also note that placeholders in DOCX and XLSX are replaced with terms based on the document's language.
 
