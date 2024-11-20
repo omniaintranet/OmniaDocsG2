@@ -7,7 +7,7 @@ General
 *********
 You can set this on the "General" tab:
 
-.. image:: document-management-settings-general-v77.png
+.. image:: document-management-settings-general-v77-covered.png
 
 + **Authors of controlled documents**: Here you can set the type of permissions to be used in controlled documents libraries in the tenant. 
 
