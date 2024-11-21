@@ -35,6 +35,8 @@ Weekday is Monday to Friday, as opposed to "Every X day(s)". All other options s
 
 Note that if you should select a day that is not a weekday as the first send out, the first weekday is still used automatically.
 
+The option "Never" can be useful if there's a recurring request you want to keep but it shouldn't be active at the moment. You can see it as a pause option.
+
 3. Save the settings.
 
 When the recurrence settings has been done, you can now see that the information about recurrence has been changed according to your settings. 
