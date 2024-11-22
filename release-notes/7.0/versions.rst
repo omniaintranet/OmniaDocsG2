@@ -1,3 +1,14 @@
+7.6.47
+========================================
+(Omnia 7.6.47 / Workplace 7.6.33 / WCM 7.6.37 / MS 7.6.25 / Analytics 7.6.2)
+
+- Added support for prefix and suffixes in the user type mapping rules (#161921).
+- Additional performance improvements to the people picker (#157771, #162180).
+- Removed an incorrect permission requirement on the Default community template feature.
+- Corrected an UI glitch on the one-time link login method. It now displays the configured number of minutes (#162156).
+- Stability improvements to the Entra ID sync relating to moving user between owner and member inside of a MS Teams team. (#161607).
+- Improved validation logic for the email field in self-service user registration (#162313).
+
 7.6.44
 ========================================
 (Omnia 7.6.44 / Workplace 7.6.32 / WCM 7.6.35 / MS 7.6.25 / Analytics 7.6.2)
