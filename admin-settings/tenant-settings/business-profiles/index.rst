@@ -7,19 +7,19 @@ Settings for teamwork, the notification panel, search, event management, workspa
 
 When adding and editing settings for a specific Business Profile, you must first select the Profile in this list. The available settings for the Business Profile are then available.
 
-.. image:: business-profile-settings-v7.png
+.. image:: business-profile-settings-v77.png
 
-Use the icons this way: the left-most icon to edit app route, if applicable; the pen to edit the title and a few more settings; the dust bin to delete the business profile.
+Use the icons this way: the left-most icon to edit Omnia alias, if applicable; the pen to edit the title and a few more settings; the dust bin to delete the business profile.
 
-For descriptions of settings, see: :doc:`Business Profile settings </admin-settings/business-group-settings/index>`
+For descriptions of settings, see: :doc:`Business profile settings </admin-settings/business-group-settings/index>`
 
-Edit app route
-***************
-If needed (and if it's applicable for the business profile) you can click the left-most icon to edit the app route.
+Edit Omnia alias
+******************
+If needed (and if it's applicable for the business profile) you can click the left-most icon to edit the Omnia alias.
 
-.. image:: business-profile-app-route-v7.png
+.. image:: business-profile-app-route-v77.png
 
-**Note!** Only one app route can exist. It's set here for the business profile, or for the workspace. If set in one of these places, it's then not available in the other one. 
+**Note!** Only one Omnia alias can exist. It's set here for the business profile, or for the workspace. If set in one of these places, it's then not available in the other one. 
 
 If the root route is set for the business profile, it's shown this way:
 
