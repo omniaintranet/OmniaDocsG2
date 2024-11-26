@@ -87,7 +87,7 @@ The settings are organized into five tabs, see the sections below.
 
 General
 --------
-The General tab contains the following settings:
+The General tab contains the following settings in Omnia 7.6. For settings in Omnia 7.7 and later, see below.
 
 .. image:: document-type-general-v7.png
 
@@ -101,9 +101,25 @@ The General tab contains the following settings:
 + **Is record**: Some controlled documents may not need to be updated, just to be used as is. To set that for this document type, select this option. See below for more information.
 + **Enable Create Document feature in Document Rollup**: In the document rollup the “Create Document Icon” column can be added. A document can be created using this option only if it belongs to a document type that has this option selected. if not, the option is not shown.
 + **Enable track changes when sending for comments**: Microsoft Word's options Track changes can be really useful when sending a document for comments. Select this option to automatically enable these options in Word.
-+ **Enable "Show changes" button to document authors**: If the Draftable feature is activated, this option is available here. Select to enable the button "Show changes" for Draftable. See this page for mopre information about Draftable: :doc:`See changes in a controlled document </user-options/see-changes-in-controlled-document/index>`
++ **Enable 'Show changes' button to document authors**: If the Draftable feature is activated, this option is available here. Select to enable the button "Show changes" for Draftable. See this page for mopre information about Draftable: :doc:`See changes in a controlled document </user-options/see-changes-in-controlled-document/index>`
++ **Enable 'Show changes' button in a document rollup**: If the Draftable feature is activated, this option can be made available in a document rollup. For more info about Draftable, see link above. For more information about document rollups, see: :doc:`The document rollup block</blocks/document-rollup/index>`
 
 Don't forget to save when you're done.
+
+Additional options in Omnia 7.7 and later
+------------------------------------------
+In Omnia 7.7 and later it's possible to create sign-off requests for documents, but the "old" way - read receipts - is still available. Here you decide to activate one or both, or neither for that matter.
+
+These settings are available in 7.7 and later, for a document type:
+
+.. image:: odm-options-new-77-1.png
+
+and these:
+
+ .. image:: odm-options-new-77-2.png
+
++ **Enable read receipts**: If it should be possible to send read receipts when a new controlled document is published, select this option. It's then up to the document editor to decide to use it or not each time a document is published.
++ **Enable sign-off request**: If it should be posible for published controlled documents of this type to be added to sign-off requests, select this option. See this page for more information: :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
 
 Options for Is Record
 ----------------------
