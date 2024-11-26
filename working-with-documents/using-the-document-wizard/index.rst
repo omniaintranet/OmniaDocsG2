@@ -29,11 +29,7 @@ Use the wizard this way to create a new controlled document:
 
 There can be different sets of document types depending on language chosen. If your organization is producing controlled documents in several languages, you may have to select language to see the correct set of document types.
 
-3. If the suggested document type is not the one you want, click ALL and the complete list is shown.
-
-(Image to be added)
-
-4. Select the document type the template belongs to.
+3. Select the document type the template belongs to.
 
 The document types are set up in Omnia admin. The first list you will see here is normally the most commonly used document types. A document type contains a number of templates. You may have to open a group to find the document type you're after.
 
@@ -43,31 +39,31 @@ An i-icon is displayed if a description has been added to a ducment type. Point 
 
 .. image:: document-wizard-i-icon-77.png
 
-5. Select template. You must click on the template, even if there's only one.
-6. Add a title for the new document.
-7. Select/add document owner.
-8. Set the other settings that may be needed, depending on document type.
+4. Select template. You must click on the template, even if there's only one.
+5. Add a title for the new document.
+6. Select/add document owner.
+7. Set the other settings that may be needed, depending on document type.
 
 .. image:: new-controlled-5-77.png
 
 **Note!** A term that has been translated in the term store will be shown in the document's language here. Also note that placeholders in DOCX and XLSX are replaced with terms based on the document's language.
 
-9. Choose where to save the new document. 
+8. Choose where to save the new document. 
 
-.. image:: new-controlled-6-new3.png
+.. image:: new-controlled-6-77.png
 
 **Important note!** In some rare cases the properties to fill in can't be made available in the wizard until the place to save the document has been selected.
 
-If you are creating a new document in a controlled documents library, the active site is selected in the SUGGESTED list. If you have started the wizard from the action menu, some common locations can be suggested, as is shown in the above image.
+If you are creating a new document in a controlled documents library, the active site is selected in the SUGGESTED list. If you have started the wizard from the action menu, some common locations can be suggested.
 
-10. To select where to save the document, use the lists SUGGESTES, FOLLOWED and ALL to navigate to the site. Use ALL to search for a library,
+10. To select where to save the document, use the lists SUGGESTES and FOLLOWED to navigate to the site. Use ALL to search for a library,
 11. Click CREATE.
 
-.. image:: new-controlled-7-new3.png
+.. image:: new-controlled-7-77.png
 
 The document is now created in the chosen location and you can work on it the usual way. The location is normally opened automatically so you can start working on the document right away.
 
-.. image:: new-controlled-8-new3.png
+.. image:: new-controlled-8-77.png
 
 **Note!** If you come across metadata fields (placeholders) visible in the document, displayed within double brackets, they should not be used in the editing process. Information will be added to these fields when the document is published.
 
