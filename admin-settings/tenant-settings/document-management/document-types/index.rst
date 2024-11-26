@@ -116,7 +116,7 @@ These settings are available in 7.7 and later, for a document type:
 
 and these:
 
- .. image:: odm-options-new-77-2.png
+.. image:: odm-options-new-77-2.png
 
 + **Enable read receipts**: If it should be possible to send read receipts when a new controlled document is published, select this option. It's then up to the document editor to decide to use it or not each time a document is published.
 + **Enable sign-off request**: If it should be posible for published controlled documents of this type to be added to sign-off requests, select this option. See this page for more information: :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
