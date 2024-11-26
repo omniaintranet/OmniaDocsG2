@@ -88,7 +88,11 @@ The selected pages are now added to the list of pages, see above.
 
 To add or remove documents
 ----------------------------------------
-Only published, controlled documents can be signed off. This option is available in Omnia 7.7 and later. You use it this way:
+Only published, controlled documents can be signed off. This option is available in Omnia 7.7 and later. 
+
+**Important note!** In the settings for the document type, the option "Enable sign-off request" must be selected for this to work.
+
+You add documnets this way:
 
 1. Select "Published document" at the top.
 
