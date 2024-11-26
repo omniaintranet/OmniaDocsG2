@@ -35,6 +35,8 @@ Here's an example of two documents being requested for sign-off :
 
 A document opens the usual way and after having read it, the user then returns to this list and ticks the box.
 
+*Important note!** In the settings for the document type, the option "Enable sign-off request" must be selected for signing off documents to work. If this hasn't been done a error message could be display here.
+
 Settings
 **********
 The following settings can be available:
