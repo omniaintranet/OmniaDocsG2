@@ -42,6 +42,8 @@ and these:
 
 Add pages to be signed off
 ---------------------------
+*Important note!** In the settings for the document type, the option "Enable sign-off request" must be selected for this to work.
+
 Here's how to add pages to be signed off:
 
 1. Click ADD.
