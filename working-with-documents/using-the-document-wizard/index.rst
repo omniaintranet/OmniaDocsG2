@@ -80,47 +80,51 @@ To create a new normal document, do the following:
 1. Start the document wizard where it is available.
 2. Make sure Controlled document is NOT selected (if a user don't have permission to create controlled documents, the option can't be selected).
 
-.. image:: normal-document-1-new3.png
+.. image:: normal-document-1-77.png
 
-3. Select language for the template.
+3. Select language for the template if needed.
 
-.. image:: normal-document-2-new3.png
+.. image:: normal-document-2-77.png
 
 4. Open a template group if necessary, and then select template.
 
-.. image:: normal-document-3-new3.png
+.. image:: normal-document-3-77.png
 
 5. Add a title, edit the file name and add other information that may be needed for the template, depending on how it's set up.
 
-.. image:: normal-document-4-new3.png
+.. image:: normal-document-4-77.png
 
 6. Select a location to save the document to.
 
-.. image:: normal-document-5-new3.png
+.. image:: normal-document-5-77.png
 
 OneDrive is your personal Microsoft 365 OneDrive. If "Intranet" is selected - if available - a list of folders you have access to in the intranet is shown. The rest of the locations are normally available teamsites. If you select ALL you can search for a document libary.
 
-**Note!** For the OneDreive option to be available, the tenant feature "Save to OneDrive" must be active. This is done by a tenant administrator.
+**Note!** For the OneDrive option to be available, the tenant feature "Save to OneDrive" must be active. This is done by a tenant administrator.
 
 7. Select folder in that location.
 
-.. image:: normal-document-6-new3.png
+.. image:: normal-document-6-77.png
 
 It can be possible to select or create a new folder in some document libraries, if necessary. That is normally true, for example, for document libraries in teamsites where you are a member.
 
 When you point at a libray or folder, an arrow is shown:
 
-.. image:: normal-document-arrow-new.png
+.. image:: normal-document-arrow-77.png
 
-Click the arrow and folders are shown, if any exist. You can select a folder to save the document in. If you need to create a new folder, that option is found at the bottom of the folder list, for example:
+Click the arrow and folders are shown, if any exist. You can select a folder to save the document in. 
 
-.. image:: normal-document-folders-new.png
+8. Create a subfolder if needed.
+
+.. image:: normal-document-folders-77.png
+
+Note that the option to create a new folder always is available at the bottom of the folder list. So if it's a long list of folders you may have to scroll down to find it.
 
 When you have selected library, and folder if necessary:
 
 8. Click CREATE.
 
-.. image:: normal-document-7-new3.png
+.. image:: normal-document-7-77.png
 
 The document is normally opened so you can start working on it. 
 
