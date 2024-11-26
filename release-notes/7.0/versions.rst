@@ -1,3 +1,11 @@
+7.6.49
+========================================
+(Omnia 7.6.49 / Workplace 7.6.33 / WCM 7.6.38 / MS 7.6.26 / Analytics 7.6.2)
+
+- Corrected a text theme bug in the search block (#162265).
+- The document picker now works correctly if you have more categories than there is space for (#162327).
+- Improved stability for user deletion scenarios on user management (#162218).
+
 7.6.47
 ========================================
 (Omnia 7.6.47 / Workplace 7.6.33 / WCM 7.6.37 / MS 7.6.25 / Analytics 7.6.2)
