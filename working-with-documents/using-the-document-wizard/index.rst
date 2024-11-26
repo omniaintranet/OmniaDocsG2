@@ -56,6 +56,8 @@ An i-icon is displayed if a description has been added to a ducment type. Point 
 
 .. image:: new-controlled-6-new3.png
 
+**Important note!** In some rare cases the properties to fill in can't be made available in the wizard until the place to save the document has been selected.
+
 If you are creating a new document in a controlled documents library, the active site is selected in the SUGGESTED list. If you have started the wizard from the action menu, some common locations can be suggested, as is shown in the above image.
 
 10. To select where to save the document, use the lists SUGGESTES, FOLLOWED and ALL to navigate to the site. Use ALL to search for a library,
