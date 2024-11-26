@@ -1,3 +1,43 @@
+7.7.1 - Draft
+========================================
+(Omnia 7.7.1 / Workplace 7.7.1 / WCM 7.7.1 / MS 7.7.1 / Analytics 7.7.1)
+
+New features
+************
+
+- Filter settings can now be used in the document rollup when "Pick documents" are used.
+
+
+Fixes
+************
+
+- Fixed an issue with exporting large document rollups to excel (#159418, #159484, #159146, #154679).
+- The user picker is now used when mentioning people in comments, this allows you to search with space.
+- Fixed an issue that could prevent editing permissions on Controlled Documents in some scenarios (#153970).
+- Ensured correct date formatting on dates in the properties block (#158830).
+- Fixed an issue that would prevent appendices to show correctly in Controlled Documents libraries (#146892).
+- When using controlled documents from MS Teams, the current team now shows as the first suggestion (#144195).
+- Fixed the refiner sort order of the document rollup when showing zero refiner results (#152919).
+- Fixed several issues in the search statistics dialog (#156339).
+- '&' signs can now be used in excel headers and footers used by Controlled Documents (use a double &&).
+- The date picker now localizes correctly (#156633).
+- The "link a process" picker has been improved and updated to not show duplicates (#157332).
+- The controlled documents library component has improved handling of adding and removing default document types (#148176).
+- Omnia will no longer load in the SharePoint app of MS Teams since it is no longer supported by Microsoft (#152811).
+- The convert to PDF checkbox in the controlled documents publish flow will now remember its setting from the previous publish (#158240).
+- Document templates for normal documents are now sorted alphabetically (#157835).
+- Corrected dialog and popup behaviour for controlled documents libraries in SharePoint.
+- 
+
+WCAG Fixes
+************
+- All RTF actions now have correct labels and indicate if they are active or not.
+- Added correct behaviours to the search box icon and input field (#150164).
+- People properties are now correctly read by screen readers (#150146).
+
+
+
+
 7.6.49
 ========================================
 (Omnia 7.6.49 / Workplace 7.6.33 / WCM 7.6.38 / MS 7.6.26 / Analytics 7.6.2)
