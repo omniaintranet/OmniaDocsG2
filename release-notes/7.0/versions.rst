@@ -1,6 +1,6 @@
-7.7.1 - Draft
+7.7.2 - Draft
 ========================================
-(Omnia 7.7.1 / Workplace 7.7.1 / WCM 7.7.1 / MS 7.7.1 / Analytics 7.7.1)
+(Omnia 7.7.2 / Workplace 7.7.0 / WCM 7.7.1 / MS 7.7.1 / Analytics 7.7.1)
 
 New features
 ************
