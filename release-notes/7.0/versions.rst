@@ -6,6 +6,11 @@ New features
 ************
 
 - Filter settings can now be used in the document rollup when "Pick documents" are used.
+- Custom date spans can now be used in all KQL based rollups.
+- A new UI for restricting system email exchange accounts has been made available.
+- Link files are now supported by the document rollup (#157603).
+- New components for profile completeness. 
+- Sign off requests are now available for controlled documents.
 
 
 Fixes
@@ -14,7 +19,7 @@ Fixes
 - Fixed an issue with exporting large document rollups to excel (#159418, #159484, #159146, #154679).
 - The user picker is now used when mentioning people in comments, this allows you to search with space.
 - Fixed an issue that could prevent editing permissions on Controlled Documents in some scenarios (#153970).
-- Ensured correct date formatting on dates in the properties block (#158830).
+- Ensured correct date formatting on dates in the properties block (#158830, #160508).
 - Fixed an issue that would prevent appendices to show correctly in Controlled Documents libraries (#146892).
 - When using controlled documents from MS Teams, the current team now shows as the first suggestion (#144195).
 - Fixed the refiner sort order of the document rollup when showing zero refiner results (#152919).
@@ -27,13 +32,20 @@ Fixes
 - The convert to PDF checkbox in the controlled documents publish flow will now remember its setting from the previous publish (#158240).
 - Document templates for normal documents are now sorted alphabetically (#157835).
 - Corrected dialog and popup behaviour for controlled documents libraries in SharePoint.
-- 
+- The document rollup now utilizes the available width in a more efficient way (#154713).
+- The unpublish comment is now part of the workflow history.
+- The Sign-off request rollup can now query by requested by. 
+- Stability improvements to the Teamwork tab provisioning (#151771).
+- Rich text comments now work well in mobile.
+
 
 WCAG Fixes
 ************
 - All RTF actions now have correct labels and indicate if they are active or not.
 - Added correct behaviours to the search box icon and input field (#150164).
 - People properties are now correctly read by screen readers (#150146).
+- The stepper components now works well with screen readers (#150166).
+- The create page dialog can now correctly set dates using the keyboard.
 
 
 
