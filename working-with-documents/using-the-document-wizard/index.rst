@@ -7,13 +7,18 @@ This wizard is always available in all controlled documents libraries.
 
 To be available in other document libraries, the Create new document wizard must be activated in the features for each teamwork app. 
 
-The wizard can also be available in the action menu:
+The wizard can also be made available this way:
+
++ In the action menu.
++ Through a button in a action button block.
+
+Here's an example for the action menu:
 
 .. image:: action-menu-document-wizard-77.png
 
 The setting for making the wizard available in the action menu is found in the header settings for the business profile. See the heading "Action menu" on this page for more information about the setting: :doc:`Header settings for the business profile </admin-settings/business-group-settings/settings/header/index>`
 
-An action button can also be used to start the wizard. An action button block can be placed on any publishing page. For more information, see this page: :doc:`The Action button block </blocks/button-link/index>` 
+An action button block can be placed on any publishing page. For more information, see this page: :doc:`The Action button block </blocks/button-link/index>` 
 
 Creating a new controlled document
 ************************************
