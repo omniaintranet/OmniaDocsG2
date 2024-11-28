@@ -34,13 +34,13 @@ There can be different sets of document types depending on language chosen. If y
 
 3. Select the document type the template belongs to.
 
-There can also be one or more suggested templates shown. See below for info about how this works.
+There can also be one or more suggested templates shown. See below for more info.
 
 The document types are set up in Omnia admin. The first list you will see here is normally the most commonly used document types. A document type contains a number of templates. You may have to open a group to find the document type you're after.
 
 .. image:: document-wizard-types-group.png
 
-An i-icon is displayed if a description has been added to a ducment type. Point at the i-icon to read the description.
+An i-icon is displayed if a description has been added to a document type. Point at the i-icon to read the description.
 
 .. image:: document-wizard-i-icon-77.png
 
@@ -57,7 +57,7 @@ An i-icon is displayed if a description has been added to a ducment type. Point 
 
 .. image:: new-controlled-6-77.png
 
-**Note!** In some rare cases available properties depends on where the document will be saved. In these cases, the correct propertes are shown the place to save the document has been selected.
+**Note!** In some rare cases available properties depends on where the document will be saved. In these cases, the correct propertes are shown after the place to save the document has been selected.
 
 If you are creating a new document in a controlled documents library, the active site is selected in the SUGGESTED list. If you have started the wizard from the action menu, some common locations can be suggested.
 
@@ -76,21 +76,19 @@ The document is now created in the chosen location and you can work on it the us
 
 Suggested templates
 ---------------------
-An administrator of a controlled documents library can set up one or more suggested templates, the stream line the process. It can be useful if there's one or a few templates that is, or should be, used very often.
+An administrator of a controlled documents library can set up one or more suggested templates, to stream line the process. It can be useful if there's one or a few templates that is, or should be, used very often.
 
-If suggested templates have been set up, ut can look like this:
+If suggested templates have been set up, it can look like this:
 
 .. image:: suggested-templates.png
 
-In the example above, two templates are available on the tab SUGGESTED. To use one of them, just click the template and add name, properties and a place to save, as described above.
+In the example above, two templates are available on the SUGGESTED tab. To use one of them, just click the template and add name, properties and a place to save, as described above.
 
 If you need to use another template, click ALL.
 
 Creating a standard document
 ******************************
-An author of controlled documents can always create standard documents as well in the controlled documents library he or she has access to, if templates for standard documents are set up in Omnia admin. To make it possible for other users to create standard documents using the document wizard, some kind of access to the wizard has to be set up. For example, an icon can be visible in the action menu as shown above.
-
-This is done using the admin settings for the business profile. See this page for more information: :doc:`Settings for the business profile </admin-settings/business-group-settings/settings/index>`
+An author of controlled documents can always create standard documents as well in the controlled documents library he or she has access to, if templates for standard documents are set up in Omnia admin. To make it possible for other users to create standard documents using the document wizard, some kind of access to the wizard has to be set up, see above.
 
 To create a new normal document, do the following:
 
@@ -115,9 +113,9 @@ To create a new normal document, do the following:
 
 .. image:: normal-document-5-77.png
 
-OneDrive is your personal Microsoft 365 OneDrive. If "Intranet" is selected - if available - a list of folders you have access to in the intranet is shown. The rest of the locations are normally available teamsites. If you select ALL you can search for a document libary.
+OneDrive is your personal Microsoft 365 OneDrive and should normally be used only for documents you don't need to share. If "Intranet" is selected - if available - a list of folders you have access to in the intranet is shown. The rest of the locations are normally available teamsites. If you select ALL you can search for a document libary.
 
-**Note!** For the OneDrive option to be available, the tenant feature "Save to OneDrive" must be active. This is done by a tenant administrator.
+**Note!** For the OneDrive option to be available, the tenant feature "Save to OneDrive" must be active. 
 
 7. Select folder in that location.
 
@@ -125,7 +123,7 @@ OneDrive is your personal Microsoft 365 OneDrive. If "Intranet" is selected - if
 
 It can be possible to select or create a new folder in some document libraries, if necessary. That is normally true, for example, for document libraries in teamsites where you are a member.
 
-When you point at a libray or folder, an arrow is shown:
+When you point at a libray or folder, an arrow is displayed:
 
 .. image:: normal-document-arrow-77.png
 
@@ -135,7 +133,7 @@ Click the arrow and folders are shown, if any exist. You can select a folder to 
 
 .. image:: normal-document-folders-77.png
 
-Note that the option to create a new folder always is available at the bottom of the folder list. So if it's a long list of folders you may have to scroll down to find it.
+Note that the option to create a new folder, always is available at the bottom of the folder list. So if it's a long list of folders you may have to scroll down to find it.
 
 When you have selected library, and folder if necessary:
 
