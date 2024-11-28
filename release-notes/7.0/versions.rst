@@ -11,6 +11,7 @@ New features
 - Link files are now supported by the document rollup (#157603).
 - New components for profile completeness. 
 - Sign off requests are now available for controlled documents.
+- New responsive design and behaviours for the stepper section (#142446).
 
 
 Fixes
