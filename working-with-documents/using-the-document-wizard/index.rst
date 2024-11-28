@@ -1,8 +1,6 @@
 Using the Create new document wizard
 ============================================
 
-**This page is bening edited**.
-
 The Create new document wizard can be used to create either controlled documents or standard documents. A new document created in the wizard can be saved in any libray the logged in user has access to (a controlled documents library for a controlled document or a documents library for a standard document). It can also be possible to save new standard documents to the user's OneDrive.
 
 This wizard is always available in all controlled documents libraries.
@@ -30,6 +28,8 @@ Use the wizard this way to create a new controlled document:
 There can be different sets of document types depending on language chosen. If your organization is producing controlled documents in several languages, you may have to select language to see the correct set of document types.
 
 3. Select the document type the template belongs to.
+
+There can also be one or more suggested templates shown. See below for info about how this works.
 
 The document types are set up in Omnia admin. The first list you will see here is normally the most commonly used document types. A document type contains a number of templates. You may have to open a group to find the document type you're after.
 
@@ -68,6 +68,18 @@ The document is now created in the chosen location and you can work on it the us
 **Note!** If you come across metadata fields (placeholders) visible in the document, displayed within double brackets, they should not be used in the editing process. Information will be added to these fields when the document is published.
 
 **Note!** If a term that has been translated in the term store will be shown in the list, it's shown in the user's language. When properties are displayed for a document, in that window, the term is shown in the document's language.
+
+Suggested templates
+---------------------
+An administrator of a controlled documents library can set up one or more suggested templates, the stream line the process. It can be useful if there's one or a few templates that is, or should be, used very often.
+
+If suggested templates have been set up, ut can look like this:
+
+.. image:: suggested-templates.png
+
+In the example above, two templates are available on the tab SUGGESTED. To use one of them, just click the template and add name, properties and a place to save, as described above.
+
+If you need to use another template, click ALL.
 
 Creating a standard document
 ******************************
