@@ -86,7 +86,7 @@ In the example above, two templates are available on the SUGGESTED tab. To use o
 
 If you need to use another template, click ALL.
 
-For more information, see the heading "Default document types" on this page: :doc:`Controlled document library settings </working-with-documents/controlled-documents-library-settingsndex>`
+For more information, see the heading "Default document types" on this page: :doc:`Controlled document library settings </working-with-documents/controlled-documents-library-settings/index>`
 
 Creating a standard document
 ******************************
