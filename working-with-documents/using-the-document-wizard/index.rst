@@ -86,6 +86,8 @@ In the example above, two templates are available on the SUGGESTED tab. To use o
 
 If you need to use another template, click ALL.
 
+For more information, see the heading "Default document types" on this page: :doc:`Controlled document library settings </working-with-documents/controlled-documents-library-settingsndex>`
+
 Creating a standard document
 ******************************
 An author of controlled documents can always create standard documents as well in the controlled documents library he or she has access to, if templates for standard documents are set up in Omnia admin. To make it possible for other users to create standard documents using the document wizard, some kind of access to the wizard has to be set up, see above.
