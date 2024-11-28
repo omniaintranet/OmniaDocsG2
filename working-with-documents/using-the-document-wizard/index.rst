@@ -10,7 +10,7 @@ To be available in other document libraries, the Create new document wizard must
 The wizard can also be made available this way:
 
 + In the action menu.
-+ Through a button in a action button block.
++ Through a button in an action button block.
 
 Here's an example for the action menu:
 
