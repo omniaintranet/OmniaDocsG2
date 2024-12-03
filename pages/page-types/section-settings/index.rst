@@ -31,17 +31,19 @@ General settings for a section with tabs
 -----------------------------------------
 For a section with tabs, the following can be set:
 
-.. image:: page-types-general-tabs-new.png
+.. image:: page-types-general-tabs-77.png
 
 + **Tabs**: Here you can edit the settings for each tab, by clicking the pen. See information about these settings below.
++ **Width type**: Set dynamic width ("Full Page") or a fixed width in pixels. When you have selected "Fixed", a slider is shown where you can set the width.
 + **Add tab**: Ta add a new tab, click here. You edit the settings as described below. To remove a tab, click the dust bin. 
 
 By clicking the pen, the following can be set for a tab:
 
-.. image:: page-types-tabs-pen-new2.png
+.. image:: page-types-tabs-pen-77.png
 
 + **Label**: If a label should be shown for the tab, add the label here. You can add a label in any tenant language. 
-+ **Custom anchor name**: ¨Here you can set a custom anchor name, if needed. For more information, see below.
++ **Scroll anchor into view**: To have the anchor for this section automatically scrolled into view, select this option.
++ **Custom anchor name**: Here you can set a custom anchor name, if needed. For more information, see below.
 + **Tooltip**: If a tooltip should be shown for the tab, add it here.
 + **Icon**: First select the icon type and then select the icon in the list below, if an icon should be shown. (If no icon should be shown, just don't select an icon, it doesn't matter that an icon type is selected.)
 
@@ -49,9 +51,7 @@ Set a custom anchor name
 ---------------------------
 Anchor names are created automatically for sections with type Tab, Accordion and Stepper, based on the label. When you have entered a label, you can set a custom anchor name, if needed.
 
-For a section with tabs you can set a custom anchor name for each tab:
-
-.. image:: custom-anchor-name.png
+For a section with tabs you can, for example, set a custom anchor name for each tab.
 
 See this page for more information on how to use anchors: :doc:`Using anchors </general-assets/using-anchors/index>`
 
@@ -77,13 +77,14 @@ General settings for a stepper section
 --------------------------------------------
 For a stepper section, the following can be set:
 
-.. image:: page-types-general-stepper.png
+.. image:: page-types-general-stepper-77.png
 
 + **Width type**: Set dynamic width ("Full Page") or a fixed width in pixels. When you have selected "Fixed", a slider is shown where you can set the width.
 + **Panels**: Here you can edit the settings for each panel, by clicking the pen. See information about these settings below.
 + **Vertical**: To show the steps vertically instead of horisontally, select this option.
 + **Allow user to jump to any step**: If this option is selected, users can go to any step ny clicking the label, if not, users can only go to the next or the previous step.
 + **Scroll to top on Previous/Next**: If this option is selected, the step page is always shown from the top, when users goes to next or previous. If not selected, no scroll is made.
++ **Pagination**: Here you can decide how the steps will line up within the section. With this option NOT selected (Default), the steps are spred out over the whole width. With this option selected, the steps will be adjusted to the left.
 + **ADD STEP**: Ta add a new step, click here. To add or edit the label for a step, click the pen. To delete a step, click the dust bin. 
 
 If needed, you can set a custom anchor name for each step in the stepper, the same way as for a section with tabs, see above.
