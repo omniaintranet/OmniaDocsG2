@@ -3,9 +3,7 @@ Form question
 
 The block is used only when working with the graphic presentation of a form, in Omnia admin. The block can not be used on a normal page.
 
-Here's an example of a Form question block added to a Survey:
-
-.. image:: form-question-block-example.png
+The block uses the Stepper section.
 
 Editing the block
 ******************
@@ -23,21 +21,23 @@ Question and options can be be added in any or all the available tenant language
 
 To add a new step (page), click the plus here:
 
-.. image:: form-question-add-step.png
+.. image:: form-question-add-step-77.png
 
-When you have added additional steps, it's shown here:
+When you have added additional steps, they are shown here:
 
-.. image:: form-question-add-step-2.png
+.. image:: form-question-add-step-2-77.png
 
 You can navigate between steps by using the links at the bottom:
 
-.. image:: form-question-add-step-navigation.png
+.. image:: form-question-add-step-navigation-77.png
 
 By using these icons, you can move a step or remove a step:
 
-.. image:: form-question-add-step-move-remove.png
+.. image:: form-question-add-step-move-remove-77.png
 
 To set labels for the steps, use the settings for the stepper section:
 
-.. image:: form-question-add-step-label.png
+.. image:: form-question-add-step-label-77.png
+
+For more information about Stepper settings, see this page: :doc:`Settings for sections </pages/page-types/section-settings/i/index>`
 
