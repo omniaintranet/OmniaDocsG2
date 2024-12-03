@@ -1,4 +1,4 @@
-Sections and blocks on a page type
+Sections and blocks in a page type
 =================================================
 
 This describes how to work with sections and blocks for a page type. You work the same way with local page types and tenant page types.
@@ -158,7 +158,7 @@ You can decide if it should be possible to unlock the settings for a block. The 
 
 The following options are available here:
 
-.. image:: lock-menu-options-77.png
+.. image:: lock-menu-options-77-frame.png
 
 + **Locked by default**: If this option is selected, and not the following, it works as before; settings for the block can not be changed but content can be edited using Write mode. If this option is NOT selected and the next is, the block's settings are simply not locked. Design permission is still needed to be able to change settings.
 + **Lock can be edited**: If this option is selected, editors (Design permission) can unlock or lock the settings for the block - and if unlocked, can edit the block's settings.
