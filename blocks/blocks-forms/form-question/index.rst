@@ -29,8 +29,6 @@ When you have added additional steps, it's shown here:
 
 .. image:: form-question-add-step-2.png
 
-This is the stepper section, new in v6.5.
-
 You can navigate between steps by using the links at the bottom:
 
 .. image:: form-question-add-step-navigation.png
