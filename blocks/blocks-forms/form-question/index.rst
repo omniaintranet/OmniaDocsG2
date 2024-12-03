@@ -39,5 +39,5 @@ To set labels for the steps, use the settings for the stepper section:
 
 .. image:: form-question-add-step-label-77.png
 
-For more information about Stepper settings, see this page: :doc:`Settings for sections </pages/page-types/section-settings/i/index>`
+For more information about Stepper settings, see this page: :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
