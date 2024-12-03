@@ -93,7 +93,7 @@ Spacing
 ***********
 Here you can set the following:
 
-.. image:: page-types-spacing-new2.png
+.. image:: page-types-spacing-77.png
 
 Available options depends on section type chosen.
 
@@ -102,7 +102,7 @@ Available options depends on section type chosen.
 + **Label padding**: For an accordion section, you can set label padding. Available if section type Accordion is selected.
 + **Block spacing**: You can set spacing between blocks in this section. 
 + **Minimum height**: You can make sure that this section always has a minimun height, regardless of what is shown in the section. Use the slider to set the minimum height in pixels.
-+ **Use full height**: This option is a way of making sure a layout with more than one column or section is balanced. When this option is selected, all adjacent sections has the same length. See below for examples.
++ **Equal column  heights**: This option is a way of making sure a layout with more than one column or section is balanced. When this option is selected, all adjacent sections has the same length. See below for examples.
 
 Here's an example with "Use full height" on:
 
@@ -116,7 +116,11 @@ Style
 ************
 Available settings for style can vary depending on section type. The options available for all section types are the following:
 
-.. image:: page-types-style-new3.png
+.. image:: page-types-style-77-1.png
+
+and these:
+
+.. image:: page-types-style-77-2.png
 
 + **Elevation**: With this setting you can make the content of the section “stand out” from the page. Use the slider to set how much.
 + **Background color**: A default background color for sections are set in Omnia admin. You can set another background color for this section here, if needed. You can try out RANDOM or set the color using ADD COLOR.
@@ -137,12 +141,10 @@ Style settings for a tab section
 -----------------------------------
 If it's a section with tabs, you can set all the common settings, and also:
 
-.. image:: page-types-style-tabs-new4-frame.png
-
-(Not all options are shown in the image, but listed below).
+.. image:: page-types-style-tabs-77.png
 
 + **Vertical**: If the labels for the tabs should be shown vertically, select this option.
-+ **Show active slider**: If the active tab should be indicated, select this option.
++ **Show active tab**: If the active tab should be indicated, select this option.
 + **Fill space**: If the tab labels should fill the available space, either horisontally or vertically, depending on what you have chosen, select this option.
 + **Tab alignment**: Here you can set alignment for the tab labels.
 + **Icon alignment**: If you are using an icon you can set icon alignment within the available space for the icon.
@@ -153,11 +155,7 @@ Style settings for accordion section
 ---------------------------------------
 If it's an accordion section, the following Style settings can be set, in addition to the common ones:
 
-.. image:: page-types-style-accordion-new2.png
-
-(Not all options are shown in the image, but listed below).
-
-Under **General**, the following is available:
+.. image:: page-types-style-accordion-77.png
 
 + **Collapsed accordion**: If this option is selected, all accordions will be collapsed when the page is loaded.
 + **Flat header**: Per default, the tab is slightly elevated. Select this option to make it flat.
@@ -171,7 +169,7 @@ Effects
 --------
 Additional effects are avilable here, for all section types:
 
-.. image:: sections-effects-new.png
+.. image:: sections-effects-77.png
 
 Try them and see the effect - a preview is shown in the active section.
 
@@ -189,7 +187,7 @@ Header
 ****************
 Here you can set the following:
 
-.. image:: page-types-settings-header-new2.png
+.. image:: page-types-settings-header-77.png
 
 + **Title**: If you want a title to be displayed for the section, add it here. Not mandatory. You can add a title in any tenant language. 
 + **Icon type/Icon**: If you would like to use an icon, first select type and then an icon from the list.
@@ -219,8 +217,4 @@ The following settings are found here:
 
 + **Disable lazy load**: If you need to disable lazy load for this section, select this option. Note that you set this for the active section only. If you need to do this for other sections on the page, repeat the process.
 + **Custom CSS classes/Custom CSS styling**: If you know how, you can use these fields for custom styling, for the active section.
-
-
-
-
 
