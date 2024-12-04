@@ -113,6 +113,8 @@ If you select "Specific document", a list of all published controlled documents 
 5. Repeat the process til all documents for the sign-off request are added.
 6. Set all other settings for the sign-off request as described for pages.
 
+Authors of controlled documents can also create a sign-off request in the controlled documents library, for a single document. For more information about this alternative, see the bottom of this page: :doc:`Working with published documents </working-with-documents/authoring-controlled-documents/working-with-published-documents/index>`
+
 Checking up on a request
 *************************
 You can check up on a Sign-off request to see what has happened.
