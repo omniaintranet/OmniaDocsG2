@@ -1,9 +1,9 @@
 Read and understood - notify and read receipt
 ===============================================
 
-When a controlled document is published, you can choose to send a notification to some users, and when doing so, can also choose to receive read receipts, to make sure the notification has reached them. The notifications are sent when the document is approved for publishing.
+When a controlled document is published, the possibility to send a notification to some users can be available. When doing so, can also choose to receive read receipts, to make sure the notification has reached them. The notifications are sent when the document is approved for publishing.
 
-Note that, in Omnia 7.7 and later, you can also use sign-off requests for controlled documents. You then have a lot more options making sure colleagues are aware of important documents and updates.
+Note that, in Omnia 7.7 and later, an alternative way is to use sign-off requests for controlled documents. You then have a lot more options making sure colleagues are aware of important documents and updates. See below for more information.
 
 For more information, see: :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
 
@@ -37,3 +37,21 @@ A list of those that has received a notification with read receipt request is no
 .. image:: read-receipt-status-notread-new.png
  
 A green dot means that the recipient has read the message, a red that he or she has not.
+
+An alternative - using sign-off requests
+*********************************************
+In Omnia 7.7 and later sign-off requests can be used for published controlled documents, as an alternative way of making sure collagues have read important information.
+
+For each document type a decision can be made to use read receipt or sign-off requests, or both (or neither).
+
+Authors of controlled documents can create a sign-off request for a single document in the controlled documents library. Documents can now also be added to sign-off requests in the main option at tenant level.
+
+For more information, see:
+
++ :doc:`Working with published documents </working-with-documents/authoring-controlled-documents/working-with-published-documents/index>`
+
++ :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
+
++ :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
++ :doc:`Sign-off requests rollup block </blocks/sign-off-requests-rollup-613/index>`
