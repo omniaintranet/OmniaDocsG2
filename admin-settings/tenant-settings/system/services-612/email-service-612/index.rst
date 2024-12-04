@@ -21,7 +21,7 @@ To use Exchange for sending Emails from Omnia, the Microsoft permission model cu
 
 Additional Smtp server settings
 ************************************
-If you select SMtp server as Email provider, the settings needed are made available:
+If you select Smtp server as Email provider, the settings needed are made available:
 
 .. image:: custom-email-settings-v77-smtp.png
 
