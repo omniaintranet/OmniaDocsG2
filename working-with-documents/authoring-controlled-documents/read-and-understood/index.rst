@@ -1,7 +1,7 @@
 Read and understood - notify and read receipt
 ===============================================
 
-When a controlled document is published, the possibility to send a notification to some users can be available. When doing so, can also choose to receive read receipts, to make sure the notification has reached them. The notifications are sent when the document is approved for publishing.
+When a controlled document is published, the possibility to send a notification to some users can be available. When doing so, you can also choose read receipts, to make sure the notification has reached them. The notifications are sent when the document is approved for publishing.
 
 Note that, in Omnia 7.7 and later, an alternative way is to use sign-off requests for controlled documents. You then have a lot more options making sure colleagues are aware of important documents and updates. See below for more information.
 
