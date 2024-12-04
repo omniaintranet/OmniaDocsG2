@@ -202,3 +202,23 @@ If you choose to restore a document, the following is shown:
 
 These are the same options as when you create a draft from a published document. See above for a decription.
 
+Creating sign-off requests for documents
+*******************************************
+In Omnia 7.7 and later, sign-off requests can be created for controlled documents. This can be done when the document is published, on the PUBLISHED tab.
+
+For this to be available, the tenant feature "Sign-off request for controlled documents" must be active and the option "Enable sign-off request" must be selected for the document type.
+
+If the prerequisits are in place, the menu for a published document contains the option "Create sign-off request":
+
+.. image:: create-sign-off-request-document.png
+
+Select it and the following settings are available:
+
+.. image:: create-sign-off-request-document-settings.png
+
+The settings are the same as when sign-off requests are created using the option "Sign-off requests" at tenant level. When using the document menu on the PUBLISHING tab, a sign-off request is created for this specific document. When using the main sign-off request tenant option, a sign-off request can be created for number of documents, or for a combination of pages and documents (or just for pages).
+
+
+
+
+
