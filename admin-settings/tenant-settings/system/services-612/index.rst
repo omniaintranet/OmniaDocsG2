@@ -3,7 +3,7 @@ Services
 
 The following settings are found here.
 
-.. image:: services-all-612.png
+.. image:: services-all-77.png
 
 Select section for more information:
 
