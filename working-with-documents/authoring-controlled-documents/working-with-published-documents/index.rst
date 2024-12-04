@@ -216,9 +216,15 @@ Select it and the following settings are available:
 
 .. image:: create-sign-off-request-document-settings.png
 
-The settings are the same as when sign-off requests are created using the option "Sign-off requests" at tenant level. When using the document menu on the PUBLISHING tab, a sign-off request is created for this specific document. When using the main sign-off request tenant option, a sign-off request can be created for number of documents, or for a combination of pages and documents (or just for pages).
+These settings are the same as when sign-off requests are created using the option "Sign-off requests" at tenant level, see link *Requests* below. When using the document menu on the PUBLISHING tab, a sign-off request is created for the specific document. When using the main sign-off request tenant option, a sign-off request can be created for a number of published documents, or for a combination of pages and documents (or just for pages).
 
+There's also a Sign-off requests rollup block available to make sign-off requests available on pages.
 
+For more information, see: 
 
++ :doc:`Requests </admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index>`
 
++ :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
++ :doc:`Sign-off requests rollup block </blocks/sign-off-requests-rollup-613/index>`
 
