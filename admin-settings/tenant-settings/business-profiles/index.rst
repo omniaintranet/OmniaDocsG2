@@ -59,7 +59,7 @@ There is one option that is available only when editing a business profile:
 
 .. image:: business-profile-edit-77.png
 
-+ **Classic action menu & mega menu **: If you for some reason would like to use (more likely continue using) the older classic mega menu and action menu, select this option. In that case, you should do that directly after creating the business profile.
++ **Classic action menu & mega menu**: If you for some reason would like to use (more likely continue using) the older classic mega menu and action menu, select this option. In that case, you should do that directly after creating the business profile.
 
 When this option is selected, the following information is found in the Workspace menu:
 
