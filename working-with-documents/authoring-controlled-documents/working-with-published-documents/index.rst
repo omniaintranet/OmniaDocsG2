@@ -204,11 +204,11 @@ These are the same options as when you create a draft from a published document.
 
 Creating sign-off requests for documents
 *******************************************
-In Omnia 7.7 and later, sign-off requests can be created for controlled documents. This can be done when the document is published, on the PUBLISHED tab.
+In Omnia 7.7 and later, sign-off requests can be created for controlled documents. To send a request for a single document, use the option on the PUBLISHED tab.
 
 For this to be available, the tenant feature "Sign-off request for controlled documents" must be active and the option "Enable sign-off request" must be selected for the document type.
 
-If the prerequisits are in place, the menu for a published document contains the option "Create sign-off request":
+If the prerequisits are in place, the menu for a published document contains this option:
 
 .. image:: create-sign-off-request-document.png
 
@@ -216,9 +216,9 @@ Select it and the following settings are available:
 
 .. image:: create-sign-off-request-document-settings.png
 
-These settings are the same as when sign-off requests are created using the option "Sign-off requests" at tenant level, see link *Requests* below. When using the document menu on the PUBLISHING tab, a sign-off request is created for the specific document. When using the main sign-off request tenant option, a sign-off request can be created for a number of published documents, or for a combination of pages and documents (or just for pages).
+These settings are the same as when sign-off requests are created using the option at tenant level, see link *Requests* below. When using the tenant option, a sign-off request can be created for a number of published documents, or for a combination of pages and documents (or just for pages).
 
-There's also a Sign-off requests rollup block available to make sign-off requests available on pages.
+There's also a Sign-off requests rollup block available to make requests available on pages.
 
 For more information, see: 
 
