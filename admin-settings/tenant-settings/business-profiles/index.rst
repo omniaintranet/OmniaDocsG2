@@ -73,7 +73,7 @@ Classic mega menu settings
 *******************************
 These settings are available when “Classic action menu & mega menu” is selected for the business profile. 
 
-.. image:: workplace-header-classic-mega-menu-v77.png
+.. image:: workplace-header-classic-mega-menu-v7.png
 
 Query
 ----------
