@@ -8,15 +8,15 @@ It's possible to work with controlled documents in a publishing app. This is wha
 + Document management settings set up in the publishing app settings.
 + A menu option for controlled documents in the page menu (publishing app settings).
 
-For more information see:
-
-+ :doc:`Publishing layouts </admin-settings/business-group-settings/publishing-apps/publishing-65/layout/index>`
-+ :doc:`Document picker settings </admin-settings/business-group-settings/settings/document-picker/index>`
-+ :doc:`Publishing app settings </pages/page-settings/publishing-app-settings-612/index>`
-
 Here's an example with a layout for controlled documents:
 
 .. image:: controlled-documents-app.png
 
-You use it the same way as is described for controlled documents.
+You use it the same way as is described for publishing layouts.
+
+For more information see:
+
++ :doc:`Layouts for publishing apps </admin-settings/business-group-settings/publishing-apps/publishing-v7/layout-v7/index>`
++ :doc:`Document picker settings </admin-settings/business-group-settings/settings/document-picker/index>`
++ :doc:`Publishing app settings </pages/page-settings/index>`
 
