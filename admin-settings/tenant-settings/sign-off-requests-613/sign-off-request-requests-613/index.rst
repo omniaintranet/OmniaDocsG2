@@ -90,7 +90,7 @@ To add or remove documents
 ----------------------------------------
 Only published, controlled documents can be signed off. This option is available in Omnia 7.7 and later. 
 
-**Important note!** Prerequisites: The tenant feature "Sing-oss request for controlled documents" must be active and in the settings for the document type, the option "Enable sign-off request" must be selected.
+**Prerequisites**: The tenant feature "Sign-off request for controlled documents" must be active. In the settings for the document type, the option "Enable sign-off request" must be selected. (Meaning sign-off requests can be available for some document types and not for others.)
 
 You add documents this way:
 
