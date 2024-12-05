@@ -42,8 +42,6 @@ and these:
 
 Add pages to be signed off
 ---------------------------
-*Important note!** In the settings for the document type, the option "Enable sign-off request" must be selected for this to work.
-
 Here's how to add pages to be signed off:
 
 1. Click ADD.
@@ -78,7 +76,9 @@ To remove a page from the list, click the dust bin.
 
 Add documents to be signed off
 ---------------------------------
-In Omnia 7.7 and later, published controlled documents can be signed-off. A sign-off request can contain bot pages and documents.
+In Omnia 7.7 and later, published controlled documents can be signed-off. A sign-off request can contain both pages and documents.
+
+**Prerequisites**: The tenant feature "Sign-off request for controlled documents" must be active. In the settings for the document type, the option "Enable sign-off request" must be selected. (Meaning sign-off requests can be available for some document types and not for others.)
 
 You use it this way:
 
