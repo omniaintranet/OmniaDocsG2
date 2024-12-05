@@ -33,7 +33,7 @@ If available, you can click the i-icon for more information about a document.
 
 Here's an example of information that can be available:
 
-.. image:: document-i-icon-example.png
+.. image:: document-i-icon-example-77.png
 
 Note the options at the top, where you can go to document history for this document, copy the link to the document and go to the document library where the document is stored (if you permissions to do that).
 
