@@ -1,3 +1,13 @@
+7.7.5
+========================================
+(Omnia 7.7.5 / Workplace 7.7.2 / WCM 7.7.1 / MS 7.7.1 / Analytics 7.7.0)
+
+- The approve user email link now ends up in the correct place in Omnia Admin (#162157).
+- Event management email links now resolved correctly if a custom email is used (#162459).
+- Corrected a styling bug with capitalization for the Business profile name in Omnia Admin (#162494).
+- Corrected an issue with multiple end user filters in the document rollup (#162634).
+
+
 7.7.3
 ========================================
 (Omnia 7.7.3 / Workplace 7.7.1 / WCM 7.7.0 / MS 7.7.0 / Analytics 7.6.2)
