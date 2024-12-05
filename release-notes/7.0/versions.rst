@@ -8,7 +8,7 @@ New features
 - Filter settings can now be used in the document rollup when "Pick documents" are used.
 - Custom date spans can now be used in all KQL based rollups.
 - A new UI for restricting system email exchange accounts has been made available.
-- Link files are now supported by the document rollup (#157603).
+- Url files are now supported by the document rollup (#157603).
 - New components for profile completeness. 
 - Sign off requests are now available for controlled documents.
 - New responsive design and behaviours for the stepper section (#142446).
