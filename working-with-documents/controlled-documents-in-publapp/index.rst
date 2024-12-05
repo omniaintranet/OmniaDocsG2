@@ -12,7 +12,7 @@ Here's an example with a layout for controlled documents:
 
 .. image:: controlled-documents-app.png
 
-You use it the same way as is described for publishing layouts.
+You use it the same way as in a controlled documents library.
 
 For more information see:
 
