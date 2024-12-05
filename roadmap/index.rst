@@ -19,7 +19,6 @@ Blocks
 ---------------------------------------------
 
 * Downloadable web parts definitions from within Omnia admin
-* New features and new block for User profile completion
 * Welcome block
 
 
@@ -34,9 +33,3 @@ Governance
 ---------------------------------------------
 
 * Improved analytics functionality, incl. more trackable actions in Matomo
-
-
-Document management
----------------------------------------------
-
-* Sign-off requests for documents
