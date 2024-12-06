@@ -15,6 +15,8 @@ Use these settings to decide if Emails should be sent from Omnia or not.
 
 Restrict who Omnia can send Emails as through Exchange
 *******************************************************
+Note: These descriptions will soon be revised with new texts.
+
 To use Exchange for sending Emails from Omnia, the Microsoft permission model currently requires Omnia to be granted permission to send Emails on behalf of any user in the organization. This approach may raise security concerns. To address this, a guide for the Exchange admin to restrict Omnia to only send emails as a specified user, is included:
 
 .. image:: custom-email-settings-v77-restrict.png
