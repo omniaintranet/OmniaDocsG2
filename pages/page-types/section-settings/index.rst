@@ -75,7 +75,7 @@ If needed, you can set a custom anchor name for each accordion post, the same wa
 
 General settings for a stepper section
 --------------------------------------------
-For a stepper section, the following can be set:
+For a stepper section, the following can be set (image will soon be replaced):
 
 .. image:: page-types-general-stepper-77.png
 
@@ -84,7 +84,7 @@ For a stepper section, the following can be set:
 + **Vertical**: To show the steps vertically instead of horisontally, select this option.
 + **Allow user to jump to any step**: If this option is selected, users can go to any step ny clicking the label, if not, users can only go to the next or the previous step.
 + **Scroll to top on Previous/Next**: If this option is selected, the step page is always shown from the top, when users goes to next or previous. If not selected, no scroll is made.
-+ **Pagination**: Here you can decide how the steps will line up within the section. With this option NOT selected (Default), the steps are spred out over the whole width. With this option selected, the steps will be adjusted to the left.
++ **Pagination/Horizontal scroll**: Here you can decide how the steps will line up within the section. With this option NOT selected (Default), the steps are spred out over the whole section area. With this option selected, a horizontal scroll will be used to go between the steps. This can be especially useful with more than 5 steps. 
 + **ADD STEP**: Ta add a new step, click here. To add or edit the label for a step, click the pen. To delete a step, click the dust bin. 
 
 If needed, you can set a custom anchor name for each step in the stepper, the same way as for a section with tabs, see above.
