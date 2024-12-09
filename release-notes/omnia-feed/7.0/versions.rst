@@ -59,3 +59,109 @@ Release 7.1.8
 ========================================
 
 - Support new key in AppSetting
+
+Release 7.5
+========================================
+
+- Support Notification Lib to profide an additional option in advance settings screen to remind user to re-login to receive notifications
+- Fix returning to login page when token expired
+
+Release 7.6.1
+========================================
+
+- Handle deeplink to display username and domain correctly in guest login page
+- Migration to google FireBase
+
+Release 7.6.2
+========================================
+
+- Fix opening news
+- Fix notifications when new article published
+- Fix sound for notifications
+
+Release 7.6.3
+========================================
+
+- Fix downloading files from sharepoint related links
+- Support opening MS stream videos correctly
+
+Release 7.6.4
+========================================
+
+- Support Omnia Feed app using Omnia AD for login
+
+Release 7.6.5 (Backend - Feed Extension)
+========================================
+
+- Fixed like behavior
+- Support sign-off request in multiple query
+- Fix form behavior 
+
+Release 7.6.6
+========================================
+
+- Support retry for job synchrinize process
+- Fix issues for creating pages and news
+
+Release 7.6.7
+========================================
+
+- Fix showing pages that should not be showns
+- Fix form scheduling issues
+- Fix sync Data range settings
+
+Release 7.6.8
+========================================
+
+- Fix 64kb queu limit in statistic logging
+- Fix notification issue
+
+Release 7.6.9
+========================================
+
+- Fix sync message to apply VisibilityTimeout
+
+Release 7.6.10
+========================================
+
+- Fix multiple thread issue when get page detail for variation
+- Update option newBatchSize
+
+Release 7.6.12
+========================================
+
+- Fix whitelist page events in Extension
+- Fiz notification for sign-off continuously pushing
+
+Release 7.6.19
+========================================
+
+- Support handling event type when all automatics translations are complete when publishing a page
+- Support checking and skipping dowloaded images when syncing news
+- Improve the http request query logic
+- Fix sync page error in tenant config multiple BP
+- Fix targeting channels issues
+
+Release 7.6.20
+========================================
+
+- Fix deleting page event issue
+- Fix internal links in query tabs articles
+- Support showing or hiding variation picker for languages in business profile settings
+- Fix activity feed not automatically updated
+- Fix error with signoff request query that is not filtering items
+
+Release 7.6.23
+========================================
+
+- Improve channels targeting time
+- Collect logging info sync time for active user
+- Improve variation targeting time
+- Improve resync user progression SQL query
+- Support multilingual tab titles
+- Support prefetching channels and prioritize users
+- Fix duplicated comments
+- Fix deepling to Omnia feed app
+
+
+
