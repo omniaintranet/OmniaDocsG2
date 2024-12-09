@@ -90,7 +90,7 @@ Release 7.6.4
 
 - Support Omnia Feed app using Omnia AD for login
 
-Release 7.6.5 (Backend - Feed Extension)
+Release 7.6.5
 ========================================
 
 - Fixed like behavior
