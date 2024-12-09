@@ -32,9 +32,9 @@ To pick documents, click "ADD DOCUMENT".
 
 .. image:: document-rollup-pick-new2.png
 
-The document picker opens and you use it to select documents.
+The document picker opens and you use it to select documents. Availablle filters etc depend on settings in Omnia Admin. Here's an example:
 
-.. image:: document-rollup-document-picker-new.png
+.. image:: document-rollup-document-picker-77.png
 
 See this page for more information on how to use the document picker: :doc:`The Document picker </general-assets//document-picker/index>`
 
