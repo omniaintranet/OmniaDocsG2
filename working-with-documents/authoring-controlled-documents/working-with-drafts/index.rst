@@ -36,12 +36,15 @@ Do the following to upload a document:
 .. image:: upload-document-1-77.png
 
 2. Use drag and drop or click "Browse" to select one or more documents to upload.
+3. If you selected a document by mistake, just point at the file name and click the x to remove it from the list.
 
 .. image:: upload-document-2-77.png
 
-3. If you selected a document by mistake, just point at the file name and click the x to remove it from the list.
 4. If you need to edit a file name, just click and enter a new one.
-5. Click "UPLOAD".
+
+.. image:: upload-document-2b-77.png
+
+5. Click "UPLOAD" when all documents are added to the list.
 
 .. image:: upload-document-3-77.png
 
