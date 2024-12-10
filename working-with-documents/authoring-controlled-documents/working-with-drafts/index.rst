@@ -17,9 +17,9 @@ Do the following to create a new Controlled Document:
 
 1. Click "Add" and select "New".
 
-.. image:: new-controlled-document-1-new4.png
+.. image:: new-controlled-document-1-77.png
 
-.. image:: new-controlled-document-2-new4.png
+.. image:: new-controlled-document-2-77.png
 
 Creating new documents can be set up in different ways. A very common setting is to use the create new document wizard. See this page for information on how to use the wizard: :doc:`Using the document wizard </working-with-documents/using-the-document-wizard/index>`
 
@@ -27,23 +27,23 @@ Upload documents
 ---------------------
 An alternative is to upload existing documents, but normally it should be used just for documents that will be added as they are, but will still be handled as controlled documents, for example with approval before publishing.
 
-The template for the document type is not used for the first edition of the document, the document will be used with the existing template (if any). The next time a draft is created for an uploaded document, the template can be replaced, if needed.  See *Edit a document's properties* below for more information.
+The template for the document type is not used for the first edition of the document, the document will be used with the existing template (if any). The next time a draft is created for an uploaded document, the template can be replaced, if needed. See *Edit a document's properties* below for more information.
 
 Do the following to upload a document:
 
 1. Click "Add" and select "Upload".
 
-.. image:: upload-document-1-new4.png
+.. image:: upload-document-1-77.png
 
 2. Use drag and drop or click "Browse" to select one or more documents to upload.
 
-.. image:: upload-document-2-new4.png
+.. image:: upload-document-2-77.png
 
 3. If you selected a document by mistake, just point at the file name and click the x to remove it from the list.
 4. If you need to edit a file name, just click and enter a new one.
 5. Click "UPLOAD".
 
-.. image:: upload-document-3-new5.png
+.. image:: upload-document-3-77.png
 
 Edit a document's properties
 *****************************
@@ -53,7 +53,7 @@ Do the folllowing:
 
 1. Select the document and click "Properties".
 
-.. image:: edit-properties-1-new5.png
+.. image:: edit-properties-1-77.png
 
 If this option is not shown you can open the dot menu for the document and select "Properties" there.
 
@@ -61,17 +61,17 @@ If you are doing this for an uploaded document that is not connected to a templa
 
 2. Select language if needed, to see the correct list of templates.
 
-.. image:: edit-properties-2b-new4.png
+.. image:: edit-properties-2b-77.png
 
 3. Select a template to connect to the uploaded document. To see a list of all available templates, click "Show All".
 
 Now properties for the document are shown (and this is what is shown for a document you have created). It differs depending on the template (or rather the document type the template belongs to). Here's an example:
 
-.. image:: edit-properties-2-new3.png
+.. image:: edit-properties-2-77.png
 
 **Note!** You can even choose another template for the document here, if needed. Click the x for the existing template and select another template. Don't forget to select language if needed.
 
-**Note!** A term that has been translated in the term store will be shown in the document's language here, but if the term is shown in the Drafts list, it is shown in the user's language. Also note that placeholders in DOCX and XLSX are replaced with terms based on the document's language.
+**Also note!** A term that has been translated in the term store will be shown in the document's language here, but if the term is shown in the Drafts list, it is shown in the user's language. Also note that placeholders in DOCX and XLSX are replaced with terms based on the document's language.
 
 3. Edit the properties as needed and save.
 
@@ -83,11 +83,11 @@ You can set a document type for a number of uploaded documents at the same time.
 2. Click PROPERTIES.
 3. Select the document type.
 
-.. image:: set-document-type.png
+.. image:: set-document-type-77.png
 
 4. In most cases, you can then set some properties available for the document type, for example:
 
-.. image:: set-document-type-properties.png
+.. image:: set-document-type-properties-77.png
 
 Move a document
 ************************
@@ -97,17 +97,17 @@ Do the following:
 
 1. Click "Add" and select "Move".
 
-.. image:: draft-move-1.png
+.. image:: draft-move-1-77.png
 
 2. Open the library.
 
-.. image:: draft-move-2-new4.png
+.. image:: draft-move-2-77.png
 
 3. Open a folder if needed.
 4. Select one or more documents to move.
 5. Click "GET DOCUMENT".
 
-.. image:: draft-move-3-new4.png
+.. image:: draft-move-3-77.png
 
 Now the selected document(s) are moved from the original documents library and into the controlled documents library as drafts.
 
