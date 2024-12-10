@@ -120,30 +120,30 @@ If you delete a draft controlled document it's placed in Sharepoint's recycle bi
 
 Sharepoint's recycle bin is available here:
 
-.. image:: documents-sharepoint-recycle-bin.png
+.. image:: documents-sharepoint-recycle-bin-77.png
 
-**Note!** For how long a deleted draft is kept here depends on settings for Sharepoint's recycle bin.
+**Note!** For how long a deleted draft is kept here depends on settings for SharePoint's recycle bin, that's settings in SharePoint, not in Omnia.
 
 Sharepoint's recycle bin can contain all sorts of files and folders, for example:
 
-.. image:: documents-sharepoint-recycle-bin-shown.png
+.. image:: documents-sharepoint-recycle-bin-shown-77.png
 
 To restore a draft document from here, do the following:
 
 1. Find the document and select it.
 2. Click "Restore".
 
-.. image:: document-restore-1-sharepoint.png
+.. image:: document-restore-1-sharepoint-77.png
 
 3. Go back the controlled documents library and the DRAFTS list.
 
 You can see that the restored document is here, but it's grey. One step remains.
 
-.. image:: document-restore-2-sharepoint.png
+.. image:: document-restore-2-sharepoint-77.png
 
-4. Select the document and choose "Restore" in the menu for the document.
+4. Select the document and select RESTORE (or use the dot menu for the document).
 
-.. image:: document-restore-3-sharepoint.png
+.. image:: document-restore-3-sharepoint-77.png
 
 Upload appendices
 *******************
@@ -155,19 +155,19 @@ Also note that a document type contains a setting that states if appendices are 
 
 An icon indicates if appendices are attached to a document, and states the number of appendices. (An Appendices column can also be shown). 
 
-In this example the document has 3 appendices:
+In this example the document has 2 appendices:
 
-.. image:: appendix-example-new4.png
+.. image:: appendix-example-77.png
 
 Upload or remove appendices this way:
 
 1.	Open the dot menu for the document to add appendices to. 
 
-.. image:: upload-appendice-1-new4.png
+.. image:: upload-appendice-1-77.png
 
 2. Select "Appendices".
 
-.. image:: upload-appendice-2-new4.png
+.. image:: upload-appendice-2-77.png
 
 **Note!** You must have added all necessary properties to a document before you can upload appendices. This is indicated by the option "Appendices" being gray and not available.
 
@@ -179,29 +179,29 @@ To upload a new appendice, do the following:
  
 1.	Click "Upload".
 
-.. image:: upload-appendice-3-new5.png
+.. image:: upload-appendice-3-77.png
 
 2. Use drag and drop or click "Browse" to select one or more documents to upload.
 
-.. image:: upload-appendice-4-new4.png
+.. image:: upload-appendice-4-77.png
+
+The functionality is the same as when uploading draft documents, see above for images.
 
 3. If you happen to select a document that should not be uploaded, just point at the document and click the x to remove it.
 4. If you need to edit the file name, just click it and add a new one.
-5. Click "UPLOAD".
+5. Click UPLOAD.
 
-.. image:: upload-appendice-5-new5.png
- 
 When the upload is finished the file(s) is visible in the Appendices list for the document, for example:
 
-.. image:: upload-appendice-6-new4.png
+.. image:: upload-appendice-6-77.png
 
 An appendice document can be opened from here by clicking the link. 
 
-Use the options to the right of the file name to edit or delete the file from the list.
+Use the options to the right to edit the file name or delete the file from the list.
 
-Here's a **tip**: You can open the Appendices window directly from the list. Just click the icon or the link in the Appendices column, if available.
+Here's a **tip**: You can open the Appendices window directly from the Drafts list. Just click the icon or the link in the Appendices column, if available.
 
-.. image:: upload-appendice-8.png
+.. image:: upload-appendice-8-77.png
  
 Appendices can be added to this list continuously up to publication of the document. If appendices needs to be removed or added for a published document, a new edition of the document must be published.
 
