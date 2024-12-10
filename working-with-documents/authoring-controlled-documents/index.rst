@@ -21,11 +21,11 @@ When a team site has been set up for controlled documents authoring, the followi
 
 In a teamsite set up for controlled documents authoring, a library, usually called just "Controlled documents", is available here:
 
-.. image:: controlled-documents-new3.png
+.. image:: controlled-documents-77.png
 
 In the controlled documents library, authors can find three tabs:
 
-.. image:: controlled-documents-library-new5.png
+.. image:: controlled-documents-library-77.png
 
 + **Drafts** is used when creating and editing drafts for new controlled documents or when updating an existing document for a new edition. Note that there are several options available for creating a new draft document, see below.
 
@@ -33,7 +33,7 @@ In the controlled documents library, authors can find three tabs:
 
 + **Published** display all published document in this controlled documents library. When a document is published it is removed from Drafts and is available on this tab. Here the options for creating a new draft, unpublishing and document history are available, together with a number of additional options.
 
-Most headings can be used to sort a list.
+Most headings can be used to sort a list. Available columns can be set up in many ways. You see one example in the image above.
 
 Select section for more information:
 
