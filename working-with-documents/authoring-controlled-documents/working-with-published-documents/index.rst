@@ -1,15 +1,15 @@
 Working with published documents
 =================================
 
-The Published tab lists the latest edition of all published documents from this controlled documents library. There are some useful options for a published document here. You can for example check the properties, see the document history, see feedback that users has sent and move a document.
+The PUBLISHED tab lists the latest editions of all published documents from this controlled documents library. There are some useful options for a published document here. You can for example check the properties, see the document history, see feedback that users has sent and move a document.
 
 A site administrator (owner) can set up which columns to show on this tab. Here's an example:
 
-.. image:: published-example-new3.png
+.. image:: published-example-77.png
 
-All options are found in the dot menu for a document:
+All options are found in the dot menu for a document. What is available here depends on various settings in Omnia admin, and can also depend on, for example, document type. Here's a common example:
 
-.. image:: published-dot-menu-new2.png
+.. image:: published-dot-menu-77.png
 
 Create draft
 **************
@@ -25,24 +25,24 @@ Use the following steps:
 
 1. Open the dot menu for the document and select "Signed Copy".
 
-.. image:: signed-copy-menu.png
+.. image:: signed-copy-menu-77.png
 
 2. Download the copy from here:
 
-.. image:: signed-copy-download.png
+.. image:: signed-copy-download-77.png
 
 3. Sign the document the way your organization do; either sign it digitally or print the document and sign it manually, and then scan it.
 4. Upload the signed copy.
 
-.. image:: signed-copy-upload.png
+.. image:: signed-copy-upload-77.png
 
 5. Save when you're done.
 
-.. image:: signed-copy-save.png
+.. image:: signed-copy-save-77.png
 
 If a signed copy is available for a document, it's indicated by this icon:
 
-.. image:: signed-copy-icon.png
+.. image:: signed-copy-icon-77.png
 
 Users can click the icon to download the signed copy.
 
