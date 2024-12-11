@@ -251,7 +251,7 @@ The author will also be notified if the template the document is based on, is up
 
 If the document already is tied to a template that is not updated, this is shown:
 
-.. image:: create-draft-2-v77.png
+.. image:: create-draft-2-v77-frame.png
 
 4. Select which edition to base the new draft on.
 
