@@ -218,10 +218,6 @@ Another option is to add a copy of a published document as an appendice. All pub
 
 .. image:: upload-copy-1-77.png
 
-The following is shown:
-
-.. image:: upload-copy-2-77.png
- 
 3. Search for the document. 
 4. Select the document(s) to add (a copy of) as appendice(s).
 5. Choose to overwrite existing appendices or not. This option is useful if a new version of a document you use as a appendice has been published and you want to replace the old copy with the new edition.
