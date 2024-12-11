@@ -1,15 +1,15 @@
 Working with drafts
 ====================================
 
-DRAFTS is used when creating and editing drafts for new controlled documents or when updating an existing document for a new edition. Note that there are several options available for creating a new draft document, see below.
+Drafts is used when creating and editing drafts for new controlled documents or when updating an existing document for a new edition. Note that there are several options available for creating a new draft document, see below.
 
 When a document is published (approved for publication if that is needed) it is removed from Drafts and is available on the PUBLISHED tab. 
 
-Most headings in the Drafts list can be used to sort the list.
+Most headings in the DRAFTS list can be used to sort the list.
 
 Creating a draft document
 **************************
-When adding documents to a controlled documents library the author can either create a new draft or upload a document. If it’s a controlled document the author will actually work with here, a document should normally be created from scratch. If it’s a document that will be used as it is, for example as an appendice, it makes more sense to upload the document.
+When adding documents to a controlled documents library the author can either create a new draft or upload a document. If it’s a controlled document the author will actually work with here, a document should normally be created from scratch. If it’s a document that will be used as it is, for example as an appendix, it makes more sense to upload the document.
 
 Creating a new draft document
 ----------------------------------
@@ -124,7 +124,7 @@ Sharepoint's recycle bin is available here:
 
 **Note!** For how long a deleted draft is kept here depends on settings for SharePoint's recycle bin, that's settings in SharePoint, not in Omnia.
 
-Sharepoint's recycle bin can contain all sorts of files and folders, for example:
+SharePoint's recycle bin can contain all sorts of files and folders, for example:
 
 .. image:: documents-sharepoint-recycle-bin-shown-77.png
 
@@ -173,11 +173,11 @@ Upload or remove appendices this way:
 
 A list of existing appendices is now shown, if any. You can upload a new appendice or make a copy of a published document to use as an appendice, see below.
 
-Upload a new appendice
+Upload a new appendix
 ------------------------
-To upload a new appendice, do the following:
+To upload a new appendix, do the following:
  
-1.	Click "Upload".
+1.	Click UPLOAD.
 
 .. image:: upload-appendice-3-77.png
 
@@ -195,7 +195,7 @@ When the upload is finished the file(s) is visible in the Appendices list for th
 
 .. image:: upload-appendice-6-77.png
 
-An appendice document can be opened from here by clicking the link. 
+An appendix document can be opened from here by clicking the link. 
 
 Use the options to the right to edit the file name or delete the file from the list.
 
@@ -209,18 +209,18 @@ Appendices can be added to this list continuously up to publication of the docum
 
 Published documents as appendices - copy from other document
 ---------------------------------------------------------------
-Another option is to add a copy of a published document as an appendice. All published documents are available to select as appendices.
+Another option is to add a copy of a published document as an appendix. All published documents are available to select as appendices.
 
-**Note!** In this case it is a copy of a document that will be added. There is no link between the published document and the copy, so if a new edition of the appendice document is published, the copy used as an appendix is NOT updated. You have to add the published document again to update the appendice.
+**Note!** In this case it's a copy of a document that will be added. There is no link between the published document and the copied document, so if a new edition of the appendix document is published, the copy used as an appendix is NOT updated. You have to add the published document again to update the appendix.
 
 1. Open the dot menu for the document where you want to add appendices, and select "Appendices".
-2. Click "Copy from other document" in the window shown.
+2. Click COPY FROM OTHER DOCUMENT in the window shown.
 
 .. image:: upload-copy-1-77.png
 
 3. Search for the document. 
-4. Select the document(s) to add (a copy of) as appendice(s).
-5. Choose to overwrite existing appendices or not. This option is useful if a new version of a document you use as a appendice has been published and you want to replace the old copy with the new edition.
+4. Select one or more documents to add (a copy of) as appendices.
+5. Choose to overwrite existing appendices or not. This option is useful if a new version of a document you use as an appendix has been published and you want to replace the old copy with the new edition.
 6. Click COPY.
 
 .. image:: upload-copy-3-77.png
@@ -263,7 +263,7 @@ If you select "Previous edition", you can open the list and select which of the 
 
 .. image:: create-draft-3-v77.png
 
-5. When you're done there, click "Create draft".
+5. When you're done there, click CREATE DRAFT.
 
 The new draft is created and the DRAFTS tab is automatically activated. The work on the new draft is done exactly as the first time. That a document has been published before does not make any difference.
 
