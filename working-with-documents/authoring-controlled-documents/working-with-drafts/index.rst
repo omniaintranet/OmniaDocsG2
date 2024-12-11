@@ -1,9 +1,9 @@
 Working with drafts
 ====================================
 
-"Drafts" is used when creating and editing drafts for new controlled documents or when updating an existing document for a new edition. Note that there are several options available for creating a new draft document, see below.
+DRAFTS is used when creating and editing drafts for new controlled documents or when updating an existing document for a new edition. Note that there are several options available for creating a new draft document, see below.
 
-When a document is published (approved for publication if that is needed) it is removed from Drafts and is available on the "Published" tab. 
+When a document is published (approved for publication if that is needed) it is removed from Drafts and is available on the PUBLISHED tab. 
 
 Most headings in the Drafts list can be used to sort the list.
 
@@ -15,7 +15,7 @@ Creating a new draft document
 ----------------------------------
 Do the following to create a new Controlled Document:
 
-1. Click "Add" and select "New".
+1. Click ADD and select "New".
 
 .. image:: new-controlled-document-1-77.png
 
@@ -31,7 +31,7 @@ The template for the document type is not used for the first edition of the docu
 
 Do the following to upload a document:
 
-1. Click "Add" and select "Upload".
+1. Click ADD and select "Upload".
 
 .. image:: upload-document-1-77.png
 
@@ -44,7 +44,7 @@ Do the following to upload a document:
 
 .. image:: upload-document-2b-77.png
 
-5. Click "UPLOAD" when all documents are added to the list.
+5. Click UPLOAD when all documents are added to the list.
 
 .. image:: upload-document-3-77.png
 
@@ -54,7 +54,7 @@ You may need to edit a document's properties before publishing, if you uploaded 
 
 Do the folllowing:
 
-1. Select the document and click "Properties".
+1. Select the document and click PROPERTIES.
 
 .. image:: edit-properties-1-77.png
 
@@ -98,7 +98,7 @@ You can move a document, or several if you like, from any other Documents librar
 
 Do the following:
 
-1. Click "Add" and select "Move".
+1. Click ADD and select "Move".
 
 .. image:: draft-move-1-77.png
 
@@ -108,7 +108,7 @@ Do the following:
 
 3. Open a folder if needed.
 4. Select one or more documents to move.
-5. Click "GET DOCUMENT".
+5. Click GET DOCUMENT.
 
 .. image:: draft-move-3-77.png
 
@@ -116,7 +116,7 @@ Now the selected document(s) are moved from the original documents library and i
 
 Restore a deleted draft
 **************************
-If you delete a draft controlled document it's placed in Sharepoint's recycle bin. That recycle bin is available in the controlled dlibrary, so you can restore a deleted draft if needed.
+If you delete a draft controlled document it's placed in Sharepoint's recycle bin. That recycle bin is available in the controlled library, so you can restore a deleted draft if needed.
 
 Sharepoint's recycle bin is available here:
 
@@ -131,7 +131,7 @@ Sharepoint's recycle bin can contain all sorts of files and folders, for example
 To restore a draft document from here, do the following:
 
 1. Find the document and select it.
-2. Click "Restore".
+2. Click Restore.
 
 .. image:: document-restore-1-sharepoint-77.png
 
@@ -147,7 +147,7 @@ You can see that the restored document is here, but it's grey. One step remains.
 
 Upload appendices
 *******************
-To upload documents to use as appendices to another document, the main upload option should not be used. (But you can also use published documents as appendices, see below.)
+To upload documents to use as appendices to another document, the main upload option should not be used. (But you can also use published documents as appendices, see below).
 
 Note that work with appendices (uploading new ones, deleting existing) can only be done when you are working on a draft of the document. If a document is sent for comments or for approval, appendices can not be uploaded to that document. 
 
@@ -247,7 +247,7 @@ If you select "Yes", open the list and select a template.
 
 .. image:: select-template-select-new2.png
 
-The author will also be notified if the template the document is based on, is updated, see below.
+The author will also be notified if the template the document is based on is updated, see below.
 
 If the document already is tied to a template that is not updated, this is shown:
 
@@ -265,7 +265,7 @@ If you select "Previous edition", you can open the list and select which of the 
 
 5. When you're done there, click "Create draft".
 
-The new draft is created and the "Drafts" tab is automatically activated. The work on the new draft is done exactly as the first time. That a document has been published before does not make any difference.
+The new draft is created and the DRAFTS tab is automatically activated. The work on the new draft is done exactly as the first time. That a document has been published before does not make any difference.
 
 **Note!** There can be only one draft of a given document. If there already is a draft for the document and an author tries to create another one, a message is shown stating that it's not possible. 
 
@@ -277,17 +277,17 @@ You can add and edit change comments when necessary for any edition, either when
 
 When working on a draft, the Change comments field is available here:
 
-.. image:: change-comments-draft-menu.png
+.. image:: change-comments-draft-menu-77.png
 
 Here's an example:
 
-.. image:: change-comments-draft-example.png
+.. image:: change-comments-draft-example-77.png
 
 Just add and edit text here as needed, and click OK to save.
 
 Change comments are added to the document history and can therefore be accessed on the PUBLISHED tab together with alla other document history. Here's an example from a test environment:
 
-.. image:: change-comments-history.png
+.. image:: change-comments-history-77.png
 
 Show changes
 ******************
@@ -295,7 +295,7 @@ If the feature "Document comparison powered by Draftable" is activated for the t
 
 When the feature is activated the menu option "Show changes" is available. A draft can then be compared with the latest published edition of that document, using this menu option:
 
-.. image:: show-changes-menu.png
+.. image:: show-changes-menu-77.png
 
 Here's an example for Microsoft Word documents:
 
@@ -303,19 +303,19 @@ Here's an example for Microsoft Word documents:
 
 This option can be used by reviewers when a document is sent for comments:
 
-.. image:: show-changes-comment-new.png
+.. image:: show-changes-comment-77.png
 
 An approver for publication can also use this option:
 
-.. image:: show-changes-approval-new.png
+.. image:: show-changes-approval-77.png
 
 If the feature is activated, this option is also available for all users in a doucment rollup, through the i icon:
 
-.. image:: show-changes-iicon.png
+.. image:: show-changes-icon-77.png
 
 Here's an example:
 
-.. image:: show-changes-all.png
+.. image:: show-changes-all-77.png
 
 Remember that there must be at least two editions of a document for this option to show up, and that it requires a paid subscription with Draftable.
  
