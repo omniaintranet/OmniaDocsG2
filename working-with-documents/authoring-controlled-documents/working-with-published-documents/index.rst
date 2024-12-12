@@ -42,9 +42,11 @@ Use the following steps:
 
 If a signed copy is available for a document, it's indicated by this icon:
 
-.. image:: signed-copy-icon.png
+.. image:: signed-copy-icon-77.png
 
-Users can click the icon to download the signed copy.
+Users can click the icon to read or download the signed copy.
+
+**Important note!** Signed copy must be added as a column to the document rollup for this icon to be available.
 
 For more information on how to activate the Signed copy functionality, see the heading "Settings for document types" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
