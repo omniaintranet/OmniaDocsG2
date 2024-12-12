@@ -107,31 +107,41 @@ Just click the option (no window or message is shown) and you can then paste the
 
 Document history
 ******************
-There’s information about each published edition available. To see it, do the following:
+There’s quite a lot of information about each published edition available. To see it, do the following:
 
 1.	Click the dot menu for the document.
 2.	Select "Document history".
  
 Here’s an example:
 
-.. image:: published-history-new3.png
+.. image:: published-history-77.png
  
-You can see the publication date for each edition, the author’s comment, if any, and who the document was approved by. The option "Workflow history" for an edition will show information about when workflows was used and the comments entered during the workflows, so here you can even see information from Send for comments workflows used for the document.
+You can, for example, see the publication date for each edition, the author’s comment, if any, and who the document was approved by. Fo further evaluation, or for comparison, a copy of each published edition can be downloaded.
 
-Here's an example:
+The option "Workflow history" for an edition will show information about when workflows was used and the comments entered during the workflows, so here you can even see information from Send for comments workflows used for the document.
 
-.. image:: published-history-workflow-new3.png
+Here's an example from a test environment:
+
+.. image:: published-history-workflow-77.png
 
 Check feedback
 ****************
-Any user can send feedback on a published document and that feedback is available for authors here. To read feedback for a document:
+If feedback is set uo, then any user can send feedback on a published document and that feedback is available for authors here. To read feedback for a document:
 
 1.	Click the dot menu for the document.
 2.	Select "Feedback".
  
 The feedback posts for the document is shown. Click a post to read the feedback. Here's an example:
 
-.. image:: feedback-example-new4.png
+.. image:: feedback-example-77.png
+
+To find out when the feedback was sent, click the i-icon:
+
+.. image:: feedback-example-icon-77.png
+
+Here's an example of the information available:
+
+.. image:: feedback-example-icon-info-77.png
 
 You can click the dust bin to delete the feedback when you have read it, or keep it for later reference, it’s up to you.
 
