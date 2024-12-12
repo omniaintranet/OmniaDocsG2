@@ -42,7 +42,7 @@ Use the following steps:
 
 If a signed copy is available for a document, it's indicated by this icon:
 
-.. image:: signed-copy-icon-77.png
+.. image:: signed-copy-icon.png
 
 Users can click the icon to download the signed copy.
 
