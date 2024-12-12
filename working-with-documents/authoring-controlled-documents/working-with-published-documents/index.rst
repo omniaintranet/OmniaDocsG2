@@ -56,35 +56,31 @@ You can relate a published document to other published documents. How to do that
 
 Related processes
 *******************
-Using this option you can see if a document is related to any process(es) - meaning added as a document to the process(es). You can also suggest that the document should be added (related) to a process. The suggestion is sent to the feedback receiver for the process.
+Using this option you can see if a document is related to any process(es) - meaning added as a document to the process(es). You can also suggest that the document should be added (related) to a specific process. The suggestion is sent to the feedback receiver for the process.
 
 To check if a dcument is related to any process(es), do the following:
 
 1. Open the dot menu for the document and select "Related processes". 
 
-.. image:: related-processes-menu-new.png
+.. image:: related-processes-menu-77.png
 
 Any related processes are now listed.
 
-2. To suggest that this document should be relate to a process, click ADD SUGEESTIONS.
+2. To suggest that this document should be related to a process, click ADD SUGEESTION.
 
-.. image:: related-processes-related-new.png
+.. image:: related-processes-related-77.png
 
-3. Click in the field and type part of, or the whole, name of the process you have in mind, to search for it.
+3. Scroll the list to find the process, or click in the field and type part of, or the whole, name of the process you have in mind, to search for it.
 
 4. Select the process.
 
-.. image:: related-processes-click-search-new.png
-
 5. Select the process again in the next step, and the click SAVE.
 
-.. image:: related-processes-sent-new.png
+.. image:: related-processes-sent-77.png
 
-And now your suggestion is sent to the feedback receiver for the process, for evaluation, and it's shown this way:
+And now your suggestion is sent to the feedback receiver for the process, for evaluation.
 
-.. image:: related-processes-sent-message.png
-
-For information on what the author of the process can do with the suggestion, see this page: :doc:`The Documents tab - authoring processes </working-with-processes/authoring-processes/working-with-drafts/documents-tab/index>`
+For information on what the author of the process can do with the suggestion, see this page: :doc:`The Documents tab - authoring processes </working-with-processes-v7/authoring-processes-v7/working-with-drafts-processes/documents-tab-authoring-processes/index>`
 
 Checking a documents properties
 *********************************
@@ -95,7 +91,7 @@ The properties for a published document can be checked this way:
  
 The Properties window for the document is shown, for example:
 
-.. image:: published-properties-new3-frame.png
+.. image:: published-properties-77.png
  
 The properties can not be edited here. The properties can only be edited when working on a draft for a new edition of the document.
 
@@ -105,9 +101,9 @@ Copy link
 **********
 If you need to send a link to a published document, use this option.
 
-Just click the option (no window or message is shown) and you can then paste the link in an email, in a document, as a link on a page, or wherever you need the link.
+Just click the option (no window or message is shown) and you can then paste the link in an Email, in a document, as a link on a page, or wherever you need the link.
 
-.. image:: published-copylink-new.png
+.. image:: published-copylink-77.png
 
 Document history
 ******************
