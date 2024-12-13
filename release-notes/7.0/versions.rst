@@ -1,3 +1,14 @@
+7.7.6
+========================================
+(Omnia 7.7.6 / Workplace 7.7.4 / WCM 7.7.3 / MS 7.7.2 / Analytics 7.7.3)
+
+- Fixed an issue preventing an omnia layout tab to be edited in MS Teams (#162548).
+- Fixed a localization error for the tab title in Business Profile.
+- Adjusted the menu width of controlled documents to make the new sign-off request option fit properly (#162955).
+- Stability fixes to the setup wizard for new tenants.
+
+
+
 7.7.5
 ========================================
 (Omnia 7.7.5 / Workplace 7.7.2 / WCM 7.7.1 / MS 7.7.1 / Analytics 7.7.0)
@@ -18,7 +29,7 @@ New features
 - Filter settings can now be used in the document rollup when "Pick documents" are used.
 - Custom date spans can now be used in all KQL based rollups.
 - A new UI for restricting system email exchange accounts has been made available.
-- Url files are now supported by the document rollup (#157603).
+- Url files are now supported by the document rollup (#157603, #140703).
 - New components for profile completeness. 
 - Sign off requests are now available for controlled documents.
 - New responsive design and behaviours for the stepper section (#142446).
