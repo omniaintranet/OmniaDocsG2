@@ -105,6 +105,8 @@ Just click the option (no window or message is shown) and you can then paste the
 
 .. image:: published-copylink-77.png
 
+**Important note!** This is a link to the actual controlled documents library. Permissions apply, so colleagues need read permissions in the library to be able to read the document.
+
 Document history
 ******************
 There’s quite a lot of information about each published edition available. To see it, do the following:
