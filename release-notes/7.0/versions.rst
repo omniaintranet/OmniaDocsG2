@@ -1,3 +1,11 @@
+7.7.8
+========================================
+(Omnia 7.7.8 / Workplace 7.7.5 / WCM 7.7.5 / MS 7.7.3 / Analytics 7.7.4)
+
+- Improved the behaviour when searching for really short terms in the page rollup (#162228).
+- Fixed a filter issue in the page rollup (#160799).
+- Updated Matomo to version 5.2.0.
+
 7.7.7
 ========================================
 (Omnia 7.7.7 / Workplace 7.7.5 / WCM 7.7.4 / MS 7.7.3 / Analytics 7.7.3)
