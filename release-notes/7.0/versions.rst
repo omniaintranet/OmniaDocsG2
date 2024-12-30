@@ -1,3 +1,18 @@
+7.7.7
+========================================
+(Omnia 7.7.7 / Workplace 7.7.5 / WCM 7.7.4 / MS 7.7.3 / Analytics 7.7.3)
+
+- Fixed an issue on link nodes in the wcm editor that would incorrectly show that the page has not loaded.
+- Possibility to configure the date picker locale. 
+- Stability improvements to the Entra ID sync. 
+- Label updates in Omnia Admin.
+- Mentions in comments now support to search for the full name (#149839).
+- Bulk create users now supports emails with subdomains (#162966).
+- It is now possible to configure a link button with the current user’s email. 
+- People picker updates to make it easier to select an extension. 
+- Improved the behaviour for deleted documents in the pick document provider of the document rollup (#138557).
+
+
 7.7.6
 ========================================
 (Omnia 7.7.6 / Workplace 7.7.4 / WCM 7.7.3 / MS 7.7.2 / Analytics 7.7.3)
