@@ -17,7 +17,7 @@
 - Mentions in comments now support to search for the full name (#149839).
 - Bulk create users now supports emails with subdomains (#162966).
 - It is now possible to configure a link button with the current user’s email. 
-- People picker updates to make it easier to select an extension. 
+- Identity picker updates to make it easier to select an extension. 
 - Improved the behaviour for deleted documents in the pick document provider of the document rollup (#138557).
 
 
