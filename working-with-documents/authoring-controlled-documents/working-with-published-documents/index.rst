@@ -157,20 +157,24 @@ A published document can be moved to any other site with a controlled documents 
 
 **Note!** You must first check and note (or copy) the URL to the site you want to move the document to.
 
-1.	Click the dot menu for the document.
-2.	Select "Move Document".
+1.	Open the dot menu for the document.
+2.	Select "Move document".
+
+.. image:: published-move-document-menu-77.png
  
 The following is shown:
 
-.. image:: published-move-document-new4.png
+.. image:: published-move-document-77.png
 
-Note the message about what will happen with document properties. And in this example the document can't be moved, the draft version must be deleted first.
+Note the message about what will happen with document properties. 
  
-3.	Type the URL (or paste, if you have copied it) to the site in the top field and click "Resolve". 
+3.	Type the URL (or paste, if you have copied it) to the site in the top field and click RESOLVE. 
 
-**Note!** You should type or paste the URL to the site, note the controlled documents library. If the URL is not correct (meaning pointing to the site only) you will get the message that site does not contain a controlled documents library.
+**Note!** You should type or paste the URL to the site, note the controlled documents library. If the URL is not correct (for example pointing to the controlled documents library), a message will be displayed saying that the site does not contain a controlled documents library.
 
-If the URL is correct the site title is shown in the second field - Site Title.
+If the URL is correct the site title is shown in the second field: Site title. Heres and example:
+
+.. image:: published-move-document-correct-77.png
 
 4.	Click MOVE.
 
