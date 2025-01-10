@@ -14,5 +14,5 @@ Select section for more information.
 
    settings-ai-engine/index
    improve-selected-text-ai-engine/index
-   content-analysis-ai-engnine/index
+   content-analysis-ai-engine/index
  
