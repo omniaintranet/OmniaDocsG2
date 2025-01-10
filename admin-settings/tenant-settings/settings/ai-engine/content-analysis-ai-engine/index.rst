@@ -1,4 +1,4 @@
-Content analysis (Ai engine)
+Content analysis (Ai Engine)
 =============================================
 
 This is the content analysis functionality in Omnia 7.8
