@@ -1,6 +1,8 @@
 Content analysis (OpenAI)
 =============================================
 
+This page describes how this works in Omnia 7.7.
+
 You can set up a number of prompts for content analysis, to be used by editors. Here's an example:
 
 .. image:: content-analysis.png
