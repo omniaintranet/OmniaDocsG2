@@ -26,10 +26,6 @@ Select section for more information:
    user-profile-completion/index
    
 
-In Omnia 7.8, the menu looks like this:
-
-.. image:: tenant-settings-v78.png
-
-For descriptions of the AI engine functionality, see:
+In Omnia 7.8, the Open AI option has been renamed AI Engine, and contains additional functionality. For more information, see:
 
 :doc:`AI Engine </admin-settings/tenant-settings/settings/ai-engine/index>`
