@@ -1,7 +1,7 @@
 Settings
 ====================
 
-Here you can set the following:
+Here you can set the following in Omnia 7.7 (see below for 7.8):
 
 .. image:: tenant-settings-v7.png
 
@@ -25,3 +25,11 @@ Select section for more information:
    text-styles/index
    user-profile-completion/index
    
+
+In Omnia 7.8, the menu looks like this:
+
+.. image:: tenant-settings-v78.png
+
+For descriptions of the AI engine functionality, see:
+
+(Link to bed added)
