@@ -32,4 +32,4 @@ In Omnia 7.8, the menu looks like this:
 
 For descriptions of the AI engine functionality, see:
 
-:doc:`AI engine </admin-settings/tenant-settings/settings/ai-engine/index>`
+:doc:`AI Engine </admin-settings/tenant-settings/settings/ai-engine/index>`
