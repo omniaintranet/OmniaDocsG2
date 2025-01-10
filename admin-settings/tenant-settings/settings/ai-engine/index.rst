@@ -1,15 +1,11 @@
 AI engine
 ==================================
 
-**(This page is just started).**
-
 The following options are available here in Omnia 7.8 and later:
 
-.. image:: ai-engine-menu.se
+.. image:: ai-engine-menu.png
 
-Prerequisite: The two tenant features for Azure OpenAI must be activated. 
-
-Also note that OpenAI requires an Azure Open AI subscription.
+Prerequisite: The AI engine tenant feature must be activated. 
 
 Select section for more information.
 
@@ -20,12 +16,3 @@ Select section for more information.
    improve-selected-text-ai-engine/index
    content-analysis-ai-engnine/index
  
-
-
-
-
-
-
-
-
-
