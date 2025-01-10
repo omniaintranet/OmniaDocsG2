@@ -1,4 +1,4 @@
-Improve selected text (AI engine)
+Improve selected text (AI Engine)
 =============================================
 
 This is the functionality in Omnia 7.8.
