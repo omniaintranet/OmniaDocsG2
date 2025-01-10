@@ -1,9 +1,9 @@
-Settings (AI engine)
+Settings (AI Engine)
 =============================================
 
 This description applies to Omnia 7.8.
 
-**This page is just started).**
+**(This page is just started).**
 
 The following settings are available here:
 
