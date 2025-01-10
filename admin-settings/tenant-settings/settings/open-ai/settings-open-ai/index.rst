@@ -1,6 +1,8 @@
 Settings (OpenAI)
 =============================================
 
+This page describes eth settings in Omnia 7.7.
+
 The following settings are available here:
 
 .. image:: settings-open-ai.png
