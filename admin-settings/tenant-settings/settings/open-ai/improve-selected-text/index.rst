@@ -1,6 +1,8 @@
 Improve selected text (OpenAI)
 =============================================
 
+This page describes how this works in Omnia 7.7.
+
 You can create a number of prompt settings here to be used by editors, with OpenAI, for example:
 
 .. image:: improve-selected-text-75.png
