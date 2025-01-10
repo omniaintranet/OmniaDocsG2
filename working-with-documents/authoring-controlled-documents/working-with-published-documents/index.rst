@@ -182,9 +182,13 @@ Unpublish and restore a document
 **********************************
 A published document that has a new draft can't be unpublished, the draft must be deleted first.
 
+The Unliblish option is found in the dot menu for a document:
+
+.. image:: unpublish-menu-77.png
+
 When you unpublish a document, you must add a message. You can also change your mind at this point:
 
-.. image:: unpublish-question-76.png
+.. image:: unpublish-question-77.png
 
 If you change your mind, just click CANCEL.
 
@@ -198,21 +202,21 @@ The restored document keeps it's ID and the document history is retrieved as wel
 
 The recycle bin for controlled documents is found here:
 
-.. image:: delete-document-613-recycle-bin-new.png
+.. image:: delete-document-recylcle-77.png
 
 Here, documents can be restored or permanently deleted.
 
 Select the document and select option.
 
-.. image:: delete-document-613-recycle-bin-options-new.png
+.. image:: delete-document-613-recycle-bin-options-77.png
 
 If you choose to permanently delete a document, you get a chance to change your mind:
 
-.. image:: delete-document-613-recycle-bin-options-delete-new.png
+.. image:: delete-document-613-recycle-bin-options-delete-77.png
 
 If you choose to restore a document, the following is shown:
 
-.. image:: delete-document-613-recycle-bin-options-restore-new.png
+.. image:: delete-document-613-recycle-bin-options-restore-77.png
 
 These are the same options as when you create a draft from a published document. See above for a decription.
 
