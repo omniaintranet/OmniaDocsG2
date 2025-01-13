@@ -247,6 +247,8 @@ Using OpenAI
 -----------------
 If available, you can use OpenAI to suggest changes to the text, or maybe even to suggest some text for you.
 
+In Omnia 7.8, the AI functionality is called The AI Engine and is generally updated and somewhat extended. You work with the options for text suggestions the same way in Omnia 7.8, as is described here.
+
 If OpenAI is available, you use the following icon to start the option:
 
 .. image:: openai-icon-76.png
