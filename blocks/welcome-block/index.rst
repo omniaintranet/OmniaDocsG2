@@ -25,18 +25,18 @@ You can see a preview in the block while testing different settings.
 
 + **Position**: Set the position for the avatar, in relation to the message(s); Left, Right, Top or Bottom.
 + **Size**: Set the size of the avatar; Small, Medium, Large or Extra large,
-+ **Elevation and Border width**: Use the sliders to set avatar elevation and a border in pixels, if tou want.
++ **Elevation and Border width**: Use the sliders to set avatar elevation and a border in pixels, if you want.
 + **Border color**: If you opt to use a border (meaning setting it to more than 0 pixels), you can set the color of the border here.
 
 Messages
 ***************
-You can use this section to add one or more messages to the recipient. The following settings are available here:
+You can use this section to add one or more messages. The following settings are available here:
 
 .. image:: welcome-block-settings-messages.png 
 
 + **Message template**: Add the message here.
 + **Message type**: The message type can be Time in day, Date time, Day of week, Birthday or Default. Note that different settings are available for the message types. See below for more information.
-+ **Font size**: Use the slider to set the font size. Default font size is 14. Youe can't set the size smaller than that.
++ **Font size**: Use the slider to set the font size. Default font size is 14. You can't set the size smaller than that.
 + **Text color**: The text color for the message can be set here.
 + **Bold, italic or underscore**: The text can also be bold, italic or underscored.
 
