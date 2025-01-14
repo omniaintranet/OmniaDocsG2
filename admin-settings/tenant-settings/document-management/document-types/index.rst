@@ -95,7 +95,7 @@ and these:
 
 .. image:: document-type-general-v78-2.png
 
-+ **Title**: Add a title for the document type. Note that default language is mandatory.
++ **Title**: Add a title for the document type. Note that a title in the default language is mandatory.
 + **Description**: A description is not mandatory but can be useful if your organization uses a lot of different document types.
 + **Property set**: Property sets is a way of grouping a number of properties into a set, which makes it easier to use a set of properties in several document types. Select a property set for the document type. When you have done so you can click the cogwheel to see the properties that belong to the set. You will also see information about, and can sometimes edit, placeholder shortname and default value for the properties in the set.
 + **Document templates**: Select one or more of the available templates. You must always do this even if there’s just one template available.
