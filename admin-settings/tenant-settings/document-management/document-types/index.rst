@@ -148,7 +148,7 @@ If you selected that publishing approval is needed for this document type, you m
 
 + **Anyone**: The author can select any user of the portal as approver, when the document is published.
 + **Limited list of users**: Authors can select approvers from a defined list only. You create the list here.
-+ **Term-driven**: Authors can select approvers from a defined list only. Which approvers will be available depends on the properties selected for the documents. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
++ **Term-driven**: Authors can select approvers from a defined list only. Available approvers depend on the properties selected for the documents. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
 + **Based on person property**: You select one of the person properties defined, for example document owner.
 + **Group**: This setting will use the permission group for approvers in the teamsite. Needs "Approvers group" to be selected in settings for document management.
 
@@ -160,7 +160,7 @@ When you select Semantic search, you also select on of these options:
 
 + **Allow to be included in semantic search. Unchecked by default.**: An author can choose that a document of this type should be available for semantic search, but the default is that it's not (unchecked).
 + **Allow to be included in semantic search. Checked by default.**: A document of this type is available for semantic search by default, but an author can choose that it should not be, by unchecking the option.
-+ **Always include in semantic search. Unchecked by default.**: All document of this type are available for semantic search. Authors have no say in the matter.
++ **Always include in semantic search. Unchecked by default.**: All documents of this type are available for semantic search. Authors have no say in the matter.
 
 Review
 ---------
@@ -178,7 +178,7 @@ When review reminders are activated you can set the following:
 .. image:: document-types-review-reminder-v78.png
 
 + **Review interval**: Set number of days, months or years for the review interval. 
-+ **Property**: Another way is to select a property for handling of review. An example could be if you want authors to be able to set a specific date for review, which could be needed for a supplier agreement, for example. A date property must then have been set up for this to work.
++ **Property**: Another way is to select a property for review. An example could be if you want authors to be able to set a specific date for review, which could be needed for a supplier agreement, for example. A date property must then have been set up for this to work.
 + **Send reminder in advance**: Set the number of days, months or years that a reminder should be sent, before the review date.
 + **Review reminder recipients**: Select review reminder recipient(s) in the list.
 + **Create task**: If a review task should be created, select this option. For more information, see below.
@@ -196,7 +196,7 @@ When you choose to create a task, this is shown:
 
 Archive
 ----------
-Use this tab to decide if documents of this document type should be archived or not. If the document type should be archived, you can set archive to be used, by adding the URL. You don't have to add a URL to use the default archive.
+Use this tab to decide if documents of this type should be archived or not. If the document type should be archived, you can set archive to be used, by adding the URL. You don't have to add a URL to use the default archive.
 
 .. image:: document-types-archive-v78.png
 
