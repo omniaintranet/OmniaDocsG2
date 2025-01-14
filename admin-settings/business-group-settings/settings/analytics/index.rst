@@ -50,6 +50,6 @@ Another alternative for displaying analytics is to use the blocks useful for thi
 
 About Matomo marketplace
 ***************************
-There are a lot of additional plugins, themes and more, that can be purchased/downloaded from Matomo marketplace (see link to Matomo above). If you decide to use any additions, just be aware that Omnia can not guarantee that these additions works as expected, and can not offer any support on the additions.
+There are a lot of additional plugins, themes and more, that can be purchased/downloaded from Matomo marketplace (see link to Matomo above). If you decide to use any additions, just be aware that Omnia can not guarantee that these additions works as expected in Omnia, and can not offer any support on the additions.
 
 
