@@ -10,17 +10,38 @@ Available settings are these:
 .. image:: welcome-block-settings.png
  
 General
---------
+************
 You can add a name for the block here, if needed.
 
 .. image:: welcome-block-settings-general.png 
 
-Display
----------
-(A description will be added soon).
+Profile image
+***************
+Here you can choose to show an avatar, and if you do, the following settings are available:
+
+.. image:: welcome-block-settings-profile.png 
+
++ **Position**: 
++ **Size**: 
++ **Elavetion and Border width**: 
++ **Border color**: 
+
+
+
+Messages
+***************
+The following settings are available here:
+
+.. image:: welcome-block-settings-messages.png 
+
++ **Message template**: 
++ **Message type**: 
++ **Font size**: 
++ **Text color**: 
++ **Bold, italic or underscore**: 
 
 Style
---------
+*********
 Just settings for padding available here.
 
 .. image:: welcome-block-settings-style.png 
