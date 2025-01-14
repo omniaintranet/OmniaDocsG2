@@ -26,8 +26,6 @@ Here you can choose to show an avatar, and if you do, the following settings are
 + **Elavetion and Border width**: 
 + **Border color**: 
 
-
-
 Messages
 ***************
 The following settings are available here:
@@ -45,13 +43,4 @@ Style
 Just settings for padding available here.
 
 .. image:: welcome-block-settings-style.png 
- 
-
-
-
-
-
-
-
-
 
