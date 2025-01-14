@@ -44,7 +44,7 @@ Options for Analytics
 ----------------------
 All users that should have permission to see analytics data for the business profile must be added as "Analytics readers". **Note!** That's true for tenant administrators and business profile administrators as well. No administrator has automatic access to analytics. An analytics reader will also be added as a user within Matomo (in Omnia 7.7 and later, see below).
 
-... image:: permissions-analytics-78.png
+.. image:: permissions-analytics-78.png
 
 + **Matomo users**: Colleagues that need to use Matomo must be added here. permissions-analytics-78
 + **Analytics report viewers**: All colleagues that should be able to see analytics data in the reports in Omnia, must be added to this field. Can be persons or groups.
@@ -55,5 +55,5 @@ Secrets
 ********
 When an extension has been installed for the business profile, get the security key/token and enter it here. In this example tokens for Facebook workplace, Viva Engage and Mediaflow can be added:
 
-.. image:: secrets-business-profile-78.png
+.. image:: secrets-business-profile-78-frame.png
 
