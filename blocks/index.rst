@@ -61,6 +61,7 @@ Blocks
    text/index
    user-information-block/index
    user-profile-progress/index
+   welcome-block/index
    working-with-blocks/index
    yammer-feed/index
    
