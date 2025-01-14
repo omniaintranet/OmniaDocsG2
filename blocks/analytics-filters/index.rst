@@ -7,21 +7,21 @@ Pre requisite: To use Matomo analytics, the tenant feature “Analytics core set
 
 The following settings are available for this block:
 
-.. image:: analytics-block.png
+.. image:: analytics-block-78.png
 
 General
 ---------
 The following can be set under General:
 
-.. image:: analytics-block-general.png
+.. image:: analytics-block-general-78.png
 
 + **Connection key**: You can create a connection between this block and one or more Analytics widget blocks and/or Analytics report blocks. This is how you can use this filter settings in several other blocks. Just type a suitable connection key.
 
 Display
 ---------
-Under Display you set up the filters
+Under Display you set up the filters.
 
-.. image:: analytics-block-display.png
+.. image:: analytics-block-display-78.png
 
 + **Period**: Decide if you want to display period, and if you do, select period in the list.
 + **Period date**: Decide if you want to display period date, and if you do, select period date in the list.
@@ -30,9 +30,11 @@ Under Display you set up the filters
 
 Style
 ---------
-Here you can set som padding if needed:
+The following settings are available for Style:
 
-.. image:: analytics-block-style.png
+.. image:: analytics-block-style-78.png
+
+(Should be self explanatory).
 
 Layout and Write
 ******************
