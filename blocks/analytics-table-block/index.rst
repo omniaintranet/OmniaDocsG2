@@ -1,7 +1,7 @@
 Analytics report
 ========================
 
-This is a new block in Omnia 7.6. Using this block you can display a list of pages in a business profile and see the usage. The usage data is gathered by Matomo.
+Using this block you can display a list of pages in a business profile and see the usage. The usage data is gathered by Matomo.
 
 Here's an example where the block is used in a governance hub with a lot of filter options:
 
