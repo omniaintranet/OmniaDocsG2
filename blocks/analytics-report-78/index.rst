@@ -19,7 +19,7 @@ Here, you can set a title for the block, if needed:
 
 Query
 ---------
-Here you select web site and type, and when you have selected a type, you can also select a report. Here's an example:
+Here you select web site and type, and when you have selected a type:
 
 .. image:: analytics-report-query-78.png
 
