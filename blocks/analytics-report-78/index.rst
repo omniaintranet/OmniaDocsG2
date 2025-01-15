@@ -1,7 +1,7 @@
 Analytics report in Omnia 7.8
 ===================================
 
-This page describes the settings in Omnia 7.8. See thiis page for Omnia 7.7: :doc:`Analytics report </blocks/analytics-table-block/index>`
+This page describes the settings in Omnia 7.8. See the following page for Omnia 7.7: :doc:`Analytics report </blocks/analytics-table-block/index>`
 
 **This page is just started.**
 
