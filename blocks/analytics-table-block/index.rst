@@ -9,7 +9,7 @@ Here's an example where the block is used in a governance hub with a lot of filt
 
 Note that the block requires a fairly broad space to display all default columns in the list.
 
-This page describes the settings in Omnia 7.7. See thiis page for Omnia 7.8: :doc:`Analytics report in Omni 7.8 </blocks/analytics-report-78/index>`
+This page describes the settings in Omnia 7.7. See this page for Omnia 7.8: :doc:`Analytics report in Omnia 7.8 </blocks/analytics-report-78/index>`
 
 Settings
 *****************
