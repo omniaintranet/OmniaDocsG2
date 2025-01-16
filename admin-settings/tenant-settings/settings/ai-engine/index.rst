@@ -1,11 +1,11 @@
-AI Features
+AI features
 ==================================
 
 The following options are available here in Omnia 7.8 and later:
 
 .. image:: ai-engine-menu-78.png
 
-Prerequisite: The AI Engine tenant feature must be activated. 
+Prerequisite: An Azure Open AI subscription is needed for the AI features to be available in Omnia.
 
 Select section for more information.
 
