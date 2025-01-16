@@ -24,7 +24,9 @@ The tenant feature "Semantic search" must be active for this functionality to be
 
 To put it very simple, semantic search makes it possible to type search strings similar to the way you would ask a colleague. Even if you don't type the correct words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia.
 
-**Very important!** The sesmantic search will soon be developed further in Omnia but for now it does not support security trimming. Therefore, use semantic search only for common information that anyone in the organization have permission to read. If semantic search should be used can be set at page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet.
+**Very important!** The semantic search will soon be developed further in Omnia but for now it does not support security trimming. Therefore, use semantic search only for common information that anyone in the organization have permission to read. If semantic search should be used can be set at page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet.
+
+Also, there's a permission group where you can the colleagues or groups that should be able to use semantic search. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
 These settings are available for semantic search:
 
