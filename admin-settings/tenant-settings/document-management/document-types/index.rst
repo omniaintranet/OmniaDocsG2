@@ -158,9 +158,9 @@ When you select Semantic search, you also select on of these options:
 
 .. image:: document-types-publish-semantic-v78.png
 
-+ **Allow to be included in semantic search. Unchecked by default.**: An author can choose that a document of this type should be available for semantic search, but the default is that it's not (unchecked).
-+ **Allow to be included in semantic search. Checked by default.**: A document of this type is available for semantic search by default, but an author can choose that it should not be, by unchecking the option.
-+ **Always include in semantic search. Unchecked by default.**: All documents of this type are available for semantic search. Authors have no say in the matter.
++ **Allow to be included in semantic search. Unchecked by default.**: An author can choose that a document of this type should be available for semantic search, in the publishing process. With this option, the default is that it's not (unchecked).
++ **Allow to be included in semantic search. Checked by default.**: A document of this type is available for semantic search by default, in the publishing process. With this option an author can choose that it should not be, by unchecking the option.
++ **Always include in semantic search. Unchecked by default.**: All documents of this type are always available for semantic search. No option is shown when publishing.
 
 Review
 ---------
