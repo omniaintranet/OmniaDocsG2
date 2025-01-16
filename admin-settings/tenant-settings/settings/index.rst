@@ -26,6 +26,6 @@ Select section for more information:
    user-profile-completion/index
    
 
-In Omnia 7.8, the Open AI option has been renamed AI Engine, and contains additional functionality. For more information, see:
+In Omnia 7.8, the Open AI option has been renamed AI features, and contains additional functionality (Semantic search). For more information, see:
 
-:doc:`AI Engine </admin-settings/tenant-settings/settings/ai-engine/index>`
+:doc:`AI features </admin-settings/tenant-settings/settings/ai-engine/index>`
