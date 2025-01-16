@@ -1,4 +1,4 @@
-Content analysis (AI Engine)
+Content analysis (AI settings)
 =============================================
 
 These are the available settings for content analysis functionality in Omnia 7.8. If you have used this option in 7.7 for OpenAI, it works the same.
