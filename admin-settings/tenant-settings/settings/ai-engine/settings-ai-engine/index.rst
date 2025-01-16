@@ -7,7 +7,7 @@ This description applies to Omnia 7.8.
 
 The following settings are available here:
 
-.. image:: settings-ai-engine-all.png
+.. image:: settings-ai-engine-all-78.png
 
 Text completion configuration
 *******************************
