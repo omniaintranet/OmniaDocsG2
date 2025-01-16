@@ -60,9 +60,11 @@ If it's needed, an option is shown:
 
 .. image:: publishing-semantic.png
 
-The option can be pre selected, or not, depending on settings.
+The option can be pre selected, or not, depending on settings. Either way, the decision can be taken now, in the publishing process.
 
 The semantic search settings can be different for each document type. Also note that the setting for a specific document type can state that all documents of the type should always be included in semantic search. If that is the case, no option is shown when publishing.
+
+For more information, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
 Approved or rejected
 *********************
