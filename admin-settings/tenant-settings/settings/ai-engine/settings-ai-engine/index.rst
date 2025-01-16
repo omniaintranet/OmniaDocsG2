@@ -1,4 +1,4 @@
-Settings (AI Engine)
+Model configuration (AI)
 =============================================
 
 This description applies to Omnia 7.8.
