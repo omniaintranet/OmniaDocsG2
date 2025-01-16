@@ -52,6 +52,18 @@ The approver automatically has read access to the document (Note! Read access on
 
 The workflow will be active until the task is completed and the document will be locked for editing during that time.
 
+Omnia 7.8 - semantic search
+*******************************
+In Omnia 7.8, semantic search can be available. It can be set up in several ways, but a decision about including the document in semantic search, or not, may be needed.
+
+If it's needed, an option is shown:
+
+.. image:: publishing-semantic.png
+
+The option can be pre selected, or not, depending on settings.
+
+The semantic search settings can be different for each document type. Also note that the setting for a specific document type can state that all documents of the type should always be included in semantic search. If that is the case, no option is shown when publishing.
+
 Approved or rejected
 *********************
 If the document is approved for publication, it’s now available for readers. You, the author, will receive an Email stating that.
