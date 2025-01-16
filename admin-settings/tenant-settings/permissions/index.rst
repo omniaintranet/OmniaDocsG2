@@ -1,15 +1,17 @@
 Permissions for the tenant
 ============================
 
+**This page is being edited**.
+
 The following settings are found here:
 
 .. image:: security-tenant-v75.png
 
 Users and groups
 ******************* 
-Use this setting to add and remove tenant administrators and separate administrators for shared links and snnouncements, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. 
+Use this setting to add and remove tenant administrators and separate administrators for shared links and snnouncements, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.8).
 
-.. image:: tenant-permissions-v75.png
+.. image:: tenant-permissions-v78.png
 
 To delete an administrator in any of the lists, just click the x. To add an administrator, add the name the same way as in other name fields.
 
@@ -18,6 +20,10 @@ To delete an administrator in any of the lists, just click the x. To add an admi
 If you see a field called "Entra ID username", it's a special case that can be necessary to handle when setting up a new tenant. As the user sync can't be executed until the tenant has been setup, you may need to add a tenant administrator in this field, in this special circumstance.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+
+The semantic search reader setting
+--------------------------------------
+Semantic search is a new AI feature that can be available in Omnia 7.8 and later. Add the colleagues and groups that should be able to use semantic search in Omnia.
 
 Secrets
 ********
