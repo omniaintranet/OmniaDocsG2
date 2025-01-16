@@ -20,6 +20,8 @@ The following options are available here:
 
 Semantic search
 *******************
+The tenant feature "Semantic search" must be active for this functionality to be available.
+
 These settings are available for semantic search:
 
 .. image:: settings-ai-engine-semantic.png
