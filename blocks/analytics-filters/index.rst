@@ -34,7 +34,9 @@ The following settings are available for Style:
 
 .. image:: analytics-block-style-78.png
 
-(A description will be added soon).
++ **Outlined**: Available in Omnia 7.8 and later. (A description will be added soon).
++ **Rounded**: Available in Omnia 7.8 and later. (A description will be added soon).
++ **Filled**: Available in Omnia 7.8 and later. (A description will be added soon).
 
 Layout and Write
 ******************
