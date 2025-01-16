@@ -1,9 +1,9 @@
-AI Engine
+AI Features
 ==================================
 
 The following options are available here in Omnia 7.8 and later:
 
-.. image:: ai-engine-menu.png
+.. image:: ai-engine-menu-78.png
 
 Prerequisite: The AI Engine tenant feature must be activated. 
 
