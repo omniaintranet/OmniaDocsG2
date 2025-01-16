@@ -34,7 +34,7 @@ The following settings are available for Style:
 
 .. image:: analytics-block-style-78.png
 
-(Should be self explanatory).
+(A description will be added soon).
 
 Layout and Write
 ******************
