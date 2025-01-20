@@ -1,3 +1,15 @@
+7.7.10
+========================================
+(Omnia 7.7.10 / Workplace 7.7.6 / WCM 7.7.8 / MS 7.7.5 / Analytics 7.7.4)
+
+- It is now possible to send emails to more participants in event management (#161079).
+- Updated user agent info when Omnia communicates with M365. 
+- Updates to RSS reader to improve compatibility (#163072).
+- Improved handling of long labelled terms in taxonomy filter (#163323).
+- Improved the representation of an Omnia page in SharePoint when the Omnia page has no page image (#163295).
+- New UX in controlled documents for updating or switching the document template (#162498).
+
+
 7.7.8
 ========================================
 (Omnia 7.7.8 / Workplace 7.7.5 / WCM 7.7.5 / MS 7.7.3 / Analytics 7.7.4)
