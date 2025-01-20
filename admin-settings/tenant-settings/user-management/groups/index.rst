@@ -35,9 +35,7 @@ Here you can add an image for the group using the Image picker, add a name and d
 
 Add users to a group
 ---------------------------------
-For 7.5 it works this way: Only Omnia users can be added to Omnia groups. If you need to add other users to groups, use Dynamic groups.
-
-In Omnia 7.6 and later, Entra ID users can be added to an Omnia group as well.
+Omnia users andEntra ID users can be added to an Omnia group.
 
 To add users to a group, do the following:
 
