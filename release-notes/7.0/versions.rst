@@ -1,3 +1,11 @@
+7.7.11
+========================================
+(Omnia 7.7.11 / Workplace 7.7.6 / WCM 7.7.9 / MS 7.7.5 / Analytics 7.7.4)
+
+- Performance improvements to the identity picker (#163133).
+- Fixed an issue with relative date-time filters in Digital Signage (#162825).
+
+
 7.7.10
 ========================================
 (Omnia 7.7.10 / Workplace 7.7.6 / WCM 7.7.8 / MS 7.7.5 / Analytics 7.7.4)
