@@ -28,6 +28,10 @@ AI
 * Support for semantic search
 * Enhanced AI features
 
+Mobile
+---------------------------------------------
+
+* UI revamp
 
 Governance
 ---------------------------------------------
