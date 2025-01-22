@@ -154,7 +154,7 @@ If you selected that publishing approval is needed for this document type, you m
 
 Options for semantic search
 ------------------------------
-When you select Semantic search, you also select on of these options:
+When you select Semantic search, you also select one of these options:
 
 .. image:: document-types-publish-semantic-v78.png
 
