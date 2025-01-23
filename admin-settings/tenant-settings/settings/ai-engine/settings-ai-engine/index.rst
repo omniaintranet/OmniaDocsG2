@@ -28,7 +28,7 @@ To put it very simple, semantic search makes it possible to type search strings 
 
 Also, there's a permission group available where you can add the colleagues or groups that should be able to use semantic search. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
-Semantic search can be used alongside classic search. It can be decided for each search block, if semantic search should be used, or if some other search catagory should be used.
+Semantic search can be used alongside classic search. It can be decided where to use semantic search by creating one or more search categories with semantic search as search provider.
 
 These settings are available for semantic search:
 
