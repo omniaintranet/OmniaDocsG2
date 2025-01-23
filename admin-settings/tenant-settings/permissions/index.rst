@@ -17,7 +17,7 @@ To delete an administrator in any of the lists, just click the x. To add an admi
 
 **Note!** There must always be at least one tenant administrator. If there is only one, that administrator can not be removed until an additional administrator has been added.
 
-If you see a field called "Entra ID username", it's a special case that can be necessary to handle when setting up a new tenant. As the user sync can't be executed until the tenant has been setup, you may need to add a tenant administrator in this field, in this special circumstance.
+If you see a field called "Username", as in the image above, it's a special case that can be necessary to handle when setting up a new tenant. As the user sync can't be executed until the tenant has been setup, you may need to add a tenant administrator in this field, in this special circumstance.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
