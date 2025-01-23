@@ -7,9 +7,9 @@ Here you can work with search categories and set default search template.
 
 To edit a Search config, click the pen. To delete a search config, click the dust bin.
 
-Search sategories
+Search categories
 *******************
-To create a new Search Category, click the plus and use the settings available for the Search Provider. All settings listed below.
+To create a new search category, click the plus and use the settings available for the Search Provider. All settings listed below.
 
 .. image:: search-config-categories-4-new2.png
 
