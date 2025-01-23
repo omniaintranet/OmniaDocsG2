@@ -46,7 +46,8 @@ Use the settings this way:
 + **Break permission inheritance by default**: Select this option if inheritance should be broken when a new page is created within the page collection. This could, for example, be useful for communities. When this option is active, the colleague creating the page will be the page owner, meaning that he or she has full control over who can edit. The new option "Invite co-authors" can then be used to easily add authors for the page, see below.
 + **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. 
 + **Channel**: If you enable this, it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
-+ **Open AI**: When you activate this option you can set properties for what the Open AI should be able to work with, see below. Also note that two tenant features must be activated for this option to be available and settings for Open AI has to be made in Omnia Admin.
++ **Open AI**: (Renamed AI generated content in Omnia 7.8). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI has to be made in Omnia Admin.
++ **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-piblished to be indexed for semantic search. Also see *Important notes about semantic search* below.
 
 Set default values for a page type
 --------------------------------------
@@ -242,17 +243,21 @@ When you enable publishing to channels you can also choose that at least one pub
 
 I you select this there must be at least one channel selected when a new page is created in the page collection, or the the new page can not be saved.
 
-Options for OpenAI
+Options for AI
 -----------------------
-When activating the OpenAI option, the following settings are available for this page collection:
+When activating the AI option, the following settings are available for this page collection:
 
 .. image:: open-ai-page-collection.png
 
-+ **Summary**: To activate OpenAI functionality for page summary, select the appropriate summary property here.
-+ **Text**: Likewise for text fields, select property to activate OpenAI functionality.
-+ **Image**: Dall-E is an OpenAI option that can be activated (a feature needs to be activated) and are then available as an image provider in the Image Picker. Select the image property used to activate the functionality.
++ **Summary**: To activate AI functionality for page summary, select the appropriate summary property here.
++ **Text**: Likewise for text fields, select property to activate AI functionality.
++ **Image**: Dall-E is an AI option that can be activated (a tenant feature needs to be activated) and are then available as an image provider in the image picker. Select the image property used to activate the functionality.
 
-See the bottom of this page for information about how OpenAI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
+See the bottom of this page for information about how AI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
+
+Important notes for semantic search
+--------------------------------------
+
 
 Saving page collection settings
 ********************************
