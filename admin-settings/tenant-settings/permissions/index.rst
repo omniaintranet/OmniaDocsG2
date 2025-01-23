@@ -45,11 +45,15 @@ System account is a standard extension for specialized implementations only, nor
 
 Connected tenants
 ------------------
-(Information will be added soon)
+This option is connected to the cross tenant publilshing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
 
 .. image:: secrets-connected-tenants.png
 
+By clicking the pen, you can edit these settings:
+
 .. image:: secrets-connected-tenants-edit.png
+
+You have to communicate witth a tenant edmin to recieve the information you neeed for these two fields.
 
 Event Management service account
 ----------------------------------
@@ -88,7 +92,7 @@ Available in Omnia 7.8 and later. (A description will be added soon.)
 
 .. image:: aifeatures-aisearch.png
 
-AI features: AI search
+AI features: Dall-E
 ------------------------------------
 (Called Azure OpenAI Dall-E configuration in Omnia 7.7).
 
