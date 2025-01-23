@@ -1,9 +1,11 @@
 Welcome block
 ==================================
 
-**(This page is just started).**
+**(This page is being edited).**
 
-This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions.
+This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions, to the logged in user.
+
+**Tip!** Remember that most blocks can be targeted. So if you would like to display different messages to different user groups, add several blocks, and use targeting for the blocks. For more information, see the "Targeting" section on this page: :doc:`General block settings </blocks/general-block-settings/index>`
 
 Available settings are these:
 
@@ -52,9 +54,9 @@ Message types
 ----------------
 You can use the message types this way:
 
-+ Time in day: Select a day and time when the message should be shown. It's then shown until you delete it.
++ Time in day: Select a day and time when the message should be shown. It's then shown, that time in day, until you delete it.
 + Date time: Set a period for when the message should shown; a start date and time and en end day and time.
-+ Day of week: Set which day of the week the message should be shown.
++ Day of week: Set which day of the week the message should be shown. It's then shown, that day of the week, until you delete it.
 + Birthday: Select the data source for the birthday date. There must be a data source for birthday set up for this to work.
 + Default: The message is shown from now on, til you delete it.
 
