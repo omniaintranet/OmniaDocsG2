@@ -5,7 +5,7 @@ Permissions for the tenant
 
 The following settings are found here:
 
-.. image:: security-tenant-v75.png
+.. image:: security-tenant-v78.png
 
 Users and groups
 ******************* 
@@ -24,6 +24,8 @@ For more information on the people picker, see: :doc:`Using the people picker </
 The semantic search reader setting
 --------------------------------------
 Semantic search is a new AI feature that can be available in Omnia 7.8 and later. Add the colleagues and groups that should be able to use semantic search in Omnia.
+
+
 
 Secrets
 ********
