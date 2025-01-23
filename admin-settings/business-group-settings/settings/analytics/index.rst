@@ -19,8 +19,18 @@ These settings are available for Matomo analytics, in a business profile (image 
 
 + **Matomo**: You can use the link shown here to go to the Matomo analytics page for this business profile.
 + **Enable data collection**: For Matomo analytics to work, this option must be selected. *Very important*: No historic data can be collected so it's important to enable this as early as possible, even before you have set up anyhting else regarding the analytics.
-+ **Share website with other business profiles**: Available in Omnia 7.8 and later. To share this Matomo website with other business profiles, select this option. (More info about how this works will be added soon).
++ **Share website with other business profiles**: Available in Omnia 7.8 and later. To share this Matomo website with other business profiles, select this option. See below for more information.
 + **Dimensions**: Here you decide what segments of analytics data to store for users. See more information below.
+
+Share analytics with other business profiles
+*********************************************
+To share analytics data with another business profile, do the following:
+
+1. Select "Share website with other business profile" in the master profile. The master profile always owns the analytics data collected.
+2. Go to a business profile wehere you will the master data.
+3. Go to Settings-Analytics in the settings for that business profile.
+4. Select "Enable data collection" is not selected already.
+5. Select the master profile in the list
 
 Add and remove dimensions
 **************************
