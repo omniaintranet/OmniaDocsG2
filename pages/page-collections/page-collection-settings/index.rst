@@ -47,7 +47,7 @@ Use the settings this way:
 + **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. 
 + **Channel**: If you enable this, it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
 + **Open AI**: (Renamed AI generated content in Omnia 7.8). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI has to be made in Omnia Admin.
-+ **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-piblished to be indexed for semantic search. Also see *Important notes about semantic search* below.
++ **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. Also see *Important notes about semantic search* below.
 
 Set default values for a page type
 --------------------------------------
@@ -255,9 +255,13 @@ When activating the AI option, the following settings are available for this pag
 
 See the bottom of this page for information about how AI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
 
-Important notes for semantic search
---------------------------------------
+Important notes about semantic search
+---------------------------------------
+To put it very simple, semantic search makes it possible to type search strings similar to the way you would ask a colleague. Even if you don't type the correct words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia. At the moment, semantic search can be available for pages (settings per page collection) and controlled documents (settings per document type). Other types of documents are not available for semantic search in Omnia, for now.
 
+**Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. Therefore, use semantic search only in page collections containing common information that anyone in the organization have permission to read. 
+
+An additional way of restricting access to information gathered by semantic search, is to use the permission group available for tenant permissions. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
 Saving page collection settings
 ********************************
