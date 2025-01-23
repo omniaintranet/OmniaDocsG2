@@ -27,10 +27,10 @@ Share analytics with other business profiles
 To share analytics data with another business profile, do the following:
 
 1. Select "Share website with other business profile" in the master profile. The master profile always owns the analytics data collected.
-2. Go to a business profile wehere you will the master data.
+2. Go to a business profile wehere you will use the master data.
 3. Go to Settings-Analytics in the settings for that business profile.
-4. Select "Enable data collection" is not selected already.
-5. Select the master profile in the list
+4. Select "Enable data collection".
+5. Select the master profile in the list.
 
 Add and remove dimensions
 **************************
