@@ -32,7 +32,7 @@ To pick documents, click "ADD DOCUMENT".
 
 .. image:: document-rollup-pick-new2.png
 
-The document picker opens and you use it to select documents. Availablle filters etc depend on settings in Omnia Admin. Here's an example:
+The document picker opens and you use it to select documents. Available filters etc depend on settings in Omnia Admin. Here's an example:
 
 .. image:: document-rollup-document-picker-77.png
 
