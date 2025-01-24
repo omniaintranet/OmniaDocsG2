@@ -50,7 +50,7 @@ Here you add queries, which is the detailed "settings" for what to display in th
 + **Published documents**  - available only if the feature Controlled documents is active. Meaning ALL published CONTROLLED DOCUMENTS the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup.
 + **Archived documents** - available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few. This is for specialized implementations.
 + **Process documents**: Available in Omni 7.8 and later. (More information will be added soon).
-+ **Sharepoint library**: Available in Omni 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URK to the library in the field shown.
++ **Sharepoint library**: Available in Omni 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URL to the library in the field shown.
 
 **Note!** Regardless of what you select here, the documents that will be displayed for a user are only those documents that the user has premissions to read.
 
