@@ -1,9 +1,9 @@
 Search config
 =======================================
 
-Here you can work with search categories and set default search template.
+Here you can work with search categories and set default search template. Here's an example of search categories:
 
-.. image:: search-config-list-new.png
+.. image:: search-config-list-78.png
 
 To edit a Search config, click the pen. To delete a search config, click the dust bin.
 
@@ -11,10 +11,10 @@ Search categories
 *******************
 To create a new search category, click the plus and use the settings available for the Search Provider. All settings listed below.
 
-.. image:: search-config-categories-4-new2.png
+.. image:: search-config-categories-78.png
 
-+ **Title**: Add a title for the aearch category, in any available languge.
-+ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search and Microsoft search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers.
++ **Title**: Add a title for the search category.
++ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. Semantic search is available in Omnia 7.8 and later.
 + **Search result source**: Select Source from the list.
 + **Search query**: Add the search query here. Tokens can be used for a dynamic search query, see this page: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 + **Enable query rules**: Query rules can be set up in SharePoint. If these query rules should be used for this category, select this option.
@@ -25,6 +25,10 @@ To create a new search category, click the plus and use the settings available f
 + **Targeting filter**: A search category can be targeted to a specific group of people based on the targeting system in Omnia. This setting will be used both in quick and advanced search. More information is found here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 The same settings are available when editing a search category.
+
+A note on semantic search
+----------------------------
+Semantic search is available in Omni 7.8 and later. 
 
 Search templates
 *********************
