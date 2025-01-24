@@ -22,7 +22,7 @@ Something like the following is shown (image from Omnia 7.8):
 
 .. image:: approval-2-78.png
 
-Available options here depends on a a number of settings. These are some common ones:
+Available options here depends on a number of settings. These are some common ones:
 
 + **Merge with document template**: If the document is not merged with a template, it can be done now. If the document already is merged with a template, this option is not shown. If you select "Yes", open the list and select a template.
 + **Publish new edition/new revision**: When a document has been published at least once, and if the settings allowed it, you can choose to publish a new revision instead (see example below). A revision is a much simpler update, for example to fix some typing errors, and does not require approval. If revisions is not allowed, only "Publish new edition" is shown.
