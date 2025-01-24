@@ -36,7 +36,11 @@ Search templates
 *********************
 Search templates are created by developers and are simply listed here. A search template defines how to display a search result. If a search result happens to not match any search template, the default search template is used. You can set default search template by clicking any of the templates in the list.
 
-In this example the selected default search template is actually named that, but any other template can be selected.
+In this example there's a search template that is named default, but any other template can be selected.
 
-.. image:: search-templates-new2.png
+.. image:: search-templates-78.png
+
+Image/Icon sizes
+******************
+(A description will be added soon).
 
