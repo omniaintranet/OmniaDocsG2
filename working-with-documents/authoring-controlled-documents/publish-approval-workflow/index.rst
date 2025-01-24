@@ -16,13 +16,13 @@ To publish a document, do the following:
 3. Select the document.
 4. Open the dot menu and select "Publish".
 
-.. image:: approval-1-new3.png
+.. image:: approval-1-78.png
  
 Something like the following is shown:
 
-.. image:: approval-2-new3.png
+.. image:: approval-2-78.png
 
-Exactly which options are available here depends on a a number of settings. These are the common ones:
+Exactly which options are available here depends on a a number of settings. These are some common ones:
 
 + **Merge with document template**: If the document is not merged with a template, it can be done now. If the document already is merged with a template, this option is not shown. If you select "Yes", open the list and select a template.
 + **Publish new edition/new revision**: When a document has been published at least once, and if the settings allowed it, you can choose to publish a new revision instead (see example below). A revision is a much simpler update, for example to fix some typing errors, and does not require approval. If revisions is not allowed, only "Publish new edition" is shown.
@@ -37,16 +37,14 @@ Exactly which options are available here depends on a a number of settings. Thes
 
 Here's an example when a document has been published before. "Publish new revision", if allowed, can now be an alternative for simpler updates.
 
-.. image:: dm-revision-example.png
+.. image:: dm-revision-example-78.png
 
 5. Select template if needed, and select all other necessary options.
-6. Click "Send".
+6. Click SEND.
 
-.. image:: approval-3-new3.png
+When you click SEND, a task is created for the approver and an Email is sent, with a link to the document. The task can look like this:
 
-When you click "Send", a task is created for the approver, and an Email is sent, with a link to the document. The task can look like this:
-
-.. image:: approval-task-new3.png
+.. image:: approval-task-78.png
  
 The approver automatically has read access to the document (Note! Read access only!), until the task is completed. If a notification panel is set up for tasks, the approver is also notified in the notification panel, and can choose to open the task from there. 
 
