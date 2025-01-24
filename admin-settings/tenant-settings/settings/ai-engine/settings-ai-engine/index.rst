@@ -37,5 +37,3 @@ These settings are available for semantic search:
 + **LLM deployment name**: (A description will added soon).
 + **Embeddings deployment name**: (A description will added soon)
 
-**Comment**: This has to be tested further, but it looks like you don't have to add anything here for a default setup.
-
