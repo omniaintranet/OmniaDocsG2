@@ -7,6 +7,7 @@ In this part of the documentation you will find information about general assets
 .. toctree::
    :titlesonly:
 
+   about-semantic-search/index
    add-link/index
    creating-app-templates/index
    creating-form-button/index
