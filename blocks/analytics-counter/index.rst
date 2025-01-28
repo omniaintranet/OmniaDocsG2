@@ -5,6 +5,8 @@ Use this block to display a simple analytics counters for a chosen website. Here
 
 .. image:: analytics-counter-example.png
 
+To be able to view the contents of the block, the permission "Analytics report viewers" is needed (settings for the business profile).
+
 Settings for the block
 *************************
 
