@@ -25,7 +25,7 @@ You can click the link to read the document. To see additional information about
 
 .. image:: controlled-tasks-me-3-78.png
 
-To go back to the list, click "Cancel".
+To go back to the list, click CANCEL.
 
 Assigned by me
 ****************
