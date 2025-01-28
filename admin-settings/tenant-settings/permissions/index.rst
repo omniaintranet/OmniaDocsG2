@@ -1,8 +1,6 @@
 Permissions for the tenant
 ============================
 
-**This page is being edited**.
-
 The following settings are found here:
 
 .. image:: security-tenant-v78.png
