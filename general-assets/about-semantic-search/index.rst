@@ -7,13 +7,13 @@ Semantic search can be available in Omnia 7.8 and later, depending on settings i
 
 For users
 **********
-Semantic search is fundamentally different from classic search. To put it very simple, when searching, you can type a "question" simliar to the way you would ask a colleague. Another important difference from classic search is that Even if you don't type the correct words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia.
+Semantic search is fundamentally different from classic search. To put it very simple, when searching, you can type a "question" similar to the way you would ask a colleague. Another important difference from classic search is that even if you don't type the "correct" words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia.
 
 For developers and administrators
 ***********************************
 To use semantic search within the tenant, activate the feature "Semantic search". 
 
-You also must see to that there's a search category with the search provider "Semantic search" available for each business profile where you plan to use semantic search.
+You also must see to that there's a search category with the search provider "Semantic search" available for each business profile where you plan to use this functionality.
 
 You can then decide for each search block to use semantic search or some other search provider by selecting search category.
 
