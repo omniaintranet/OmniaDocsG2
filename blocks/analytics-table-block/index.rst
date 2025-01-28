@@ -3,6 +3,8 @@ Analytics report
 
 Using this block you can display a list of pages in a business profile and see the usage. The usage data is gathered by Matomo.
 
+To be able to view the contents of the block, users need the permission "Analytics report viewers" (settings for the business profile).
+
 Here's an example where the block is used in a governance hub with a lot of filter options:
 
 .. image:: analytics-report-example-hub.png
