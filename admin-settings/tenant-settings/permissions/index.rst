@@ -9,7 +9,7 @@ The following settings are found here:
 
 Users and groups
 ******************* 
-Use this setting to add and remove tenant administrators and separate administrators for shared links and snnouncements, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.8).
+Use this setting to add and remove tenant administrators and separate administrators for shared links and announcements, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.8).
 
 .. image:: tenant-permissions-v78.png
 
@@ -23,13 +23,15 @@ For more information on the people picker, see: :doc:`Using the people picker </
 
 The semantic search reader setting
 --------------------------------------
-Semantic search is a new AI feature that can be available in Omnia 7.8 and later (if semantic search is active in the tenant). Add the colleagues and groups that should be able to use semantic search.
+Semantic search is a new AI feature that can be available in Omnia 7.8 and later (if semantic search is activated in the tenant). Add the colleagues and groups that should be able to use semantic search.
 
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. Therefore, semantic search should only be used for common information that anyone in the organization have permission to read, for now. 
 
 If semantic search should be used can be set at page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet.
 
 This permission settings can be another way of restricting who can read information gathered by semantic search.
+
+**Important note!** If semantic search is used in a search block and certain users are not allowed to use the feature, they get empty search result if trying to use this search block.
 
 Secrets
 ********
