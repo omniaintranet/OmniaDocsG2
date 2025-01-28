@@ -164,8 +164,6 @@ When you select Semantic search, you also select one of these options:
 + **Allow to be included in semantic search. Checked by default.**: A document of this type is available for semantic search by default, in the publishing process. With this option an author can choose that it should not be, by unchecking the option.
 + **Always include in semantic search. Unchecked by default.**: All documents of this type are always available for semantic search. No option is shown when publishing.The tenant feature "Semantic search" must be active for this functionality to be available.
 
-More about semantic search for controlled documents
------------------------------------------------------
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. 
 
 For more, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
