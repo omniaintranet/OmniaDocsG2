@@ -28,9 +28,11 @@ The same settings are available when editing a search category.
 
 A note on semantic search
 ----------------------------
-Semantic search is available in Omni 7.8 and later. The tenant feature "Semantic search" must be active for this functionality to be available.
+Semantic search is available in Omnia 7.8 and later. The tenant feature "Semantic search" must be active for this functionality to be available.
 
-**Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. Therefore, use semantic search only for common information that anyone in the organization have permission to read. If pages and documents should available (indexed) for semantic search can be set at page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet.
+**Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. 
+
+For more, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
 Search templates
 *********************
