@@ -7,6 +7,8 @@ If you will be using the same filter settings in several widget blocks, it can s
 
 Pre requisite: To use Matomo analytics, the tenant feature “Analytics core setup” must be activated, and for a business profile, the feature “Create new analytics website in Matomo” must be activated. It's also important to start collecting analytics data as sooon as possible, as no historic data can be collected. For more information, see: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
+To be able to view the contents of the block, users need the permission "Analytics report viewers" (settings for the business profile).
+
 **Note!** If using a connection to an Analytics filter block doesn't work on a section tab, you may have to disable Lazy load. See more information about this at the bottom of the page.
 
 The following settings are available for this block:
