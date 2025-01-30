@@ -10,6 +10,12 @@ The following can be available on the Settings tab:
 + **Override SharePoint sync settings**: Available for local page types (not for tenant ones). See below for a description.
 + **Properties**: Select the properties that should be available for pages created from this page type. In many cases it results in fields the page editor has to or can fill in for a page. You can select any of the properties defined in the tenant. See this page for more information about setting up properties: :doc:`Tenant settings - Properties </admin-settings/tenant-settings/properties/index>` 
 
+In Omnia 7.8 and later, a setting for Matomo analytics can also be avaiable:
+
+.. image:: page-types-event.png
+
+(More informaton about this option will be added below soon).
+
 Enable automatic archiving
 ***************************
 Using this option you can activate automatic archiving for pages created from this page type. When a page is automatically archived, it is deleted and placed in the archive, the same way as when an editor deletes a page manually.
@@ -105,4 +111,14 @@ The following settings can be available for a property (not all are shown in the
 + **Limit access permission**: If not all authors are permitted to edit this setting for the page type, add the colleagues or groups that should be able to edit these settings here. Note that a person or group must be permissions enabled to show up in the list.
 
 2. Edit the settings as needed and click OK.
+
+Enable event tracking
+************************
+This option is available if Matomo analytics is used in the tenant.
+
+When activated, the following settings can be made:
+
+.. image:: enable-event-trackning.png
+
+(A description of these settings will be added soon).
 
