@@ -5,7 +5,7 @@ Pre requisite: To use Matomo analytics, the tenant feature "Analytics core setup
 
 No set up at tenant level is required.
 
-In Omnia 7.7 analytics data is always collected separately for each business profile. In Omnia 7.8 a Matomo website can be shared between business profiles.
+In Omnia 7.7 analytics data is always collected separately for each business profile. In Omnia 7.8 a Matomo website can be shared between business profiles, meaning data can be collected from more than one business profile, for a shared Matomo web site.
 
 Matomo documentation is fully processed in ChatGPT, so you can use ChatGPT to ask about how to use various parts of Matomo functionality.
 
@@ -24,10 +24,13 @@ These settings are available for Matomo analytics, in a business profile (image 
 
 Share analytics with other business profiles
 *********************************************
-To share analytics data with another business profile, do the following:
+To share analytics data with another business profile, meaning colleting data to a shared Matomo web site, do the following:
 
-1. Select "Share website with other business profile" in the master profile. The master profile always owns the analytics data collected.
-2. Go to a business profile wehere you will use the master data.
+1. Select "Share website with other business profile" in the master profile. 
+
+The master profile is the business profile name that is displayed in lists where you select which "web site" to show analytics data from.
+
+2. Go to a business profile you will add - meaning collecting analytics data from that business profile as well.
 3. Go to Settings-Analytics in the settings for that business profile.
 4. Select "Enable data collection".
 5. Select the master profile in the list.
