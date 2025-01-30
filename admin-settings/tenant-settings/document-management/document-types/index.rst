@@ -166,7 +166,7 @@ When you select Semantic search, you also select one of these options:
 
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. 
 
-For more, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
+For more information, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
 Review
 ---------
