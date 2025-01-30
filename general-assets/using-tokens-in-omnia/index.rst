@@ -1,6 +1,8 @@
 Using tokens in Omnia
 =============================================
 
+**This page is being edited.**
+
 Here you will find a list of tokens that can be used in Omnia for various purposes. Note that tokens must not be translated.
 
 Tokens in search query
@@ -29,6 +31,44 @@ To search PDF:s in my department: FileType:pdf AND RefinableString110:{Targeting
 
 To search pages in my language: FileType:aspx AND OmniaVariationSegmentOWSTEXT:{Variation.Segment}
 
+Tokens used with action buttons
+************************************
+The following tokens can be used in text fields when using action buttons:
+
++ AppInstance tokens like {{AppInstance.Title}} etc.
++ {{Action.Type}}: The type of the button that is clicked.
++ {{Action.Title}}: The title from the button that is clicked.
+
+If possible (WCM dependent), the following placeholders may be used as well:
+
++ {{Page.Id}}
++ {{Page.Title}}
+
+Tokens in document rollup
+***************************
+The following tokens cam be used in document rollups:
+
++ Document.FullUrl
++ Document.RelativeUrl
++ Document.FileName
++ Document.Title
++ Document.[InternalName]: Any enterprise property internal name. (Note! Empty value if the data is not available in the result set).
+
+Tokens in e-mails
+*******************
+For tokens used in e-mails within Omnia, se this page: :doc:`Tokens in Omnia e-mails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
+
+Text field tokens - token for Matomo event trackning
+******************************************************
+These tokens can be used in text fields in WCM and can also be used for Matomo event trackning from page types:
+
++ {{Appinstance.Title}}
++ {{Appinstance.Description}}
++ {{Appinstance.Url}}
++ {{Page.Id}}
++ {{Page.Title}}
++ {{PublishingApp.PageCollections["UrlSegment"]}}
+
 Using placeholders in Process management
 *****************************************
 Placeholders are a special kind of tokens. They are properties added between double brackets. When you print, the placeholders are replaced by by actual data, for example the title for the process or a date.
@@ -49,6 +89,3 @@ Using placeholders in Document Management
 ******************************************
 For tokens (placeholders) that can be used in Document Management, see this page: :doc:`Creating a Document Template with Place Holders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
 
-Tokens in e-mails
-*******************
-For tokens used in e-mails within Omnia, se this page: :doc:`Tokens in Omnia e-mails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
