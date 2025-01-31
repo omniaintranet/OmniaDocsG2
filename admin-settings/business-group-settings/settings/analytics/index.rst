@@ -3,7 +3,9 @@ Analytics (Matomo) settings
 
 Pre requisite: To use Matomo analytics, the tenant feature "Analytics core setup" must be activated, and for a business profile, the feature "Create new analytics website in Matomo" must be activated. 
 
-Omnia 7.7: No set up at tenant level is required. Omnia 7.8: Additional settings for analytics is available for page types.
+Omnia 7.7: No set up at tenant level is required. 
+
+Omnia 7.8: Matomo events tracking can also be set up. Settings is available for page types, form types, documents in document rollups and action buttons.
 
 Omnia 7.7 analytics data is always collected separately for each business profile. 
 
@@ -26,7 +28,7 @@ These settings are available for Matomo analytics, in a business profile (image 
 
 Matomo event trackning
 -----------------------
-When data collection is on in a business profile, navigation data is always collected. In Omnia 7.8 and later, Matomo events tracking can also be used, if needed. Settings for Matomo events trackning is done for each page type.
+When data collection is on in a business profile, navigation data is always collected. In Omnia 7.8 and later, Matomo events tracking can also be used, if needed. Matomo Event trackning can  be set up for pages (settings for each page type), forms (settings for each form type), documents in documents rollup and for action buttons.
 
 Share analytics with other business profiles
 *********************************************
