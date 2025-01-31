@@ -126,7 +126,7 @@ When activated, the following settings can be made:
 
 + **Event category**: Add a category for the events. That category can then be selected in Matomo. This is a text field. If you type the same category for different page types, Matomo will handle them as the same category. 
 + **Event actions**: Select the actions you want to track and then add a name for the action. If you type the same name in several of the (text) fields, Matomo will handle that event action name as one. Note that the names are valid within the category, not between different catagories.
-+ **Event name**: In this field a token can be added. (More information about how to use this will be added soon). See this page for available tokens for Matomo analytics: 
++ **Event name**: In this field a token can be added. (More information about how to use this will be added soon). See this page for available tokens for Matomo analytics: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 
 **Important!** Be aware that if you change to a new category name in the field, Matomo will start collecting data to that new category from scractch. The analytics data collected for the former category name will still be available under the old name. The same is true if you change any event action name.
 
