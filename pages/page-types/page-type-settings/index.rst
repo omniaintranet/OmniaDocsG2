@@ -134,7 +134,7 @@ Here are two examples of event tracking for two different page types: Note that 
 
 .. image:: event-collected-example-1.png
 
-As you can see, available event actions are the same for all page types, it's up to you to decied witch ones to use. Also note that "First read" is a bit special. Analytics data is only collected for this event action the first time a user opens a page.
+As you can see, available event actions are the same for all page types, it's up to you to decide witch ones to use. Also note that "First read" is a bit special. Analytics data is only collected for this event action the first time a user opens a page.
 
 .. image:: event-collected-example-2.png
 
