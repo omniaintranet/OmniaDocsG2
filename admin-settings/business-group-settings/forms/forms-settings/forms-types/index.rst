@@ -1,8 +1,6 @@
 Types for forms
 ========================
 
-This option is available in Omni 7.6 and later.
-
 Here you can create a type, which in this case is a property set and a template, available when creating forms using the action button. This will make it easier, and faster, for an amdinistrator to create a form.
 
 If any post is created here, it's shown in the list:
