@@ -69,7 +69,7 @@ These tokens can be used in text fields in WCM and can also be used for Matomo e
 + {{Page.Title}}
 + {{PublishingApp.PageCollections["UrlSegment"]}}
 
-Using placeholders in Process management
+Using placeholders in process management
 *****************************************
 Placeholders are a special kind of tokens. They are properties added between double brackets. When you print, the placeholders are replaced by by actual data, for example the title for the process or a date.
 
@@ -85,7 +85,7 @@ You can use these placeholders in the cover page, the header or the footer. Shor
 + [[OPMRevision]]	- adds the revision number for the process.
 + [[EnterpriseInternalName]] - displays the internal name for the process.
 
-Using placeholders in Document Management
+Using placeholders in document management
 ******************************************
-For tokens (placeholders) that can be used in Document Management, see this page: :doc:`Creating a Document Template with Place Holders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
+For tokens (placeholders) that can be used in document management, see this page: :doc:`Creating a document template with place holders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
 
