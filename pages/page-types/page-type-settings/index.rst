@@ -124,9 +124,9 @@ When activated, the following settings can be made:
 
 .. image:: enable-event-trackning.png
 
-+ **Event category**: Add a category for the events. That category can then be selected in Matomo. This is a text field. If you type the same category for different page types, Matomo will handle them as the same category. 
++ **Event category**: Add a category for the events. That category can then be selected in Matomo. This is a text field. If you type the same category for different page types, Matomo will handle them as the same category. But with that said, you can separate event data from, for example, different apps, using tokens in the event name field.
 + **Event actions**: Select the actions you want to track and then add a name for the action. If you type the same name in several of the (text) fields, Matomo will handle that event action name as one. Note that the names are valid within the category, not between different catagories.
-+ **Event name**: In this field a token can be added. (More information about how to use this will be added soon). See this page for available tokens for Matomo analytics: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
++ **Event name**: In this field a token can be added. If it's empty, the same catagory name in different page types are always regarded as one category by Matomo. But if you like to use this category name in separate event data sets in Matomo, add a token here. An example: adding the token {{Appinstance.Title}} here means that separate event tracking data is created for different apps, but always using the event category you set here. See this page for available tokens for Matomo analytics: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 
 **Important!** Be aware that if you change to a new category name in the field, Matomo will start collecting data to that new category from scractch. The analytics data collected for the former category name will still be available under the old name. The same is true if you change any event action name.
 
@@ -138,5 +138,5 @@ As you can see, available event actions are the same for all page types, it's up
 
 .. image:: event-collected-example-2.png
 
-Here you can note that the administrator has chosen to handle both "Add comment" and "Add comment reply" as one event action as they have the same name.
+Here you can note that the administrator has chosen to handle both "Add comment" and "Add comment reply" as one event action as they have the same name. Alos note that the token {{Appinstance.Title}} is added to the "Event name" field, meaning separate event tracking data is created for each app.
 
