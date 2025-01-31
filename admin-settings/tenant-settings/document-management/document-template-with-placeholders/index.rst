@@ -32,11 +32,11 @@ There's also a special place holder if you need to show document history somewhe
 
 [[_DocHistory]]
 
+.. note:: The [_DocHistory]] placeholder can only be used in Microsoft Word, not in Excel or PowerPoint.
+
 On publication, this place holder will be replaced with a table listing all editions, for example:
 
 .. image:: place-holder.png
-
-.. note:: The [_DocHistory]] can only be used in Microsoft Word, not in Excel or PowerPoint.
 
 If you want dates to be displayed with the appropriate format you can use the following syntax for date and date including time:
 
