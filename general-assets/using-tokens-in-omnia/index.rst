@@ -58,9 +58,9 @@ Tokens in e-mails
 *******************
 For tokens used in e-mails within Omnia, se this page: :doc:`Tokens in Omnia e-mails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
 
-Text field tokens - token for Matomo event trackning
-******************************************************
-These tokens can be used in text fields in WCM and can also be used for Matomo event trackning from page types:
+Text field tokens and tokens for Matomo event trackning
+********************************************************
+These tokens can be used in text fields in WCM and can also be used for Matomo event tracking:
 
 + {{Appinstance.Title}}
 + {{Appinstance.Description}}
