@@ -3,6 +3,8 @@ Types for forms
 
 Here you can create a type, which in this case is a property set and a template, available when creating forms using the action button. This will make it easier, and faster, for an amdinistrator to create a form.
 
+In Omnia 7.8 and later, you can enable Matomo event tracking for a form type.
+
 If any post is created here, it's shown in the list:
 
 .. image:: types-forms-list.png
