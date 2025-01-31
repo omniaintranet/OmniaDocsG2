@@ -114,13 +114,29 @@ The following settings can be available for a property (not all are shown in the
 
 Enable event tracking
 ************************
-This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. Enable data collection must also be on for the business profile fo these settings before any Matomo events can be tracked.
+**This description is being edited.**
 
-If analytics data is collected by Matomo, navigation is always tracked. Here you add different Matomo events to also be tracked, if needed.
+This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. Enable data collection must also be on for the business profile before any Matomo events can be tracked.
+
+If analytics data is collected by Matomo, navigation is always tracked. Here you can add different Matomo events for pages, to also be tracked, if needed. (Event tracking can also be set up for forms, documents in document rollups and action buttons).
 
 When activated, the following settings can be made:
 
 .. image:: enable-event-trackning.png
 
-(A description of these settings will be added soon).
++ **Event category**: Add a category for the events. That category can then be selected in Matomo. This is a text field. If you type the same category for different page types, Matomo will handle them as the same category. 
++ **Event actions**: Select the actions you want to track and then add a name for the action. If you type the same name in several of the (text) fields, Matomo will handle that event action name as one. Note that the names are valid within the category, not between different catagories.
++ **Event name**: In this field a token can be added. (More information about how to use this will be added soon). See this page for available tokens for Matomo analytics: 
+
+**Important!** Be aware that if you change to a new category name in the field, Matomo will start collecting data to that new category from scractch. The analytics data collected for the former category name will still be available under the old name. The same is true if you change any event action name.
+
+Here are two examples of event tracking for two different page types: Note that they both share the same category, meaning the analytics data collected here is the sum of the data collected for both page types.
+
+.. image:: event-collected-example-1.png
+
+As you can see, available event actions are the same for all page types, it's up to you to decied witch ones to use. Also note that "First read" is a bit special. Analytics data is only collected for this event action the first time a user opens a page.
+
+.. image:: event-collected-example-2.png
+
+Here you can note that the administrator has chosen to handle both "Add comment" and "Add comment reply" as one event action as they have the same name.
 
