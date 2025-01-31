@@ -114,7 +114,7 @@ The following settings can be available for a property (not all are shown in the
 
 Enable event tracking
 ************************
-This option is available if Matomo analytics is used in the tenant. Enable data collection must also be on for the business profile fo these settings before any Matomo events can be tracked.
+This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. Enable data collection must also be on for the business profile fo these settings before any Matomo events can be tracked.
 
 If analytics data is collected by Matomo, navigation is always tracked. Here you add different Matomo events to also be tracked, if needed.
 
