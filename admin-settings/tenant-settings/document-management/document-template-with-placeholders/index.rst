@@ -1,7 +1,9 @@
 Creating a document template with place holders
 ================================================
 
-A document property place holder starts with [[ and ends with ]] and can be placed anywhere inside a DOCX document, anywhere inside an XLSX document, including header and footer, and in PowerPoint (PPTX) documents as well, in both header and content. Place holders support any document property. 
+A document property place holder starts with [[ and ends with ]] and can be placed anywhere inside a DOCX document. Most place holders can also be placed anywhere inside an XLSX document, including header and footer, and in PowerPoint (PPTX) documents as well, in both header and content. Place holders support any document property. 
+
+For more information on placeholders available for each application, see below.
 
 .. note:: In a template you probably want the published copy of the template to include the placeholders. To ensure that the placeholders are not replaced by document properties on the template, you need to escape the placeholders using the character “\\”. An escaped placeholder would look like this:
 
@@ -33,6 +35,8 @@ There's also a special place holder if you need to show document history somewhe
 On publication, this place holder will be replaced with a table listing all editions, for example:
 
 .. image:: place-holder.png
+
+.. note:: The [_DocHistory]] can only be used in Microsoft Word, not in Excel or PowerPoint.
 
 If you want dates to be displayed with the appropriate format you can use the following syntax for date and date including time:
 
