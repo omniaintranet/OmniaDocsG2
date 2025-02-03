@@ -410,7 +410,7 @@ When editing a button, the same settings as when you create a new button is avai
 
 Analytics
 ************
-It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. 
+It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. Also note that analytics data collecting must be on for the business profile for this to work, see the link to the analytics settings below.
 
 .. image:: action-button-analytics.png
 
