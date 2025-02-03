@@ -33,7 +33,7 @@ Enable event trackning
 ------------------------
 When you enable event tracking for the form type, the following is shown:
 
-.. image: form-type-event-trackning.png
+.. image:: form-type-event-trackning.png
 
 You use these settings the same way as the event trackning settings for page types. See the bottom of this page for more information: :doc:`Page type settings </pages/page-types/page-type-settings/index>`
 
