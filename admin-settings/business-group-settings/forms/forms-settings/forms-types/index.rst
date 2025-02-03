@@ -1,7 +1,7 @@
 Types for forms
 ========================
 
-Here you can create a type, which in this case is a property set and a template, available when creating forms using the action button. This will make it easier, and faster, for an amdinistrator to create a form.
+Here you can create a type, which in this case is a property set and a template, available when creating forms using the action button. This will make it easier, and faster, for an administrator to create a form.
 
 In Omnia 7.8 and later, you can enable Matomo event tracking for a form type. 
 
@@ -31,9 +31,9 @@ For more information about form templates, see: :doc:`Templates for forms </admi
 
 Enable event trackning
 ------------------------
-When you enable event tracking for the form type, the following is shown:
+When you enable event tracking for the form type, the following settings are available:
 
 .. image:: form-type-event-trackning.png
 
-You use these settings the same way as the event trackning settings for page types. See the bottom of this page for more information: :doc:`Page type settings </pages/page-types/page-type-settings/index>`
+For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
