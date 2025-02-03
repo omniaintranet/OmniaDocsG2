@@ -30,6 +30,8 @@ Matomo event trackning
 -----------------------
 When data collection is on in a business profile, navigation data is always collected. In Omnia 7.8 and later, Matomo events tracking can also be used, if needed. Matomo Event trackning can  be set up for pages (settings for each page type), forms (settings for each form type), documents in documents rollup and for action buttons.
 
+For more information about how Matomo event tracking works and the available settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
+
 Share analytics with other business profiles
 *********************************************
 To share analytics data with another business profile, meaning collecting analytics data to a shared Matomo web site, do the following:
