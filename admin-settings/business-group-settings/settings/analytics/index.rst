@@ -26,9 +26,9 @@ These settings are available for Matomo analytics, in a business profile (image 
 + **Share website with other business profiles**: Available in Omnia 7.8 and later. To share this Matomo website with other business profiles, select this option. See below for more information.
 + **Dimensions**: Here you decide what segments of analytics data to store for users. See more information below.
 
-Matomo events tracking
+Matomo event tracking
 ****************************
-When data collection is on in a business profile, navigation data is always collected. In Omnia 7.8 and later, Matomo events tracking can also be used, if needed. Matomo Event trackning can  be set up for pages (settings for each page type), forms (settings for each form type), documents in documents rollup and for action buttons.
+When data collection is on in a business profile, navigation data is always collected. In Omnia 7.8 and later, Matomo event tracking can also be used, if needed. It can  be set up for pages (settings for each page type), forms (settings for each form type), documents in documents rollup and for action buttons.
 
 For more information about how Matomo event tracking works and the available settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
