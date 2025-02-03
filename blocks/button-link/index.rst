@@ -408,8 +408,8 @@ To edit a button, click the pen. To delete a button, click the dustbin.
 
 When editing a button, the same settings as when you create a new button is available, see above.
 
-Matomo event tracking for action buttons
-********************************************
+Analytics
+************
 It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. 
 
 .. image:: action-button-analytics.png
