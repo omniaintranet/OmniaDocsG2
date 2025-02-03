@@ -173,7 +173,7 @@ Use this settings to display a link for export of the list to Excel.
 
 Analytics
 ************
-It can be possible to use Matomo event tracking for documents, through a document rollup, in Omnia 7.8 and later, if analytics is active in the tenant. 
+It can be possible to use Matomo event tracking for documents, through a document rollup. It can be available in Omnia 7.8 and later, if analytics is active in the tenant. Also note that analytics data collecting must be on for the business profile for this to work, see the link to the analytics settings below.
 
 .. image:: document-rollup-analytics.png
 
