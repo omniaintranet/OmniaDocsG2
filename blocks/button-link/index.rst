@@ -420,5 +420,5 @@ If activated, the following settings are available:
 
 For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
-Some settings are needed for every business profile where analytics data should be collected. Read about the here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
+Some settings are needed for every business profile where analytics data should be collected. Read about that here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
