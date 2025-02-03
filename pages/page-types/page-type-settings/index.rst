@@ -14,7 +14,7 @@ In Omnia 7.8 and later, a setting for Matomo analytics can also be avaiable:
 
 .. image:: page-types-event.png
 
-(More informaton about this option will be added below soon).
+See below for more information.
 
 Enable automatic archiving
 ***************************
@@ -114,29 +114,13 @@ The following settings can be available for a property (not all are shown in the
 
 Enable event tracking
 ************************
-**This description is being edited.**
+This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. 
 
-This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. "Enable data collection" must also be on for the business profile before any Matomo events can be tracked.
-
-If analytics data is collected by Matomo, navigation is always tracked. Here you can add different Matomo events for pages, to also be tracked, if needed. (Event tracking can also be set up for forms, documents in document rollups and action buttons).
+If analytics data is collected by Matomo, navigation is always tracked. Here you can add different Matomo events for pages, to also be tracked, if needed. 
 
 When activated, the following settings can be made:
 
 .. image:: enable-event-trackning.png
 
-+ **Event category**: Add a category for the events. That category can then be selected in Matomo. This is a text field. If you type the same category for different page types, Matomo will handle them as the same category. But with that said, you can separate event data from, for example, different apps, using tokens in the event name field.
-+ **Event actions**: Select the actions you want to track and then add a name for the action. If you type the same name in several of the (text) fields, Matomo will handle that event action name as one. Note that the names are valid within the category, not between different catagories.
-+ **Event name**: In this field a token can be added. If it's empty, the same catagory name in different page types are always regarded as one category by Matomo. But if you like to use this category name in separate event data sets in Matomo, add a token here. An example: adding the token {{Appinstance.Title}} here means that separate event tracking data is created for different apps, but always using the event category you set here. See this page for available tokens for Matomo analytics: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
-
-**Important!** Be aware that if you change to a new category name in the field, Matomo will start collecting data to that new category from scractch. The analytics data collected for the former category name will still be available under the old name. The same is true if you change any event action name.
-
-Here are two examples of event tracking for two different page types: Note that they both share the same category, meaning the analytics data collected here is the sum of the data collected for both page types.
-
-.. image:: event-collected-example-1.png
-
-As you can see, available event actions are the same for all page types, it's up to you to decide witch ones to use. Also note that "First read" is a bit special. Analytics data is only collected for this event action the first time a user opens a page.
-
-.. image:: event-collected-example-2.png
-
-Here you can note that the administrator has chosen to handle both "Add comment" and "Add comment reply" as one event action as they have the same name. Alos note that the token {{Appinstance.Title}} is added to the "Event name" field, meaning separate event tracking data is created for each app.
+For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </blocks/general-block-settings/index>`
 
