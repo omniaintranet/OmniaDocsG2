@@ -32,6 +32,13 @@ When data collection is on in a business profile, navigation data is always coll
 
 For more information about how Matomo event tracking works and the available settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
+For more information, also see:
+
++ :doc:`Page types settings </pages/page-types/page-type-settings/index>`
++ :doc:`Types for forms </admin-settings/business-group-settings/forms/forms-settings/forms-types/index>`
++ :doc:`Action button block </blocks/button-link/index>`
++ :doc:`Document rollup block </blocks/document-rollup/index>`
+
 Share analytics with other business profiles
 *********************************************
 To share analytics data with another business profile, meaning collecting analytics data to a shared Matomo web site, do the following:
