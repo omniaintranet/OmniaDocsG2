@@ -3,11 +3,11 @@ Types for forms
 
 Here you can create a type, which in this case is a property set and a template, available when creating forms using the action button. This will make it easier, and faster, for an amdinistrator to create a form.
 
-In Omnia 7.8 and later, you can enable Matomo event tracking for a form type. (More information about this will be added soon).
+In Omnia 7.8 and later, you can enable Matomo event tracking for a form type. 
 
-If any post is created here, it's shown in the list:
+If any posts are created here, it's shown in the list, for example:
 
-.. image:: types-forms-list.png
+.. image:: types-forms-list-78.png
 
 All settings can be edited by clicking the pen, see below. Click the dustbin to delete a template. To create a new template, click the plus.
 
@@ -15,7 +15,7 @@ Settings for a type
 *********************
 The settings available when creating a new type or editing an existing are these:
 
-.. image:: types-forms-settings.png
+.. image:: types-forms-settings-78.png
 
 + **Type**: Select the type of form to create type settings for.
 + **Title**: Add a title for the type (required).
@@ -23,8 +23,17 @@ The settings available when creating a new type or editing an existing are these
 + **Templates**: You can select a template for the type.
 + **Allow multiple questions**: If it should be possible to create several questions, select the option. If not, only one question can be created.
 + **Show form settings**: If the form settings should be shown so the administrator can edit them, when creating a form, select this option.
++ **Enable event tracking**: Available in Omnia 7.8 and later. If Matomo event tracking should be on for this form type, select this option. (For more information, see below).
 
 For more information about property sets, see: :doc:`Property sets </admin-settings/tenant-settings/properties/property-sets/index>`
 
 For more information about form templates, see: :doc:`Templates for forms </admin-settings/business-group-settings/forms/forms-settings/forms-templates/index>`
+
+Enable event trackning
+------------------------
+When you enable event tracking for the form type, the following is shown:
+
+.. image: form-type-event-trackning.png
+
+You use these settings the same way as the event trackning settings for page types. See the bottom of this page for more information: :doc:`Page type settings </pages/page-types/page-type-settings/index>`
 
