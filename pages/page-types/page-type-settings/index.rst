@@ -122,5 +122,5 @@ When activated, the following settings can be made:
 
 .. image:: enable-event-trackning.png
 
-For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </blocks/general-block-settings/index>`
+For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
