@@ -3,11 +3,13 @@ About Matomo event tracking
 
 **This page is just started.**
 
-The option to analyze how an Omnia site (business profile) is used with Matomo has been available in Omnia for a while.
+his information is intended for developers and administrators.
 
-In Omnia 7.8 options for Matomo event tracking has been added, making the possibilites for analytics almost endless.
+The option to analyze how an Omnia site (business profile) is used with Matomo has been available in Omnia for a while. In Omnia 7.8 options for Matomo event tracking has been added, making the possibilites for analytics almost endless.
 
 Prequisites: The tenant feature "Analytics core setup" must be active and "Enable data collection" must be on for the business profiles you want to track.
+
+As before, Matomo users and users that should have permissions to read analytics data, through any of the analytics blocks, must be added to the permissions settings for the business profile.
 
 Settings for event tracking
 *****************************
