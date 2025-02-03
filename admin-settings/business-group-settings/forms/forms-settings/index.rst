@@ -3,7 +3,7 @@ Settings (Forms)
 
 The following is available for settings for forms, in Omnia 7.6 and later:
 
-.. image:: settings-forms.png
+.. image:: settings-forms-78.png
 
 Select page for more information:
 
