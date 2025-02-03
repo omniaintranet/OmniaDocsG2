@@ -7,9 +7,11 @@ For implementation examples, see this page: :doc:`Document rollup implementation
 
 Settings
 *************************
-The following settings are available:
+The following settings are available (image from Omnia 7.8):
 
-.. image:: document-rollup-settings-all-new3.png
+.. image:: document-rollup-settings-all-78.png
+
+The Analytics options can be available ibn Omnia 7.8 and later, if Matomo analytics is active in the tenant. More info at the bottom of the page.
 
 General
 -----------------
@@ -168,6 +170,8 @@ Export
 Use this settings to display a link for export of the list to Excel.
 
 .. image:: document-rollup-export.png
+
+
 
 Layout and Write
 *********************
