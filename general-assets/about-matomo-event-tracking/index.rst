@@ -1,4 +1,4 @@
-About Matomo event trackning
+About Matomo event tracking
 ===================================
 
 **This page is just started.**
