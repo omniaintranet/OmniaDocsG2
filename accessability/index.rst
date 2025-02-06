@@ -18,9 +18,11 @@ Omnia is WCAG 2.1aa compliant. Administrators can use the features and options i
 + Readable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
 + Predictable: Using page templates in Omnia, editors can see to that pages appear and operate in predictable ways.
 + Input Assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
-+ Compatibility: Maximize compatibility with current and future user agents, including assistive technologies.
++ Compatibility: All features in Omnia are develop with compatibility in mind.
 
-The accessibility features are available from start. A user can decide to turn these on at any time. 
+The accessibility theme
+**************************
+Most accessibility features are available from start. Regarding the accessibility theme, administrator can set up and edit this theme as needed. A user can decide to turn this theme on at any time. 
 
 It's up to each user to do that in the User profile menu:
 
@@ -30,16 +32,6 @@ Select "Use accessibility features".
 
 .. image:: accessability-profile-select.png
 
-Accessibilty options include:
-
-+ The accessibility theme for colors and more - used when "Use accessibility features" is activated.
-+ All functionality available through keyboard - always on.
-+ Options to add captions to images and videos - always available.
-+ Underscore for some links (see more about this below).
-+ Sticky tool tips (being updated).
-
-The accessibility theme
-**************************
 When accessibilty is activated, the accessibility theme is used for pages. It's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
 
 Here's an example for the breadcrump.
