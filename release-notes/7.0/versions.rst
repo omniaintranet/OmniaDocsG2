@@ -1,8 +1,15 @@
+7.7.13
+========================================
+(Omnia 7.7.13 / Workplace 7.7.8 / WCM 7.7.11 / MS 7.7.6 / Analytics 7.7.4)
+
+- Fixed a rendering issue in the Taxonomy Navigation (#162771).
+- Machine translated pages now works as expected if there are many translation and an image in the RTF text field (#164134, #164298). 
+
 7.7.12
 ========================================
 (Omnia 7.7.12 / Workplace 7.7.7 / WCM 7.7.10 / MS 7.7.6 / Analytics 7.7.4)
 
-- Fixed a rendering issue in the Taxonomy Navigation (#162771).
+
 - Machine translated pages now work as expected when they contain the FAQ block.
 - Fixed an issue with the teamwork rolloup when used inside MS Teams (#143558).
 - SP Url is now available on all communcation site templates. 
