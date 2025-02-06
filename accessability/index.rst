@@ -11,13 +11,13 @@ Omnia is WCAG 2.1aa compliant. Administrators can use the features and options i
 + Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
 + Variations: Content can be presented in alternative ways, if needed, for example in different languages, in simpler language, or without using images and video.
 + Distinguishable: To make it easier for users to see and hear content, administrators can use the accessibility theme, see below. Using variations, editors can create alternative pages with spoken text, if needed.
-+ Keyboard Accessible: All functionality is available from a keyboard.
-+ Enough Time: Using the options in Omnia, editors can see to that users have enough time to read and use content.
-+ Seizures and Physical Reactions: Using the options available in Omnia, editors can design content in a way that do not cause seizures or physical reactions.
++ Keyboard accessible: All functionality is available from a keyboard.
++ Enough time: Using the options in Omnia, editors can see to that users have enough time to read and use content.
++ Seizures and physical reactions: Using the options available in Omnia, editors can design content in a way that do not cause seizures or physical reactions.
 + Navigable: Using available options in Omnia, administrators and editors can set up easy use to use navigation. Omnia also contains a number of search capabilities, that are both powerful and easy to use. 
 + Readable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
 + Predictable: Using page templates in Omnia, editors can see to that pages appear and operate in predictable ways.
-+ Input Assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
++ Input assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
 + Compatibility: All features in Omnia are develop with compatibility in mind.
 
 The accessibility theme
