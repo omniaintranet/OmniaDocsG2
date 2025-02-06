@@ -3,7 +3,7 @@ Accessibility
 
 **This page is being edited.**
 
-Omnia is WCAG 2.1aa compliant. Administrators can use the features and options in Omnia to set up look and feel, and add content in different ways, to achive the intended level of accessibility:
+Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose, for example: 
 
 + Text alternatives: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images, so it can be changed into other forms people need, like large print, braille, speech, symbols, or simpler language.
 + Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
