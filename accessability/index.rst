@@ -1,7 +1,26 @@
 Accessibility
 ===========================================
 
-Omnia is WCAG 2.1aa compliant. The accessibility features are available from start. A user can decide to turn these on at any time.
+**This page is being edited.**
+
+The descriptions on this page is valid for Omnia 7.8.  
+
+Omnia is WCAG 2.1aa compliant. Administrators can use the features and options in Omnia to set up look and feel, and add content in different ways, to achive the intended level of accessibility:
+
++ Text alternatives: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images, so it can be changed into other forms people need, like large print, braille, speech, symbols, or simpler language.
++ Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
++ Variations: Content can be presented in alternative ways, if needed, for example in different languages, in simpler language, or without using images and video.
++ Distinguishable: To make it easier for users to see and hear content, administrators can use the accessibility theme, see below. Using variations, editors can create alternative pages with spoken text, if needed.
++ Keyboard Accessible: All functionality is available from a keyboard.
++ Enough Time: Using the options in Omnia, editors can see to that users have enough time to read and use content.
++ Seizures and Physical Reactions: Using the options available in Omnia, editors can design content in a way that do not cause seizures or physical reactions.
++ Navigable: Using available options in Omnia, administrators and editors can set up easy use to use navigation. Omnia also contains a number of search capabilities, that are both powerful and easy to use. 
++ Readable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
++ Predictable: Using page templates in Omnia, editors can see to that pages appear and operate in predictable ways.
++ Input Assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
++ Compatibility: Maximize compatibility with current and future user agents, including assistive technologies.
+
+The accessibility features are available from start. A user can decide to turn these on at any time. 
 
 It's up to each user to do that in the User profile menu:
 
@@ -11,15 +30,19 @@ Select "Use accessibility features".
 
 .. image:: accessability-profile-select.png
 
-The following is then turned on:
+Accessibilty options include:
 
-+ The accessibility theme.
++ The accessibility theme for colors and more - used when "Use accessibility features" is activated.
++ All functionality available through keyboard - always on.
++ Options to add captions to images and videos - always available.
 + Underscore for some links (see more about this below).
 + Sticky tool tips (being updated).
 
 The accessibility theme
 **************************
-The main accessibility functionality is the accessibility theme. How visible the differences are can differ a lot depending on how the default themes for the business profile are set up, and how the themes are used for blocks and for backgrounds on pages, but generally contrasts are higher. Here's an example for the breadcrump.
+When accessibilty is activated, the accessibility theme is used for pages. It's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
+
+Here's an example for the breadcrump.
 
 Accessibility not turned on:
 
@@ -30,8 +53,6 @@ Accessibility turned on:
 .. image:: access-on.png
 
 It's a small but important difference.
-
-Generally, it's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
 
 In Omnia admin, theme mappings can be set up between the "accessibility theme" and other themes, if needed. That option can be used by a business profile administrator and is found here, for a business profile:
 
