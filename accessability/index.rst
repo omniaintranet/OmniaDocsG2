@@ -16,7 +16,7 @@ Omnia is WCAG 2.1aa compliant. Administrators can use the features and options i
 + Readable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
 + Predictable: Using page templates in Omnia, editors can see to that pages appear and operate in predictable ways.
 + Input assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
-+ Compatibility: All features in Omnia are develop with compatibility in mind.
++ Compatibility: All features in Omnia are developed with compatibility in mind.
 
 The accessibility theme
 **************************
