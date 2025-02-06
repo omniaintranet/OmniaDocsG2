@@ -7,7 +7,7 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 
 + Text alternatives: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images, so it can be changed into other forms people need, like large print, braille, speech, symbols, or simpler language.
 + Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
-+ Variations: Content can be presented in alternative ways, if needed, for example in different languages, in simpler language, or without using images and video.
++ Variations: The same content can be presented in alternative ways, if needed, for example in different languages, in simpler language, or without using images and video.
 + Distinguishable: To make it easier for users to see and hear content, administrators can use the accessibility theme, see below. Using variations, editors can create alternative pages with spoken text, if needed.
 + Keyboard accessible: All functionality is available from a keyboard.
 + Enough time: Using the options in Omnia, editors can see to that users have enough time to read and use content.
