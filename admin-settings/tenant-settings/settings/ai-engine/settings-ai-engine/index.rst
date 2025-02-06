@@ -3,8 +3,6 @@ Model configuration (AI)
 
 This description applies to Omnia 7.8.
 
-**(This page is being edited).**
-
 The following settings are available here:
 
 .. image:: settings-ai-engine-all-78.png
@@ -28,8 +26,10 @@ These settings are available for semantic search:
 
 .. image:: settings-ai-engine-semantic.png
 
-+ **LLM deployment name**: (A description will added soon).
-+ **Embeddings deployment name**: (A description will added soon)
+When you have created the services you need in Azure Open AI, you add services here.
+
++ **LLM deployment name**: Add the Large Language Model you will use in Omnia.
++ **Embeddings deployment name**: Add the name of the embeddings employment you have created.
 
 For more information about semantic search, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
