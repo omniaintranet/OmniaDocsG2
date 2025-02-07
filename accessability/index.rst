@@ -1,41 +1,25 @@
 Accessibility
 ===========================================
 
-**This page is being re-written.**
+**This page is being edited.**
 
-Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose.
+Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose, for example:
 
-Using features and options in Omnia for accessibility
-********************************************************
-Here's some examples of how administrators and editors can use features and options in Omnia för accessibility purposes:
-
-+ Text alternatives: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images, so it can be changed into other forms people need, like large print, braille, speech, symbols, or simpler language.
-+ Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
-+ Variations: The same content can be presented in alternative ways, if needed, for example in different languages, in simpler language, or without using images and video.
-+ Distinguishable: To make it easier for users to see and hear content, administrators can use the accessibility theme, see below. Using variations, editors can create alternative pages with spoken text, if needed.
-+ Keyboard accessible: All functionality is available from a keyboard.
-+ Enough time: Using the options in Omnia, editors can see to that users have enough time to read and use content.
-+ Seizures and physical reactions: Using the options available in Omnia, editors can design content in a way that do not cause seizures or physical reactions.
-+ Navigable: Using available options in Omnia, administrators and editors can set up easy use to use navigation. Omnia also contains a number of search capabilities, that are both powerful and easy to use. 
-+ Readable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
-+ Predictable: Using page templates in Omnia, editors can see to that pages appear and operate in predictable ways.
-+ Input assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
++ Easy to navigate: Using available options in Omnia, administrators and editors can set up easy to use navigation. 
++ Easy to find what users are looking for: Omnia contains a number of search capabilities, that are both powerful and easy to use. 
++ Navigate using the keyboard: All functionality is available from a keyboard.
++ Distinguishable: To make it easier for users to see and read content, administrators can use the accessibility theme, see below. 
++ Text alternatives for media: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images and videos, either through captions or text blocks.
++ Content presented in alternative ways: The same content can be presented in alternative ways, if needed, for example in different languages, in simpler language, without using images and video, or by using text recordings. The variaitions functionalty in Omnia is a powerful tool for this purpose.
++ Predictable behaviour: Using page templates in Omnia, administrators and editors can see to that pages appear and operate in predictable ways.
++ Seizures and physical reactions control: Using the themes functionality in Omnia, editors can design content in a consistent way that do not cause seizures or physical reactions.
++ Readable and understandable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
++ Input assistance: Omnia contains AI functionality that can assist users when creating text and images.
 + Compatibility: All features in Omnia are developed with compatibility in mind.
 
-Out of the box options for accessiblity
-*****************************************
-There's also a few out-of-the-box options ready to be used. These options can be activated anytime by the user.
-
-+ The accessibility theme (default set up that administrators kan edit, to be suitable for their implementation).
-+ Keyboard accessible: All functionality is available from a keyboard.
-+ Underscore for links.
-+ Sticky tool tips.
-
-Activating the out-of-the-box accessibiity features
-----------------------------------------------------
-A user can choose to activate the out-of-the-box accessibility features anytime.
-
-The options is available in the User profile menu:
+Activating the accessibility theme
+************************************
+A user can choose to activate or deactivate the accessibility theme anytime, using the profile menu:
 
 .. image:: accessability-profile.png
 
@@ -43,9 +27,9 @@ Select "Use accessibility features".
 
 .. image:: accessability-profile-select.png
 
-The accessibility theme
-------------------------------
-When the out-of-box accessibilty is activated, the accessibility theme is used for pages. It's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
+More about the accessibility theme
+**************************************
+When the accessibilty option is activated, the accessibility theme is used. It's up to administrators of a specific, customer implementation, to set up look and feel for the accessibility theme in a way that high accessibility is achieved. 
 
 Here's an example for the breadcrump.
 
@@ -68,42 +52,12 @@ Here's an example of a mapping:
 .. image:: admin-access-settings-settings.png
 
 Using the keyboard to navigate
--------------------------------
-The keyboard can be used to navigate in any Ommnia implementation, this way:
+**********************************
+The keyboard can be used to navigate in any Ommnia implementation, for examople this way:
 
-+ Use Tab to step forward in a menu or among the blocks on e page.
++ Use Tab to step forward in a menu or among the blocks on a page.
 + Use Shift-Tab to step backwards.
 + Use Enter to select an option.
-
-Underscore for some links
-----------------------------
-Links, where it's not obvious that they are just links, are marked with underscore.
-
-Here's an example where underscore is added to show that this is a link. In certain lists, you can click a colleagues name to open the profile card. When Accessibility features are NOT activated, there's no underscore:
-
-.. image:: underscore-not.png
-
-But when Accessibility features ARE active, this page is shown with the names underscored:
-
-.. image:: names-underscore.png
-
-When it comes to navigation, underscore is usually added when accessibility features are activated. Here's an example WITHOUT accessibility features:
-
-.. image:: navigation-no-access.png
-
-And this is WITH accessibility features:
-
-.. image:: navigation-access-on.png
-
-Some links are already marked with underscore, mainly links in areas where content is edited by the RTF Editor, so there is no difference either accessibility features are on or not.
-
-In other places it's deemed obvious that links are links, even without the underscore, for example in the Quick links block.
-
-.. image:: quik-links-block.png
-
-Meaning it looks the same accessibility features on or off.
-
-Sticky tool tips
-----------------------
-The sticky tooltips functionality is being updated and expanded in Omnia. Information about how this works will be added to this page, when a new Omnia version is implemented.
++ Use the Up and Down arrows to scroll contents on a page.
++ Use Esc to close dialogs.
 
