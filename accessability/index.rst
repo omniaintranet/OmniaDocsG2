@@ -6,9 +6,9 @@ Accessibility
 Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose, for example:
 
 + Easy to navigate: Using available options in Omnia, administrators and editors can set up easy to use navigation. 
-+ Easy to find what users are looking for: Omnia contains a number of search capabilities, that are both powerful and easy to use. 
++ Easy to find what users are looking for: Omnia contains a number of search capabilities, that are both powerful and easy to use. One example is semantic search which, if implemented, offers the possibility to search in a much more natural way.
 + Navigate using the keyboard: All functionality is available from a keyboard.
-+ Distinguishable: To make it easier for users to see and read content, administrators can use the accessibility theme, see below. 
++ Accessibility theme: To make it easier for users to see and read content, administrators can set up the accessibility theme, see below. 
 + Text alternatives for media: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images and videos, either through captions or text blocks.
 + Content presented in alternative ways: The same content can be presented in alternative ways, if needed, for example in different languages, in simpler language, without using images and video, or by using text recordings. The variaitions functionalty in Omnia is a powerful tool for this purpose.
 + Predictable behaviour: Using page templates in Omnia, administrators and editors can see to that pages appear and operate in predictable ways.
@@ -27,9 +27,9 @@ Select "Use accessibility features".
 
 .. image:: accessability-profile-select.png
 
-More about the accessibility theme
+Setting up the accessibility theme
 **************************************
-When the accessibilty option is activated, the accessibility theme is used. It's up to administrators of a specific, customer implementation, to set up look and feel for the accessibility theme in a way that high accessibility is achieved. 
+It's up to administrators of a specific, customer implementation, to set up look and feel for the accessibility theme in a way that high accessibility is achieved. 
 
 Here's an example for the breadcrump.
 
