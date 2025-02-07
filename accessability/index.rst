@@ -3,7 +3,11 @@ Accessibility
 
 **This page is being edited.**
 
-Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose, for example: 
+Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose.
+
+Using features and options in Omnia for accessibility
+********************************************************
+Here's some examples of how administrators and editors can use features and options in Omnia för accessibility purposes:
 
 + Text alternatives: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images, so it can be changed into other forms people need, like large print, braille, speech, symbols, or simpler language.
 + Time-based Media: Options to add captions for images and videos are always available. Text alternatives for image or video content can easily be added.
@@ -18,11 +22,20 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 + Input assistance: Omnia contains AI functionality that can help users avoid mistakes when creating text and images.
 + Compatibility: All features in Omnia are developed with compatibility in mind.
 
-The accessibility theme
-**************************
-Most accessibility features are available from start. Regarding the accessibility theme, administrator can set up and edit this theme as needed. A user can decide to turn this theme on at any time. 
+Out of the box options for accessiblity
+*****************************************
+There's also a few out-of-the-box options ready to be used. These options can be activated anytime by the user.
 
-It's up to each user to do that in the User profile menu:
++ The accessibility theme (default set up that administrators kan edit, to be suitable for their implementation).
++ Keyboard accessible: All functionality is available from a keyboard.
++ Underscore for links.
++ Sticky tool tips.
+
+Activating the out-of-the-box accessibiity features
+----------------------------------------------------
+A user can choose to activate the out-of-the-box accessibility features anytime.
+
+The options is available in the User profile menu:
 
 .. image:: accessability-profile.png
 
@@ -30,7 +43,9 @@ Select "Use accessibility features".
 
 .. image:: accessability-profile-select.png
 
-When accessibilty is activated, the accessibility theme is used for pages. It's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
+The accessibility theme
+------------------------------
+When the out-of-box accessibilty is activated, the accessibility theme is used for pages. It's up to administrators of a specific, customer implementation, to set up look and feel in a way that high accessibility is achieved. 
 
 Here's an example for the breadcrump.
 
@@ -52,8 +67,16 @@ Here's an example of a mapping:
    
 .. image:: admin-access-settings-settings.png
 
+Using the keyboard to navigate
+-------------------------------
+The keyboard can be used to navigate in any Ommnia implementation, this way:
+
++ Use Tab to step forward in a menu or among the blocks on e page.
++ Use Shift-Tab to step backwards.
++ Use Enter to select an option.
+
 Underscore for some links
-***************************
+----------------------------
 Links, where it's not obvious that they are just links, are marked with underscore.
 
 Here's an example where underscore is added to show that this is a link. In certain lists, you can click a colleagues name to open the profile card. When Accessibility features are NOT activated, there's no underscore:
@@ -81,6 +104,6 @@ In other places it's deemed obvious that links are links, even without the under
 Meaning it looks the same accessibility features on or off.
 
 Sticky tool tips
-*****************
+----------------------
 The sticky tooltips functionality is being updated and expanded in Omnia. Information about how this works will be added to this page, when a new Omnia version is implemented.
 
