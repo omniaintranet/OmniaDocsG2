@@ -1,7 +1,7 @@
 Accessibility
 ===========================================
 
-**This page is being edited.**
+**This page is being re-written.**
 
 Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer implementation, to use the options in Omnia in a way that high accessibility is achieved. Omnia offers a broad "smorgasboard" of features and options suitable for that purpose.
 
