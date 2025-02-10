@@ -13,6 +13,8 @@ Web Content Management
 * Accessibility enhancements related to WCAG
 * Video upload in media picker
 * Additional media provider support
+* Page bulk update
+* Improved print features in the WCM editor
 
 
 Blocks
@@ -20,6 +22,7 @@ Blocks
 
 * Downloadable web parts definitions from within Omnia admin
 * Welcome block
+* List rollup block
 
 
 AI
@@ -37,3 +40,4 @@ Governance
 ---------------------------------------------
 
 * Improved analytics functionality, incl. more trackable actions in Matomo
+* Block gallery
