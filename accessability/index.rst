@@ -54,7 +54,7 @@ Here's an example of a mapping:
 
 Using the keyboard to navigate
 **********************************
-The keyboard can be used to navigate in any Ommnia implementation, for examople this way:
+The keyboard can be used to navigate in any Ommnia implementation, for example this way:
 
 + Use Tab to step forward in a menu or among the blocks on a page.
 + Use Shift-Tab to step backwards.
