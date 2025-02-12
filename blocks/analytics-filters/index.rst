@@ -1,7 +1,7 @@
 Analytics filters
 =============================================
 
-This is a block for Matomo analytics. Use it to set filters to be used in several Analytics widget blocks. If you're going to use just one widget block, the filter settings can be made there.
+This is a block for Matomo analytics. Use it to set filters to be used in several Analytics widget and/or Analytics report blocks. If you're going to use just one widget block, the filter settings can be made there.
 
 Pre requisite: To use Matomo analytics, the tenant feature “Analytics core setup” must be activated, and for a business profile, the feature “Create new analytics website in Matomo” must be activated. It's also important to start collecting analytics data as sooon as possible, as no historic data can be collected. For more information, see: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
