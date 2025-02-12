@@ -1,7 +1,7 @@
 About Matomo event tracking
 ===================================
 
-**This page is just started.**
+**This page is being edited.**
 
 his information is intended for developers and administrators.
 
@@ -39,9 +39,8 @@ More information about Matomo analytics and event tracking
 ************************************************************
 On these pages you can find more information about Matomo analytics and Matomo event tracking:
 
-+ :doc:`General block settings </blocks/general-block-settings/index>`
-+ :doc:`General block settings </blocks/general-block-settings/index>`
-+ :doc:`General block settings </blocks/general-block-settings/index>`
-+ :doc:`General block settings </blocks/general-block-settings/index>`
-
++ :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
++ :doc:`Page type settings </pages/page-types/page-type-settings/index>`
++ :doc:`Types for forms </admin-settings/business-group-settings/forms/forms-settings/forms-types/index>`
++ :doc:`The document rollup block </blocks/document-rollup/index>`
 
