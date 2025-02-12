@@ -1,9 +1,7 @@
 About Matomo event tracking
 ===================================
 
-**This page is being edited.**
-
-his information is intended for developers and administrators.
+This information is intended for developers and administrators.
 
 The option to analyze how an Omnia site (business profile) is used with Matomo has been available in Omnia for a while. In Omnia 7.8 options for Matomo event tracking has been added, making the possibilites for analytics almost endless.
 
