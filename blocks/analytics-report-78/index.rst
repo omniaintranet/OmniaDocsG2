@@ -45,6 +45,8 @@ When you have selected "Events" as type, the following settings are available:
 + **Second dimension**: Select what should be displayed as a second dimension. Not mandatory. Basicly, the second dimension can be any of the two options you did'nt select as first dimension. 
 + **Filter value (second field)**: Here you can add a filter value for the second dimension. (More details will be added soon).
 
+For more information about Matomo event tracking, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
+
 Display
 -------------
 Here you choose Table view or Metric. The following settings are available for Table view:
