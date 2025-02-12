@@ -28,17 +28,13 @@ Here you select web site and type, and then the report you want to display in th
 + **Website**: Select the (Matomo) website to show analytics data for. In most cases, a "website" is the analytics data for a business profile.
 + **Type**: The type can be Reports or Events, meaning Matomo events.
 
-Options for Reports
--------------------
-When you have selected "Reports" as type, you select a category and then the report you would like to display in the block.
+**Options for Reports**: When you have selected "Reports" as type, you select a category and then the report you would like to display in the block.
 
 .. image:: analytics-report-query-repoprt-78.png
 
 + **Expand rows**: 
 
-Options for Events
--------------------
-Matomo events makes it possible to track certains actions, in detail or grouped. Some examples are when comments are added, when a pge is shared or when a form is created.
+**Options for Events**: Matomo events makes it possible to track certain actions, in detail or grouped. A few examples of what can be tracked are when comments are added, when a page is shared or when a form is created.
 
 When you have selected "Events" as type, the following settings are available:
 
