@@ -1,7 +1,7 @@
 Analytics report in Omnia 7.8
 ===================================
 
-**This page is just started.**
+**This page is being edited.**
 
 This page describes the settings in Omnia 7.8. See the following page for Omnia 7.7: :doc:`Analytics report </blocks/analytics-table-block/index>`
 
@@ -21,13 +21,33 @@ Here, you can set a title for the block, if needed:
 
 Query
 ---------
-Here you select web site and type, and when you have selected a type:
+Here you select web site and type, and then the report you want to display in the block.
 
 .. image:: analytics-report-query-78.png
 
-+ **Website**: Select the website to show analytics data for. In most cases, a "website" is the analytics data for a business profile.
-+ **Type**: The type can be Reports or Events.
-+ **Report**: Select report here. Available reports depend on the type chosen. Note that addtional settings can be available for some reports.
++ **Website**: Select the (Matomo) website to show analytics data for. In most cases, a "website" is the analytics data for a business profile.
++ **Type**: The type can be Reports or Events, meaning Matomo events.
+
+Options for Reports
+-------------------
+When you have selected "Reports" as type, you select a category and then the report you would like to display in the block.
+
+.. image:: analytics-report-query-repoprt-78.png
+
++ **Expand rows**: 
+
+Options for Events
+-------------------
+Matomo events makes it possible to track certains actions, in detail or grouped. Some examples are when comments are added, when a pge is shared or when a form is created.
+
+When you have selected "Events" as type, the following settings are available:
+
+.. image:: analytics-report-query-events-78.png
+
++ **First dimension**: Select "Event categories", "Event actions" or "Event names".
++ **Filter value (First field)**: Here you can add a filter value for the first dimension. (More details will be added soon).
++ **Second dimension**: Select what should be displayed as a second dimension. Not mandatory. Basicly, the second dimension can be any of the two options you did'nt select as first dimension. 
++ **Filter value (second field)**: Here you can add a filter value for the second dimension. (More details will be added soon).
 
 Display
 -------------
@@ -52,9 +72,9 @@ Description of all options below:
 + **Custom label**: To add a custom label to the metric, select this option and add the label in the field that is shown.
 + **Description**: For Metric only. To add a description for the metric, use this field.
 + **Icon type, Icon, Icon color**: To display an icon for the metric, select type and then icon. You can also choose another color for the icon.
-+ **Show pagination**: (A descripion will be added soon).
-+ **Exckude root URL (/)**: (A descripion will be added soon).
-+ **Enable export to Excel**: (A descripion will be added soon).
++ **Show pagination**: For table view only. The number of "pages" for the report is shown at the bottom, for navigation purpose.
++ **Exclude root URL (/)**: (A descripion will be added soon).
++ **Enable export to Excel**: Select this option to add a button users can click to export the report to Excel.
 
 Filter
 --------
@@ -84,10 +104,4 @@ Not much to it here. You can set some padding if needed.
 Layout and Write
 ******************
 The Write tab is not used here. The Layout tab contains general settings for blocks. For more information see: :doc:`General block settings </blocks/general-block-settings/index>`
-
-
-
-
-
-
 
