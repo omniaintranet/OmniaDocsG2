@@ -1,8 +1,6 @@
 Welcome block
 ==================================
 
-**(This page is being edited).**
-
 This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions, to the logged in user.
 
 **Tip!** Remember that most blocks can be targeted. So if you would like to display different messages to different user groups, add several blocks, and use targeting for the blocks. For more information, see the "Targeting" section on this page: :doc:`General block settings </blocks/general-block-settings/index>`
