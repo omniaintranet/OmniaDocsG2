@@ -39,6 +39,9 @@ More information about Matomo analytics and event tracking
 ************************************************************
 On these pages you can find more information about Matomo analytics and Matomo event tracking:
 
-(links to be added)
++ :doc:`General block settings </blocks/general-block-settings/index>`
++ :doc:`General block settings </blocks/general-block-settings/index>`
++ :doc:`General block settings </blocks/general-block-settings/index>`
++ :doc:`General block settings </blocks/general-block-settings/index>`
 
 
