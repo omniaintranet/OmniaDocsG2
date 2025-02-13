@@ -11,7 +11,7 @@ The following settings are available (image from Omnia 7.8):
 
 .. image:: document-rollup-settings-all-78.png
 
-The Analytics options can be available ibn Omnia 7.8 and later, if Matomo analytics is active in the tenant. More info at the bottom of the page.
+The Analytics options can be available in Omnia 7.8 and later, if Matomo analytics is active in the tenant. More info at the bottom of the page.
 
 General
 -----------------
