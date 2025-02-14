@@ -59,7 +59,7 @@ Here's an example with filters set up. The following filter settings:
 
 is displayed this way in the document picker:
 
-.. image:: document-picker-filter-example-1-78.png
+.. image:: document-picker-filter-example-1-78-frame.png
 
 3. Click "Save" when you're finished, to create the document picker category.
 
