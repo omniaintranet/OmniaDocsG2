@@ -71,7 +71,7 @@ A default base URL is added but can be edited if needed.
 
 SharePoint user profiles sync app-only
 -----------------------------------------
-In the process of enabling SharePoint app-only, Client Id and Client secret must to be added here.
+In the process of enabling SharePoint app-only, Client ID and Client secret must to be added here.
 
 .. image:: sharepoint-sync-app-v78.png
 
