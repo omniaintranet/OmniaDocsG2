@@ -18,7 +18,7 @@ Under General you can set the following:
 + **Title**: Add a title for the block, if needed.
 + **Home**: Select type of feed here; Home, Community, User or Topic.
 + **Set a custom publisher prompt**: For a Home feed you can set the publisher prompt.
-+ **Search for the unique id**: Add the unique id for the community, user or topic here.
++ **Search for the unique ID**: Add the unique ID for the community, user or topic here.
 + **Set the default community for posting**: Available for Home feed.
 + **Set a customer publisher prompt**: Available for Community feed.
 
