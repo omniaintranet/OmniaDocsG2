@@ -70,9 +70,9 @@ You can now either link to an existing, published controlled document (which was
 
 Link to a published Document
 ----------------------------------
-To link to a published controlled document you have to know the Document Id (which you normally can see where the document is listed).
+To link to a published controlled document you have to know the Document ID (which you normally can see where the document is listed).
 
-1. Enter the document-id and click "Find".
+1. Enter the documents ID and click "Find".
 
 .. image:: dm-template-find.png
 
