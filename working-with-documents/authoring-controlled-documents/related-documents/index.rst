@@ -44,11 +44,11 @@ To remove a related document from the list, do the following:
 
 1. Click the dust bin for the document.
 
-.. image:: related-remove-1-new2.png
+.. image:: related-remove-1-78.png
 
 2. Click the green icon the acknowledge the removal, the red to cancel.
 
-.. image:: related-remove-2-new2.png
+.. image:: related-remove-2-78.png
 
 3. Save.
  
@@ -56,6 +56,6 @@ Being notified when any related document is updated
 ****************************************************
 To activate notification for related documents, select who is going to be notified. When the option is active an Email is sent to the receiver every time a new edition is published for any related document.
 
-.. image:: related-notify-new2.png
+.. image:: related-notify-78.png
 
 Document owner is always available but other person fields can also be available depending on how Document management is set up.
