@@ -19,7 +19,7 @@ When you click the plus to create a new screen, the following settings are avila
 .. image:: digital-screens-settings.png
 
 + **Title**: Add a title for the screen. Not shown for users.
-+ **Screen Id**: Here you can add an internal, unique name/id for the screen.
++ **Screen ID**: Here you can add an internal, unique name/ID for the screen.
 + **Screen Type**: Select of a web browser will be used on the screen, or a third party client. If you select "Third-party clinet here, a number of options is available, see below.
 + **ADD STEP**: Available for screen type Web browser. Use this to add steps for the screen. Can be rollups and/or layouts created for digital signage. For more info, see below.
 
