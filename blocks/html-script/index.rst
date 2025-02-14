@@ -54,7 +54,7 @@ The following settings are available when editing HTML/Script:
 
 + **Title**: Add a title for the contents in the field, if needed.
 + **Title overaly**: If a title overlay is needed, add it in this field.
-+ **Hidden block**: Id the block for some reason should be hidden in reader mode (end user mode), select this option.
++ **Hidden block**: If the block for some reason should be hidden in reader mode (end user mode), select this option.
 + **Run in iFrame**: Per default, the HTML/script you add here are run in iFrame. If needed this option can be deselected.
 + **iFrame height**: If "Run in iFrame" is selected you can set the iFrame height.
 + **Run script in edit mode**: If the script should be run in reader mode (end user mode) only, select this option.
