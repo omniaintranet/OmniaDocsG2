@@ -18,13 +18,13 @@ You can set this on the "General" tab:
 + **Archive site URL**: Part of the controlled documents functionality is an archive site, where a copy of all published document’s editions are placed in an archive. The link to the site is shown here and can be edited if needed.
 + **Retention manager**: For retention of documents to work, a retention manager must be added in this field.
 
-Document Id format
+Document ID format
 *********************
-Here you set the prefix for the Document id for this tenant.
+Here you set the prefix for the Document ID for this tenant.
 
 .. image:: document-management-settings-format-v77.png
 
-When a new controlled document is published the first time, a document id is set for the document, based on the prefix from the settings. This document id is then the same in all future editions of the document and is an important part of tracking published editions of the document. 
+When a new controlled document is published the first time, a document ID is set for the document, based on the prefix from the settings. This document ID is then the same in all future editions of the document and is an important part of tracking published editions of the document. 
 
 **Note!** The Document Format can be changed even after creation of Controlled Documents has started, but it's not really recommended. Still, if it's done, existing documents will keep their prefix and only new documents will get the new one.
 
