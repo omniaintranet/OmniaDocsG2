@@ -68,7 +68,7 @@ and these:
 
 **Note!** Microsoft Teams is not available in Omnia on-prem.
 
-To use a Teams template, add the template id and choose default welcome page.
+To use a Teams template, add the template ID and choose default welcome page.
 
 .. image:: teamwork-settings-setup-team-template.png
 
@@ -119,7 +119,7 @@ The following setting is available for a Viva Engage community (former Private Y
 
 **Note!** Viva Engage Community is not available in Omnia on-prem.
 
-+ **Client id**: Type the Client id for the Viva Engage Network here.
++ **Client ID**: Type the Client ID for the Viva Engage Network here.
 + **Welcome Page**: Select the Viva Engage Group or SharePoint for welcome page. 
 
 Facebook Workplace Group
