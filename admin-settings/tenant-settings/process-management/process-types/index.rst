@@ -82,7 +82,7 @@ To edit a process type, just click it in the main list. All settings described a
 
 .. image:: process-type-edit-new2.png
 
-On the General tab you can now see the Unique id for the process, for example:
+On the General tab you can now see the Unique ID for the process, for example:
 
 .. image:: process-type-id-new.png
 
