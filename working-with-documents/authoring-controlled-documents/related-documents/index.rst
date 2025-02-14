@@ -3,9 +3,9 @@ Related documents
 
 You can use this option to relate a controlled document to other controlled documents, as information that can be shown to document readers. This option can also be used to make sure someone, for example the document owner, will be notified when a new edition is published for any related document. Any published controlled document can be related to.
 
-The number of related documents is shown to the right of the title. In this example ProDev Application Installation has 1 related document (as well as one appendice):
+The number of related documents is shown to the right of the title. In this example Sustainability policy has 1 related document:
 
-.. image:: related-documents-list-new2.png
+.. image:: related-documents-list-78.png
  
 **Note!**
 Relations between documents works just one way. If document A is related to document B, this is not shown for readers of document B. If document B should be related to document A as well, that has to be added for document B.
@@ -16,23 +16,23 @@ You can relate documents using the menu for the document on the "Published" tab.
 
 1. Open the dot menu for the document and select "Related documents".
 
-.. image:: relate-documents-1-new2.png
+.. image:: relate-documents-1-78.png
 
 2. Search for documents to relate to.
  
-.. image:: relate-documents-search-new2.png
+.. image:: relate-documents-search-78.png
  
-3. Click the i icon of needed, to see a document’s properties. 
+3. Click the i icon if needed, to see a document’s properties. 
 
-.. image:: relate-documents-icon-new2.png
+.. image:: relate-documents-icon-78.png
 
 4. Click the plus to create a relation to one or more documents. 
 
-.. image:: relate-documents-2-new2.png
+.. image:: relate-documents-2-78.png
 
 Any number of documents in the search result can be related to, and a new search can be conducted to relate to even more documents, if needed. The related document(s) are shown at the top, for example:
 
-.. image:: documents-related-new2.png
+.. image:: documents-related-78.png
 
 5. Click "Save".
 
