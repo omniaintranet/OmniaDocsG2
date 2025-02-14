@@ -13,7 +13,7 @@ A copy of all published document's editions are normally placed in an archive, b
 
 The following information is available in the archive:
 
-.. image:: archived-documents-new2.png
+.. image:: archived-documents-78.png
  
 You can search for documents and sort the list on the headings, to make it easier to find information about a certain document edition.
 
@@ -21,28 +21,24 @@ To have a look at the contents of a specific edition of a document, click the do
 
 You can see information about an edition by clicking the i-icon.
 
-.. image:: archive-icon-new2.png
+.. image:: archive-icon-78.png
 
 Here's an example:
 
-.. image:: archive-icon-info.png
+.. image:: archive-icon-info-78.png
 
 To see document history, click the link.
 
-.. image:: archive-icon-info-click-history.png
+.. image:: archive-icon-info-click-history-78.png
  
 Document history for all published editions is now shown, for example:
 
-.. image:: archive-icon-info-history.png
+.. image:: archive-icon-info-history-78.png
 
 Note the column "Published" where you can see date and time when each edition was published and then replaced the earlier edition.
 
 Workflow history for each edition of the document, for both send for comments workflows and for publication workflows, is also available here. Click the link for an edition to see it.
 
-.. image:: archive-icon-info-history-click-workflow.png
+.. image:: archive-icon-info-history-click-workflow-78.png
 
-Expand a workflow to see more details, for example:
-
-.. image:: archive-icon-info-history-workflow.png
-
-Note that you can even see comments added by reviewers and approvers, in the example above from the approver. This way you can track the process for an edition of a document; when a draft was crafted, what reviewers commented, when the edition was published and what the approver commented.
+Note that you can even see comments added by reviewers (if any send for comments workflows has been executed) and approvers. This way you can track the process for an edition of a document; when a draft was crafted, what reviewers commented, when the edition was published and what the approver commented.
