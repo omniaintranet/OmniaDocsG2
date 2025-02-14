@@ -70,7 +70,7 @@ If an archive for processes is set up, the process is placed in the archive. It'
 
 If needed, an administrator can restore a process from recycle. When a process is restored, a draft is created in Drafts as a new edition, and can then be edited and published the normal way. 
 
-A restored process keeps it's id number and the history for the process is retrieved as well. It's noted in the history that the process has been deleted and restored (if that happened).  
+A restored process keeps it's ID number and the history for the process is retrieved as well. It's noted in the history that the process has been deleted and restored (if that happened).  
 
 The recycle bin for published processes is found here:
 
