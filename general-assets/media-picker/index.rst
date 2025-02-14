@@ -47,7 +47,7 @@ This option requires a subscription to the Mediaflow service. Please find more i
 For Mediaflow to be available, the prerequisites in Omnia are:
 
 1. The feature "Mediaflow" must be active.
-2. Client Id, Client secret and Refresch token must be added under "Permissions" - "Secrets" - "MediaFlow" for a business profile. (These settings are provided by MediaFlow).
+2. Client ID, Client secret and Refresch token must be added under "Permissions" - "Secrets" - "MediaFlow" for a business profile. (These settings are provided by MediaFlow).
 
 Also check the specific settings for MediaFlow to see if you need/want to edit them. See this link: :doc:`Mediaflow settings </admin-settings/business-group-settings/settings/media-flow/index>`.
 
