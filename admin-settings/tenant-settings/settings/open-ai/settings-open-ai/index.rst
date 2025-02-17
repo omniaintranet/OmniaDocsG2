@@ -5,7 +5,7 @@ This page describes the settings in Omnia 7.7.
 
 The following settings are available here:
 
-.. image:: settings-open-ai.png
+.. image:: settings-open-ai-77.png
 
 Text completion configuration
 *******************************
