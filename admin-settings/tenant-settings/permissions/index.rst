@@ -97,7 +97,7 @@ AI features: Dall-E
 
 To be able to use the Dall-E functionality within Omnia, the tenant feature "Dall-E" must be activated. When that is done, an API key and an API base URL must be entered here.
 
-.. image:: dall-e-secret-v878.png
+.. image:: dall-e-secret-v878-frame.png
 
 reCAPTCHA
 -----------
