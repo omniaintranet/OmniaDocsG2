@@ -29,7 +29,7 @@ For descriptions of the options, see the heading "Settings for a template" on th
 
 .. image:: form-click-button-question.png
 
-This is the first step if it's not possible to edit the settings (if not, the settings are simply not shown). It's always possible to add more options (possible answers) and it may, depending on type settings, be possible to add more questions.
+This is the first step if it's possible to edit the settings (if not, the settings are simply not shown). It's always possible to add more options (possible answers) and it may, depending on type settings, be possible to add more questions.
 
 4. Click "Next" when you're finished with all questions and options.
 
