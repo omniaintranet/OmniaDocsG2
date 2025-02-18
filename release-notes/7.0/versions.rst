@@ -1,3 +1,15 @@
+7.7.15
+========================================
+(Omnia 7.7.15 / Workplace 7.7.10 / WCM 7.7.12 / MS 7.7.7 / Analytics 7.7.4)
+
+- Fixed an issue causing swiping in the search block on mobile to cause an empty panel to display.
+- When using a teamwork layout, custom column properties in controlled documents now render correctly (#164057).
+- Performance improvements to full resync of Omnia search.
+- Improved RSS reader compatibility (#164257).
+- Ensured unpublish comment in Controlled Documents is visible in the Workflow history.
+- The page rollup calendar view now shows the correct months in the month selection box (#164212).
+- Fixed a rendering issue when using a process library from within WCM (#163350).
+
 7.7.13
 ========================================
 (Omnia 7.7.13 / Workplace 7.7.8 / WCM 7.7.11 / MS 7.7.6 / Analytics 7.7.4)
