@@ -48,10 +48,10 @@ Here you add queries, which is the detailed "settings" for what to display in th
 
 .. image:: document-rollup-settings-query-scope-new2.png
 
-+ **All documents** - always available, meaning ALL documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup. The rollup can then be set to display just standard documents or both standard and controlled documents. To rollup documents from one or more teamsites, use this option.
-+ **Published documents**  - available only if the feature Controlled documents is active. Meaning ALL published CONTROLLED DOCUMENTS the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup.
-+ **Archived documents** - available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few. This is for specialized implementations.
-+ **Process documents**: Available in Omni 7.8 and later. (More information will be added soon).
++ **All documents**: Always available, meaning ALL documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup. The rollup can then be set to display just standard documents or both standard and controlled documents. To rollup documents from one or more teamsites, use this option.
++ **Published documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup.
++ **Archived documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few. This is for specialized implementations.
++ **Process documents**: Available only if the feature Process managament is active. Use the query settings below to limit what will be shown in the rollup. (More info will be added here soon).
 + **Sharepoint library**: Available in Omni 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URL to the library in the field shown.
 
 **Note!** Regardless of what you select here, the documents that will be displayed for a user are only those documents that the user has premissions to read.
@@ -73,8 +73,6 @@ Additionally you can set:
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-In Omnia 7.7 and later, you may be able to use custom date filtering for the Document rollup query. 
-
 If the scope is filtered on some kind of time property, custom date filtering can be set.
 
 See this page for more information about custom date filtering: :doc:`Custom date filtering </general-assets/custom-date-filtering/index>` 
@@ -103,12 +101,14 @@ For **List view** you can set the following:
 
 .. image:: document-rollup-settings-display-new3.png
 
-+ **Add column**: Select the columns to show in the list. Note! If users should be able to send feedback on controlled documents, add the column "Feedback icon". In the rollups shown in the implementation section below, the Feedback icon is the icon to the far right. An information icon can also be very useful as it displays more information about the document.
++ **Add column**: Select the columns to show in the list. Note! If users should be able to send feedback on controlled documents, add the column "Feedback icon". An information icon can also be very useful as it displays more information about the document.
++ **Fixed header**: The header of the rollup can be shown all the time (Fixed). If you want that, select this option.
 + **Trim by following sites**: If this option is selected only documents from sites the logged in user follows are displayed in the list.
 + **Sort by**: Select the column the list should be sorted by.
 + **Paging**: Select paging for the list here. It can be "No paging", "Classic" or "Scroll".
 + **Item limit**: Shown when No paging is selected. Set the item limit to display in each "page" of the list.
 + **Page size**: Shown when Classic or Scroll paging is selected. Set the item limit to display in each "page" of the list.
++ **No result text**: If a specific text should be displayed when the query comes up empty, add the text here.
 + **Padding**: Use this setting for padding around the contents in the block.
 
 If you select "Adjust columns" - displayed when you have selected columns - you can set the width for the columns, if needed:
@@ -127,6 +127,7 @@ For **Summary view** these settings are available:
 + **Paging**: Select type of paging here; No paging, Classic or Scroll.
 + **Item limit**: Shown when No paging is selected. Set the item limit to display in each "page" of the list.
 + **Page size**: Shown when Classic or Scroll paging is selected. Set the item limit to display in each "page" of the list.
++ **No result text**: If a specific text should be displayed when the query comes up empty, add the text here.
 + **Padding**: Use this setting for padding around the contents in the block.
 
 For **Group by site** these settings are available:
@@ -140,6 +141,7 @@ For **Group by site** these settings are available:
 + **Trim by following site**: If this option is selected only documents from sites the logged in user follows are displayed in the list.
 + **Sort by**: Select the column the list should be sorted by.
 + **Item limit**: Set the item limit to display in each "page" of the list.
++ **No result text**: If a specific text should be displayed when the query comes up empty, add the text here.
 + **Padding**: Use this setting for padding around the contents in the block.
 
 For **Card** view the following settings are available:
@@ -155,6 +157,7 @@ For **Card** view the following settings are available:
 + **Sort by**: Select the column the list should be sorted by.
 + **Paging**: Select paging for the list here. It can be "No paging", "Classic" or "Scroll".
 + **Item limit**: Set the item limit to display in each "page" of the list.
++ **No result text**: If a specific text should be displayed when the query comes up empty, add the text here.
 + **Padding**: Use this setting for padding around the contents in the block.
 
 For Card view, you can also edit card spacing, available under STYLES:
