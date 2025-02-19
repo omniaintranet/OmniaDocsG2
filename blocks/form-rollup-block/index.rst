@@ -27,8 +27,6 @@ As the next step you can add filters for what you want to show in the block.
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^^
-In Omnia 7.7 and later you may be able to use custom filtering for the Form rollup query.
-
 If the scope is filtered on some kind of time property, custom date filtering can be set.
 
 See this page for more information about custom date filtering: :doc:`Custom date filtering </general-assets/custom-date-filtering/index>` 
