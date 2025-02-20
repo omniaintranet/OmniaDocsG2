@@ -75,7 +75,7 @@ If needed, you can set a custom anchor name for each accordion post, the same wa
 
 General settings for a stepper section
 --------------------------------------------
-For a stepper section, the following can be set (image will soon be replaced):
+For a stepper section, the following can be set:
 
 .. image:: page-types-general-stepper-78.png
 
