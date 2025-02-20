@@ -3,7 +3,7 @@ Settings for sections
 
 The following settings are available when working with sections:
 
-.. image:: section-settings-76.png
+.. image:: section-settings-78.png
 
 General
 **********
@@ -13,19 +13,13 @@ General settings for a section with columns
 ------------------------------------------------
 For a section with columns, the following can be set:
 
-.. image:: page-types-general-new3.png
+.. image:: page-types-general-78.png
 
 + **Width type**: Set dynamic width ("Full Page") or a fixed width in pixels. When you have selected "Fixed", a slider is shown where you can set the width.
-+ **Columns**: Using the sliders, set a width for each of the column. Default = same width for every column.
++ **Columns**: Using the slider, set the width for a column. Default = same width for every column. Here you can also click the pen to set a minimum width for a column.
 + **Add column**: You can add a column if needed. The same settings as above can then be used for the new column. 
 
 To remove a column, click the dust bin. 
-
-For columns with fixed width, the following can be set:
-
-.. image:: fixed-width-column.png
-
-Use the slider to set the fixed column width. You can also set alignment for the content in the section.
 
 General settings for a section with tabs
 -----------------------------------------
