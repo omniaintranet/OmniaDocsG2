@@ -85,10 +85,14 @@ For a stepper section, the following can be set:
 + **Scroll to top on Previous/Next**: If this option is selected, the step page is always shown from the top, when users goes to next or previous. If not selected, no scroll is made.
 + **Horizontal scroll**: Here you can decide how the steps will line up within the section. With this option NOT selected (Default), the steps are spred out over the whole section area. With this option selected, a horizontal scroll will be used to go between the steps. This can be especially useful with more than 5 steps. 
 + **Labels beside numbers**: Decide if labels should be used besides number and if so, where; No label, Labels beside numbers, Labels below numbers.
-+ **Steps**: Here you can edit the settings for each step, by clicking the pen. 
-+ **ADD STEP**: Ta add a new step, click here. To add or edit the label for a step, click the pen. To delete a step, click the dust bin. 
++ **Steps**: Here you can edit the settings for each step, by clicking the pen, see below.
++ **ADD STEP**: Ta add a new step, click here.  
 
-If needed, you can set a custom anchor name for each step in the stepper, the same way as for a section with tabs, see above.
+When editing steps, you can add or edit a title, and set a custom anchor name, if needed.
+
+.. image:: stepper-steps.png
+
+For more information on custom anchor names, see above.
 
 Spacing
 ***********
