@@ -51,8 +51,8 @@ Here you add queries, which is the detailed "settings" for what to display in th
 + **All documents**: Always available, meaning ALL documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup. The rollup can then be set to display just standard documents or both standard and controlled documents. To rollup documents from one or more teamsites, use this option.
 + **Published documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup.
 + **Archived documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few. This is for specialized implementations.
-+ **Process documents**: Available only if the feature Process managament is active. Use the query settings below to limit what will be shown in the rollup. (More info will be added here soon).
-+ **Sharepoint library**: Available in Omni 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URL to the library in the field shown.
++ **Process documents**: Available in Onia 7.8 and later. Available only if the feature Process managament is active. See below for more information. 
++ **Sharepoint library**: Available in Omnia 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URL to the library in the field shown.
 
 **Note!** Regardless of what you select here, the documents that will be displayed for a user are only those documents that the user has premissions to read.
 
@@ -70,6 +70,12 @@ Additionally you can set:
 
 + **Day limit**: Use this option to limit the display of older documents. You first select property (for example Modified) and then select how old the documents can be to be displayed in the list.
 + **Last modified by current user**: Use this option to limit the rollup to documents the logged in user has edited, for example for a "My latest documents" implementation.
+
+Rolling up process documents
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Available in Omnia 7.8 and later. Using the query option "Process documents" you can rollup controlled documents that have been added to a process. This is meant to replace the Process documents block for the same purpose as that block was used.
+
+The primary usage is in a template for process pages. To list any documents a Process context block must be added to the same page so the document rollup "knows" which process to get the documents from.
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
