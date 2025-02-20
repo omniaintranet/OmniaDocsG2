@@ -80,11 +80,12 @@ For a stepper section, the following can be set:
 .. image:: page-types-general-stepper-78.png
 
 + **Width type**: Set dynamic width ("Full Page") or a fixed width in pixels. When you have selected "Fixed", a slider is shown where you can set the width.
-+ **Panels**: Here you can edit the settings for each panel, by clicking the pen. See information about these settings below.
 + **Vertical**: To show the steps vertically instead of horisontally, select this option.
 + **Allow user to jump to any step**: If this option is selected, users can go to any step ny clicking the label, if not, users can only go to the next or the previous step.
 + **Scroll to top on Previous/Next**: If this option is selected, the step page is always shown from the top, when users goes to next or previous. If not selected, no scroll is made.
 + **Horizontal scroll**: Here you can decide how the steps will line up within the section. With this option NOT selected (Default), the steps are spred out over the whole section area. With this option selected, a horizontal scroll will be used to go between the steps. This can be especially useful with more than 5 steps. 
++ **Labels beside numbers**: Decide if labels should be used besides number and if so, where; No label, Labels beside numbers, Labels below numbers.
++ **Steps**: Here you can edit the settings for each step, by clicking the pen. 
 + **ADD STEP**: Ta add a new step, click here. To add or edit the label for a step, click the pen. To delete a step, click the dust bin. 
 
 If needed, you can set a custom anchor name for each step in the stepper, the same way as for a section with tabs, see above.
