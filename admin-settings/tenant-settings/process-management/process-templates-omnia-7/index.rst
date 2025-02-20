@@ -29,6 +29,8 @@ Here's an example of a finished layout:
 
 .. image:: process-templates-v7-example.png
 
+**A note about blocks**: In Omnia 7.8, the Document rollup block can be used to roll upp controlled documents that have been added to a process. The recommendation is to use the Document rollup block instead of the old Process documents block, for this purpose. For more information, see: :doc:`The document rollup block </blocks/document-rollup/index>`
+
 Also see the Settings section below on how to add shapes to the template.
 
 Settings
