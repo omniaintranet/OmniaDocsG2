@@ -79,15 +79,15 @@ In the process of enabling SharePoint app-only, Client ID and Client secret must
 
 .. image:: sharepoint-sync-app-v78.png
 
-AI features: OpenAI API
+Azure OpenAI text completion configuration
 --------------------------------------------
-(Called Azure OpenAI text completion configuration in Omnia 7.7).
+(Called AI features: OpenAI API in 7.8).
 
 Omnia 7.7: To be able to use AI text functionality within Omnia, the tenant feature "Omnia.OpenAI.ChatOpenAIPanel.TextCompletion" must be activated. When that is done, an API key and an API base URL must be entered here.
 
 Omnia 7.8: To be able to use AI text functionality within Omnia, the tenant feature "Text completion" must be activated. When that is done, an API key and an API base URL must be entered here
 
-.. image:: azure-open-ai-secret-v78.png
+.. image:: azure-open-ai-secret-v77.png
 
 AI features: AI search
 ------------------------
@@ -95,9 +95,9 @@ Available in Omnia 7.8 and later. (A description will be added soon.)
 
 .. image:: aifeatures-aisearch.png
 
-AI features: Dall-E
+Azure OpenAI Dall-E configuration
 ------------------------------------
-(Called Azure OpenAI Dall-E configuration in Omnia 7.7).
+(Called AI features: Dall-E in 7.8).
 
 To be able to use the Dall-E functionality within Omnia, the tenant feature "Dall-E" must be activated. When that is done, an API key and an API base URL must be entered here.
 
