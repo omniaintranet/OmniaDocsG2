@@ -101,7 +101,7 @@ To be able to use the Dall-E functionality within Omnia, the tenant feature "Dal
 
 .. image:: dall-e-secret-v878-frame.png
 
-**Important note!** The model version should be dall-e-3 and the deployment name needs to be “Dalle3” in Omnia 7.7, when settings up Dall-E.
+**Important note!** The model version should be dall-e-3 and the deployment name needs to be “Dalle3” in Omnia 7.7, when setting up Dall-E.
 
 reCAPTCHA
 -----------
