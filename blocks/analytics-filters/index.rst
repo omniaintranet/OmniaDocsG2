@@ -34,9 +34,7 @@ The following settings are available for Style:
 
 .. image:: analytics-block-style-78.png
 
-+ **Outlined**: Available in Omnia 7.8 and later. (A description will be added soon).
-+ **Rounded**: Available in Omnia 7.8 and later. (A description will be added soon).
-+ **Filled**: Available in Omnia 7.8 and later. (A description will be added soon).
+Here you can set padding and style for the filters. Try them out and see the result in the block, while you're working.
 
 Layout and Write
 ******************
