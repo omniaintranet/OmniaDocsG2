@@ -32,7 +32,11 @@ This permission settings can be another way of restricting who can read informat
 
 Secrets
 ********
-A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's a common example: 
+A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's a common example from Omnia 7.7: 
+
+.. image:: tenant-secrets-v77.png
+
+In Omnia 7.8 some options have been renamed and a few added:
 
 .. image:: tenant-secrets-v78.png
 
