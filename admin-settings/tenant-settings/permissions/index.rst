@@ -83,9 +83,7 @@ Azure OpenAI text completion configuration
 --------------------------------------------
 (Called AI features: OpenAI API in 7.8).
 
-Omnia 7.7: To be able to use AI text functionality within Omnia, the tenant feature "Omnia.OpenAI.ChatOpenAIPanel.TextCompletion" must be activated. When that is done, an API key and an API base URL must be entered here.
-
-Omnia 7.8: To be able to use AI text functionality within Omnia, the tenant feature "Text completion" must be activated. When that is done, an API key and an API base URL must be entered here
+To be able to use AI text functionality within Omnia, the tenant feature "Text completion" must be activated. When that is done, an API key and an API base URL must be entered here
 
 .. image:: azure-open-ai-secret-v77.png
 
