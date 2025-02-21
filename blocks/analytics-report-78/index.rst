@@ -41,9 +41,9 @@ When you have selected "Events" as type, the following settings are available:
 .. image:: analytics-report-query-events-78.png
 
 + **First dimension**: Select "Event categories", "Event actions" or "Event names".
-+ **Filter value (First field)**: Here you can add a filter value for the first dimension. (More details will be added soon).
-+ **Second dimension**: Select what should be displayed as a second dimension. Not mandatory. Basicly, the second dimension can be any of the two options you did'nt select as first dimension. 
-+ **Filter value (second field)**: Here you can add a filter value for the second dimension. (More details will be added soon).
++ **Filter value (First field)**: Here you can add a filter value for the first dimension, from "Event categories", "Event actions" or "Event names" in Matomo.
++ **Second dimension**: Select what should be displayed as a second dimension. Not mandatory. Basically, the second dimension can be any of the two options you did'nt select as first dimension. 
++ **Filter value (second field)**: If you have chosen to display a second dimension, you can add a filter value from Matomo here.
 
 For more information about Matomo event tracking, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
@@ -71,7 +71,7 @@ Description of all options below:
 + **Description**: For Metric only. To add a description for the metric, use this field.
 + **Icon type, Icon, Icon color**: To display an icon for the metric, select type and then icon. You can also choose another color for the icon.
 + **Show pagination**: For table view only. The number of "pages" for the report is shown at the bottom, for navigation purpose.
-+ **Exclude root URL (/)**: (A descripion will be added soon).
++ **Exclude root URL (/)**: If the root URL, usually the start page of the intranet, should not part of the analytics display, select this option. 
 + **Enable export to Excel**: Select this option to add a button users can click to export the report to Excel.
 
 Filter
