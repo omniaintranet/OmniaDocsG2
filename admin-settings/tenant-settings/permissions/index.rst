@@ -89,8 +89,8 @@ To be able to use AI text functionality within Omnia, the tenant feature "Text c
 
 AI features: AI search
 ------------------------
-Available in Omnia 7.8 and later. (A description will be added soon.)
-
+Available in Omnia 7.8 and later. In order for the "Semantic Search" feature to work correctly, an Azure AI Search instance needs to be set up and it's read/write access credentials entered here.
+ 
 .. image:: aifeatures-aisearch.png
 
 Azure OpenAI Dall-E configuration
