@@ -1,3 +1,16 @@
+7.7.17
+========================================
+(Omnia 7.7.17 / Workplace 7.7.11 / WCM 7.7.15 / MS 7.7.8 / Analytics 7.7.4)
+
+- Support for documents for Omnia Users is now possible on communities. 
+- Better behaviour on rollups when enterprise properties are deleted (#158103, #162854).
+- The Omnia token lifetime is now configurable in Omnia Admin (#162511).
+- Fixed an issue that cause multilingual titles of announcements not to work (#163277). 
+- Fixed an issue that would cause pages to get stuck in read-only mode (#163574).
+- The properties block now works as expected (#163360).
+- Promotion channels via email now works as expected when no image is selected.
+
+
 7.7.15
 ========================================
 (Omnia 7.7.15 / Workplace 7.7.10 / WCM 7.7.12 / MS 7.7.7 / Analytics 7.7.4)
