@@ -6,7 +6,7 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 + Easy to navigate: Using available options in Omnia, administrators and editors can set up easy to use navigation. 
 + Easy to find what users are looking for: Omnia contains a number of search capabilities, that are both powerful and easy to use. One example is semantic search which, if implemented, offers the possibility to search in a much more natural way.
 + Navigate using the keyboard: All functionality is available from a keyboard.
-+ Links: All text links are marked with underscore.
++ Links: All text links are marked with underscore when the accessibility theme is active.
 + Accessibility theme: To make it easier for users to see and read content, administrators can set up the accessibility theme, see below. 
 + Text alternatives for media: Using the options in Omnia, editors can provide text alternatives for non-text content, such as images and videos, either through captions or text blocks.
 + Content presented in alternative ways: The same content can be presented in alternative ways, if needed, for example in different languages, in simpler language, without using images and video, or by using text recordings. The variaitions functionalty in Omnia is a powerful tool for this purpose.
