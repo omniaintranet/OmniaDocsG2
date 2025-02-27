@@ -32,7 +32,7 @@ Here you select web site and type, and then the report you want to display in th
 
 .. image:: analytics-report-query-repoprt-78.png
 
-+ **Expand rows**: (A description will added soon).
++ **Expand rows**: This option is similar to the "Make flat" option in Matomo. Select the option to display the subtable, if any. (If you select the option and there's no difference, no subtable is available).
 
 **Options for Events**: Matomo events makes it possible to track certain actions, in detail or grouped. A few examples of what can be tracked are when comments are added, when a page is shared or when a form is created.
 
