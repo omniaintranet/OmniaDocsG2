@@ -1,8 +1,6 @@
 Analytics report in Omnia 7.8
 ===================================
 
-**This page is being edited.**
-
 This page describes the settings in Omnia 7.8. See the following page for Omnia 7.7: :doc:`Analytics report </blocks/analytics-table-block/index>`
 
 To be able to view the contents of the block, users need the permission "Analytics report viewers" (settings for the business profile).
