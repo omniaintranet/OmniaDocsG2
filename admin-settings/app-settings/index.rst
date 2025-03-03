@@ -47,6 +47,6 @@ If necessary, you can change to another template for the app here, but the recom
 
 First select profile and then select template for the profile. (Available templates depend on the profile chosen).
 
-See this page for more information: :doc:`Templates for publishing apps </admin-settings/business-group-settings/publishing-apps/publishing-v7/templates-v7/index>`
+See this page for more information: :doc:`Templates for publishings apps </:doc:`General block settings </blocks/general-block-settings/index>`
 
 
