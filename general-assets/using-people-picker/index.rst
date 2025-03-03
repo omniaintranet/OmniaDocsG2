@@ -29,5 +29,5 @@ If you happen to select a user or a group by mistake, just click the x to remove
 
 More information for administrators: :doc:`Synchronization (User management) </admin-settings/tenant-settings/user-management/synchronization/index>`
 
-For a decsription of how the people picker works when accessibility features are on, see this page: :doc:`Accessibility </https://accessability/index>`
+For a decsription of how the people picker works when accessibility features are on, see this page: :doc:`Accessibiity </accessability/index>`
 
