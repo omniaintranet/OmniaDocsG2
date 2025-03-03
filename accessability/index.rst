@@ -62,11 +62,11 @@ The keyboard can be used to navigate in any Ommnia implementation, for example t
 
 The people picker for accessibility
 *************************************
-To make it possible to use the people picke with the keyaboard, a special version is used when accessibility features are on.
+To make it possible to use the people picke with the keyboard, a special version is used when accessibility features are on.
 
 Here's how to use it:
 
-1. Enter the field and start typing to search for a user or group.
+1. Go to the field and start typing to search for a user or group.
 2. Use Enter to search.
 
 .. image:: people-picker-search.png
