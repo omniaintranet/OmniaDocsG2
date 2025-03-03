@@ -2,7 +2,7 @@ System
 =============
 Here, the following can be set:
 
-.. image:: system-v76.png
+.. image:: system-v78.png
 
 Select section for more information:
 
