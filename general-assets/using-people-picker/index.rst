@@ -1,7 +1,7 @@
 Using the people picker
 =============================================
 
-The people picker, sometimes called the identity picker, is used in many places in Omnia. 
+The people picker, sometimes called the identity picker, is used in many places in Omnia. There's two versions of the people picker, one general and another when accessibility features are used. This page describes the general people picker.
 
 To use it, just click in the search field and start typing. Here' an example:
 
@@ -28,4 +28,6 @@ If you happen to select a user or a group by mistake, just click the x to remove
 .. image:: people-picker-remove.png
 
 More information for administrators: :doc:`Synchronization (User management) </admin-settings/tenant-settings/user-management/synchronization/index>`
+
+For a decsription of how the people picker works when accessibility features are on, see this page: :doc:`Accessibility </https://accessability/index>`
 
