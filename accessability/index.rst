@@ -60,3 +60,22 @@ The keyboard can be used to navigate in any Ommnia implementation, for example t
 + Use the Up and Down arrows to scroll contents on a page.
 + Use Esc to close dialogs.
 
+The people picker for accessibility
+*************************************
+To make it possible to use the people picke with the keyaboard, a special version is used when accessibility features are on.
+
+Here's how to use it:
+
+1. Enter the field and start typing to search for a user or group.
+2. Use Enter to search.
+
+.. image:: people-picker-search.png
+
+3. Use the arrows to navigate the list and Enter to select.
+
+To remove a user or a group, tab to select the dust bin and then Enter to remove.
+
+.. image:: people-picker-remove.png
+
+For more information on how picking people or groups work, see the page describing the general people picker: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+
