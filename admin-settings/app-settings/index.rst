@@ -15,27 +15,27 @@ Features
 ***********
 Here you activate, update or remove features for the app, for example:
 
-.. image:: app-settings-features-v7-border.png
+.. image:: app-settings-features-78.png
 
 An example: If your organization is using Document management, you must go here to activate the controlled documents library for sites where working with controlled documents should be possible. If any updates to that Features is needed, you go here as well.
 
 Descriptions and options
 ---------------------------
-For a description of a feature, and when using any option, expand the feature:
+For a description of a feature, and when using any option like activating, deactivating and updating, expand the feature:
 
-.. image:: feature-site-expand.png
+.. image:: feature-site-expand-78.png
 
 Settings
 **********
 Under Settings, the following is available:
 
-.. image:: app-settings-settings-v7.png
+.. image:: app-settings-settings-v78.png
 
 Edit settings
 ---------------
-Here you can edit the settings for the app, which was set when the app was created. The settings available depends on the template selected for the app.
+Here you can edit the settings for the app, which was set when the app was created. Available settings depends on the template selected for the app.
 
-.. image:: app-settings-settings-edit-v7.png
+.. image:: app-settings-settings-edit-v78.png
 
 If you select "Limit view access" you can change view permissions for the app to specific users.
 
@@ -43,7 +43,7 @@ Switching template
 -------------------
 If necessary, you can change to another template for the app here, but the recommendation is that you do that only for apps that are not really used yet.
 
-.. image:: app-settings-settings-template-v7.png
+.. image:: app-settings-settings-template-v78.png
 
 First select profile and then select template for the profile. (Available templates depend on the profile chosen).
 
