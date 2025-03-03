@@ -62,7 +62,7 @@ The keyboard can be used to navigate in any Ommnia implementation, for example t
 
 The people picker for accessibility
 *************************************
-To make it possible to use the people picke with the keyboard, a special version is used when accessibility features are on.
+To make it possible to use the people picker with the keyboard, a special version is used when accessibility features are on.
 
 Here's how to use it:
 
