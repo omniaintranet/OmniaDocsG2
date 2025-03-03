@@ -9,7 +9,7 @@ For a description of a feature, and when using any option like activating, deact
 
 Default configuration
 ********************************
-The purpose of these feature are to provide a number of templates and search profiles for an easy starting point. You can then edit the templates for your organization's needs, and of course add additional templates. 
+The purpose of these features are to provide a number of templates and search profiles for an easy starting point. You can then edit the templates for your organization's needs, and of course add additional templates. 
 
 .. image:: bp-features-78.png
 
@@ -23,7 +23,7 @@ Here you handle image and video providers - activating, upgrading, removing.
 
 System
 ******
-Normally just a few features available here, for a business profile, for example (Omnia 7.8):
+Normally, just a few features available here, for a business profile, for example (Omnia 7.8):
 
 .. image:: bp-features-system-78.png
 
