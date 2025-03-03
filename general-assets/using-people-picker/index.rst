@@ -7,7 +7,7 @@ To use it, just click in the search field and start typing. Here' an example:
 
 .. image:: people-picker.png
 
-Normally, single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). There are a few excepetions where only single users can be added.
+Normally, single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). There are a few exceptions where only single users can be added.
 
 External users that has been invited in Entra ID can be added here as well. Users invited this way can log in with their own Microsoft 365 account. 
 
@@ -15,7 +15,7 @@ Note that to be available in the people picker, users and groups may have to be 
 
 Also note that if the picker is used in a permission context, people and groups must by permissions enabled to show up in the list. Likewise, if the picker is used in a context where Email is used, people and groups must be Email enabled to show up in the list.
 
-If you just want to search for a specific user type or a specific group type, click here to filter:
+If you just want to search for a specific user type or a specific group type in the general people picker, click here to filter:
 
 .. image:: people-picker-example-filter1.png
 
