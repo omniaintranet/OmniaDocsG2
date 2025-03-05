@@ -1,3 +1,12 @@
+7.7.18
+========================================
+(Omnia 7.7.18 / Workplace 7.7.12 / WCM 7.7.17 / MS 7.7.9 / Analytics 7.7.4)
+
+- Fixed an issue with the conversion of dates into the Omnia birthday property type.
+- Improved performance in the media picker for central media library (#162621).
+- Ensured the task rollup works correctly for on-prem users without e-mail.
+
+
 7.7.17
 ========================================
 (Omnia 7.7.17 / Workplace 7.7.11 / WCM 7.7.15 / MS 7.7.8 / Analytics 7.7.4)
