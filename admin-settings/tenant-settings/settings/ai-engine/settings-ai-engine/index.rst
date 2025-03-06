@@ -3,6 +3,8 @@ Model configuration (AI)
 
 This description applies to Omnia 7.8.
 
+See this page for important information on how to set up AI in your tenant: :doc:`Setup AI </setup/setup-ai/index>`
+
 The following settings are available here:
 
 .. image:: settings-ai-engine-all-78.png
