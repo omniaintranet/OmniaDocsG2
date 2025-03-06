@@ -51,7 +51,7 @@ There are two different permissions for reading analytics data depending on the 
 + **Matomo users**: Colleagues that need to use Matomo must be added here. This permission is also used for the block "Analytics widget".
 + **Analytics report viewers**: All colleagues that should be able to see analytics data in the block "Anlytics report", must be added to this field. Can be persons or groups.
  
-For more information, see: :doc:`Analytics (Matomno) settings </admin-settings/business-group-settings/settings/analytics/index>`
+For more information, see: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
 Secrets
 ********
