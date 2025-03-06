@@ -44,7 +44,7 @@ Options for Analytics
 ----------------------
 There are two different permissions for reading analytics data depending on the block being used, see below. 
 
-**Note!** No administrator has automatic permission to read analytics data, so even tenant administrators and business profile administrators needs to be added to here. An analytics reader will also be added as a user within Matomo.
+**Note!** No administrator has automatic permission to read analytics data, so even tenant administrators and business profile administrators needs to be added here. 
 
 .. image:: permissions-analytics-78.png
 
