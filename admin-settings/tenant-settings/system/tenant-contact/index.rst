@@ -5,12 +5,13 @@ It's very important that you add contact information here. This will be the main
 
 **Note! This option is not applicable for Omnia on-prem.**
 
-.. image:: tenant-contact-v7.png
+.. image:: tenant-contact-v78.png
 
 + **Main Contacts**: Here you add the main contact person(s) in your organization, for Omnia. The main contact(s) will receive important announcements from the product team regarding retirement of features or major service interruptions.
-+ **Security**: This contact(s) will recieve a message from the product team on any suspected or ascertained security breach in the system.
-+ **Update Notification**: This contact(s) receive an automatic email from the system whenever the tenant has been updated with a new version of the core product or any extension.
-+ **Add External Main Contact, Security, Notification Email**: In these fields you can add email adresses to external partners that should recieve the same information.
++ **Security contacts**: This contact(s) will recieve a message from the product team on any suspected or ascertained security breach in the system.
++ **Update notification**: This contact(s) receive an automatic email from the system whenever the tenant has been updated with a new version of the core product or any extension.
++ **User sync contacts**: (A description will be added soon).
++ **Add external user sync contact Email**: (A description will be added soon).
 
 Don't forget to save when you're done.
 
