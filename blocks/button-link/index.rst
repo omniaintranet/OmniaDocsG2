@@ -3,7 +3,7 @@ Action button
 
 Use this block to add one or more actions activated by buttons on a page.
 
-All actions that can be added to an Action Menu can also be added as an action button. Now you can create access to these actions the way that suits your organization.
+All actions that can be added to an action menu can also be added as an action button. Now you can create access to these actions the way that suits your organization.
 
 The following actions are available to add as a button:
 
