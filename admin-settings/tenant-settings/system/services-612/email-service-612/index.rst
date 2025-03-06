@@ -3,7 +3,7 @@ Email service
 
 Use these settings to decide if Emails should be sent from Omnia or not.
 
-.. image:: custom-email-settings-v77.png
+.. image:: custom-email-settings-v78.png
 
 + **Turn off all Email notifications**: If you select this option, no Emails are sent from Omnia at all. If this option is enabled (ie not turned off) Emails will be sent using the provider you choose. 
 + **Email Provider**: Normally, three options can be available here: "Exchange online mailbox", "SharePoint outgoing mail" or "Smtp server". If you select "Smtp server", additional settings are shown, see below.
@@ -15,11 +15,9 @@ Use these settings to decide if Emails should be sent from Omnia or not.
 
 Restrict who Omnia can send Emails as through Exchange
 *******************************************************
-Note: These descriptions will soon be revised with new texts.
-
 To use Exchange for sending Emails from Omnia, the Microsoft permission model currently requires Omnia to be granted permission to send Emails on behalf of any user in the organization. This approach may raise security concerns. To address this, a guide for the Exchange admin to restrict Omnia to only send emails as a specified user, is included:
 
-.. image:: custom-email-settings-v77-restrict.png
+.. image:: custom-email-settings-v78-restrict.png
 
 Additional Smtp server settings
 ************************************
