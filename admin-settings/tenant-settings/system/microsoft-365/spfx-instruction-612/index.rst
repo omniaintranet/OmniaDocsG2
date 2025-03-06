@@ -3,7 +3,9 @@ SPFx instruction
 
 This is an instruction that may be needed for integration between Omnia and SharePoint team sites.
 
-.. image:: spfx-instruction-v7.png
+.. image:: spfx-instruction-v78.png
+
+(Just the top of the instruction shown in the image).
 
 **Important note!** If running the tenant in monitoring mode, Omnia will not work inside SPFx as most options in SharePoint will not work.
 
