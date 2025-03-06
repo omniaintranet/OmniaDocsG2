@@ -73,7 +73,7 @@ There are three lists available:
 
 The information in the lists can look like this (image from a test environment):
 
-..image:: azure-ad-settings-resync-list-v78.png
+.. image:: azure-ad-settings-resync-list-v78.png
 
 The button RESYNC NOW can be used to execute the sync job immediately. 
 
