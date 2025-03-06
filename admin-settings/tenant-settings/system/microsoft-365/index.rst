@@ -11,4 +11,5 @@ Here, these settings can be used:
    sharepoint-user-profiles-sync/index
    spfx-instruction-612/index
    teams-appgenerator-612/index
+   system-webparts/index
    
