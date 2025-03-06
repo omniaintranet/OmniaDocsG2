@@ -7,7 +7,7 @@ Use these advanced settings to make sure person properties are synchronized from
 
 These settings and options are available here:
 
-.. image:: sharepoint-user-profiles-sync-v76-2.png
+.. image:: sharepoint-user-profiles-sync-v78.png
 
 + **FULL SYNC**: Click this button to execute the synchronizations set up (listed at the bottom). If you select "Enable Entra ID Synchronization" and set and interval, you don't have to click this button. The synchronization is then executed with the interval set.
 + **RESYNC**: Use this button to open the Resync window, if needed. See below for a description.
@@ -34,7 +34,7 @@ To set up a new synchronization, do the following:
 1. Click the plus.
 2. Use the following settings:
 
-.. image:: azure-ad-settings-v76.png
+.. image:: azure-ad-settings-v78.png
 
 + **Entra ID property**: Open the list and select the Entra ID property to synchronize.
 + **SharePoint property**: Type the name of the SharePoint property to synchronize to.
@@ -47,7 +47,7 @@ Events
 ********
 In the list each synchronization is described with Type, Status and Start- and End time. 
 
-.. image:: azure-ad-settings-events-v76.png
+.. image:: azure-ad-settings-events-v78.png
 
 The top icon for each post will show more details. 
 
@@ -57,13 +57,17 @@ If syncronization for some users didn't work, the RESYNC button is shown.
 
 The system will try to sync the user(s) the number of time set for "Resync Retry Limit".  
 
-To display more information, click RESYNC. The information in this window can look like this (image from a test environment):
+To display more information, click RESYNC.
 
-.. image:: azure-ad-settings-resync-v76.png
+.. image:: azure-ad-settings-resync-v78.png
 
 Here you will find more information on the resync job and you can see a list of users that the syncronization did'nt work for.
 
 Read the text in the window carefully.
+
+The information in the lists can look like this (image from a test environment
+
+..image:: azure-ad-settings-resync-list-v78.png
 
 The button RESYNC NOW can be used to execute the sync job immediately. 
 
