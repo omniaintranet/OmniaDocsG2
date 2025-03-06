@@ -3,7 +3,7 @@ Teams app generator
 
 Use these options for an easy starting point creating a Teams app for Omnia, or to update an app you already have.
 
-.. image:: teams-app-generator-v7.png
+.. image:: teams-app-generator-v78.png
 
 Generate Omnia app
 **********************
@@ -54,7 +54,7 @@ To update an app, do the following:
 
 1. Drag and drop or Browse to load it.
 
-.. image:: teams-app-generator-update-v7.png
+.. image:: teams-app-generator-update-v78.png
 
 2. Click GENERATE.
 
