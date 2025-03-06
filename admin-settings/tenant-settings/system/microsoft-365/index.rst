@@ -2,7 +2,7 @@ Microsoft 365 settings
 ==============================================
 Here, these settings can be used:
 
-.. image:: system-ms-v7.png
+.. image:: system-ms-v78.png
 
 .. toctree::
    :titlesonly:
