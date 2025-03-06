@@ -42,12 +42,14 @@ Note that all other permissions concerning the workspace is handled by the gener
 
 Options for Analytics
 ----------------------
-All users that should have permission to see analytics data for the business profile must be added as "Analytics readers". **Note!** That's true for tenant administrators and business profile administrators as well. No administrator has automatic access to analytics. An analytics reader will also be added as a user within Matomo (in Omnia 7.7 and later, see below).
+There are two different permissions for reading analytics data depending on the block being used, see below. 
+
+**Note!** No administrator has automatic permission to read analytics data, so even tenant administrators and business profile administrators needs to be added to here. An analytics reader will also be added as a user within Matomo.
 
 .. image:: permissions-analytics-78.png
 
-+ **Matomo users**: Colleagues that need to use Matomo must be added here. permissions-analytics-78
-+ **Analytics report viewers**: All colleagues that should be able to see analytics data in the reports in Omnia, must be added to this field. Can be persons or groups.
++ **Matomo users**: Colleagues that need to use Matomo must be added here. This permission is also used for the block "Analytics widget".
++ **Analytics report viewers**: All colleagues that should be able to see analytics data in the block "Anlytics report", must be added to this field. Can be persons or groups.
  
 For more information, see: :doc:`Analytics (Matomno) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
