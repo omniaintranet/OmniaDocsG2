@@ -24,13 +24,13 @@ The following settings are available:
 + **Exclude filters**: If some users registered in your system should NOT be displayed in the organization tree in the Organization Tree block, add filters for them using Entra ID properties and value. An example is if your organization is in education, probably just the staff should have access to the intranet, not the students.
 + **Show blocked login user**: Select this option to list logged in users that are excluded by the filter(s) you have added above. 
 
-For more information about Strengthen Profile, see this page: :doc:`Strengthen Profile </user-options/strengthen-profile/index>`
+For more information about Strengthen profile, see this page: :doc:`Strengthen profile </user-options/strengthen-profile/index>`
 
-For more information about My Subscriptions, see this page: :doc:`My Subscriptions </user-options/my-subscriptions/index>`
+For more information about My subscriptions, see this page: :doc:`My subscriptions </user-options/my-subscriptions/index>`
 
 The user card layout can be handled in User types, see this page for more information: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
 
-It can be possible for auser to edit some of the information directly on the card. See this page for more information: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
+It can be possible for users to edit some of the information directly on the card. See this page for more information: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
 
 Adding exclude filters
 *************************
