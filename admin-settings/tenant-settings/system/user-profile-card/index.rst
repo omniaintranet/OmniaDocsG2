@@ -19,12 +19,12 @@ The following settings are available:
 
 .. image:: profile-card-settings-v78.png
 
-+ **Enable User Profile Card**: If the Profile Card should be used within the tenant, select this option. If you choose not to, the person's Delve profile is shown instead.
-+ **Show link to Details**: If it should be possible to go to the person's profile from the User Profile Card, select this option. In Omnia online the person's Delve page is linked to when this option is selected (see the Go to Delve link in images aboove). In Omnia onPrem, the link goes to the person's My Profile page.
-+ **Show Strengthen Profile**: If the Strengthen Profile button should be shown on the card, select this option. The button is used to access the Strengthen Profile dialog.
++ **Enable User profile card**: If the Profile Card should be used within the tenant, select this option. If you choose not to, the person's Delve profile is shown instead.
++ **Show link to details**: If it should be possible to go to the person's profile from the User Profile Card, select this option. In Omnia online the person's Delve page is linked to when this option is selected (see the Go to Delve link in images aboove). In Omnia o-nPrem, the link goes to the person's My Profile page.
++ **Show strengthen profile**: If the Strengthen Profile button should be shown on the card, select this option. The button is used to access the Strengthen Profile dialog.
 + **Show my subscriptions**: If the My Subscription button should be shown on the card, select this option. The button is used to access the My Subscriptions dialog.
 + **Exclude filters**: If some users registered in your system should NOT be displayed in the organization tree in the Organization Tree block, add filters for them using Entra ID properties and value. An example is if your organization is in education, probably just the staff should have access to the intranet, not the students.
-+ **Show blocked sign-in user**: Select this option to list logged in users that are excluded by the filter(s) you have added above. 
++ **Show blocked login user**: Select this option to list logged in users that are excluded by the filter(s) you have added above. 
 
 For more information about Strengthen Profile, see this page: :doc:`Strengthen Profile </user-options/strengthen-profile/index>`
 
