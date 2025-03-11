@@ -1,23 +1,23 @@
 Regional settings
 ==========================
 
-Use these settings for languages, date and time, for the tenant. Other settings for this can be set for a Business Profile.
+Use these settings for languages, date and time, for the tenant. Other settings for this can be set for a business profile.
 
-.. image:: regional-settings-tenant-612.png
+.. image:: regional-settings-tenant-78.png
 
 Languages
 *************
-Use this setting to select the languages that should be available for the user interface in the tenant. These languages can also be used for Announcements and Shared Links. 
+Use this setting to select the languages that should be available for the user interface in the tenant. These languages can also be used for announcements and shared Links. 
 
 You can add and remove languages here any time.
 
-Language versions of pages are handled differently. Page Variations are used for this purpose, see the heading "Variations" on this page:  :doc:`Publishing App Settings </pages/page-settings/index>`
+Language versions of pages are handled differently. Variations are used for this purpose, see the heading "Variations" on this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
-There must always be a language selected as Default Language, in this example English (United States):
+There must always be a language selected as default Language, in this example English (US English):
 
-.. image:: tenant-settings-language-default-612.png
+.. image:: tenant-settings-language-default-78.png
 
-+ **Exclude Country**: If you don't want to show a country flag for the language in the lists where users select language, select this option. (When you do the flags dissapears from this list as well).
++ **Exclude Country**: If you don't want to show a country flag for the language in the lists where users select language, select this option. (When you do, the flags dissapears from this list as well).
 
 To select another language as default, just click the ring and save. To remove a language from this list, click the dust bin.
 
@@ -25,17 +25,17 @@ Do the following to add a new language:
 
 1. Click "Add Language".
 
-.. image:: click-add-language-612.png
+.. image:: click-add-language-78.png
 
 2. Open the list and select a language.
 
-.. image:: language-list-612.png
+.. image:: language-list-78.png
 
 3. Click "Add".
 
-.. image:: language-list-add-612.png
+.. image:: language-list-add-78.png
 
-4. Continue and add all languages that should be available in the tenant.
+4. Continue and add all languages that should be available for the UI interface in the tenant.
 
 **Note!** The list of languages is long, but that does not mean that the interface is available in all languages. You must make sure the interface has been translated to the languages you need.
 
@@ -43,14 +43,14 @@ Do the following to add a new language:
 
 Language displayed for a user
 -------------------------------
-What language a specific user will see for the interface, in Announcement messages and Shared links, depends on the user's Preferred Language setting in Entra ID.
+The default language a specific user will see for the interface, in announcement messages and shared links, depends on the user's preferred Language setting in Entra ID. The UI language can be changed by the user in Omnia, in "My profile".
 
 Date And Time
 ****************
 For Date And Time you can set the following:
 
-.. image:: date-time-612.png
+.. image:: date-time-78.png
 
-Use the list to set the date format and select 24-hour or 12-hour Time Format.
+Set the date format, the first day of the week, and select 24-hour or 12-hour time Format.
 
 Don't forget to save when you're done.
