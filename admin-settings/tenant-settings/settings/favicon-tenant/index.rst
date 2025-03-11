@@ -1,16 +1,16 @@
-Favicon - Tenant settings
+-Favicon - Tenant settings
 =======================================
 
 Here you can set favicons for the whole tenant. It can be overwritten in the settings for a business profile. 
 
-.. image:: favicon-tenant.png
+.. image:: favicon-tenant-78.png
 
 To add a Favicon, do the following:
 
 1. Click CREATE FAVICON LINK.
 2. Select the Omnia favicon (Icon) or The Apple Tocuch icon.
 
-.. image:: favicon-tenant-set.png
+.. image:: favicon-tenant-set-78.png
 
 or:
 
