@@ -1,4 +1,4 @@
--Favicon - Tenant settings
+Favicon - Tenant settings
 =======================================
 
 Here you can set favicons for the whole tenant. It can be overwritten in the settings for a business profile. 
