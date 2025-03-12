@@ -32,8 +32,8 @@ The following settings are available here:
 .. image:: app-launcher-settings-general-v78.png
 
 + **Title**: Set the title for the app launcher. This is shown as the tool tip for the button.
-+ **Sorted By**: Open the list and decide how to sort the icons; Custom, Alphabetic or Last Visited. If you choose Custom, use the option "Custom" below for sorting (not shown for Alphabetical or Last visited).
-+ **View Template**: The icons can be viewed in a number of ways; Simple list, App icons, Navigation view or App launcher. See below for examples.
++ **Sorted by**: Open the list and decide how to sort the icons; Custom, Alphabetic or Last Visited. If you choose Custom, use the option "Custom" below for sorting (not shown for Alphabetical or Last visited).
++ **View template**: The icons can be viewed in a number of ways; Simple list, App icons, Navigation view or App launcher. See below for examples.
 + **Include mandatory links**: Select this option if mandatory links should be shown.
 + **Include non-mandatory links**: Select this option if non-mandatory links, in the link categories selected, should be displayed as well.
 + **Use targeting**: Targeting is set per link in the Shared links sections, one available for the tenant, and one available for the business profile. Here you can choose to use the links targeting setting, or not. Default=not selected, meaning the targeting setting for the link is not used.  
