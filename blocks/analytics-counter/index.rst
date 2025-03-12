@@ -26,10 +26,11 @@ Here you select the site to display analytics data for:
 
 Display
 ------------
-The following setteings are available for Display:
+The following settings are available for Display:
 
 .. image:: analytics-counter-settings-display-78.png
 
++ **Title**: You can add a title that will be placed above the counters.
 + **Last minutes**: Enter the number of minutes to display analytics for. This will also be shown in the block, see the example above.
 + **Main counter**: Select the main counter: Visits, Visitors or Actions.
 + **Show first/second sub cunter**: You can show the other counters as subcounters. See below for an example.
