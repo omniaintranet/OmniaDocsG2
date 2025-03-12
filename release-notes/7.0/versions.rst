@@ -1,3 +1,14 @@
+7.7.19
+========================================
+(Omnia 7.7.19 / Workplace 7.7.12 / WCM 7.7.18 / MS 7.7.12 / Analytics 7.7.4)
+
+- Change comment is now available on the first edition in Controlled Documents (#164074).
+- Open in client app setting on the controlled documents library component now works as expected (#164777).
+- The App Instance token is now possible to use on link type action buttons (#164638).
+- Improved stability to token handling which could sometimes lead to incorrect 404 errors when previewing a page (#162284).
+- Consolidated date time display between search templates and page properties (#164719).
+
+
 7.7.18
 ========================================
 (Omnia 7.7.18 / Workplace 7.7.12 / WCM 7.7.17 / MS 7.7.9 / Analytics 7.7.4)
