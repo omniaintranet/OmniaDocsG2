@@ -73,5 +73,5 @@ The following settings are available here:
 
 .. image:: header-search-settings-v78.png
 
-+ **Search Box on Header**: If a search box should be available in the header, select this option.
++ **Search box on header**: If a search box should be available in the header, select this option.
 + **Add @search parameter to the query string**: Available when the option above is selected. For advanced search implementations. With this option active you can add parameters to the search query string, for various implementations.
