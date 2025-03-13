@@ -44,17 +44,17 @@ To create a new scaling setting, do the following:
 
 Don't forget to save when you're done.
 
-Crop Ratios
+Crop ratios
 ****************
-Set the crop ratios that should be available in Media Picker.
+Set the crop ratios that should be available in the media picker.
 
 .. image:: crop-ratios-78.png
 
 Click the pen to edit a crop ratio, or the dust bin to delete it.
 
-The default ratios (Landscape, Square, Portrait, Wide) can not be deleted. They can be edited, but ratios can not be changed. For available settings that can be edited, see below.
+The default ratios (Landscape, Square, Portrait, Wide) can not be deleted. A few of the settings can be edited, but ratios can not be changed. 
 
-Create a new Crop Ratio
+Create a new crop ratio
 -------------------------
 To create a new crop ratio, do the following:
 
