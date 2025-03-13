@@ -23,9 +23,19 @@ You work with these settings in a similar way to those in the Page Rollup block.
 + **ADD PAGE**: When you have selected "Pick pages", you can pick pages using the page picker. See this page for more information: :doc:`The Page picker </general-assets/page-picker/index>`
 + **Use query builder**: If you want to use the query builder to choose pages, select this option.
 
-For Query builder, the following options are available:
+The following settings can be available, depending on scope chosen:
 
-+ **Scope**: When you have chosen to use the query builder, select scope for the block. This is where you choose where to get the pages from. You can select:
++ **Scope**: Available for Query builder. For more info, see below.
++ **SELECT START NODE**: Available for scope Navigation path. Choose the start point for the navigation path to be displayed. If you select "Custom", you can use the Page Picker to select start node.
++ **Exclude start node**: Available for scope Navigation path. If the start page selected should not be displayed, select this option.
++ **Exclude variations**: Usings this option, you can exclude variations from the query. Not available for Navigation path.
++ **Trim duplicates**: If more than one Rollup is added to a layout, this option can be used to handle duplicates between the rollups. When the option is selected, you can enter a number indicating the priority for duplicates, for this rollup. If you set "1" for a rollup it means it has priority showing a post that would have been a duplicate. 
++ **Like, Comment, Rating**: Use these settings to decide the time period calculated for any of these options. If you don't select anything, it means "NolLimit". You can select one week, two weeks or one month instead.
++ **Navigation depth level**: Available for scope Navigation path. Choose the number of nodes that should be displayed, including the start node (if shown).
++ **Item limit**: Type the number to set the number of pages that should be retrieved to make sure all duplicates are found. You should not set this number higher than you really need, as higher numbers may have an impact on performance. Note that when you change the number, "Max Display Limit" is also changed, see below.
++ **Sort by**: Select a property to sort the list by, and then choose Ascending or Descending.
+
+When you have chosen to use the query builder, select scope for the block. This is where you choose where to get the pages from. You can select:
 
   + Tenant.
   + Business profile(s).
@@ -37,17 +47,6 @@ For Query builder, the following options are available:
 When you have selected Business profiles, Publishing apps, Page collections or Channels, you select one or more to get the pages from as the next step, just as you would in the Page rollup block. 
 
 If you select Tenant, Business profile or Publishing apps as the scope you can add filters for what you want to display in the list, see below.
-
-The following settings can then be available, depending on scope chosen:
-
-+ **SELECT START NODE**: Available for scope Navigation path. Choose the start point for the navigation path to be displayed. If you select "Custom", you can use the Page Picker to select start node.
-+ **Exclude start node**: Available for scope Navigation path. If the start page selected should not be displayed, select this option.
-+ **Exclude variations**: Usings this option, you can exclude variations from the query. Not available for Navigation path.
-+ **Trim duplicates**: If more than one Rollup is added to a layout, this option can be used to handle duplicates between the rollups. When the option is selected, you can enter a number indicating the priority for duplicates, for this rollup. If you set "1" for a rollup it means it has priority showing a post that would have been a duplicate. 
-+ **Like, Comment, Rating**: Use these settings to decide the time period calculated for any of these options. If you don't select anything, it means "No Limit". You can select one week, two weeks or one month instead.
-+ **Navigation Depth Level**: Available for scope Navigation path. Choose the number of nodes that should be displayed, including the start node (if shown).
-+ **Item Limit**: Type the number to set the number of pages that should be retrieved to make sure all duplicates are found. You should not set this number higher than you really need, as higher numbers may have an impact on performance. Note that when you change the number, "Max Display Limit" is also changed, see below.
-+ **Sort by**: Select a property to sort the list by, and then choose Ascending or Descending.
 
 Filter on Tenant
 ----------------
@@ -70,7 +69,7 @@ Use this tab for view settings, similar to those in the Page rollup block:
 (Not all options are shown in the image, but described below.)
 
 + **Title, Summary, Content, Image**: Select property to get the information from, for each of these.
-+ **Image ratio**: For the selected image property, choose Square or Wide here.
++ **Image ratio**: For the selected image property, choose Landscape, Square or Wide here.
 + **Created by, Created at**: Select property to get this information from.
 + **Text column width**: Set the text column width in pixels. 
 + **Delay time before scroll (seconds)**: Set the delay time before next scroll.
