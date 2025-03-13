@@ -1,4 +1,4 @@
-User profile completion
+User profile completion (Classic)
 ==================================
 
 This is the settings for the user option "Strengthen profile", that can be available as an action or as a block. Another option is to set that a dialog should appear with certain intervals, see below.
