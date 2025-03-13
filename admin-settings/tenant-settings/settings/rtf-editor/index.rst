@@ -1,7 +1,7 @@
 RTF editor settings
 ====================
 
-Use these settings to decide which default options should be available for the rich text editor and the limited rich text editor, in the tenant. 
+Use these settings to decide the default options for the rich text editor and the limited rich text editor, in the tenant. 
 
 .. image:: rtf-editor-78.png
 
@@ -13,7 +13,7 @@ Both lists are handled the same way.
 
 .. image:: rtf-editor-options-78.png
 
-(All options are not shown in the image above, there's a lot more.)
+(All options are not shown in the image above, there's a lot more).
 
 At the top you will see a preview of what the RTF editor will look like with the selected options.
 
@@ -45,11 +45,11 @@ This means that whenever an author writes something in an RTF editor that match 
 
 When a term is highlighted, it can look like this:
 
-.. image:: rtf-editor-glossary-aware-highlight.png
+.. image:: rtf-editor-glossary-aware-highlight-78.png
 
 When the author clicks the highlighted term, these two icons are shown:
 
-.. image:: rtf-editor-glossary-aware-highlight-icons.png
+.. image:: rtf-editor-glossary-aware-highlight-icons-78.png
 
 The icon to the left is used to create a link, the other one to remove the link.
 
