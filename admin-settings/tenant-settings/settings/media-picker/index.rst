@@ -11,13 +11,11 @@ Here you can set the following:
 
 .. image:: media-picker-settings-scaling-78.png
 
-+ **File size limit**: Set the limit, in bytes, for what is considered to be "too large" for an image in your system. When the file size of an image, selected in the Media Picker, exceeds this limit, a warning is shown. See below for an example.
++ **File size limit**: Set the limit, in bytes, for what is considered to be "too large" for an image in your system. When the file size of an image, selected in the media picker, exceeds this limit, a warning is shown. See below for an example.
 
 The scaling settings listed can be used by authors and editors when an image is added using the media picker.
 
-To edit a scaling setting, click the pen. See *Create a new scaling setting* below for available settings.
-
-To remove a scaling setting, click the dust bin.
+To edit a scaling setting, click the pen. See *Create a new scaling setting* below for available settings. To remove a scaling setting, click the dust bin.
 
 The warning when an image exceeds the file size limit can look like this:
 
