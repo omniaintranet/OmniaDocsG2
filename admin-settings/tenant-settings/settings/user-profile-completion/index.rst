@@ -41,7 +41,7 @@ Here's how to create a new property mapping:
 1. Click "Add section".
 2. Add names and descriptions.
 
-..image:: newporpmapping.png
+.. image:: newporpmapping.png
 
 3. Click "Add mapping".
 
