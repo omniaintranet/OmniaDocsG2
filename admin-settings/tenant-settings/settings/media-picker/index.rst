@@ -21,7 +21,7 @@ To remove a scaling setting, click the dust bin.
 
 The warning when an image exceeds the file size limit can look like this:
 
-.. image:: image-message.png
+.. image:: image-message-78.png
 
 The author or editor can then decide to make the image smaller in size or add it as it is.
 
