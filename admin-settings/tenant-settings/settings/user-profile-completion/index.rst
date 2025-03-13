@@ -1,13 +1,9 @@
 User profile completion
 ==================================
 
-This is the settings for the user option "Strengthen Profile", that can found inte the Action Menu:
+This is the settings for the user option "Strengthen Profile", that can be available as an action or as a block. Another option is to set that a dialog should appear with certain intervals, see below.
 
-.. image:: strengthen-profile-new3.png
-
-Profile completion can also be available as a block, see: :doc:`The Profile Completion block </blocks/user-profile-completion/index>` 
-
-Another option is to set that a dialog should appear with certain intervals, see below.
+Note that a different approach for handling user profile information is available as an alternative in Omnia 7.7 and later. If allowed in the tenant, users can edit their profile information directly on the user profile card. Custom profile cards can also be created. For more information, see the heading "User profile completion" on this page: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
 
 The settings
 **************
