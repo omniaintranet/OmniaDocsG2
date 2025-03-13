@@ -20,11 +20,11 @@ At the top you will see a preview of what the RTF editor will look like with the
 Most options should be self explanatory, but some options may need a description, see below.
 
 Language
-^^^^^^^^^^^^
+-----------
 **Important note!** This option should normally NOT be added to the RTF editor here. It's used in special cases only and will, for example, be added automatically to multi language fields.
 
 Activate machine translation (Text translator)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------------------
 Text translator is the option for machine translations editors can use where the RTF editor is available. 
 
 **Note!** Machine translation is not available in Omnia on-prem.
@@ -41,7 +41,7 @@ Make the RTF editor enterprise glossary aware
 ------------------------------------------------
 You can select "Enterprise glossary suggestion" to make the RTF editor enterprise glossary aware.
 
-This means that whenever an author writes something in an RTF editor that match a term in the enterprise glossary, it will be highlighted. The author can click on the highlighted text and decide whether to create a link or not to the enterprise glossary term. If a link to the term is created, it will be possible for the end user to click on it and get detailed information about the term.
+This means that whenever an author writes something in an RTF editor that match a term in the enterprise glossary, it will be highlighted. The author can click on the highlighted text and decide whether to create a link or not to the enterprise glossary term. If a link to the term is created, it will be possible for the end user to click on it and see detailed information about the term.
 
 When a term is highlighted, it can look like this:
 
@@ -63,13 +63,13 @@ Settings for Styles
 --------------------
 To edit the settings for styles, click the cog wheel.
 
-.. image:: tenant-settings-styles-76.png
+.. image:: tenant-settings-styles-78.png
 
-Expand the list and select the styles that should be available.
+Expand the list, click in the field, and select/deselect to create a list of styles that should be available.
 
-.. image:: tenant-settings-styles-select-76.png
+  .. image:: tenant-settings-styles-select-78.png
 
-**Note!** You can use Text styles (option in the Settings menu) to configure styles. The enabled styles from Text styles are those shown in the above list. 
+**Note!** You can use "Text styles" (option in the Settings menu) to configure styles. The enabled styles from Text styles are those shown in the above list. 
 
 OpenAI
 ---------
@@ -85,4 +85,4 @@ Reorder the options
 ---------------------
 If you would like to reorder the options in the editor, use the icons to drag and drop:
 
-.. image:: rtf-editor-reorder-76.png
+.. image:: rtf-editor-reorder-78.png
