@@ -13,7 +13,7 @@ To set up additional rules, click here:
 
 .. image:: link-handler-tenant-new-rule-77.png
 
-The fields are the same as you see above, only now empty. Remember, a description can be found by clicking CUSTOM RULES in the first window.
+The fields are the same as you see above, only now empty. Remember, a description can be found by clicking SETUP GUIDE on the CUSTOM RULES tab.
 
 Documents
 ************
