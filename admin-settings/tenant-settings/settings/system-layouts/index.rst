@@ -1,13 +1,11 @@
 System layouts
 =============================================
 
-Here you can create pages for the 401 and 404 messages:
+Here you can edit layouts for some system pages:
 
-.. image:: system-layouts-list.png
+.. image:: system-layouts-list-78.png
 
-To create any of the layouts, select the page and click EDIT.
+To edit any of the layouts, click the pen.
 
-.. image:: system-layouts-edit.png
-
-Create the layout for the page the same way as other layouts in Omnia, see: :doc:`Working with layouts </general-assets/working-with-layouts/index>`
+You can work with the layout in a similar way to other layouts in Omnia, see: :doc:`Working with layouts </general-assets/working-with-layouts/index>`
 
