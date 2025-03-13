@@ -19,10 +19,12 @@ At the top you will see a preview of what the RTF editor will look like with the
 
 Most options should be self explanatory, but some options may need a description, see below.
 
-**Language**:
+Language
+^^^^^^^^^^^^
 **Important note!** This option should normally NOT be added to the RTF editor here. It's used in special cases only and will, for example, be added automatically to multi language fields.
 
-**Activate machine translation (Text translator)**:
+Activate machine translation (Text translator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Text translator is the option for machine translations editors can use where the RTF editor is available. 
 
 **Note!** Machine translation is not available in Omnia on-prem.
