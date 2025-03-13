@@ -3,17 +3,17 @@ Media picker settings
 
 The following settings are available:
 
-.. image:: media-picker-settings.png
+.. image:: media-picker-settings-78.png
 
 Scaling
 ********
 Here you can set the following:
 
-.. image:: media-picker-settings-scaling.png
+.. image:: media-picker-settings-scaling-78.png
 
-+ **File Size Limit**: Set the limit, in bytes, for what is considered to be "too large" for an image in your system. When the file size of an image, selected in the Media Picker, exceeds this limit, a warning is shown. See below for an example.
++ **File size limit**: Set the limit, in bytes, for what is considered to be "too large" for an image in your system. When the file size of an image, selected in the Media Picker, exceeds this limit, a warning is shown. See below for an example.
 
-The scaling settings listed can be used by authors and editors when an image is added using the Image Picker.
+The scaling settings listed can be used by authors and editors when an image is added using the media picker.
 
 To edit a scaling setting, click the pen. See *Create a new scaling setting* below for available settings.
 
@@ -31,15 +31,15 @@ To create a new scaling setting, do the following:
 
 1. Click the plus.
 
-.. image:: scaling-click-plus.png
+.. image:: scaling-click-plus-78.png
 
 2. Use the following settings:
 
-.. image:: scaling-settings-new.png
+.. image:: scaling-settings-new-78.png
 
 + **Title**: Add a title for the scaling here. 
-+ **Max Dimension**: Set the maxumim size in pixels here.
-+ **Format Settings**: You can choose to keep the original file format or convert to Jpeg.
++ **Max dimension**: Set the maxumim size in pixels here.
++ **Format settings**: You can choose to keep the original file format or convert to Jpeg.
 + **Quality**: Use the slider to set the quality level for the scaling.
 
 Don't forget to save when you're done.
@@ -48,11 +48,11 @@ Crop Ratios
 ****************
 Set the crop ratios that should be available in Media Picker.
 
-.. image:: crop-ratios-new.png
+.. image:: crop-ratios-78.png
 
 Click the pen to edit a crop ratio, or the dust bin to delete it.
 
-The default ratios (Landscape, Square, Portrait, Wide) can not be deleted. They can be editd, but ratios can not be changed. For available settings that can be edited, see below.
+The default ratios (Landscape, Square, Portrait, Wide) can not be deleted. They can be edited, but ratios can not be changed. For available settings that can be edited, see below.
 
 Create a new Crop Ratio
 -------------------------
@@ -60,11 +60,11 @@ To create a new crop ratio, do the following:
 
 1. Click the plus.
 
-.. image:: crop-ratios-click.png
+.. image:: crop-ratios-click-78.png
 
 2. Use the following settings:
 
-.. image:: crop-ratios-settings-new.png
+.. image:: crop-ratios-settings-new-78.png
 
 + **Title**: Add a title for the crop ratio here. 
 + **Ratio X**: Set the horizontal ratio here.
