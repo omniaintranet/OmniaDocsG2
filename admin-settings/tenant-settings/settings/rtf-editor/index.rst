@@ -29,7 +29,7 @@ Text translator is the option for machine translations editors can use where the
 
 **Note!** Machine translation is not available in Omnia on-prem.
 
-The text translator is always available in the tenant, no need to activated a feature, but there are two different translators to choose from per default, and more can be installed. More information about this is found here: :doc:`Services - Text translator </dmin-settings/tenant-settings/system/services-612/text-translator/index>`
+The text translator is always available in the tenant, no need to activated a feature, but there are two different translators to choose from per default, and more can be installed. More information about this is found here: :doc:`Services - Text translator </admin-settings/tenant-settings/system/services-612/text-translator/index>`
 
 Note that a machine translation is a suggestion - the text can always be edited and all suggestions by the machine translation can be discarded, if needed. It's always up to the person editing the text in the block to use a machine translation, or not, and to edit the translation before it's published.
 
