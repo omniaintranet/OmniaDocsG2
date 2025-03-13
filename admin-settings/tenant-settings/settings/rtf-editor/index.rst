@@ -3,7 +3,7 @@ RTF editor settings
 
 Use these settings to decide which default options should be available for the rich text editor and the limited rich text editor, in the tenant. 
 
-.. image:: rtf-editor-76.png
+.. image:: rtf-editor-78.png
 
 **Note!** For some blocks a custom RTF editor can be created. If that is done it will override these settings.
 
@@ -11,7 +11,7 @@ Both lists are handled the same way.
 
 1. Select and deselect options to be available in the editor and save when you're done.
 
-.. image:: rtf-editor-options-76.png
+.. image:: rtf-editor-options-78.png
 
 (All options are not shown in the image above, there's a lot more.)
 
@@ -19,12 +19,10 @@ At the top you will see a preview of what the RTF editor will look like with the
 
 Most options should be self explanatory, but some options may need a description, see below.
 
-Language
------------
+**Language**:
 **Important note!** This option should normally NOT be added to the RTF editor here. It's used in special cases only and will, for example, be added automatically to multi language fields.
 
-Activate machine translation (Text translator)
-------------------------------------------------
+**Activate machine translation (Text translator)**:
 Text translator is the option for machine translations editors can use where the RTF editor is available. 
 
 **Note!** Machine translation is not available in Omnia on-prem.
