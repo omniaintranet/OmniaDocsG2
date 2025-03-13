@@ -3,9 +3,9 @@ Digital signage
 
 The following options are available for Digital signage. 
 
-Prerequisite: the feature Digital signage must be activated.
+Prerequisite: the tenant feature Digital signage must be activated.
 
-.. image:: digital-signage-all-v7.png
+.. image:: digital-signage-all-v78.png
 
 Select option for more information:
 
