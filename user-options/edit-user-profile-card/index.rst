@@ -31,11 +31,7 @@ As you surely have figured out already, editing is done by clicking the pen for 
 
 Edit a text field
 -----------------------
-When editing a text field, you can use th RTF editor, for example:
-
-.. image:: card-edit-text.png
-
-For more information on how you can use the RTF editor, see: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
+When editing a text field, you can use th RTF editor. For more information, see: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
 Generally, when you have finished editing a section, click here to save the changes (or the x to not save):
 
