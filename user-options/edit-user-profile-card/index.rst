@@ -1,7 +1,7 @@
 Edit your user profile card
 ==================================
 
-In Omnia 7.7 an additional way of working with user information has been added. The user profile card has been around for a while, but the way to edit the information is new.
+In Omnia 7.7 and later, an additional way of working with user information has been added. The user profile card has been around for a while, but the way to edit the information is new.
 
 If your organization uses this functionality, this is how you do.
 
