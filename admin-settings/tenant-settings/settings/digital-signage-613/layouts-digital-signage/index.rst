@@ -5,7 +5,7 @@ Here you create layouts to be used for digital signage. You can use these layout
 
 If there are some publishing layouts created, they will be listed here, for example:
 
-.. image:: signage-layouts-78.png
+.. image:: signage-layouts-78-50.png
 
 To edit a layout, just click the name. All settings available when creating a new layout can be edited, see below.
 
