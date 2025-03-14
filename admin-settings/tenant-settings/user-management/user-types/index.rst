@@ -59,7 +59,7 @@ Here you select the properties to be available for this user type. A few propert
 
 User profile completion
 *****************************
-This is a new tab in Omnia 7.7. User profile completion can work quite differently in Omnia 7.7 and later. All edits can now be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is also available).
+This tab is available in Omnia 7.7 and later. All edits can be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is also available).
 
 .. image:: tab-profile-completion.png
 
