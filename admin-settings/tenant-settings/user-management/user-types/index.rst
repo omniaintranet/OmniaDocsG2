@@ -25,23 +25,23 @@ Authentication
 ****************
 Here you can set the following:
 
-.. image:: user-management-types-auth.png
+.. image:: user-management-types-auth-78.png
 
 + **External providers**: If there are more than one provider, make sure to select the correct one.
 + **Onboarding**: Set the expiration time for the one-time link and add the URL to the onboardring page, if needed.
-+ **Built-in**: Select the authentication you want to use for this user type and expand the option for more options, see below.
++ **Built-in**: Select the authentication you want to use for this user type and for more options, see below.
 + **Refresh token expiration**: Set the number of days that can pass until a user is forced to log in again.
 + **INVALIDATE ALL USER TOKENS**: When permissions for Omnia has been changed, users needs to log out and log in for the changes to take effect. You can click this button to force a log out from Omnia for all users. Important information on this below.
 
 When expanding one of the options for "Built-in", additional settings are available, for example:
 
-.. image:: user-management-types-auth-more.png
+.. image:: user-management-types-auth-more-78.png
 
 If "Two-factor authentication" is selected, the following must also be set:
 
-.. image:: user-management-types-auth-more-two.png
+.. image:: user-management-types-auth-more-two-78.png
 
-You must select select one of the other authentication methods available, as the second authentication.
+You must select one of the other authentication methods available, as the second authentication.
 
 More on Invalidate all user tokens
 ------------------------------------
@@ -53,9 +53,9 @@ Properties
 *************
 On the Properties tab, something like the following is available:
 
-.. image:: user-management-types-prop.png
+.. image:: user-management-types-prop-76.png
 
-Here you decide which properties should be available for this user type. A few properties are mandatory and can not be deselected, they are marked with gray.
+Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselected, they are marked with gray.
 
 User profile completion
 *****************************
