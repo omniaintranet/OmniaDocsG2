@@ -9,15 +9,17 @@ In Omnia 7.7 and later, settings for user profile completion is also done per us
 
 If any user types for Omnia users has been set up so far, they are listed here, for example:
 
-.. image:: user-management-types-new.png
+.. image:: user-management-types-78.png
 
-Use the dust bin to delete a user type, the pen to edit and the third icon to create a customized user profile card, if needed.
+Use the dust bin to delete a user type, the pen to edit and the third icon to create a customized user profile card for the profile, if needed.
 
 These settings can be used when creating a new user type:
 
-.. image:: user-management-types-settings-new.png
+.. image:: user-management-types-settings-78.png
 
-As you can see, the name and description can be added in any tenant language. 
+General
+********
+Add the title and description here (se image above).
 
 Authentication
 ****************
