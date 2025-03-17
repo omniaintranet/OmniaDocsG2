@@ -35,13 +35,19 @@ Add a new Omnia user
 -----------------------------
 To add a new user, click the ADD USER button.
 
-Available fields are the properties set up under the option in the User management menu. Here's an example:
+Available fields are the properties set up under the option in the User management menu. Here's an example for Office worker:
 
-.. image:: user-management-users-settings-1-78.png
+.. image:: user-management-users-settings-1-78-75.png
+
+and these:
+
+.. image:: user-management-users-settings-2-78-75.png
 
 The following options are always available:
 
 + **User type**: Select user type in the list. User types that should be available here must be set up using the option in the User management menu.
++ **Username, Display name**: Add a username and a display name here. Mandatory.
++ **Contact**: Add a contact Email in this field.
 + **Authentication information**: Add an authentication Email. This is mandatory. If needed, enter a  phone number for mobile authentication.
 + **Time-limited account**: if this user account should be active for a specific time period only, select this option and set the start and end date.
 + **Email the on-boarding link to the user**: You can chosse to send an on-boarding Email to the user by selecting this option. The Email is sent when the user is saved.
@@ -52,12 +58,12 @@ Bulk create users
 -------------------
 By clicking BULK CREATE USERS you can onboard a number of users. Here's the settings you can use:
 
-.. image:: user-management-users-settings-bulk-1-78.png
+.. image:: user-management-users-settings-bulk-1-78-75§.png
 
 The first step is to select user type and the scenario:
 
 + **User type**: You can bulk create users for one user type in each session. Note the option "Undefined". If users imported from MS Graph does not match any of the rules, user type is set to "Undefined". You should probably not bulk create such users, but the option is there if you know what you're doing.
-+ **Select bulk create users scenario**: Choose to send onboarding links to all users of that user type, or not. You can alos automatically onboard users that already has a password assigned to them.
++ **Select bulk create users scenario**: Choose to send onboarding links to all users of that user type, or not. You can alos automatically onboard users that already have a password assigned to them.
 
 The second step is to edit the template file. If you already have a template file you can edit the file for use in this session and upload it.
 
