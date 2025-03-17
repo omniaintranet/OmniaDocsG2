@@ -105,7 +105,7 @@ To edit a user, click the > icon at the far right.
 
 .. image:: user-management-users-list-omnia-options-edit-78.png
 
-Available fields and options depend on the user type. Also, some properties may be available when creating a user and other propereties when editing the user. Here's an example for a user type called Procuction Worker:
+Available fields and options depend on the user type. Also, some properties may be available when creating a user and other properties when editing the user. Here's an example for a user type called Procuction Worker:
 
 .. image:: user-management-users-list-omnia-edit-78-75.png
 
