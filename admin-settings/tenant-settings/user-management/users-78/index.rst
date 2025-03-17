@@ -5,7 +5,7 @@ This page describes the Users list in tenant user management, in Omnia 7.8. For 
 
 User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
-Three lists are available here; ALL USERS, DELETED USERS and PENDING APPROVAL. Note that users set up under User management in a business profile is listed here as well.
+Three lists are available here; ALL USERS, DELETED USERS and PENDING APPROVAL. Note that users set up under User management in a business profile are listed here as well.
 
 .. image:: user-management-users-list-78.png
 
