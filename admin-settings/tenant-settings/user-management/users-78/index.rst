@@ -41,7 +41,7 @@ Available fields are the properties set up under the option in the User manageme
 
 and these:
 
-.. image:: user-management-users-settings-2-78-75.png
+.. image:: user-management-users-settings-2-78-new-75.png
 
 The following options are always available:
 
@@ -58,7 +58,7 @@ Bulk create users
 -------------------
 By clicking BULK CREATE USERS you can onboard a number of users. Here's the settings you can use:
 
-.. image:: user-management-users-settings-bulk-1-78-75§.png
+.. image:: user-management-users-settings-bulk-1-78-75.png
 
 The first step is to select user type and the scenario:
 
@@ -107,7 +107,7 @@ To edit a user, click the > icon at the far right.
 
 Available fields and options depend on the user type. Also, some properties may be available when creating a user and other properties when editing the user. Here's an example for a user type called Procuction Worker:
 
-.. image:: user-management-users-list-omnia-edit-78-75.png
+.. image:: user-management-users-list-omnia-edit-78-new-75.png
 
 and at the bottom, somne general options are available:
 
@@ -115,7 +115,7 @@ and at the bottom, somne general options are available:
 
 When editing Microsoft Graph users, the only thing you can change is the image:
 
-.. image:: user-management-users-list-omnia-edit-graph-78-2-75.png
+.. image:: user-management-users-list-omnia-edit-graph-78-2-new-75.png
 
 If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
 Save the changes when you're finished.
