@@ -1,9 +1,9 @@
 Users
 =============================================
 
-This pages describes the tenant options for Users.
+This pages describes the tenant options for Users in Omnia 7.7 and earlier. For Omnia 7.8, see this page: :doc:`User management users in Omnia 7.8 </blocks/general-block-settings/index>`
 
-Also note that User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
+User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
 Three lists are available here; ALL USERS, DELETED USERS and PENDING APPROVAL. Note that users set up under User management in a business profile is listed here as well.
 
