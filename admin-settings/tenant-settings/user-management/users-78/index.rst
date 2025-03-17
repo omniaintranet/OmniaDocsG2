@@ -52,7 +52,7 @@ The following options are always available:
 + **Time-limited account**: if this user account should be active for a specific time period only, select this option and set the start and end date.
 + **Email the on-boarding link to the user**: You can chosse to send an on-boarding Email to the user by selecting this option. The Email is sent when the user is saved.
 
-Note that you can enable, disable or reset an Omnia user account using the authentication settings when editing an Okmnia user, see below.
+Note that you can enable, disable or reset an Omnia user account using the authentication settings when editing an Omnia user, see below.
 
 Bulk create users
 -------------------
@@ -83,12 +83,21 @@ All other aspects regarding pages works well for Omnia users, but keep in mind t
 
 Delete Omnia users
 -------------------------
-You can delete a user while editing, see below. In the ALL USERS list you can delete one or more Omnia users (note, you can only delet Omnia users). Do the following:
+You can delete a user while editing, see below. In the ALL USERS list you can delete one or more Omnia users. Do the following:
 
 1. Select the user/users.
 2. Click the DELETE USER button that has become available.
 
 .. image:: user-management-users-delete-78.png
+
+Change scope
+-----------------
+You change scope for one or more users, the same options as found under "Scope type".
+
+1. Select the user/users.
+2. Click the CHANGE SCOPE button and select a new scope.
+
+.. image:: user-management-users-changescope-78-50.png
 
 Editing Omnia users or Microsoft Graph users
 ----------------------------------------------
@@ -96,13 +105,17 @@ To edit a user, click the > icon at the far right.
 
 .. image:: user-management-users-list-omnia-options-edit-78.png
 
-Available fields and options depend on the user type, and other settings for the type. Some properties may be availble when creating a user and other propereties when editing the user. Here's an example for a user type called Procuction Worker:
+Available fields and options depend on the user type. Also, some properties may be available when creating a user and other propereties when editing the user. Here's an example for a user type called Procuction Worker:
 
 .. image:: user-management-users-list-omnia-edit-78-75.png
 
-and at the bottom, somne general opt§ions are available:
+and at the bottom, somne general options are available:
 
 .. image:: user-management-users-list-omnia-edit-78-2-75.png
+
+When editing Microsoft Graph users, the only thing you can change is the image:
+
+.. image:: user-management-users-list-omnia-edit-graph-78-2-75.png
 
 If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
 Save the changes when you're finished.
