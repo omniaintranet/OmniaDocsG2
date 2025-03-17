@@ -1,7 +1,7 @@
 Users (User management) in Omnia 7.8
 ======================================
 
-This page describes the tenant Users list in user management, in Omnia 7.8. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </blocks/general-block-settings/index>`
+This page describes the tenant Users list in user management, in Omnia 7.8. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
 
 User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
