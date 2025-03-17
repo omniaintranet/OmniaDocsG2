@@ -37,22 +37,22 @@ To add a new user, click the ADD USER button.
 
 Available fields are the properties set up under the option in the User management menu. Here's an example:
 
-.. image:: user-management-users-settings-1-75.png
+.. image:: user-management-users-settings-1-78.png
 
 The following options are always available:
 
 + **User type**: Select user type in the list. User types that should be available here must be set up using the option in the User management menu.
 + **Authentication information**: Add an authentication Email. This is mandatory. If needed, enter a  phone number for mobile authentication.
-+ **Time-limited account**: if this user account should be active for a specific time period only, select this option and set the start and ned date.
++ **Time-limited account**: if this user account should be active for a specific time period only, select this option and set the start and end date.
 + **Email the on-boarding link to the user**: You can chosse to send an on-boarding Email to the user by selecting this option. The Email is sent when the user is saved.
 
-Note that you can enable, disable or reset an Omnia user account using the authentication settings (the key), see above.
+Note that you can enable, disable or reset an Omnia user account using the authentication settings when editing an Okmnia user, see below.
 
 Bulk create users
 -------------------
 By clicking BULK CREATE USERS you can onboard a number of users. Here's the settings you can use:
 
-.. image:: user-management-users-settings-1-75-new.png
+.. image:: user-management-users-settings-bulk-1-78.png
 
 The first step is to select user type and the scenario:
 
