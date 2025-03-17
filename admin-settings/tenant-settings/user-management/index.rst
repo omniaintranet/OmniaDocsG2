@@ -5,7 +5,7 @@ Here you can add and handle users that does not require an Microsoft 365 license
 
 Omnia users can also be set up for a business profile only, so users in that business profile can be handled by a business profile administrator. For more information, see: :doc:`User management - business profile </admin-settings/business-group-settings/user-management-bp/index>`
 
-.. image:: user-management-menu-v78-50   .png
+.. image:: user-management-menu-v78-50.png
 
 Select option below for more information.
 
