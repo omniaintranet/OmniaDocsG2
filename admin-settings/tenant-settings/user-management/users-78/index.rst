@@ -11,21 +11,13 @@ Three lists are available here; ALL USERS, DELETED USERS and PENDING APPROVAL. N
 
 All users
 ************
-In the ALL USERS list, all users in the tenant are listed. Here you can add Omnia users - users that does not require a Microsoft 365 licence, and delete users you have added this way.
+In the ALL USERS list, all users in the tenant are listed. Here you can add Omnia users - users that do not require a Microsoft 365 license, and delete users you have added this way.
 
 Note that you can use the search field to find a user and use the filters for a shorter list (see more info about this below). 
 
-If you would like to list Omnia users created here, select "Omnia" for "Provider".
+**Tip**: If you would like to list Omnia users created here, select "Omnia" for "Provider".
 
-.. image:: user-management-users-list-omnia-78.png
-
-For more information on editing Omnia users, see below.
-
-.. image:: user-management-users-list-omnia-options-key-75.png
-
-Save the changes when you're finished.
-
-If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
+For more information on editing users, see below.
 
 **A note for users of earlier Omnia versions**: The general settings for authentication has been moved to business profile settings. See this page for more information: :doc:`User management settings - business profile </admin-settings/business-group-settings/user-management-bp/index>`
 
@@ -33,29 +25,11 @@ Filters for the All users list
 ---------------------------------
 The following filters are available, to display only some users in the list:
 
-+ **Time-limited**: For users accounts with a limited time, you can choose to list active or not active accounts.
++ **Time-limited**: For user accounts with a limited time, you can choose to list active or not active accounts.
 + **Status**: Here you can choose to list enabled or disabled accounts.
-+ **User type**: Using this filter you can choose to list just one of registrered user types.
++ **User type**: Using this filter you can choose to list just one of the §registrered user types.
 + **Provider**: You can choose to list just one of the providers, usually Microsoft Graph or Omnia.
-+ **Owner**: Here you can choose to list users from just one of the business profiles in the tenant. This lists users managed in the respective business profiles.
-
-Editing Omnia users
-----------------------
-To edit Omnia users, click the symbol > at the far right.
-
-.. image:: user-management-users-list-omnia-options-edit-78.png
-
-The following settings are available:
-
-
-
-About limitations for Omnia users
------------------------------------
-As mentioned, Omnia users does not require a Microsoft 365 licence, and that means no options that are depending on SharePoint or Microsoft 365 can be used. That includes, for example; Teams functionality, Teamworks, Document management, Process management and search.  
-
-When creating pages, or rather page templates, that will be used by Omnia users, it's important to consider which blocks to use. No block that depends on SharePoint works for these users, at least not as intended, including rollups.
-
-All other aspects regarding pages works well for Omnia users, but keep in mind that permissions must be handled through Omnia groups or Dynamic groups for these users.
++ **Scope type**: Here you can choose which users to display in the list; Tenant, Business profile or Group. If you select Business profil or Group, you then select which one as the second step.
 
 Add a new Omnia user
 -----------------------------
@@ -92,6 +66,31 @@ If you don't have a template file, download the default template and edit it wit
 There should be one row for each user to create (onboard) in the csv file. Also, you must not touch the top row, you should not edit anything there.
 
 **Note!** If you use Excel to edit the csv file, you must select "Text to columns" before you start editing. 
+
+About limitations for Omnia users
+-----------------------------------
+As mentioned, Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on SharePoint or Microsoft 365 can be used. That includes, for example; Teams functionality, Teamworks, Document management, Process management and search.  
+
+When creating pages, or rather page templates, that will be used by Omnia users, it's important to consider which blocks to use. No block that depends on SharePoint works for these users, at least not as intended, including rollups.
+
+All other aspects regarding pages works well for Omnia users, but keep in mind that permissions must be handled through Omnia groups or Dynamic groups for these users.
+
+Editing Omnia users or Microsoft Graph users
+----------------------------------------------
+To edit a user, click the > icon at the far right.
+
+.. image:: user-management-users-list-omnia-options-edit-78.png
+
+The following settings are available for Omnia users:
+
+.. image:: user-management-users-list-omnia-edit-78.png
+
+and these:
+
+.. image:: user-management-users-list-omnia-edit-78-2.png
+
+If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
+Save the changes when you're finished.
 
 Delete an Omnia user
 -------------------------
