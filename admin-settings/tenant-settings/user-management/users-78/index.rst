@@ -1,13 +1,13 @@
 Users (User management) in Omnia 7.8
 ======================================
 
-This page describes the tenant Users list in user management, in Omnia 7.8. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
+This page describes the Users list in tenant user management, in Omnia 7.8. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
 
 User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
 Three lists are available here; ALL USERS, DELETED USERS and PENDING APPROVAL. Note that users set up under User management in a business profile is listed here as well.
 
-.. image:: user-management-users-list-75.png
+.. image:: user-management-users-list-78.png
 
 All users
 ************
@@ -17,15 +17,9 @@ Note that you can use the search field to find a user and use the filters for a 
 
 If you would like to list Omnia users created here, select "Omnia" for "Provider".
 
-.. image:: user-management-users-list-omnia-75.png
+.. image:: user-management-users-list-omnia-78.png
 
-A few settings are available for Omnia users; use the pen to edit user type, the key for authentication settings (see below) and the dust bin to delete the user.
-
-.. image:: user-management-users-list-omnia-options-75.png
-
-Using the pen, all settings for user (see below), except authentication settings, can be edited.
-
-To edit authentication settings, click the key, and the following is available:
+For more information on editing Omnia users, see below.
 
 .. image:: user-management-users-list-omnia-options-key-75.png
 
@@ -44,6 +38,16 @@ The following filters are available, to display only some users in the list:
 + **User type**: Using this filter you can choose to list just one of registrered user types.
 + **Provider**: You can choose to list just one of the providers, usually Microsoft Graph or Omnia.
 + **Owner**: Here you can choose to list users from just one of the business profiles in the tenant. This lists users managed in the respective business profiles.
+
+Editing Omnia users
+----------------------
+To edit Omnia users, click the symbol > at the far right.
+
+.. image:: user-management-users-list-omnia-options-edit-78.png
+
+The following settings are available:
+
+
 
 About limitations for Omnia users
 -----------------------------------
