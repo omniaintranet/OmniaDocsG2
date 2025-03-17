@@ -81,31 +81,31 @@ When creating pages, or rather page templates, that will be used by Omnia users,
 
 All other aspects regarding pages works well for Omnia users, but keep in mind that permissions must be handled through Omnia groups or Dynamic groups for these users.
 
+Delete Omnia users
+-------------------------
+You can delete a user while editing, see below. In the ALL USERS list you can delete one or more Omnia users (note, you can only delet Omnia users). Do the following:
+
+1. Select the user/users.
+2. Click the DELETE USER button that has become available.
+
+.. image:: user-management-users-delete-78.png
+
 Editing Omnia users or Microsoft Graph users
 ----------------------------------------------
 To edit a user, click the > icon at the far right.
 
 .. image:: user-management-users-list-omnia-options-edit-78.png
 
-The following settings are available for Omnia users:
+Available fields and options depend on the user type, and other settings for the type. Some properties may be availble when creating a user and other propereties when editing the user. Here's an example for a user type called Procuction Worker:
 
-.. image:: user-management-users-list-omnia-edit-78.png
+.. image:: user-management-users-list-omnia-edit-78-75.png
 
-and these:
+and at the bottom, somne general opt§ions are available:
 
-.. image:: user-management-users-list-omnia-edit-78-2.png
+.. image:: user-management-users-list-omnia-edit-78-2-75.png
 
 If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
 Save the changes when you're finished.
-
-Delete an Omnia user
--------------------------
-To delete one or more Omnia users, do the following:
-
-1. Select the user/users.
-2. Click the DELETE USER button that has become available, or click the dust bin for a single user.
-
-.. image:: user-management-users-delete-75.png
 
 The Deleted users list
 ***********************
