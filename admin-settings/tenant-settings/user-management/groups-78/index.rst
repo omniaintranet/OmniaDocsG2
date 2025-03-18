@@ -21,10 +21,6 @@ Note that you can search and filter on "Group type". If you would like a list of
 
 .. image:: user-magaments-groupd-list-omnia-78.png
 
-If you would like to list the users from one business profile only, use the filter Owner and add the name of the business profile.
-
-.. image:: user-magaments-groupd-list-75.png
-
 Also note that you can use the i-icon for information about other groups than Omnia groups.
 
 Add a new group
