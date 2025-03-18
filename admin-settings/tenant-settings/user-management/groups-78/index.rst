@@ -49,9 +49,27 @@ The filter can be used to find one or more users in a long list.
 
 Editing Omnia groups
 ----------------------
+To edit a group, click the > icon at the far right.
 
+.. image:: user-management-groups-list-omnia-options-edit-78.png
+
+Edit the settings as needed:
+
+.. image:: user-management-groups-list-omnia-edit-78.png
+
+You add users as described above. To remove a user from the group, click the dust bin. You can also delete the group from here.
+
+See information for a Microsoft Graph group
+-----------------------------------------------
+You can't change anything for a Microsoft Graph group, but you can see a list bof members for the group. Here's an example:
+
+.. image:: user-management-groups-graph-78.png
 
 Deleted groups
-****************
-In the list of deleted groups you can restore deleted groups or delete them permanently.
+***************
+In the list of deleted groups you can restore deleted groups or delete (Purge) them permanently. Select one or more groups and then select what to do with them. Here's an example fropm a test environment:
+
+.. image:: user-management-groups-deleted-blood-78.png
+
+You can't restore deleted Microsoft Graph groups but you purge them from your system.
 
