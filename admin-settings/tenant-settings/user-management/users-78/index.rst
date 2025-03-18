@@ -117,7 +117,7 @@ When editing Microsoft Graph users, the only thing you can change is the image.
 
 Delete user
 -----------------
-You can deklete an Omnia users when you are eduíting the user, see the button DELETE USER in the image above. You can also delete one or more Omnia users in ALL USERS list, see above.
+You can delete an Omnia users when you are eduíting the user, see the button DELETE USER in the image above. You can also delete one or more Omnia users in ALL USERS list, see above.
 
 Authentication
 ----------------
