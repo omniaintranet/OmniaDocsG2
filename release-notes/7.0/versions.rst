@@ -1,3 +1,16 @@
+7.7.21
+========================================
+(Omnia 7.7.21 / Workplace 7.7.12 / WCM 7.7.20 / MS 7.7.13 / Analytics 7.7.4)
+
+- User targeting cache is now cleared when editing values in your profile card (#164749).
+- Editing processes from within the WCM editor is now enabled again (#165203).
+- Fixed an issue where the "Open in Client App" setting was not respected in the controlled documents library.
+- Save filter state to the url now works as expected for the media rollup (#164972).
+- Change comment is now displayed under the three dot menu for the first version of a Draft in Controlled Documents.
+- Ensured language can be cleared on the default variation (#165082).
+- Ensured sort order is the same between the Page Rollup accelerator and legacy query methods (#165132).
+- Clarified labels in Omnia admin for settings to support encrypted documents.
+
 7.7.19
 ========================================
 (Omnia 7.7.19 / Workplace 7.7.12 / WCM 7.7.18 / MS 7.7.12 / Analytics 7.7.4)
