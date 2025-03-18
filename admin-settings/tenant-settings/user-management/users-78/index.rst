@@ -113,38 +113,46 @@ Available fields and options depend on the user type. Also, some properties may 
 
 and at the bottom, somne general options are available:
 
-.. image:: user-management-users-list-omnia-edit-78-2-75.png
+When editing Microsoft Graph users, the only thing you can change is the image.
 
-When editing Microsoft Graph users, the only thing you can change is the image:
+Delete user
+-----------------
+You can deklete an Omnia users when you are eduíting the user, see the button DELETE USER in the image above. You can also delete one or more Omnia users in ALL USERS list, see above.
 
-.. image:: user-management-users-list-omnia-edit-graph-78-2-new-75.png
+Authentication
+----------------
+The settings for authentication are the same as when you create a new Omnia user, see above. But when you edit a user you can disable the account, if you want keep but if it should not be active now.
 
 If you need to reinitiate the whole onboarding process for the user, click RESET ACCOUNT. You can also enable or disable an Omnia user accounts from here.
 Save the changes when you're finished.
+
+Also note the information about the user having logged in or not, at the bottom.
+
+.. image:: user-management-users-list-omnia-authentication-78.png
 
 The Deleted users list
 ***********************
 You can use this list to restore deleted Omnia users or delete users permanently (Purge). To restore or pemanently delete a single user, use the buttons at the right of the user's row.
 
-.. image:: user-management-users-delete-buttons-75.png
+.. image:: user-management-users-delete-buttons-78.png
 
 To restore or permanently delete a number of users, select them first and use the buttons at the top:
 
-.. image:: user-management-users-delete-buttons-top-75.png
+.. image:: user-management-users-delete-buttons-top-78.png
 
 The Pending approval list
 ***************************
-If self service for user accounts are allowed, and if approval is needed for these accounts, approval is handled through this list.
+If self service for user accounts is allowed, and if approval is needed for these accounts, approval is handled through this list.
 
-.. image:: user-management-users-pending.png
+.. image:: user-management-users-pending-78.png
 
 Click the pen for available actions:
 
-.. image:: user-management-users-pending-actions.png
+.. image:: user-management-users-pending-actions-78.png
 
 and these:
 
-.. image:: user-management-users-pending-actions-more.png
+.. image:: user-management-users-pending-actions-more-78.png
 
 This information is created during the account set up process. Available fields and options depend on various authentication settings. The images above is just examples.
 
@@ -153,7 +161,4 @@ Everything here can be edited if needed.
 When you're ready, click APPROVE or REJECT. If you choose to approve, the account is created and the user is notified. If you reject the request, type a message to explain why this request can't be approved. That message is sent to the user.
 
 Self-service is set up (if used) on business profile level. See this page for more information: :doc:`Self-service settings </admin-settings/business-group-settings/user-management-bp/self-service-users-bp/index>`
-
-
-
 
