@@ -39,11 +39,11 @@ To add a new user, click the ADD USER button.
 
 Available fields are the properties set up under the option in the User management menu. Here's an example for Office worker:
 
-.. image:: user-management-users-settings-1-78-75.png
+.. image:: user-management-users-settings-1-78-50.png
 
 and these:
 
-.. image:: user-management-users-settings-2-78-new-75.png
+.. image:: user-management-users-settings-2-78-new-50.png
 
 The following options are always available:
 
@@ -60,7 +60,7 @@ Bulk create users
 -------------------
 By clicking BULK CREATE USERS you can onboard a number of users. Here's the settings you can use:
 
-.. image:: user-management-users-settings-bulk-1-78-75.png
+.. image:: user-management-users-settings-bulk-1-78-50.png
 
 The first step is to select user type and the scenario:
 
@@ -109,9 +109,11 @@ To edit a user, click the > icon at the far right.
 
 Available fields and options depend on the user type. Also, some properties may be available when creating a user and other properties when editing the user. Here's an example for a user type called Procuction Worker:
 
-.. image:: user-management-users-list-omnia-edit-78-new-75.png
+.. image:: user-management-users-list-omnia-edit-78.png
 
 and at the bottom, somne general options are available:
+
+.. image:: user-management-users-list-omnia-edit-2-78.png
 
 When editing Microsoft Graph users, the only thing you can change is the image.
 
