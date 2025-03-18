@@ -1,6 +1,8 @@
 Groups
 =============================================
 
+This page describes the funcrtionality in Omnia 7.7and earlier. For Omnia 7.8, see: :doc:`User management groups in Omnia 7.8 <admin-settings/tenant-settings/user-management-gropups-78/index>`
+
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
 
 If you're working with User management for a business profile, groups can be created and edited the same way there, and is then valid for that business group only.
