@@ -3,7 +3,7 @@ Groups (User management) in Omnia 7.8
 
 **This page is being edited. Will be finished soon.**
 
-This page describes the funcrtionality in Omnia 7.8. For Omnia 7.7 and earlier, see: :doc:`User management groups <admin-settings/tenant-settings/user-management-gropups/index>`
+This page describes the functionality in Omnia 7.8. For Omnia 7.7 and earlier, see: :doc:`User management groups <admin-settings/tenant-settings/user-management-gropups/index>`
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
 
@@ -13,15 +13,13 @@ All groups
 *************
 A list of all groups can look like this:
 
-.. image:: user-magaments-groupd-list-new.png
+.. image:: user-magaments-groupd-list-78.png
 
-To edit the settings for a group, click the pen. To delete it, click the dust bin. When you edit an Omnia group, all settings are available, as when you add a new group, see below. Regarding groups and users from MS Graph, only added properties, if any, can be edited, not the information that originates from MS Graph.
-
-.. image:: user-magaments-groupd-list-edit-delete.png
+When you edit an Omnia group, all settings are available, as when you add a new group, see below. Regarding groups and users from MS Graph, only added properties, if any, can be edited, not the information that originates from MS Graph.
 
 Note that you can search and filter on "Group type". If you would like a list of the Omnia groups only, select "Omnia group" as group type.
 
-.. image:: user-magaments-groupd-list-omnia.png
+.. image:: user-magaments-groupd-list-omnia-78.png
 
 If you would like to list the users from one business profile only, use the filter Owner and add the name of the business profile.
 
