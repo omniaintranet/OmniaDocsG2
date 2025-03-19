@@ -1,13 +1,11 @@
 Edit your user profile card
 ==================================
 
-In Omnia 7.7 and later, an additional way of working with user information has been added. The user profile card has been around for a while, but the way to edit the information is new.
-
-If your organization uses this functionality, this is how you do.
+It can be possible to edit the information on your profile card directly. If your organization uses this functionality, this is how you do.
 
 You can open your profile card in a number of ways, depending on how Omnia is set up. One way that is always available is selecting "My profile" here:
 
-.. image:: my-profile-open.png
+.. image:: my-profile-open-78.png
 
 The user profil card is opened in private view, meaning some information only you can see.
 
@@ -35,7 +33,7 @@ When editing a text field, you can use th RTF editor. For more information, see:
 
 Generally, when you have finished editing a section, click here to save the changes (or the x to not save):
 
-my-profile-edit-metadata-clocktag-select-save
+.. image:: my-profile-edit-metadata-clocktag-select-save.png
 
 Editing metadata
 ---------------------
@@ -43,7 +41,7 @@ Here's an example of how you edit metadata:
 
 .. image:: my-profile-edit-metadata.png
 
-Click the x to remove a metadata. Click the tag to add new:
+Click the x for a metadata to remove it. Click the tag to add new:
 
 .. image:: my-profile-edit-metadata-clocktag.png
 
