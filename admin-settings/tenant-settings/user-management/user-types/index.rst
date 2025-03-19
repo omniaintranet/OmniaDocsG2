@@ -119,7 +119,7 @@ Of course, just a few of the available blocks makes sense to use here, but that 
 
 Here's an example of a user profile card layout (shown in edit mode):
 
-.. image:: user-card-layout.png
+.. image:: user-card-layout-78.png
 
 At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for three tabs with information. The first tab is a properties block (Contact), the second is an organization tree block, and the third (Experience) is a properties block.
 
@@ -133,7 +133,7 @@ Preview a profile card
 ---------------------------
 You can preview the card layout for different users:
 
-.. image:: user-card-layout-user.png
+.. image:: user-card-layout-user-78.png
 
 **Important note!** When you preview a colleagues card, all permissions are valid, meaning you can just see what YOU have permissions to see, not what the user has permissions for.
 
