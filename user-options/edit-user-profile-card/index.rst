@@ -29,7 +29,7 @@ As you surely have figured out already, editing is done by clicking the pen for 
 
 Edit a text field
 -----------------------
-When editing a text field, you can use th RTF editor. For more information, see: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
+When editing a text field, you can use the RTF editor. For more information, see: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
 Generally, when you have finished editing a section, click here to save the changes (or the x to not save):
 
@@ -49,5 +49,5 @@ Select one or more metadata from the list.
 
 .. image:: my-profile-edit-metadata-clocktag-select.png
 
-(Don't forget to save the changes, see above).
+(Don't forget to save the changes in the block, see above).
 
