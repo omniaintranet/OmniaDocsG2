@@ -28,7 +28,7 @@ Something like the following is shown:
 
 Available blocks and more depends on how the page type (page template) for news is set up. 
 
-You can see that the title you entered in the previous step is suggested as the news article's heading ("Spring is in the air" in this example). It can be edited if needed.
+The title you entered in the previous step is suggested as the news article's heading ("Spring is in the air" in this example). It can be edited if needed.
 
 What you actually need to do depends on the page type (template) for news. Here's some common steps that you should be able to do using Write mode:
 
@@ -51,16 +51,16 @@ For more information about a specific block, select the block in this list: :doc
 
 7. Set the properties.
 
-Available properties depend on the type for used. Here's an example:
+Available properties depend on the type used. Here's an example:
 
 .. image:: news-properties-border-78.png
 
-Comments on two fields that are normally present:
+THese two fields are normally present:
 
 + **Article date**: Add a publishing date here. In a news list, the articles are sorted on Article date. If you're working on an article for a while, the date will not be updated automatically, so you may have to edit it before publishing. Note that this field is mandatory. Also note that this is information only, it doesn't have anything to do with when the article actually is published.
 + **Page contact**: This is shown under the image on the news article's page. Your name is added automatically. If someone else should be the page contact, remove your name and add the colleague's name. This field is mandatory.
 
-Metadata tagging for news can be set up in many ways and are also used in many ways, for example to display different news articles for different user groups. In this example, "News type" and the last three fields under Page contact are examples of metadata, and you will receive information from your organization about how to use them. Certain metadata fields can also be mandatory. 
+Metadata tagging for news can be set up in many ways and are also used in many ways, for example to display different news articles for different user groups. In this example, "News type" and the last three fields under "Page contact" are examples of metadata (as is Page contact itself, actually), and you will receive information from your organization about how to use them. Certain metadata fields can also be mandatory. 
 
 "Scheduled publish date" is shown if scheduled publishing is activated for the news site. If present, you can use it the set the date and time when this article should be published. It's the same functionality as for other pages in Omnia. For more information about this, see: :doc:`Publish page changes </pages/publish-page-changes/index>`
 
@@ -76,7 +76,7 @@ If Publishing channels are used in your organization (as in this example), somet
 
 If Publishing channels are not used, this step is not shown at all.
 
-9. Select one or more publishing channels if needed, and save. You can alos publish directly, if the article is finished.
+9. Select one or more publishing channels if needed, and save or publish. 
 
 You can save the news article as a draft to continue working on it later, or publish it directly. There can also be other publishing options available, as approval before a news article can be published. Scheduled publishing can also be available, depending on settings.
 
@@ -88,10 +88,6 @@ If the AI options are activated in Omnia admin settings, they are available when
 
 What "Auto-generate content" does, if you opt to use it, is to create a SUGGESTED text from your instructions, and even a suggested image, if you wish. You can always try it to see what the AI suggests. You can edit all text and use another image, or even delete it all, if the suggestion wasn't at all what you had in mind.
 
-If you activate "Auto-generate content", the following is shown:
-
-.. image:: news-article-ai-use.png
-
 Here's an example of how it may work:
 
 From these instructions:
@@ -102,7 +98,7 @@ The AI may create the following suggested image and text:
 
 .. image:: news-article-ai-suggestion-78.png
 
-Well, the image was probably not what you had in mind, but the text wan't that bad. This is just an example after all.
+Well, the image was probably not what you had in mind, but the text wasn't that bad. Can be useful. This is just an example, after all.
 
 Now it's up to you to use the suggested image or replace it with another one, and to edit the text to your liking (or delete it). Nothing is saved until you save (all content in the article is saved if you publish).
 
