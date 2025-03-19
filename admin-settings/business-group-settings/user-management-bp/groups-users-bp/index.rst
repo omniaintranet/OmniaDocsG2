@@ -24,5 +24,5 @@ This is how it's done:
 
 The local manager(s) is added/replaced as owner(s) here when a new group is created or an existing group is edited:
 
-.. image:: groups-bp-list-owner-78.png.
+.. image:: groups-bp-list-owner-78.png
 
