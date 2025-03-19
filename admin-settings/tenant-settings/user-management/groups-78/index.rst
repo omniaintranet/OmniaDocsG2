@@ -65,9 +65,9 @@ You can't change anything for a Microsoft Graph group, but you can see a list of
 
 Deleted groups
 ***************
-In the list of deleted groups you can restore deleted groups or delete (Purge) them permanently. Select one or more groups and then select what to do with them. Here's an example fropm a test environment:
+In the list of deleted groups you can restore deleted Omnia groups or delete (Purge) them permanently. Select one or more groups and then select what to do with them. Here's an example fropm a test environment:
 
 .. image:: user-management-groups-deleted-blood-78.png
 
-You can't restore deleted Microsoft Graph groups but you purge them from your system.
+You can't restore deleted Microsoft Graph groups but you can purge them from your system.
 
