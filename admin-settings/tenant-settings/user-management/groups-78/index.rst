@@ -1,8 +1,6 @@
 Groups (User management) in Omnia 7.8
 ======================================
 
-**This page is being edited. Will be finished soon.**
-
 This page describes the functionality in Omnia 7.8. For Omnia 7.7 and earlier, see: :doc:`User management groups </admin-settings/tenant-settings/user-management-gropups/index>`
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
@@ -25,7 +23,7 @@ Add a new group
 ----------------
 Click the ADD GROUP button to create a new Omnia group, and use these settings:
 
-.. image:: user-managament-groups-78.png
+.. image:: user-managament-groups-78-new.png
 
 Here you can add an image for the group using the Image picker, add a name and description and add Omnia users (members) to the group. The users must be added to the Users list first, see this page for more information: :doc:`Users (Omnia 7.8) </admin-settings/tenant-settings/user-management/users-78/index>`
 
@@ -61,7 +59,7 @@ You add users as described above. To remove a user from the group, click the dus
 
 See information for a Microsoft Graph group
 -----------------------------------------------
-You can't change anything for a Microsoft Graph group, but you can see a list bof members for the group. Here's an example:
+You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. Here's an example:
 
 .. image:: user-management-groups-graph-78.png
 
