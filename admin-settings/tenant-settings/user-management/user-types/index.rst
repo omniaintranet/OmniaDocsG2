@@ -121,7 +121,7 @@ Here's an example of a user profile card layout (shown in edit mode):
 
 .. image:: user-card-layout-78.png
 
-At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for five tabs with information. THe information that should be available is handled by adding blocks to the layout.
+At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for five tabs with information. The information that should be available is handled by adding blocks to the layout.
 
 Preview a profile card
 ---------------------------
