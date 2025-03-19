@@ -23,7 +23,7 @@ Create a new authentication screen
 **************************************
 To create a new screen, click the plus to the right of LAYOUTS and add a new name for the new screen.
 
-.. image:: authentications-screens-new-name.png
+.. image:: authentications-screens-new-name-78.png
 
 And now you can start working on the layout for the screen.
 
@@ -31,7 +31,10 @@ And now you can start working on the layout for the screen.
 
 This is very similar to working with other layouts in Omnia, see: :doc:`Working with layouts </general-assets/working-with-layouts/index>`
 
-Two important differences are that there are fewer blocks available for authentication screens than other layouts, and that a specific block is available only for authentication screens, named "Authentication".
+Two important differences:
+
++ There are fewer blocks available for authentication screens than for other layouts.
++ A specific block is available only for authentication screens, named "Authentication".
 
 The Authentication block comes with a ready to use style that can be edited using the settings:
 
