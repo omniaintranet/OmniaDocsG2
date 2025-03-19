@@ -14,15 +14,15 @@ This is how:
 
 1. Open My profile.
 
-.. image:: my-profile-click-v7.png
+.. image:: my-profile-click-v78.png
 
 2. Open the list for language settings.
 
-.. image:: language-setting-v7.png
+.. image:: language-setting-v78.png
 
 3. Select language.
 
-.. image:: language-setting-select-v7.png
+.. image:: language-setting-select-v78.png
 
 The list contains all languages that are set up in Omnia admin, see: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
 
