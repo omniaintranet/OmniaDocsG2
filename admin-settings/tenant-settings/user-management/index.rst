@@ -1,7 +1,7 @@
 User management - tenant settings
 =============================================
 
-Here you can add and handle users that does not require an Microsoft 365 license, and some other options. 
+Here you can add and handle users that does not require a Microsoft 365 license, and some other options. 
 
 Omnia users can also be set up for a business profile only, so users in that business profile can be handled by a business profile administrator. For more information, see: :doc:`User management - business profile </admin-settings/business-group-settings/user-management-bp/index>`
 
