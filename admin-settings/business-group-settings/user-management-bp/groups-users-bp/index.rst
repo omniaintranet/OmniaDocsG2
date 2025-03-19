@@ -20,9 +20,9 @@ It's possible for local managers on any level to manage a group of users, within
 This is how it's done:
 
 1. A tenant administrator or a business profile administrator creates a group and adds the local manager as owner of that group.
-2. The local manager(s) can then add users to the group and manage the users the way it's described for User management in the tenant (see link above).
+2. The local manager(s) can then add users to the group and manage the users the way it's described for user management in the tenant (see link above).
 
-The local manager(s) is added/replaced as owner(s) here when a new group is created or an existing group is edited:
+The local manager(s) are added/replaced as owner(s) here when a new group is created or an existing group is edited:
 
 .. image:: groups-bp-list-owner-78.png
 
