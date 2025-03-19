@@ -53,7 +53,7 @@ To edit a group, click the > icon at the far right.
 
 Edit the settings as needed:
 
-.. image:: user-management-groups-list-omnia-edit-78.png
+.. image:: user-management-groups-list-omnia-edit-78-new.png
 
 You add users as described above. To remove a user from the group, click the dust bin. You can also delete the group from here.
 
