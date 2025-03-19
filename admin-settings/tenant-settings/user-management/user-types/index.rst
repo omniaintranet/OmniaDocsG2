@@ -121,13 +121,7 @@ Here's an example of a user profile card layout (shown in edit mode):
 
 .. image:: user-card-layout-78.png
 
-At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for three tabs with information. The first tab is a properties block (Contact), the second is an organization tree block, and the third (Experience) is a properties block.
-
-For more information about the blocks, see: 
-
-+ :doc:`The User information block </blocks/user-information-block/index>`
-+ :doc:`The Properties block </blocks/properties-block/index>`
-+ :doc:`The Organization tree block </blocks/organization-tree/index>`
+At the top, a User information block is added. Next, a tab section is added, for navigation purposes, for five tabs with information. THe information that should be available is handled by adding blocks to the layout.
 
 Preview a profile card
 ---------------------------
@@ -139,7 +133,5 @@ You can preview the card layout for different users:
 
 User edits of the profile card
 ************************************
-It's up to each user to edit the profile card. On this page you can see how it works:
-
-:doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
+It's up to each user to edit the profile card. On this page you can see how it works: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
 
