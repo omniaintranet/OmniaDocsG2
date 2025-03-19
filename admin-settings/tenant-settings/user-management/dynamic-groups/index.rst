@@ -28,7 +28,7 @@ To add a user type to a group, open the list and select one of the types that ha
 
 Then click the plus.
 
-.. image:: add-user-list-click-plus-78.png
+.. image:: add-user-list-click-plus-78-frame.png
 
 Repeat until all user types you want in this group are added.
 
