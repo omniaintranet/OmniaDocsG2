@@ -37,11 +37,11 @@ Do the following:
 
 1. Click the USERS button and add one or more users from the list.
 
-.. image:: add-users-1-78.png
+.. image:: add-users-1-78-new.png
 
 The added users are now shown. If you selected a user by mistak, use the dust bin to remove the user from the group.
 
-.. image:: add-users-2-78.png
+.. image:: add-users-2-78-new.png
 
 The filter can be used to find one or more users in a long list.
 
@@ -61,7 +61,7 @@ See information for a Microsoft Graph group
 -----------------------------------------------
 You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. Here's an example:
 
-.. image:: user-management-groups-graph-78.png
+.. image:: user-management-groups-graph-78-new.png
 
 Deleted groups
 ***************
