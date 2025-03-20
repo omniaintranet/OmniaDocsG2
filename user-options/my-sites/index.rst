@@ -5,11 +5,11 @@ Teamwork navigation can display links to several types of sites and groups, incl
 
 This is the icon used if teamwork navigation is shown in the top menu:
 
-.. image:: teamwork-navigation-v7.png
+.. image:: teamwork-navigation-v78.png
 
 Here's an example of a teamwork Navigation list:
 
-.. image:: my-sites-example-v7.png
+.. image:: my-sites-example-v78.png
 
 Available tabs can be set up in a number of ways. 
 
@@ -34,15 +34,13 @@ Another way users can be allowed to create teamworks, is through the Create app 
 
 What the option is called and which fields and options will be available when creating a teamwork can differ depending on how the template used is set up.
 
-Here's an example with some common fields and options:
-
 1. Click CREATE TEAMWORK.
 
-.. image:: click-new-site-V7.png
+.. image:: click-new-site-V78.png
 
 2. Select a template.
 
-.. image:: select-site-type-v7-frame.png
+.. image:: select-site-type-v78.png
 
 (What is available in this list depends on templates set up in Omnia admin.)
 
@@ -51,29 +49,28 @@ This example will create a "Department" site.
 3. Select "Department".
 4. The following can be set in this example:
 
-.. image:: create-site-1-v7.png
+.. image:: create-site-1-v78.png
 
 (Again, what is shown here is an example, depends on the template).
 
 + **Title**: This is the name that will be shown for the site in lists and when searching.
 + **Description**: A description is not mandatory but is very helpful when colleagues search for sites.
 + **Show in public listings**: If this option is available, deselect if the site should not be shown in Omnia lists all colleagues has access to.
-+ **Alias**: The last part of the address to the site is created automatically but can be edited if necessary. If the name (address) already exists an alternative alias is suggested.
-+ **Languages**: The same language as the main business profile language is suggested. Another language can be selected if needed.  
++ **Omnia alias**: The last part of the address to the site is created automatically but can be edited if necessary. If the name (address) already exists an alternative alias is suggested.
 + **Image**: Adding an image is not mandator, but looks really noce in the lists.
 
-5. Click "Next".
+5. Click "Next" (usually found in the bottom right corner).
 6. Set the following:
 
-.. image:: create-site-2-v7.png
+.. image:: create-site-2-v78.png
 
-Properties has many uses in Omnia. This step can look very different - which properties the user has to or can fill in is set up in the template for the teamwork. Note that a star indicates that a setting is mandatory.
+Properties have many uses in Omnia. This step can look very different - which properties the user has to or can fill in is set up in the template for the teamwork. Note that a star indicates that a setting is mandatory.
 
-In this example this is used (mandatopry) to set which part of the organization this site will be used for. See for example this page for more information about properties: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
+In this example this is used (mandatory) to set which part of the organization this site will be used for. See for example this page for more information about properties: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 7. As the next step, site owners and members can be added:
 
-.. image:: create-site-2-member-v7.png
+.. image:: create-site-2-member-v78.png
 
 At least one administrator is mandatory, but it's recommended there should be at least two owners (administrators) of a teamwork. Normally there should only be a few, though, as site owners has extensive permissions to the teamwork's settings.
 
@@ -83,7 +80,7 @@ And now, this short example is finished. There can be additional parts of the pr
 
 When all steps setup in the teamplet are done, a summary is shown:
 
-.. image:: create-site-summary-v7.png
+.. image:: create-site-summary-v78.png
 
 Any step can be edited by clicking the pen.
 
