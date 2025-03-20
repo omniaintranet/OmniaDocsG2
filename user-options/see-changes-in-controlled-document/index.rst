@@ -9,11 +9,11 @@ If there is only one edition of the document, the option is simply not shown.
 
 The option is available in the information window of a document, through the i icon:
 
-.. image:: show-changes-iicon.png
+.. image:: show-changes-iicon-78.png
 
 Here's an example:
 
-.. image:: show-changes-all.png
+.. image:: show-changes-all-78.png
 
 Here's an example of changes shown:
 
