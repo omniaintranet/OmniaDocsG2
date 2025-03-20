@@ -5,21 +5,21 @@ Using quick search users can find information in a quick and convenient way. How
 
 Here's an example of a search result:
 
-.. image:: quick-search-example-v7.png
+.. image:: quick-search-example-v78.png
 
 Note the headings "People", "Official" and "Communities".
 
 Previews are available for pages and documents. For a preview, point at the page or document and click this icon:
 
-.. image:: quick-search-preview-page-v7.png
+.. image:: quick-search-preview-page-v78.png
 
 Here's an example of a preview for a page:
 
-.. image:: quick-search-preview-page-preview-v7.png
+.. image:: quick-search-preview-page-preview-v78.png
 
-The totalt number of search results are shown for for each category. Here's an example:
+Also note that the totalt number of search results are shown for for each category:
 
-.. image:: quick-search-total-v7.png
+.. image:: quick-search-total-v78.png
 
 Advanced search
 ****************
