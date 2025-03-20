@@ -1,6 +1,8 @@
 Strengthen profile
 ===========================================
 
+This is a classic (older) solution for editing profile information that is still available. The new solution, that will replace this functionality in most Omnia implementations, is the possibility to edit the user profile card directly. See this page for more information: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
+
 To make it easier for users to complete the most important parts of their profile, a Strengthen profile option can be made available.
 
 The option can be available in the action menu:
