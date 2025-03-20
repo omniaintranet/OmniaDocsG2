@@ -23,36 +23,32 @@ Also note that the totalt number of search results are shown for for each catego
 
 Advanced search
 ****************
-To search with more options, users can go to Advanced search by clicking here (the text for this link can be edited):
-
-.. image:: advanced-search-v7.png
+To search with more options, users can go to advanced search by clicking the "See more results" link (the text for this link can be edited), see above.
 
 When conducting an advanced search more tabs are available at the top and refiners can be available. Note the number of search hits for each tab (category).
 
 The refiners available (if refiners are shown) depends on what is available in the search result and the tab selected. Here's an example:
 
-.. image:: advanced-search-result-v7-new.png
+.. image:: advanced-search-result-v78.png
 
 If, for example, the user would be interested in documents in communities, this search results could be shown by selecting "Document" on the COMMMUNITIES tab, in this example.
 
-.. image:: advanced-search-refined-v7.png
+.. image:: advanced-search-refined-v78.png
 
 Promoted search results
 ------------------------
 A search administrator can set up promoted search results using keywords. A promoted search result can be shown this way in Quick search:
 
-.. image:: quick-search-promoted-example.png
+.. image:: quick-search-promoted-example-78.png
 
 And this way in Advanced search:
 
-.. image:: advanced-search-promoted-example.png
+.. image:: advanced-search-promoted-example-78.png
 
 Promoted search results are set up in Omnia admin, see: :doc:`Promoted search results </admin-settings/business-group-settings/search/promoted-search-results/index>`
 
 Search feedback
 -----------------
-It can be possible for users to send feedback on a search result (see the button SEND FEEDBACK in the image above).
-
 For information on how this works for the user, see: :doc:`Send feedback on a search result </user-options/search-feedback-user/index>`
 
 For information on how this works for administrators, see: :doc:`Search feedback </admin-settings/business-group-settings/search/search-feedback/index>`
