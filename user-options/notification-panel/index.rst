@@ -5,7 +5,7 @@ A noticification panel can be present in the action panel or on any page. The pu
 
 Several different notification panels can be created for different purposes, where one of them can be displayed in the action menu. Others can be displayed through a block, on any page.
 
-A number - 1 in the example below - indicates the number of new messages for the user:
+A number - 2 in the example below - indicates the number of new messages for the user:
 
 .. image:: notification-panel-in-action-78.png
 
