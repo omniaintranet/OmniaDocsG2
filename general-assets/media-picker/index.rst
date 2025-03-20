@@ -1,11 +1,13 @@
-Media picker
-===================
+Using the Media picker
+=========================
 
 The Media picker can be used to add an image or a video to a block, or to the page content through the RTF editor. Any image on the editor's computer can be selected, as well as from any central image location registered in Omnia admin. An image can be pasted from the clipboard as well. Besides that, additional providers can be set in Omnia admin.
 
-When the Media picker starts, something like the following is shown:
+When the Media picker starts, something like the following is shown (image from Omnia 7.8):
 
-.. image:: media-picker-v7.png
+.. image:: media-picker-v78.png
+
+To select an image, after a search in most cases, click it and the settings will be shown. Settings are the same for all images, see below.
 
 My computer
 *************
@@ -15,13 +17,13 @@ Central media bank
 *****************************************
 When you select a central media bank, the images there will be shown, for example:
 
-.. image:: media-picker-central-image-bank-v7-frame.png
+.. image:: media-picker-central-image-bank-v78.png
 
 Note the search field at the top.
 
 To select an image, open the folder if needed, click it and the settings will be shown. Settings are the same for all images, see below.
 
-Settings of image banks are made for each business profile. For more information see: :doc:`Central Image Location </admin-settings/business-group-settings/settings/central-image-location/index>`
+Settings of media banks are made for each business profile. For more information see: :doc:`Central image location </admin-settings/business-group-settings/settings/central-image-location/index>`
 
 Note that videos can be handled in SharePoint media libraries as well, and some Microsoft video editing options.
 
@@ -29,16 +31,31 @@ Bing
 *******
 For Bing to be available, the feature "Bing" must be active. When selecting Bing you can search for any Bing image, or use the predefined search categories, if any is set up. Bing search categories can be set up by an administrator in Omnia admin.
 
-.. image:: media-picker-bing-search-v7.png
+.. image:: media-picker-bing-search-v78.png
 
 + **Search**: Free text search is available in this field. You must always type a search string here, before using any filters.
 + **Size**: If you just want to find images of a certain size, select size in this field: Small, Medium, Large or Wallpaper.
 + **Aspect**: If you just want to find images with a certain aspect, select aspect in this field: Square, Wide or Tall.
 + **Type**: If you just want to find images of a certain type - as defined by Bing, select type in this field: Clipart, Line or Photo.
 
-To select an image, click it and the settings will be shown. Settings are the same for all images, see below.
-
 **Important note!** Omnia applies a filter to the Bing search automatically so only images that are free to use can be found through the Image picker.
+
+Pexels
+**************************
+For Pexels to be available the feature "Pexels" must be active. Available search- or filtering fields depend on what the provider offer. For Pexels only a search field is available:
+
+.. image:: media-picker-pexel-search-v78.png
+
+**Important note!** All images from Pexels are always free to use, and edit.
+
+Unsplash
+**************************
+For Unsplash only a search field is available (the same way as for Pexels, see above).
+
+For Mediaflow to be available, the prerequisites in Omnia are:
+
+1. The feature "Unsplash" must be active.
+2. Application ID and Client ID must be added under "Permissions" > "Secrets" > "Unsplash" for the tenant. (These settings are provided by Unsplash).
 
 Mediaflow
 ************
@@ -47,31 +64,19 @@ This option requires a subscription to the Mediaflow service. Please find more i
 For Mediaflow to be available, the prerequisites in Omnia are:
 
 1. The feature "Mediaflow" must be active.
-2. Client ID, Client secret and Refresch token must be added under "Permissions" - "Secrets" - "MediaFlow" for a business profile. (These settings are provided by MediaFlow).
+2. Client ID, Client secret and Refresch token must be added under "Permissions" > "Secrets" > "MediaFlow" for a business profile. (These settings are provided by MediaFlow).
 
 Also check the specific settings for MediaFlow to see if you need/want to edit them. See this link: :doc:`Mediaflow settings </admin-settings/business-group-settings/settings/media-flow/index>`.
 
 When Mediaflow has been set up, you can search or browse available content:
 
-.. image:: media-picker-mediaflow.png
+.. image:: media-picker-mediaflow-78.png
 
 To select an image, click it and select "Use this file". Also note the information shown, for example file size.
 
-.. image:: media-picker-mediaflow-select.png
+.. image:: media-picker-mediaflow-select-78.png
 
 When you have done that, Omnia's settings are shown, as described below.
-
-Pexels or other provider
-**************************
-For Pexels to be available the feature "Pexels" must be active. Available search- or filtering fields depend on what the provider offer. For Pexels only a search field is available:
-
-.. image:: media-picker-pexel-search-v7.png
-
-To select an image, click it and the settings will be shown. Settings are the same for all images, see below.
-
-**Important note!** All images from Pexels are always free to use, and edit.
-
-**A note about MediaFlow**: This feature requires a subscription to the Mediaflow service. Please find more information here: https://www.mediaflow.com/.
 
 Using Dall-E to create images
 ******************************
