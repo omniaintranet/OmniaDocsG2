@@ -9,7 +9,7 @@ Prerequisites
 ******************
 Before you can start using the various targeting options in Omnia, properties for this purpose must be set up. See this page for more information: :doc:`Targeting Properties </admin-settings/tenant-settings/properties/targeting-properties/index>`
 
-Examples of What you can target
+Examples of what you can target
 **********************************
 As an example, you can use targeting for the following options in Omnia:
 
@@ -30,7 +30,7 @@ How to set up targeting
 ************************
 Here's how to set up targeting - targeting a shared link as an example.
 
-1. Click "Add Targeting Filter".
+1. Click "Add targeting filter".
 
 .. image:: add-targeting-filter-new2.png
 
