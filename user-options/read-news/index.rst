@@ -31,7 +31,7 @@ If a news archive is available, it's indicated by a link or button, for example:
 
 .. image:: news-archive-example-button-v78.png
 
-In a news archive, you can read older news as well. In this example, you can search for news here and filter the list on dates.
+In a news archive, you can read older news as well. In this example, you can search for news here and filter the list on news type, page contact and article date.
 
 .. image:: news-archive-example-archive-v78.png
 
