@@ -7,36 +7,35 @@ Several different notification panels can be created for different purposes, whe
 
 A number - 1 in the example below - indicates the number of new messages for the user:
 
-.. image:: notification-panel-in-action-76.png
+.. image:: notification-panel-in-action-78.png
 
 Here's an example of what can be found in a notification panel:
 
-.. image:: notification-panel-example-76.png
+.. image:: notification-panel-example-78.png
 
 What a notification panel will display depends on settings in Omnia admin. The following is an example, described from left to right:
 
-+ **News**: (See image above). Latest News from the news archive, with the very latest at the top. Click to read the full news article. 
-+ **Team**: Latest messages from the teamsites the user is a member of, for example:
-
-.. image:: team-site-news-76.png
++ **News**: Latest News from the news archive, with the very latest at the top. Click to read the full news article. 
++ **Team**: Latest messages from the teamsites the user is a member of (see image above).
 
 Click the heading of a message to go the teamsite to read the full message. You can click the authors name for more information about him or her.
 
 + **Communities**: Latest articles or comments from the communities the user is a member of, for example:
 
-.. image:: communities-news-76.png
+.. image:: communities-news-78.png
 
 Click the heading or the image to read the page/article.
 
-+ **Tasks**: When tasks are assigned to the user in a teamsite, a notification will show up here. 
++ **Tasks**: When tasks are assigned to the user in a teamsite, a notification will show up here. Here's an example from a test environment:
 
-.. image:: team-site-tasks-76.png
+
+.. image:: team-site-tasks-78.png
 
 To go to the task to read more and execute, click the heading.
 
-+ **Documents**: This lists all documents in teamsites the user is a member of, that are new or has been updated recently, the newest at the top. Here's an example from a test environment:
++ **Documents**: This lists all documents in teamsites the user is a member of, that are new or has been updated recently, the newest at the top. 
 
-.. image:: documents-example-76.png
+.. image:: documents-example-78.png
 
 Different actions can be taken for a document:
 
@@ -46,7 +45,7 @@ Different actions can be taken for a document:
 
 + **Sign-off requests**: If there are any sign-off requests active for the user, they are shown here, for example:
 
-.. image:: sifnoff-example-76.png
+.. image:: sifnoff-example-78.png
 
 Just click the request to work with it.
 
