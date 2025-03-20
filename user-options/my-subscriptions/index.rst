@@ -11,29 +11,29 @@ Use My subscriptions for an overview of your subscriptions. You can unsubscribe 
 
 My descriptions is available under "My Profile":
 
-.. image:: my-profile-menu-1-new.png
+.. image:: my-profile-menu-1-78.png
 
-.. image:: my-profile-menu-2-new.png
+.. image:: my-profile-menu-2-78.png
 
 My subscriptions is then available on your profile card:
 
-.. image:: my-profile-card-subscriptions-new.png
+.. image:: my-profile-card-subscriptions-78.png
 
 Here's an example of subscriptions:
 
-.. image:: my-subscriptions-1-76.png
+.. image:: my-subscriptions-1-78.png
 
 The left tab (shown in the image above) lists all page collections you subscribe to - meaning you subscribe to ALL activities on all pages in that page collection. 
 
 The second tab lists all pages you subscribe to, for example:
 
-.. image:: my-subscriptions-2-76.png
+.. image:: my-subscriptions-2-78.png
 
 You can click the title to go to the page or discussion.
 
 The third tab displays a list of all tags you subscribe to, for example:
 
-.. image:: my-subscriptions-3-76.png
+.. image:: my-subscriptions-3-78.png
 
 You can unsubscribe to any subscription, on any tab, by clicking the dust bin.
 
@@ -41,17 +41,17 @@ Subscribing to channels and unsubscribing
 ********************************************
 You can subscribe to channels, if any are setup. Use this tab:
 
-.. image:: my-subscriptions-76.png
+.. image:: my-subscriptions-78.png
 
 To add a channel, do the following:
 
 1. Select the tab and click ADD CHANNEL.
 
-.. image:: my-subscriptions-76-add.png
+.. image:: my-subscriptions-78-add.png
 
 Available channels are shown, for example:
 
-.. image:: my-subscriptions-76-channels.png
+.. image:: my-subscriptions-78-channels.png
 
 2. Click ADD for the channel to subscribe. 
 
