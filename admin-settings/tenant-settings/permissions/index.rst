@@ -38,7 +38,7 @@ A number of settings are available under Secrets. Exactly what is available here
 
 In Omnia 7.8 some options have been renamed and a few added:
 
-.. image:: tenant-secrets-v78.png
+.. image:: tenant-secrets-v78-new.png
 
 System Account
 ------------------
@@ -89,7 +89,7 @@ To be able to use AI text functionality within Omnia, the tenant feature "Text c
 
 AI features: AI search
 ------------------------
-Available in Omnia 7.8 and later. In order for the "Semantic Search" feature to work correctly, an Azure AI Search instance needs to be set up and it's read/write access credentials entered here.
+Available in Omnia 7.8 and later. In order for the "Semantic search" feature to work correctly, an Azure AI Search instance needs to be set up and it's read/write access credentials entered here.
  
 .. image:: aifeatures-aisearch.png
 
@@ -102,6 +102,12 @@ To be able to use the Dall-E functionality within Omnia, the tenant feature "Dal
 .. image:: dall-e-secret-v878-frame.png
 
 **Important note!** The model version should be dall-e-3 and the deployment name needs to be “Dalle3” in Omnia 7.7, when setting up Dall-E.
+
+Unsplash
+----------
+If your organization will use images from Unsplash, Application ID and Client ID received from Unsplash, must be entered here.
+
+.. image:: unsplash-settings.png
 
 reCAPTCHA
 -----------
