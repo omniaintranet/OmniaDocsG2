@@ -45,7 +45,7 @@ Do the following:
 + **Icon background color**: Set the background color for the icon here. If note set, default icon background color is used.
 + **Targeting filter**: Use these settings for targeting, for the link. 
 
-Targeting a link works the same way as in many other parts of Omnia. See this page for more information: :doc:`Using Targeting </general-assets/targeting-in-omnia/index>`
+Targeting a link works the same way as in many other parts of Omnia. See this page for more information: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Permissions for Shared links
 *****************************
