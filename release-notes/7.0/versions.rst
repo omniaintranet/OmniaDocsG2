@@ -1,3 +1,17 @@
+7.7.22
+========================================
+(Omnia 7.7.22 / Workplace 7.7.13 / WCM 7.7.21 / MS 7.7.14 / Analytics 7.7.4)
+
+- OnPrem: Planner tasks are hidden from the UI.
+- Ensured tags subscription are case-insensitive (#164977).
+- The page usage report on publishing apps is now disabled when receiving too much data. The recommendation is to utilize Matomo based omnia statistics instead. (#163416).
+- Fixed a graphical issue in the process editor when opened from within the WCM editor (#163350).
+- Quick links Last Visited sort order now acts as a true sort order and will not affect the query (#164994).
+- The document rollup has gotten explicit settings for the export sort order; the default UI sort order is now again Relevance (#163153).
+- Several stability fixes to the site attachment flow.
+- Fixed an issue related to the Page Rollup Accelerator and comment and likes count (#163737).
+
+
 7.7.21
 ========================================
 (Omnia 7.7.21 / Workplace 7.7.12 / WCM 7.7.20 / MS 7.7.13 / Analytics 7.7.4)
