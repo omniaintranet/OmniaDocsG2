@@ -118,7 +118,7 @@ These options are available for most views, shown in different order for differe
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
-+ **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter.
++ **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you change anything on the Query tab after having selected "Classic" or "Scroll", paging may automatically revert back "No paging". If paging "disappears" after changes for query, just select "Classic" or "Screoll" again.
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
