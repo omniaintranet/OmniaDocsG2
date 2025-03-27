@@ -21,5 +21,5 @@ The following field is available on this tab:
 
 .. image:: link-handler-tenant-documents-77.png
 
-Here you set up rules for documents especially. This is separate from the settings on the CUSTOM RULES tab. 
+Here can you choose that the rules for the system of the device, for opening documents from a link, should be used instead of the rules set up for Omnia. Open the list and select one or more systems.
 
