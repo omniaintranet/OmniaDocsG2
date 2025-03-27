@@ -68,7 +68,7 @@ The following settings can then be available, depending on scope chosen:
 + **Navigation depth Level**: Available for scope Navigation path. Choose the number of nodes that should be displayed, including the start node.
 + **Page size**: Use the slider, or type the number (1-99) to set the number of items (pages) that should be displayed on each "page" of the list. Also see under *Display* below for additional settings for the list. 
 + **Status**: By using this option you can create rollups for pages with the status Never published, Published or Any status. 
-+ **Trim duplicates**: If more than one Page Rollup block is added to a page, this option can be used to handle duplicates between the blocks. When the option is selected, you can enter a number indicating the priority for duplicates, for this block. If you set "1" for a block it means this block has priority showing a post that would have been a duplicate. 
++ **Trim duplicates**: If more than one Page Rollup block is added to a page, this option can be used to handle duplicates between the blocks. When the option is selected, you can enter a number indicating the priority for duplicates, for this block. If you set "1" for a block it means this block has priority showing a post that would have been a duplicate. **Note!** If you select this option paging is not available.
 
 Custom date filtering
 ------------------------
@@ -118,7 +118,7 @@ These options are available for most views, shown in different order for differe
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
-+ **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you change anything on the Query tab after having selected "Classic" or "Scroll", paging may automatically revert back "No paging". If paging "disappears" after changes for query, just select "Classic" or "Scroll" again.
++ **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
