@@ -39,11 +39,29 @@ Do the following:
 
 .. image:: add-users-1-78-new.png
 
-The added users are now shown. If you selected a user by mistak, use the dust bin to remove the user from the group.
+The added users are now shown. If you selected a user by mistake, use the dust bin to remove the user from the group.
 
 .. image:: add-users-2-78-new.png
 
 The filter can be used to find one or more users in a long list.
+
+Add groups to an Omnia group
+------------------------------
+You can add Omnia groups and Entra ID groups to an Omnia group (you can't add Omnia groups to an Entra group, though).
+
+1. Click the Groups icon.
+
+.. image:: add-group-1.png
+
+2. Click the GROUPS button and add one or more groups from the list.
+
+.. image:: add-groups-2.png
+
+The added groups are now shown. You an use the pen to edit the groups's settings, if it's an Omnia group, or check the group's settings if it's an Entra ID group. Use the dust bin to remove the group from the group.
+
+.. image:: add-groups-3.png
+
+The filter can be used to find one or more groups in a long list.
 
 Editing Omnia groups
 ----------------------
