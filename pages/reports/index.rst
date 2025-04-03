@@ -31,6 +31,10 @@ This list contains all pages in the Publishing App. You can filter the list by u
 
 .. image:: reports-usage.png
 
+**Important note!** The usage report can't show more than five million rows. When that limit is reached, a message is shown and the recommendation is to use Matomo instead, if that number of rows, or more, is needed. 
+
+For more information about Matomo analytics, see: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
+
 Checked out
 ************
 In this list you can see all pages that are currently checked out, meaning someone is working on them. New pages are shown here as well, even if they are not published yet, as long as a draft has been saved.
