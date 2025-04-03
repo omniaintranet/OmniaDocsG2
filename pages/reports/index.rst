@@ -31,7 +31,7 @@ This list contains all pages in the Publishing App. You can filter the list by u
 
 .. image:: reports-usage.png
 
-**Important note!** The usage report can't show more than five million rows. When that limit is reached, a message is shown and the recommendation is to use Matomo instead, if that number of rows, or more, is needed. 
+**Important note!** The usage report can't show more than five million entries. When that limit is reached, a message is shown and the recommendation is to use Matomo analytics instead. 
 
 For more information about Matomo analytics, see: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
