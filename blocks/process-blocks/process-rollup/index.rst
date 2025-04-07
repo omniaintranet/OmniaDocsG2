@@ -61,7 +61,7 @@ If the scope is filtered on some kind of time property, custom date filtering ca
 
 Here's an example:
 
-.. image:: process-rollup-block-custom-date.png
+.. image:: process-rollup-block-custom-date-78.png
 
 See this page for more information about custom date filtering: :doc:`Custom date filtering </general-assets/custom-date-filtering/index>` 
 
