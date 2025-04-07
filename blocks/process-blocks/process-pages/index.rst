@@ -5,7 +5,7 @@ You use this block to display the pages relevant to the process, that was added 
 
 You can add a title for the block and add som padding, if needed.
 
-.. image:: process-pages-block-v7.png
+.. image:: process-pages-block-v78.png
 
 Layout and Write
 *********************
