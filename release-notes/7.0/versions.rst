@@ -39,7 +39,7 @@ Fixes
 - Fixed a font size rendering difference in the Analytics Report block (#163087).
 - The Accordion section now opens and closes as expected (#151875, #153005, #158484, #157875, #160462).
 - The search for app instance in Omnia Admin has changed to search on URL and content, sorting on Title and App Template are disabled due to them being multi-lingual (#161102, #163616).
- - When opening the quick search right panel, the search input is automatically focused (#164052).
+- When opening the quick search right panel, the search input is automatically focused (#164052).
 
 
 7.7.24
