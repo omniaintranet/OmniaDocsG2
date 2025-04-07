@@ -5,7 +5,7 @@ Use this block to make it possible for end users to select a variation of the pa
 
 Here's an example of the block placed in a section at the top of the page, in this case part of the page type:
 
-.. image:: page-variation-selector-new2.png
+.. image:: page-variation-selector-78.png
 
 The block will simply show a list of the available page variations when opened.
 
@@ -13,9 +13,9 @@ Settings
 **********
 The only setting that can be done for the block is this:
 
-.. image:: page-variation-setting-new2.png
+.. image:: page-variation-setting-78.png
 
-+ **Hide if no variations exist for the page**: Select if the block should be hidden if not variations exist for the page, or if it should always be shown. 
++ **Hide if no variations exist for the page**: Select if the block should be hidden if no variations exist for the page. 
 
 If the block is part of a page type this setting can't be edited.
 
