@@ -5,32 +5,38 @@
 New features
 ************
 
-- **SPFx:**
- - Block headers can now be configured when using Omnia Blocks with SPFx.
- - The standard SharePoint font can now be enabled on Omnia blocks.
- - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
+**Analytics**
 
-- **WCAG:**
+
+
+ **SPFx**
+
+- Block headers can now be configured when using Omnia Blocks with SPFx.
+- The standard SharePoint font can now be enabled on Omnia blocks.
+- The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
+
+**WCAG**
+
  - Improved screen reader compatibility: 
-  - Accordions now correctly announce if they are opened or closed (#150121). 
-  - Notification count badges now announce their count correctly (#150128).
-  - The People Rollup search input now has the correct title (#150125).
-  - Correct alt text on Tenant logo and Business Profile logo images (#142475).
-  - Tags now have the correct title in the roller view page rollup template (#162783).
+ - Accordions now correctly announce if they are opened or closed (#150121). 
+ - Notification count badges now announce their count correctly (#150128).
+ - The People Rollup search input now has the correct title (#150125).
+ - Correct alt text on Tenant logo and Business Profile logo images (#142475).
+ - Tags now have the correct title in the roller view page rollup template (#162783).
 
-- **Others:**
+- **Others**
 
 
 Fixes
 ************
 
-- **WCAG:**
+**WCAG**
 
-  - Search results now have the correct href in the result (#159759, #150288).
-  - Fixed color theming issues in the table headers on rollups (#161536).
-  - Markup structure improvements to have correct owned elements (#162835).
+ - Search results now have the correct href in the result (#159759, #150288).
+ - Fixed color theming issues in the table headers on rollups (#161536).
+ - Markup structure improvements to have correct owned elements (#162835).
 
-- **Others:**
+**Others**
 
 - Fixed an issue where block positions would change when copying a page (#161562).
 - Ensured rollup filter works with a leading white-space (#162228).
