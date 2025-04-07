@@ -11,6 +11,7 @@ Blocks for processes
    process-documents/index
    process-drawing/index
    process-layout/index
+   process-library/index
    process-links/index
    process-navigation/index
    process-pages/index
