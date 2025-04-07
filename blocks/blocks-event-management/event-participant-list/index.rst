@@ -1,4 +1,4 @@
-Events participant list
+Event participant list
 ==========================
 
 Use this block to list participants that has registered for an event.
