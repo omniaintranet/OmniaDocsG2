@@ -7,16 +7,16 @@ Settings
 ***********
 The block has the following settings:
 
-.. image:: process-drawing-block-v7.png
+.. image:: process-drawing-block-v78.png
 
-+ **Title**: You can add a title in any or all the available languages, and add some padding, if nedded.
++ **Title**: You can add a title, if nedded.
 + **Padding**: Add some padding between the block frame and the content, if needed.
 + **Enable process status colors**: Applicable for a Teams environment. If selected, the background colors of process steps will change depending on status.
 + **Stack process**: Normally when you select a sub process, the drawing for the main process is closed. Select this option if you want the main process's drawing, and all the drawings for the selected steps, to be shown at the same time. 
 
 When you select "Stack process" additional options are available:
 
-.. image:: process-drawing-block-stack.png
+.. image:: process-drawing-block-stack-78.png
 
 Use them to set the postion for the close button and to set colors.
 
