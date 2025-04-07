@@ -5,9 +5,9 @@ Use this block to display properties for the process. Process owner is a good ex
 
 You can set the following:
 
-.. image:: process-properties-block-v7.png
+.. image:: process-properties-block-v78.png
 
-+ **Title**: You can add a titel for the block in any or all available languages.
++ **Title**: You can add a titel for the block.
 + **Select property set**: You can select a property set to choose properties from here. Then the list of properties below will show only the properties that belongs to the set. If no property set is selected, the list below will display all available properties.
 + **Select properties**: Select a property from this list. You can add several properties, but just one at a time. Click the plus to add additional properties.
 + **Padding**: You can set some padding if needed.
