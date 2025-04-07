@@ -14,7 +14,7 @@ You can set the following:
 
 When you have added a property, you can choose to show the propertie's label:
 
-.. image:: process-properties-block-label.png
+.. image:: process-properties-block-label-78.png
 
 Layout and Advanced
 ********************
