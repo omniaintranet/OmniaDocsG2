@@ -53,7 +53,7 @@ If just some of the processes should be displayed, add one or more queries this 
 
 Here's an example:
 
-.. image:: process-rollup-block-settings-query-example.png
+.. image:: process-rollup-block-settings-query-example-78.png
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^
