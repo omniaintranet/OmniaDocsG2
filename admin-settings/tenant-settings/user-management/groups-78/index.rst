@@ -1,8 +1,6 @@
 Groups (User management) in Omnia 7.8
 ======================================
 
-**This page is being edited.**
-
 This page describes the functionality in Omnia 7.8. For Omnia 7.7 and earlier, see: :doc:`User management groups </admin-settings/tenant-settings/user-management-gropups/index>`
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
@@ -39,11 +37,9 @@ Do the following:
 
 1. Click the USERS button and add one or more users from the list.
 
-.. image:: add-users-1-78-new.png
-
 The added users are now shown. If you selected a user by mistake, use the dust bin to remove the user from the group.
 
-.. image:: add-users-2-78-new.png
+.. image:: add-users-1-78-new.png
 
 The filter can be used to find one or more users in a long list.
 
