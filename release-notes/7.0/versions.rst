@@ -6,33 +6,40 @@ New features
 ************
 
 - **SPFx:**
- - Block headers can now be configred when using Omnia Blocks with SPFx.
+ - Block headers can now be configured when using Omnia Blocks with SPFx.
  - The standard SharePoint font can now be enabled on Omnia blocks.
- - The Action button has been ensured and all available actions now works as expected in SPFx (#123234).
+ - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
 
 - **WCAG:**
- - Improved screen reader compatability: 
+ - Improved screen reader compatibility: 
   - Accordions now correctly announce if they are opened or closed (#150121). 
-  - Notification count bages now announce thier count connrectly (#150128).
+  - Notification count badges now announce their count correctly (#150128).
   - The People Rollup search input now has the correct title (#150125).
-  - Correct alt text on Tenant logo and Buiesness Profile logo images (#142475).
+  - Correct alt text on Tenant logo and Business Profile logo images (#142475).
   - Tags now have the correct title in the roller view page rollup template (#162783).
-  - 
+
+- **Others:**
+
 
 Fixes
 ************
 
 - **WCAG:**
+
   - Search results now have the correct href in the result (#159759, #150288).
   - Fixed color theming issues in the table headers on rollups (#161536).
   - Markup structure improvements to have correct owned elements (#162835).
+
+- **Others:**
 
 - Fixed an issue where block positions would change when copying a page (#161562).
 - Ensured rollup filter works with a leading white-space (#162228).
 - Important announcements now display correctly in Digital Signage (#161561).
 - The page rollup metric for scheduled pages no longer includes scheduled archiving (#160684, #160642).
 - Fixed a font size rendering difference in the Analytics Report block (#163087).
-- The Accordion section now opens and closes as expected (#151875, #153005, #158484, #157875, #160462)
+- The Accordion section now opens and closes as expected (#151875, #153005, #158484, #157875, #160462).
+- The search for app instance in Omnia Admin has changed to search on URL and content, sorting on Title and App Template are disabled due to them being multi-lingual (#161102, #163616).
+ - When opening the quick search right panel, the search input is automatically focused (#164052).
 
 
 7.7.24
