@@ -5,9 +5,9 @@ Use this block to display the whole process on a page. Must be combined with the
 
 Settings
 ************
-The only specific setting you can do is to add a title for the block in any tenant language.
+The only specific setting you can do is to add a title for the block.
 
-.. image:: process-layout-block.png
+.. image:: process-layout-block-78.png
 
 Layout and Write
 ----------------------
