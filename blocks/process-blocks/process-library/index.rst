@@ -7,7 +7,7 @@ This block is simply the process library with all it's functionality, available 
 
 Just be aware that the block will need the full page width.
 
-For more information about how to work with processes, see: :doc:`Working with processes </blocks/working-with-processes-v7/index>`
+For more information about how to work with processes, see: :doc:`Working with processes </working-with-processes-v7/index>`
 
 **Note!** Permissions works differently, see the comment below.
 
