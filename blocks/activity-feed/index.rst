@@ -21,7 +21,7 @@ Settings
 **********
 The following settings are available for the block:
 
-.. image:: activity-feed-settings-v7.png
+.. image:: activity-feed-settings-v78.png
 
 General
 ----------
@@ -37,7 +37,7 @@ Style
 -------
 Here, some style options are available for the block:
 
-.. image:: block-activity-style.png
+.. image:: block-activity-style-78.png
 
 + **Custom card styling**: General block styling, that is the color and the like, are set in Omnia admin. If you choose “Custom card styling” you can edit a number of style settings specifically for this block.
 + **Padding**: Set some padding between the block border and the list, if needed.
