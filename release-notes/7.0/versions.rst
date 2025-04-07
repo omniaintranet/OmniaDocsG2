@@ -1,5 +1,15 @@
 7.7.22
 ========================================
+(Omnia 7.7.24 / Workplace 7.7.14 / WCM 7.7.21 / MS 7.7.16 / Analytics 7.7.16 / Feed 7.7.2)
+
+- When deleting a Controlled Document from the Recycle Bin, it will end up in the SharePoint Recycle Bin (#165401).
+- Improved compatibility with the Matomo add-on custom reports (#164732).
+- Added an action to Controlled Documents to unstuck documents in the state Saving Properties (#165068).
+- Updated the link on the App Selector to portal.office.com (#165548).
+- Ensured modified date logic between different views align better.
+
+7.7.22
+========================================
 (Omnia 7.7.22 / Workplace 7.7.13 / WCM 7.7.21 / MS 7.7.14 / Analytics 7.7.4)
 
 - OnPrem: Planner tasks are hidden from the UI.
