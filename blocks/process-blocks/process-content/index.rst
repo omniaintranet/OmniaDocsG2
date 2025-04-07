@@ -3,9 +3,9 @@ Process content block
 
 Use this block to display the process content - the content added on the Content tab by the process author.
 
-You can add a title in any or all available languages, and add some padding, if needed.
+You can add a title and add some padding, if needed.
 
-.. image:: process-content-block-v7.png
+.. image:: process-content-block-v78.png
 
 Layout and Write
 *********************
