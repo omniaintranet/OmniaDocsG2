@@ -13,15 +13,15 @@ The settings
 *************
 Use these settings for the block:
 
-.. image:: process-rollup-block-settings-v7.png
+.. image:: process-rollup-block-settings-v78.png
 
 Display
 ---------
 The following settings are available for Display:
 
-.. image:: process-rollup-block-settings-display-v7.png
+.. image:: process-rollup-block-settings-display-v78.png
 
-Note that you have select List view för the options to show up, even if that's the only available view.
+Note that you have select List view for the options to show up, even if that's the only available view.
 
 (All options are not shown in the image but described below.)
 
@@ -42,7 +42,7 @@ Query
 ---------
 Select to display published processes or archived processes.
 
-.. image:: process-rollup-block-settings-query-v7.png
+.. image:: process-rollup-block-settings-query-v78.png
 
 If all published or archived processes should be available in the list, that's it, you don't need to actually add a query.
 
