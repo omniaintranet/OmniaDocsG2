@@ -17,14 +17,14 @@ New features
 
 **WCAG**
 
- - Improved screen reader compatibility: 
- - Accordions now correctly announce if they are opened or closed (#150121). 
- - Notification count badges now announce their count correctly (#150128).
- - The People Rollup search input now has the correct title (#150125).
- - Correct alt text on Tenant logo and Business Profile logo images (#142475).
- - Tags now have the correct title in the roller view page rollup template (#162783).
+- Improved screen reader compatibility: 
+- Accordions now correctly announce if they are opened or closed (#150121). 
+- Notification count badges now announce their count correctly (#150128).
+- The People Rollup search input now has the correct title (#150125).
+- Correct alt text on Tenant logo and Business Profile logo images (#142475).
+- Tags now have the correct title in the roller view page rollup template (#162783).
 
-- **Others**
+**Others**
 
 
 Fixes
@@ -32,9 +32,9 @@ Fixes
 
 **WCAG**
 
- - Search results now have the correct href in the result (#159759, #150288).
- - Fixed color theming issues in the table headers on rollups (#161536).
- - Markup structure improvements to have correct owned elements (#162835).
+- Search results now have the correct href in the result (#159759, #150288).
+- Fixed color theming issues in the table headers on rollups (#161536).
+- Markup structure improvements to have correct owned elements (#162835).
 
 **Others**
 
