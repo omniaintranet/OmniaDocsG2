@@ -3,9 +3,9 @@ Process links block
 
 Use this block to display the links the process author added to the Links tab for the process.
 
-You can add a title on any or all the available languages, and add some padding, if nedded.
+You can add a title and add some padding, if nedded.
 
-.. image:: process-links-block-v7.png
+.. image:: process-links-block-v78.png
 
 Layout and Write
 *********************
