@@ -5,7 +5,7 @@ Use this block to display the whole process on a page. Must be combined with the
 
 Settings
 ************
-The only specific setting you can do is to add a title for the block.
+You can adda a title for the block and add some padding, if needed.
 
 .. image:: process-layout-block-78.png
 
