@@ -7,13 +7,30 @@ New features
 
 **Analytics**
 
+- Tracking of actions; Actions on action buttons and built in events can now be tracked via Matomo.
+- Improved style options for the Analytics blocks.
+- Possible to flatten reports data that comes from matomo in the analytics block.
+- The Analytics report block can now be configured to export its results to excel. 
+- 
 
 
- **SPFx**
+**SPFx**
 
 - Block headers can now be configured when using Omnia Blocks with SPFx.
 - The standard SharePoint font can now be enabled on Omnia blocks.
 - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
+- A WebPart gallery has been introcuded, where the most common Omnia blocks can be downloaded as stand alone webparts.
+ - Action button
+ - Document Rollup
+ - FAQ
+ - Form
+ - Form rollup
+ - Media rollup
+ - Organization tree
+ - Page rollup
+ - People rollup
+ - Quick links
+ - Teamwork rollup
 
 **WCAG**
 
