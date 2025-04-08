@@ -5,6 +5,9 @@
 New features
 ************
 
+**AI**
+
+- Pre-publishing policies can now be configured to have an AI review your page before publishing.
 - Semantic search is now available, see main release notes.
 
 **Analytics**
@@ -49,8 +52,8 @@ New features
  - Tags now have the correct title in the roller view page rollup template (#162783).
 
 **Others**
--  A SharePoint library of folder can now be picked as a query in the Document Rollup and Media Rollup.
-- 
+- A SharePoint library of folder can now be picked as a query in the Document Rollup and Media Rollup.
+- A new action button action to open your own profile card has been added.
 
 
 Fixes
