@@ -17,7 +17,7 @@ The following settings are available for the block:
 
 The settings are exactly the same, and works the same, as described on this page: :doc:`Controlled documents library settings </working-with-documents/controlled-documents-library-settings/index>`
 
-Permissions described on that page do not apply when using the processes library as a block, the page's permissions apply.
+Permissions described on that page do not apply when using the the controlled documents library as a block, the page's permissions apply.
 
 See this page for page permissions: :doc:`Edit permissions for a page </pages/edit-permissions/index>`
 
