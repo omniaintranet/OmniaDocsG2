@@ -27,6 +27,7 @@ New features
 - The team news block is now available in the Omnia Block.
 - The Omnia block has been ensured to only include blocks intended for use inside of SharePoint.
 - The Business Profile footer can now be enabled on connected SharePoint sites.
+- All WebParts updated to the latest version of SPFx.
 - Omnia pages can now be configured to appear in the standard SharePoint news feeds and Viva Connections.
 - A Webpart gallery has been introduced, where the most common Omnia blocks can be downloaded as standalone webparts.
  - Action button
