@@ -9,13 +9,13 @@ It's also possible to aggregated messages from several sources and to post a mes
 
 The following settings are available:
 
-.. image:: posts-block-all-75.png
+.. image:: posts-block-all-78.png
 
 General
 **********
 These settings are available under General:
 
-.. image:: posts-block-general-75.png
+.. image:: posts-block-general-78.png
 
 + **Title**: Add a block title if needed.
 + **Current app**: If the scope should be this app only, select this option.
@@ -27,13 +27,13 @@ These settings are available under General:
 
 General note about Scope: Use Scope to set up which sources to get messages from, to show in this block.
 
-Custom Scope
+Custom scope
 ---------------
 For Custom scope you can select Communities, Publishing apps or Teamwork apps. When this is done, select one or more in the next list. Messages from all selected communities or apps will then be shown in the block (but also see "Filter by followed" below).
 
-These two options are also available:
+These two options are also available for Custom scope:
 
-.. image:: posts-block-general-custom-75.png
+.. image:: posts-block-general-custom-78.png
 
 + **Filter by followed**: If only messages from the communities or apps the logged in user follows should be shown, select this option.
 + **Enable organization-wide posts**: In this context "organization-wide" means the whole business profile. Decide if it should be possible to post a message to another communitiy, publishing app or teamwork app in the business profile. You must see too that there is a receiving block somewhere for this option to actually do anything.
@@ -42,19 +42,19 @@ Style
 ********
 This is available under Style:
 
-.. image:: posts-block-style-75.png
+.. image:: posts-block-style-78.png
 
 If you want to use the general block style settings for the business profile, you don't have to do anything, besides setting some padding if nedded.
 
 If you would like to use custom style settings for this block, this is available:
 
-.. image:: posts-block-custom-75.png
+.. image:: posts-block-custom-78.png
 
-By clicking on the icon you can select theme for the block.
+By clicking the icon you can select theme for the block.
 
 Under "Advanced settings" you can find the following:
 
-.. image:: posts-block-advanced-75.png
+.. image:: posts-block-advanced-78.png
 
 Should be self-explanatory. Just try them and see a preview in the block.
 
