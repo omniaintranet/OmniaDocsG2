@@ -7,13 +7,13 @@ Settings
 *************
 The following settings is available:
 
-.. image:: community-rollup-settings-all-v7.png
+.. image:: community-rollup-settings-all-v78.png
 
 General
 ---------
-Here you can add a title for the block in any available tenant language.
+Here you can add a title for the block.
 
-.. image:: community-rollup-settings-general-v75.png
+.. image:: community-rollup-settings-general-v78.png
 
 Query
 -----------
