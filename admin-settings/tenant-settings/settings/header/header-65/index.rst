@@ -63,9 +63,11 @@ When a logo is selected it can look like this:
 
 + **Text**: A text can be displayed beside the logo. If you want that, add it here. 
 + **Logo text**: This text is used as tooltip and alt text for the logo.
-+ **ADD IMAGE**: Shown when no log is added. To add an image as logo, click here and use the media picker. For information about how to use the media picker, see: :doc:`The media picker </general-assets/media-picker/index>`
++ **ADD IMAGE**: Shown when no logo is added. To add an image as logo, click here and use the media picker. For information about how to use the media picker, see: :doc:`The media picker </general-assets/media-picker/index>`
 
 When a logo is added, click the pen to edit the image, or select another image, the x to delete.
+
+**Important note!** SVG files can not be used as a logo. Use JOG or PNG to be on the safe side.
 
 Search
 ********
