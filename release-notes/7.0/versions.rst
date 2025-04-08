@@ -16,7 +16,7 @@ New features
 - Improved style options for the Analytics blocks.
 - Possible to flatten reports data that comes from matomo in the analytics block.
 - The Analytics report block can now be configured to export its results to excel. 
-- 
+- A matomo website can now be shared between business profiles, allowing for all statistics in one place if desired.
 
 
 **SharePoint - SPFx**
@@ -52,8 +52,13 @@ New features
  - Tags now have the correct title in the roller view page rollup template (#162783).
 
 **Others**
+
 - A SharePoint library of folder can now be picked as a query in the Document Rollup and Media Rollup.
+- Individual people can now be picked in the People Rollup.
 - A new action button action to open your own profile card has been added.
+- The Mediaflow integration has been improved and now tracks usage of images.
+- The Welcome block is now available, greet your users based on day or time of day.
+- New search providers for Pages and People that works for users without M365 access.
 
 
 Fixes
