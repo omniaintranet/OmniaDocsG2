@@ -5,6 +5,8 @@
 New features
 ************
 
+- Semantic search is now available, see main release notes.
+
 **Analytics**
 
 - Tracking of actions; Actions on action buttons and built in events can now be tracked via Matomo.
@@ -14,7 +16,7 @@ New features
 - 
 
 
-**SPFx**
+**SharePoint - SPFx**
 
 - Block headers can now be configured when using Omnia Blocks with SPFx.
 - The standard SharePoint font can now be enabled on Omnia blocks.
@@ -22,6 +24,7 @@ New features
 - The team news block is now available in the Omnia Block.
 - The Omnia block has been ensured to only include blocks intented for use inside of SharePoint.
 - The Business Profile footer can now be enabled on connected SharePoint sites.
+- Omnia pages can now be configured to appear in the standard SharePoint news feeds and Viva Connections.
 - A WebPart gallery has been introcuded, where the most common Omnia blocks can be downloaded as stand alone webparts.
  - Action button
  - Document Rollup
