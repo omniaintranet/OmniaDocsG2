@@ -28,8 +28,6 @@ Here you decide what to rollup in the block.
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-In Omnia 7.7 and later, you may be able to use custom date filtering for the Community rollup query. 
-
 If the scope is filtered on some kind of time property, custom date filtering can be set.
 
 Here's an example of where custom filtering can be found in the Community rollup block:
