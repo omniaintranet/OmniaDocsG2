@@ -62,11 +62,11 @@ Layout and Write
 *********************
 The WRITE Tab is not used here. The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
 
-Tip - adding images to a post
-******************************
+Tip - adding images or an emoticon to a post
+**************************************************
 Here's a tip that doesn't need any settings in this block:
 
 If Omnia admin settings allow it, it can be possible to add images and animated gifs to a post, using these icons:
 
-.. image:: posts-images.png
+.. image:: posts-images-png.png
 
