@@ -19,6 +19,7 @@ New features
 - Block headers can now be configured when using Omnia Blocks with SPFx.
 - The standard SharePoint font can now be enabled on Omnia blocks.
 - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
+- The team news block is now available in the Omnia Block.
 - A WebPart gallery has been introcuded, where the most common Omnia blocks can be downloaded as stand alone webparts.
  - Action button
  - Document Rollup
@@ -35,13 +36,15 @@ New features
 **WCAG**
 
 - Improved screen reader compatibility: 
-- Accordions now correctly announce if they are opened or closed (#150121). 
-- Notification count badges now announce their count correctly (#150128).
-- The People Rollup search input now has the correct title (#150125).
-- Correct alt text on Tenant logo and Business Profile logo images (#142475).
-- Tags now have the correct title in the roller view page rollup template (#162783).
+ - Accordions now correctly announce if they are opened or closed (#150121). 
+ - Notification count badges now announce their count correctly (#150128).
+ - The People Rollup search input now has the correct title (#150125).
+ - Correct alt text on Tenant logo and Business Profile logo images (#142475).
+ - Tags now have the correct title in the roller view page rollup template (#162783).
 
 **Others**
+-  A SharePoint library of folder can now be picked as a query in the Document Rollup and Media Rollup.
+- 
 
 
 Fixes
@@ -63,6 +66,8 @@ Fixes
 - The Accordion section now opens and closes as expected (#151875, #153005, #158484, #157875, #160462).
 - The search for app instance in Omnia Admin has changed to search on URL and content, sorting on Title and App Template are disabled due to them being multi-lingual (#161102, #163616).
 - When opening the quick search right panel, the search input is automatically focused (#164052).
+- The team news rollup now opens the profile card when clicking on a user.
+
 
 
 7.7.24
