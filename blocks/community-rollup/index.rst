@@ -34,7 +34,7 @@ If the scope is filtered on some kind of time property, custom date filtering ca
 
 Here's an example of where custom filtering can be found in the Community rollup block:
 
-.. image:: community-rollup-custom-date.png
+.. image:: community-rollup-custom-date-78.png
 
 See this page for more information about custom date filtering: :doc:`Custom date filtering </general-assets/custom-date-filtering/index>` 
 
@@ -42,7 +42,7 @@ Display
 --------
 Here you can select List view or Card view. 
 
-.. image:: community-rollup-settings-display-v7.png
+.. image:: community-rollup-settings-display-v78.png
 
 Available settings depends on what you select. All options are listed below (not all are shown in the image).
 
@@ -64,13 +64,11 @@ Available settings depends on what you select. All options are listed below (not
 
 If you select STYLES for Card view, the following, additional settings becomes available:
 
-.. image:: community-rollup-settings-display-styles-v75.png
+.. image:: community-rollup-settings-display-styles-v78.png
 
-and these:
+(Not all options are shown in the image).
 
-.. image:: community-rollup-settings-display-styles-2-v75.png
-
-Most options should be self-explanatory and besides that, a preview of your choices is shown in the block while you work with it. Comments on three options below:
+Most options should be self-explanatory and besides that, a preview of your settings is shown in the block while you work with it. Comments on three options below:
 
 + **Mix card types**: Select this option if you would like an automatic mix of card types. Card types are remixed every time the page is loaded. If you click this option on and off a few times while you work with the settings, you can see the mix changing. If you select "Mixed" for "Layout", this option is not available.
 + **Static title size**: If the size of the title always should be the same on all cards, select this option.
