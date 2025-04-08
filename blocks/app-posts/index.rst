@@ -9,7 +9,7 @@ It's also possible to aggregated messages from several sources and to post a mes
 
 The following settings are available:
 
-.. image:: posts-block-all-78.png
+.. image:: posts-block-all-78-frame.png
 
 General
 **********
@@ -66,7 +66,7 @@ Tip - adding images or an emoticon to a post
 **************************************************
 Here's a tip that doesn't need any settings in this block:
 
-If Omnia admin settings allow it, it can be possible to add images and animated gifs to a post, using these icons:
+If Omnia admin settings allow it, it can be possible to add images or animated gifs, or an emoticon to a post, using these icons:
 
 .. image:: posts-images-png.png
 
