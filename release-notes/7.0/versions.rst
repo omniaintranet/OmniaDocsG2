@@ -14,9 +14,9 @@ New features
 
 - Tracking of actions; Actions on action buttons and built in events can now be tracked via Matomo.
 - Improved style options for the Analytics blocks.
-- Possible to flatten reports data that comes from matomo in the analytics block.
+- Possible to flatten reports data that comes from Matomo in the analytics block.
 - The Analytics report block can now be configured to export its results to excel. 
-- A matomo website can now be shared between business profiles, allowing for all statistics in one place if desired.
+- A Matomo website can now be shared between business profiles, allowing for all statistics in one place if desired.
 
 
 **SharePoint - SPFx**
@@ -25,10 +25,10 @@ New features
 - The standard SharePoint font can now be enabled on Omnia blocks.
 - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
 - The team news block is now available in the Omnia Block.
-- The Omnia block has been ensured to only include blocks intented for use inside of SharePoint.
+- The Omnia block has been ensured to only include blocks intended for use inside of SharePoint.
 - The Business Profile footer can now be enabled on connected SharePoint sites.
 - Omnia pages can now be configured to appear in the standard SharePoint news feeds and Viva Connections.
-- A WebPart gallery has been introcuded, where the most common Omnia blocks can be downloaded as stand alone webparts.
+- A Webpart gallery has been introduced, where the most common Omnia blocks can be downloaded as standalone webparts.
  - Action button
  - Document Rollup
  - FAQ
@@ -56,10 +56,9 @@ New features
 - A SharePoint library of folder can now be picked as a query in the Document Rollup and Media Rollup.
 - Individual people can now be picked in the People Rollup.
 - A new action button action to open your own profile card has been added.
-- The Mediaflow integration has been improved and now tracks usage of images.
+- The Media flow integration has been improved and now tracks usage of images.
 - The Welcome block is now available, greet your users based on day or time of day.
 - New search providers for Pages and People that works for users without M365 access.
-
 
 Fixes
 ************
@@ -81,7 +80,6 @@ Fixes
 - The search for app instance in Omnia Admin has changed to search on URL and content, sorting on Title and App Template are disabled due to them being multi-lingual (#161102, #163616).
 - When opening the quick search right panel, the search input is automatically focused (#164052).
 - The team news rollup now opens the profile card when clicking on a user.
-
 
 
 7.7.24
