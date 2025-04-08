@@ -20,6 +20,8 @@ New features
 - The standard SharePoint font can now be enabled on Omnia blocks.
 - The Action button has been ensured, and all available actions now works as expected in SPFx (#123234).
 - The team news block is now available in the Omnia Block.
+- The Omnia block has been ensured to only include blocks intented for use inside of SharePoint.
+- The Business Profile footer can now be enabled on connected SharePoint sites.
 - A WebPart gallery has been introcuded, where the most common Omnia blocks can be downloaded as stand alone webparts.
  - Action button
  - Document Rollup
@@ -35,6 +37,7 @@ New features
 
 **WCAG**
 
+- Possible to skip to content when using keyboard navigation.
 - Improved screen reader compatibility: 
  - Accordions now correctly announce if they are opened or closed (#150121). 
  - Notification count badges now announce their count correctly (#150128).
