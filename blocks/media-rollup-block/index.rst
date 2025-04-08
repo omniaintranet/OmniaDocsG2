@@ -1,7 +1,7 @@
 Media rollup
 ========================
 
-This is a new block in Omnia 7.6. The purpose is to rollup different types of media resources for easy access, mainly for end users, but can also be configured to be of use for editors, for example if official images are located somewhere else than in any of the Central media locations.
+The purpose is to rollup different types of media resources for easy access, mainly for end users. It can also be configured to be of use for editors, for example if official images are located somewhere else than in any of the Central media locations.
 
 Settings
 ***********
