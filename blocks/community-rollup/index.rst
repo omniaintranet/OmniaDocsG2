@@ -66,7 +66,7 @@ If you select STYLES for Card view, the following, additional settings becomes a
 
 .. image:: community-rollup-settings-display-styles-v78.png
 
-(Not all options are shown in the image).
+(All options are not shown in the image).
 
 Most options should be self-explanatory and besides that, a preview of your settings is shown in the block while you work with it. Comments on three options below:
 
@@ -84,7 +84,9 @@ Using these settings you can show a metric in the block displaying the number of
 
 This can for example be used to create a rather compact page or section with different metrics in different blocks, that the user can use to click the desired metric to see the full list.
 
-.. image:: community-rollup-metric.png
+.. image:: community-rollup-metric-78.png
+
+(All options are not shown in the image, but explained below.)
 
 + **Show metric**: Select this to decide to show the metric.
 + **Title**: Add a title for the metric if needed.
