@@ -19,7 +19,7 @@ Query
 -----------
 Here you decide what to rollup in the block. 
 
-.. image:: community-rollup-settings-query-v7.png
+.. image:: community-rollup-settings-query-v78.png
 
 + **Scope**: You can choose to rollup all public communities, all communities the logged in user follows, or to display the last communities the user visited. Last visited, in fact lists all communities the logged in user has visited, with the last visited at the top.
 + **Permission**: Used for security trimming. For more information, see: :doc:`Security trimming in app rollups </general-assets/security-trimming-apps/index>`
