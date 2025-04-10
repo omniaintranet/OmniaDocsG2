@@ -67,7 +67,7 @@ When a logo is selected it can look like this:
 
 When a logo is added, click the pen to edit the image, or select another image, the x to delete.
 
-**Important note!** SVG files can not be used as a logo. Use JPG or PNG to be on the safe side.
+**Important note!** SVG files can not be used as a logo. The recommendation is to use PNG.
 
 Search
 ********
