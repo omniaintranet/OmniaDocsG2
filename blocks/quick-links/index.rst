@@ -1,7 +1,7 @@
 Quick links
 ==============
 
-Administrators can add and edit shared links using functionality in Omnia admin. Links can be shown either for the whole tenant or for a specific business profile. Shared links will be shown in My links.
+Administrators can add and edit shared links using options in Omnia admin. Links can be shown either for the whole tenant or for a specific business profile. 
 
 You can use this block to show shared links on any page.
 
@@ -9,13 +9,13 @@ Settings
 *********
 The following settings are available for the block:
 
-.. image:: quick-links-settings-v7.png
+.. image:: quick-links-settings-v78.png
 
 General
 --------
 The following is available here:
 
-.. image:: quick-links-settings-general-v7.png
+.. image:: quick-links-settings-general-v78.png
 
 (All options are not shown in the image.)
 
@@ -36,7 +36,7 @@ Custom colors
 --------------
 You should primarily set colors centrally but you can change colors for some elements here, if needed:
 
-.. image:: quick-links-settings-colors-v7.png
+.. image:: quick-links-settings-colors-v78.png
 
 Layout and Write
 *********************
