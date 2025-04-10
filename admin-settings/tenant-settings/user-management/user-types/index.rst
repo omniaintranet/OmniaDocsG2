@@ -30,7 +30,7 @@ Here you can set the following:
 + **External providers**: If there are more than one provider, make sure to select the correct one.
 + **Onboarding**: Set the expiration time for the one-time link and add the URL to the onboardring page, if needed.
 + **Built-in**: Select the authentication you want to use for this user type and for more options, see below.
-+ **Refresh token expiration**: Set the number of days that can pass until a user is forced to log in again.
++ **Refresh token expiration**: Used by mobile apps only. Set the number of days that can pass until a user is forced to log in again.
 + **INVALIDATE ALL USER TOKENS**: When permissions for Omnia has been changed, users needs to log out and log in for the changes to take effect. You can click this button to force a log out from Omnia for all users. Important information on this below.
 
 When expanding one of the options for "Built-in", additional settings are available, for example:
