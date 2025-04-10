@@ -1,7 +1,7 @@
 Teamwork rollup
 ======================
 
-Use this block to show team sites and other teamworks the user has access to. Here's an example when the block is used to rollup projects (projects are teamworks):
+Use this block to list team sites and other teamworks the user has access to. Here's an example when the block is used to rollup projects (projects are teamworks):
 
 .. image:: sitedirectory-v7.png
 
