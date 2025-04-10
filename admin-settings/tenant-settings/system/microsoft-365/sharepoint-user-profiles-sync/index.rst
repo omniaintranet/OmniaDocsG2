@@ -3,6 +3,11 @@ SharePoint user profiles sync
 
 Use these advanced settings to make sure person properties are synchronized from Entra ID to SharePoint. (This option was in earlier Omnia versions called "Azure AD Sync".)
 
+Prerequisites:
+
++ The default label in the term store must be the same as the string in Entra AD.
++ The tenant feature "App-only read access to SharePoint termstore" must be activated.
+
 **Note!** This option is not applicable in Omnia on-prem.
 
 These settings and options are available here:
