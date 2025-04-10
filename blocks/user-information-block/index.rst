@@ -7,17 +7,18 @@ Settings
 **************
 The following settings are available:
 
-.. image:: user-information-settings.png
+.. image:: user-information-settings-78.png
 
 User details
 *****************
 Here you can set:
 
-.. image:: user-information-settings-details.png
+.. image:: user-information-settings-details-78.png
 
 Different options can be available depending on data source. These are the most commmon. Also see below.
 
 + **Show presence**: Decide to show the user's Teams presence or not. Default: on.
++ **Allow edit profile photo**: If the user should be able to edit his or her profile photo, select this option.
 + **Data source**: Choose where to get the user information from; App, Page, User, User (Microsoft Graph) or User (Sharepoint). For use on a custom user profile card, the three "User" sources are the most applicable. User means Omnia user setup in User managment. For use on a page are probably App or Page the most applicable sources.
 + **Select properties**: When you have selected data source, choose one or more properties to display. Note that different sets of properties are available depending on source chosen and some properties may require additional settings.
 + **Property type converter**: If needed, this option is shown. Use it to select property type to use for the selected property in this block. Several properties can for example be either Text or Multi-value text, but that's just one simple example. Note that you must select property type here, if this option is shown, for the correct settings to be available below.
@@ -38,7 +39,7 @@ Additional settings for image and more
 -------------------------------------------------
 For property type image, additional settings are available:
 
-.. image:: user-information-property-settings-image.png
+.. image:: user-information-property-settings-image-78.png
 
 + **Default scaling**: You can select a default scaling here, but if you don't force it (se below) it can be changed when an image is added. Possible scalings are set up in Omnia admin.
 + **Force default scaling**: Use this setting to see to that all images are scaled the same when they are added - using the default scaling. With this option selected, page editors and authors can not select scaling and the dialog "This image has a bigger file size than recommended" is not shown.
