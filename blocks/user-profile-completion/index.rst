@@ -1,7 +1,9 @@
-Profile completion
-==========================
+Profile completion (classic)
+================================
 
-Use this block to show the logged in user how far he or she has come towards completing the profile. 
+Use this block to show the logged in user how far he or she has come towards completing the profile, if you use the older functionality for user profiles. 
+
+In Omnia 7.7 and later, an alternative functionality for user profiles is added. It can now be set up for user types in User management on tenant level, and user profile card layouts can be created to allow the users to edit their profile card directly. For more information, see: :doc:`User types </admin-settings/tenant-settings/user-management/user-types/index>`
 
 Settings
 ***********************
@@ -34,8 +36,8 @@ The WRITE Tab is not used here. The LAYOUT tab contains general settings, see: :
 
 Settings in Omnia Admin
 **************************
-All settings for the Strengthen Profile content are done in Omnia Admin. There you, for example, can set that a dialog should be shown in certain intervals, prompting the user to complete his or her profile.
+All settings for the Strengthen profile content (classic) are done in Omnia admin. There you, for example, can set that a dialog should be shown in certain intervals, prompting the user to complete his or her profile.
 
-For more information about the settings in Omnia admin, see: :doc:`User profile completion </admin-settings/tenant-settings/settings/user-profile-completion/index>`
+For more information about these settings in Omnia admin, see: :doc:`User profile completion </admin-settings/tenant-settings/settings/user-profile-completion/index>`
 
 
