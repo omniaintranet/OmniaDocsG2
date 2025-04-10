@@ -1,7 +1,7 @@
 People rollup
 ===========================================
 
-Use this block to display lists of people, for many various reasons. Here are a few examples of implementations:
+Use this block to display lists of people, for many various implementations. Here are a few examples:
 
 + Display contact person for a page or for something else.
 + List colleagues working at a particular office.
