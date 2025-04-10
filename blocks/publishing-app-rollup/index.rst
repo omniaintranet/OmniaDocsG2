@@ -11,7 +11,7 @@ The following settings are available for the block:
 
 General
 ---------
-Here you can add a title for the block, in any available tenant language.
+Here you can add a title for the block, if needed.
 
 .. image:: publishing-app-rollup-settings-general-v7.png
 
