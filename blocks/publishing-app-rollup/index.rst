@@ -38,7 +38,7 @@ See this page for more information about custom date filtering: :doc:`Custom dat
 
 Display
 --------
-Here you can select List View or Card View.
+Here you can select List view or Card view.
 
 .. image:: publishing-app-rollup-settings-display-v7.png
 
@@ -64,7 +64,7 @@ If you select STYLES for Card View, the following, additional settings becomes a
 
 Filter
 ------------------
-Here you can add filters so users can filter (= choose what to see in the rollup). 
+Here you can add filters for users, so they can choose what to see in the rollup. 
 
 .. image:: publishing-app-rollup-settings-filter-v7.png
 
