@@ -15,7 +15,7 @@ Use the dust bin to delete a user type, the pen to edit and the third icon to cr
 
 These settings can be used when creating a new user type:
 
-.. image:: user-management-types-settings-78.png
+.. image:: user-management-types-settings-78-2.png
 
 General
 ********
@@ -25,7 +25,7 @@ Authentication
 ****************
 Here you can set the following:
 
-.. image:: user-management-types-auth-78.png
+.. image:: user-management-types-auth-78-2.png
 
 + **External providers**: If there are more than one provider, make sure to select the correct one.
 + **Onboarding**: Set the expiration time for the one-time link and add the URL to the onboardring page, if needed.
@@ -35,11 +35,11 @@ Here you can set the following:
 
 When expanding one of the options for "Built-in", additional settings are available, for example:
 
-.. image:: user-management-types-auth-more-78.png
+.. image:: user-management-types-auth-more-78-2.png
 
 If "Two-factor authentication" is selected, the following must also be set:
 
-.. image:: user-management-types-auth-more-two-78.png
+.. image:: user-management-types-auth-more-two-78-2.png
 
 You must select one of the other authentication methods available, as the second authentication.
 
@@ -53,15 +53,15 @@ Properties
 *************
 On the Properties tab, something like the following is available:
 
-.. image:: user-management-types-prop-76.png
+.. image:: user-management-types-prop-78-2.png
 
 Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselected, they are marked with gray.
 
 User profile completion
 *****************************
-This tab is available in Omnia 7.7 and later. All edits can be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is also available).
+All edits can be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is still available).
 
-.. image:: tab-profile-completion.png
+.. image:: tab-profile-completion-78-2.png
 
 The selected properties are listed here (in a new user type, this list is empty). Use the pen to edit the settings and the dust bin to remove a property from the list. Of course, these properties must also be present in the card layout for the follow up on profile completion to be meaningful. See below for more information on custom profile card layouts.
 
