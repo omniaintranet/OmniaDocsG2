@@ -5,11 +5,11 @@ All users in Omnia will be assigned a user type. User types are also used when c
 
 Authentication settings are set per user type. See below for more information.
 
-In Omnia 7.7 and later, settings for user profile completion is also done per user type. See below for more information.
+Settings for user profile completion is also done per user type. See below for more information.
 
 If any user types for Omnia users has been set up so far, they are listed here, for example:
 
-.. image:: user-management-types-78.png
+.. image:: user-management-types-78-2.png
 
 Use the dust bin to delete a user type, the pen to edit and the third icon to create a customized user profile card for the profile, if needed.
 
