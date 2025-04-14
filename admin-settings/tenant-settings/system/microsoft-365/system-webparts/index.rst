@@ -3,9 +3,9 @@ Webparts
 
 **(This page is being edited.)**
 
-If you're using SharePoint pages in an Omnia implementation, you can use these webparts (called Blocks in Omnia) on any SharePoint page. Click LEARN TO USE IT to go to the description page.
+If you're using SharePoint pages in an Omnia implementation, you can use these webparts (called blocks in Omnia) on any SharePoint page. Click LEARN TO USE IT to go to the block description page.
 
-**Note!** There can be some small differences compaired to the description in the Omnia documentation. A few options that are not applicable to SharePoint have been removed.
+**Note!** There are a few, small differences compaired to the block description in the Omnia documentation. A few options that are not applicable to SharePoint have been removed.
 
 .. image:: system-webparts.png
 
