@@ -32,24 +32,24 @@ Here's how to set up targeting - targeting a shared link as an example.
 
 1. Click "Add targeting filter".
 
-.. image:: add-targeting-filter-new2.png
+.. image:: add-targeting-filter-78.png
 
 2. Open the list and select Property.
 
-.. image:: targeting-property-new2.png
+.. image:: targeting-property-78.png
  
 3. Select one or more children properties, if applicable.
 
-.. image:: select-children-properties-new2.png
+.. image:: select-children-properties-78.png
  
 Or:
 
 3. Select to include all children properties.
 
-.. image:: select-children-all-new2.png
+.. image:: select-children-all-78.png
 
 4. To add more targeting filters, repeat the process.
   
 To delete a targeting filter, just click the x.
 
-.. image:: delete-targeting-filter-new2.png
+.. image:: delete-targeting-filter-78.png
