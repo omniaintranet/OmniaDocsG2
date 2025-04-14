@@ -31,7 +31,7 @@ Adding a webpart to individual sites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 When a webpart is added to individual sites, the site owner can add it this way:
 
-1. Go to "Site Contets" of the site. 
+1. Go to "Site contets" of the site. 
 2. Select "New" > "App".
 
 .. image:: webpart-3.png
