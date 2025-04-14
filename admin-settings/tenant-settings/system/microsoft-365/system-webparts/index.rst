@@ -29,7 +29,7 @@ Here's how to use a webpart from Omnia in SharePoint:
 
 Adding a webpart to individual sites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-When a webpart is added to individual sites, the site owner can add the it this way:
+When a webpart is added to individual sites, the site owner can add it this way:
 
 1. Go to "Site Contets" of the site. 
 2. Select "New" > "App".
