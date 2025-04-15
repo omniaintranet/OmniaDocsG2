@@ -28,6 +28,7 @@ The following actions are available to add as a button:
 + Share
 + Sign-off requests
 + Strenghten profile
++ Strengthen profile (Classic)
 + Subscribe
 + Teamwork navigation
 + Tutorial
@@ -293,11 +294,11 @@ One way to use this button is to place it near the block "User profile progress"
 
 (Only general settings for the button are available, see above).
 
-Strengthen profile legacy
-----------------------------
+Strengthen profile (Classic)
+------------------------------
 This button is used for the older strengthen profile functionality. 
 
-Strengthen profile can be available as a (legacy) block, Profile completion. It can also be added as an action button.
+Strengthen profile can be available as a (Classic) block, Profile completion. It can also be added as an action button.
 
 It works the same way as in the Profile completion block: :doc:`The Profile completion block </blocks/user-profile-completion/index>`
 
