@@ -120,7 +120,7 @@ Filter
 -------
 Use these settings to add filters for the users to use. An example could be if a People rollup block displays all colleagues in different departments, you may want to display a filter for departments so user can display a list of only colleagues in a certain department. 
 
-Filter settings are the sane for most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
+Filter settings are the same for most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Layout and Write
 *********************
