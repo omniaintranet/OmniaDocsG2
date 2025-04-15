@@ -82,6 +82,16 @@ Fixes
 - When opening the quick search right panel, the search input is automatically focused (#164052).
 - The team news rollup now opens the profile card when clicking on a user.
 
+7.7.25
+========================================
+(Omnia 7.7.25 / Workplace 7.7.15 / WCM 7.7.21 / MS 7.7.17 / Analytics 7.7.16 / Feed 7.7.3)
+
+- Improved compatibility with special characters in filenames for Controlled Documents (#165723, #165747).
+- User management emails now follow the business profile language settings.
+- Validation has been added to deletion of business profiles.
+- Multiple languages can now be selected for variation targeting (#165824).
+- When attaching a site, correct validation is now made considering its a group or standalone team site.
+
 
 7.7.24
 ========================================
