@@ -13,7 +13,7 @@ Some info about differences between Omnia 7.7 and 7.8:
 
 Omnia 7.7
 ^^^^^^^^^^^^
-No set up at tenant level is required. Analytics data is always collected separately for each business profile
+No set up at tenant level is required. Analytics data is always collected separately for each business profile.
 
 Omnia 7.8
 ^^^^^^^^^^^^^^
