@@ -16,7 +16,7 @@ Settings
 *************************
 The following settings are available:
 
-.. image:: peoplerollup-settings-75.png
+.. image:: peoplerollup-settings-78.png
 
 General
 ----------------
@@ -24,19 +24,32 @@ Here you can add a title to be displayed for the block:
 
 .. image:: peoplerollup-settings-general-75.png
 
-You can add a title in any languaged available in the tenant. 
-
 Query
 -----------
 Here you can work with the Query for what to display in the block.
 
-**Important Note!** The query type SharePoint groups is limited to list approximately 50 users. If the group contains more users than can be listed, you may get the following error: "The query failed - The maximum allowed value is 4096 Parameter name: QueryTemplate". If you run into this limitation, please use the Profile query instead.
+.. image:: peoplerollup-settings-query-78.png
 
-.. image:: peoplerollup-settings-query-75.png
+You acn either pick specific users to display in the list, or use the query builder.
 
+Pick users
+-------------
+If you choose to pick users, click ADD USER.
+
+.. image:: peoplerollup-settings-query-pick-78.png
+
+The people picker is opened and you use it as described here: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+
+Note that groups can also be available in the people picker. 
+
+The query builder
+--------------------
 Follow these steps:
 
 1. Select Query type; "Sharepoint profiles", "SharePoint groups", "User property on page", "Activity query", "Upcoming birthdays" or "Users". Selecting "Users" you can rollup Omnia users as set up in User Management. Note that the tenant feature "People rollup query type for users" must be active for "Users" to be available here.
+
+**Important Note!** The query type SharePoint groups is limited to list approximately 50 users. If the group contains more users than can be listed, you may get the following error: "The query failed - The maximum allowed value is 4096 Parameter name: QueryTemplate". If you run into this limitation, please use the Profile query instead.
+
 2. If you selected Activity query, choose Activity period (also called Social period in some other blocks). This sets how old the item can be to be displayed in the list. The default is "No limit", but you can also select One week, Two weeks or One month. If you selected Upcoming birthdays query you choose the property to be used for birthdays and birthday period.
 3. Select property for the query.
 
