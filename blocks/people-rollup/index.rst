@@ -30,7 +30,7 @@ Here you can work with the Query for what to display in the block.
 
 .. image:: peoplerollup-settings-query-78.png
 
-You acn either pick specific users to display in the list, or use the query builder.
+You can either pick specific users to display in the list, or use the query builder.
 
 Pick users
 -------------
