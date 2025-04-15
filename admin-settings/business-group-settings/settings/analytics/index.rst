@@ -15,9 +15,7 @@ Some info about differences between Omnia 7.7 and 7.8:
 No set up at tenant level is required. Analytics data is always collected separately for each business profile.
 
 **Omnia 7.8**:
-Matomo events tracking can also be set up. Settings is available for page types, form types, documents in document rollups and action buttons.
-
-A Matomo website can be shared between business profiles, meaning data can be collected from more than one business profile, to a shared Matomo web site.
+Matomo events tracking can also be set up. Settings is available for page types, form types, documents in document rollups and action buttons. A Matomo website can be shared between business profiles, meaning data can be collected from more than one business profile, to a shared Matomo web site.
 
 Settings
 **************
