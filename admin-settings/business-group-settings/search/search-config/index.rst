@@ -14,7 +14,7 @@ To create a new search category, click the plus and use the settings available f
 .. image:: search-config-categories-78.png
 
 + **Title**: Add a title for the search category.
-+ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. Semantic search is available in Omnia 7.8 and later. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. 
++ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. Semantic search is available in Omnia 7.8 and later, see more info below. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. 
 + **Search result source**: Select Source from the list.
 + **Search query**: Add the search query here. Tokens can be used for a dynamic search query, see this page: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 + **Enable query rules**: Query rules can be set up in SharePoint. If these query rules should be used for this category, select this option.
@@ -25,6 +25,20 @@ To create a new search category, click the plus and use the settings available f
 + **Targeting filter**: A search category can be targeted to a specific group of people based on the targeting system in Omnia. This setting will be used both in quick and advanced search. More information is found here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 The same settings are available when editing a search category.
+
+A note on the Omnia search provider
+-------------------------------------
+This search provider works for users that do not have a Microsoft 365 license. The following settings are available:
+
+.. image:: omnia-search-provider.png
+
++ **Search result source**: The source can be pages or people.
++ **Scope**: It can be Tenant, Business profiles, Apps, Page collections or Channels.
++ **Exclude variations**: Available for pages. If no variations should be included in the search, select this option (mening only the main page will be included in the search).
++ **User type**: Available for people. Here you can select one or more user types to be included, from the user types set up in Omnia admin. If no user type is selected, all types are included.
++ **ADD FILTER**: You can add one or more filters for specific search implementations.
+
+See above for descriptions if the rest of the settings.
 
 A note on semantic search
 ----------------------------
