@@ -28,7 +28,7 @@ Here's an example of a prompt:
 
 See the bottom of this page for information about how OpenAI/AI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
 
-Using Imporove selected text as a pre publishing policy
+Using Improve selected text as a pre publishing policy
 *********************************************************
 The prompts set up here can also be used as pre publishing policies, in Omnia 7.8 and later. This can be used by editors to let AI review the page before publishing.
 
