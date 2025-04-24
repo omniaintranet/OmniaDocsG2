@@ -64,11 +64,13 @@ When you activate this option, the following is shown:
 
 .. image:: page-type-settings-override-message-v7.png
 
-And then something like the following is available:
+And then something like the following is available (image from Omnia 7.8):
 
-.. image:: page-type-settings-override-v7.png
+.. image:: page-type-settings-override-v78.png
 
-The settings are used exactly the same way here as the settings for the tenant. See this page for more information: :doc:`SharePoint sync </admin-settings/tenant-settings/webcontent-managament/sharepoint-sync/index>`
++ **Enable promote to Viva**: Available in Omnia 7.8 and later. Select this option if pages of this page type should appear in Viva connections.
+
+The rest of the settings are used exactly the same way as the settings for the tenant. See this page for more information: :doc:`SharePoint sync </admin-settings/tenant-settings/webcontent-managament/sharepoint-sync/index>`
 
 When you have set up the sync here, you must execute a reindex/full sync to SharePoint, as the message stated. You do that in the publishing app settings:
 
