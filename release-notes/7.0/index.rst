@@ -42,6 +42,7 @@ Only selected Page collections and Controlled Document are indexed and only user
 We’ve introduced a more flexible way to manage our SharePoint integrations. With this release, you can now select and deploy individual features as standalone web parts—rather than a full package—allowing you to roll out specific functionality to the sites that need it.
 
 Key Benefits:
+
 - Targeted deployment: Apply features to specific SharePoint sites or teams.
 
 - Reduced complexity: Streamlined updates and maintenance.
