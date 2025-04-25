@@ -1,6 +1,6 @@
-7.8.0 - Draft
+7.8.0
 ========================================
-(Omnia 7.8.x / Workplace 7.8.x / WCM 7.8.x / MS 7.8.x / Analytics 7.8.x / Feed 7.8.x)
+(Omnia 7.8.0 / Workplace 7.8.1 / WCM 7.8.0 / MS 7.8.0 / Analytics 7.8.0 / Feed 7.7.3)
 
 New features
 ************
