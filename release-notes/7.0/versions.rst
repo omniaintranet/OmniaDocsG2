@@ -82,6 +82,25 @@ Fixes
 - When opening the quick search right panel, the search input is automatically focused (#164052).
 - The team news rollup now opens the profile card when clicking on a user.
 
+7.7.27
+========================================
+(Omnia 7.7.27 / Workplace 7.7.15 / WCM 7.7.22 / MS 7.7.19 / Analytics 7.7.17 / Feed 7.7.3)
+
+- Improved deeplinking for documents within MS Teams (#166056).
+
+
+7.7.26
+========================================
+(Omnia 7.7.26 / Workplace 7.7.15 / WCM 7.7.22 / MS 7.7.18 / Analytics 7.7.16 / Feed 7.7.3)
+
+- Fixed an issue that caused it to sometimes require two clicks to open the profile card from the people rollup (#165225).
+- The "New from template" action in document libraries now works as expected (#166022).
+- Anchor links now supports additional characters (#166144).
+- It's now possible to search for exact document ID in controlled document libraries with more than 5000 items (#163830).
+- The page rollup pick pages now supports picking specific variations (#164694, #165048).
+
+
+
 7.7.25
 ========================================
 (Omnia 7.7.25 / Workplace 7.7.15 / WCM 7.7.21 / MS 7.7.17 / Analytics 7.7.16 / Feed 7.7.3)
