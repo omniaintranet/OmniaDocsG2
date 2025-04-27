@@ -1,10 +1,6 @@
 Teamwork settings
 ================================================
 
-The following settings are available here:
-
-.. image:: teamwork-v7.png
-
 Select section for more information:
 
 .. toctree::
