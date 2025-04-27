@@ -19,7 +19,7 @@ Here you activate, update or remove features for the app, for example:
 
 An example: If your organization is using Document management, you must go here to activate the controlled documents library for sites where working with controlled documents should be possible. If any updates to that features is needed, you go here as well.
 
-+ **Footer**: If you would like the business profile footer, for the active business profile, to enabled in connected SharePoint sites as well, select this feature. For more information on the footer settings, see: :doc:`Footer </admin-settings/business-group-settings/workplace/footer/index>`
++ **Footer**: If you would like the business profile footer, for the active business profile, to be enabled in connected SharePoint sites in this app, select this feature. For more information on the footer settings, see: :doc:`Footer </admin-settings/business-group-settings/workplace/footer/index>`
 
 Descriptions and options 
 ---------------------------
