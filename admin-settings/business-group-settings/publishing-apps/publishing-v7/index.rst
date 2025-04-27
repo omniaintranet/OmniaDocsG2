@@ -1,10 +1,6 @@
 Publishing settings
 ================================================
 
-The following settings are available here:
-
-.. image:: publishing-v7.png
-
 Select section for more information:
 
 .. toctree::
