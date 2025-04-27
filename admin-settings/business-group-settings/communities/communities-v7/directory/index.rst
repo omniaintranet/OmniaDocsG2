@@ -13,6 +13,8 @@ Use this icon to close the menu to the left and work in full window mode:
 
 You can click the link to go to a community. You can search for a community and use the headings "Title", "Template" and "Created date" to sort the list.
 
+**Note!** In Omnia 7.8 an URL column is shown as well. An important difference is also that it's no longer possible to sort the list on Title, but on URL instead. Other than that, all functionality is the same in Omnia 7.8, as described here.
+
 The following actions, using the dot menu to the right, are available for a community in the "All" list:
 
 .. image:: community-actions-v7.png
