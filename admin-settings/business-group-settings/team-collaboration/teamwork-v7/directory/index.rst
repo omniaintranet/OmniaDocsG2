@@ -5,8 +5,6 @@ Here Teamworks are listed, the "All" tab as an example (image from Omnia 7.7):
 
 .. image:: teamwork-apps-new-v7.png
 
-**Note!** In Omnia 7.8 an URL column is shown as well. Other than that, all functionality is the same in Omnia 7.8, as described here.
-
 On this tab active and inactive teamworks are listed, but not teamworks with pending approval or Orphaned teamworks (see below for more information).
 
 Use this icon to close the menu to the left and work in full window mode:
@@ -14,6 +12,8 @@ Use this icon to close the menu to the left and work in full window mode:
 .. image:: teamwork-icon-v7.png
 
 You can click the link to go to a teamwork. You can search for a teamwork and use the headings "Title", "Template", "Created Date" and "Last Activity" to sort the list.
+
+**Note!** In Omnia 7.8 an URL column is shown as well. An important difference is also that it's no longer possible to sort the list on Title, but on URL instea. Odther than that, all functionality is the same in Omnia 7.8, as described here.
 
 The following actions, using the dot menu to the right, are available for a teamwork (in the All, Orphaned and Inactive lists):
 
