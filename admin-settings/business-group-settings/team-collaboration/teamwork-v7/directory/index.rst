@@ -1,9 +1,11 @@
 Teamwork directory
 ==================================
 
-Here Teamworks are listed, the "All" tab as an example:
+Here Teamworks are listed, the "All" tab as an example (image from Omnia 7.7):
 
 .. image:: teamwork-apps-new-v7.png
+
+**Note!** In Omnia 7.8 an URL column is shown as well. Other than that, all functionality is the same in Omnia 7.8, as described here.
 
 On this tab active and inactive teamworks are listed, but not teamworks with pending approval or Orphaned teamworks (see below for more information).
 
