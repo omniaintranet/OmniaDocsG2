@@ -10,3 +10,6 @@ Decide whether the position of the footer should be positioned at the bottom of 
 As an example, here's how it looks when you select HTML:
 
 .. image:: footer-html-new.png
+
+In Omnia 7.8 and later, this footer can be enabled in connected SharePoint sites. It's a feature you can active for the sites where you want this. For more information, see: :doc:`Footer </admin-settings/business-group-settings/workplace/footer/index>`
+
