@@ -1,7 +1,7 @@
 Page picker
 ==============
 
-You can use the page picker to select pages to show in a list. Only published and shown pages are available to pick. Variations can be picked as well, if available.
+You can use the page picker to select pages to display in a list. Only published and shown pages are available to pick. Variations can be picked as well, if available.
 
 Use the page picker this way:
 
