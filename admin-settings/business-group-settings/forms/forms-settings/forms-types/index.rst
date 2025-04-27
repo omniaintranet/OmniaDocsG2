@@ -35,6 +35,8 @@ When you enable event tracking for the form type, the following settings are ava
 
 .. image:: form-type-event-trackning.png
 
+To display data for event tracking, use the query type "Event" in the Analytics report block.
+
 Note that analytics data collecting must be on for the business profile for this to work.
 
 For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
