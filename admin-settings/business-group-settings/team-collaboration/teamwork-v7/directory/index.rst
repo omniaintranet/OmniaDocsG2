@@ -193,7 +193,7 @@ Here's an example from a test environment:
 
 .. image:: teamwork-apps-inactive-v7.png
 
-Here administrators can check/edit the settings for the teamworks and delete a teamwork that is not needed. The list can be sorted by "Title", "Created Date" or "Last Activity", to for example see if any activity has taken place at all.
+Here administrators can check/edit the settings for the teamworks and delete a teamwork that is not needed. The list can be sorted by "Title", "Created Date" or "Last Activity", to for example see if any activity has taken place at all. This is true for Omnia 7.7, For comments on sorting in Omnia 7.8, see above.
 
 The same dot menu actions are available here as described above.
 
