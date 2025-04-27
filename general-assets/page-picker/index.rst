@@ -45,7 +45,7 @@ I you picked pages through a block, the selected pages are now listed the same w
 
 Picking a variation
 *********************
-In Omnia 7.8 and later you can pick a certain variation page if needed. If one or more variations are available, this is shown:
+In Omnia 7.8 and later you can pick certain variation pages if needed. If one or more variations are available, this is shown:
 
 .. image:: picking-variation-1.png
 
