@@ -43,3 +43,16 @@ As you can see, the search result contains all page titles starting with "user",
 
 I you picked pages through a block, the selected pages are now listed the same way as shown above.
 
+Picking a variation
+*********************
+In Omnia 7.8 and later you can pick a certain variation page if needed. If one or more variations are available, this is shown:
+
+.. image:: picking-variation-1.png
+
+Select "Specific variation" to activate this possibility.
+
+Then select the variation you would like to pick the page(s) for:
+
+.. image:: picking-variation-2.png
+
+When you have selected variation, pick the page(s) as described above.
