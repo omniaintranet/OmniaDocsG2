@@ -419,6 +419,8 @@ If activated, the following settings are available:
 
 .. image:: action-button-analytics-settings.png
 
+To display data for event tracking, use the query type "Event" in the Analytics report block.
+
 For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
 Some settings are needed for every business profile where analytics data should be collected. Read about that here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
