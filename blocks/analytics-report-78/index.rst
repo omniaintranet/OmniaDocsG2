@@ -72,6 +72,8 @@ Description of all options below:
 + **Exclude root URL (/)**: If the root URL, usually the start page of the intranet, should not part of the analytics display, select this option. 
 + **Enable export to Excel**: Select this option to add a button users can click to export the report to Excel.
 
+A note on the metric "Visitor frequency": This is the ratio between visits and unique visitors.
+
 Filter
 --------
 The following filter settings are available for this block:
