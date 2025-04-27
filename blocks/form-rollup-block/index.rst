@@ -1,7 +1,7 @@
 Form rollup
 ========================
 
-This is a new block in Omnia 7.6, used to rollup forms either for listing forms for various purposes, or for displaying a number of forms to be used.
+This block is used to rollup forms either for listing forms for various purposes, or for displaying a number of forms to be used.
 
 Settings
 *************
