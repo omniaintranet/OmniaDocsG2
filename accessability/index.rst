@@ -16,9 +16,9 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 + Input assistance: Omnia contains AI functionality that can assist users when creating text and images.
 + Compatibility: All features in Omnia are developed with compatibility in mind.
 
-Activating the accessibility theme
-************************************
-A user can choose to activate or deactivate the accessibility theme anytime, using the profile menu:
+Activating the accessibility features
+**************************************
+There are also some specific accessiblity features a user can activate anytime. They are activated in the profile menu:
 
 .. image:: accessability-profile.png
 
