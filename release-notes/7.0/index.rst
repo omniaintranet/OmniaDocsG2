@@ -87,6 +87,27 @@ Screen Reader Support
 
 .. image:: WCAG2-MainHeader.png
 
+(7.8) Additional functionality for Omnia users
+------------------------------------------------------
+
+With this release, we’ve enhanced the People Search functionality to support combined search across both Omnia users and Microsoft 365 users. This makes it easier than ever to discover and connect with colleagues—whether they’re active in Omnia or only present in M365.
+
+What’s New:
+********************************************
+- Unified search results showing users from both Omnia and Microsoft 365.
+
+- Clear indicators to distinguish between user types.
+
+- Enhanced filters and profile access for improved usability and context.
+
+.. image::  OmniaUsersPeopleRollup.png
+
+
+(7.8) Promote stories to Viva
+------------------------------------------------------
+
+We’re excited to introduce a new capability that allows selected information published in Omnia to be promoted directly into Microsoft Viva Connections. This integration bridges the gap between your intranet and the Viva experience, ensuring high-value content, like corporate news articles, reaches employees where they work every day—in Microsoft Teams. This feature supports better content discoverability, drives engagement, and brings the Omnia and Microsoft 365 ecosystems closer together. 
+
 
 (7.7) Improved User Management
 ----------------------------------------
