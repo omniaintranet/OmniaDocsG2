@@ -851,7 +851,7 @@ Release notes
 ******
 
 - Possibility to have app only access to the term store.
-- Possibility to view logs on the new Mellisearch based search index.
+- Possibility to view logs on the new Meilisearch based search index.
 - Page rollup accelerator, a new technology has been released to improve the performance of page rollups, this can be enabled in Omnia admin.
 - Configurable refresh token times per user type for enhanced security.
 - The SharePoint add-in for the SharePoint user profile sync is deprecated, update and consent the "SharePoint user profiles sync" feature to use only Microsoft Graph.
