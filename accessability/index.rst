@@ -70,6 +70,14 @@ The keyboard can be used to navigate in any Ommnia implementation, for example t
 + Use the Up and Down arrows to scroll contents on a page.
 + Use Esc to close dialogs.
 
+When using the keyboard, there's also a quicker way to go to the content of a page - Skip to content. When this is available, usually when using SHIFT-TAB, it's shown this way:
+
+.. image:: skip-to-content.png
+
+Skip to content is directed to the main heading text block. Which text block that is can be set in the page type.
+
+.. image:: skip-to-content-page-type.png
+
 The people picker for accessibility
 *************************************
 To make it possible to use the people picker with the keyboard, a special version is used when accessibility features are on.
