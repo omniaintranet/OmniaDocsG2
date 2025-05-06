@@ -1,20 +1,16 @@
 Page type settings
 ======================
 
-The following can be available on the Settings tab:
+The following can be available on the Settings tab (image from Omnia 7.9):
 
-.. image:: page-type-settings-left-v7.png
+.. image:: page-type-settings-left-v79.png
 
 + **Title**: The name of the page type can be edited here.
 + **Enable automatic archiving**: Set automatic archiving on or off for the page type. See below for more information.
 + **Override SharePoint sync settings**: Available for local page types (not for tenant ones). See below for a description.
 + **Properties**: Select the properties that should be available for pages created from this page type. In many cases it results in fields the page editor has to or can fill in for a page. You can select any of the properties defined in the tenant. See this page for more information about setting up properties: :doc:`Tenant settings - Properties </admin-settings/tenant-settings/properties/index>` 
-
-In Omnia 7.8 and later, a setting for Matomo analytics can also be avaiable:
-
-.. image:: page-types-event.png
-
-See below for more information.
++ **Analytics**: Available in Omnia 7.8 and later. Here you can enable event tracking and add some settings. See below for more information.
++ **Page review rule**: Available in Omnia 7.9 and later. Using this option you can create settings for page review rules, if needed. See below for more information.
 
 Enable automatic archiving
 ***************************
@@ -127,4 +123,39 @@ When activated, the following settings can be made:
 To display data for event tracking, use the query type "Event" in the Analytics report block.
 
 For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
+
+Page review rule
+***********************
+Available in Omnia 7.9 and later (this description is preliminary and ongoing).
+
+Here you can create a rule for page reviews, for this page type:
+
+.. image:: page-review-rule.png
+
++ **Title**: Add a title for the rule.
++ **Date property**: Select a date property from the list.
++ **Show message bar**: Select this option if you would like to show a message bar for a page that har not been reviewed. See below for more information.
++ **Send Email**: Select this option if you would like to send an Email message for page that has not been reviewed. See below for more information.
++ **Set state Suspended**: If a page that is suspended should be flag for, select this option. Then suspended pages can be filteret, for exampl in a page rollup. There are also some addtional settings, see below.
+
+Show message bar
+-----------------
+The following settings are available for the message bar (details will be added soon):
+
+.. image:: show-message-bar.png
+
+Send Email
+-----------------
+The following settings are available for the Email (details will be added soon):
+
+.. image:: send-email.png
+
+Set state suspended
+---------------------
+When you select thais option, suspended pages with this page type are flagged. The following options also become available:
+
+..image:: suspended-settings.png
+
++ **Change page type**: When a page becomes suspended, the page type can be changed for the page. This will allow the end user to identify pages that has not been reviewed. The page type changed to can either hide the original content completely or simply put a big disclaimer on the page, depending on settings for that page type. 
++ **Remove from search**: A suspended page can be removed from search. It will not be possible to find the page neither with SharePoint search nor with Omnia search. The page will still show up in rollups, though.
 
