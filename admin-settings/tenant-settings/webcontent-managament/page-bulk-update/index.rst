@@ -3,16 +3,16 @@ Page bulk update
 
 **This page is just started.**
 
-This is a new option in Omnia 7.9. This description is preliminary and ongoing.
+This is a new option in Omnia 7.9. This description is preliminary and ongoing (most of the text copied from Document bulk update as a starter).
 
-Use this option to bulk update any of the defined page properties. Note that not all properties can be updated this way. One example is Approver. 
+Use this option to bulk update any of the defined page properties, or page types. Note that not all properties can be updated this way. 
 
 Also note that the user executing the bulk update must have access to the pages that should be updated. Pages that the user does not have access to are simply not shown in the list.
 
 .. image:: pages-bulk-update-1-v79.png
 
-1. Select "Search Property".
-2. In "Property Value", add the value to be replaced.
+1. Select "Search property".
+2. In "Property value", add the value to be replaced.
 3. Click FIND.
 
 A list of pages that has the selected property defined is displayed.
