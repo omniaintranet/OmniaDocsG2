@@ -17,7 +17,7 @@ The following options are available in Omnia admin:
 
 Settings
 ----------
-It's here you choose wether to use the block gallery view or the calssic view:
+It's here you choose wether to use the block gallery view or the classic view:
 
 .. image:: block-gallery-settings.png
 
@@ -48,6 +48,6 @@ To delete a a block template, just click DELETE, as seen at the top of the above
 
 Block dialog
 ---------------
-You can also setup a number of block dialogues to be used in different contexts. More about this will be added soon.
+Some different block dialogues are available. There you can select which blocks should be available in that context, and set the order in which the block are shown. More information about this will be added soon.
 
 .. image:: block-gallery-templates-4.png
