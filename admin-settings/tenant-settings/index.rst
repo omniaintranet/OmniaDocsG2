@@ -5,6 +5,7 @@ Tenant Settings
    :titlesonly:
 
    announcements/index
+   block-gallery/index
    business-profiles/index
    dashboard/index
    features-tenant-7/index
