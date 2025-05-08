@@ -21,7 +21,7 @@ It's here you choose wether to use the block gallery view or the classic view:
 
 .. image:: block-gallery-settings.png
 
-Not much to it, if you would like to use the block gallery view in the tenant, activate "Modern 'Add content' dialog", if you would like to use the classic view, don't.
+Not much to it, if you would like to use the block gallery view in the tenant, activate "Modern 'Add content' dialog", if you would like to use the classic view, don't. If you make changes here, don't forget to save. The SAVE option is found at the bottom of the dialog.
 
 Block templates
 -----------------
