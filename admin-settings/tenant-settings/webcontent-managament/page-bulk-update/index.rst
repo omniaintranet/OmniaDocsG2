@@ -27,14 +27,12 @@ When the update is finished, the update is noted in the page history of each pag
 
 Bulk update removed properties
 *********************************
-It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a page owner has left the organization and already has been removed from the AD. This is how it's done:
+It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a colleague has left the organization and already has been removed from the AD. This is how it's done:
 
-1. Select the property to be replaced (for example Page owner).
-2. Enter the property to be replaced in the second Property value field (for example a former colleague). Note that you can use FIND for a listing of for example the pages a former colleague are page owner of.
-3. Enter a new value (for example a colleauge) in the "New value" field.
-4. Click REPLACE.
-
-Heres's an example:
-
-.. image:: page-bulk-update-owner-v79.png
+1. Select the property to be replaced (for example Process owner).
+2. Click "Search deleted users". Now only deleted users will be shown in the "Search value" list.
+3. Enter the property to be replaced in the second Property value field (for example a former colleague).
+4. Click FIND to list the pages.
+5. Enter a new value (for example a colleauge) in the "New value" field.
+6. Click REPLACE.
 
