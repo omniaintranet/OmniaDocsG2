@@ -1,8 +1,17 @@
+7.8.2
+========================================
+(Omnia 7.8.2 / Workplace 7.8.3 / WCM 7.8.2 / MS 7.8.2 / Analytics 7.8.2 / Feed 7.7.4)
+
+- Stability fixes to the scroll paging of the Document Rollup (#164141).
+- Upgrade Matomo to version 5.3.1.
+- Updates to the filtering engine to ensure settings are logical when using "show zero result" values (#164679).
+- Team home URL on business profiles is now available.
+
 7.8.1
 ========================================
 (Omnia 7.8.1 / Workplace 7.8.2 / WCM 7.8.1 / MS 7.8.1 / Analytics 7.8.0 / Feed 7.7.4)
 
-- Distribution lists can now be used for group based targeting (#166533).
+- Distribution lists can now be used for group-based targeting (#166533).
 - Style fixes to the automation translation information banner (#166352).
 - Fixed an issue that would sometime cause pages to incorrectly be registered as missing in statistics (#163596).
 - Stability improvements to Document bulk update (#165755).
