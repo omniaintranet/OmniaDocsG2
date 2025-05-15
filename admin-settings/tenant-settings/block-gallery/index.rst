@@ -1,7 +1,7 @@
 Block gallery
 ===================================
 
-**This is a new option in Omnia 7.9. This description is preliminary and ongoing.**
+**This is a new option in Omnia 7.9. This description is ongoing.**
 
 In Omnia 7.9 and later, an alternative way of listing the sections and blocks is available - the block gallery. Here's an example:
 
@@ -25,7 +25,7 @@ Not much to it, if you would like to use the block gallery view in the tenant, a
 
 Block templates
 -----------------
-If you opt to use the block gallery view, you can also create block templates, which is blocks with a number of pre defined settings, to make it easier for editors and can also be used to make sure certain blocks are setup the same way all over the tenant. The templates never replaces blocks, it's an addition.
+If you opt to use the block gallery view, you can also create block templates, which is blocks with a number of pre defined settings, to make it easier for editors and can also be used to make sure certain blocks are set up the same way all over the tenant. The templates never replaces blocks, it's an addition.
 
 Here's an example of a list with a number of templates created:
 
