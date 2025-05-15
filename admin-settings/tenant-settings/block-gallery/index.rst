@@ -61,6 +61,23 @@ Block dialog
 ---------------
 Some different block dialogues are available. There you can select which blocks should be available in that context, and set the order in which the blocks are shown. 
 
-The SPFx dialog is used for the Webpart functionality, Authentication and Form should be obvious and Default is used everwhere else.
+The SPFx dialog is used for the Webpart functionality, Authentication and Form should be obvious and Default is used everywhere else.
 
 .. image:: block-gallery-templates-4.png
+
+When editing a block dialog, it looks something like this (Default as en example):
+
+.. image:: block-gallery-templates-default.png
+
+That said, it differs what you can add to the block dialogs.
+
++ Default; you can add and remove any block or block template to your liking.
++ SPFx; you can add or remove the blocks available as a webpart.
++ Authentication; only a small number of mods are available for this list but you can also add block templates.
++ Form; Any block can be added to the list, but you can't use block templates.
+
+You can add and work with headers in all lists. You can also manage the lists the same way. When you have selected MANAGE LIST, something like the following is shown:
+
+.. image:: block-dialog-manage.png
+
+Use the icon to far left to move blocks, block templates and headings to the decired order.
