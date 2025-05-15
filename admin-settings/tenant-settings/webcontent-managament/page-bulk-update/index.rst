@@ -1,11 +1,13 @@
 Page bulk update
 ===================================
 
-**This is a new option in Omnia 7.9. This description is preliminary and ongoing.**
+**This is a new option in Omnia 7.9. This description is ongoing.**
 
-Use this option to bulk update any of the defined page properties, or page types. Note that not all properties can be updated this way. Also note that the properties can be updated for all pages, including variations.
+Use this option to bulk update any of the defined page properties, or page types. Note that the properties can be updated for all pages, including variations.
 
 Also note that the user executing the bulk update must have access to the pages that should be updated. Pages that the user does not have access to are simply not shown in the list.
+
+New versions of the pages being bulk updated are automatically created.
 
 .. image:: pages-bulk-update-1-v79.png
 
@@ -19,20 +21,29 @@ A list of pages that has the selected property defined is displayed.
 5. Select all pages that should replace the value.
 6. Click REPLACE.
 
+or
+
+5-6. Just click REPLACE ALL to replace all present in the list.
+
 .. image:: pages-bulk-update-2-v79.png
 
 Be aware that, if there are many pages selected, the update may take some time.
 
 When the update is finished, the update is noted in the page history of each page.
 
-Bulk update removed properties
-*********************************
-It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a colleague has left the organization and already has been removed from the AD. This is how it's done:
+Bulk update removed (people) properties
+*******************************************
+It's possible to replace former colleagues that are not longer present in the system. A good example when this is useful is when a colleague has left the organization and already has been removed from the AD. This is how it's done:
 
 1. Select the property to be replaced (for example Process owner).
 2. Click "Search deleted users". Now only deleted users will be shown in the "Search value" list.
-3. Enter the property to be replaced in the second Property value field (for example a former colleague).
+3. Enter the property to be replaced in the second Property value field (a former colleague).
 4. Click FIND to list the pages.
-5. Enter a new value (for example a colleauge) in the "New value" field.
-6. Click REPLACE.
+5. Enter a new value (a colleauge) in the "New value" field.
+6. Select all pages that should replace the value.
+7. Click REPLACE.
+
+or
+
+6-7. Just click REPLACE ALL to replace all present in the list.
 
