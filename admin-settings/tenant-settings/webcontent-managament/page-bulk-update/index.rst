@@ -3,7 +3,7 @@ Page bulk update
 
 **This is a new option in Omnia 7.9. This description is ongoing.**
 
-Use this option to bulk update any of the defined page properties, or page types. Note that the properties can be updated for all pages, including variations.
+Use this option to bulk update any of the defined page properties. Note that the properties can be updated for all pages, including variations.
 
 Also note that the user executing the bulk update must have access to the pages that should be updated. Pages that the user does not have access to are simply not shown in the list.
 
