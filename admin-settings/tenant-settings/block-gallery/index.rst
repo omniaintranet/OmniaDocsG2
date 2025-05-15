@@ -38,7 +38,7 @@ When you click CREATE TEMPLATE, the following settings can be used:
 + **Title**: Add a title for the list of templates.
 + **Description**: The description is displayed for editors, so it's important that it's clear what this template is about.
 + **Icon type/Icon**: Here you can choose to add an icon. Not mandatory.
-+ **Definition**: Add the settings for the block template in this field.
++ **Definition**: The definitions used in the block template is shown here.
 
 Here's an example with definitions added:
 
@@ -46,8 +46,21 @@ Here's an example with definitions added:
 
 To delete a a block template, just click DELETE, as seen at the top of the above image.
 
+Creating a block template
+----------------------------
+How to create a definition then? Use these steps:
+
+1. Copy a block when editing a page.
+2. Add the desired settings.
+3. Use the clipboard option for export.
+4. Paste from the Clipboard to a block definition.
+
+(A more detailed instruction will be added soon).
+
 Block dialog
 ---------------
-Some different block dialogues are available. There you can select which blocks should be available in that context, and set the order in which the block are shown. More information about this will be added soon.
+Some different block dialogues are available. There you can select which blocks should be available in that context, and set the order in which the blocks are shown. 
+
+The SPFx dialog is used for the Webpart functionality, Authentication and Form should be obvious and Default is used everwhere else.
 
 .. image:: block-gallery-templates-4.png
