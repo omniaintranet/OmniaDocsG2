@@ -3,24 +3,24 @@ Welcome block
 
 This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions, to the logged in user.
 
-**Tip!** Remember that most blocks can be targeted. So if you would like to display different messages to different user groups, or even users, add several blocks, and use targeting for the blocks. For more information, see the "Targeting" section on this page: :doc:`General block settings </blocks/general-block-settings/index>`
-
 Here's a simple example:
 
 .. image:: welcome-block.png
 
+Settings
+************
 Available settings are these:
 
 .. image:: welcome-block-settings.png
  
 General
-************
+-------------
 You can add a name for the block here, if needed.
 
 .. image:: welcome-block-settings-general.png 
 
 Profile image
-***************
+---------------
 Here you can choose to show an avatar (meaning a profile image), and if you do, the following settings are available:
 
 .. image:: welcome-block-settings-profile.png 
@@ -33,7 +33,7 @@ You can see a preview in the block while testing different settings.
 + **Border color**: If you opt to use a border (meaning setting it to more than 0 pixels), you can set the color of the border here.
 
 Messages
-***************
+-----------
 You can use this section to add one or more messages. The following settings are available here:
 
 .. image:: welcome-block-settings-messages.png 
@@ -63,7 +63,7 @@ You can use the message types this way:
 + Default: The message is shown from now on, til you delete it.
 
 Style
-*********
+---------------
 Just settings for padding available here.
 
 .. image:: welcome-block-settings-style.png 
