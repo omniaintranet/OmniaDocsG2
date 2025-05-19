@@ -36,12 +36,12 @@ You can see a preview in the block while testing different settings.
 
 Messages
 -----------
-You can use this section to add one or more messages and to set the name to be shown. The following settings are available here:
+You can use this section to add one or more messages (including displaying the user's name if you want that). The following settings are available here:
 
 .. image:: welcome-block-settings-messages.png 
 
 + **Message template**: Here you add the message. If you would like to display a name for the user, you add a new message and a token in this field, instead of a message. For available tokens, see below.
-+ **Message type**: The message type can be Time in day, Date time, Day of week, Birthday or Default. Note that different settings are available for the message types. See below for more information. (Also see below for a message).
++ **Message type**: The message type can be Time in day, Date time, Day of week, Birthday or Default. Note that different settings are available for the message types. See below for more information. 
 + **Font size**: Use the slider to set the font size. Default font size is 14. You can't set the size smaller than that.
 + **Text color**: The text color for the message can be set here.
 + **Bold, italic or underscore**: The text can also be bold, italic or underscored.
@@ -56,7 +56,7 @@ You can use the pen and the dustbin for each message, to edit or delete it.
 
 Available tokens for the name
 -------------------------------
-In the Welcome block you can use the User properties as token to show the users name, for example Username or Display name. Here's how you add these tow tokens in the Message template field (note the difference):
+In the Welcome block you can use the user properties as token to display the users name, for example "Username" or "Display name". Here's how you add these two tokens in the "Message template" field (the ! is the difference):
 
 + {[Username]}
 + {[Display name]}!
@@ -87,15 +87,15 @@ These settings are used:
 
 (No block title used and no padding added).
 
-For Profile image, the following settings are used:
+For "Profile image", the following settings are used:
 
 .. image:: profile-image-example.png
 
-As for Messages, it's set up to show three different messagesm depending on time of day, and the user's name:
+As for "Messages", it's set up to show three different messages depending on time of day, and the user's name:
 
 .. image:: Message-example.png
 
-Note that the token "Display name" is used (last "message"). The message type "Time of day" is used for all three messages, and then Morning, Afternoon and Evening as "Display time". Here's eth settings for Morning as an example:
+Note that the token "Display name" is used (last "message"). The message type "Time of day" is used for all three messages, and then Morning, Afternoon and Evening as "Display time". Here's the settings for Morning as an example:
 
 .. image:: Morning-example.png
 
