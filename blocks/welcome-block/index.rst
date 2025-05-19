@@ -7,6 +7,8 @@ Here's a simple example:
 
 .. image:: welcome-block.png
 
+For information aboiut how this is set upp, see below.
+
 Settings
 ************
 Available settings are these:
@@ -34,11 +36,11 @@ You can see a preview in the block while testing different settings.
 
 Messages
 -----------
-You can use this section to add one or more messages. The following settings are available here:
+You can use this section to add one or more messages and to set the name to be shown. The following settings are available here:
 
 .. image:: welcome-block-settings-messages.png 
 
-+ **Message template**: Add the message here.
++ **Message template**: Add the token for the name to be shown. For available tokens, see below.
 + **Message type**: The message type can be Time in day, Date time, Day of week, Birthday or Default. Note that different settings are available for the message types. See below for more information.
 + **Font size**: Use the slider to set the font size. Default font size is 14. You can't set the size smaller than that.
 + **Text color**: The text color for the message can be set here.
