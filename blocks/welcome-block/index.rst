@@ -56,7 +56,7 @@ You can use the pen and the dustbin for each message, to edit or delete it.
 
 Available tokens for the name
 -------------------------------
-In the Welcome block you can use the user properties as token to display the users name, for example "Username" or "Display name". Here's how you add these two tokens in the "Message template" field (the ! is the difference):
+In the Welcome block you can use the user properties as tokens to display the users name, for example "Username" or "Display name". Here's how you add these two tokens in the "Message template" field (the ! is the difference):
 
 + {[Username]}
 + {[Display name]}!
