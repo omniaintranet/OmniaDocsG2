@@ -40,7 +40,7 @@ You can use this section to add one or more messages and to set the name to be s
 
 .. image:: welcome-block-settings-messages.png 
 
-+ **Message template**: Here you add the message. If you would like to display a name for the user, add a token. For available tokens, see below.
++ **Message template**: Here you add the message. If you would like to display a name for the user, you add a new message and a token in this field, instead of a message. For available tokens, see below.
 + **Message type**: The message type can be Time in day, Date time, Day of week, Birthday or Default. Note that different settings are available for the message types. See below for more information. (Also see below for a message).
 + **Font size**: Use the slider to set the font size. Default font size is 14. You can't set the size smaller than that.
 + **Text color**: The text color for the message can be set here.
