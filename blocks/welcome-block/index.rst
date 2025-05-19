@@ -7,7 +7,7 @@ Here's a simple example:
 
 .. image:: welcome-block.png
 
-For information about how this example is set upp, see the bottom of the page.
+For information about how this example is set up, see the bottom of the page.
 
 Settings
 ************
