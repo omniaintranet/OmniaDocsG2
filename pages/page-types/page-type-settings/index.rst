@@ -46,6 +46,8 @@ In this example, the page should be automatically archived one month after the a
 
 Note that if the value for the base property can be edited, which often is the case for Article date, the automatic archiving date is automatically recalculated if the value of the base property is edited.
 
+In Omnia 7.9, there's a small addition. Now you can set both plus and minus for the recalculation.
+
 Automatic termination
 -----------------------
 Furthermore you can set automatic termination from the archive, based on archiving date. You can find that setting in the publishing app settings. See the heading "Archive" at the bottom of this page: :doc:`Publishing app settings </pages/page-settings/index>`
