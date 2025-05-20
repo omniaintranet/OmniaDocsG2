@@ -27,6 +27,8 @@ Block templates
 -----------------
 If you opt to use the block gallery view, you can also create block templates, which is blocks with a number of pre defined settings, to make it easier for editors and can also be used to make sure certain blocks are set up the same way all over the tenant. The templates never replaces blocks, it's an addition.
 
+You must also rememeber to add block templates to the block dialogs where they should be available. 
+
 Here's an example of a list with a number of templates created:
 
 .. image:: block-gallery-templates-1.png
@@ -59,7 +61,7 @@ How to create a definition then? Use these steps:
 
 Block dialog
 ---------------
-Some different block dialogues are available. There you can select which blocks should be available in that context, and set the order in which the blocks are shown. 
+Some different block dialogues are available. There you can select which blocks and block templates should be available in that context, and set the order in which the blocks are shown. 
 
 The SPFx dialog is used for the Webpart functionality, Authentication and Form should be obvious and Default is used everywhere else.
 
@@ -74,7 +76,7 @@ That said, it differs what you can add to the block dialogs.
 + Default; you can add and remove any block or block template to your liking.
 + SPFx; you can add or remove the blocks available as a webpart.
 + Authentication; only a small number of mods are available for this list but you can also add block templates.
-+ Form; Any block can be added to the list, but you can't use block templates.
++ Form; you can add and remove any block or block template to your liking.
 
 You can add and work with headers in all lists. You can also manage the lists the same way. When you have selected MANAGE LIST, something like the following is shown:
 
