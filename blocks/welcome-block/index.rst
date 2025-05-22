@@ -54,12 +54,20 @@ When one message is added, click the plus to add another text:
 
 You can use the pen and the dustbin for each message, to edit or delete it.
 
-Available tokens for the name
--------------------------------
-In the Welcome block you can use the user properties as tokens to display the users name, for example "Username" or "Display name". Here's how you add these two tokens in the "Message template" field (the ! is the difference):
+Available tokens for the name or other info
+----------------------------------------------
+In the Welcome block you can use the user properties set up in Omnia admin (Tenant > User management > User properties), as tokens to display the users name or other information. Two useful example are "Username" or "Display name". Here's how you add these two built in tokens in the "Message template" field (the ! is the difference):
 
 + {[Username]}
 + {[Display name]}!
+
+For other user properties, you use the internal name. Here's an example of what the internal name could be:
+
++ Company name: ALMCompanyName
++ Department: ALMFLWOrganization
++ Job title: ALMUPJobTitle
+
+This is just examples, you must check this in Omnia admin in your implementation.
 
 Message types
 ----------------
