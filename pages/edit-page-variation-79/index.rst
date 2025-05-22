@@ -1,7 +1,7 @@
 Edit page variations in Omnia 7.9
 =====================================
 
-**Work on this page has just started. More will be edited and added soon.**
+**Work on this page has just started (and the development is not quite finsihed). More will be edited and added soon, so for it's more or less a copy of the existing description.**
 
 For each variation a specific variation author can be set up, see below. If not, all authors of the main page can edit the variations as well.
 
@@ -11,19 +11,19 @@ For Omnia 7.8 and earlier, see this page: :doc:`Edit page variations </pages/edi
 
 When a page variation exists for a page, omnia keeps track of changes on the main page. When the main page has been edited, compare icons are displayed to notify the author about where changes has been made, when a varation is being edited.
 
-.. image:: edit-variations-1-new.png
+.. image:: edit-variations-1-79.png
 
-To edit the variation according to the changes, click the compare icon.
+To edit the variation according to the changes, click the compare icon for a block.
 
 Something like the following is shown:
 
-.. image:: edit-variations-2-new.png
+.. image:: edit-variations-2-79.png
 
 To the left you can see the text on the main page, to the right the text for the variation you're editing.
 
-If you would like to see what has been changed, click this icon:
+If you would like to see what has been changed, select "Compare versions":
 
-.. image:: edit-variations-3-new.png
+.. image:: edit-variations-3-79.png
 
 Now you can clearly see what's been altered, for example:
 
