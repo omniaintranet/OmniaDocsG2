@@ -5,7 +5,7 @@ For each variation a specific variation author can be set up, see below. If not,
 
 This page describes how it works in Omnia 7.8 and earlier.
 
-In Omnia 7.9 there are a few changes and additions. The button "Changes" is now called "Compare versions" and you can choose which main page version to compare with. For detailed information about how to edit page variations in Omni 7.9, see this page (ongoing): :doc:`Edit page variations in Omnia 7.9 </pages/edit-page-variations-79/index>`
+In Omnia 7.9 there are a few changes and additions. The button "Changes" is now called "Compare versions" and you can choose which main page version to compare with. For detailed information about how to edit page variations in Omnia 7.9, see this page (ongoing): :doc:`Edit page variations in Omnia 7.9 </pages/edit-page-variation-79/index>`
 
 When a page variation exists for a page, omnia keeps track of changes on the main page. When the main page has been edited, compare icons are displayed to notify the author about where changes has been made, when a varation is being edited.
 
