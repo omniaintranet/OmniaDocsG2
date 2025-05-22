@@ -1,8 +1,6 @@
 Using tokens in Omnia
 =============================================
 
-**This page is being edited.**
-
 Here you will find a list of tokens that can be used in Omnia for various purposes. Note that tokens must not be translated.
 
 Tokens in search query
