@@ -128,7 +128,7 @@ For more information about how Matomo event tracking works and how to use the se
 
 Page review rule
 ***********************
-Available in Omnia 7.9 and later (this description is preliminary and ongoing).
+Available in Omnia 7.9 and later (this description is ongoing).
 
 Here you can create a rule for page reviews, for this page type:
 
@@ -136,21 +136,29 @@ Here you can create a rule for page reviews, for this page type:
 
 + **Title**: Add a title for the rule.
 + **Date property**: Select a date property from the list.
-+ **Show message bar**: Select this option if you would like to show a message bar for a page that har not been reviewed. See below for more information.
-+ **Send Email**: Select this option if you would like to send an Email message for page that has not been reviewed. See below for more information.
-+ **Set state Suspended**: If a page that is suspended should be flag for, select this option. Then suspended pages can be filteret, for exampl in a page rollup. There are also some addtional settings, see below.
++ **Show message bar**: Select this option if you would like to show a message bar for a page that have not been reviewed. See below for more information.
++ **Send Email**: Select this option if you would like to send an Email message for a page that has not been reviewed. See below for more information.
++ **Set state Suspended**: If a page that is suspended should be flag for, select this option. Then suspended pages can be filteret, for example in a page rollup. There are also some addtional settings, see below.
 
 Show message bar
 -----------------
-The following settings are available for the message bar (details will be added soon):
+If you selected to display a message bar, you can add a title (heading) and a text, that you probably shouldn't make too long, and add some settings for icon, background and text color.
 
 .. image:: show-message-bar.png
 
 Send Email
 -----------------
-The following settings are available for the Email (details will be added soon):
+If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course.
 
-.. image:: send-email.png
+When you add a new page review rule, a suggested message can be available, which you can edit to your liking. Here's an example:
+
+.. image:: send-email-example.png
+
+You can also add placeholders to the message to add a link to the page and more. For information about the placeholders you can use, open the "Placeholder" list, for example:
+
+.. image:: send-email-example-placeholders.png
+
+Note that this is information, you can't select a placeholder in the list, you can add one or more manually to the Email message, as shown in the image above.
 
 Set state suspended
 ---------------------
