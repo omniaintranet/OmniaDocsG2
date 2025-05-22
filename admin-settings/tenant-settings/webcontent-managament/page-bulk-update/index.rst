@@ -31,6 +31,8 @@ Be aware that, if there are many pages selected, the update may take some time.
 
 When the update is finished, the update is noted in the page history of each page.
 
+A log post is created for every bulk update. Click LOGS to find out what was updated and if it was successful.
+
 Bulk update removed (people) properties
 *******************************************
 It's possible to replace former colleagues that are not longer present in the system. A good example when this is useful is when a colleague has left the organization and already has been removed from the AD. This is how it's done:
@@ -46,4 +48,14 @@ It's possible to replace former colleagues that are not longer present in the sy
 or
 
 6-7. Just click REPLACE ALL to replace all present in the list.
+
+Bulk update properties for page types
+*******************************************
+If a new property is added to a page type after the solution has been running for a while, you can bulk update all pages of that type.
+
+Example: A property with a a calculated date like "Review date" or "Archive date" is added, that is part of a governance initiative that was not included in the setup project. After adding the new property to the page type you can use bulk update to find all pages of that page type and then recalculate the property to ensure all pages actually gets a review date.
+
+.. image:: bulk-page-types.png
+
+You can select the pages that should be updated and then select RECALCULATE or just click RECALCULATE ALL to update all pages present in the list.
 
