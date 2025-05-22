@@ -1,43 +1,43 @@
 Tokens in Omnia emails
 =========================
 
-Here you will find a list of Omnia emails that contain tokens, and the tokens supported in each email. Also note that tokens must not be translated.
+Here you will find a list of Omnia Emails that contain tokens, and the tokens supported in each Email. Also note that tokens must not be translated.
 
-**Note!** In some files Subject is called "EmailTitle" and Body can be called "Decsription". In this document Subject and Body are always used.
+**Note!** In some files Subject is called "EmailTitle" and Body can be called "Description". In this document Subject and Body are always used.
 
 Announcements emails
 -------------------------
-There are three different emails that can be sent, regarding comments to announcements. In all three emails, just one token is supported in Subject:
+There are three different Emails that can be sent, regarding comments to announcements. In all three Emails, just one token is supported in Subject:
 
 + {{title}}
 
 Sign-off requests
 ---------------------
-In emails for sign-off requests the following token is supported in Subject:
+In Emails for sign-off requests the following token is supported in Subject:
 
 + {{title}}
 
-In the body of the emails, the following tokens are supported:
+In the body of the Emails, the following tokens are supported:
 
 + {{requestreceiver}}
 + {{requestfrom}}
 + {{requestdescription}}
 
-User Profile Completion
+User profile completion
 -------------------------
-In the User Profile Completion feedback emails, the following token is supported in Subject:
+In the User profile completion feedback Emails, the following token is supported in Subject:
 
 + {{userprofileproperty}}
 
-In the body of the emails, this token is supported:
+In the body of the Emails, this token is supported:
 
 + {{feedback-email}}
 
-Document Management - Controlled Documents
+Document management - Controlled documents
 --------------------------------------------
-The following tokens are supported in emails regarding Controlled Documents:
+The following tokens are supported in Emails regarding Controlled documents:
 
-**Review Task emails**: In these emails for Document Management, the following token is supported in Subject:
+**Review task Emails**: In these Emails for Document management, the following token is supported in Subject:
 
 In **ReviewerEmailSubjectTemplate** and **CancelSubjectTemplate**:
 
@@ -73,7 +73,7 @@ In **ReviewerCompleteInfo** and **ReviewerIncompleteInfo**:
 
 + {{*}}
 
-**Review Reminder email**: In this email for Document Management, this token is supported in Subject:
+**Review reminder Email**: In this Email for Document Management, this token is supported in Subject:
 
 + {{DocumentTitle}}
 
@@ -87,7 +87,7 @@ and these tokens are supported in Body:
 + {{PublishDate}}
 + {{ReviewDate}}
 
-**Publishing Notification e-mail**: In this Document Management email, this token is supported in Subject:
+**Publishing Notification e-mail**: In this Document management Email, this token is supported in Subject:
 
 + {{DocumentTitle}}
 
@@ -104,11 +104,11 @@ If Read Receipt is selected **EmailBodyWithReadReceiptTemplate**, these tokens a
 + {{DocumentTitle}}
 + {{ReadReceiptUrl}}
 
-**Send for Approval emails**: In these Document Managment e-mails, this token is supported in Subject (in **EmailSubjectTemplate**, **SubjectApproval**, **SubjectReject** and **CancelSubjectTemplate**):
+**Send for approval Emails**: In these Document managment Emails, this token is supported in Subject (in **EmailSubjectTemplate**, **SubjectApproval**, **SubjectReject** and **CancelSubjectTemplate**):
 
 + {{Name}}
 
-The folllowing tokens are supported in Body for these emails:
+The folllowing tokens are supported in Body for these Emails:
 
 In **EmailBodyTemplate**:
 
@@ -144,48 +144,48 @@ In **CancelBodyTemplate**:
 + {{Name}}
 
 **Feedback e-mail**:
-In this Document Management e-mail, these tokens are supported in Subject:
+In this Document management Email, these tokens are supported in Subject:
 
 + {{DocumentName}}
 + {{DocumentId}}
 
-In Body for that email, the following tokens are supported:
+In Body for that Email, the following tokens are supported:
 
 + {{Sender}}
 + {{Feedback}}
 + {{DocumentLink}}
 
-**Related Document emails**: Here, no tokens are supported in Subject. The following tokens are supported in Body:
+**Related document Emails**: Here, no tokens are supported in Subject. The following tokens are supported in Body:
 
 + {{Recipient}}
 + {{RelatedDocument}}
 + {{Publisher}}
 + {{ControlledDocuments}}
 
-**Retention Policy email**: In this e-mail, no tokens are supported in Subject. The following tokens are supported in Body:
+**Retention policy Email**: In this Email, no tokens are supported in Subject. The following tokens are supported in Body:
 
 + {{RetentionManager}}
 + {{RetentionDocuments}}
 
-**Review Workflow Tasks email**: In these Document Management emails, no tokens are supported in Subject. The following tokens are supported in Body:
+**Review workflow tasks Email**: In these Document management Emails, no tokens are supported in Subject. The following tokens are supported in Body:
 
 + {{Author}}
 + {{DocumentUrl}}
 + {{DocumentTitle}}
 
-Emails for Processes
+Emails for processes
 ------------------------
-**Feedback email**: In the feedback email for Processes, these two tokens are supported in Subject:
+**Feedback Email**: In the feedback Email for processes, these two tokens are supported in Subject:
 
 + {{ProcessTitle}}
 + {{ProcessStepId}}
 
-In the Body for this email, these tokens are supported:
+In the Body for this Email, these tokens are supported:
 
 + {{Sender}}
 + {{Feedback}}
 
-**Send for Approval email**: This token is supported in Subject for this Processes email:
+**Send for approval Email**: This token is supported in Subject for this processes Email:
 
 + {{ProcessTitle}}
 
@@ -201,7 +201,7 @@ And these tokens are supported in Body:
 + {{StartDate}}
 + {{Message}}
 
-**Cancel Approval email**: This token is supported in Subject in this Processes email:
+**Cancel approval Email**: This token is supported in Subject in this processes Email:
 
 + {{ProcessTitle}}
 
@@ -210,7 +210,7 @@ And these two tokens are supported in Body:
 + {{ApproverName}}
 + {{ProcessTitle}}
 
-**Complete Approval emails**: Used for both approval message and rejected message, for Processes, this token is supported in Subject:
+**Complete approval Emails**: Used for both approval message and rejected message, for processes, this token is supported in Subject:
 
 + {{ProcessTitle}}
 
@@ -227,7 +227,7 @@ The following tokens are supported in Body for **ApproveBodyTemplateApproveBodyN
 + {{ProcessTitle}}
 + {{ApproverName}} 
 
-**Review Reminder email**: this token is supported in Subject for this Processes e-mail:
+**Review reminder Email**: this token is supported in Subject for this Processes e-mail:
 
 + {{ProcessTitle}}
 
@@ -243,13 +243,13 @@ The following tokens are supported in Body:
 
 App approval emails
 ----------------------
-In the App approval emails (for Communities, Publishing and Teamwork), the following tokens are supported:
+In the app approval Emails (for Communities, Publishing and Teamwork), the following tokens are supported:
 
-**AppRequestToApprove**: In this email, sent to the approver, no token is supported in Subject. The following token is supported in Body:
+**AppRequestToApprove**: In this Email, sent to the approver, no token is supported in Subject. The following token is supported in Body:
 
 + {{pendingRequestUrl}}
 
-**App Provisioning Complete email**: In this email, sent to the requester, no token is supported in Subject. The following tokens are supported in Body:
+**App provisioning complete Email**: In this email, sent to the requester, no token is supported in Subject. The following tokens are supported in Body:
 
 + {{userDisplayName}}
 + {{appUrl}}
@@ -262,7 +262,7 @@ In the App approval emails (for Communities, Publishing and Teamwork), the follo
 + {{UserDisplayName2}}
 + {{rejectedTime}}
 
-Emails for Events
+Emails for events
 -------------------
 In the **AddParticipant email**, this token is supported in Subject:
 
@@ -273,17 +273,17 @@ and the following tokens are supported in Body:
 + {{eventName}}
 + {{startDate}}
 
-Various emails connected to Action Buttons
+Various Emails connected to action buttons
 ---------------------------------------------
-A number of short emails can be sent after Action Button Actions. The token {{title}} is supported in Subject in some of these emails:
+A number of short Emails can be sent after action button actions. The token {{title}} is supported in Subject in some of these Emails:
 
 AddComment, BestReplyComment, SubmitFeedback, PublishingApproval (six different emails - Approve, Reject, CancelApproval, ScheduleApprove, ScheduleReject, CancelScheduleApproval).
 
-No tokens are supported in Body for these emails.
+No tokens are supported in Body for these Emails.
 
-Emails to Variation Authors
+Emails to variation authors
 ------------------------------
-In Subject for these emails (NewPageSubject and NewVersionSubject), this token is supported:
+In Subject for these Emails (NewPageSubject and NewVersionSubject), this token is supported:
 
 + {{title}}
 
@@ -293,7 +293,7 @@ In the body called **Author**, the following token is supported:
 
 Email for invitation of co-author
 -----------------------------------
-In the email **InvitationOfCoAuthors**, no tokens are supported in Subject. These three tokens are supported in Body:
+In the Email **InvitationOfCoAuthors**, no tokens are supported in Subject. These three tokens are supported in Body:
 
 + {{pageUrl}}
 + {{title}}
