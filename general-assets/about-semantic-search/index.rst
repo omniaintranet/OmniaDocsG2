@@ -3,8 +3,6 @@ About semantic search
 
 Semantic search can be available in Omnia 7.8 and later, depending on settings in Omnia admin. 
 
-**This page is just started. More information will be added soon.**
-
 For users
 **********
 Semantic search is fundamentally different from classic search. To put it very simple, when searching, you can type a "question" similar to the way you would ask a colleague. Another important difference from classic search is that even if you don't type the "correct" words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia.
