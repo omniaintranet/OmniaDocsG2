@@ -96,7 +96,7 @@ A number of additional settings for a publishing app are available in the Settin
 
 An important note about SharePoint URL
 -----------------------------------------
-For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharPoint URL/alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is regocnized by the system.
+For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharePoint URL/alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is recognized by the system.
 
 Edit alias
 *****************
