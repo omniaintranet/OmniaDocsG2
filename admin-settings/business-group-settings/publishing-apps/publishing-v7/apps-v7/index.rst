@@ -3,21 +3,21 @@ Directory for publishing apps
 
 Within a business profile several publishing apps can be active for different settings. To be able to create a publishing app, at least one template for that purpose must be available. If none are, create a template first.
 
+(Images from Omnia 7.9 in this description).
+
 Here you will see a list of publishing apps in the business profile, for example:
 
-.. image:: publishing-apps-apps-v7.png
+.. image:: publishing-apps-apps-v79.png
 
 Use this icon to close the menu to the left and work in full window mode:
 
-.. image:: publishing-apps-icon-v7.png
+.. image:: publishing-apps-icon-v79.png
 
-You can click the link to go to an app. You can search for an app and use the headings "Title", "Template" and "CreateddDate" to sort the list.
-
-**Note!** In Omnia 7.8 an URL column is shown as well. An important difference is also that it's no longer possible to sort the list on Title, but on URL instead. Other than that, all functionality is the same in Omnia 7.8, as described here.
+You can click the link to go to an app. You can search for an app and use the headings "Title", "Template" and "CreateddDate" to sort the list in Omnia 7.7 and earlier, "URL" and "Created date" in Omnia 7.8 and later.
 
 The following actions, using the dot menu to the right, are available for an app:
 
-.. image:: publishing-acstions-v7.png
+.. image:: publishing-acstions-v79.png
 
 For more information, see below.
 
@@ -46,7 +46,7 @@ You can "detach" (delete) a site if needed. Then the following permissions are n
 
 **Note!** What actually happens when you click the dust bin to delete a site, is that the site is detached. That is true for all communcation sites, regardless of if they have been created in or attached to Omnia.
 
-**Note!** When a site is detached, an email is sent to the site owner(s). Note that, for a user to be able to receive Emails, the acccount must be email enabled.
+**Note!** When a site is detached, an Email is sent to the site owner(s). Note that, for a user to be able to receive Emails, the acccount must be Email enabled.
 
 Create a new publishing app
 *****************************
@@ -88,61 +88,51 @@ Edit settings for a publishing app
 ************************************
 Using the action EDIT you can edit the settings for a publishing app. What can be edited can depend on the template used. Here's an example:
 
-.. image:: edit-publishing.png
+.. image:: edit-publishing-79.png
 
 + **Sharepoint URL**: The app instance connected site's URL can be edited here, if needed. See additional information below.
+
+A number of additional settings for a publishing app are available in the Settings menu when working with pages, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
 An important note about SharePoint URL
 -----------------------------------------
 For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharPoint URL/alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is regocnized by the system.
 
-For a description of the rest of the options, see above.
-
 Edit alias
 *****************
 If it should be needed to edit the alias, you can do it as part of the actions:
 
-.. image:: publishing-apps-app-route-v7.png
+.. image:: publishing-apps-app-route-v79.png
 
 Edit permissions
 *****************
 If you need to add or remove administrator(s) for a publishing app, you can do it as part of the actions:
 
-.. image:: publishing-apps-app-premissions-v7-frame.png
+.. image:: publishing-apps-app-premissions-v79.png
 
 Contributor permissions is needed for colleagues that should be able to add comments to publishing pages.
 
 Edit features
 **************
-If it's needed to upgrade a feature for the publishing app, you need to go this part of the actions. You also go here to activate or deactivate a feature.
+If it's needed to upgrade a feature for the publishing app, you need to go to this part of the actions. You also go here to activate or deactivate a feature.
 
-.. image:: publishing-apps-app-features-v7.png
+.. image:: publishing-apps-app-features-v79.png
 
 For more information about a feature, expand it.
-
-Edit app settings
-*******************
-Using the "Edit" option under Actions, you can edit the information part of the app settings:
-
-.. image:: publishing-apps-app-edit-v7.png
-
-For more information about the options, see above.
-
-A number of additional settings for a publishing app are available in the Settings menu when working with pages, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
 Pending approval
 *****************
 If approval for creation of an app is activated for the template, an administrator uses this list to work with approval or rejection. Here's an example from a test site:
 
-.. image:: publishing-pending-approval-v7.png
+.. image:: publishing-pending-approval-v79.png
 
-To approve or reject, click the link and browse the settings. Under Summary you decide:
+To approve or reject, click the link and browse the settings. Under "Summary" you decide:
 
-.. image:: publishing-pending-approval-approve-v7.png
+.. image:: publishing-pending-approval-approve-v79.png
 
 If you click "Approve", the publishing app is created and the colleague requesting the approval is notified. If you click "Reject" you add a comment of what needs to be done before it can be approved:
 
-.. image:: publishing-pending-approval-comment-v7.png
+.. image:: publishing-pending-approval-comment-v79.png
 
 **Note!** Requesting an app must always be done from start each time. If rejected, nothing from the request is saved.
 
