@@ -58,7 +58,7 @@ Selecting "Users" you can rollup all users as set up in User anagement; Entra ID
 .. image:: query-property-1-v75.png
 
 4. Set additional query parameters. Exactly what needs to be done depends on the property chosen.
-5. Type a parameter if neded (needed for Manual or Query parameter).
+5. Type a parameter if needed (needed for Manual or Query parameter).
 6. Click "ADD" to add the query from your settings.
 
 It can result in something like this:
