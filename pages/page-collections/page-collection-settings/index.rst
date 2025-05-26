@@ -260,6 +260,8 @@ Important notes about semantic search
 ---------------------------------------
 To put it very simple, semantic search makes it possible to type search strings similar to the way you would ask a colleague. Even if you don't type the correct words, semantic search usually "understands" what you are looking for. The information must of course be available within Omnia. At the moment, semantic search can be available for pages (settings per page collection) and controlled documents (settings per document type). Other types of documents are not available for semantic search in Omnia, for now.
 
+**Note!** A prerequisite for semantic search is Sharepoint sync. It's needed to be able to index page collections.
+
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. Therefore, use semantic search only in page collections containing common information that anyone in the organization have permission to read. 
 
 An additional way of restricting access to information gathered by semantic search, is to use the permission group available for tenant permissions. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
