@@ -17,7 +17,7 @@ You can click the link to go to a community. You can search for a community and 
 
 The following actions, using the dot menu to the right, are available for a community in the "All" list:
 
-.. image:: community-actions-v79.png
+.. image:: community-actions-v79-frame.png
 
 **Note!** To be able to delete a community, you must be app administrator for the community and site collection admin for the site in SharePoint. Also note that deleting a community from this list deletes 
 the connected Sharepoint site as well, which is different from publishing sites and teamwork sites.
