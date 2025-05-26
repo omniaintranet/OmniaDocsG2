@@ -35,7 +35,7 @@ Here's an example:
 
 .. image:: community-template-v7.png
 
-3. Add the information needed. (All steps in the setup may not be needed for a certain template. Available settings depend on how the template is set up. Here's a common example).
+3. Add the information needed. All steps in the setup may not be needed for a certain template. Available settings depend on how the template is set up. Here's a common example:
 
 .. image:: community-settings-v7.png
 
