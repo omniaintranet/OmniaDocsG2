@@ -3,21 +3,21 @@ Directory of communities
 
 Within a business profile several communities can be active for different settings. To be able to create a community, at least one template for this purpose must be available. If none are, create a template first.
 
+(Images from Omnia 7.9 in this description).
+
 Here you will see a list of communities in the business profile, for example:
 
-.. image:: communities-apps-v7.png
+.. image:: communities-apps-v79.png
 
 Use this icon to close the menu to the left and work in full window mode:
 
-.. image:: communities-icon-v7.png
+.. image:: communities-icon-v79.png
 
-You can click the link to go to a community. You can search for a community and use the headings "Title", "Template" and "Created date" to sort the list.
-
-**Note!** In Omnia 7.8 an URL column is shown as well. An important difference is also that it's no longer possible to sort the list on Title, but on URL instead. Other than that, all functionality is the same in Omnia 7.8, as described here.
+You can click the link to go to a community. You can search for a community and use the headings "Title", "Template" and "Created date" to sort the list, in Omnia 7.7 and earlier, "URL" and "Created date" in Omnia 7.8 and later.
 
 The following actions, using the dot menu to the right, are available for a community in the "All" list:
 
-.. image:: community-actions-v7.png
+.. image:: community-actions-v79.png
 
 **Note!** To be able to delete a community, you must be app administrator for the community and site collection admin for the site in SharePoint. Also note that deleting a community from this list deletes 
 the connected Sharepoint site as well, which is different from publishing sites and teamwork sites.
@@ -35,11 +35,9 @@ Here's an example:
 
 .. image:: community-template-v7.png
 
-3. Add the information needed. (All steps in the setup may not be needed for a certain template. Here's a common example).
+3. Add the information needed. (All steps in the setup may not be needed for a certain template. Available settings depend on how the template is set up. Here's a common example).
 
 .. image:: community-settings-v7.png
-
-Available settings depend on how the template is set up. 
 
 + **Title**: Add a title for the community.
 + **Description**: Add a dscription if needed.
@@ -67,31 +65,29 @@ When you click NEXT, a summary is shown, where you can click the pen the edit an
 
 Edit settings for a community
 **********************************
-Using the action EDIT you can edit the settings for a community. What can be edited can depend on the template. Here's an example:
+Using the action EDIT you can edit the settings for a community. Available options depend on the template. Here's an example:
 
-.. image:: edit-community.png
+.. image:: edit-community-79.png
 
 + **SharePoint URL**: The app instance connected site's URL can be edited here, if needed. See additional information below.
 
-For a description of the rest of the options, see above.
-
 An important note about SharePoint URL
 -----------------------------------------
-For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharPoint URL/Alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is regocnized by the system.
+For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharPoint URL/Alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is recognized by the system.
 
-Edit app route
+Edit alias
 ****************
-If it should be needed to edit the app route, Select "Alias" in the dot menu for the community and the following is shown:
+If it should be needed to edit the alias (app route), Select "Alias" in the dot menu for the community and the following is shown:
 
-.. image:: app-route-community-v7.png
+.. image:: app-route-community-v79.png
 
-Edit the app route and save.
+Edit the alias and save.
 
 Edit permissions
 ******************
 If you need to add or remove owners (administrators) or contributors for a community, select "Permission" in the dot menu for the community.
 
-.. image:: community-premissions-v7.png
+.. image:: community-premissions-v79.png
 
 Don't forget to save when you're done.
 
@@ -101,7 +97,7 @@ Edit features
 ***************
 If it's needed to upgrade a feature for the community, you need to go here. You also go here to activate or deactivate a feature. Available features can differ depending on how Omnia is set up. Here's an example:
 
-.. image:: community-features-v7.png
+.. image:: community-features-v79.png
 
 For more information about a feature, expand it.
 
@@ -109,7 +105,7 @@ Pending approval
 *****************
 When a user creates a community where approval is needed, an administrator uses this list to approve or reject. Here's an example from a test environment:
 
-.. image:: community-pending-approval-v7.png
+.. image:: community-pending-approval-v79.png
 
 Approval or rejection is done this way:
 
@@ -117,13 +113,13 @@ Approval or rejection is done this way:
 2. Check the name, settings and so on.
 3. If everything is OK, click "Approve", or if changes are needed, click "Reject".
 
-.. image:: community-pending-approval-approve-v7.png
+.. image:: community-pending-approval-approve-v79.png
 
 If you approve the creation of the community, a message is sent to the person requesting it, and the community is created.
 
 If you reject, the following is shown:
  
-.. image:: community-pending-approval-reject-v7.png
+.. image:: community-pending-approval-reject-v79.png
 
 4. Type a message stating what needs to be done for approval, and click "Save" to send the message.
 
