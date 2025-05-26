@@ -48,7 +48,7 @@ Follow these steps:
 
 1. Select Query type; "Sharepoint profiles", "SharePoint groups", "User property on page", "Activity query", "Upcoming birthdays" or "Users". 
 
-Selecting "Users" you can rollup all users as set up in User anagement, Entra ID users, Omnia users and even users that don't have a Microsoft 365 license. Note that the tenant feature "People rollup query type for users" must be active for "Users" to be available here. Fore more info, see below.
+Selecting "Users" you can rollup all users as set up in User anagement; Entra ID users, Omnia users and even users that don't have a Microsoft 365 license. Note that the tenant feature "People rollup query type for users" must be active for "Users" to be available here. Fore more info, see below.
 
 **Note!** The query type "SharePoint groups" is limited to list approximately 50 users. If the group contains more users than can be listed, you may get the following error: "The query failed - The maximum allowed value is 4096 Parameter name: QueryTemplate". If you run into this limitation, please use the Profile query instead.
 
