@@ -46,13 +46,13 @@ The query builder
 --------------------
 Follow these steps:
 
-1. Select Query type; "Sharepoint profiles", "SharePoint groups", "User property on page", "Activity query", "Upcoming birthdays" or "Users". Selecting "Users" you can rollup Omnia users as set up in User Management. Note that the tenant feature "People rollup query type for users" must be active for "Users" to be available here.
+1. Select Query type; "Sharepoint profiles", "SharePoint groups", "User property on page", "Activity query", "Upcoming birthdays" or "Users". 
+
+Selecting "Users" you can rollup all users as set up in User anagement, Entra ID users, Omnia users and even users that don't have a Microsoft 365 license. Note that the tenant feature "People rollup query type for users" must be active for "Users" to be available here. Fore more info, see below.
 
 **Note!** The query type "SharePoint groups" is limited to list approximately 50 users. If the group contains more users than can be listed, you may get the following error: "The query failed - The maximum allowed value is 4096 Parameter name: QueryTemplate". If you run into this limitation, please use the Profile query instead.
 
-**Note!** The query type "Users" can be used for users that don't have a Microsoft 365 license.
-
-2. If you selected Activity query, choose Activity period (also called Social period in some other blocks). This sets how old the item can be to be displayed in the list. The default is "No limit", but you can also select One week, Two weeks or One month. If you selected Upcoming birthdays query you choose the property to be used for birthdays and birthday period.
+2. If you selected Activity query, choose Activity period (also calmled Social period in some other blocks). This sets how old the item can be to be displayed in the list. The default is "No limit", but you can also select One week, Two weeks or One month. If you selected Upcoming birthdays query you choose the property to be used for birthdays and birthday period.
 3. Select property for the query.
 
 .. image:: query-property-1-v75.png
@@ -71,8 +71,28 @@ You can also add additional parameters, by using the method explained above or t
 
 .. image:: query-more-new.png
 
+More on query type "Users"
+------------------------------
+The query type "Users" has it's own search engine and works a bit differently from the other query types.
+
+When you have selected "Users", the following settings are available:
+
+.. image:: query-users-1.png
+
+1. Select scope type; "Tenant", "Business profile" or "Group".
+2. If you chose business profile or group, select one or more business profiles or groups.
+3. Select one or more user types.
+
+To just list some from the scope or user type you selected, add one or more filters.
+
+.. image:: query-users-2.png
+
+There are a lot of possibilities for filtering. Here is a simple example, listing all office workers in the Copenhagen office and the Gothenburg office:
+
+.. image:: query-users-3.png
+
 Custom date filtering
-^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 If the scope is filtered on some kind of time property, custom date filtering can be set.
 
 See this page for more information about custom date filtering: :doc:`Custom date filtering </general-assets/custom-date-filtering/index>` 
