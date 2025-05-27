@@ -56,7 +56,7 @@ These blocks can be used **in full**:
 + Page feedback
 + Page likes & comments
 + Page properties
-+ Page rollup (Require activation of "Page rollup accelerator powered by search")
++ Page rollup (require activation of the feature "Page rollup accelerator powered by search")
 + Page variation selector
 + Posts
 + Power app
