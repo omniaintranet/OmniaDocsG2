@@ -1,7 +1,7 @@
-Users (User management) in Omnia 7.8
-======================================
+Users (User management) in Omnia 7.8 and later
+==================================================
 
-This page describes the Users list in tenant user management, in Omnia 7.8. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
+This page describes the Users list in tenant user management, in Omnia 7.8 and later. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
 
 User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
@@ -77,7 +77,7 @@ About limitations for Omnia users
 -----------------------------------
 As mentioned, Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on SharePoint or Microsoft 365 can be used. 
 
-For more information, see this page: (Linka to be added)
+For more information, see this page: :doc:`Limitations for Omnia users </admin-settings/tenant-settings/user-management/non-m365-users-more/index>`
 
 Delete Omnia users
 -------------------------
