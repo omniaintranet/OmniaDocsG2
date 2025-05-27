@@ -1,9 +1,11 @@
 Page collection settings
 ===============================
 
+**(This page is being edited).**
+
 A number of settings can be edited for the page collection, this way:
 
-1. Edit a page in the publishing app and open the Page menu.
+1. Edit a page in the publishing app and open the page menu.
 2. Click the main navigation node for the page collection.
 
 In this example, three page collections has been added in the publishing app, besides Start and News, and "Start" is selected:
@@ -47,8 +49,12 @@ Use the settings this way:
 + **Break permission inheritance by default**: Select this option if inheritance should be broken when a new page is created within the page collection. This could, for example, be useful for communities. When this option is active, the colleague creating the page will be the page owner, meaning that he or she has full control over who can edit. The new option "Invite co-authors" can then be used to easily add authors for the page, see below.
 + **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. 
 + **Channel**: If you enable this, it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
-+ **Open AI**: (Renamed AI generated content in Omnia 7.8). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI has to be made in Omnia Admin.
++ **Open AI**: (Renamed AI generated content in Omnia 7.8 and later). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI has to be made in Omnia Admin.
 + **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. Also see *Important notes about semantic search* below.
+
+For more information, select the section:
+
+(Links to be added)
 
 Set default values for a page type
 --------------------------------------
