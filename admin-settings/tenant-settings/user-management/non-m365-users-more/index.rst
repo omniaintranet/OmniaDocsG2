@@ -1,9 +1,7 @@
 Limitations for Omnia users
 ===================================
 
-**This page is just started.**
-
-As mentioned, Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on Microsoft 365 or SharePoint (as it's a part of M365) can be used. 
+Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on Microsoft 365 or SharePoint (as it's a part of M365) can be used. 
 
 These areas of functionality can not be used for non M365 users:
 
