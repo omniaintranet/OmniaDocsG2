@@ -4,7 +4,7 @@ Create a new page collection
 If needed, a new page collection can be created. Do the following:
 
 1. Edit any page and open the navigation.
-2. Select "Settings" and then click "+ Page Collection".
+2. Select SETTINGS and then click "+ PAGE COLLECTION".
 
 .. image:: settings-page-collection-border-new.png
 
