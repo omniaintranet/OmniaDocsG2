@@ -12,7 +12,7 @@ You do it this way:
 
 .. image:: move-page-collection-1.png
 
-3. Select publishing app to move to.
+3. Select business profile if needed, and then publishing app to move to.
 
 .. image:: move-page-collection-2-new.png
 
