@@ -75,11 +75,9 @@ There should be one row for each user to create (onboard) in the csv file. Also,
 
 About limitations for Omnia users
 -----------------------------------
-As mentioned, Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on SharePoint or Microsoft 365 can be used. That includes, for example; Teams functionality, Teamworks, Document management, Process management and search.  
+As mentioned, Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on SharePoint or Microsoft 365 can be used. 
 
-When creating pages, or rather page templates, that will be used by Omnia users, it's important to consider which blocks to use. No block that depends on SharePoint works for these users, at least not as intended, including rollups.
-
-All other aspects regarding pages works well for Omnia users, but keep in mind that permissions must be handled through Omnia groups or Dynamic groups for these users.
+For more information, see this page: (Linka to be added)
 
 Delete Omnia users
 -------------------------
