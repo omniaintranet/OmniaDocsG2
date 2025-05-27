@@ -5,7 +5,7 @@ Within a publishing app a number of page collections can exist, where some setti
 
 A page collection contains, as the name imply, a number of pages.
 
-If the feature “Default page collections and page types” has been activated, two cpage ollections has been created; Start and News. If needed, additional page collections can be created within the publishing app.
+If the feature “Default page collections and page types” has been activated, two page ollections has been created; Start and News. If needed, additional page collections can be created within the publishing app.
 
 For more information, see the sections below:
 
