@@ -14,5 +14,5 @@ You do it this way:
 
 3. Select publishing app to move to.
 
-.. image:: move-page-collection-2.png
+.. image:: move-page-collection-2-new.png
 
