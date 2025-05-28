@@ -37,14 +37,6 @@ These blocks can be used **in full**:
 + FAQ
 + Form
 + Form rollup
-+ HTML/Script
-+ IFrame
-+ Media
-+ Media rollup
-+ Mega menu
-+ Metrics
-+ Notification panel
-+ Form rollup
 + (Form question is not applicable as it's only used by administrators, not on pages)
 + HTML/Script
 + IFrame
