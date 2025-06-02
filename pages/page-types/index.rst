@@ -1,7 +1,9 @@
 Page types
 ==================
 
-If you are publishing app administrator you can work with page types. A page type contains sections where blocks can be placed for content. Sections can be targeted.
+Page types can be local, meaning available within a page collection only, or for the whole tenant, so they can be used for any page collection. Local page types are created and edited in a page collection. The tenant page types are created and edited in Omnia admin. Local page types can be converted to tenant page types, if needed.
+
+If you are publishing app administrator you can work with local page types. A page type contains sections where blocks can be placed for content. Sections can be targeted.
 
 Some blocks can be added to a page type so they are a part of the layout presented to editors of a page based on the page type.
 
