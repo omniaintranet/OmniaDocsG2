@@ -150,7 +150,7 @@ Settings for approval
 ----------------------
 When approval is activated, the following settings are available:
 
-.. image:: page-collection-approval-settings-v75.png
+.. image:: page-collection-approval-settings-v79.png
 
 + **Apply to authors only**: If you select this, editors never need approval, they can always publish directly. When an author publishes, approval is needed.
 + **Apply to new pages only**: When this option is selected, only creating new pages needs approval, not when updating an existing page.
@@ -158,9 +158,9 @@ When approval is activated, the following settings are available:
 
 When approval is activated, you can select who can approve the creation of a page this way (also used in the multi step approval settings, see below):
 
-+ Anyone - The author can select any colleague as approver when a page is published. See below for more information.
-+ Limited list of people - you define the approvers using the field shown (see below). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
-+ Based on person property - you select property from the list shown (see below).
++ **Anyone**: The author can select any colleague as approver when a page is published. See below for more information.
++ **Limited list of people**: You define the approvers using the field shown (see below). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
++ **Based on person property**: You select property from the list shown (see below).
 + **Term driven**: Authors can select approvers from a defined list only. Which approvers will be available depends on the properties selected for the documents. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
 
 When "Anyone" is selected the following is shown when an editor sends the page for approval:
@@ -171,7 +171,7 @@ The author adds the approver to the field "Approver", types a message and sends 
 
 When selecting "Limited list of people", you add approvers by typing their names in the field displayed:
 
-.. image:: limited-list-new.png
+.. image:: limited-list-79.png
 
 Authors can then only choose between the colleagues in the list when selecting approver.
 
@@ -192,16 +192,6 @@ Then select the colleague or group that should be available for approval for the
 In this exeample Robert Johnson is set as approver for all object types (the parent). If you would like to select someone else to be avaialable as approval for, let's say News article, deselect "Inherit parent settings" and select colleague or group there.
 
 .. image:: term-driven-cogwheel-approver.png
-
-Allow invitation of co-authors
-------------------------------------
-If "Allow invitation of co-authors" is selected, an author can use this menu option to invite one or more co-authors:
-
-.. image:: co-author-meny.png
-
-Note that this is not temporary, the co-authors will be added to the page permissions as authors.
-
-For more information about inviting co-authors, see: :doc:`Invite co-authors </pages/invite-co-authors/index>`
 
 Setting up multi step approval
 ---------------------------------
@@ -235,6 +225,18 @@ When you're finished it can look something like this:
 To edit a step, just expand it and use the settings as described above. To adjust the order of the steps, use drag and drop. To delete a step, click the dust bin.
 
 Don't forget to to publish to save your settings.
+
+Allow invitation of co-authors
+------------------------------------
+If "Allow invitation of co-authors" is selected, an author can use this menu option to invite one or more co-authors:
+
+.. image:: co-author-meny-79.png
+
+(Available options in the menu depend on the settings for the page collecation).
+
+Note that this is not temporary, the co-authors will be added to the page permissions as authors.
+
+For more information about inviting co-authors, see: :doc:`Invite co-authors </pages/invite-co-authors/index>`
 
 Channel settings
 -------------------
