@@ -232,7 +232,7 @@ If "Allow invitation of co-authors" is selected, an author can use this menu opt
 
 .. image:: co-author-meny-79.png
 
-(Available options in the menu depend on the settings for the page collecation).
+(Available options in the menu depend on the settings for the page collection).
 
 Note that this is not temporary, the co-authors will be added to the page permissions as authors.
 
