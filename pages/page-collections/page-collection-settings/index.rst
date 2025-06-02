@@ -250,11 +250,12 @@ Options for AI
 -----------------------
 When activating the AI option, the following settings are available for this page collection:
 
-.. image:: open-ai-page-collection.png
+.. image:: open-ai-page-collection-79.png
 
 + **Summary**: To activate AI functionality for page summary, select the appropriate summary property here.
 + **Text**: Likewise for text fields, select property to activate AI functionality.
-+ **Image**: Dall-E is an AI option that can be activated (a tenant feature needs to be activated) and are then available as an image provider in the image picker. Select the image property used to activate the functionality.
++ **Image**: Dall-E is an AI option that can be activated (a tenant feature) and is then available as an image provider in the image picker. Select the image property used to activate the functionality.
++ **Image ratio**: In Omnia 7.9 and later, you also select image ratio for the Dall-E image, when clicking the cig wheel. Here you can alos choose to use the image as background.
 
 See the bottom of this page for information about how AI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
 
