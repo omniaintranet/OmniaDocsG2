@@ -1,3 +1,21 @@
+7.8.4
+========================================
+(Omnia 7.8.4 / Workplace 7.8.4 / WCM 7.8.4 / MS 7.8.3 / Analytics 7.8.2/ Feed 7.7.4)
+
+- Creating a page from an action button on the workspace homepage, now correctly sets the page to edit mode (#166446).
+- Corrected a time zone issue in the search statistics (#165971).
+
+7.8.3
+========================================
+(Omnia 7.8.3 / Workplace 7.8.3 / WCM 7.8.3 / MS 7.8.3 / Analytics 7.8.2/ Feed 7.7.4)
+
+- Removed the delegated permission "Read applications" since it is no longer needed.
+- Fixed an issue with the page rollup card view where tag alignment was incorrect. 
+- When promoting pages with variations to Viva, only the default page will be promoted to avoid duplicates.
+- Several performance improvements to Semantic search.
+- Ensured localization of columns in controlled documents (#165071).
+
+
 7.8.2
 ========================================
 (Omnia 7.8.2 / Workplace 7.8.3 / WCM 7.8.2 / MS 7.8.2 / Analytics 7.8.2 / Feed 7.7.4)
