@@ -15,7 +15,7 @@ Here's how to create a local page type:
 
 .. image:: page-types-click-create-79.png
 
-3. Now start to build the the base layout by adding sections. Note that there are a number of layout templates you can use as a starting point. You cam find them in a list to the right:
+3. Now start to build the the base layout by adding sections. Note that there are a number of layout templates you can use as a starting point. You can find them in a list to the right:
 
 .. image:: page-types-add-section-79.png
 
