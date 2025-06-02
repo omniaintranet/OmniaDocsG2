@@ -18,22 +18,22 @@ In this example, three page collections has been added in the publishing app, be
 
 .. image:: page-collection-click-edit-new2.png
 
-4. Use the following settings:
+4. Use the following settings (image from an existing page collection):
 
-.. image:: page-collection-settings-612.png
+.. image:: page-collection-settings-79.png
 
 All settings are not shown in the image above, but listed below.
 
 Use the settings this way:
 
-+ **Navigation structure/Flat**: Select page collection type here; using a navigation structure or flat. If you want to change from navigation structure to flat, you need to first manually flatten the page structure (move sub pages so they all become main pages) and then use the option here.
++ **Navigation structure/Flat**: Here you can see what was selected when the page collection was created. If you want to change from navigation structure to flat in an existong page collection, you need to first manually flatten the page structure (move sub pages so they all become main pages) and then use the option here.
 + **Title**: The title for the page collection is shown here. It can be edited if needed. It's updated everywhere it's shown when the changes here are published.
-+ **Layout**: Applicable for communities. Here a Layout can be selected. Layouts for communtites works somewhat like page types, but can contain a full set up, ie for several pages. Layouts are created in Omnia admin.
-+ **Create page dialog**: You can set the title for the dialog displayed when an editor has selected to create a new page. If you leave this field blank, the dialog title will be "Create New Page".
++ **Layout**: Here a layout can be selected. Layouts are created in Omnia admin.
++ **Create page dialog**: You can set the title for the dialog displayed when an editor has selected to create a new page. If you leave this field blank, the dialog title will be "Create new page".
 + **Show URL**: If the URL for the new page should be shown for the editor when creating a page, select this option. The URL can then be edited.
 + **Show properties**: If available page properties should be shown for the editor when creating a page, select this option. The properties can then be edited in that stage. Page properties can always be edited after the page has been created.
-+ **Auto publish**: This is a setting probably most relevant for communities. If this option is selected a new page is always published automatically. It's only applicable when a new page is created, not when it's updated.
-+ **Page types**: Select which of the page types that should be available for an editor to select when creating a page in this page collection. It can be local page types or tenant page types. Tenant page Types are indicated by the text "(Tenant)". For more information about tenant page types, see this page: :doc:`Tenant page types </admin-settings/tenant-settings/webcontent-managament/page-types/index>`. 
++ **Auto publish**: This is a setting probably most relevant for communities, but can ofcourse be used for any types of pages. If this option is selected a new page is always published automatically. It's only applicable when a new page is created, not when it's updated.
++ **Page types**: Select which of the page types that should be available for an editor to select when creating a page in this page collection. It can be local page types or tenant page types. Tenant page types are indicated by the text "(Tenant)". For more information, see this page: :doc:`Tenant page types </admin-settings/tenant-settings/webcontent-managament/page-types/index>`. 
 + **Publishing policies**: Available in Omnia 7.8 and later. Prompts set up under "AI features" in Omnia admin can be available for page authors to use, to let AI review a page before publishing. 
 + **Automatic page creation**: A copy of a page can be published automatically to another page collection or another tenant, when certain rules are met. For more information, see this page: :doc:`Automatic page creation </pages/automatic-page-creation/index>`
 + **Promotion channels**: You can configure promotion channels to send teasers to Microsoft Teams, Viva Engage, and via Email - for example to use in a publishing campaign. For details, see below.
@@ -46,8 +46,8 @@ Use the settings this way:
 + **Scheduling**: If scheduling should be available in this page collection, select this option and select the property to be used. The author can then set a scheduled start date and time, using the PROPERTIES tab for the page. Note that scheduled publishing never is mandatory, an author can always choose to publish without using scheduling. 
 + **Break permission inheritance by default**: Select this option if inheritance should be broken when a new page is created within the page collection. This could, for example, be useful for communities. When this option is active, the colleague creating the page will be the page owner, meaning that he or she has full control over who can edit. The new option "Invite co-authors" can then be used to easily add authors for the page, see below.
 + **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. 
-+ **Channel**: If you enable this, it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
-+ **Open AI**: (Renamed AI generated content in Omnia 7.8 and later). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI has to be made in Omnia Admin.
++ **Channel**: If you enable "Enabel publishing to channels", it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
++ **AI generated content**Open AI**: (This option is called "Open AI" in Omnia 7.7 and earlier). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI have to be made in Omnia Admin.
 + **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. Also see *Important notes about semantic search* below.
 
 Set default values for a page type
@@ -86,7 +86,7 @@ Do the following to set up a promotion channel:
 + **Type**: Can be Microsoft Teams, Viva Engage or Email.
 + **Group**: Select which group the promotion channel is tied to. If you selected Microsoft Teams, it's a list of Teams groups and so on.
 + **Channel**: For a Microsoft Teams group, several Teams channels can exist. Select channel here. (Not available for Viva Engage or Email).
-+ **Property mapping**: The properties used for the teaser are listed here. Map properties you use for these purposes.
++ **Property mapping**: The properties used for the teaser are listed here (properties in the image above is an example). Map properties you use for these purposes.
 
 3. To set a posting rule, first select "Only post if".
 4. Then select property, make other choices if necessary, and click ADD.
@@ -132,17 +132,7 @@ To set up rules, do the following:
 
 By using settings in the Page likes and comments block, you can set up a two way Viva Engage integration. Note that you must set up the integration here first.
 
-For more information, see: :doc:`The Page likes and comments block </blocks/page-likes-and-comments/index>`
-
-Allow invitation of co-authors
-------------------------------------
-If "Allow invitation of co-authors" is selected, an author can use this menu option to invite one or more co-authors:
-
-.. image:: co-author-meny.png
-
-Note that this is not temporary, the co-authors will be added to the page permissions as authors.
-
-For more information about inviting co-authors, see: :doc:`Invite co-authors </pages/invite-co-authors/index>`
+For more information, see: :doc:`Page likes and comments block </blocks/page-likes-and-comments/index>`
 
 Enable taxonomy connection
 ---------------------------
@@ -202,6 +192,16 @@ Then select the colleague or group that should be available for approval for the
 In this exeample Robert Johnson is set as approver for all object types (the parent). If you would like to select someone else to be avaialable as approval for, let's say News article, deselect "Inherit parent settings" and select colleague or group there.
 
 .. image:: term-driven-cogwheel-approver.png
+
+Allow invitation of co-authors
+------------------------------------
+If "Allow invitation of co-authors" is selected, an author can use this menu option to invite one or more co-authors:
+
+.. image:: co-author-meny.png
+
+Note that this is not temporary, the co-authors will be added to the page permissions as authors.
+
+For more information about inviting co-authors, see: :doc:`Invite co-authors </pages/invite-co-authors/index>`
 
 Setting up multi step approval
 ---------------------------------
