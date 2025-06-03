@@ -1,7 +1,7 @@
 Edit a local page type
 =========================
 
-Page types can either be local, meaning they are only available in the publishing app where they are created, or tenant page types. Tenant page types can be made available in all publishing apps in the tenant.
+Page types can either be local, meaning they are only available in the publishing app where they are created, or tenant page types. Tenant page types are edited in Omnia admin.
 
 To edit a local page type, do the following:
 
