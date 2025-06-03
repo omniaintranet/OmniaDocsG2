@@ -1,5 +1,5 @@
-Delete or restore a page type
-=================================
+Delete or restore a local page type
+======================================
 
 An unused page type can be deleted (archived). If the page type is used for any active page, it can't be deleted. If the pages are deleted, the page type can also be deleted.
 
