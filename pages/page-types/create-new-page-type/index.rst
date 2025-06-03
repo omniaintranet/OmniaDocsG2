@@ -17,9 +17,11 @@ Here's how to create a local page type:
 
 3. Now start to build the the base layout by adding sections. Note that there are a number of layout templates you can use as a starting point. You can find them in a list to the right:
 
-.. image:: page-types-add-section-79.png
+.. image:: page-types-add-layout-templates-79.png
 
 There are a number of sections you can use. See the images on the icons for the layouts, for a simple preview of the layout.
+
+.. image:: page-types-add-section-79.png
 
 For a description of the section settings, see: :doc:`Section settings </pages/page-types/section-settings/index>`
 
