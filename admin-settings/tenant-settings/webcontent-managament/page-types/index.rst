@@ -7,7 +7,7 @@ The tenant page types are handled from here:
 
 .. image:: WCM-page-types-v6-new.png
 
-You work with the tenant page types exactly the same way as the local page types, as described here: :doc:`Page types </pages/page-types/index>`
+You create and edit the tenant page types exactly the same way as the local page types, as described here: :doc:`Page types </pages/page-types/index>`
 
 The "only" difference is that the tenant page types are created and edited here, they are not visible in the list "Page types" in the publishing app, but can be available when an editor creates a new page.
 
