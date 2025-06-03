@@ -27,13 +27,7 @@ Moving a page type to tenant
 *******************************
 If you already have one or more local page types you want to use as a tenant page type, you can easily "make a tenant page type" of them. 
 
-Select the page type and choose "Promote to tenant" in the menu:
-
-.. image:: WCM-page-types-move-to-tenant-new.png
-
-All pages using the promoted page type will continue using it, but the page type will now fully function as a tenant page type. (See for example the comment about updating a page type above).
-
-**Note!** The promoted page type is removed from the list of page types in the publishing app - it can no longer be edited there. As it is a tenant page type from now on, it must be edited in Omnia admin. 
+See this page for more information: (link to be added)
 
 Deleting a tenant page type
 ******************************
