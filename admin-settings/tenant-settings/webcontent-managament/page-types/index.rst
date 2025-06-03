@@ -27,7 +27,7 @@ Moving a page type to tenant
 *******************************
 If you already have one or more local page types you want to use as a tenant page type, you can easily "make a tenant page type" of them. 
 
-See this page for more information: (link to be added)
+See this page for more information: :doc:`Move a local page type to tenant </pages/page-types/moving-page-type-to-tenant/index>` 
 
 Deleting a tenant page type
 ******************************
