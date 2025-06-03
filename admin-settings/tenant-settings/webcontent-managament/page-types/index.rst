@@ -25,7 +25,7 @@ The page types can then be used by page editors to create pages, the same way as
 
 Moving a page type to tenant
 *******************************
-If you already have one or more page types you want to use as a tenant page type, you can easily "make a tenant page type" of them. 
+If you already have one or more local page types you want to use as a tenant page type, you can easily "make a tenant page type" of them. 
 
 Select the page type and choose "Promote to tenant" in the menu:
 
