@@ -22,6 +22,7 @@ Select section for more information:
 
    edit-page-type/index
    create-new-page-type/index
+   moving-page-type-to-tenant/index
    working-with-sections-and-blocks/index
    section-settings/index
    archive-restore-page-type/index
