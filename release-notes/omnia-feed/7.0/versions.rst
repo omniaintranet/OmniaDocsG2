@@ -1,3 +1,40 @@
+Release 7.8.0
+========================================
+
+- Fix regarding the sorting capabilities of sign off requests
+
+Release 7.7.4
+========================================
+
+- Support for adding comments in tabs with multiple queries
+- Fix for notifications for important announcements
+- Stability improvements to the sync of items to the activity feed
+- Fix for the "Mark all as read" functionality
+
+Release 7.7.3
+========================================
+
+- Fix for the user resync button display
+- Support for login with external accounts
+- Support for documents in sign off requests
+
+Release 7.7.2
+========================================
+
+- Fix for notifications for polls
+- Support for sorting multiple queries sign off requests
+- Support for filtering sign off requests based on completion status
+
+Release 7.7.1
+========================================
+
+- Fix for sync issues for the news feed
+- Support for scheduling of publishing forms
+- Improvements to functionality for tabs with multiple queries
+- Fix for removing unpublished pages from the feed
+- Update to priority settings for notifications
+- Support for accented characters in embedded links
+
 Release 7.6.23
 ========================================
 
