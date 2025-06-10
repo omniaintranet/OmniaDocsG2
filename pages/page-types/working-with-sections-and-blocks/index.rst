@@ -1,7 +1,9 @@
-Sections and blocks in a page type
+Working with sections and blocks
 =================================================
 
-This describes how to work with sections and blocks for a page type. You work the same way with local page types and tenant page types.
+This describes how to work with sections and blocks for a page type, or for some other layout. 
+
+Regarding page types, you work the same way with local page types and tenant page types. Images in this description from Omnia 7.9.
 
 For the very first steps when creating a new page type, see: :doc:`Create new page type </pages/page-types/create-new-page-type/index>`
 
@@ -31,10 +33,12 @@ For a description of available settings for the section, see: :doc:`Settings for
 
 If needed, you can even go a step further and create a new section in one of the new columns.
 
-**A tip!** The stepper section is useful when organizing information in steps. It's also used with the forms functionality. See below for more information.
 
 Using the stepper section
 ***************************
+
+**A tip!** The stepper section is useful when organizing information in steps. It's also used with the forms functionality. See below for more information.
+
 A stepper section is one of the sections you can use.
 
 .. image:: stepper-section.png
