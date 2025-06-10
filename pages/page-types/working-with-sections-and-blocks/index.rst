@@ -1,57 +1,43 @@
 Working with sections and blocks
 =================================================
+**This page is being edited.**
 
-This describes how to work with sections and blocks for a page type, or for some other layout. 
+When working on a layout, including a layout for a page type, you use sections and blocks to create the layout for the content.
 
-Regarding page types, you work the same way with local page types and tenant page types. Images in this description from Omnia 7.9.
+Regarding page types, you work the same way with local page types and tenant page types. For the very first steps when creating a new page type, see: :doc:`Create new page type </pages/page-types/create-new-page-type/index>`
 
-For the very first steps when creating a new page type, see: :doc:`Create new page type </pages/page-types/create-new-page-type/index>`
+In this description, we use a page type as an example. You work the same way with other layouts. Images in this description from Omnia 7.9.
 
-For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
-
-Create a section in a column
+The first steps
 ******************************
-If needed, you can create a section in a column and then select a layout for the column and set all other section settings. Here's how:
+You can really work the way you want, you don't need a section to add a block, for example, but common steps will probably be:
 
-1. Click the plus for the column.
+1. Click the plus to add a layout with one or more columns.
 
-.. image:: column-layout-click-plus-new.png
+.. image:: sections-1.png
 
-Note that it's the same dialog for sections and blocks you can add to a page or a page layout. The sections are found under "Layout".
+2. select the base layout.
 
-2. Open the Layout list.
+.. image:: sections-2.png
 
-.. image:: column-layout-list-77.png
+3. Add a suitable section in a column.
 
-3. Select layout for the column.
+.. image:: sections-3.png
 
-.. image:: column-layout-list-open-77.png
+Just to be clear, you can add such a section directly to the page as well, if needed.
 
-4. Set the section's settings.
+These are the type of sections you can use. All sections can be added to the page or to another section.
 
-For a description of available settings for the section, see: :doc:`Settings for sections </pages/page-types/section-settings/index>`
-
-If needed, you can even go a step further and create a new section in one of the new columns.
-
-
-Using the stepper section
-***************************
-
-**A tip!** The stepper section is useful when organizing information in steps. It's also used with the forms functionality. See below for more information.
-
-A stepper section is one of the sections you can use.
-
-.. image:: stepper-section.png
-
-A stepper section makes it possible to organize content in a layout in a wizard-like style. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
-
-.. image:: working-with-stepper-77.png
++ Section with columns: Used primarily for the base layout, to add other sections or blocks for the content. 
++ Section with tabs: Useful for many types of layout where content are added to different tabs.
++ Accordion section: Useful for a layout or content organized with labels or headings that can be collapsed to display the full content.
++ Stepper section: Useful when organizing information in steps. It's also used with the forms functionality. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
 
 Here's an example where a stepper section is used:
 
 .. image:: working-with-stepper-example.png
 
-All settings for sections are available for the stepper section.
+For a description of available settings for a section, see: :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
 Decide to show a section on a device or not
 **********************************************
@@ -59,35 +45,36 @@ When you're working on a section you can select if it should be show on differen
 
 Click this icon:
 
-.. image:: device-support-section-77.png
+.. image:: device-support-section-79.png
 
 You can now use the following settings:
 
-.. image:: select-device-section-77.png
+.. image:: select-device-section-79.png
 
 To hide a section for a device, do the following:
 
 1. Select the device.
-2. Click the pen for "Visibility".
-3. Select "Hide Section".
+2. Click LAYOUT.
+3. Click the pen for "Visibility".
+4. Select "Hide section".
+
+.. image:: select-device-section-hide-79.png
 
 To add some padding for the section, for a specific device, do the following:
 
 1. Select the device.
-2. Click the pen for "Section padding".
-3. Set the padding.
+2. Click LAYOUT.
+3. Click the pen for "Section padding".
+4. Set the padding.
 
 Delete a section
 *****************
 If you need to delete a section, here's how to do it:
 
 1. Click in the section (not on any plus).
-
-.. image:: delete-section-1-77.png
-
 2. Click the dust bin for the section.
 
-.. image:: delete-section-2-77.png
+.. image:: delete-section-2-79.png
 
 3. Click OK to delete the section.
 
@@ -98,11 +85,11 @@ Do the following to move a section to another place on the page.
 1. Click the section.
 2. Click the Move icon.
 
-.. image:: move-icon-section-77.png
+.. image:: move-icon-section-79.png
 
 Icons now show where you can move the section, for example:
 
-.. image:: can-be-moved-section-77.png
+.. image:: can-be-moved-section-79.png
 
 3. Click the icon where you want the section and it's moved there.
 
@@ -113,20 +100,16 @@ If you need a section with roughly the same settings somewhere else on the page,
 1. Click the section.
 2. Click the Copy icon.
 
-.. image:: copy-icon-section-77.png
+.. image:: copy-icon-section-79.png
 
-Note that you can also copy blocks this way. Sections are indicated with a green color and blocks with a blue color, so you can see what is what.
-
-Icons now show where you can add the new section, the same way as when you move a section, for example:
-
-.. image:: section-can-be-copied-77.png
+Icons now show where you can add the new section, the same way as when you move a section (see above).
 
 3. Click the icon where you want the copied section and it's placed there.
 4. Edit the settings that you want to change for the copy.
 
 Copy a section from the clipboard
 -----------------------------------
-There's also a clipboard available, that can be used to copy sections between pages or page types, see: :doc:`Clipboard for sections and blocks </general-assets/layout-explorer/clipboard-sections-blocks/index>`
+There's also a clipboard available, that can be used to copy sections between pages or page types, see this page for more information: :doc:`Clipboard for sections and blocks </general-assets/layout-explorer/clipboard-sections-blocks/index>`
 
 Adding blocks to a section
 ***************************
@@ -134,19 +117,21 @@ Here's how to add a block to a section:
 
 1. Click the plus for the section.
 
-.. image:: addblock-1-77.png
+.. image:: addblock-1-79.png
 
-2. Select block to add.
+2. Select block to add. Alla blocks are listed after "Block".
 
-.. image:: section-add-block-77.png
+.. image:: section-add-block-79.png
 
-Here's an example with a block added:
-
-.. image:: section-block-added-77.png
-
-You add additional blocks, work with the settings, move or delete blocks the same way as editors do when editing a page, see: :doc:`Working with blocks </blocks/working-with-blocks/index>`
+There's many, many blocks you can use. You add additional blocks, work with the settings, move or delete blocks the same way as editors do when editing a page, see: :doc:`Working with blocks </blocks/working-with-blocks/index>`
 
 **Note!** When editing a page, blocks that belong to the page type may be locked, meaning they can not be moved or deleted, and settings for those blocks can't be edited. But content can be edited, if applicable, using Write mode. For more information on this, see *Lock a block or not*, below.
+
+In Omnia 7.9 and later, there can be section or block templates created, that you can use. A template is a section or a block with a number of pre defined settings.
+
+If any are available, you can find them under a separate heading, for example:
+
+.. image:: section-add-block-templates-79.png
 
 Copy a block from the clipboard
 ---------------------------------------------
@@ -166,4 +151,8 @@ The following options are available here:
 
 + **Locked by default**: If this option is selected, and not the following, it works as before; settings for the block can not be changed but content can be edited using Write mode. If this option is NOT selected and the next is, the block's settings are simply not locked. Design permission is still needed to be able to change settings.
 + **Lock can be edited**: If this option is selected, editors (Design permission) can unlock or lock the settings for the block - and if unlocked, can edit the block's settings.
+
+For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
+
+
 
