@@ -128,9 +128,7 @@ For more information about how Matomo event tracking works and how to use the se
 
 Page review rule
 ***********************
-Available in Omnia 7.9 and later (this description is ongoing).
-
-Here you can create a rule for page reviews, for this page type:
+Available in Omnia 7.9 and later. Here you can create a rule for page reviews, for this page type:
 
 .. image:: page-review-rule.png
 
