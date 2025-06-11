@@ -1,6 +1,5 @@
 Working with sections and blocks
 =================================================
-**This page is being edited. Will be finsihed soon.**
 
 When working on a layout, including a layout for a page type, you use sections and blocks to create suitable containers for the content.
 
