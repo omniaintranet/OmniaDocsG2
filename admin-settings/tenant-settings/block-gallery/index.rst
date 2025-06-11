@@ -1,8 +1,6 @@
 Block gallery
 ===================================
 
-**This is a new option in Omnia 7.9. This description is being updated.**
-
 In Omnia 7.9 and later, an alternative way of listing the sections and blocks is available - the block gallery. Here's an example:
 
 .. image:: block-gallery-example.png
