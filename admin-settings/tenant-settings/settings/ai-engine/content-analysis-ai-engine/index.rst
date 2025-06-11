@@ -1,7 +1,7 @@
 Content analysis (AI settings)
 =============================================
 
-These are the available settings for content analysis functionality in Omnia 7.8. If you have used this option in 7.7 for OpenAI, it works the same.
+These are the available settings for content analysis functionality in Omnia 7.8 and later. If you have used this option in 7.7 for OpenAI, it works the same.
 
 You can set up a number of prompts for content analysis, to be used by editors. Here's an example:
 
