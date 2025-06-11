@@ -3,7 +3,7 @@ Advanced - Omnia Feed
 
 Here you can resync articles and users, if someting has gone wrong. 
 
-Resync art5icles
+Resync articles
 ******************
 This is available here. Read the text thoroughly for details.
 
