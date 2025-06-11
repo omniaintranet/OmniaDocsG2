@@ -1,7 +1,7 @@
 Groups
 =============================================
 
-This page describes the functionality in Omnia 7.7 and earlier. For Omnia 7.8, see: :doc:`User management groups in Omnia 7.8 </admin-settings/tenant-settings/user-management/groups-78/index>`
+This page describes the functionality in Omnia 7.7 and earlier. For Omnia 7.8 and later, see: :doc:`User management groups in Omnia 7.8 </admin-settings/tenant-settings/user-management/groups-78/index>`
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
 
