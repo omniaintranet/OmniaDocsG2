@@ -17,7 +17,7 @@ All other aspects regarding pages works well for Omnia users, but keep in mind t
 
 Blocks to use for non M365 users
 ************************************
-The following blocks can be used for users that do not have a M365 license, in full or in part.
+The following information specifies blocks that can be used for users that do not have a M365 license, in full or in part, and the blocks that can not be used.
 
 These blocks can be used **in full**:
 
