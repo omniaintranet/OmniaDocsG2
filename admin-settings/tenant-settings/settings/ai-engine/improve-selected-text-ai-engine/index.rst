@@ -1,7 +1,7 @@
 Improve selected text (AI settings)
 =============================================
 
-This is the functionality in Omnia 7.8. If you have used this option in 7.7 for OpenAI, it works the same, but with ine addition, see the bottom of the page.
+This is the functionality in Omnia 7.8 and later. If you have used this option in 7.7 for OpenAI, it works the same, but with one addition, see the bottom of the page.
 
 You can create a number of prompt settings here to be used by editors, for example:
 
