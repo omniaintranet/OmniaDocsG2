@@ -50,9 +50,9 @@ The approver automatically has read access to the document (Note! Read access on
 
 The workflow will be active until the task is completed and the document will be locked for editing during that time.
 
-Omnia 7.8 - semantic search
+Semantic search
 *******************************
-In Omnia 7.8, semantic search can be available. It can be set up in several ways, but a decision about including the document in semantic search, or not, may be needed.
+In Omnia 7.8 and later, semantic search can be available. It can be set up in several ways, but a decision about including the document in semantic search, or not, may be needed.
 
 If it's needed, an option is shown:
 
