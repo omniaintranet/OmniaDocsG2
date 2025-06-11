@@ -118,7 +118,7 @@ Here's how to add a block to a section:
 
 .. image:: addblock-1-79.png
 
-2. Select block to add. Alla blocks are listed after "Block".
+2. Select block to add. All blocks are listed after "Blocks".
 
 .. image:: section-add-block-79.png
 
@@ -138,7 +138,7 @@ There's also a clipboard available, that can be used to copy blocks between page
 
 Lock a block or not
 ************************
-Additional settings for locking of blocks are available, under "Lock" in the LAYOUT menu:
+Additional settings for locking of blocks are available, under "Lock" in the LAYOUT menu for a block:
 
 .. image:: lock-menu-77.png
 
@@ -152,6 +152,4 @@ The following options are available here:
 + **Lock can be edited**: If this option is selected, editors (Design permission) can unlock or lock the settings for the block - and if unlocked, can edit the block's settings.
 
 For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
-
-
 
