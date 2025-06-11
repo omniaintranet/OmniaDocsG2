@@ -1,7 +1,7 @@
 Block gallery
 ===================================
 
-**This is a new option in Omnia 7.9. This description is ongoing.**
+**This is a new option in Omnia 7.9. This description is being updated.**
 
 In Omnia 7.9 and later, an alternative way of listing the sections and blocks is available - the block gallery. Here's an example:
 
@@ -27,7 +27,7 @@ Block templates
 -----------------
 If you opt to use the block gallery view, you can also create block templates, which is blocks with a number of pre defined settings, to make it easier for editors and can also be used to make sure certain blocks are set up the same way all over the tenant. The templates never replaces blocks, it's an addition.
 
-You must also rememeber to add block templates to the block dialogs where they should be available. 
+You must also remember to add block templates to the block dialogs where they should be available. 
 
 Here's an example of a list with a number of templates created:
 
@@ -50,14 +50,24 @@ To delete a a block template, just click DELETE, as seen at the top of the above
 
 Creating a block template
 ----------------------------
-How to create a definition then? Use these steps:
+How to create a block template then? Use these steps:
 
-1. Copy a block when editing a page.
+1. Copy or add a block when editing a page.
 2. Add the desired settings.
-3. Use the clipboard option for export.
-4. Paste from the Clipboard to a block definition.
+3. Copy the block to the clipboard (open the clipboard and click the Copy icon for the block).
+4. Use the clipboard option for export (this copies the settings needed for the block template to the computer's clipboard).
+5. Create a new block template.
+6. Paste the definition from the clipboard to the block definition.
 
-(A more detailed instruction will be added soon).
+.. image:: paste-definition.png
+
+You should now see the definition in the field.
+
+7. Save the new block template.
+
+.. image:: paste-definition-save.png
+
+For more information about how to use the clipboard, see: :doc:`Clipboard for sections and blocks </general-assets/layout-explorer/clipboard-sections-blocks/index>`
 
 Block dialog
 ---------------
