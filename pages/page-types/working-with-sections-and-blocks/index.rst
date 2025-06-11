@@ -1,8 +1,8 @@
 Working with sections and blocks
 =================================================
-**This page is being edited.**
+**This page is being edited. Will be finsihed soon.**
 
-When working on a layout, including a layout for a page type, you use sections and blocks to create the layout for the content.
+When working on a layout, including a layout for a page type, you use sections and blocks to create suitable containers for the content.
 
 Regarding page types, you work the same way with local page types and tenant page types. For the very first steps when creating a new page type, see: :doc:`Create new page type </pages/page-types/create-new-page-type/index>`
 
@@ -26,12 +26,12 @@ You can really work the way you want, you don't need a section to add a block, f
 
 Just to be clear, you can add such a section directly to the page as well, if needed.
 
-These are the type of sections you can use. All sections can be added to the page or to another section.
+The folllwing are the type of sections you can use. All sections can be added to the page or to another section.
 
-+ Section with columns: Used primarily for the base layout, to add other sections or blocks for the content. 
-+ Section with tabs: Useful for many types of layout where content are added to different tabs.
-+ Accordion section: Useful for a layout or content organized with labels or headings that can be collapsed to display the full content.
-+ Stepper section: Useful when organizing information in steps. It's also used with the forms functionality. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
++ **Section with columns**: Used primarily for the base layout, to add other sections or blocks for the content. 
++ **Section with tabs**: Useful for many types of layout where content are added to different tabs.
++ **Accordion section**: Useful for a layout or content organized with labels or headings that can be expanded to display the full content.
++ **Stepper section**: Useful when organizing information in steps. It's also used with the forms functionality. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
 
 Here's an example where a stepper section is used:
 
@@ -41,7 +41,7 @@ For a description of available settings for a section, see: :doc:`Settings for s
 
 Decide to show a section on a device or not
 **********************************************
-When you're working on a section you can select if it should be show on different devices.
+When you're working on a section you can select if it should be shown, or not, on different devices.
 
 Click this icon:
 
@@ -105,7 +105,7 @@ If you need a section with roughly the same settings somewhere else on the page,
 Icons now show where you can add the new section, the same way as when you move a section (see above).
 
 3. Click the icon where you want the copied section and it's placed there.
-4. Edit the settings that you want to change for the copy.
+4. Edit the settings that you want to change for the copy, and save.
 
 Copy a section from the clipboard
 -----------------------------------
@@ -127,7 +127,7 @@ There's many, many blocks you can use. You add additional blocks, work with the 
 
 **Note!** When editing a page, blocks that belong to the page type may be locked, meaning they can not be moved or deleted, and settings for those blocks can't be edited. But content can be edited, if applicable, using Write mode. For more information on this, see *Lock a block or not*, below.
 
-In Omnia 7.9 and later, there can be section or block templates created, that you can use. A template is a section or a block with a number of pre defined settings.
+In Omnia 7.9 and later, there can be section or block templates available, that you can use. A template is a section or a block with a number of pre defined settings.
 
 If any are available, you can find them under a separate heading, for example:
 
