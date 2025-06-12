@@ -9,12 +9,12 @@ Matomo documentation is fully processed in ChatGPT, so you can use ChatGPT to as
 
 If you need to set up additional geolocation DBIP databases, see this page: :doc:`How to setup additional geolocation DBIP databases </admin-settings/business-group-settings/settings/analytics/set-up-dbip/index>`
 
-Some info about differences between Omnia 7.7 and 7.8:
+Some info about differences between Omnia 7.7 and 7.8 and later:
 
 **Omnia 7.7**:
 No set up at tenant level is required. Analytics data is always collected separately for each business profile.
 
-**Omnia 7.8**:
+**Omnia 7.8 and later**:
 Matomo events tracking can also be set up. Settings is available for page types, form types, documents in document rollups and action buttons. A Matomo website can be shared between business profiles, meaning data can be collected from more than one business profile, to a shared Matomo web site.
 
 Settings
