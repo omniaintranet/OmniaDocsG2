@@ -14,7 +14,7 @@ Prepare the SharePoint site
 For every SharePoint site where you would like to use webparts, you have to do the following:
 
 1. Attach the SharePoint site to Omnia.
-2. Activate the app feature SPFx infrastructure for the SharePoint site.
+2. Activate the app feature "SPFx infrastructure" for the SharePoint site.
 
 How to use a webpart in SharePoint
 **************************************
