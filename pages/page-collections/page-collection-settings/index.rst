@@ -26,7 +26,7 @@ All settings are not shown in the image above, but listed below.
 
 Use the settings this way:
 
-+ **Navigation structure/Flat**: Here you can see what was selected when the page collection was created. If you want to change from navigation structure to flat in an existong page collection, you need to first manually flatten the page structure (move sub pages so they all become main pages) and then use the option here.
++ **Navigation structure/Flat**: Here you can see what was selected when the page collection was created. If you want to change from navigation structure to flat in an existing page collection, you need to first manually flatten the page structure (move sub pages so they all become main pages, or remove them) and then use the option here. You can always change from flat to navigation structure.
 + **Title**: The title for the page collection is shown here. It can be edited if needed. It's updated everywhere it's shown when the changes here are published.
 + **Layout**: Here a layout can be selected. Layouts are created in Omnia admin.
 + **Create page dialog**: You can set the title for the dialog displayed when an editor has selected to create a new page. If you leave this field blank, the dialog title will be "Create new page".
