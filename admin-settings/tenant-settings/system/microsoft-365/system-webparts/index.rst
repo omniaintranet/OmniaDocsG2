@@ -9,10 +9,12 @@ If you're using SharePoint pages in an Omnia implementation, you can use these w
 
 (All available webparts are not shown in the image).
 
-Prerequisites: 
+Prepare the SharePoint site
+--------------------------------
+For every SharePoint site where you would like to use webparts, you have to do the following:
 
-+ The app feature SPFx infrastructure must be activated.
-+ The Sharepoint page must be attached to Omnia.
+1. Attach the SharePoint site to Omnia.
+2. Activate the app feature SPFx infrastructure for the SharePoint site.
 
 How to use a webpart in SharePoint
 **************************************
