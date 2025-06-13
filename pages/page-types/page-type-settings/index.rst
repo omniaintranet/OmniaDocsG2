@@ -68,6 +68,8 @@ And then something like the following is available (image from Omnia 7.8):
 
 + **Enable promote to Viva**: Available in Omnia 7.8 and later. Select this option if pages of this page type should appear in Viva connections.
 
+**Important note!** When promoting pages with variations to Viva, only the default page is promoted to avoid duplicates.
+
 The rest of the settings are used exactly the same way as the settings for the tenant. See this page for more information: :doc:`SharePoint sync </admin-settings/tenant-settings/webcontent-managament/sharepoint-sync/index>`
 
 When you have set up the sync here, you must execute a reindex/full sync to SharePoint, as the message stated. You do that in the publishing app settings:
