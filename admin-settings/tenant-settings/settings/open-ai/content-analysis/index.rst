@@ -1,7 +1,7 @@
 Content analysis (OpenAI)
 =============================================
 
-This page describes how this works in Omnia 7.7.
+This page is for Omnia 7.7. For Omnia 7.8 and later, see this page: :doc:`Content analysis (AI settings) </admin-settings/tenant-settings/settings/ai-engine/content-analysis-ai-engine/index>`
 
 You can set up a number of prompts for content analysis, to be used by editors. Here's an example:
 
