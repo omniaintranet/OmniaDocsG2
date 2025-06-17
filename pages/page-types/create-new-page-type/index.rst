@@ -1,7 +1,7 @@
 Create a new page type
 ========================
 
-This page describes how to create a local page type, meaning a page type is available only in the publishing app where it was created. The page contains images from Omnia 7.9.
+This page describes how to create a local page type, meaning a page type that is available only in the publishing app where it was created. The page contains images from Omnia 7.9.
 
 Note that if your organization works with tenant page types you first have to consider if you should add it as a tenant page type or a local page type. For more information, see this page: :doc:`Tenant page types </admin-settings/tenant-settings/webcontent-managament/page-types/index>`
 
