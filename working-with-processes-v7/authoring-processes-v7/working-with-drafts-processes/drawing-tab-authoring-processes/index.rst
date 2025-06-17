@@ -68,7 +68,7 @@ To select a shape, just click it and the following settings is shown:
 + **Select Process**: When you have selected "Linked process" in the top list, use this list to choose the process to link to.
 + **Add Link**: When you have selected "Link" in the top list, this option is shown. See below for more information.
 + **Title**: Add the text for the process step here, if needed. If you are creating a new process step, this is mandatory, not if you select an existing process step. You can also add another text to be displayed on the shape itself if you wish, by adding a custom shape text.
-+ **Custom shape text**: In Omnia 7.6 and later you can add a custom shape text. To do that, select this option.
++ **Custom shape text**: You can add a custom shape text. To do that, select this option.
 + **Shape title**: Shown when you select the option above. Here you can add a text that is shown on the shape, regardless of the title of the process step.
 + **Width/Height**: You can set the width and height in pixels for the shape in this position.
 + **Text Position**: Set the position for the text: "On Shape", "Above Shape" or "Below Shape".
