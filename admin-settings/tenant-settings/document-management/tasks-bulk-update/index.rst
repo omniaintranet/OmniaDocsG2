@@ -1,11 +1,11 @@
 Tasks bulk update
 ========================
 
-As the label suggest, using this option you can bulk update tasks. 
+You can use this option to reassign tasks to another colleague.
 
 .. image:: tasks-bulk-update.png
 
-You can use this option to reassign tasks to another colleague. Here's how:
+Follow these steps:
 
 1. Decide to use the people picker (Pick user) or to search for the user (Find user).
 2. Find the colleague to reassing from.
