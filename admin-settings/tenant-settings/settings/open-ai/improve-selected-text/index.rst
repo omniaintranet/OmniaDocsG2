@@ -1,7 +1,7 @@
 Improve selected text (OpenAI)
 =============================================
 
-This page describes how this works in Omnia 7.7.
+This page describes how this works in Omnia 7.7. For information about how this option works in Omnia 7.8 and later, see: :doc:`Improve selected text (AI settings) </admin-settings/tenant-settings/settings/ai-engine/improve-selected-text-ai-engine/index>`
 
 You can create a number of prompt settings here to be used by editors, with OpenAI, for example:
 
