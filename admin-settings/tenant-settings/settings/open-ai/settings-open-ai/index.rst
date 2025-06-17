@@ -1,7 +1,7 @@
 Settings (OpenAI)
 =============================================
 
-This page describes the settings in Omnia 7.7.
+This description applies to Omnia 7.7. For the AI settings in Omni 7.8 and later, see: :doc:`Model configuration (AI) </admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index>`
 
 The following settings are available here:
 
