@@ -1,7 +1,7 @@
 Tasks bulk update
 ========================
 
-This is a new option in Omnia 7.6. 
+As the label suggest, using this option you can bulk update tasks. 
 
 .. image:: tasks-bulk-update.png
 
