@@ -1,3 +1,15 @@
+7.8.6
+========================================
+(Omnia 7.8.6 / Workplace 7.8.5 / WCM 7.8.5 / MS 7.8.3 / Analytics 7.8.2/ Feed 7.8.0)
+
+- Fixed an issue where too much content would be rendered in the page rollup (#167149).
+- Table headers in the RTF Editor now follows the style of the table (#37384).
+- Improved German translations (#167143).
+- Fixed an issue where the form position would be wrong when RTF fields are used in page properties(#37386).
+- The background color can now be set correctly on the metrics block (#167244).
+- Fixed an unintended styling change on the FAQ block (#167182).
+- Fixed an issue where the move node as sibling action would sometimes fail (#167155).
+
 7.8.4
 ========================================
 (Omnia 7.8.4 / Workplace 7.8.4 / WCM 7.8.4 / MS 7.8.3 / Analytics 7.8.2/ Feed 7.7.4)
