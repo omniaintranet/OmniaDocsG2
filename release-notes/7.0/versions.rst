@@ -1,3 +1,23 @@
+7.8.8
+========================================
+(Omnia 7.8.8 / Workplace 7.8.6 / WCM 7.8.7 / MS 7.8.5 / Analytics 7.8.3 / Feed 7.8.0)
+
+- GroupMember.Read.All permission used instead of Group.Read.All.
+- Stability improvements to the page archiving flow (#167167).
+- Fixed an issue where controlled documents change comments would not save correctly (#167560).
+- Stability improvements to Machine translations (#167121).
+- Fixed an issue that would occur when navigating between different pages with the org chart (#167540).
+- Updated feature description for Teams SSO, only required for SSO in iOS devices. (#167332).
+
+
+7.8.7
+========================================
+(Omnia 7.8.7 / Workplace 7.8.5 / WCM 7.8.6 / MS 7.8.4 / Analytics 7.8.3/ Feed 7.8.0)
+
+- Improved stability in our Matomo hosting.
+- Corrected several minor UI issues due to WCAG improvements (#37270).
+- Updated message for when cancelling an event (#167362).
+
 7.8.6
 ========================================
 (Omnia 7.8.6 / Workplace 7.8.5 / WCM 7.8.5 / MS 7.8.3 / Analytics 7.8.2/ Feed 7.8.0)
@@ -5,10 +25,11 @@
 - Fixed an issue where too much content would be rendered in the page rollup (#167149).
 - Table headers in the RTF Editor now follows the style of the table (#37384).
 - Improved German translations (#167143).
-- Fixed an issue where the form position would be wrong when RTF fields are used in page properties(#37386).
+- Fixed an issue where the form position would be wrong when RTF fields are used in page properties (#37386).
 - The background color can now be set correctly on the metrics block (#167244).
 - Fixed an unintended styling change on the FAQ block (#167182).
-- Fixed an issue where the move node as sibling action would sometimes fail (#167155).
+- Fixed an issue where the move node as sibling action would sometimes fail (#167155, #37537).
+
 
 7.8.4
 ========================================
