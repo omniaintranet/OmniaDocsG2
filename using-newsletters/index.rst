@@ -27,11 +27,11 @@ To be able to send (newsletter) pages this setting must be activated for the pag
 
 .. image:: newsletter-page-collection-setting.png
 
-When this setting is active, the following tab is displayed in the page settings so newsletter editors can enter Email adresses to send to. Individual Email adresses and Email distribution lists can be used.
+When this setting is active, the following tab is displayed in the page settings so newsletter editors can enter Email adresses to send to. 
 
 .. image:: page-setting-newsletter.png
 
-In this field both groups and individual Email adresses can be entered. This tab is available for page editors, even using Write mode.
+Individual Email adresses and Email distribution lists can be used. This tab is available for page editors, even using Write mode.
 
 Page rollup block for newsletters
 ***********************************
