@@ -3,7 +3,7 @@ Using newsletters
 
 There's a number of options and settings in Omnia you can use for a newsletter implementation, to send internally or externally through Email. These options and settings are described here, together with an implementation example.
 
-Prerequisites: The tenant feature "Email provider - Exchange Online mailbox" must be active and you must configure an Exchange Online account to send out Emails. 
+Prerequisites: The tenant feature "Email provider - Exchange Online mailbox" must be active and an Exchange Online account to send out Emails must be configured. 
 
 For an implementation example, see this page: :doc:`Newsletter implementation example </using-newsletters/newsletter-implementation/index>`
 
