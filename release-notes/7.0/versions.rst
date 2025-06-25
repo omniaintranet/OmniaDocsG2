@@ -1,3 +1,11 @@
+7.8.9
+========================================
+(Omnia 7.8.9 / Workplace 7.8.7 / WCM 7.8.7 / MS 7.8.5 / Analytics 7.8.3 / Feed 7.8.0)
+
+- Tall characters (ÅÄÖ) now renders correctly in filter term settings (#167791).
+- Improved the paste text behaviour for the posts block (#166330).
+- Fixed an issue that could make the feature lists render empty (#167594).
+
 7.8.8
 ========================================
 (Omnia 7.8.8 / Workplace 7.8.6 / WCM 7.8.7 / MS 7.8.5 / Analytics 7.8.3 / Feed 7.8.0)
