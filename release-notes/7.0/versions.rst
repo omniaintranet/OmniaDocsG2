@@ -1,3 +1,14 @@
+7.8.11
+========================================
+(Omnia 7.8.11 / Workplace 7.8.9 / WCM 7.8.8 / MS 7.8.5 / Analytics 7.8.3 / Feed 7.8.0)
+
+- TIF images can now be previewed in media rollups (#168064).
+- Action icons in the card view for people rollups now follow the applied color theme (#159885).
+- Fixed an issue with exporting survey results to Excel (#165618).
+- Related links blocks now respect the "Open in Office Web Apps" setting (#167582).
+- Fixed an issue in the page rollup block related to trimming duplicates (#167243).
+- Performance and stability improvements.
+
 7.8.9
 ========================================
 (Omnia 7.8.9 / Workplace 7.8.7 / WCM 7.8.7 / MS 7.8.5 / Analytics 7.8.3 / Feed 7.8.0)
