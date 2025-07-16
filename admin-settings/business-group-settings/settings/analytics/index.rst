@@ -17,7 +17,7 @@ No set up at tenant level is required. Analytics data is always collected separa
 **Omnia 7.8 and later**:
 Matomo events tracking can also be set up. Settings is available for page types, form types, documents in document rollups and action buttons. A Matomo website can be shared between business profiles, meaning data can be collected from more than one business profile, to a shared Matomo web site.
 
-**Impoartant note about Matomo and custom domain names**: See the bottom of the page.
+**Important note about Matomo and custom domain names**: See the bottom of the page.
 
 Settings
 **************
