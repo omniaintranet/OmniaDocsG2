@@ -90,7 +90,5 @@ Matomo and custom domain names
 ********************************
 When a tenant uses custom domain names, there's an action you need to do after reactivating the “Create new analytics website in Matomo” feature at the business profile level. The domain name must be added manually in Matomo by editing this field:
 
-.. image:: matomo-custom-name.png
-
-
+.. image:: matomo-custom-name-frame.png
 
