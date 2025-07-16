@@ -86,4 +86,11 @@ About Matomo marketplace
 ***************************
 There are a lot of additional plugins, themes and more, that can be purchased/downloaded from Matomo marketplace (see link to Matomo above). If you decide to use any additions, just be aware that Omnia can not guarantee that these additions works as expected in Omnia, and can not offer any support on the additions.
 
+Matomo and custom domain names
+********************************
+When a tenant uses custom domain names, there's an action you need to do after reactivating the “Create new analytics website in Matomo” feature at the business profile level. The domain name must be added manually in Matomo by editing this field:
+
+.. image:: matomo-custom-name.png
+
+
 
