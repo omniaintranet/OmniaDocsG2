@@ -2,13 +2,13 @@
 ========================================
 (Omnia 7.8.13 / Workplace 7.8.10 / WCM 7.8.11 / MS 7.8.6 / Analytics 7.8.4 / Feed 7.8.0)
 
-- Fixed an issue with random cursor positioning when editing pages (37386).
-- Increased the process sync size limit to handle larger processes (37326).
-- Fixed an issue related to page blocks missing block settings (168129).
+- Fixed an issue with random cursor positioning when editing pages (#37386).
+- Increased the process sync size limit to handle larger processes (#37326).
+- Fixed an issue related to page blocks missing block settings (#168129).
 - Updated Matomo to version 5.3.2.
-- Enabled better URL segmentation for Matomo data to improve filtering capabilities. (166380).
-- Fixed an issue with the broken link report (167445).
-- Fixed a search issue in the Media rollup (166291).
+- Enabled better URL segmentation for Matomo data to improve filtering capabilities. (#166380).
+- Fixed an issue with the broken link report (#167445).
+- Fixed a search issue in the Media rollup (#166291).
 
 7.8.11
 ========================================
