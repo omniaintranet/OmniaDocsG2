@@ -1,3 +1,14 @@
+7.8.15
+========================================
+(Omnia 7.8.15 / Workplace 7.8.12 / WCM 7.8.13 / MS 7.8.7 / Analytics 7.8.4 / Feed 7.8.0)
+
+- Several stability fixes to the block header (#167204).
+- Styling updates for Firefox on MacOS (#37961).
+- Block and section headers now have configurable element types, to be able to ensure correct heading relations on a page (#167065)
+- Sign-off request excel file details now generate quicker and more stable (#168432).
+- Cross tenant reusable content now supports images within the RTE (#168299).
+
+
 7.8.13
 ========================================
 (Omnia 7.8.13 / Workplace 7.8.10 / WCM 7.8.11 / MS 7.8.6 / Analytics 7.8.4 / Feed 7.8.0)
