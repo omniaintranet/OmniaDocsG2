@@ -5,15 +5,17 @@
 New features
 ************
 
-**General**
-
 - Block gallery, pre-configured blocks can now be centrally managed and used by editors. All block titles and descriptions are now configurable (#137175).
 - Page bulk update. Bulk operations now available on for pages.
-- Dynamic review rules for pages, allowing you to send customizable emails or automatically change page type when a page expires
+- Dynamic review rules for pages, allowing you to send customizable emails or automatically change page type when a page expires.
+- Possibility to assign edit permissions to a specific variation. 
+- Possibility to configure variation author notifications based on page properties. 
+- 
 
 Fixes
 ************
 
+- Fixes for preview version tickets: (#167980, #167059, #167456, #167667).
 
 7.8.15
 ========================================
