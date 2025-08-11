@@ -10,11 +10,12 @@ New features
 - Dynamic review rules for pages, allowing you to send customizable emails or automatically change page type when a page expires.
 - Possibility to assign edit permissions to a specific variation. 
 - Possibility to configure variation author notifications based on page properties. 
-- 
+- When creating a variation from a page with reusable content, the reusable content config menu now opens by default.
 
 Fixes
 ************
 
+- Upgrade Matomo to version to 5.3.2.
 - Fixes for preview version tickets: (#167980, #167059, #167456, #167667, #167538).
 
 7.8.15
