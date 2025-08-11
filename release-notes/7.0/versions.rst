@@ -2,6 +2,19 @@
 ========================================
 (Omnia 7.9.0 / Workplace 7.9.0 / WCM 7.9.0 / MS 7.9.0 / Analytics 7.9.0 / Feed 7.8.0)
 
+New features
+************
+
+**General**
+
+- Block gallery, pre-configured blocks can now be centrally managed and used by editors. All block titles and descriptions are now configurable (#137175).
+- Page bulk update. Bulk operations now available on for pages.
+- Dynamic review rules for pages, allowing you to send customizable emails or automatically change page type when a page expires
+
+Fixes
+************
+
+
 7.8.15
 ========================================
 (Omnia 7.8.15 / Workplace 7.8.12 / WCM 7.8.13 / MS 7.8.7 / Analytics 7.8.4 / Feed 7.8.0)
