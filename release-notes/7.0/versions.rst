@@ -15,7 +15,7 @@ New features
 Fixes
 ************
 
-- Fixes for preview version tickets: (#167980, #167059, #167456, #167667).
+- Fixes for preview version tickets: (#167980, #167059, #167456, #167667, #167538).
 
 7.8.15
 ========================================
