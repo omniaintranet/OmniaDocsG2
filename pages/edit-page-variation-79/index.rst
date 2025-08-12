@@ -1,7 +1,7 @@
 Edit page variations in Omnia 7.9
 =====================================
 
-**Work on this page has just started (and the development is not quite finsihed). More will be edited and added soon, so for it's more or less a copy of the existing description.**
+**We are waiting for information about what was changed for this functionality in Omnia 7.9, if anything at all. Will be back very soon!**
 
 For each variation a specific variation author can be set up, see below. If not, all authors of the main page can edit the variations as well.
 
@@ -88,6 +88,7 @@ Something like the following is shown:
 A variation can be restored or terminated the same way as pages in the archive.
 
 More information about deleting, restoring and terminating of pages (which is fully applicable to variations) is found here: :doc:`Delete a page </pages/delete-page/index>`
+
 
 
 
