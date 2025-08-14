@@ -17,6 +17,9 @@ Fixes
 ************
 
 - Upgrade Matomo to version to 5.3.2.
+- Better support for Open AI 4o mini.
+- Sign-off requests only opens new tabs when it should.
+- Several stability fixes to semantic search.
 - Fixes for preview version tickets: (#167980, #167059, #167456, #167667, #167538).
 
 7.8.16
