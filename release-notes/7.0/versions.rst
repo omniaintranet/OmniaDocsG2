@@ -11,6 +11,7 @@ New features
 - Possibility to assign edit permissions to a specific variation. 
 - Possibility to configure variation author notifications based on page properties. 
 - When creating a variation from a page with reusable content, the reusable content config menu now opens by default.
+- Calculated page properties now supports substraction.
 
 Fixes
 ************
