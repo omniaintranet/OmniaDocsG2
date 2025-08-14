@@ -18,6 +18,13 @@ Fixes
 - Upgrade Matomo to version to 5.3.2.
 - Fixes for preview version tickets: (#167980, #167059, #167456, #167667, #167538).
 
+7.8.16
+========================================
+(Omnia 7.8.16 / Workplace 7.8.12 / WCM 7.8.14 / MS 7.8.7 / Analytics 7.8.4 / Feed 7.8.0)
+
+- Fixes to the exclude filters to correctly adjust the org chart when used (#38314).
+- Update to media rollup settings labels (#38847).
+
 7.8.15
 ========================================
 (Omnia 7.8.15 / Workplace 7.8.12 / WCM 7.8.13 / MS 7.8.7 / Analytics 7.8.4 / Feed 7.8.0)
