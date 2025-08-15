@@ -77,7 +77,7 @@ The SPFx dialog is used for the Webpart functionality, Authentication and Form s
 
 .. image:: block-gallery-templates-4.png
 
-When editing a block dialog, it looks something like this (Default as en example):
+When editing a block dialog, it looks something like this (Default as an example):
 
 .. image:: block-gallery-templates-default.png
 
@@ -93,3 +93,4 @@ You can add and work with headers in all lists. You can also manage the lists th
 .. image:: block-dialog-manage.png
 
 Use the icon to far left to move blocks/sections, templates and headings to the desired order.
+
