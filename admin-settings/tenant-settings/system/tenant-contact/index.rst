@@ -10,8 +10,8 @@ It's very important that you add contact information here. This will be the main
 + **Main Contacts**: Here you add the main contact person(s) in your organization, for Omnia. The main contact(s) will receive important announcements from the product team regarding retirement of features or major service interruptions.
 + **Security contacts**: This contact(s) will recieve a message from the product team on any suspected or ascertained security breach in the system.
 + **Update notification**: This contact(s) receive an automatic Email from the system whenever the tenant has been updated with a new version of the core product or any extension.
-+ **User sync contacts**: (A description will be added soon).
-+ **Add external user sync contact Email**: (A description will be added soon).
++ **User sync contacts**: If user sync fails, the contacts you add here will receive an Email.
++ **Add external user sync contact Email**: If the user sync contact is external, add the Email here.
 
 Don't forget to save when you're done.
 
