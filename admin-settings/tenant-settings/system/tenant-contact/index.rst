@@ -15,5 +15,5 @@ It's very important that you add contact information here. This will be the main
 
 Don't forget to save when you're done.
 
-The emails that are sent about updates are sent from no-reply@omniacloud.net. You must make sure to check your junk mail or create a new rule in your email system to trust this email address.
+The Emails that are sent about updates are sent from no-reply@omniacloud.net. You must make sure to check your junk mail or create a new rule in your Email system to trust this Email address.
 
