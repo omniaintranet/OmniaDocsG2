@@ -5,9 +5,13 @@ This description applies to Omnia 7.8 and later.
 
 See this page for important information on how to set up AI in your tenant: :doc:`Setup AI </setup/setup-ai/index>`
 
-The following settings are available here:
+The following settings are available here in Omnia 7.8:
 
 .. image:: settings-ai-engine-all-78.png
+
+In Omnia 7.9, settings for Dall-E is also available:
+
+.. image:: settings-ai-engine-all-79.png
 
 Text completion configuration
 *******************************
@@ -34,4 +38,9 @@ When you have created the services you need in Azure Open AI, you add services h
 + **Embeddings deployment name**: Add the name of the embeddings employment you have created.
 
 For more information about semantic search, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
+
+Dall-E
+*******
+
+
 
