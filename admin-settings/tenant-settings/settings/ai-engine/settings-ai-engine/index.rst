@@ -41,6 +41,9 @@ For more information about semantic search, see: :doc:`About semantic search </g
 
 Dall-E
 *******
+Add the name of the Dall-E depolyment you're using here:
 
+.. image:: settings-ai-engine-all-79.png
 
+Note, additional settings för Dall-E are available in business profile settings, see (link to be added)
 
