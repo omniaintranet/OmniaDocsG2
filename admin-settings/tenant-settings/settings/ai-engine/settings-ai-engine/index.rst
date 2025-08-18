@@ -43,9 +43,10 @@ Dall-E
 *******
 Add the name of the Dall-E depolyment you're using here:
 
-.. image:: dall-e-settings-79.png
+.. image:: dall-e-settings-tenant.png
 
 Note, additional settings för Dall-E are available in business profile settings, see: :doc:`Dall-E settings (business profile) </admin-settings/business-group-settings/settings/dall-e/index>`
+
 
 
 
