@@ -9,7 +9,7 @@ Here's an example of a list of categories:
 
 Use the pen to edit a category or the dust bin to delete it.
 
-You can also change the order in wich categories will be shown in varioues list. Just grab the titel and move the category to the desired position.
+You can also change the order in wich categories will be shown in various lists. Just grab the titel and move the category to the desired position.
 
 Create a new category
 ***********************
