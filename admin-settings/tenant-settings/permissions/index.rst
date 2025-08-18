@@ -36,7 +36,7 @@ A number of settings are available under Secrets. Exactly what is available here
 
 .. image:: tenant-secrets-v77.png
 
-In Omnia 7.8 some options have been renamed and a few added:
+In Omnia 7.8 and later some options have been renamed and a few added:
 
 .. image:: tenant-secrets-v78-new.png
 
@@ -95,7 +95,7 @@ Available in Omnia 7.8 and later. In order for the "Semantic search" feature to 
 
 Azure OpenAI Dall-E configuration
 ------------------------------------
-(Called AI features: Dall-E in 7.8).
+(Called AI features: Dall-E in 7.8 and earlier).
 
 To be able to use the Dall-E functionality within Omnia, the tenant feature "Dall-E" must be activated. When that is done, an API key and an API base URL must be entered here.
 
