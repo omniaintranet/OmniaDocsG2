@@ -9,7 +9,7 @@ The following settings are available here in Omnia 7.8:
 
 .. image:: settings-ai-engine-all-78.png
 
-In Omnia 7.9, settings for Dall-E is also available:
+In Omnia 7.9 settings for Dall-E are also available:
 
 .. image:: settings-ai-engine-all-79.png
 
@@ -45,5 +45,6 @@ Add the name of the Dall-E depolyment you're using here:
 
 .. image:: settings-ai-engine-all-79.png
 
-Note, additional settings för Dall-E are available in business profile settings, see (link to be added)
+Note, additional settings för Dall-E are available in business profile settings, see: :doc:`Dall-E settings (business profile) </admin-settings/business-group-settings/settings/dall-e/index>`
+
 
