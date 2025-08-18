@@ -1,11 +1,11 @@
 Targeting properties
 ===========================
 
-Here you define which Properties to use for Targeting. 
+Here you define the properties to use for targeting. 
 
 .. image:: targeting-properties-v7.png
 
-The Properties must be added to Enterprise properties to be able to be selected here, as well as be of the type "Taxonomy".
+The properties must be added to Enterprise properties to be able to be selected here, as well as be of the type "Taxonomy".
 
 **Note!** Term sets to be used as properties for targeting in Omnia, must be set to "Available for tagging" in SharePoint.
 
