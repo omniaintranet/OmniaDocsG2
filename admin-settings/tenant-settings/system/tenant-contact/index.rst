@@ -11,7 +11,7 @@ It's very important that you add contact information here. This will be the main
 + **Security contacts**: This contact(s) will recieve a message from the product team on any suspected or ascertained security breach in the system.
 + **Update notification**: This contact(s) receive an automatic Email from the system whenever the tenant has been updated with a new version of the core product or any extension.
 + **User sync contacts**: If user sync fails, the contacts you add here will receive an Email.
-+ **Add external user sync contact Email**: If the user sync contact is external, add the Email here.
++ **Add external user sync contact Email**: If a user sync contact is external, add the Email here.
 
 Don't forget to save when you're done.
 
