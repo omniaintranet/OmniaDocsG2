@@ -1,7 +1,7 @@
 Targeting properties
 ===========================
 
-Here you define the properties to use for targeting. 
+Here you define the properties to use for targeting. A list can look like this:
 
 .. image:: targeting-properties-v7.png
 
