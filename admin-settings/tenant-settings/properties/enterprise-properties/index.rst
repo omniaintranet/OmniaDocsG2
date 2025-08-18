@@ -44,7 +44,7 @@ When editing a property, a few more settings can be available under SharePoint S
 
 .. image:: tenant-properties-settings-edit-v7.png
 
-**Note!** If you change setting for SharePoint Searchable it's only valid for new pages created from here on. If you want this setting to be active for all existing pages as well, you must execute Renidex for all Publishing Apps using this property, in the Publishing App settings:
+**Note!** If you change settings for SharePoint Searchable it's only valid for new pages created from here on. If you want this setting to be active for all existing pages as well, you must execute Reindex for all Publishing Apps using this property, in the Publishing App settings:
 
 .. image:: tenant-properties-settings-sync-v7-frame.png
 
