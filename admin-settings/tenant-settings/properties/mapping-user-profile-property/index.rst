@@ -33,7 +33,7 @@ In order for a user profile property to be used in Omnia, it has to be mapped fi
 
 .. image:: sharepoint-admin-manage-manage-schema-department-v7.png
 
-In this example you can see that the name of the Managed property is indeed Department, and the crawled properties are People:Department and ows_department.
+In this example you can see that the name of the managed property is indeed Department, and the crawled properties are People:Department and ows_department.
 
 Also notice that Department is of type Text, it is also queryable, retrievable and refinable but not searchable or sortable, which means that when you map it in Omnia, it needs to have the same attributes if you want it have the same functionality.
 
@@ -41,5 +41,5 @@ Mapping in Omnia (example Department):
 
 .. image:: tenant-properties-mapping-v7.png
 
-Department is now a usable property that functions as both a value displayer and a refiner in blocks like People roll up and features like the search.
+Department is now a usable property that functions as both a value displayer and a refiner in blocks like People roll up and features like Search.
 
