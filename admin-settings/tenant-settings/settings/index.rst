@@ -1,9 +1,9 @@
 Settings
 ====================
 
-Here you can set the following in Omnia 7.7 (see below for 7.8 and later):
+Here you can set the following in Omnia 7.8 and later (see below for a comment about Omnia 7.7):
 
-.. image:: tenant-settings-v7.png
+.. image:: tenant-settings-v79.png
 
 Select section for more information:
 
@@ -17,7 +17,7 @@ Select section for more information:
    link-handler/index
    media-picker/index
    metrics/index
-   open-ai/index
+   ai-engine/index
    regional-settings/index
    rtf-editor/index
    setup-wizard/index
@@ -26,6 +26,6 @@ Select section for more information:
    user-profile-completion/index
    
 
-In Omnia 7.8 and later, the Open AI option has been renamed AI features, and contains additional functionality (Semantic search). For more information, see:
+In Omnia 7.8 and later, the Open AI option has been renamed AI features, and contains additional functionality (Semantic search). For the Omnia 7.7 functionality (Open AI), see:
 
-:doc:`AI features </admin-settings/tenant-settings/settings/ai-engine/index>`
+:doc:`Open AI </admin-settings/tenant-settings/settings/open-ai/index>`
