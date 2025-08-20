@@ -22,6 +22,10 @@ Note that in Omnia 7.9 and later, a different way of listing and selecting mods 
 
 .. image:: block-select-block-gallery.png
 
+The Block gallery is not just about listing, there are a lot of new options. Read more about them here: :doc:`Block gallery </admin-settings/tenant-settings/block-gallery/index>`
+
+All other options described on this page work the same, even if you use Block gallery.
+
 Editing a block's settings
 ***************************
 To edit a block's settings, do the following:
