@@ -1,7 +1,7 @@
 Share documents
 ===========================================
 
-A block can be set up, for example using an action button, to let users easily share a document with others by uploading it locally on a page. This can very useful, especially in a community, but can be used in other types of apps as well. 
+A block can be set up, for example using an action button, to let users easily share a document with others by uploading it locally on a page. This can be very useful, especially in a community, but can be used in other types of apps as well. 
 
 One document can be uploaded each time. A document uploaded this way will be read only.
 
@@ -78,4 +78,5 @@ And under that, a page rollup with the following query:
 In the community template, the following is added to Setup:
 
 .. image:: share-document-template.png
+
 
