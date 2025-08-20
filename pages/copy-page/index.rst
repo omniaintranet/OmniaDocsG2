@@ -1,7 +1,7 @@
 Copy a page
 ==============================================
 
-You can copy a page. This could be really useful if you need to create a similar page somewhere. Then you just need to edit the differences. Here's how:
+You can copy a page and place the copy anywhere within the page same page collection. This could be really useful if you need to create a similar page somewhere. Then you just need to edit the differences. Here's how:
 
 1. Edit a page.
 2. Open the navigation tree.
@@ -13,13 +13,11 @@ You can copy a page. This could be really useful if you need to create a similar
 
 .. image:: copy-page-menu.png
 
-5. Select the page you want to copy the page as a sub page to.
+5. Select the page where you want the copy placed as a sub page.
 
 .. image:: copy-page-select-target.png
 
 6. Click OK.
 
 The page is now copied to the selected position.
-
-
 
