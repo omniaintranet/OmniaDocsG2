@@ -18,6 +18,10 @@ To add a block to a page, do the following:
 
 .. image:: block-select-new.png
 
+Note that in Omnia 7.9 and later, a different way of listing and selecting mods are available, called Block gallery. If that functionality is activated the block list can look something like this:
+
+.. image:: block-select-block-gallery.png
+
 Editing a block's settings
 ***************************
 To edit a block's settings, do the following:
