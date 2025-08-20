@@ -1,7 +1,7 @@
 Using tokens in Omnia
 =============================================
 
-Here you will find a list of tokens that can be used in Omnia for various purposes. Note that tokens must not be translated.
+Here you will find a list of tokens that can be used in Omnia for various purposes. This list is not to be considered the absolute full list. Tokens can be added for specific uses. Note that tokens must not be translated.
 
 Tokens in search query
 ***********************
@@ -86,4 +86,5 @@ You can use these placeholders in the cover page, the header or the footer. Shor
 Using placeholders in document management
 ******************************************
 For tokens (placeholders) that can be used in document management, see this page: :doc:`Creating a document template with place holders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
+
 
