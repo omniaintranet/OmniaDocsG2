@@ -5,6 +5,8 @@ If you need to publish information in several languages in Omnia, you start with
 
 To publish pages in more than one language, you use variations. Languages for the variations are set up in the publishing app settings, meaning each publishing app can have it's own variations settings.
 
+For more information about adding languages, see: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+
 For more information about variations, see: :doc:`Language version of a page </pages/language-versions-of-a-page/index>`
 
 Texts in blocks and variations
@@ -26,4 +28,5 @@ When variations has been set up in a publishing app, adding texts in several lan
 A variation is really a copy of a main/source page, where a variation author can add the information in the chosen  language.
 
 For more information on how an author/variation editor can work with a variation page, see: :doc:`Edit page variation </pages/edit-page-variations/index>`
+
 
