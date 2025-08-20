@@ -7,6 +7,8 @@ To use it, just click in the search field and start typing. Here' an example:
 
 .. image:: people-picker.png
 
+For information about how the people picker works when accessibility features are activated, see: :doc:`Accessibility </accessability/index>`
+
 Normally, single users, security groups and Microsoft 365 groups can be added here (In Omnia on-prem, Microsoft 365 groups can’t be used). There are a few exceptions where only single users can be added.
 
 External users that has been invited in Entra ID can be added here as well. Users invited this way can log in with their own Microsoft 365 account. 
@@ -30,4 +32,5 @@ If you happen to select a user or a group by mistake, just click the x to remove
 More information for administrators: :doc:`Synchronization (User management) </admin-settings/tenant-settings/user-management/synchronization/index>`
 
 For a decsription of how the people picker works when accessibility features are on, see this page: :doc:`Accessibiity </accessability/index>`
+
 
