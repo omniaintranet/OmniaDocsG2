@@ -15,7 +15,7 @@ You can really work the way you want, you don't need a section to add a block, f
 
 .. image:: sections-1.png
 
-2. select the base layout.
+2. select the base layout (image below using the new option Block gallery in Omnia 7.9).
 
 .. image:: sections-2.png
 
