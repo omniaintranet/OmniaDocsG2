@@ -11,21 +11,22 @@ New versions of the pages being bulk updated are automatically created.
 
 1. Select "Search property".
 2. In "Property value", add the value to be replaced.
-3. Click FIND.
+3. If the search should not include variations, select "Exclude variations".
+4. Click FIND.
 
 A list of pages that has the selected property defined is displayed.
 
-4. In "New value", add the value that should replace the one you selected.
-5. Select all pages that should replace the value.
-6. Click REPLACE.
+5. In "New value", add the value that should replace the one you selected.
+6. Select all pages that should replace the value.
+7. Click REPLACE.
 
 or
 
-5-6. Just click REPLACE ALL to replace all present in the list.
+6-7. Just click REPLACE ALL to replace all present in the list.
 
 .. image:: pages-bulk-update-2-v79.png
 
-Be aware that, if there are many pages selected, the update may take some time.
+Be aware that, if there are many pages selected (especially if variations are included), the update may take some time.
 
 When the update is finished, the update is noted in the page history of each page.
 
@@ -56,4 +57,5 @@ Example: A property with a a calculated date like "Review date" or "Archive date
 .. image:: bulk-page-types.png
 
 You can select the pages that should be updated and then select RECALCULATE or just click RECALCULATE ALL to update all pages present in the list.
+
 
