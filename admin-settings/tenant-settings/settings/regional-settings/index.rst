@@ -17,7 +17,7 @@ There must always be a language selected as default Language, in this example En
 
 .. image:: tenant-settings-language-default-78.png
 
-+ **Exclude Country**: If you don't want to show a country flag for the language in the lists where users select language, select this option. (When you do, the flags dissapears from this list as well).
++ **Exclude Country**: If you don't want to show a country flag for the language in the lists where users select language, select this option. (When you do, the flags dissapear from this list as well).
 
 To select another language as default, just click the ring and save. To remove a language from this list, click the dust bin.
 
