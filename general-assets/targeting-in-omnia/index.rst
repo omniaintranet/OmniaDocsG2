@@ -3,7 +3,7 @@ Using targeting
 
 In many parts of Omnia you can choose to target information to certain groups or users. The main purpose for this functionality is to display relevant information for certain users, not necessarilty to hide information from others. With that said, for several targeting implementations, the results are that only the targeted group of users can see the information, because there are no other way to find it. Two examples are targeting mega Menu objects and action menu objects. Another example is promoted Search results.
 
-An important difference is targeting for pages, including page variations. Which pages a user can find or not are fully controlled by permissions. So, even if a user is not part of the group for example a news article is targeted to, the user can always find the news article by brwosing or searching. 
+An important difference is targeting for pages, including page variations. Which pages a user can find or not are fully controlled by permissions. So, even if a user is not part of the group for example a news article is targeted to, the user can always find the news article by browsing or searching, if he or she is allowed to read it. 
 
 Prerequisites
 ******************
@@ -53,3 +53,4 @@ Or:
 To delete a targeting filter, just click the x.
 
 .. image:: delete-targeting-filter-78.png
+
