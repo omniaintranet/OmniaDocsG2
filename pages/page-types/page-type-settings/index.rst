@@ -138,7 +138,7 @@ Available in Omnia 7.9 and later. Here you can create a rule for page reviews, f
 + **Date property**: Select a date property from the list.
 + **Show message bar**: Select this option if you would like to show a message bar for a page that have not been reviewed. See below for more information.
 + **Send Email**: Select this option if you would like to send an Email message for a page that has not been reviewed. See below for more information.
-+ **Set state Suspended**: If a page that is suspended should be flag for, select this option. Then suspended pages can be filteret, for example in a page rollup. There are also some addtional settings, see below.
++ **Set state Suspended**: If a page that is suspended should be flagged, select this option. Then suspended pages can be filteret, for example in a page rollup. There are also some addtional settings, see below.
 
 Show message bar
 -----------------
