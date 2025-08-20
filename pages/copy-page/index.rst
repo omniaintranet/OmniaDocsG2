@@ -1,15 +1,15 @@
-Copy one or more pages
+Copy a page
 ==============================================
 
-You can copy a page, or a main page and all it's sub pages, anywhere within the publishing app. This could be really useful if you need to create similar pages somewhere. Then you just need to edit the differences. Here's how:
+You can copy a page. This could be really useful if you need to create similar pages somewhere. Then you just need to edit the differences. Here's how:
 
 1. Edit a page.
 2. Open the navigation tree.
-3. Select the page you want to copy. If there are any sub pages, they are selected automatically.
+3. Select the page you want to copy. 
 
 .. image:: copy-page-select.png
 
-4. Open the menu and select "Move page".
+4. Open the menu and select "Copy page".
 
 .. image:: copy-page-menu.png
 
@@ -19,4 +19,5 @@ You can copy a page, or a main page and all it's sub pages, anywhere within the 
 
 6. Click OK.
 
-The page(s) are now copied to the selected position.
+The page are now copied to the selected position.
+
