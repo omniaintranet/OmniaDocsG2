@@ -19,5 +19,6 @@ You can copy a page. This could be really useful if you need to create similar p
 
 6. Click OK.
 
-The page are now copied to the selected position.
+The page is now copied to the selected position.
+
 
