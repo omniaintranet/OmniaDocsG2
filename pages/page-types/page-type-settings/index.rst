@@ -160,6 +160,8 @@ You can also add placeholders to the message to add a link to the page and more.
 
 Note that this is information, you can't select a placeholder in the list, you can add one or more manually to the Email message, as shown in the image above.
 
+**A tip!** The place holder list is text so you can actually select the "text" containing the placeholder, copy and place it in the Email.
+
 Set state suspended
 ---------------------
 When you select thais option, suspended pages with this page type are flagged. The following options also become available:
