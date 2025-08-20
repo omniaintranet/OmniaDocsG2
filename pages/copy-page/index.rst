@@ -1,7 +1,7 @@
 Copy a page
 ==============================================
 
-You can copy a page and place the copy anywhere within the page same page collection. This could be really useful if you need to create a similar page somewhere. Then you just need to edit the differences. Here's how:
+You can copy a page and place the copy anywhere within the same page collection. This could be really useful if you need to create a similar page. Then you just need to edit the differences. Here's how:
 
 1. Edit a page.
 2. Open the navigation tree.
