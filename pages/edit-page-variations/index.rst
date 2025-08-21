@@ -1,7 +1,7 @@
 Edit page variations
 ========================
 
-For each variation a specific variation author can be set up, see below. If not, all authors of the main page can edit the variations as well.
+For each variation a specific variation author can be set up, see below. If not, all authors of the main page can edit the variations as well. This is the case in Omnia 7.8 and earlier. In Omni 7.9 and later, permissions for editing specific variations can be set up if needed.
 
 This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
 
