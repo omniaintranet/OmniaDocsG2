@@ -3,7 +3,7 @@ Edit page variations
 
 For each variation a specific variation author can be set up, see below. If not, all authors of the main page can edit the variations as well.
 
-This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 there are a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
+This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
 
 .. image:: edit-variations-3-79.png
 
