@@ -1,6 +1,98 @@
 Release 7
 ========================================
 
+
+(7.9) Block Gallery
+------------------------------------------------------
+
+We are excited to introduce the Block Gallery, a new feature that empowers users to configure available blocks and create custom blocks tailored to their needs. Users can also create personal block templates from existing blocks or by combining multiple blocks into a section, making it easier to reuse complex setups. 
+
+.. image:: BlockGallery01.png
+
+Once block templates are created, editors can easily insert them when building pages - Instead of starting from scratch.
+
+.. image:: BlockGallery02.png
+
+
+Key Benefits:
+
+- Increased Efficiency: Users can quickly select from pre-configured blocks instead of recreating content from scratch.
+
+- Customization: Teams can create blocks that reflect their unique workflows or business requirements.
+
+- Consistency: Standardized blocks ensure uniformity in content structure and presentation, reducing errors and improving collaboration.
+
+Use Case Examples:
+
+- A marketing team configures a set of approved content blocks for campaign templates, ensuring consistent branding and messaging.
+
+- A product team creates custom blocks for reporting metrics specific to their project, enabling faster and more accurate data presentation.
+
+- Any user can leverage existing blocks to streamline repetitive tasks, saving time and reducing manual effort.
+
+
+(7.9) Page Bulk update
+------------------------------------------------------
+
+The new Page Bulk Update feature allows users to update multiple pages at the same time. Instead of making the same change repeatedly on individual pages, you can now apply updates in one go. This streamlines workflows, reduces manual effort, and ensures greater consistency across content.
+
+.. image:: PageBulkUpdate01.png
+
+Key Benefits:
+
+- Time Savings: Significant reduction in repetitive work when the same update needs to be applied to multiple pages.
+
+- Consistency: Ensures updates (e.g., structure, layout, or blocks) are applied uniformly, minimizing the risk of errors.
+
+- Scalability: Makes it easier to maintain large sets of pages, especially for teams managing complex sites or frequent changes.
+
+- Control: Bulk updates can be applied with precision, ensuring governance and oversight when making widespread changes.
+
+
+(7.9) Page Review and suspend 
+------------------------------------------------------
+
+The new Page Review & Suspend functionality adds governance and quality control to the publishing process. Pages can now be submitted for review, approved before publishing, or suspended if they are outdated or inaccurate. The feature also includes user-facing notifications, ensuring transparency and clarity for both editors and end users.
+
+This is how a published page looks to end users. All content is fully visible and accessible.
+
+.. image:: PageReview01.png
+
+A banner is displayed at the top of the page to let users know that the content is currently under review and may be updated.
+
+.. image:: PageReview02.png
+
+The page content is hidden. Instead, a message is shown to users explaining that the page is unavailable due to missing or pending review
+
+.. image:: PageReview03.png
+
+Key Benefits:
+
+- User Transparency: End users are clearly informed when content is under review or unavailable, avoiding confusion.
+
+- Governance & Compliance: Organizations gain precise control over which content is visible, with the ability to suspend without deleting.
+
+- Configurable Flows: Each page type can have its own review and suspend flow, making it possible to apply stricter governance to sensitive content (e.g., HR policies, compliance documents) while keeping lighter workflows for less critical pages.
+
+- Efficiency: Editors and reviewers are automatically notified via email, keeping the review cycle fast and coordinated.
+
+(7.9) Variation enhancements 
+------------------------------------------------------
+
+It's now possible to add specific author and editor permissions for a variation within a page collection.
+
+.. image:: variation-specific-permissions.png
+
+There are new settings to configure who will receive notifications when the default variation of a page is updated.
+Apart from the variation author, it's now also possible to receive notifications based on a page property on the actual page.
+ 
+.. image:: variation-notification-settings.png
+
+Support is added for using email enabled groups as variation authors.
+
+Another minor improvement is that when creating a new variation of a page which is configured to use reusable content, the menu for configuring reusable content is opened by default.
+
+
 (7.8) More Analytics Possibilities 
 ------------------------------------------------------
 
