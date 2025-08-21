@@ -9,6 +9,8 @@ The tenant page types are handled from here:
 
 You create and edit the tenant page types exactly the same way as the local page types, as described here: :doc:`Page types </pages/page-types/index>`
 
+If you're looking for a decsription of the page types settings, see this page: :doc:`Page types settings </pages/page-types/page-type-settings/index>`
+
 The "only" difference is that the tenant page types are created and edited here, they are not visible in the list "Page types" in the publishing app, but can be available when an editor creates a new page.
 
 **A tip!** If you go to a suitable page before going to Omnia admin, the preview can show some content when you edit tenant page types.
