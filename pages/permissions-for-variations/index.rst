@@ -11,7 +11,7 @@ Variation specific permissions
 **********************************
 In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view.
 
-You can set permissions for all variation pages of a certain typ in the page collection, this way:
+You can set permissions for all variation pages of a certain type in the page collection, this way:
 
 1. Open a page for editing.
 2. Select the variation you would like to set permissions for.
@@ -46,6 +46,7 @@ This is how it's set up:
 Now the Danish variation of this page can be edited only by the colleauge(s) you have selected.
 
 Note that the variation you set permissions for is shown, in this example "Svenska".
+
 
 
 
