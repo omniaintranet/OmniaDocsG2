@@ -16,6 +16,8 @@ Prerequisites:
 
 You also must see to that there's a search category with the search provider "Semantic search" available for each business profile where you plan to use this functionality.
 
+You may also have to set up queryable properties for semantic search. These properties are used so that search block instances that use the semantic search category with the appropriate scope, can be created. They are the metadata of the indexed documents/pages. 
+
 You can then decide for each search block to use semantic search or some other search provider by selecting search category.
 
 For semantic search to work, pages and documents must be indexed. It's needed to be able to index page collections. Find these settings on page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet. 
@@ -23,5 +25,6 @@ For semantic search to work, pages and documents must be indexed. It's needed to
 **Very important!** The semantic search will soon be developed further in Omnia but for now (Omnia 7.8 and 7.9) it does **not support security trimming**. Therefore, the easiest way forward at this point, is to use semantic search only for common information that anyone in the organization have permission to read. 
 
 Also, there's a permission group available where you can add the colleagues or groups that should be able to use semantic search. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
+
 
 
