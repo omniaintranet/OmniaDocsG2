@@ -43,7 +43,6 @@ This is how it's set up:
 
 6. Save.
 
-Now the Danish variation of this page can be edited only by the colleauge(s) you have selected.
+Now the variation of this page, Dansk i detta exempal, can be edited only by the colleauge(s) you have selected.
 
-Note that the variation you set permissions for is shown, in this example "Svenska".
 
