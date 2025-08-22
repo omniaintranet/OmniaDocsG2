@@ -36,19 +36,19 @@ You can also search for users the same way as in other people lists.
 
 .. image:: page-permissions-remove-user-new.png
 
-7. Click "SAVE" when you're done. (If you don't want to save, just close the window to ignore the changes).
+7. Click "SAVE" when you're done. (If you don't want to save, just close the window to ignore the changes.
 
-Variation specific permissions
-**********************************
-In Omnia 7.9 and later, you can set variation specific permissions if needed. 
-This is how:
+Permissions for variations
+***************************
+A variation page is simply a copy of a source page, with some sort of alternative content, for example in another language.
 
-1. Select "Permissions" for a page of the variation where you want to set variation specific permission. (This option is not available for pages of the default variation).
-2. Break permission inheritance.
-3. Select "Enable variation specific permissions". 
-4. Add editor and/or author permissions for the variation if needed.
+A variation can be assigned to a variation (in Omnia 7.9 and later several authors) but if that is not done, permission for the source page apply to the variations as well.
 
-.. image:: page-permissions-variation-specific.png
+Read more about variation authors on this page: :doc:`Publishing app settings </pages/page-settings/index>`
+
+If needed, specific permissions for certain variations and varition pages can be set up, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
+
+
 
 This settings is then used for all variation pages of that specific variation (Swedish in the example above) in the publishing app.
 
