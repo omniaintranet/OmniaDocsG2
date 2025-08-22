@@ -15,17 +15,17 @@ You can set permissions for all variation pages of a certain type in the page co
 
 1. Open a page for editing.
 2. Select the variation you would like to set permissions for.
-4. Select permissions for the page collection.
+3. Select permissions for the page collection.
 
 .. image:: permission-variation-page-collection.png
 
-5. Break inheritance if it's not done already.
-6. Select "Enable variation specific permissons".
-7. Set permissions for editor and/or author.
+4. Break inheritance if it's not done already.
+5. Select "Enable variation specific permissons".
+6. Set permissions for editor and/or author.
 
 .. image:: permission-variation-page-collection-permissions.png
 
-8. Save.
+7. Save.
 
 Note that the variation you set permissions for is shown, in this example "Svenska".
 
@@ -36,24 +36,14 @@ This is how it's set up:
 1. Open the page for editing.
 2. Select the variation you would like to set permissions for.
 3. Break inheritance.
-3. Select "Enable variation specific permissions". 
-4. Add editor and/or author permissions for the variation.
+4. Select "Enable variation specific permissions". 
+5. Add editor and/or author permissions for the variation.
 
 .. image:: page-permissions-variation-specific-page.png
 
-5. Save.
+6. Save.
 
 Now the Danish variation of this page can be edited only by the colleauge(s) you have selected.
 
 Note that the variation you set permissions for is shown, in this example "Svenska".
-
-
-
-
-
-
-
-
-
-
 
