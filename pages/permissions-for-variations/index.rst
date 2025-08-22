@@ -9,16 +9,45 @@ Specific authors can be assigned for each variation. If that is done, only they 
 
 Variation specific permissions
 **********************************
-In Omnia 7.9 and later, you can set variation specific permissions if needed. 
+In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view.
 
-This is how:
+You can set permissions for all variation pages of a certain typ in the page collection, this way:
 
-1. Select "Permissions" for a page of the variation where you want to set variation specific permission. (This option is not available for pages of the default variation).
-2. Break permission inheritance.
+1. Open a page for editing.
+2. Select the variation you would like to set permissions for.
+3. Select permissions for the page collection.
+
+.. image:: permission-variation-page-collection.png
+
+4. Break inheritance if it's not done already.
+5. Select "Enable variation specific permissons".
+6. Set permissions for editor and/or author.
+
+.. image:: permission-variation-page-collection-permissions.png
+
+7. Save.
+
+Note that the variation you set permissions for is shown, in this example "Svenska".
+
+If needed, you can se permissions for a specific varition of a page. Here's an example of a case where that could be needed: The page collection is an employee handbook and two colleagues in Sweden are responsable for the handbook, but there is a local variation in Denmark for the page regarding holidays. A local Danish colleague is appointed responsible for the Danish variation of the holidays page only, but should be able to edit any other pages in the page collection. 
+ 
+This is how it's set up: 
+
+1. Open the page for editing.
+2. Select the variation you would like to set permissions for.
+3. Break inheritance.
 3. Select "Enable variation specific permissions". 
-4. Add editor and/or author permissions for the variation if needed.
+4. Add editor and/or author permissions for the variation.
 
-.. image:: page-permissions-variation-specific.png
+.. image:: page-permissions-variation-specific-page.png
+
+5. Save.
+
+Now the Danish variation of this page can be edited only by the colleauge(s) you have selected.
+
+Note that the variation you set permissions for is shown, in this example "Svenska".
+
+
 
 
 
