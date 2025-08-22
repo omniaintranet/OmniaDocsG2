@@ -8,8 +8,10 @@ In this part of the documentation you will find information concerning how to wo
    :titlesonly:
 
    add-link-navigation/index
+   page-approval/index 
    automatic-page-creation/index
    check-page-feedback/index
+   version-history/index
    copy-page/index
    create-page/index
    delete-page/index
@@ -21,17 +23,16 @@ In this part of the documentation you will find information concerning how to wo
    invite-co-authors/index
    language-versions-of-a-page/index
    move-page/index  
-   page-approval/index 
    page-collections/index
-   page-settings/index
    page-statistics/index
    pages-toolbar/index
    page-types/index
    permissions-for-variations/index
    publish-page-changes/index
+   page-settings/index
    reports/index
    reusable-content/index
    send-page-as-email/index
-   version-history/index
+   
    
    
