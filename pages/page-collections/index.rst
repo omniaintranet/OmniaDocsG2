@@ -1,7 +1,7 @@
 Page collections
 ==================
 
-Within a publishing app a number of page collections can exist, where some settings can differ, for example if approval of new pages are needed or not. 
+Within a publishing app a number of page collections can exist, where some settings can differ, for example if approval of new pages are needed or not. Different permissions can also be used.
 
 A page collection contains, as the name imply, a number of pages.
 
