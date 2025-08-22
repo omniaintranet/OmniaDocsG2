@@ -79,7 +79,7 @@ In Omnia 7.9 and later there are some additions:
 .. image:: variations-79.png
 
 + **Variation authors**: Several variation authors can be added if needed.
-+ **Notifications for edits of pages*: When a source page has been edited a notification can be sent to the variation authors, and/or to someone else based on page property. One example is that a page approver can be notified. The list of page properties becomes available when "Page property" is selected. Note that only one page property can be selected.
++ **Notifications for edits of pages**: When a source page has been edited a notification can be sent to the variation authors, and/or to someone else based on page property. One example is that a page approver can be notified. The list of page properties becomes available when "Page property" is selected. Note that only one page property can be selected.
 
 Also note that notifications of new pages created in the publishing app, always are sent to all variation authors.
 
@@ -91,7 +91,7 @@ Use targeting for a variation to set which variation of a page that will be disp
 
 To target a page variation, do the following: 
 
-1. Click "Add Ttargeting filter" when editing a page variation's settings.
+1. Click "Add targeting filter" when editing a page variation's settings.
 
 .. image:: page-variation-add-targeting-612.png
 
