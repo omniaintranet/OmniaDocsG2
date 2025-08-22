@@ -59,7 +59,7 @@ Do the following to create a new variation (you have to scroll down to the end o
 
 .. image:: click-add-variation-612.png
 
-2. Use the following settings:
+2. Use the following settings (Omnia 7.8 and earlier):
 
 .. image:: variations-612.png
 
@@ -73,6 +73,15 @@ Do the following to create a new variation (you have to scroll down to the end o
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
 Languages used for titles, or for targering, must be set up in the tenant Settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+
+In Omnia 7.9 and later there are some additions:
+
+.. image:: variations-79.png
+
++ **Variation authors**: Several variation authors can be added if needed.
++ **Notifications for edits of pages*: When a source page has been edited a notification can be sent to the variation authors, and/or to someone else based on page property. One example is that a page approver can be notified. The list of page properties becomes available when "Page property" is selected. Note that only one page property can be selected.
+
+Also note that notifications of new pages created in the publishing app, always are sent to all variation authors.
 
 Targeting a page variation
 ----------------------------
