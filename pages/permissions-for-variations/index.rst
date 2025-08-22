@@ -29,7 +29,7 @@ You can set permissions for all variation pages of a certain type in the page co
 
 Note that the variation you set permissions for is shown, in this example "Svenska".
 
-If needed, you can set permissions for a specific varition of a page. Here's an example of a case where that could be needed: The page collection is an employee handbook and two colleagues in Sweden are responsible for the handbook, but there is a local variation in Denmark for the page regarding holidays. A local Danish colleague is appointed responsible for the Danish variation of the holidays page only, but should be able to edit any other pages in the page collection. 
+If needed, you can set permissions for a specific varition of a page. Here's an example of a case where that could be needed: The page collection is an employee handbook and two colleagues in Sweden are responsible for the handbook, but there is a local variation in Denmark for the page regarding holidays. A local Danish colleague is appointed responsible for the Danish variation of the holidays page only. He or she should not be able to edit any other pages in the page collection. 
  
 This is how it's set up: 
 
@@ -46,6 +46,7 @@ This is how it's set up:
 Now the Danish variation of this page can be edited only by the colleauge(s) you have selected.
 
 Note that the variation you set permissions for is shown, in this example "Svenska".
+
 
 
 
