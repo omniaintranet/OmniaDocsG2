@@ -16,7 +16,7 @@ These lists are available here:
 
 .. image:: queryable-all-v79.png
 
-The lists are handled the same way. Here's part of the list for App instances as an example:
+The lists are handled the same way. Here's part of the list for App instances as an example (but note that queryable properties for semantic search works a bit differently, see below):
 
 .. image:: queryable-app-instances-v79.png
 
