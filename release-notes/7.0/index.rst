@@ -5,7 +5,7 @@ Release 7
 (7.9) Block Gallery
 ------------------------------------------------------
 
-We are excited to introduce the Block Gallery, a new feature that empowers users to configure available blocks and create custom blocks tailored to their needs. Users can also create personal block templates from existing blocks or by combining multiple blocks into a section, making it easier to reuse complex setups. 
+We are excited to introduce the Block Gallery, a new feature that empowers admins to configure available blocks and create custom blocks tailored to their needs. Admins can also create personal block templates from existing blocks or by combining multiple blocks into a section, making it easier to reuse complex setups. 
 
 .. image:: BlockGallery01.png
 
