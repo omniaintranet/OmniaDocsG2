@@ -7,29 +7,31 @@ In this part of the documentation you will find information concerning how to wo
 .. toctree::
    :titlesonly:
 
-   create-page/index
-   edit-page/index
-   move-page/index
+   add-link-navigation/index
+   automatic-page-creation/index
+   check-page-feedback/index
    copy-page/index
-   hide-page/index
+   create-page/index
    delete-page/index
+   edit-page/index
+   edit-page-navigation/index
+   edit-page-variations/index
+   edit-permissions/index
+   hide-page/index  
    invite-co-authors/index
    language-versions-of-a-page/index
-   edit-page-variations/index
-   publish-page-changes/index
-   send-page-as-email/index
-   reusable-content/index
-   automatic-page-creation/index
-   version-history/index
-   check-page-feedback/index
-   page-approval/index
-   add-link-navigation/index
-   edit-page-navigation/index
-   edit-permissions/index
-   page-types/index
+   move-page/index  
+   page-approval/index 
+   page-collections/index
    page-settings/index
    page-statistics/index
-   reports/index
-   page-collections/index
    pages-toolbar/index
+   page-types/index
+   permissions-for-variations/index
+   publish-page-changes/index
+   reports/index
+   reusable-content/index
+   send-page-as-email/index
+   version-history/index
+   
    
