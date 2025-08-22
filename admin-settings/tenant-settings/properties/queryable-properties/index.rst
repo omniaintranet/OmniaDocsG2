@@ -31,7 +31,7 @@ This is then shown:
 .. image:: queryable-app-instances-new-v79.png
 
 2. Select an enterprise property in the list and click ADD.
-3. Add more properties if applicable (meaning all selected will be added to this list).
+3. Add more properties if applicable (meaning all selected will be added to the list).
 4. Save when you're done.
 
 A note about Semantic search
