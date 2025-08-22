@@ -48,7 +48,3 @@ Read more about variation authors on this page: :doc:`Publishing app settings </
 
 If needed, specific permissions for certain variations and varition pages can be set up, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
-
-
-This settings is then used for all variation pages of that specific variation (Swedish in the example above) in the publishing app.
-
