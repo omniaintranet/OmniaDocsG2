@@ -8,7 +8,8 @@ Here, you add properties that should be queryable in Omnia's database. The prope
 + **Processes**: In Process rollup.
 + **Sign-off Request**: In Sign-off requests rollup.
 + **Forms**: In the Forms rollup.
-+ **Semantic search**: In any rollup when using semantic search.
+
+**Semantic search* is a different case. These properties are used so that search block instances that use the semantic search category with the appropriate scope, can be created. They are the metadata of the indexed documents/pages. 
 
 To be available here, a property must first be added to Enterprise properties. 
 
