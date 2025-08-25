@@ -146,6 +146,10 @@ If you selected to display a message bar, you can add a title (heading) and a te
 
 .. image:: show-message-bar.png
 
+Here's en example of how a message bar is shown:
+
+.. image:: message-bar.png
+
 Send Email
 -----------------
 If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course.
@@ -164,7 +168,7 @@ Note that this is information, you can't select a placeholder in the list, you c
 
 Set state suspended
 ---------------------
-When you select thais option, suspended pages with this page type are flagged. The following options also become available:
+When you select this option, suspended pages with this page type are flagged. The following options also become available:
 
 .. image:: suspended-settings.png
 
