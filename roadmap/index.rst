@@ -11,25 +11,16 @@ Web Content Management
 ---------------------------------------------
 
 * Accessibility enhancements related to WCAG
-* Video upload in media picker
-* Additional media provider support
-* Page bulk update
 * Improved print features in the WCM editor
-
+* Page update notifications
+* Link hierarchy and support for text nodes in the Omnia navigation
+* Page deletion workflow
 
 Blocks
 ---------------------------------------------
 
-* Downloadable web parts definitions from within Omnia admin
-* Welcome block
 * List rollup block
-
-
-AI
----------------------------------------------
-
-* Support for semantic search
-* Enhanced AI features
+* A-Z paging/filtering for rollup blocks
 
 Mobile
 ---------------------------------------------
@@ -39,5 +30,5 @@ Mobile
 Governance
 ---------------------------------------------
 
-* Improved analytics functionality, incl. more trackable actions in Matomo
-* Block gallery
+* Search statistics export
+* Update-only author permission
