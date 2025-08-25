@@ -146,9 +146,9 @@ If you selected to display a message bar, you can add a title (heading) and a te
 
 .. image:: show-message-bar.png
 
-Here's en example of how a message bar is shown:
+Here's en example of how a message bar is shown (the grey bar at the top):
 
-.. image:: message-bar.png
+.. image:: message-bar-border.png
 
 Send Email
 -----------------
