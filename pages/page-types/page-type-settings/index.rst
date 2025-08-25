@@ -175,3 +175,7 @@ When you select this option, suspended pages with this page type are flagged. Th
 + **Change page type**: When a page becomes suspended, the page type can be changed for the page. This will allow the end user to identify pages that has not been reviewed. The page type changed to can either hide the original content completely or simply put a big disclaimer on the page, depending on settings for that page type. 
 + **Remove from search**: A suspended page can be removed from search. It will not be possible to find the page neither with SharePoint search nor with Omnia search. The page will still show up in rollups, though.
 
+In this example, the page review rule changes the page type when the suspend date is reached, and this content is shown instead:
+
+.. image:: page-hidden.png
+
