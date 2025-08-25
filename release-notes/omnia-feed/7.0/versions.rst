@@ -1,3 +1,8 @@
+Release 7.8.1
+========================================
+
+- Enhanced encryption support for tokens
+
 Release 7.8.0
 ========================================
 
@@ -199,3 +204,4 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
+
