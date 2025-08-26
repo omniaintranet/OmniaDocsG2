@@ -32,6 +32,7 @@ Blocks
    governance-dashboard/index
    html-script/index
    iframe/index
+   list-rollup/index
    media/index
    media-rollup-block/index
    mega-menu/index
