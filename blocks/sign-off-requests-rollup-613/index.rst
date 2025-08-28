@@ -75,14 +75,15 @@ See this page for more information about custom date filtering: :doc:`Custom dat
 
 Display
 ---------
-This tab contains settings for the view:
+This tab contains settings for the view (image from Omnia 7.9):
 
-.. image:: sign-off-requests-block-settings-display-613.png
+.. image:: sign-off-requests-block-settings-display-79.png
 
 + **View**: Can be "Summary view" or "List view". Summary view can only be used for the scope "Targeted to me". The image at the top of this page is an example of a summary view.
 + **Add column**: For List view you must add at least one column. Click this option to do that. For more information, see below.
 + **Display details in**: In a List view, a post can be clicked for further details. Here you set how the details should be displayed; in a dialog to the left or a dialog to the right. 
 + **Paging**: Avalailable for Summary view. Can be "No paging", "Classic" or "Scroll".
++ **Open in new tab**: Available in Omnia 7.9 and later. Now you can decide if for example settings should be opened in a new tab or not. Note that it doesn't work well to open in new tab in Omnia Feed, so if this rollup is used there, it should not be activated.
 + **Sort by**: Select what the view will be sorted by.
 + **Ascending/Descending**: Sort order is selected here, you know the drill.
 + **No result text**: If a text should be shown when the result of the query is empty, add the text here.
@@ -101,4 +102,5 @@ If you need to edit the settings for a column, you can click the cogwheel to dis
 Filter
 --------
 The filters available are the same in most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
+
 
