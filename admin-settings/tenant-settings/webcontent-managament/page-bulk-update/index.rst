@@ -1,7 +1,7 @@
 Page bulk update
 ===================================
 
-This option is available in Omnia 7.9 and later. Use it to bulk update any of the defined page properties. Note that the properties can be updated for all pages, including variations.
+This option is available in Omnia 7.9 and later. Use it to bulk update any of the defined properties for pages of page types. Note that the properties can be updated for all pages, including variations.
 
 Also note that the user executing the bulk update must have access to the pages that should be updated. Pages that the user does not have access to are simply not shown in the list.
 
@@ -57,5 +57,6 @@ Example: A property with a a calculated date like "Review date" or "Archive date
 .. image:: bulk-page-types.png
 
 You can select the pages that should be updated and then select RECALCULATE or just click RECALCULATE ALL to update all pages present in the list.
+
 
 
