@@ -27,7 +27,7 @@ Block templates
 -----------------
 If you opt to use the block gallery view, you can also create block templates, which is blocks or sections (yes you can create section templates as well, despite the name of the option), with a number of pre defined settings, to make it easier for editors. It can also be used to make sure certain blocks or sections are set up the same way all over the tenant. The templates never replaces blocks or sections, it's always an addition.
 
-**Very important!** You can set up more or less any combination of functionality using the block templates. It has to be done with care. It's the administrators responsibility to not add blocks that could display content that should not be available.
+**Very important!** You can set up more or less any combination of functionality using the block templates. It has to be done with care. You must see to that blocks are not added, that could display content that should not be available.
 
 You must also remember to add templates to the block dialogs (which do contain sections as well) where they should be available. 
 
@@ -97,6 +97,7 @@ You can add and work with headers in all lists. You can also manage the lists th
 .. image:: block-dialog-manage.png
 
 Use the icon to far left to move blocks/sections, templates and headings to the desired order.
+
 
 
 
