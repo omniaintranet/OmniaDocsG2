@@ -1,4 +1,14 @@
-7.9.0 - Draft
+7.9.0
+========================================
+(Omnia 7.9.1 / Workplace 7.9.2 / WCM 7.9.1 / MS 7.9.1 / Analytics 7.9.2 / Feed 7.8.0)
+
+- Fixed an issue where the tenant contacts UI could become unresponsive (#39062).
+- Document authoring site columns now render correctly (#168730).
+- Fixed an issue that would sometimes cause som images not to load in the media picker (#168667).
+- Updated rendering for page properties identeties (#168756).
+
+
+7.9.0
 ========================================
 (Omnia 7.9.0 / Workplace 7.9.0 / WCM 7.9.0 / MS 7.9.0 / Analytics 7.9.0 / Feed 7.8.0)
 
