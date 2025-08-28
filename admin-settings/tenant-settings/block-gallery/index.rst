@@ -7,6 +7,8 @@ In Omnia 7.9 and later, an alternative way of listing the sections and blocks is
 
 You can now choose to use this or the classic view.
 
+The Block gallery is not just about listing, there are a lot of new options, see below.
+
 Block gallery options
 ***************************
 The following options are available in Omnia admin:
@@ -93,4 +95,5 @@ You can add and work with headers in all lists. You can also manage the lists th
 .. image:: block-dialog-manage.png
 
 Use the icon to far left to move blocks/sections, templates and headings to the desired order.
+
 
