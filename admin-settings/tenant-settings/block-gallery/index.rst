@@ -29,6 +29,8 @@ If you opt to use the block gallery view, you can also create block templates, w
 
 **Very important!** You can set up more or less any combination of functionality using the block templates. It has to be done with care. You must see to that blocks are not added, that could display content that should not be available.
 
+**A tip**: Using sections you can create quite complex templates. A section can really contain almost any number of blocks, with almost indefinitve possibilities for setting up useful tamplates. 
+
 You must also remember to add templates to the block dialogs (which do contain sections as well) where they should be available. 
 
 Here's an example of a list with a number of templates created:
@@ -97,6 +99,7 @@ You can add and work with headers in all lists. You can also manage the lists th
 .. image:: block-dialog-manage.png
 
 Use the icon to far left to move blocks/sections, templates and headings to the desired order.
+
 
 
 
