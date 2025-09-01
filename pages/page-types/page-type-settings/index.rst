@@ -152,7 +152,7 @@ Here's en example of how a message bar is shown (the grey bar at the top):
 
 Send Email
 -----------------
-If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course.
+If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course. Any Email enabled group can also be added.
 
 **Note!** Only one Email per day for each receiver is sent.
 
