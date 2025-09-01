@@ -1,7 +1,7 @@
 Edit permissions for a page
 =============================
 
-Default settings is that the same edit permissions apply to all pages, including variations, but that can be changed if needed. If you change permissions for a page that has sub pages, all the sub pages gets the new permissions (they inherit the permissions settings from the "parent"). Also note that permissions for variations works a bit differentlt, see below.
+Default settings is that the same edit permissions apply to all pages, including variations, but that can be changed if needed. If you change permissions for a page that has sub pages, all the sub pages gets the new permissions (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
 
 Do the following:
 
