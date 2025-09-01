@@ -24,7 +24,7 @@ You can now set the following permissions, for this page and all sub pages (Omni
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
-**Note!** Page collection administrators and publishing app administrators are always permitted to work with pages (Editor permissions). They don't need to be added here.
+**Note!** Page collection administrators are always permitted to work with pages (Editor permissions). They don't need to be added here.
 
 5. To add an editor or an author, just open the list and select the user.
 
@@ -42,9 +42,8 @@ Permissions for variations
 ***************************
 A variation page is simply a copy of a source page, with some sort of alternative content, for example in another language.
 
-An author can be assigned to a specific variation (in Omnia 7.9 and later several authors). If that is not done, permission for the source page apply to the variations as well. Also note that page collection administrators always can edit variations if needed.
+An author can be assigned to a specific variation (in Omnia 7.9 and later several authors). This doesn't brake inheritance. A variation author must have the same permisssions as the author(s) of the source page.
 
 Read more about variation authors on this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
-If needed, specific permissions for certain variations and varition pages can be set up, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
-
+In 7.9 and later, permissions for editing variations can be set up differenty if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
