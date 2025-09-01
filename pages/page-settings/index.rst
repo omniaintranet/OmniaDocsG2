@@ -74,7 +74,7 @@ Do the following to create a new variation (you have to scroll down to the end o
 + **Right to left**: If you're creating a variation for a language that is read right to left, select this option.
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
-Languages used for titles, or for targering, must be set up in the tenant Settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+Languages used for, for example titles, variations or for targering, must be set up in the tenant Settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
 
 Also note that a variation author needs to have the same permissions as other page authors in the page collection, and doesn't brake permission heritage. In Omnia 7.9 and later, permissions can be set up differently for variations if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
