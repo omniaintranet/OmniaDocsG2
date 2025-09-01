@@ -17,7 +17,7 @@ Omnia works with inheritance, just as Sharepoint does, so the first thing you ha
 
 .. image:: page-select-permissions-inheritance-new.png
 
-You can now set the following permissions, for this page and all sub pages (options in Omnia 7.8 and earlier):
+You can now set the following permissions, for this page and all sub pages (options in Omnia 7.8 and earlier, see below for Omnia 7.9 and later):
 
 + **Editor**: Can create, delete and move pages and nodes, can use both Design mode and Write mode and can edit permissions here.
 + **Author**: Can create pages and can use Write mode to edit contents in some blocks.
@@ -42,7 +42,7 @@ Permissions for variations
 ***************************
 A variation page is simply a copy of a source page, with some sort of alternative content, for example in another language.
 
-A variation can be assigned to a variation (in Omnia 7.9 and later several authors) but if that is not done, permission for the source page apply to the variations as well.
+An author can be assigned to a specific variation (in Omnia 7.9 and later several authors). If that is not done, permission for the source page apply to the variations as well. Also note that page collection administrators always can edit variations if needed.
 
 Read more about variation authors on this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
