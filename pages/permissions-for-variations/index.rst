@@ -19,7 +19,7 @@ You can set permissions for all variation pages of a certain type in the page co
 
 4. Break inheritance if it's not done already.
 5. Select "Enable variation specific permissions".
-6. Set permissions for editor and/or author.
+6. Set permissions for editor and/or author for the variation.
 
 .. image:: permission-variation-page-collection-permissions.png
 
@@ -44,6 +44,7 @@ This is how it's set up:
 6. Save.
 
 Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected (except for page collection administrators).
+
 
 
 
