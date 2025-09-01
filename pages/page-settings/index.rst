@@ -27,6 +27,8 @@ Use these settings to Edit permissions in the publishing app.
 + **Administrators**: Add and remove publishing app administrators here as needed.
 + **Contributors**: This permissions settings is needed if colleagues should be able to add comments to pages.
 
+Also note that page collection administrators always can edit all pages in the page collection, including variations, regardless if other permissions are set.
+
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 Note that this permissions setting is valid for the settings here, only. To be able to edit publishing app settings in Omnia admin, you need to be either a tenant administrator or administrator for the business profile. Regarding these settings a tenant administrator and business profile administrator can go here and add him or herself to the permissions list and that way gain access to the settings.
@@ -73,6 +75,8 @@ Do the following to create a new variation (you have to scroll down to the end o
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
 Languages used for titles, or for targering, must be set up in the tenant Settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+
+Also note that a variation author needs to have the same permissions as other page authors in the page collection, and doesn't brake permission heritage. In Omnia 7.9 and later, permissions can be set up differently for variations if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
 In Omnia 7.9 and later there are some additions:
 
