@@ -154,6 +154,8 @@ Send Email
 -----------------
 If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course.
 
+**Note!** Only one Email per day for each receiver is sent.
+
 When you add a new page review rule, a suggested message can be available, which you can edit to your liking. Here's an example:
 
 .. image:: send-email-example.png
