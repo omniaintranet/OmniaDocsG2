@@ -17,7 +17,7 @@ Omnia works with inheritance, just as Sharepoint does, so the first thing you ha
 
 .. image:: page-select-permissions-inheritance-new.png
 
-You can now set the following permissions, for this page and all sub pages (options in Omnia 7.8 and earlier, see below for Omnia 7.9 and later):
+You can now set the following permissions, for this page and all sub pages (Omnia 7.8 and earlier, see below for Omnia 7.9 and later):
 
 + **Editor**: Can create, delete and move pages and nodes, can use both Design mode and Write mode and can edit permissions here.
 + **Author**: Can create pages and can use Write mode to edit contents in some blocks.
