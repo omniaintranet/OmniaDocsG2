@@ -43,10 +43,5 @@ This is how it's set up:
 
 6. Save.
 
-Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected (except for page collection administrators).
-
-
-
-
-
+Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected.
 
