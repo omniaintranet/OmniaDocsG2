@@ -78,7 +78,7 @@ Languages used for, for example titles, variations or for targering, must be set
 
 Also note that a variation author needs to have the same permissions as other page authors in the page collection, and doesn't brake permission heritage. In Omnia 7.9 and later, permissions can be set up differently for variations if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
-In Omnia 7.9 and later there are some additions:
+In Omnia 7.9 and later there are some additions here:
 
 .. image:: variations-79.png
 
