@@ -31,7 +31,7 @@ If you decide to choose only one list, add the URL to the list here:
 
 Display
 --------
-For now, only List view is available. Note that you must still select "List view" in the list, even there is just one option.
+For now, only List view is available. Note that you must still select "List view", even as there is just one option.
 
 .. image:: list-rollup-display.png
 
@@ -48,5 +48,6 @@ Export
 Export to Excel can be available for users, if you select this option.
 
 .. image:: list-rollup-export.png
+
 
 
