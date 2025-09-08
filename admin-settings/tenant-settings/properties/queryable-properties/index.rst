@@ -45,7 +45,33 @@ Note that once a queryable property for semantic search has been created, it can
 
 A-Z filtering
 ---------------
-In Omnia 7.9 and later, A-Z filtering can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms, see below.
+**This description is just started. the info is preliminary**.
 
-A-z filtering is a 
+In Omnia 7.9 and later, A-Z filtering can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
+
+A-Z filtering is a complementary filtering solution. When used, a list can be filtered on any of the letters that exist in the data set. And it's not just A-Z. If a language has special letters in the alphabet, A-Z filering works for those letters as well.
+
+Here's an example where A-Z filtering is used:
+
+.. image:: a-z-example.png
+
+As you can see, not all letters exist in that data set, for example D and J, and those letters are then simply not shown as filters. To filter, you click the letter, just as you would with other filters.
+
+For A-Z filtering to work, you must set it up for all applicable queryable properties.
+
+When creating a queryable property, if the property is of the right type (Text or Processes). you can select A-Z filtering for it:
+
+.. image:: a-z-select.png
+
+You can also set this up for existing queryable properties this way:
+
+1. Click the cogwhell for the group.
+
+.. image:: a-z-cogwheel.png
+
+A list of properties, of type Text and type Processes, are shown. Here's an example.
+
+.. image:: a-z-cogwheel-list.png
+
+2. Select the properties that should be available for A-Z filtering and save.
 
