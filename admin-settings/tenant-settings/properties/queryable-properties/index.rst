@@ -45,7 +45,7 @@ Note that once a queryable property for semantic search has been created, it can
 
 A-Z filtering
 ---------------
-**This description is just started. the info is preliminary**.
+**This description is just started. The info is preliminary**.
 
 In Omnia 7.9 and later, A-Z filtering can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
 
