@@ -11,6 +11,8 @@ Here, you add properties that should be queryable in Omnia's database. The prope
 
 **Semantic search** is a different case. These properties are used so that search block instances that use the semantic search category with the appropriate scope, can be created. They are the metadata of the indexed documents/pages. 
 
+In Omnia 7.10 and later, A-Z filtering can be added for queyable properties for Appinstances, Pages, Processes, Sign-off requests and Forms, see below.
+
 To be available here, a property must first be added to Enterprise properties. 
 
 These lists are available here:
