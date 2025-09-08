@@ -41,11 +41,12 @@ Filtering options are similar to other Omnia rollups.
 
 .. image:: list-rollup-filter.png
 
-For more information about filtering in blocks, see: (link to be added)
+For more information about filtering for blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Export
 --------
 Export to Excel can be available for users, if you select this option.
 
 .. image:: list-rollup-export.png
+
 
