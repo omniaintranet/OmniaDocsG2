@@ -18,6 +18,7 @@ Here's an example of available filter options:
 + **Show property label**: Available when "Show sleceted values area" is selected. If selected, the property label is shown as meta data.
 + **Max number of values to show**: Available when "Show sleceted values area" is selected. Using this option you can set the maximum number of values to be displayed before a "Show more". Deafault setting is 0, which means show all.
 + **Fixed filter area**: Select this option to set the filter area as fixed area when scrolling, meaning the filter area will be displayed all the time when you scroll down in a list.
++ **Line break for each filter**: If you want each filter on it's on row, select this.
 + **Dialog position**: You can choose to place the dialog Left or Right.
 
 Settings for search box
@@ -64,7 +65,7 @@ Here's an example:
 
 + **Default Value**: You can add a default value for the search field.
 + **Settings**: Choose "Settings" to show the following three options.
-+ **Filter Type**: Can be Dropdoen or List.
++ **Filter Type**: Can be Dropdonn or List.
 + **Defult position**: Can be top, Left, Right or Dialog.
 + **Fixed filter width**: The filter width is per default dynamic. Set a value here to make the filter width fixed.
 + **Delete**: Click to delete the filter.
@@ -80,4 +81,5 @@ the following options are available for filter style:
 + Default: sets a color contrasting the background for good visibility.
 + Enterprise Glossary: will use these settings.
 + Custom: you can set custom colors for the chip colors for this block specifically. 
+
 
