@@ -7,7 +7,7 @@ Exactly which options will be available here will depend on the type of block an
 
 Here's an example of available filter options:
 
-.. image:: filter-options-7-new.png
+.. image:: filter-options-710.png
 
 + **Show Search Box**: To add a search box, select this option. You can do that without selecting any other options.
 + **Add filter**: To add filters, click this link. See below for more information.
@@ -70,6 +70,10 @@ Here's an example:
 + **Fixed filter width**: The filter width is per default dynamic. Set a value here to make the filter width fixed.
 + **Delete**: Click to delete the filter.
 
+A new filter in Omnia 7.10
+-----------------------------
+In Omnia 7.10, a new filter called A-Z filtering can be available (which really can filter on all available letters for a language, not just A-Z). To be available, queryable properties must be set up for A-Z filtering, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+
 Style options
 ***************
 the following options are available for filter style:
@@ -81,5 +85,6 @@ the following options are available for filter style:
 + Default: sets a color contrasting the background for good visibility.
 + Enterprise Glossary: will use these settings.
 + Custom: you can set custom colors for the chip colors for this block specifically. 
+
 
 
