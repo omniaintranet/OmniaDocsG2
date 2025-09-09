@@ -126,13 +126,14 @@ You can select any combination of options here. Be careful, this can not be chan
 
 Publish
 ---------
-On the Publish tab you can set the following:
+On the Publish tab you can set the following (image from Omnia 7.10):
 
-.. image:: document-types-publish-v78-2.png
+.. image:: document-types-publish-v710.png
 
 + **Replace tokens inside document on publishing**: When a document is published, the placeholders (tokens) will be replaced with metadata, but for a document that will be used as a template, you will probably not want that to happen. If you are creating a document type to be used for templates, deselect this option.
 + **Allow revisions**: Selecting this option you can allow authors to publish a revision of a document that does not require approval, for example for correcting typing errors. If this option is active, it's up to the author to decide if approval is needed or not. Approval is still needed for publication of a new edition of a document.
 + **Publishing approval**: Select if approval is to be used for this document type. If this option is NOT active, a document will be published immediately when an author clicks "Publish". If publishing approval is selected, you must also choose how approval will take place, see below.
++ **Allow scheduled publishing**: Available in Omnia 7.10. To allow scheduled publishing for this document type, select this.
 + **Conversion**: Select if conversion to PDF will be available, and then choose how.
 + **Semantic search**: Can be available in Omnia 7.8 and later. If semantic search should be possible for this document type, select the option and the choose how, see below.
 + **Do not allow the publishing of a document with unaccepted changes**: If you select this option, all unaccepted changes, added with the "Review" options, must be accepted/not accepted before a document can be published.
