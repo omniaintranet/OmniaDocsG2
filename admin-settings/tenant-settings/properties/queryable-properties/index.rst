@@ -75,3 +75,5 @@ A list of properties, of type Text and type Processes, are shown. Here's an exam
 
 2. Select the properties that should be available for A-Z filtering and save.
 
+When a rollup is set up, editors can choose an A-Z property, as in this example (Page rollup) where "Titel (A-Z)" has been added as a filter. This is the setting in example image above.
+
