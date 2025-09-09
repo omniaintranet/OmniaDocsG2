@@ -49,7 +49,7 @@ A-Z filtering
 
 In Omnia 7.9 and later, A-Z filtering can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
 
-A-Z filtering is a complementary filtering solution. When used, a list can be filtered on any of the letters that exist in the data set. And it's not just A-Z. If a language has special letters in the alphabet, A-Z filering works for those letters as well.
+A-Z filtering is a complementary filtering solution. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language has special letters in the alphabet, A-Z filering works for those letters as well.
 
 Here's an example where A-Z filtering is used:
 
