@@ -154,6 +154,12 @@ If you selected that publishing approval is needed for this document type, you m
 + **Based on person property**: You select one of the person properties defined, for example document owner.
 + **Group**: This setting will use the permission group for approvers in the teamsite. Needs "Approvers group" to be selected in settings for document management.
 
+Option for scheduled publishing
+-------------------------------
+When you have selected to allow secheduled publishing för this document type, choose the property to bas that on.
+
+.. image:: doc-scheduled.png
+
 Options for semantic search
 ------------------------------
 For semantic search to be available in the tenant, the feature "Semantic search" must be active.
