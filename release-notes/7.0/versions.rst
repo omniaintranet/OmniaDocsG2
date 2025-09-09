@@ -1,3 +1,12 @@
+7.9.2
+========================================
+(Omnia 7.9.2 / Workplace 7.9.2 / WCM 7.9.2 / MS 7.9.1 / Analytics 7.9.2 / Feed 7.8.0)
+
+- Fixed the people rendering in list views for rollups (#169090).
+- Improved UX feedback when downloading media in the media rollup (#168771).
+- Ensured the page checked out message shows the right value when navigating in the editor (#39064).
+- Fixed an issue in the Mediaflow media usage tracking functionality (#37549).
+
 7.9.1
 ========================================
 (Omnia 7.9.1 / Workplace 7.9.2 / WCM 7.9.1 / MS 7.9.1 / Analytics 7.9.2 / Feed 7.8.0)
