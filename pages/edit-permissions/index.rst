@@ -22,6 +22,12 @@ You can now set the following permissions, for this page and all sub pages (Omni
 + **Editor**: Can create, delete and move pages and nodes, can use both Design mode and Write mode and can edit permissions here.
 + **Author**: Can create pages and can use Write mode to edit contents in some blocks.
 
+In Omnia 7.10 and later, an additional permission setting is available:
+
+.. image:: page-select-permissions-inheritance-710.png
+
++ **Update-only author**: Colleagues with this permission can only update existing pages using Write mode, not create new ones.
+
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 **Note!** Page collection administrators are always permitted to work with pages (Editor permissions). They don't need to be added here.
