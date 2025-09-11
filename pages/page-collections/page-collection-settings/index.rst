@@ -40,7 +40,7 @@ Use the settings this way:
 + **Viva Engage integration**: When Viva Engage (former Yammer) integration is setup, a post will be created in the selected Viva Engage community whenever a new page, matching the selected criteria, is created. See below for more information.
 + **Taxonomy connection**: When this option is activated, it's possible to connect the page collection to a taxonomy. Whenever a page is created in the page collection, a term will be created in the connected taxonomy and the page will automatically be tagged with the newly created term. This can, for example, be useful in different rollups. For more information, see below.
 + **Approval**: If approval should be needed for publication of pages (new pages and updates), enable this. If not enabled, editors can publish themselves. See more info about approval settings below.
-+ **Deletion approval**: Available in Omnia 7.10. Works the same and has almost the same settings as publishing approval (see below), but for page deletion. The only difference is that multistep approval is not availble for deletion approval.
++ **Deletion approval**: Available in Omnia 7.10. Works the same and has almost the same settings as publishing approval (see below), but for page deletion. The only difference is that multistep approval is not availble for deletion approval. Also note that "Enable approval" must be activated in the admin settings.
 + **Activities**: For a community, activity tracking can be activated. See the heading *Settings for activity points* on this page, for more information: :doc:`Setting up a community </using-communities/settings/index>` 
 + **Notifications**: This setting defines when a notification that a page is new should be shown for users, for example in the Notification panel. Normally it's only when the page is created, not when it's updated. If this option is activated the page is considered to be new every time it's updated and a new version is published. Therefore it's probably more relevant for pages in communities than for publishing pages.
 + **Send as Email**: Select "Enable send page as Email" if pages in the page collection should be available to send through Email. One example of when this is needed is in a Newsletter inplementation. If this option is activated, authors can decide to send the new or edited page by email, or decide not to, each time the page is published.
@@ -273,6 +273,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
