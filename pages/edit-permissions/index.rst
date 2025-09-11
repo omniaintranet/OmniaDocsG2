@@ -26,7 +26,7 @@ In Omnia 7.10 and later, an additional permission setting is available:
 
 .. image:: page-select-permissions-inheritance-710.png
 
-+ **Update-only author**: Colleagues with this permission can only update existing pages using Write mode, not create new ones.
++ **Update-only author**: Colleagues with this permission can only update existing pages using Write mode, and publish a new version of the page, but can not use the navigation panel, meaning can not, for example, create new pages. Also, this permission does not allow pages being deleted.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
