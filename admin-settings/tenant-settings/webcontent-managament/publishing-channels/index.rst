@@ -40,6 +40,7 @@ Here's how to create a new channel:
 + **Publisher**: One or more publishers can be added. This is not mandatory. The colleagues you add here can always publish to the channel without approval.
 + **Force channel description to target group**: Targeting for the channel can be used to add a mandatory subscription to the channel for colleagues or groups. If you want to do that, select this option.
 + **Targeting filter**: Shown when the option above is selected. Targeting settings are done the same way as in other places in Omnia, but the result is different. For the colleagues or groups targeted, a mandatory subscription to the channel is added. For more information about how to set up targeting, see this page : :doc:`Using Targeting </general-assets/targeting-in-omnia/index>`
++ **Target channel to specific editors**: Available in Omnia 7.10 and later. Now you target a channel to specific editors if needed.
 
 3. Save when you're done.
 
@@ -78,3 +79,4 @@ A list of pages belonging to one or more channels can be created using the Page 
 
 Users can subscribe to channels, as described on this page: :doc:`My Subscriptions </user-options/my-subscriptions/index>`
  
+
