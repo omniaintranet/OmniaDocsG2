@@ -38,11 +38,11 @@ You can pick a number of uses to display in the rollup. In Omnia 7.10 and later,
 
 .. image:: peoplerollup-settings-query-picker-710.png
 
-If you choose to pick users, click ADD USER.
+To add one or more users, click ADD USER.
 
-.. image:: peoplerollup-settings-query-pick-78.png
+.. image:: peoplerollup-settings-query-pick-710.png
 
-The people picker is opened and you use it as described here: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+The people picker opens and you use it as described here: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 Note that groups can also be available in the people picker. 
 
