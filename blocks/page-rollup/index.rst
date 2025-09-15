@@ -31,12 +31,12 @@ Here you can add a title for block:
 
 Query
 ------
-You can choose to pick a number of pages to display in the rollup, or use the query buidler.
+You can choose to pick a number of pages to display in the rollup, or use the query builder.
 
 .. image:: page-rollup-pick1.png
 
-+ **Pick pages**: To be able to pick som pages in design mode, select this option.
-+ **Pick in Write mode**: Available when "Pick pages" is selected. Select this option if authors should be able to pick pages in Write mode. 
++ **Pick pages**: To be able to pick some pages in Design mode, select this option.
++ **Pick in Write mode**: Select this option if authors should be able to pick pages in Write mode. 
 + **ADD PAGE**: When you have selected "Pick pages", you can pick some pages to always be displayed in the list. Click this option and use the page picker. See this page for more information: :doc:`Page picker </general-assets/page-picker/index>`
 
 For query builder, the following options are available:
