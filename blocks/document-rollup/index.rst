@@ -28,15 +28,19 @@ You can either choose to pick documents to be displayed in the block, or use the
 
 .. image:: document-rollup-query-new2.png
 
-Pick ocuments
+Pick documents
 ^^^^^^^^^^^^^^^^^
+You can pick a number of documents to be displayed in the rollup. In Omnia 7.10 and later you can also allow authors to pick documents in Write mode. 
+
+.. image:: document-rollup-pick-710.png
+
 To pick documents, click "ADD DOCUMENT".
 
-.. image:: document-rollup-pick-new2.png
+.. image:: document-rollup-pick-pick-710.png
 
 The document picker opens and you use it to select documents. Available filters etc depend on settings in Omnia Admin. Here's an example:
 
-.. image:: document-rollup-document-picker-77.png
+.. image:: document-rollup-document-picker-710.png
 
 See this page for more information on how to use the document picker: :doc:`The Document picker </general-assets//document-picker/index>`
 
