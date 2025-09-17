@@ -128,6 +128,10 @@ Available properties will differ depending on what has been set up. Here's an ex
 
 4. Click CONTENT to go back to editing the page.
 
+Check for accessibility issues
+*********************************
+In Omnia 7.10 and later, you can use Preview mode to check for accessibility issues. Se this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
+
 Save or discard changes
 ************************
 When you're finished editing a page you must save your changes, or discard them if you don't want to keep them.
