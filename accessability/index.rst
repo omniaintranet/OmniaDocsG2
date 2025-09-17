@@ -97,3 +97,6 @@ To remove a user or a group, tab to select the dust bin and then Enter to remove
 
 For more information on how picking people or groups work, see the page describing the general people picker: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
+Accessibililty check when editing pages
+*****************************************
+This information applies to aditors and authors. In Omnia 7.10 and later, you can use Preview mode to check for accessibility issues. Se this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
