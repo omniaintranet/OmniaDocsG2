@@ -99,4 +99,5 @@ For more information on how picking people or groups work, see the page describi
 
 Accessibililty check when editing pages
 *****************************************
-This information applies to aditors and authors. In Omnia 7.10 and later, you can use Preview mode to check for accessibility issues. Se this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
+This information applies to editors and authors. In Omnia 7.10 and later, you can use Preview mode to check for accessibility issues. Se this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
+
