@@ -22,6 +22,8 @@ Here's a preview for a phone as an example:
 
 .. image:: preview-phone-new2.png
 
+In Omnia 7.10 and later, you can use Preview mode to check for accessibility issues. Se this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
+
 Publish a page
 ***************
 To publish a page, do the following:
