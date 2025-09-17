@@ -7,6 +7,7 @@ In this part of the documentation you will find information concerning how to wo
 .. toctree::
    :titlesonly:
 
+   accessibility-check/index
    add-link-navigation/index
    page-approval/index 
    automatic-page-creation/index
