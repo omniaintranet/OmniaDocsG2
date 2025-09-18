@@ -1,3 +1,13 @@
+Release 7.9.1
+========================================
+
+- Fix for publishing to channels and publishing of page collections
+
+Release 7.9.0
+========================================
+
+- Fix for login session timeout when upgrading the app
+
 Release 7.8.1
 ========================================
 
@@ -204,4 +214,5 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
+
 
