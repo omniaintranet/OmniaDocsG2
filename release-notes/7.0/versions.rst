@@ -1,3 +1,17 @@
+7.9.3
+========================================
+(Omnia 7.9.3 / Workplace 7.9.3 / WCM 7.9.4 / MS 7.9.2 / Analytics 7.9.3 / Feed 7.9.1)
+
+- Several fixes to the MS Search provider configuration UI (#168707).
+- Refiners now works as expected for MS Search based search categories (#168707)
+- WCAG updates to comments and likes, usernames are now read correctly.
+- Stability improvements to automatic page creation (#38998).
+- Fixed an issue that would prevent the Action button create page action from working correctly in certain scenarios (#39220).
+- "Share to Viva Engage" has been removed, since it is no longer supported by Microsoft.
+- The calendar rollup now correctly displays a 12-hour time format if the tenant is configured to do so. (#39252).
+- The media rollup photo wall view now has higher resolution.
+- Design fixes to the people rollup (#39245).
+
 7.9.2
 ========================================
 (Omnia 7.9.2 / Workplace 7.9.2 / WCM 7.9.2 / MS 7.9.1 / Analytics 7.9.2 / Feed 7.8.0)
