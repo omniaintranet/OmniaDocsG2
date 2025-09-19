@@ -50,7 +50,7 @@ Use the settings this way:
 + **Channel**: If you enable "Enabel publishing to channels", it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
 + **AI generated content**Open AI**: (This option is called "Open AI" in Omnia 7.7 and earlier). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI have to be made in Omnia Admin.
 + **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. 
-+ **Enable page checker**: Available in Omnia 7.10 and later. This is a validation for accessibility you can select. When you preview the page (Preview mode), you can receive a warning if there are any accessibility issues. 
++ **Enable page checker**: Available in Omnia 7.10 and later. This is a validation for accessibility you can select. When you preview the page (Preview mode), you can receive a warning if there are any accessibility issues. See this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
 
 **Note!** A prerequisite for semantic search is SharePoint sync. It's needed to be able to index page collections. Also see *Important notes about semantic search* below.
 
@@ -274,6 +274,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
