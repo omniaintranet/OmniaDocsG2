@@ -1,6 +1,8 @@
 Publishing channels
 ===========================
 
+**This page is being edited.**
+
 Here, you administer the publishing channels. They provide an alternative way of targeting information and to place pages in context.
 
 If you enable publishing channels in a page collection, it will be possible for an author to set which channels the page should be published to. Normally approval by the administrator of the channel is needed for publication, but publishers can be defined for a channel and they don't need approval when publishing.
@@ -77,5 +79,6 @@ A list of pages belonging to one or more channels can be created using the Page 
 
 Users can subscribe to channels, as described on this page: :doc:`My Subscriptions </user-options/my-subscriptions/index>`
  
+
 
 
