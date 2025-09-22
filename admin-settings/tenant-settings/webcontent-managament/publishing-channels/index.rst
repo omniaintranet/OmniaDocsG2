@@ -1,8 +1,6 @@
 Publishing channels
 ===========================
 
-**This page is being edited.**
-
 Here, you administer the publishing channels. They provide an alternative way of targeting information and to place pages in context.
 
 If you enable publishing channels in a page collection, it will be possible for an author to set which channels the page should be published to. Normally approval by the administrator of the channel is needed for publication, but publishers can be defined for a channel and they don't need approval when publishing.
@@ -50,7 +48,7 @@ If you're administrator of a channel, you can approve or reject publication of p
 
 If one or more requests for publication are created, the number of request are shown in this column:
 
-.. image:: channels-request-v7.png
+.. image:: channels-request-v710.png
 
 To approve or reject:
 
@@ -58,27 +56,24 @@ To approve or reject:
 
 The requests for that channel are then listed, for example:
 
-.. image:: channels-requests-listed-v7.png
+.. image:: channels-requests-listed-v710.png
 
 2. Click the link for a page you want to check. The page is opened in a new tab.
 3. Go back to the list and select APPROVE or REJECT.
 
-An email is sent to the requester with information about the result.
+An Email is sent to the requester with information about the result.
 
-**General note**: For a user to be able to receive emails, the acccount must be email enabled.
+**General note**: For a user to be able to receive Emails, the acccount must be Email enabled.
 
 More on how to use and work with channels
 ******************************************
 See these pages for more information:
 
-There's a block available to rollup Publishing Channels for easy access for administrators. See this page for more information: :doc:`The Channel Rollup block </blocks/channel-rollup/index>`
+There's a block available to rollup publishing channels for easy access for administrators. See this page for more information: :doc:`The Channel rollup block </blocks/channel-rollup/index>`
 
 How to publish a page to a channel is described at the bottom of this page: :doc:`Publish page changes </pages/publish-page-changes/index>`
 
-A list of pages belonging to one or more channels can be created using the Page Rollup block: :doc:`The Page Rollup block </blocks/page-rollup/index>`
+A list of pages belonging to one or more channels can be created using the Page rollup block: :doc:`The Page rollup block </blocks/page-rollup/index>`
 
-Users can subscribe to channels, as described on this page: :doc:`My Subscriptions </user-options/my-subscriptions/index>`
- 
-
-
+Users can subscribe to channels, as described on this page: :doc:`My subscriptions </user-options/my-subscriptions/index>`
 
