@@ -1,7 +1,7 @@
 Publishing channels
 ===========================
 
-Here, you administer the publishing channels. They provide an alternative way of targeting information and place pages in context.
+Here, you administer the publishing channels. They provide an alternative way of targeting information and to place pages in context.
 
 If you enable publishing channels in a page collection, it will be possible for an author to set which channels the page should be published to. Normally approval by the administrator of the channel is needed for publication, but publishers can be defined for a channel and they don't need approval when publishing.
 
@@ -9,7 +9,7 @@ Publishing channels can be used in page rollups to show news articles and pages 
 
 They are listed per publishing channels category. Here's an example with one category open:
 
-.. image:: channels-list-v7.png
+.. image:: channels-list-v710.png
 
 Click the pen to edit a channel, the dust bin to delete it. When you edit a channel, all settings used when creating a new channel can be edited, see below.
 
@@ -26,21 +26,19 @@ Here's how to create a new channel:
 1. Click the plus.
 2. Use the following settings:
 
-.. image:: channels-settings-v7.png
-
-(Not all settings shown in the image but described below).
+.. image:: channels-settings-v710.png
 
 + **Title**: Add a title in any tenant langauge.
 + **Description**: Add a description of the purpose of the channel in any tenant langauge. 
 + **Category**: Add a category for the channel. If no categories are setup, the channel is automatically added to the default category. That category could be named General, or something else.
-+ **Url**: Here you can add a Url to the channel's home page, if there is one. The home page can for example contain more information about the channel, a rollup of all pages published to the channel and so on. 
++ **URL**: Here you can add a Url to the channel's home page, if there is one. The home page can for example contain more information about the channel, a rollup of all pages published to the channel and so on. 
 + **ADD IMAGE**: To add an image to be shown for the channel, click here and use the Media picker to upload the image. When an image is selected you can delete it, or edit it by clicking the pen. For more information about the Media picker, see: :doc:`The Media Picker </general-assets/media-picker/index>`
 + **Owner**: One or more owners of the channel must be added. This is just information about who is responsible. The name/names will be shown when channels are listed.
 + **Administrator**: One or more administrators of the channel must be added. Administrators approve or reject publication to the channel. An administrator also has Publisher permissions to the channel.
 + **Publisher**: One or more publishers can be added. This is not mandatory. The colleagues you add here can always publish to the channel without approval.
 + **Force channel description to target group**: Targeting for the channel can be used to add a mandatory subscription to the channel for colleagues or groups. If you want to do that, select this option.
-+ **Targeting filter**: Shown when the option above is selected. Targeting settings are done the same way as in other places in Omnia, but the result is different. For the colleagues or groups targeted, a mandatory subscription to the channel is added. For more information about how to set up targeting, see this page : :doc:`Using Targeting </general-assets/targeting-in-omnia/index>`
-+ **Target channel to specific editors**: Available in Omnia 7.10 and later. Now you target a channel to specific editors if needed.
++ **Target channel to specific editors**: Available in Omnia 7.10 and later. Now you can target a channel to specific editors if needed.
++ **Add targeting filter**: Shown when any of the the options above is selected. Targeting settings are done the same way as in other places in Omnia, but the result is different. For the colleagues or groups targeted, a mandatory subscription to the channel is added. For more information about how to set up targeting, see this page : :doc:`Using Targeting </general-assets/targeting-in-omnia/index>`
 
 3. Save when you're done.
 
@@ -79,4 +77,5 @@ A list of pages belonging to one or more channels can be created using the Page 
 
 Users can subscribe to channels, as described on this page: :doc:`My Subscriptions </user-options/my-subscriptions/index>`
  
+
 
