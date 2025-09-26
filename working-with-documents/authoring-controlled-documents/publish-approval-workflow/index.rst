@@ -9,6 +9,8 @@ All metadata must be properly set before the approval workflow is started, so th
 
 Any send for comments workflow must be ended before an approval workflow can be started.
 
+In Omnia 7.10 and later, scheduled publishing can be used for controlled documents, if the page type allows it. The document must still be approved before the publishing date. For more information about scheduled publishing, see below.
+
 To publish a document, do the following:
 
 1. Make sure no send for comments workflow is active for the document.
@@ -69,3 +71,16 @@ Approved or rejected
 If the document is approved for publication, it’s now available for readers. You, the author, will receive an Email stating that.
 
 If it’s rejected, there’s some changes the approver would like you to do. You will receive an Email stating that the document was rejected and a message from the approver. After changes has been made, you start a new approval workflow the same way as before.
+
+Scheduled publishing for controlled documents
+**********************************************
+In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, so some can allow it and others not.
+
+If scheduled publishing is allowed, the publishing settings can look something like this:
+
+.. image:: publish-settings.png
+
+Add the planned publishing date in the field. The document must of course be approved for publishing before it can be published, as usual.
+
+For more information about the settings needed, see the heading "Options for scheduled publishing" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
