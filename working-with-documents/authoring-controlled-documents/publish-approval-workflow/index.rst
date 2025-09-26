@@ -76,11 +76,11 @@ Scheduled publishing for controlled documents
 **********************************************
 In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, so some can allow it and others not.
 
-If scheduled publishing is allowed, the publishing settings can look something like this:
+If scheduled publishing is allowed, the publishing settings contain this field:
 
 .. image:: publish-settings.png
 
-Add the planned publishing date in the field. The document must of course be approved for publishing before it can be published, as usual.
+Add the planned publishing date in the field. The document must of course be approved for publishing before it can be published, if approval is needed.
 
-For more information about the settings needed, see the heading "Options for scheduled publishing" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+For more information about the settings, see the heading "Options for scheduled publishing" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
