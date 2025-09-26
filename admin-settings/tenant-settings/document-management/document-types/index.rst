@@ -161,6 +161,8 @@ When you have selected to allow scheduled publishing för this document type, ch
 
 .. image:: doc-scheduled.png
 
+**Important note!** The property set for the page type must contain at least one date property. The property for scheduled publishing must be a date property.
+
 Options for semantic search
 ------------------------------
 For semantic search to be available in the tenant, the feature "Semantic search" must be active.
