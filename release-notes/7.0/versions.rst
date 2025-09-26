@@ -1,3 +1,12 @@
+7.9.4
+========================================
+(Omnia 7.9.4 / Workplace 7.9.4 / WCM 7.9.5 / MS 7.9.2 / Analytics 7.9.4 / Feed 7.9.1)
+
+- Fixed an issue with page publishing that could occur on certain permission setups (#39176).
+- Fixed an issue in certain analytics filters (#169404, #169524, #39794).
+- Ensured the RSS reader correctly handles items without a clickable item (#169114).
+- Updated the SPFx instruction to reflect changes in the Microsoft UIs (#39737).
+
 7.9.3
 ========================================
 (Omnia 7.9.3 / Workplace 7.9.3 / WCM 7.9.4 / MS 7.9.2 / Analytics 7.9.3 / Feed 7.9.1)
