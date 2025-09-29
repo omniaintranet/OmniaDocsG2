@@ -82,5 +82,17 @@ If scheduled publishing is allowed, the publishing settings contain this field:
 
 Add the planned publishing date in the field. The document must of course be approved for publishing before it can be published, if approval is needed.
 
+Note that the date for scheduled publishing can be set in the properties for the document, so it's already set when starting the publishing workflow.
+
+A document waiting to be published is still considered to be a draft. That it's scheduled for publishing is noted in the Status column, for example:
+
+.. image:: publish-settings-status.png
+
+For more info about the publishing, click the link. Here's an example:
+
+.. image:: publish-settings-status-example.png
+
+Here you can see the scheduled date and time and you can also cancel the schedulation, if needed. This means that the document reverts back to being a normal draft. If the document has been approved for the scheduled publishing, this is also reverted, meaning the publishing workflow has to be started again. 
+
 For more information about the settings, see the heading "Options for scheduled publishing" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
