@@ -15,6 +15,7 @@ In this part of the documentation you will find information concerning how to wo
    version-history/index
    copy-page/index
    create-page/index
+   create-label/index
    delete-page/index
    edit-page/index
    edit-page-navigation/index
