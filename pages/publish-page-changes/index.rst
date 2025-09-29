@@ -1,7 +1,7 @@
 Publish page changes
 ===========================================
 
-As an editor you can work on a new version of a page as long as needed and publish the new version when you decide to do so. If allowed (set in page collection settings) it's possible to use scheduled ublishing if you don't want to publish directly.
+As an editor you can work on a new version of a page as long as needed and publish the new version when you decide to do so. If allowed (set in page collection settings) it's possible to use scheduled publishing if you don't want to publish directly.
 
 **Note!** Edits to a page are never shown to users of the site until the page is published.
 
