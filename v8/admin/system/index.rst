@@ -1,5 +1,7 @@
+System
+==========
 
-In the System section, the following can be set if all options are activated:
+Under System, the following can be set if all options are activated. Select section for more information.
 
 .. toctree::
    :titlesonly:
@@ -19,3 +21,4 @@ In the System section, the following can be set if all options are activated:
    tenant-contact/index
    user-profile-card/index
    
+
