@@ -1,3 +1,19 @@
+7.9.5
+========================================
+(Omnia 7.9.5 / Workplace 7.9.4 / WCM 7.9.6 / MS 7.9.3 / Analytics 7.9.5 / Feed 7.9.1)
+
+- Fixed a concurrent issue that would sometimes cause duplicates in the page rollup (#167822).
+- Improved stability in the page rollup export to excel feature (#169583).
+- Documents with white spaces in the URL can now be added to the RTF editor (#169739, #168979).
+- Stability improvements to the move page collection feature (#39237).
+- General performance improvements. 
+- Updated Danish translations (#40093, #39747).
+- Corrected an issue that would prevent unauthenticated users to use an anchor link to sign in (#41010).
+- Corrected information in the ODM workflow history when a document is rejected (#168745).
+- Corrected an issue that would case the properties block to show the wrong values if a term had been deleted (#169228).
+- Fixes to Omnia onboarding e-mails that would sometimes get the wrong encoding (#164971).
+- Improved resolution for thumbnails of videos in the page rollup (#160770, 157946).
+
 7.9.4
 ========================================
 (Omnia 7.9.4 / Workplace 7.9.4 / WCM 7.9.5 / MS 7.9.2 / Analytics 7.9.4 / Feed 7.9.1)
