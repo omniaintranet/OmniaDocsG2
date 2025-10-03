@@ -1,7 +1,7 @@
 Tenant contacts
 =====================================
 
-The following contact information can be added. 
+Here, receivers for various information from Omnia can be added. 
 
 It's very important that you add contact information here. This will be the main channel for information from Omnia. You can edit the contact information any time.
 
