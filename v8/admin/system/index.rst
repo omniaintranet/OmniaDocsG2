@@ -9,7 +9,7 @@ Under System, the following can be set if all options are activated. Select sect
    audit-logs/index
    authentication/index
    azure-ad-permissions/index
-   default-sharepoint-content-url/index
+   default-sharepoint-context-url/index
    connected-tenants/index
    error-information/index
    extensions/index
