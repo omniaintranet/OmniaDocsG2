@@ -12,8 +12,9 @@ Select section for more information.
 .. toctree::
    :titlesonly:
 
-   tenant-contacts/index
+   tenant-contact/index
    security-contacts/index
    system-update-notification/index
    user-sync-contacts/index
+
 
