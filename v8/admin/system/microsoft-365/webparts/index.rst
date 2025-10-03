@@ -20,9 +20,6 @@ Here's how to use a webpart from Omnia in SharePoint:
 2. Go to SharePoint admin https://[YOURTENANTNAME]-admin.sharepoint.com
 3. Select "More features".
 4. Select "Open" under "Apps".
-
-.. image:: webpart-1-8.png
-
 5. Click "Upload" and select the webpart package downloaded from Omnia admin. 
 6. Enable the webpart either on all sites or to be added to individual sites.
 
@@ -34,12 +31,7 @@ When a webpart is added to individual sites, the site owner can add it this way:
 
 1. Go to "Site contets" of the site. 
 2. Select "New" > "App".
-
-.. image:: webpart-3-8.png
-
 3. Click "Add" on the Omnia web part and "Add" to verifiy.
-
-.. image:: webpart-4-8.png
 
 The webpart can now be added to a page like any other webpart.
 
