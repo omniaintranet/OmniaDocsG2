@@ -34,11 +34,12 @@ For more information, select section below:
 .. toctree::
    :titlesonly:
 
-   limitations-omnia-users/index   
+   v8/admin/user-management-tenant/limitations-omnia-users/index   
    tenant-user-bulk-create/index
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
+
 
 
 
