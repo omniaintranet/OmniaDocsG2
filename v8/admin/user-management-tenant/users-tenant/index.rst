@@ -1,4 +1,4 @@
-Users - Tenant settings
+Users - Tenant
 ===================================
 
 This page describes the Users list in tenant user management. User management for each business profile is also available. Users set up in a business profile can be handled in the business profile by a business profile administrator, or here, by a tenant administrator. User set up here can only be handled by a tenant administrator.
@@ -37,4 +37,5 @@ For more information, select section below:
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
+
 
