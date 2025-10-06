@@ -7,8 +7,9 @@ The following permissions can be set here:
    :titlesonly:
 
    tenant-users-and-groups/index
-   shared-links-users-and-groups/index
-   announcements-users-and-groups/index
+   tenant-shared-links/index
+   tenant-announcements/index
+
 
 
 
