@@ -9,9 +9,7 @@ When you edit an Omnia group, all settings are available, as when you add a new 
 
 Note that you can search and filter on "Provider". If you would like a list of the Omnia groups only, select "Omnia group" as provider.
 
-You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. Here's an example: 
-
-(image to add)
+You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. 
 
 For more information, select section below.
 
@@ -20,4 +18,5 @@ For more information, select section below.
 
    tenant-group-create/index
    tenant-group-recycle-bin/index
+
 
