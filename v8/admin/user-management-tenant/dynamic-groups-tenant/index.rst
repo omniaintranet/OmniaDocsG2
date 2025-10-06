@@ -1,4 +1,4 @@
-Dynamic groups - Tenant settings
+Dynamic groups - Tenant
 ===================================
 
 Here dynamic groups can be created, edited and deleted. Dynamic security groups are based on user types, not on membership. They will replace and expand on the built-in groups “Internal users” and “External users” and can be used to protect information.
@@ -43,6 +43,7 @@ Deleted groups
 In the list of deleted dynamic groups, you can restore or permanently delete a group by using the icons:
 
 .. image:: dynamic-groups-deleted-78.png
+
 
 
 
