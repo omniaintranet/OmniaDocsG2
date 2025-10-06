@@ -19,16 +19,18 @@ The following filters are available, to display only some users in the list:
 
 + **Time-limited**: For user accounts with a limited time, you can choose to list active or not active accounts.
 + **Status**: Here you can choose to list enabled or disabled accounts.
-+ **User type**: Using this filter you can choose to list just one of the §registrered user types.
++ **User type**: Using this filter you can choose to list just one of the registrered user types.
 + **Provider**: You can choose to list just one of the providers, usually Microsoft Graph or Omnia.
 + **Scope type**: Here you can choose which users to display in the list; Tenant, Business profile or Group. If you select Business profil or Group, you then select which one as the second step.
 
 **Tip**: If you would like to list Omnia users created here, select "Omnia" for "Provider".
 
 Add a new Omnia user
------------------------------
-To add a new user, click the ADD USER button. For details, see link below. Also note that you can bulk create users.
+*********************
+You can add a single user or you can bulk create users. For details, see links below. 
 
+Read more
+***********
 For more information, select section below:
 
 .. toctree::
@@ -39,6 +41,8 @@ For more information, select section below:
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
+   v8/common/using-people-picke/index
+
 
 
 
