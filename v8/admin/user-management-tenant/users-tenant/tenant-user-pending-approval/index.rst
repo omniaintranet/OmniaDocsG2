@@ -1,4 +1,4 @@
-Pending approval for user - Tenant
+Pending approval for users - Tenant
 ===================================
 
 If self service for user accounts is allowed, and if approval is needed for these accounts, approval is handled through this list.
@@ -10,4 +10,5 @@ This information is created during the account set up process. Available fields 
 When you're ready, click APPROVE or REJECT. If you choose to approve, the account is created and the user is notified. If you reject the request, type a message to explain why this request can't be approved. That message is sent to the user.
 
 Self-service is set up (if used) on business profile level. See this page for more information: (link to be added)`
+
 
