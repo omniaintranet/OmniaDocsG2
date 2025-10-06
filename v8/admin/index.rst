@@ -4,6 +4,6 @@ Tenant settings
 .. toctree::
    :titlesonly:
 
-   permissions/index
+   permissions-tenant/index
    system/index
 
