@@ -9,11 +9,14 @@ When you edit an Omnia group, all settings are available, as when you add a new 
 
 You can sort the list on the "Name" and "Provider" columns. If you would like a list of the Omnia groups only, select "Omnia group" as provider.
 
-Read more:
+Read more
+**********
+For more information, select section below.
 
 .. toctree::
    :titlesonly:
 
    tenant-group-create/index
    tenant-group-recycle-bin/index
+
 
