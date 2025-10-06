@@ -34,7 +34,7 @@ Select language for the output here, from the available tenant languages.
 
 If the purpose is translating untranslated labels, it can be useful to create output for both English (United states), that is the base language for Omnia, and the language you wish to translate to. You can then always check existing translations and see the labels in the base language.
 
-Available languages are set up under Tenant-Settings-Regional settings, see: :doc:`Regional settings </admin-settings/tenant-settings/settings/index>`
+Available languages are set up under Tenant-Settings-Regional settings.
 
 Export
 ***********
@@ -49,5 +49,6 @@ If you only need to correct one, or a few, translations, you don't need to downl
 **important note!** This method is what is called "Has been customized" in the View mode selector. Changes you make this way are NOT overwritten if you import a translated JSON file to the system, which also means changes that the Omnia translation staff do is not implemented for these labels/messages.
 
 Don't forget to save when you're done.
+
 
 
