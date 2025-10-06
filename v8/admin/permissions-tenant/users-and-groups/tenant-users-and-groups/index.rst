@@ -1,7 +1,7 @@
 Tenant
 =====================================
 
-Use these settings to add and remove tenant administrators. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. 
+Use these settings to add and remove tenant administrators. Only tenant administrators can use these settings. A tenant administrator can also edit all the settings for all business profiles within the tenant. 
 
 To delete an administrator, just click the x. To add an administrator, add the name the same way as in other name fields.
 
@@ -11,18 +11,7 @@ If you see a field called "Username", it's a special case that can be necessary 
 
 (Information about "Directory reader" will be added soon).
 
-For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
-
-
-
-
-
-
-
-
-
-
-
-
-
+Read more
+*****************
+For more information about the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
 
