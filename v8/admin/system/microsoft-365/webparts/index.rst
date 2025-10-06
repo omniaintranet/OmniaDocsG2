@@ -23,8 +23,6 @@ Here's how to use a webpart from Omnia in SharePoint:
 5. Click "Upload" and select the webpart package downloaded from Omnia admin. 
 6. Enable the webpart either on all sites or to be added to individual sites.
 
-.. image:: webpart-2-8.png
-
 Adding a webpart to individual sites
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 When a webpart is added to individual sites, the site owner can add it this way:
@@ -34,4 +32,5 @@ When a webpart is added to individual sites, the site owner can add it this way:
 3. Click "Add" on the Omnia web part and "Add" to verifiy.
 
 The webpart can now be added to a page like any other webpart.
+
 
