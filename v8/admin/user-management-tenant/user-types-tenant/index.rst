@@ -1,4 +1,4 @@
-User types - Tenant settings
+User types
 ===================================
 
 All users in Omnia will be assigned a user type. User types are also used when creating Omnia users and when setting up dynamic groups. It's also possible to create customized user profile cards for different user types.
@@ -134,5 +134,6 @@ You can preview the card layout for different users:
 User edits of the profile card
 ************************************
 It's up to each user to edit the profile card. On this page you can see how it works: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
+
 
 
