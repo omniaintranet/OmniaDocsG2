@@ -32,7 +32,7 @@
 - WCAG updates to comments and likes, usernames are now read correctly.
 - Stability improvements to automatic page creation (#38998).
 - Fixed an issue that would prevent the Action button create page action from working correctly in certain scenarios (#39220).
-- "Share to Viva Engage" has been removed, since it is no longer supported by Microsoft.
+- "Share to Viva Engage" has been removed, since it is no longer supported by Microsoft (MC1069565 - Microsoft Viva Engage: The Microsoft Yammer share button will retire).
 - The calendar rollup now correctly displays a 12-hour time format if the tenant is configured to do so. (#39252).
 - The media rollup photo wall view now has higher resolution.
 - Design fixes to the people rollup (#39245).
