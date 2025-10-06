@@ -16,6 +16,7 @@ The following options are always available:
 
 Note that you can enable, disable or reset an Omnia user account using the authentication settings when editing an Omnia user.
 
+Read more
+***************
 For more information about Omnia users, see: :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
-
 
