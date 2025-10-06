@@ -1,4 +1,4 @@
-Groups - Tenant settings
+Groups - Tenant
 ===================================
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups.
@@ -84,6 +84,7 @@ In the list of deleted groups you can restore deleted Omnia groups or delete (Pu
 .. image:: user-management-groups-deleted-blood-78.png
 
 You can't restore deleted Microsoft Graph groups but you can purge them from your system.
+
 
 
 
