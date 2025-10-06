@@ -5,17 +5,7 @@ Use these settings to add and remove additional administrators for shared links,
 
 To delete an administrator, just click the x. To add an administrator, add the name the same way as in other name fields.
 
-For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
-
-
-
-
-
-
-
-
-
-
-
-
+Read more
+*****************
+For more information about the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
 
