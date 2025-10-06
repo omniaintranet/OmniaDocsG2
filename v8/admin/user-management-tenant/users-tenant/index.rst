@@ -9,6 +9,8 @@ Here, all users in the tenant can be listed. You can add Omnia users - users tha
 
 You can use the search field to find a user and use the filters for a shorter list. You can sort the list on the columns "Name", "User type" and "Provider".
 
+When you click on a name, a preview of that users card is shonw.
+
 Filters
 ************
 The following filters are available, to display only some users in the list:
@@ -37,5 +39,6 @@ For more information, select section below:
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
+
 
 
