@@ -7,4 +7,7 @@ If a user sync contact is external, add the Email in the "Add external"-field in
 
 The Emails that are sent about updates are sent from no-reply@omniacloud.net. You must make sure to check your junk mail or create a new rule in your Email system to trust this Email address.
 
+Read more
+*****************
+For more information about the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
 
