@@ -1,4 +1,4 @@
-User properties - Tenant settings
+User properties
 ===================================
 
 The properties you want to use when creating Omnia users must be present in this list. These properties can also be shown on the customized user profile cards together with properties from Entra ID and SharePoint. Besides that, they will also be used to manage targeted mobile push notifications and statistics. Also note the comment about GDPR.
@@ -46,4 +46,5 @@ These types have edit options:
 Deleting a user property
 **************************
 When you delete a user property from this list, it's moved to the property recycle bin, available under the tenant settings Properties, see: :doc:`Property recycle bin </admin-settings/tenant-settings/properties/recycle-bin/index>`
+
 
