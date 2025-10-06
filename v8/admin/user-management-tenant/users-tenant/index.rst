@@ -27,7 +27,7 @@ The following filters are available, to display only some users in the list:
 
 Add a new Omnia user
 -----------------------------
-To add a new user, click the ADD USER button. For details, see linke below. Also note that you can bulk create users.
+To add a new user, click the ADD USER button. For details, see link below. Also note that you can bulk create users.
 
 For more information, select section below:
 
@@ -39,6 +39,7 @@ For more information, select section below:
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
+
 
 
 
