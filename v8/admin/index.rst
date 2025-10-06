@@ -6,5 +6,6 @@ Tenant settings
 
    permissions-tenant/index
    system/index
-   user-management-tenant/undex
+   user-management-tenant/index
+
 
