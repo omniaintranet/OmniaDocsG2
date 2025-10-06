@@ -160,6 +160,6 @@ When you're ready, click APPROVE or REJECT. If you choose to approve, the accoun
 
 Self-service is set up (if used) on business profile level. See this page for more information: :doc:`Self-service settings </admin-settings/business-group-settings/user-management-bp/self-service-users-bp/index>`
 
-
+For more information, select section below:
 
 
