@@ -20,9 +20,9 @@ Read more
 ***************
 For more information, select section below.
 
+.. toctree::
+   :titlesonly:
 
-
-
-For more information about Omnia users, see: :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
-For more information about how to use the media picker
+   v8/admin/user-management-tenant/limitations-omnia-users/index   
+   v8/common/using-media-picker/index
 
