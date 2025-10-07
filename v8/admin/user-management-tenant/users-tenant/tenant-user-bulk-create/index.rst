@@ -1,10 +1,10 @@
-Bulk create users - Tenant
+Bulk create users
 ===================================
 
 Here's the settings you can use when bulk creating users. The first step is to select user type and the scenario:
 
 + **User type**: You can bulk create users for one user type in each session. Note the option "Undefined". If users imported from MS Graph does not match any of the rules, user type is set to "Undefined". You should probably not bulk create such users, but the option is there if you know what you're doing.
-+ **Select bulk create users scenario**: Choose to send onboarding links to all users of that user type, or not. You can alos automatically onboard users that already have a password assigned to them.
++ **Select bulk create users scenario**: Choose to send onboarding links to all users of that user type, or not. You can also automatically onboard users that already have a password assigned to them.
 
 The second step is to edit the template file. If you already have a template file you can edit the file for use in this session and upload it.
 
