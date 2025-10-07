@@ -1,19 +1,5 @@
-Adding videos - media picker
+Adding videos
 =====================================
 
-(A description will be added soon).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This page will describe how to add videos using the image picker. A description will be added soon.
 
