@@ -1,11 +1,11 @@
-Users - Tenant
+Users
 ===================================
 
-This page describes the Users list in tenant user management. User management for each business profile is also available. Users set up in a business profile can be handled in the business profile by a business profile administrator, or here, by a tenant administrator. User set up here can only be handled by a tenant administrator.
+This page describes the Users list in tenant user management. User management for each business profile is also available. Users set up in a business profile can be handled in the business profile by a business profile administrator, or here, by a tenant administrator. Users set up here can only be handled by a tenant administrator.
 
 The list of users
 *******************
-Here, all users in the tenant can be listed. You can add Omnia users - users that do not require a Microsoft 365 license, and edit or delete users you have added this way.
+Here, all users in the tenant can be listed. You can add Omnia users - users that do not require a Microsoft 365 license - and edit or delete users you have added this way.
 
 You can use the search field to find a user and use the filters for a shorter list. You can sort the list on the columns "Name", "User type" and "Provider".
 
@@ -41,11 +41,5 @@ For more information, select section below:
    tenant-user-create/index
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
-   v8/common/using-people-picke/index
-
-
-
-
-
-
+   v8/common/using-people-picker/index
 
