@@ -12,10 +12,10 @@ For more information, select section below.
 .. toctree::
    :titlesonly:
 
-   /authentication-user-type/index
-   /create-user-type/index
-   /onboarding-user-type/index
-   /user-card-layout/index
-   /user-profile-completion-user-type/index
-   /properties-user-type/index
+   v8/admin/user-management-tenant/user-types-tenant/authentication-user-type/index
+   v8/admin/user-management-tenant/user-types-tenant/create-user-type/index
+   v8/admin/user-management-tenant/user-types-tenant/onboarding-user-type/index
+   v8/admin/user-management-tenant/user-types-tenant/user-card-layout/index
+   v8/admin/user-management-tenant/user-types-tenant/user-profile-completion-user-type/index
+   v8/admin/user-management-tenant/user-types-tenant/properties-user-type/index
 
