@@ -1,7 +1,7 @@
-Create user - Tenant
+Create user
 ===================================
 
-Usee these settings when creating a new Omnia user. Available fields are the properties set up under the option in the User management menu. 
+Usee these settings when creating a new Omnia user in tenant user management. Available fields are the properties set up under the option in the User management menu. 
 
 The following options are always available:
 
@@ -19,4 +19,5 @@ Note that you can enable, disable or reset an Omnia user account using the authe
 Read more
 ***************
 For more information about Omnia users, see: :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
+
 
