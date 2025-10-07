@@ -33,6 +33,8 @@ For more information, select section below.
    authentication-user-type/index
    create-user-type/index
    onboarding-user-type/index
+   user-card-layout/index
    user-profile-completion-user-type/index
    properties-user-type/index
+
 
