@@ -1,4 +1,4 @@
-Groups - Tenant
+Groups
 ===================================
 
 Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups. You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. 
@@ -18,5 +18,6 @@ For more information, select section below.
 
    tenant-group-create/index
    tenant-group-recycle-bin/index
+
 
 
