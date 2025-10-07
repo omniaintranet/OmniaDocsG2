@@ -3,6 +3,8 @@ Using the people picker
 
 The people picker, sometimes called the identity picker, is used in many places in Omnia. There's two versions of the people picker, one general and another when accessibility features are used. This page describes the general people picker.
 
+To be able to use the people picker, users must be added in the tenant permissions field "Directory reader". For more information about this, see: :doc:`Permissions - users and groups </v8/admin/permissions-tenant/users-and-groups/index>`
+
 To use it, just click in the search field and start typing. Here' an example:
 
 .. image:: people-picker-v8.png
@@ -24,4 +26,5 @@ If you just want to search for a specific user type or a specific group type in 
 What you can filter on depends on settings in Omnia admin. Here's an example:
 
 .. image:: people-picker-example-filter2-v8.png
+
 
