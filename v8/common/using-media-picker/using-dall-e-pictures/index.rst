@@ -1,19 +1,5 @@
-Using dall-E pictures - media picker
+Using dall-E pictures
 =====================================
 
-(A description will be added soon).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This page will describe how to create and use dall-E pictures through the media picker. A description will be added soon.
 
