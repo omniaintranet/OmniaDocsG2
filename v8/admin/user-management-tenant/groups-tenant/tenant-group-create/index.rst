@@ -1,4 +1,4 @@
-Create group - Tenant
+Create group
 ===================================
 
 These settings are available when you create a new group.
@@ -18,4 +18,5 @@ Add groups to an Omnia group
 You can add Omnia groups and Entra ID groups to an Omnia group (you can't add Omnia groups to an Entra group, though).
 
 Click the GROUPS button and add one or more groups from the list.
+
 
