@@ -21,7 +21,7 @@ System update notification
 ****************************
 Contact(s) added here will receive an automatic Email from the system whenever the tenant has been updated with a new version of the core product or any extension.
 
-The Emails that are sent about updates are sent from no-reply@omniacloud.net. You must make sure to check your junk mail or create a new rule in your Email system to trust this Email address.
+The Emails that are sent about updates are sent from **no-reply@omniacloud.net**. You must make sure to check your junk mail or create a new rule in your Email system to trust this Email address.
 
 User sync contacts
 *******************
@@ -30,4 +30,5 @@ If user sync fails, the contact(s) you add here will receive an Email.
 Read more
 *****************
 For more information about the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
+
 
