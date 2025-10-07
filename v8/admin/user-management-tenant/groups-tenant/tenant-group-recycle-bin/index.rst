@@ -1,4 +1,4 @@
-Group recycle bin - Tenant
+Group recycle bin
 ===================================
 
 In this list you can restore deleted Omnia groups - RESTORE GROUP - or delete them permanently - PURGE GROUP. Select one or more groups and then select what to do with them. 
