@@ -18,6 +18,11 @@ Note that you can enable, disable or reset an Omnia user account using the authe
 
 Read more
 ***************
-For more information about Omnia users, see: :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
+For more information, select section below.
 
+
+
+
+For more information about Omnia users, see: :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
+For more information about how to use the media picker
 
