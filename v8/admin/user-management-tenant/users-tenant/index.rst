@@ -36,10 +36,11 @@ For more information, select section below:
 .. toctree::
    :titlesonly:
 
-   v8/admin/user-management-tenant/limitations-omnia-users/index   
    tenant-user-bulk-create/index
-   tenant-user-create/index
+   tenant-user-create/index   
+   v8/admin/user-management-tenant/limitations-omnia-users/index   
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
    v8/common/using-people-picker/index
+
 
