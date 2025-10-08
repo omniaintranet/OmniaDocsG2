@@ -5,7 +5,7 @@ You can create a custom user profile card for each user user type if needed, and
 
 This is done by selecting EDIT LAYOUT when editing or creating a user type. A basic layout is always available, so if you're find with that, you don't have to make any changes.
 
-You work with the layout for the cards the same way as other layouts in Omnia, see: :doc:`Working with layouts </general-assets/working-with-layouts/index>`
+You work with the layout for the cards the same way as other layouts in Omnia, see: :doc:`Working with layouts </v8/common/working-with-layouts/index>`
 
 Of course, just a few of the available blocks makes sense to use here, but that is up to you.
 
@@ -30,4 +30,5 @@ While the menu is open, you can alos preview the card layout for different users
 User edits of the profile card
 ************************************
 It's up to each user to edit the contents of the profile card. On this page you can see how it works: (Link to be added).
+
 
