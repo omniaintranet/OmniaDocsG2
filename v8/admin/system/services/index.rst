@@ -1,7 +1,9 @@
 Services
 =====================================
 
-The following settings for services can be available in a standard Omnia setup, if all features are activated. Select section for more information.
+The following service settings can be available in a standard Omnia setup, depending on which features are activated. 
+
+Select a section below for more information.
 
 .. toctree::
    :titlesonly:
