@@ -1,51 +1,52 @@
 Teams app generator
 =====================================
 
-Use these options for an easy starting point creating an Teams App for Omnia, or to update an app you already have.
+Use these options as a quick starting point for creating a new Teams app for Omnia, or for updating an existing one.
 
 Generate Omnia App
 **********************
-Add a title for the app, a description and the home URL, and click GENERATE.
+Enter a title, description, and home URL, then click GENERATE.
 
-The app is created and downloaded as a zip to your Download library.
+The app is created and downloaded as a .zip file to your Downloads folder.
 
-The app is actually ready for use but there may be some more settings you want to do, using Developer Portal.
+The app is ready for use immediately, but you may want to make additional adjustments using the Developer Portal.
 
-Additional settings
---------------------
-Additional settings you may want to do using Developer Portal, are especially icons, but there may be more you would like to do. These steps, using Developer Portal, are not mandatory.
+Additional Settings (Optional)
+-------------------------------
+You can make optional refinements to your app in the Developer Portal, such as adding icons or customizing branding.
 
-Either use the Developer Portal as an app in Teams or at dev.teams.microsoft.com.
+Access the Developer Portal either as an app in Teams or at dev.teams.microsoft.com
 
-1. Import the app you created (don't mind the errors, fix them as below).
-2. Go to Branding and add a Color icon and an Outline icon with the correct sizes, as states there.
-3. Make other changes you would like to do.
-4. Download the app.
+1. Import the app you created (ignore initial errors; you’ll correct them below).
+2. Go to Branding, and add both a Color icon and an Outline icon with the correct sizes, as specified there.
+3. Make any other changes you wish to apply.
+4. Download the updated app.
 
-Publish the app
-----------------
-These steps are also not mandatory, but needed if you want users to get access to the app without having to install it themselves (which they may or may not have permissions to do).
+Publish the App (Optional)
+-----------------------------
+These steps are optional, but required if you want users to access the app without installing it manually (which some users may not have permission to do).
 
-1. Go to Teams Administration in central Microsoft 365 admin.
-2. Go to "Teams apps" and select "Manage apps".
+1. Open Teams Administration in the Microsoft 365 Admin Center.
+2. Go to Teams apps → Manage apps.
 3. Upload your app.
 
-Note the it can take som time before your app is listed there. If you can't find it yet, just wait a bit.
+**Note**: It may take some time before the app appears in the list. If you don’t see it immediately, wait a while and check again.
 
 4. Create or select a Setup Policy.
 5. Publish the app.
 
-If you do it this way, the app will be installed automatically for all users, or for the group of users the Setup Policy states. 
+When published this way, the app is installed automatically for all users, or for the specific user group defined in the Setup Policy.
 
-**Note!** It may take up to 24 hours before users have access to the app in Teams.
+**Note**: It may take up to 24 hours before users can access the app in Teams.
 
 Update Existing App
 ***********************
-If you already have an Omnia App and would like to update it to the full 6.10 (or later) standard, use this tab. What the possible update is about is stated in the description text: "Ensure Omnia SSO and Omnia teamwork tab for an existing app".
+If you already have an Omnia app and want to update it to the 6.10 (or later) standard, use the Update Existing App tab. The description indicates the purpose: “Ensure Omnia SSO and Omnia Teamwork tab for an existing app.”
 
-To update an app, drag and drop or Browse to load it.
+To update an app:
 
-And then click GENERATE.
+1. Drag and drop your existing app file, or click Browse to upload it.
+2. Click GENERATE.
 
-The app is updated and downloaded to your Download library.
+The updated app is downloaded as a .zip file to your Downloads folder.
 
