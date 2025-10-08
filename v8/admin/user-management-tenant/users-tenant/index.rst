@@ -1,33 +1,41 @@
 Users
 ===================================
 
-This page describes the Users list in tenant user management. User management for each business profile is also available. Users set up in a business profile can be handled in the business profile by a business profile administrator, or here, by a tenant administrator. Users set up here can only be handled by a tenant administrator.
+This page describes the Users list in tenant user management. User management is also available for each business profile.
 
-The list of users
++ Users created within a business profile can be managed either in that profile (by a Business Profile Administrator) or here (by a Tenant Administrator).
++ Users created directly under the tenant can only be managed by a Tenant Administrator.
+
+The Users List
 *******************
-Here, all users in the tenant can be listed. You can add Omnia users - users that do not require a Microsoft 365 license - and edit or delete users you have added this way.
+Here, you can view all users in the tenant. You can add Omnia users (users who do not require a Microsoft 365 license) as well as edit or delete users created this way.
 
-You can use the search field to find a user and use the filters for a shorter list. You can sort the list on the columns "Name", "User type" and "Provider".
+Use the search field to find specific users, and apply filters to narrow the list. You can sort the list by the following columns: Name, User type, and Provider.
 
-When you click on a name, a preview of that users card is shown.
+Clicking a user’s name opens a preview of that user’s profile card.   
 
 Filters
 ************
-The following filters are available, to display only some users in the list:
+The following filters are available to display only selected users:
 
 .. image:: users-tenant-filter.png
 
-+ **Time-limited**: For user accounts with a limited time, you can choose to list active or not active accounts.
-+ **Status**: Here you can choose to list enabled or disabled accounts.
-+ **User type**: Using this filter you can choose to list just one of the registrered user types.
-+ **Provider**: You can choose to list just one of the providers, usually Microsoft Graph or Omnia.
-+ **Scope type**: Here you can choose which users to display in the list; Tenant, Business profile or Group. If you select Business profil or Group, you then select which one as the second step.
++ **Time-limited**: For user accounts with a defined duration, choose to list active or inactive accounts.
++ **Status**: Filter by enabled or disabled accounts.
++ **User type**: Display users by a specific registered user type.
++ **Provider**: Filter by provider, typically Microsoft Graph or Omnia.
++ **Scope type**: Choose which users to display based on scope: Tenant, Business Profile, or Group. If you select Business Profile or Group, you can then select the specific one as a second step.
 
-**Tip**: If you would like to list Omnia users created here, select "Omnia" for "Provider".
+**Tip**: To list only Omnia users created here, select **Omnia** under **Provider**.
 
-Add a new Omnia user
+Add a New Omnia User
 *********************
-You can add a single user or you can bulk create users. For details, see links below. 
+You can add users in two ways:
+
++ Add a single user, or
++ Bulk create multiple users at once.
+
+For detailed steps, see the related sections below. 
 
 Read more
 ***********
@@ -42,5 +50,6 @@ For more information, select section below:
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
    v8/common/using-people-picker/index
+
 
 
