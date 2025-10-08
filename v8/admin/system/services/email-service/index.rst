@@ -1,21 +1,23 @@
 Email service
 =======================================
 
-Use these settings to decide if Emails should be sent from Omnia or not.
+Use these settings to decide if Emails should be sent from Omnia or not.Use these settings to control whether emails are sent from Omnia, and how they are sent.
 
-+ **Turn off all Email notifications**: If you select this option, no Emails are sent from Omnia at all. If this option is enabled (ie not turned off) Emails will be sent using the provider you choose. 
-+ **Email Provider**: Normally, three options can be available here: "Exchange online mailbox", "SharePoint outgoing mail" or "Smtp server". If you select "Smtp server", additional settings are shown, see below.
-+ **User mailbox**: If you choose Exchange online mailbox as the provider, select the actual user mailbox that will used. Below this the mailadress for the sender, that users will see, is noted. If you select "SharePoint outgoing mail", this field is not shown as the Sharepoint mailbox is used, which no answers can be sent to. 
++ **Turn off all email notifications**: When enabled, no emails are sent from Omnia. If this option is not turned off, emails are sent using the selected provider. 
++ **Email Provider**: Normally, three options can be available: **Exchange online mailbox**, **SharePoint outgoing mail** or **SMTP server**. If you select **SMTP server**, additional settings become available (see below).
++ **User mailbox**: If you choose **Exchange Online mailbox** as the provider, select the user mailbox to be used. The sender address (as seen by recipients) is displayed below. If you select **SharePoint outgoing mail**, this field is not shown, as the SharePoint mailbox is used — replies cannot be sent to this address. 
 
-**Note!** The selected user account need to have a cloud Exchange mailbox.
+**Notes**:
++ The selected user account must have a cloud Exchange mailbox.
++ This option is not available in Omnia OnPrem.
 
-**Note!** This option is not available in Omnia on-prem.
-
-Restrict who Omnia can send Emails as through Exchange
+Restricting Who Omnia Can Send Emails As (Exchange)
 *******************************************************
-To use Exchange for sending Emails from Omnia, the Microsoft permission model currently requires Omnia to be granted permission to send Emails on behalf of any user in the organization. This approach may raise security concerns. To address this, a guide for the Exchange admin to restrict Omnia to only send emails as a specified user is included.
+When using Exchange to send emails from Omnia, Microsoft’s permission model requires Omnia to be granted permission to send emails on behalf of any user in the organization.
 
-Additional Smtp server settings
+This broad permission may raise security concerns. To address this, a guide for Exchange administrators is provided — it explains how to restrict Omnia so it can only send emails as a specified user.
+
+Additional SMTP Server Settings
 ************************************
-If you select Smtp server as Email provider, the settings needed are made available.
+If **SMTP server** is selected as the email provider, the necessary configuration fields are displayed here.
 
