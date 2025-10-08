@@ -1,16 +1,26 @@
 Bulk create users
 ===================================
 
-Here's the settings you can use when bulk creating users. The first step is to select user type and the scenario:
+Use these settings to bulk create users in Omnia. The process has two main steps:
 
-+ **User type**: You can bulk create users for one user type in each session. Note the option "Undefined". If users imported from MS Graph does not match any of the rules, user type is set to "Undefined". You should probably not bulk create such users, but the option is there if you know what you're doing.
-+ **Select bulk create users scenario**: Choose to send onboarding links to all users of that user type, or not. You can also automatically onboard users that already have a password assigned to them.
+1. Select the user type and scenario.
+2. Prepare and upload the template file.
 
-The second step is to edit the template file. If you already have a template file you can edit the file for use in this session and upload it.
+Step 1: Select User Type and Scenario
+***************************************
++ **User type** – You can bulk create users for one user type per session.
 
-If you don't have a template file, download the default template and edit it with the application you normally use for csv files. 
+Note the **Undefined** option: If users imported from Microsoft Graph don’t match any existing rules, their user type is set to Undefined. You generally shouldn’t bulk create users of this type unless you specifically intend to.
 
-There should be one row for each user to create (onboard) in the csv file. Also, you must not touch the top row, you should not edit anything there.
++ Select bulk create users scenario – Choose whether to: Send onboarding links to all users of the selected type, skip sending onboarding links or automatically onboard users who already have assigned passwords.
 
-**Note!** If you use Excel to edit the csv file, you must select "Text to columns" before you start editing. 
+Step 2: Edit the Template File
+*************************************
+If you already have a template file, you can edit it and upload it for use in this session.
+
+If not, download the default template and edit it using your preferred application for .csv files.
+
+Each row in the file should represent one user to be created (onboarded). Do not modify the top row, as it contains column headers required for processing.
+
+**Note**: If you use Microsoft Excel to edit the CSV file, make sure to select **Text to Columns** before making any changes.
 
