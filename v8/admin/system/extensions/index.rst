@@ -1,7 +1,8 @@
 Extensions
 ===========
 
-All extensions used in the tenant are listed here, with ID and version installed. Use this list if you need any information about an extension.
+All extensions used in the tenant are listed here, along with their IDs and installed versions.
+Use this list to view details about an extension or verify which version is currently installed.
 
-Information about the version installed can be especially useful.
+Version information can be especially helpful for troubleshooting or ensuring compatibility.
 
