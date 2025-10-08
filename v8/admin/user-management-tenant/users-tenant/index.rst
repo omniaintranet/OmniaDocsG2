@@ -46,10 +46,8 @@ For more information, select section below:
 
    tenant-user-bulk-create/index
    tenant-user-create/index   
-   v8/admin/user-management-tenant/limitations-omnia-users/index   
+   user-management-tenant/limitations-omnia-users/index   
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
-   v8/common/using-people-picker/index
-
-
+   common/using-people-picker/index
 
