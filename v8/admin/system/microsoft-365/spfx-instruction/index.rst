@@ -1,9 +1,11 @@
 SPFx instruction
 =====================================
 
-This is an instruction that may be needed for integration between Omnia and SharePoint team sites.
+This setting may be required for integration between Omnia and SharePoint team sites.
 
-**Important note!** If running the tenant in monitoring mode, Omnia will not work inside SPFx as most options in SharePoint will not work.
+**Important**:
+If the tenant is running in Monitoring Mode, Omnia will not work inside SPFx, as most SharePoint options are unavailable in this mode.
 
-**Also note!** Monitoring mode is SharePoint online functionality. There's a lot of information available on Microsoft pages regarding how this works. Search for "SharePoint monitoring mode".
+**Note**:
+Monitoring Mode is a SharePoint Online feature. For more information about how it works, search Microsoft’s documentation for “SharePoint monitoring mode.”oring mode".
 
