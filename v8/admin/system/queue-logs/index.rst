@@ -1,9 +1,9 @@
 Queue logs
 =====================================
 
-Administrators can use this option to troubleshoot issues on site provisioning and other long running operations.
+Administrators can use this option to troubleshoot issues related to site provisioning and other long-running operations.
 
-Use the fields at the top to filter the list.
+Use the filter fields at the top to narrow down the list.
 
-If something went wrong, an error log is available by expanding the post.
+If an issue occurred, an error log is available by expanding the relevant entry.
 
