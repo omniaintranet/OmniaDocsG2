@@ -2,7 +2,9 @@ Microsoft 365
 ==============================================
 
 
-Under Microsoft 365, the following can be set if all features are activated. Select section for more information.
+Under Microsoft 365, the following settings can be configured if all features are activated.
+
+Select a section below for more information.
 
 .. toctree::
    :titlesonly:
@@ -11,5 +13,6 @@ Under Microsoft 365, the following can be set if all features are activated. Sel
    spfx-instruction/index
    teams-app-generator/index
    webparts/index
+
 
 
