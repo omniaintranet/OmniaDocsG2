@@ -21,7 +21,7 @@ To choose to work with the public view or the private view of the card layout, o
 
 Preview a profile card
 ---------------------------
-While the menu is open, you can alos preview the card layout for different users:
+While the menu is open, you can also preview the card layout for different users:
 
 .. image:: user-card-layout-user-8.png
 
@@ -30,5 +30,4 @@ While the menu is open, you can alos preview the card layout for different users
 User edits of the profile card
 ************************************
 It's up to each user to edit the contents of the profile card. On this page you can see how it works: (Link to be added).
-
 
