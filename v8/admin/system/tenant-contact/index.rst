@@ -1,34 +1,34 @@
 Tenant contacts
 =====================================
 
-Here, receivers for various information from Omnia can be added. 
+Here, you can add receivers for various types of information from Omnia.
 
-It's very important that you add contact information here. This will be the main channel for information from Omnia. You can edit the contact information any time.
+It is very important to add contact information here — this serves as the main communication channel for announcements and notifications from Omnia.
+You can edit contact details at any time.
 
-If a contact is external, add the Email in the "Add external"-field instead.
+If a contact is external, add their email address in the **Add external** field instead.
 
-**Note!** This option is not applicable for Omnia on-prem.
+**Note**: This option is not applicable for Omnia OnPrem.
 
-Main contacts
+Main Contacts
 *****************
-Here you add the main contact person(s) in your organization, for Omnia. The main contact(s) will receive important announcements from the product team regarding retirement of features or major service interruptions.
+Add the main contact person(s) in your organization for Omnia. These contacts will receive important announcements from the Omnia product team, such as notifications about feature retirements or major service interruptions.
 
-Security contacts
+Security Contacts
 ******************
-The contact(s) you add here will recieve a message from the product team on any suspected or ascertained security breach in the system.
+Add the contact(s) who should receive notifications from the Omnia product team regarding any suspected or confirmed security breach in the system.
 
-System update notification
+System Update Notifications
 ****************************
-Contact(s) added here will receive an automatic Email from the system whenever the tenant has been updated with a new version of the core product or any extension.
+Add the contact(s) who should receive automatic emails when the tenant is updated with a new version of the core product or any extension.
 
-The Emails that are sent about updates are sent from **no-reply@omniacloud.net**. You must make sure to check your junk mail or create a new rule in your Email system to trust this Email address.
+Emails about updates are sent from no-reply@omniacloud.net. Make sure to check your junk mail folder or create a rule in your email system to trust this address.
 
-User sync contacts
+User Sync Contacts
 *******************
-If user sync fails, the contact(s) you add here will receive an Email.
+If user synchronization fails, the contact(s) added here will receive an email notification.
 
 Read more
 *****************
-For more information about the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
-
+For more information about using the people picker, see: :doc:`Using the people picker </v8/common//using-people-picker/index>`
 
