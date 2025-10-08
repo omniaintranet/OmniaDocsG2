@@ -1,20 +1,24 @@
 Create user
 ===================================
 
-Usee these settings when creating a new Omnia user in tenant user management. Available fields are the properties set up under the option in the User management menu. 
+Use these settings to create a new Omnia user in Tenant User Management.
 
-The following options are always available:
+The available fields correspond to the properties defined under User Management settings in the menu.
 
-+ **User type**: Select user type in the list. User types that should be available here must be set up using the option in the User management menu.
-+ **Add image**: Click here to add an image for the user.
-+ **Username, Display name**: Add a username and a display name here. Mandatory.
-+ **Email**: Add a contact Email in this field.
-+ **Authentication Email**: Add an authentication Email. This is mandatory. 
-+ **Time-limited account**: if this user account should be active for a specific time period only, select this option and set the start and end date.
-+ **Email the on-boarding link to the user**: You can choose to send an on-boarding Email to the user by selecting this option. The Email is sent when the user is created.
-+ **CREATE**: When all settings are added, click this button to create the user.
+Available Options
+*********************
++ **User type**: Select the user type from the list. User types available here must first be configured under User Management settings.
++ **Add image**: Click to upload a profile image for the user.
++ **Username / Display name**: Enter a username and a display name. (Mandatory)
++ **Email**: Add a contact email address for the user.
++ **Authentication email**: Enter an authentication email address. (Mandatory)
++ **Time-limited account** If the user account should only be active for a specific period, enable this option and set the start and end dates.
++ **Email the onboarding link to the user**: Enable this option to automatically send an onboarding email when the user is created.
++ CREATE – When all information has been entered, click CREATE to create the user.
 
-Note that you can enable, disable or reset an Omnia user account using the authentication settings when editing an Omnia user.
+Managing Existing Omnia Users
+**********************************
+After a user has been created, you can enable, disable, or reset the account using the Authentication settings in the edit view.
 
 Read more
 ***************
