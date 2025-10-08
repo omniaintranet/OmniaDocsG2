@@ -8,4 +8,5 @@ In this part of the documentation, you will find descriptions of assets and opti
 
    using-media-picker/index   
    using-people-picker/index
+   working-with-layouts/index
 
