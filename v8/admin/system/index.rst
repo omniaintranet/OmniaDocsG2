@@ -1,7 +1,9 @@
 System
 ==========
 
-Under System, the following can be set if all options are activated. Select section for more information.
+Under System, the following settings can be configured if all options are activated.
+
+Select a section below for more information.
 
 .. toctree::
    :titlesonly:
