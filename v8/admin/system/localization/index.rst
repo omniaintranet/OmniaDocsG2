@@ -36,7 +36,7 @@ Select the output language from the available tenant languages.
 
 If you are translating missing labels, it can be useful to export both English (United States) — the base language for Omnia — and the target language. This allows you to compare existing translations with the base text.
 
-Available languages are configured under Tenant Settings → Regional Settings.
+Available languages are configured under **Tenant Settings** → **Regional Settings**.
 
 Export
 ***********
@@ -50,7 +50,8 @@ If you only need to correct one or a few translations, you can edit them directl
 
 **Important**:
 
-This type of change is categorized as Has been customized in the View Mode selector. Customized labels are not overwritten when importing a translated JSON file, which means updates made by the Omnia translation team will not apply to these labels.
+This type of change is categorized as "Has been customized" in the View Mode selector. Customized labels are not overwritten when importing a translated JSON file, which means updates made by the Omnia translation team will not apply to these labels.
 
 Don’t forget to save your changes when you’re done.
+
 
