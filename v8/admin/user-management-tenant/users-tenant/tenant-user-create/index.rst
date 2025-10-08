@@ -24,9 +24,6 @@ Read more
 ***************
 For more information, select section below.
 
-.. toctree::
-   :titlesonly:
-
-   v8/admin/user-management-tenant/limitations-omnia-users/index   
-   v8/common/using-media-picker/index
++ :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
++ :doc:`Using the people picker </v8/common/using-people-picker/index>`
 
