@@ -17,9 +17,9 @@ You use EDIT LAYOUT to edit the layout for the user card for this user type. See
 
 Create a new  type
 ***************************
-When you create a new user type, add a title and a description, and then the other settings as needed.
+When you create a new user type, add a title and a description, and then the other settings as needed. See below for links to descriptions of the settings sections.
 
-Do not forget to click create when all settings are done. Actually, you can also choose to create a new user type with just a title and a description and add the other settings later. See below for links to the settings sections.
+Do not forget to click create when all settings are done. Actually, you can also choose to create a new user type with just a title and a description and add the other settings later. 
 
 Manage the list
 *****************
@@ -41,4 +41,5 @@ For more information, select section below.
    user-card-layout/index
    user-profile-completion-user-type/index
    properties-user-type/index
+
 
