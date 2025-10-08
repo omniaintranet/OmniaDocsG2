@@ -1,10 +1,18 @@
 Pending approval for users
 ===================================
 
-If self service for user accounts is allowed, and if approval is needed for these accounts, approval is handled through this list.
+If self-service for user accounts is enabled, and approval is required for new accounts, all pending requests are managed through this list.
 
-This information is created during the account set up process. Available fields and options depend on various authentication settings. Everything here can be edited if needed.
+Overview
+*************
+The information displayed here is generated during the account setup process. Available fields and options depend on the authentication settings configured for the tenant. All details can be reviewed and edited if necessary before taking action.
 
-When you're ready, click APPROVE or REJECT. If you choose to approve, the account is created and the user is notified. If you reject the request, type a message to explain why this request can't be approved. That message is sent to the user.
+Approving or Rejecting Requests
+**********************************
++ APPROVE – Approves the request, creates the user account, and automatically notifies the user.
++ REJECT – Rejects the request. You must enter a message explaining why the request was not approved. This message is sent to the user.
 
-Self-service is set up (if used) on business profile level. 
+Configuration Note
+***********************
+Self-service setup (if used) is managed on the Business Profile level.
+
