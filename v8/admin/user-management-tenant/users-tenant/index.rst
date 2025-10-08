@@ -46,9 +46,11 @@ For more information, select section below:
 
    tenant-user-bulk-create/index
    tenant-user-create/index   
-   user-management-tenant/limitations-omnia-users/index   
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
-   https://omnia-docs-g2.readthedocs.io/en/latest/v8/common/using-people-picker/index
 
+Also see:
+
++ :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
++ :doc:`Using the people picker </v8/common/using-people-picker/index>`
 
