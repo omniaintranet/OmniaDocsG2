@@ -25,5 +25,5 @@ Read more
 For more information, select section below.
 
 + :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
-+ :doc:`Using the people picker </v8/common/using-people-picker/index>`
++ :doc:`Using the Media picker </v8/common/using-media-picker/index>`
 
