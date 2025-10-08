@@ -1,54 +1,56 @@
 Localization
 =====================================
 
-The localization editor is used to view translations of different labels in different languages, edit these translations, and export the translated labels.
+The Localization Editor is used to view and edit label translations for different languages, as well as export translated labels.
 
-Selecting FILTER you can decide what is displayed in the list and what you will work with:
+Filters
+**************
+Click FILTERS to choose what is displayed in the list and what you want to work with:
 
 .. image:: localization-view-mode-v8.png
 
 View mode
 ************
-Choose to display all or some:
+Choose what to display:
 
 .. image:: localization-view-mode-menu-v8.png
 
-+ **All**: No surprise here, show all within the selected service.
-+ **Has been customized**: Lists all labels that has been edited directly here, without export. For more information, see below.
++ **All**: Displays all labels within the selected service.
++ **Has been customized**: Shows labels that have been edited directly in the editor (without export). See more information below.
 + **have update**: Lists all labels that have been updated.
-+ **Have missing translation**: In order to view the labels that have yet not been translated, select this option.
++ **Have missing translation**: Displays labels that have not yet been translated.
 
 Omnia service
 ***************
-Here you can select the part of omnia that you would like to view the labels of. If the purpose is translating labels, then each part needs to be translated, since each part has different labels
+Select the part of Omnia for which you want to view or translate labels. If you are translating, note that each part of Omnia must be translated separately, as each contains unique label.
 
 .. image:: localization-service-v8.png
 
-**Note!** If the name of the service ends with "worker", it must not be translated.
+**Note!** If the service name ends with “worker”, it must not be translated.
 
 Language
 ************
-Select language for the output here, from the available tenant languages. 
+Select the output language from the available tenant languages. 
 
 .. image:: localization-language-v8.png
 
-If the purpose is translating untranslated labels, it can be useful to create output for both English (United states), that is the base language for Omnia, and the language you wish to translate to. You can then always check existing translations and see the labels in the base language.
+If you are translating missing labels, it can be useful to export both English (United States) — the base language for Omnia — and the target language. This allows you to compare existing translations with the base text.
 
-Available languages are set up under Tenant-Settings-Regional settings.
+Available languages are configured under Tenant Settings → Regional Settings.
 
 Export
 ***********
-When you have selected settings, click EXPORT to export the lis to a file.
+When you have selected your options, click EXPORT to export the list to a file.
 
-The texts that needs to be translated are now exported to a json file. The file is placed in the Downloads folder on your computer.
+The texts that need translation are exported to a JSON file, saved in your computer’s Downloads folder.
 
-Just correcting a few translations
+Correcting Individual Translations
 ************************************
-If you only need to correct one, or a few, translations, you don't need to download the file/files. You can then simply change the translation directly here. 
+If you only need to correct one or a few translations, you can edit them directly in the editor without exporting.
 
-**important note!** This method is what is called "Has been customized" in the View mode selector. Changes you make this way are NOT overwritten if you import a translated JSON file to the system, which also means changes that the Omnia translation staff do is not implemented for these labels/messages.
+**Important**:
 
-Don't forget to save when you're done.
+This type of change is categorized as Has been customized in the View Mode selector. Customized labels are not overwritten when importing a translated JSON file, which means updates made by the Omnia translation team will not apply to these labels.
 
-
+Don’t forget to save your changes when you’re done.
 
