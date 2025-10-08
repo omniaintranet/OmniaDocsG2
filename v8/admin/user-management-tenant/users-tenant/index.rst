@@ -49,5 +49,6 @@ For more information, select section below:
    user-management-tenant/limitations-omnia-users/index   
    tenant-user-pending-approval/index
    tenant-user-recycle-bin/index
-   common/using-people-picker/index
+   https://omnia-docs-g2.readthedocs.io/en/latest/v8/common/using-people-picker/index
+
 
