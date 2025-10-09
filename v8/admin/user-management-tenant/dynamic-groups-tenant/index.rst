@@ -7,5 +7,13 @@ The list **Active** contains the dynamic groups that are presently being used. Y
 
 The list "Deleted" contains dynamic groups that have been deleted, but not yet purged from the system.
 
+Read more
+**********
+For more information, select section below.
 
+.. toctree::
+   :titlesonly:
+
+   active-dynamic-groups/index
+   dynamic-group-recycle-bin/index
 
