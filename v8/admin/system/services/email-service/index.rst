@@ -12,7 +12,7 @@ Use these settings to control whether emails are sent from Omnia, and how they a
 + The selected user account must have a cloud Exchange mailbox.
 + This option is not available in Omnia OnPrem.
 
-Restricting aho Omnia can send emails as (Exchange)
+Restricting who Omnia can send emails as (Exchange)
 *******************************************************
 When using Exchange to send emails from Omnia, Microsoft’s permission model requires Omnia to be granted permission to send emails on behalf of any user in the organization.
 
@@ -21,6 +21,7 @@ This broad permission may raise security concerns. To address this, a guide for 
 Additional SMTP Server aettings
 ************************************
 If **SMTP server** is selected as the email provider, the necessary configuration fields are displayed here.
+
 
 
 
