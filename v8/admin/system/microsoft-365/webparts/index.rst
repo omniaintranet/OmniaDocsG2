@@ -7,14 +7,14 @@ Click LEARN TO USE IT to open the detailed block description page.
 **Note**:
 There are a few small differences compared to the block descriptions in the Omnia documentation. Some options not applicable to SharePoint have been removed.
 
-Prepare the SharePoint Site
+Prepare the SharePoint site
 *****************************
 Before using Omnia web parts in SharePoint, you must prepare each SharePoint site by completing the following steps:
 
 1. Attach the SharePoint site to Omnia.
 2. Activate the app feature **SPFx infrastructure** for the SharePoint site.
 
-Add an Omnia Web Part to SharePoint
+Add an Omnia web part to SharePoint
 *****************************************
 Follow these steps to use an Omnia web part in SharePoint:
 
@@ -25,7 +25,7 @@ Follow these steps to use an Omnia web part in SharePoint:
 5. Click **Upload**, and select the web part package downloaded from Omnia admin.
 6. Enable the web part for all sites or for individual sites.
 
-Adding a Web Part to Individual Sites
+Adding a web part to individual sites
 ******************************************
 If the web part is enabled for individual sites, site owners can add it as follows:
 
@@ -34,4 +34,5 @@ If the web part is enabled for individual sites, site owners can add it as follo
 3. Click **Add** on the Omnia web part, and then click **Add** again to confirm.
 
 The web part can now be added to any SharePoint page like any other web part.
+
 
