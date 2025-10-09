@@ -15,10 +15,10 @@ Choose what to display:
 
 .. image:: localization-view-mode-menu-v8.png
 
-+ **All**: Displays all labels within the selected service.
-+ **Has been customized**: Shows labels that have been edited directly in the editor (without export). See more information below.
-+ **have update**: Lists all labels that have been updated.
-+ **Have missing translation**: Displays labels that have not yet been translated.
++ All – Displays all labels within the selected service.
++ Has been customized – Shows labels that have been edited directly in the editor (without export). See more information below.
++ have update – Lists all labels that have been updated.
++ Have missing translation – Displays labels that have not yet been translated.
 
 Omnia service
 ***************
@@ -53,5 +53,6 @@ If you only need to correct one or a few translations, you can edit them directl
 This type of change is categorized as "Has been customized" in the View Mode selector. Customized labels are not overwritten when importing a translated JSON file, which means updates made by the Omnia translation team will not apply to these labels.
 
 Don’t forget to save your changes when you’re done.
+
 
 
