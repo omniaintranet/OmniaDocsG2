@@ -31,3 +31,7 @@ You can also add Omnia groups and Entra ID groups to an Omnia group. (However, y
 1. Click the GROUPS button.
 2. Select one or more groups from the list to add them to the Omnia group.
 
+Read more
+*************
+For more information about Media picker, see: :doc:`Using Media picker </v8/common/using-media-picker/index>`
+
