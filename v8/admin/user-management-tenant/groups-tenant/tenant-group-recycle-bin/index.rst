@@ -1,7 +1,10 @@
 Group recycle bin
 ===================================
 
-In this list you can restore deleted Omnia groups - RESTORE GROUP - or delete them permanently - PURGE GROUP. Select one or more groups and then select what to do with them. 
+In this view, you can restore deleted Omnia groups or permanently delete them.
 
-You can't restore deleted Microsoft Graph groups but you can purge them from your system.
++ To restore a deleted group, select one or more groups and choose RESTORE GROUP.
++ To permanently delete a group, select one or more groups and choose PURGE GROUP.
+
+**Note**: Deleted Microsoft Graph groups cannot be restored, but they can be purged from the system.
 
