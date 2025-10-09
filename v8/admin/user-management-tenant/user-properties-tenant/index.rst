@@ -1,27 +1,25 @@
 User properties
 ===================================
 
-The properties you want to use when creating Omnia users must be present in this list. These properties can also be shown on the customized user profile cards together with properties from Entra ID and SharePoint. Besides that, they will also be used to manage targeted mobile push notifications and statistics. Also note the comment about GDPR.
+The properties you want to use when creating Omnia users must be listed here.
 
-A number of default properties are always available. They can not be edited or deleted. The ones that can be expanded are added by an administrator and can be edited.
+These properties can also be displayed on customized user profile cards, together with properties from Entra ID and SharePoint. They are also used to manage targeted mobile push notifications and user statistics.
 
-You can filter the list on property type. Also note the GDPR information.
+**Note**: Be sure to review the GDPR information related to user properties.
 
-.. image:: user properties-gdpr.png
+Default and Custom Properties
+*********************************
+A number of default properties are always available. These cannot be edited or deleted.
 
-If you need additional properties you add them here as described below (see link).
+Additional, expandable properties can be created by an administrator and edited as needed.
 
-Edit or delete a property
-****************************
-Available options when editing a property depends on the type of property. Here's an example:
+You can filter the list by property type. 
 
-.. image:: user-properties-edit-example.png
+GDPR-related information is displayed in this view:
 
-Here you can also choose to delete the property.
+.. image:: user-properties-gdpr.png
 
-Deleting a user property
-**************************
-When you delete a user property from this list, it's not deleted directly, it's moved to the property recycle bin, available under the tenant settings Properties.
+If you need to add new properties, follow the instructions described below (see link).
 
 Read more
 **********
