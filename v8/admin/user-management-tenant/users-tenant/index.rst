@@ -6,7 +6,7 @@ This page describes the Users list in tenant user management. User management is
 + Users created within a business profile can be managed either in that profile (by a Business Profile Administrator) or here (by a Tenant Administrator).
 + Users created directly under the tenant can only be managed by a Tenant Administrator.
 
-The Users List
+The Users list
 *******************
 Here, you can view all users in the tenant. You can add Omnia users (users who do not require a Microsoft 365 license) as well as edit or delete users created this way.
 
@@ -28,7 +28,7 @@ The following filters are available to display only selected users:
 
 **Tip**: To list only Omnia users created here, select **Omnia** under **Provider**.
 
-Add a New Omnia User
+Add a new Omnia user
 *********************
 You can add users in two ways:
 
@@ -53,4 +53,5 @@ Also see:
 
 + :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
 + :doc:`Using the people picker </v8/common/using-people-picker/index>`
+
 
