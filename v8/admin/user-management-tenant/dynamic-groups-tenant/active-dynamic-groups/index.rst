@@ -5,7 +5,7 @@ Here the active dynamic groups are listed. You can edit a group by expanding the
 
 Available options are the same when creating new and editing groups, see below.
 
-You can manage the list, meaning deciding the order in which the groups are shown in variious lists. Use drag and drop.
+You can manage the list, meaning deciding the order in which the groups are shown in various lists. Use drag and drop.
 
 .. image:: active-dynamic-manage.png
 
@@ -29,4 +29,5 @@ Click CREATE to save a new group, SAVE to save changes in en existing group.
 Read more
 *********
 For more information, see: 
+
 
