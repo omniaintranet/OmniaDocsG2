@@ -3,7 +3,7 @@ Teams app generator
 
 Use these options as a quick starting point for creating a new Teams app for Omnia, or for updating an existing one.
 
-Generate Omnia App
+Generate Omnia app
 **********************
 Enter a title, description, and home URL, then click GENERATE.
 
@@ -11,7 +11,7 @@ The app is created and downloaded as a .zip file to your Downloads folder.
 
 The app is ready for use immediately, but you may want to make additional adjustments using the Developer Portal.
 
-Additional Settings (Optional)
+Additional aettings (optional)
 -------------------------------
 You can make optional refinements to your app in the Developer Portal, such as adding icons or customizing branding.
 
@@ -22,7 +22,7 @@ Access the Developer Portal either as an app in Teams or at dev.teams.microsoft.
 3. Make any other changes you wish to apply.
 4. Download the updated app.
 
-Publish the App (Optional)
+Publish the app (optional)
 -----------------------------
 These steps are optional, but required if you want users to access the app without installing it manually (which some users may not have permission to do).
 
@@ -39,7 +39,7 @@ When published this way, the app is installed automatically for all users, or fo
 
 **Note**: It may take up to 24 hours before users can access the app in Teams.
 
-Update Existing App
+Update existing app
 ***********************
 If you already have an Omnia app and want to update it to the 6.10 (or later) standard, use the **Update Existing App** tab. The description indicates the purpose: “Ensure Omnia SSO and Omnia Teamwork tab for an existing app.”
 
@@ -49,5 +49,6 @@ To update an app:
 2. Click GENERATE.
 
 The updated app is downloaded as a .zip file to your Downloads folder.
+
 
 
