@@ -8,7 +8,7 @@ Use these settings to bulk create users in Omnia. The process has two main steps
 
 Step 1: Select user type and scenario
 ***************************************
-+ **User type** – You can bulk create users for one user type per session.
++ User type – You can bulk create users for one user type per session.
 
 Note the **Undefined** option: If users imported from Microsoft Graph don’t match any existing rules, their user type is set to Undefined. You generally shouldn’t bulk create users of this type unless you specifically intend to.
 
@@ -23,5 +23,6 @@ If not, download the default template and edit it using your preferred applicati
 Each row in the file should represent one user to be created (onboarded). Do not modify the top row, as it contains column headers required for processing.
 
 **Note**: If you use Microsoft Excel to edit the CSV file, make sure to select **Text to Columns** before making any changes.
+
 
 
