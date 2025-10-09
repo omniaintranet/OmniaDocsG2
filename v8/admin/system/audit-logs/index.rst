@@ -8,9 +8,9 @@ This option logs key events in Omnia:
 
 The list includes the following columns:
 
-+ **Title**: Shows a description of what was changed.
-+ **Logged by**: Displays the name of the person who made the change.
-+ **Logged at**: Shows the date and time of the change. You can sort the list by this column..
++ Title – Shows a description of what was changed.
++ Logged by – Displays the name of the person who made the change.
++ Logged at – Shows the date and time of the change. You can sort the list by this column..
 
 You can filter the list by date, category, or person (click FILTERS).
 
@@ -27,4 +27,5 @@ Access the setting by clicking the cogwheel icon.
 In the settings, you can turn Audit logging on or off — this action is also logged.
 
 .. image:: audit-logs-list-settings-settings-v8.png
+
 
