@@ -1,33 +1,49 @@
-User profile completion settings
+User profile Completion settings
 =====================================
 
-All edits can be done on the user profile card. On this tab you work with the settings for profile completion. 
+All edits are managed on the user profile card. On this tab, you configure the profile completion settings for the selected user type.
 
-The selected properties are listed here (in a new user type, this list is empty). Of course, the properties you add here must also be present in the card layout for the follow up on profile completion to be meaningful. 
+The selected properties are listed here. In a new user type, this list will initially be empty.
 
-Add a property
-****************
-You click ADD to add a property and the following are available:
+**Note**: The properties you add for profile completion must also be included in the card layout. Otherwise, the follow-up on profile completion will not be meaningful.
+
+Add a Property
+*****************
+Click ADD to add a new property. The following options are available:
 
 .. image:: tab-profile-completion-property-v8.png
 
-+ **Data source**: Select the data source to get the properties from; User (meaning Omnia user), User (Microsoft Graph) or User (Sharepoint). 
-+ **Select properties**: Select the property here.
-+ **Completeness impact**: You can set the completeness impact to Low, Medium or High. When the completeness impact is calculated, Low is 1, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
++ Data source – Select the data source for the property:
+o User (Omnia)
+o User (Microsoft Graph)
+o User (SharePoint)
++ Select properties – Choose the specific property from the selected data source.
++ Completeness impact – Define the property’s impact on profile completeness: Low, Medium, or High.
 
-Edit or delete a property
-***************************
-To edit or delete a property, expand the property. You can edit the completion impact and delete the property if needed.
+When calculating completeness, Low = 1 point, Medium = 2 points, and High = 3 points. The total points achieved are divided by the maximum possible points to produce the completion percentage.
+
+Edit or Delete a Property
+*****************************
+To edit or delete a property, expand the property entry. You can adjust the completeness impact or delete the property if necessary.
 
 .. image:: tab-profile-completion-property-delete-v8.png
 
 Schedule
-------------
-You can schedule the check for how complete the user profle is, according to the settings for the user type. Expand to see the settings:
+***********
+You can schedule checks for how complete a user’s profile is, based on the settings defined for the user type.
+
+Expand the Schedule section to view and edit the options:
 
 .. image:: tab-profile-completion-schedule-change-v8.png
 
-You can set the schedule to Never (meaning not set), Daily, Weekly or Monthly. For Daily, Weekly and Monthly, additional settings are avaible. Should be self explanatory.
+You can set the schedule to:
 
-The check is executed when the page containing the user profile progress block is updated.
++ Never (no scheduled checks)
++ Daily
++ Weekly
++ Monthly
+
+For Daily, Weekly, and Monthly, additional configuration options are available.
+
+**Note**: The completeness check is executed when the page containing the User Profile Progress block is updated.
 
