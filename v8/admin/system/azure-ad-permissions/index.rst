@@ -12,10 +12,11 @@ Here’s an example of the Microsoft Graph permissions list:
 
 .. image:: azure-ad-permissions-graph-v8.png
 
-Invalidate All User Tokens
+Invalidate all user tokens
 ******************************************
 If you click **Invalidate all user tokens**, all users are signed out of Omnia. This action affects only Omnia — not SharePoint, Office apps, email, or other Microsoft services.
 
 If an editor or author is working on a page when the logout occurs, the user will be signed out, but any changes made are automatically saved frequently, even if not published, to minimize content loss.
+
 
 
