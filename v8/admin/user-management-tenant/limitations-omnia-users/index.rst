@@ -1,25 +1,29 @@
-Limitations for Omnia users
+Limitations for Omnia Users
 ===================================
 
-Omnia users do not require a Microsoft 365 licence, and that means no options that are depending on Microsoft 365 or SharePoint (as it's a part of M365) can be used. 
+Omnia users do not require a Microsoft 365 license. This also means that any functionality dependent on Microsoft 365 or SharePoint (as SharePoint is part of M365) cannot be used. 
 
-These areas of functionality can not be used for non M365 users:
+Features unavailable for non-M365 users
+*******************************************
+The following areas of functionality are not available to users without an M365 license:
 
 + Teams functionality
 + Teamworks
 + Document management
 + Process management
-+ Most aspects of search (but see the Search block below)  
++ Most aspects of search (see the Search block section below for details)
 
-When creating pages, or rather page templates, that will be used by Omnia users, it's important to consider which blocks to use, see below.
+When creating pages—or more specifically, page templates—intended for Omnia users, it’s important to consider which blocks can be used. See the section below for details.
 
-All other aspects regarding pages works well for Omnia users, but keep in mind that permissions must be handled through Omnia groups or Dynamic groups for these users.
+All other page-related functionality works as expected for Omnia users. However, keep in mind that permissions must be managed through Omnia Groups or Dynamic Groups for these users.
 
-Blocks to use for non M365 users
+Blocks for Non-M365 Users
 ************************************
-The following information specifies blocks that can be used for users that do not have a M365 license, in full or in part, and the blocks that can not be used.
+The following sections describe which blocks can be used (fully or partially) by users without a Microsoft 365 license, and which cannot be used at all.
 
-These blocks can be used **in full**:
+Blocks available in full
+---------------------------
+The following blocks can be used without limitation:
 
 + Activity feed
 + Analytic filters
@@ -37,7 +41,7 @@ These blocks can be used **in full**:
 + FAQ
 + Form
 + Form rollup
-+ (Form question is not applicable as it's only used by administrators, not on pages)
++ (Note: The Form question block is not applicable, as it’s only used by administrators.)
 + HTML/Script
 + IFrame
 + Media
@@ -48,7 +52,7 @@ These blocks can be used **in full**:
 + Page feedback
 + Page likes & comments
 + Page properties
-+ Page rollup (require activation of the feature "Page rollup accelerator powered by search")
++ Page rollup (requires activation of the feature “Page rollup accelerator powered by search”)
 + Page variation selector
 + Posts
 + Power app
@@ -64,14 +68,18 @@ These blocks can be used **in full**:
 + User information
 + Welcome block
 
-**Some options** in the following blocks can be used:
+Blocks partially available
+------------------------------
+Some options within the following blocks can be used:
 
-+ Action button: depends on the button (see the block that corresponds with the button)
-+ People rollup: can only use the Omnia query
-+ Search: can only search for Omnia users (use the Omnia search provider)
-+ Sign-off request rollup: can only be used for pages
++ Action button – Depends on the linked function (see documentation for the corresponding block).
++ People rollup – Can only use the Omnia query.
++ Search – Can only search for Omnia users (use the Omnia search provider).
++ Sign-off request rollup – Can only be used for pages.
 
-The following blocks **can not be used** for non M365 users:
+Blocks unavailable for non-M365 users
+------------------------------------------
+The following blocks **cannot** be used by users without a Microsoft 365 license:
 
 + Calendar rollup
 + Community rollup
@@ -102,4 +110,5 @@ The following blocks **can not be used** for non M365 users:
 + Teamwork rollup
 + Team news rollup
 + Teams channel feed
+
 
