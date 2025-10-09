@@ -1,11 +1,11 @@
-User Types
+User types
 ===================================
 
 Every user in Omnia is assigned a user type. User types are also used when creating Omnia users and when setting up dynamic groups.
 
 Authentication settings and user profile completion settings are configured per user type. Each user type can also have its own user card layout, if needed.
 
-Edit or Delete a User Type
+Edit or delete a user type
 *******************************
 Click a user type to edit its settings. All settings available when creating a user type can be modified here (see the links below for details).
 
@@ -46,6 +46,7 @@ For more information, select section below.
    user-card-layout/index
    user-profile-completion-user-type/index
    properties-user-type/index
+
 
 
 
