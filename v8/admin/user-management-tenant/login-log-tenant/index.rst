@@ -1,7 +1,11 @@
 Login log
 ===================================
 
-Use this list to keep track of logins and login attempts, for example useful if you suspect hacking attempts.
+Use this list to monitor logins and login attempts. This can be particularly useful if you suspect unauthorized access or hacking attempts.
 
-You can filter the list on Date - the last 7 days or the last 24 hours. You can browse or search for a specific user and filter on Status - successful or failed login.
+You can filter the list by the following options:
+
++ Date: View entries from the last 7 days or the last 24 hours.
++ User: Browse or search for a specific user.
++ Status: Filter by successful or failed login attempts.
 
