@@ -1,33 +1,39 @@
 User card layout
 =====================================
 
-You can create a custom user profile card for each user user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. 
+You can create a custom user profile card for each user type, if needed. It’s also possible to define different layouts for the private card view and the public card view.
 
-This is done by selecting EDIT LAYOUT when editing or creating a user type. A basic layout is always available, so if you're find with that, you don't have to make any changes.
+The private card view is what a user sees when viewing their own profile card. The public card view is what other users see.
 
-You work with the layout for the cards the same way as other layouts in Omnia, see: :doc:`Working with layouts </v8/common/working-with-layouts/index>`
+Creating or Editing a User Card Layout
+****************************************
+To customize the layout, click EDIT LAYOUT when editing or creating a user type.
 
-Of course, just a few of the available blocks makes sense to use here, but that is up to you.
+A basic layout is always available. If you’re satisfied with the default layout, no further changes are required.
 
-Here's an example of a basic user profile card layout (shown in edit mode):
+You configure the card layout the same way you work with other layouts in Omnia. See: :doc:Working with layouts </v8/common/working-with-layouts/index>
+
+**Note**: Only a subset of the available blocks is typically meaningful to use in a profile card — but the selection is up to you.
+
+Example of a basic user profile card layout (shown in edit mode):
 
 .. image:: user-card-layout-8.png
 
-Public or private
-**********************
-To choose to work with the public view or the private view of the card layout, open the menu.
+Public or Private View
+**************************
+To switch between editing the public and private versions of the card layout, open the menu:
 
 .. image:: user-card-layout-menu-8.png
 
-Preview a profile card
----------------------------
+Preview a Profile Card
+**************************
 While the menu is open, you can also preview the card layout for different users:
 
 .. image:: user-card-layout-user-8.png
 
-**Important note!** When you preview a colleagues card, all permissions are valid, meaning you can just see what YOU have permissions to see, not what the user has permissions for.
+**Important note**: When previewing a colleague’s card, your own permissions apply. This means you only see information that you have access to view, not what the other user can see on their profile.
 
-User edits of the profile card
-************************************
-It's up to each user to edit the contents of the profile card. On this page you can see how it works: (Link to be added).
+User Edits to the Profile Card
+**********************************
+Each user can edit their own profile card content.
 
