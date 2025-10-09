@@ -1,22 +1,33 @@
 Create group
 ===================================
 
-These settings are available when you create a new group.
+When creating a new group, the following settings are available:
 
-Here you can add an image for the group using the Image picker, add a name and description and add Omnia users (members) to the group. The users must be added to the Users list first, to be available here.
++ Add an image for the group using the Media picker.
++ Enter a name and description.
++ Add Omnia users (members) to the group.
 
-You can also add users to the Owners group, if more than the tenant administrator should be able to edit the group. Users are added the same way to this group as to the Members group.
+**Note**: Users must be added to the Users list first in order to appear here.
 
-Add users to a group
-**********************
-Omnia users and Entra ID users can be added to an Omnia group. Click the USERS button and add one or more users from the list.
+You can also assign Owners for the group.
 
-If you selected a user by mistake, use the dust bin to remove the user from the group.
+If more than the tenant administrator should be able to edit the group, add additional users to the Owners group.
 
-Add groups to an Omnia group
+Users are added to the Owners group the same way as to the Members group.
+
+Add Users to a Group
+***********************
+Both Omnia users and Entra ID users can be added to an Omnia group.
+
+1. Click the USERS button.
+2. Select one or more users from the list to add them to the group.
+
+If you select a user by mistake, click the trash bin icon to remove that user from the group.
+
+Add Groups to an Omnia Group
 ******************************
-You can add Omnia groups and Entra ID groups to an Omnia group (you can't add Omnia groups to an Entra group, though).
+You can also add Omnia groups and Entra ID groups to an Omnia group. (However, you cannot add Omnia groups to an Entra group.)
 
-Click the GROUPS button and add one or more groups from the list.
-
+1. Click the GROUPS button.
+2. Select one or more groups from the list to add them to the Omnia group.
 
