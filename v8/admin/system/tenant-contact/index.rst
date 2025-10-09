@@ -10,21 +10,21 @@ If a contact is external, add their email address in the **Add external** field 
 
 **Note**: This option is not applicable for Omnia OnPrem.
 
-Main Contacts
+Main contacts
 *****************
 Add the main contact person(s) in your organization for Omnia. These contacts will receive important announcements from the Omnia product team, such as notifications about feature retirements or major service interruptions.
 
-Security Contacts
+Security contacts
 ******************
 Add the contact(s) who should receive notifications from the Omnia product team regarding any suspected or confirmed security breach in the system.
 
-System Update Notifications
+System update notifications
 ****************************
 Add the contact(s) who should receive automatic emails when the tenant is updated with a new version of the core product or any extension.
 
 Emails about updates are sent from no-reply@omniacloud.net. Make sure to check your junk mail folder or create a rule in your email system to trust this address.
 
-User Sync Contacts
+User sync contacts
 *******************
 If user synchronization fails, the contact(s) added here will receive an email notification.
 
