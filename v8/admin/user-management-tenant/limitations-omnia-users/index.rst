@@ -17,7 +17,7 @@ When creating pages—or more specifically, page templates—intended for Omnia 
 
 All other page-related functionality works as expected for Omnia users. However, keep in mind that permissions must be managed through Omnia Groups or Dynamic Groups for these users.
 
-Blocks for Non-M365 Users
+Blocks for non-M365 users
 ************************************
 The following sections describe which blocks can be used (fully or partially) by users without a Microsoft 365 license, and which cannot be used at all.
 
@@ -110,5 +110,4 @@ The following blocks **cannot** be used by users without a Microsoft 365 license
 + Teamwork rollup
 + Team news rollup
 + Teams channel feed
-
 
