@@ -1,13 +1,16 @@
 Groups
 ===================================
 
-Here, all groups in the tenant are listed and you can create and delete your own Omnia groups for security setups. You can't change anything for a Microsoft Graph group, but you can see a list of members in the group. 
+This view lists all groups in the tenant, allowing you to create and delete your own Omnia groups for security configurations.
 
-If you're working with User management for a business profile, groups can be created and edited the same way there, and are then valid for that business group only.
+You cannot modify Microsoft Graph groups, but you can view their members in the list.
 
-When you edit an Omnia group, all settings are available, as when you add a new group, see link below. Regarding groups and users from MS Graph, only added properties, if any, can be edited, not the information that originates from MS Graph.
+If you are managing users for a business profile, groups can be created and edited in the same way. However, these groups are only valid within that specific business profile.
 
-You can sort the list on the "Name" and "Provider" columns. If you would like a list of the Omnia groups only, select "Omnia group" as provider.
+When editing an Omnia group, all settings are available—just as when adding a new group (see the link below).
+For Microsoft Graph groups and users, only additional properties (if any) can be edited; information originating from Microsoft Graph cannot be changed.
+
+You can sort the list by the Name or Provider columns. To display only Omnia groups, select “Omnia group” as the provider.
 
 Read more
 **********
@@ -18,6 +21,7 @@ For more information, select section below.
 
    tenant-group-create/index
    tenant-group-recycle-bin/index
+
 
 
 
