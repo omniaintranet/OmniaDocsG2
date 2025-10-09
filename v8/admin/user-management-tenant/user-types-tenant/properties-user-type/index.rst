@@ -13,7 +13,7 @@ The remaining properties are either selected (black) or not selected (blank), an
 + Edit – Available only when editing an existing user.
 + Both – Available both when creating and editing a user.
 
-Custom Properties
+Custom properties
 *******************
 Additional properties may appear under **Custom properties**, for example:
 
@@ -21,9 +21,10 @@ Additional properties may appear under **Custom properties**, for example:
 
 These are used in the same way as the standard properties described above.
 
-Manage the Property List
+Manage the property list
 **************************
 You can also manage the list of properties using drag and drop to define the order in which properties appear when creating a new user.
 
 .. image:: user-type-properties-manage.png
+
 
