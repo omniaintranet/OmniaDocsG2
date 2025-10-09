@@ -8,7 +8,7 @@ The People picker — sometimes referred to as the Identity picker — is used i
 
 Prerequisites
 ******************
-To use the People picker, users must be assigned the Directory reader role in the tenant permissions. For more information, see: :doc: Permissions – users and groups </v8/admin/permissions-tenant/users-and-groups/index>
+To use the People picker, users must be assigned the Directory reader role in the tenant permissions. For more information, see: :doc:`Permissions - users and groups </v8/admin/permissions-tenant/users-and-groups/index>`
 
 Using the People Picker
 **************************
@@ -45,5 +45,6 @@ If you want to search for a specific user type or group type, you can apply filt
 Available filter options depend on the configuration in Omnia Admin. Here’s an example of possible filters:
 
 .. image:: people-picker-example-filter2-v8.png
+
 
 
