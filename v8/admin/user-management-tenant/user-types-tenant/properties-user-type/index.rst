@@ -1,23 +1,29 @@
 User type properties
 =====================================
 
-Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselected, they are marked with gray.
+Here you select which properties should be available for the selected user type.
+
+Some properties are mandatory and cannot be deselected. These are marked in gray:
 
 .. image:: user-type-properties-grey.png
 
-The properties that are selected (black) and not selected (blank), you can decide how to use. 
+The remaining properties are either selected (black) or not selected (blank), and you can decide how each selected property will be used:
 
-+ New: Only available when a new user is set up with this user type.
-+ Edit: Only available when a user is edited.
-+ Both: Available both for new and when editing.
++ New – Available only when creating a new user of this type.
++ Edit – Available only when editing an existing user.
++ Both – Available both when creating and editing a user.
 
-Additional properties can also bed available under "Custom properties", for example:
+Custom Properties
+*******************
+Additional properties may appear under **Custom properties**, for example:
 
 .. image:: user-type-properties-custom.png
 
-They are used the same way as described above.
+These are used in the same way as the standard properties described above.
 
-You can also manage the list, meaning using drag and drop to decide the order in which the properties are shown when creating a new user.
+Manage the Property List
+**************************
+You can also manage the list of properties using drag and drop to define the order in which properties appear when creating a new user.
 
 .. image:: user-type-properties-manage.png
 
