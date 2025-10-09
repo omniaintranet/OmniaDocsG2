@@ -1,4 +1,4 @@
-User profile Completion settings
+User profile completion settings
 =====================================
 
 All edits are managed on the user profile card. On this tab, you configure the profile completion settings for the selected user type.
@@ -7,7 +7,7 @@ The selected properties are listed here. In a new user type, this list will init
 
 **Note**: The properties you add for profile completion must also be included in the card layout. Otherwise, the follow-up on profile completion will not be meaningful.
 
-Add a Property
+Add a property
 *****************
 Click ADD to add a new property. The following options are available:
 
@@ -22,7 +22,7 @@ o User (SharePoint)
 
 When calculating completeness, Low = 1 point, Medium = 2 points, and High = 3 points. The total points achieved are divided by the maximum possible points to produce the completion percentage.
 
-Edit or Delete a Property
+Edit or delete a property
 *****************************
 To edit or delete a property, expand the property entry. You can adjust the completeness impact or delete the property if necessary.
 
@@ -46,4 +46,5 @@ You can set the schedule to:
 For Daily, Weekly, and Monthly, additional configuration options are available.
 
 **Note**: The completeness check is executed when the page containing the User Profile Progress block is updated.
+
 
