@@ -1,26 +1,36 @@
-Using the media picker
+Using Media Picker
 =============================================
 
-The Media picker, somtimes referred to as the Image picker, can be used to add an image or a video to a block, or to the page content through the RTF editor. Any image on the editor's computer can be selected, as well as from any central image location registered in Omnia admin. An image can be pasted from the clipboard as well. Besides that, additional providers can be set in Omnia admin.
+The Media picker — sometimes referred to as the Image picker — is used to add images or videos to a block, or directly to page content via the RTF editor.
 
-When the Media picker starts, something like the following is shown:
+You can select an image:
+
++ From your local computer
++ From any central media location registered in Omnia Admin
++ By pasting an image from the clipboard
+
+Additionally, extra media providers can be configured in Omnia Admin.
+
+When the Media picker opens, a window similar to the one below is displayed:
 
 .. image:: media-picker-v8.png
 
-To select an image, after a search in most cases, click it and the settings will be shown. Settings are the same for all images.
+To select an image, perform a search (if needed), click the image, and the image settings will be displayed. The available settings are the same for all images.
 
-A number of providers can be set up. Here are some common ones.
+Available Providers
+**********************
+A number of media providers can be configured. Below are some common examples:
 
-+ Select "My computer" to either paste an image from the clipboard or to browse for an image on your computer.
-+ A "Central media bank" can be set up. You can then browse the libraries or search for an image there. Settings for media banks are made for each business profile. Note that videos can be handled in SharePoint media libraries as well, with some Microsoft video editing options.
-+ For Bing to be available, the feature "Bing" must be active. When selecting Bing you can search for any image there, or use the predefined search categories, if any is set up. Bing search categories can be set up by an administrator in Omnia admin. **Important note!** Omnia applies a filter to the Bing search automatically so only images that are free to use can be found through the media picker.
-+ For Pexels to be available the feature "Pexels" must be active. Available search- or filtering fields depend on what the provider offer. For Pexels only a search field is available. **Important note!** All images from Pexels are always free to use, and edit.
++ My computer – Paste an image from the clipboard or browse to select an image from your computer.
++ Central media bank – Browse or search libraries for images. Media bank settings are configured per business profile. Videos can also be stored and managed in SharePoint media libraries, including some Microsoft video editing options.
++ Bing – Requires the Bing feature to be active. You can search for any image or use predefined search categories (if set up). Administrators can configure Bing search categories in Omnia Admin. **Important**: Omnia automatically filters Bing results to display only images free to use.
++ Pexels – Requires the Pexels feature to be active. Only a search field is available for Pexels. **Important**: All images from Pexels are always free to use and edit.
 
-File size larger than recommended
+File Size Larger Than Recommended
 ****************************************
-If you select an image that is too big, a warning is shown and you can decide what to do. What is considered "too big" in your organization is set up in Omnia admin, together with available options.
+If you select an image that exceeds the organization’s recommended file size, a warning will appear, allowing you to decide how to proceed. The definition of what is considered “too large,” along with the available options, is configured in Omnia Admin.
 
-**Note!** In the Media block a default scaling can be set. If it is, no dialog for a big image is shown. Instead, all images added will be scaled to the default scaling automatically.
+**Note**: In the Media block, a default scaling option can be set. When this is active, no “large image” warning is shown — all added images are automatically scaled to the default size.
 
 Read more
 **************
