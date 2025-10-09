@@ -20,11 +20,11 @@ The following filters are available to display only selected users:
 
 .. image:: users-tenant-filter.png
 
-+ **Time-limited**: For user accounts with a defined duration, choose to list active or inactive accounts.
-+ **Status**: Filter by enabled or disabled accounts.
-+ **User type**: Display users by a specific registered user type.
-+ **Provider**: Filter by provider, typically Microsoft Graph or Omnia.
-+ **Scope type**: Choose which users to display based on scope: Tenant, Business Profile, or Group. If you select Business Profile or Group, you can then select the specific one as a second step.
++ Time-limited – For user accounts with a defined duration, choose to list active or inactive accounts.
++ Status – Filter by enabled or disabled accounts.
++ User type – Display users by a specific registered user type.
++ Provider – Filter by provider, typically Microsoft Graph or Omnia.
++ Scope type – Choose which users to display based on scope: Tenant, Business Profile, or Group. If you select Business Profile or Group, you can then select the specific one as a second step.
 
 **Tip**: To list only Omnia users created here, select **Omnia** under **Provider**.
 
@@ -53,5 +53,6 @@ Also see:
 
 + :doc:`Limitations for Omnia users </v8/admin/user-management-tenant/limitations-omnia-users/index>`
 + :doc:`Using the people picker </v8/common/using-people-picker/index>`
+
 
 
