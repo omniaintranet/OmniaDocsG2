@@ -3,67 +3,66 @@ Working with Layouts
 
 **This documentation is just started.**
 
-You can create different layouts for a number of features in Omnia. A great dela of what you can do is generic and that is what is described here.
+You can create different layouts for a variety of features in Omnia. Much of the functionality is generic, and this page describes the general approach.
 
-When working with the navigation bar layout for mega menu objects, you can use all options for sections and blocks available in Omnia.
+When working with the navigation bar layout for mega menu objects, you can use all available section and block options in Omnia.
 
-Start by clicking the x symbol to add a section.
+Creating a Layout
+*******************
+Start by clicking the ➕ (Add section) icon.
 
 .. image:: layout-1-new.png
 
-Then select section layout, just like you would do when working with a Page Type.
+Next, select a section layout, just as you would when working with a Page Type.
 
 .. image:: layout-2-new.png
 
-Then continue building up the layout using sections and blocks.
+Then, continue building your layout by adding sections and blocks as needed.
 
-For more information, see these pages:
+For detailed guidance, see the following pages:
 
 + :doc:`Working with sections and blocks </pages/page-types/working-with-sections-and-blocks/index>`
 + :doc:`Settings for sections </pages/page-types/section-settings/index>`
 + :doc:`Working with blocks </blocks/working-with-blocks/index>`
 
-**A tip:** One way of creating a mega menu-like navigation is to use a Page Rollup, with scope "Navigation path" and "Navigation View".
+**Tip**: You can create a mega menu–style navigation by using a Page Rollup block with the scope set to **Navigation path** and **Navigation View**.
 
-Saving a draft and publishing
+Saving a Draft and Publishing
 ---------------------------------
-Saving a draft, discarding changes and finally publishing the layout, works very similar to working with pages.
+Saving a draft, discarding changes, and publishing a layout work similarly to how pages are managed.
 
 .. image:: layout-3-new.png
 
-For more information, see these pages:
+For more information, see:
 
 + :doc:`Edit a page </pages/edit-page/index>`
 + :doc:`Publish page changes </pages/publish-page-changes/index>`
 
-But note that it's very similar, not exactly the same. Some options for pages are not available here (like scheduled publishing).
+**Note**: Layout publishing is similar to page publishing, but not identical. Some page-specific features, such as scheduled publishing, are not available for layouts.
 
-One thing that is perhaps not that obvious is how to delete a layout, if needed. You will find that option in the menu:
+Deleting a Layout
+*********************
+If you need to delete a layout, you’ll find the Delete layout option in the menu:
 
 .. image:: layout-delete-new.png
 
-Different layouts for different screen sizes
-*********************************************
-The default screen size is for computer screens. You can use the other screen sizes to check what the layout will look like in smaller sizes, and decide if specific layouts for other sizes are needed.
+Different Layouts for Different Screen Sizes
+***********************************************
+By default, layouts are designed for computer screens.
 
-If you would like to add different layouts for one or more of the other scren sizes available, do the following:
+You can preview how your layout appears on smaller screen sizes and create custom layouts for specific devices if needed.
 
-1. Select Screen size.
+To create layouts for other screen sizes:
+
+1. Select **Screen size**.
 
 .. image:: layout-screen-size-new.png
 
-2. Open the list and select "Create new layout".
+2. Open the list and select **Create new layout**.
 
 .. image:: layout-screen-size-new-layout-new.png
 
-You work with the layout for the different screen sizes as described above.
-
-
-
-
-
-
-
+You can then work with the layout for each screen size just as described above.
 
 
 
