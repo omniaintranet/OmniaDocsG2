@@ -1,7 +1,8 @@
-Header settings - Tenant
+Header settings
 =====================================
 
 (A description will be added soon).
+
 
 
 
