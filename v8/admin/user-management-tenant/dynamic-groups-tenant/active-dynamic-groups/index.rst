@@ -10,12 +10,12 @@ You can manage the list by arranging the order in which groups appear in various
 .. image:: active-dynamic-manage.png
 
 Settings for dynamic groups
-
+******************************
 The following settings are available when you create a new group or edit an existing one:
 
 + Display name: The name shown in lists.
 + Description: Add a description for additional details.
-+ Add image: If you want to include an image for the group, click this button and use the Media Picker to select one.
++ Add image: If you want to include an image for the group, click this button and use the Media picker to select one.
 + User types: Use this list to select one or more user types (see below).
 
 Add user types to a group
@@ -28,7 +28,5 @@ Click CREATE to save a new group, or SAVE to apply changes to an existing group.
 
 Read more
 *********
-For more information, see: 
-
-
+For more information, see: :doc:`Using Media picker </common/using-media-picker/index>`
 
