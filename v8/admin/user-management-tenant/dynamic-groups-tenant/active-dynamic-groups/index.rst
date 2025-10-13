@@ -30,5 +30,6 @@ Click CREATE to save a new group, or SAVE to apply changes to an existing group.
 
 Read more
 *********
-For more information, see: :doc:`Using Media picker </common/using-media-picker/index>`
+For more information, see: :doc:`Using the media picker </common/using-media-picker/index>`
+
 
