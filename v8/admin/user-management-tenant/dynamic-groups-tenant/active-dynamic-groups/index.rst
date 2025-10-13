@@ -20,7 +20,9 @@ The following settings are available when you create a new group or edit an exis
 
 Add user types to a group
 ****************************
-To add a user type to a group, open the list and select one or more of the available types.
+To add user types to a group, open the list and select one or more of the available types.
+
+.. image:: add-user-type.png
 
 If you add a user type by mistake, click the x to remove it.
 
