@@ -9,6 +9,7 @@ Under Settings for Tenant, the following options are available:
    tenant-settings-general/index
    tenant-settings-regional/index
    tenant-settings-available-themes/index
+   tenant-settings-mobile-app/index
    tenant-settings-favicon/index
    tenant-settings-header/index
    tenant-settings-user-feed/index
@@ -18,20 +19,4 @@ Under Settings for Tenant, the following options are available:
    tenant-settings-metrics/index
    tenant-settings-system-layouts/index
    tenant-settings-setup-wizard/index
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
