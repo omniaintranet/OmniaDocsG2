@@ -1,7 +1,8 @@
-General settings - Tenant
+General
 =====================================
 
 (A description will be added soon).
+
 
 
 
