@@ -1,7 +1,8 @@
-Available themes - Tenant
+Available themes
 =====================================
 
 (A description will be added soon).
+
 
 
 
