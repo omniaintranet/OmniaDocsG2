@@ -1,7 +1,8 @@
-Mobile app settings - Tenant
+Mobile app settings
 =====================================
 
 (A description will be added soon).
+
 
 
 
