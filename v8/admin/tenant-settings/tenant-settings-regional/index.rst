@@ -1,7 +1,8 @@
-Regional settings - Tenant
+Regional settings
 =====================================
 
 (A description will be added soon).
+
 
 
 
