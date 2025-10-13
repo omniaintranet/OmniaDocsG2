@@ -1,33 +1,34 @@
 Active dynamic groups
 =====================================
 
-Here the active dynamic groups are listed. You can edit a group by expanding the post and you can create new dynamic groups.
+Here the active dynamic groups are listed. You can edit a group by expanding its entry, and you can create new dynamic groups.
 
-Available options are the same when creating new and editing groups, see below.
+The available options are the same when creating or editing groups (see below).
 
-You can manage the list, meaning deciding the order in which the groups are shown in various lists. Use drag and drop.
+You can manage the list by arranging the order in which groups appear in various views. Use drag and drop.
 
 .. image:: active-dynamic-manage.png
 
 Settings for dynamic groups
-*******************************
+
 The following settings are available when you create a new group or edit an existing one:
 
-+ Display name: The name used in lists.
-+ Descriotion: add a description for more details.
-+ ADD IMAGE: if you would like to add an image for the group, click this button and use the Media picker to select image.
-+ User types: Use this list to select user type(s), see below.
++ Display name: The name shown in lists.
++ Description: Add a description for additional details.
++ Add image: If you want to include an image for the group, click this button and use the Media Picker to select one.
++ User types: Use this list to select one or more user types (see below).
 
 Add user types to a group
----------------------------
-To add a user type to a group, open the list and select one or more of the types that have been set up.
+****************************
+To add a user type to a group, open the list and select one or more of the available types.
 
-If you added a user type by mistake, just click the x to delete it.
+If you add a user type by mistake, click the x to remove it.
 
-Click CREATE to save a new group, SAVE to save changes in en existing group.
+Click CREATE to save a new group, or SAVE to apply changes to an existing group.
 
 Read more
 *********
 For more information, see: 
+
 
 
