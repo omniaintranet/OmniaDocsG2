@@ -1,42 +1,27 @@
 Language settings
 =====================================
 
-Use this setting to select the languages that should be available for the user interface in the tenant. These languages can also be used for announcements and shared Links. 
+Use this setting to choose which languages should be available for the user interface in the tenant. These languages can also be used for announcements and shared links.
 
-You can add and remove languages here any time.
+Note that language versions of pages are handled differently—variations are used for that purpose.
 
-Language versions of pages are handled differently. Variations are used for this purpose, see the heading "Variations" on this page: :doc:`Publishing app settings </pages/page-settings/index>`
+You can add or remove languages here at any time.
 
-There must always be a language selected as default Language, in this example English (US English):
++ **Exclude Country**: Select this option if you don’t want a country flag displayed for the language in lists where users select a language.
++ **Language default**: There must always be one language set as the default.
++ **Languages**: All selected languages are listed here.
 
-.. image:: tenant-settings-language-default-78.png
+To add a new language:
 
-+ **Exclude Country**: If you don't want to show a country flag for the language in the lists where users select language, select this option. (When you do, the flags dissapear from this list as well).
+1. Click the plus sign in the Languages list.
+2. Select one or more languages.
+3. Click ADD.
 
-To select another language as default, just click the ring and save. To remove a language from this list, click the dust bin.
+**Note**: The list of languages is long, but this does not guarantee that the interface is available in all of them. You must ensure that the interface has been translated into the languages you need.
 
-Do the following to add a new language:
-
-1. Click "Add Language".
-
-.. image:: click-add-language-78.png
-
-2. Open the list and select a language.
-
-.. image:: language-list-78.png
-
-3. Click "Add".
-
-.. image:: language-list-add-78.png
-
-4. Continue and add all languages that should be available for the UI interface in the tenant.
-
-**Note!** The list of languages is long, but that does not mean that the interface is available in all languages. You must make sure the interface has been translated to the languages you need.
-
-5. Click "Save" when you're done.
+4. Click **Save** when you're done.
 
 Language displayed for a user
-**********************************
-The default language a specific user will see for the interface, in announcement messages and shared links, depends on the user's preferred Language setting in Entra ID. The UI language can be changed by the user in Omnia, in "My profile".
-
+*******************************
+The default language a user will see in the interface, announcements, and shared links depends on their preferred language setting in Entra ID. Users can change the interface language themselves in Omnia under **My profile**.
 
