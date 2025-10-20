@@ -158,7 +158,7 @@ When approval is activated, the following settings are available:
 
 + **Apply to authors only**: If you select this, editors never need approval, they can always publish directly. When an author publishes, approval is needed.
 + **Apply to new pages only**: When this option is selected, only creating new pages needs approval, not when updating an existing page.
-+ **Multi step approval**: Normally, when this option is not used, only one colleague can approve a page. When this option is used, a number of steps for approval can be set up, meaning several coleagues can need to approve a page. For more information, see below.
++ **Multi step approval**: Normally, when this option is not used, only one colleague can approve a page. When this option is used, a number of steps for approval can be set up, meaning several colleagues can need to approve a page. For more information, see below.
 
 When approval is activated, you can select who can approve the creation of a page this way (also used in the multi step approval settings, see below):
 
@@ -274,6 +274,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
