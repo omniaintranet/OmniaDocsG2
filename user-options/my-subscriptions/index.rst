@@ -57,5 +57,5 @@ Available channels are shown, for example:
 
 2. Click ADD for the channel to subscribe. 
 
-In the list of selected channels you can click the dust bin if you no longer want to subscribe to a channel.
+In the list of selected channels you can click the dust bin if you no longer want to subscribe to a channel. Note that mandatory channels can not be unsubscribed.
 
