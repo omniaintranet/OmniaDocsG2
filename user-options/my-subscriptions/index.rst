@@ -3,6 +3,8 @@ My subscriptions
 
 You can subscribe to a community, articles and discussions in a community, to tags and to channels.
 
+It's also possible that subscription of a channel can be created automatically for specific colleagues or groups, if setup in the channel.
+
 For information about subscriptions regarding communities, see: :doc:`Subscriptions in communities </using-communities/subscriptions/index>`
 
 For information about how to subscribe and unsubscribe to channels, see below.
@@ -54,8 +56,6 @@ Available channels are shown, for example:
 .. image:: my-subscriptions-78-channels.png
 
 2. Click ADD for the channel to subscribe. 
-
-It's also possible that subscription of a channel can be created automatically for specific colleagues or groups, if setup in the channel. 
 
 In the list of selected channels you can click the dust bin if you no longer want to subscribe to a channel.
 
