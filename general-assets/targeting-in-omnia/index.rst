@@ -11,20 +11,22 @@ Before you can start using the various targeting options in Omnia, properties fo
 
 Examples of what you can target
 **********************************
-As an example, you can use targeting for the following options in Omnia:
+As an example, targeting for the following options in Omnia nay be available:
 
++ Action Menu objects.
++ Announcements.
++ Language.
++ Mega Menu objects.
++ Most blocks.
++ News articles.
++ Page Variations.
++ Promoted Search Results.
++ Promoted Search Results.
++ Publishing Channels (which works quite differently).
 + Search categories.
 + Sections.
-+ Mega Menu objects.
-+ Action Menu objects.
-+ Page Variations.
-+ Most blocks.
 + Shared Links.
-+ Promoted Search Results.
 + Teamwork templates.
-+ Publishing Channels (which works quite differently).
-+ News articles.
-+ Announcements.
 
 How to set up targeting
 ************************
@@ -53,4 +55,5 @@ Or:
 To delete a targeting filter, just click the x.
 
 .. image:: delete-targeting-filter-78.png
+
 
