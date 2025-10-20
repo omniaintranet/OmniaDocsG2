@@ -129,7 +129,7 @@ Publish
 ---------
 On the Publish tab you can set the following (image from Omnia 7.10):
 
-.. image:: document-types-publish-v710.png
+.. image:: document-types-publish-v710-new.png
 
 + **Replace tokens inside document on publishing**: When a document is published, the placeholders (tokens) will be replaced with metadata, but for a document that will be used as a template, you will probably not want that to happen. If you are creating a document type to be used for templates, deselect this option.
 + **Allow revisions**: Selecting this option you can allow authors to publish a revision of a document that does not require approval, for example for correcting typing errors. If this option is active, it's up to the author to decide if approval is needed or not. Approval is still needed for publication of a new edition of a document.
@@ -156,10 +156,10 @@ If you selected that publishing approval is needed for this document type, you m
 + **Group**: This setting will use the permission group for approvers in the teamsite. Needs "Approvers group" to be selected in settings for document management.
 
 Options for scheduled publishing
--------------------------------
+----------------------------------
 When you have selected to allow scheduled publishing för this document type, choose the property to base that on and set the approval reminder period.
 
-.. image:: doc-scheduled.png
+.. image:: doc-scheduled-v10.png
 
 **Important note!** The property set for the page type must contain at least one date property. The property for scheduled publishing must be a date property.
 
