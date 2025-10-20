@@ -3,7 +3,7 @@ Delete a page
 
 You can delete a page that is no longer needed. A deleted page is placed in the archive. There it can be restored or terminated. There's one archive per publishing app. This functionality was called archiving in earlier versions of Omnia.
 
-**Note!** In Omnia 7.10 and later, approval of page deletion can be active, meaning a page deletion must be approved the same way as publishing of a new page. For more information, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
+**Note!** In Omnia 7.10 and later, approval of page deletion can be active, meaning a page deletion must be approved the same way as publishing of a new page, when publishing approval is active. For more information, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
 Just remember that if other pages links to a page you delete, the links will no longer work. You have to edit or remove such links.
 
