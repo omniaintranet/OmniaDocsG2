@@ -24,7 +24,7 @@ Something like the following is shown (image from Omnia 7.8):
 
 .. image:: approval-2-78.png
 
-Available options here depends on a number of settings. These are some common ones:
+Available options here depends on a number of settings. These are some common options:
 
 + **Merge with document template**: If the document is not merged with a template, it can be done now. If the document already is merged with a template, this option is not shown. If you select "Yes", open the list and select a template.
 + **Publish new edition/new revision**: When a document has been published at least once, and if the settings allowed it, you can choose to publish a new revision instead (see example below). A revision is a much simpler update, for example to fix some typing errors, and does not require approval. If revisions is not allowed, only "Publish new edition" is shown.
@@ -74,15 +74,15 @@ If it’s rejected, there’s some changes the approver would like you to do. Yo
 
 Scheduled publishing for controlled documents
 **********************************************
-In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, so some can allow it and others not.
+In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, meaning it may not be available for all document types.
 
 If scheduled publishing is allowed, the publishing settings contain this field:
 
 .. image:: publish-settings.png
 
-Add the planned publishing date in the field. The document must of course be approved for publishing before it can be published, if approval is needed.
+Add the planned publishing date in the field. The document must of course be approved before it can be published, if approval is needed.
 
-Note that the date for scheduled publishing can be set in the properties for the document, so it's already set when starting the publishing workflow.
+Note that the date for scheduled publishing can be set in the properties for the document. If it is, it can  be changed here.
 
 A document waiting to be published is still considered to be a draft. That it's scheduled for publishing is noted in the Status column, for example:
 
@@ -92,7 +92,7 @@ For more info about the publishing, click the link. Here's an example:
 
 .. image:: publish-settings-status-example.png
 
-Here you can see the scheduled date and time and you can also cancel the schedulation, if needed. This means that the document reverts back to being a normal draft. If the document has been approved for the scheduled publishing, this is also reverted, meaning the publishing workflow has to be started again. 
+Here you can see the scheduled date and time and you can also cancel the schedulation, if needed. This means that the document reverts back to being a normal draft. If the document already has been approved, this is also reverted, meaning the publishing workflow has to be started again. 
 
 For more information about the settings, see the heading "Options for scheduled publishing" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
