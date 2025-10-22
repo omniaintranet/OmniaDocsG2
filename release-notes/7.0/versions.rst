@@ -1,3 +1,17 @@
+7.9.7
+========================================
+(Omnia 7.9.7 / Workplace 7.9.6 / WCM 7.9.8 / MS 7.9.5 / Analytics 7.9.5 / Feed 7.9.1)
+
+- The default email provider has changed from no-reply@sharepoint.com to Omnia’s own email service due to Microsoft deprecations.
+- The sender’s name and user part of the sender email is now configurable.
+- Move page collection between publishing apps stability improvements. 
+- Fixed an issue that would prevent all documents to be shown in a process if Controlled documents and Process integration was turned on (#169707).
+- Stability improvements to some Analytics views.
+- General performance improvements.
+- Ensured change comments are shown in the correct place on a task in Controlled Documents
+- Updated messages in event management when adding an event to your calendar (#41834).
+- Corrected a spelling error in the tooltip of page collections (#169965).
+
 7.9.5
 ========================================
 (Omnia 7.9.5 / Workplace 7.9.4 / WCM 7.9.6 / MS 7.9.3 / Analytics 7.9.5 / Feed 7.9.1)
