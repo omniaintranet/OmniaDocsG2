@@ -47,9 +47,9 @@ Export to Excel can be available for users, if you select this option.
 
 .. image:: list-rollup-export-new.png
 
-When Export to Excel is active, you can set how the rows should be sorted. 
+When Export to Excel is active, you can set how the rows should be sorted, using "Sort by". 
 
-You can also add columns as aaddion(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) among the new columns.
+You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) among the new columns.
 
 .. image:: list-rollup-export2.png
 
