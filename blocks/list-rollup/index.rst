@@ -33,6 +33,17 @@ For now, only List view is available. Note that you must still select "List view
 
 .. image:: list-rollup-display-new.png
 
+The following settings are available for the views:
+
++ **Add column**: This is not like columns in columns in a table. You should think: What information do I want to display about the people? You must always add at least one column or nothing will be shown!
++ **Adjust columns**: Shown when addings columns. Use this option to set the order in which the selected columns are shown.
++ **Sort by**: Select the property to sort the list by.
++ **Paging**: Select how paging should work; “No paging”, “Classic” or “Scroll”. See below for examples. Scroll is note applicabale for Roller view
++ **Item limit**: To limit the number of items being displayed per "page", add a fixed number here. Works together with Paging. 
++ **Padding**: Use this option to add some padding between the list and the border of the block, if needed.
+
+**Important note on "No paging"**: If you choose "No paging" and set "Item limit" to a specific number, that is the number of items that will be available in the list, regardless of how many that actually meets the search criteria.
+
 Filter
 -------
 Filtering options are similar to other Omnia rollups.
@@ -52,4 +63,5 @@ When Export to Excel is active, you can set how the rows should be sorted, using
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) among the new columns.
 
 .. image:: list-rollup-export2.png
+
 
