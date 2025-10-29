@@ -1,3 +1,22 @@
+7.9.10
+========================================
+(Omnia 7.9.10 / Workplace 7.9.10 / WCM 7.9.10 / MS 7.9.10 / Analytics 7.9.5 / Feed 7.9.2)
+
+- Fixed a bug causing the RSS reader to make unnecessary API calls, it now makes on call every 5 minutes (#41812).
+- Closing the people card no longer causes advanced search to close (#44299).
+- Alt text is now correctly populated when adding an image from Media Flow (#44603)
+- The draft workflow view in the controlled documents library now sorts correctly (#170019).
+- Fixed a validation issue for an empty comment, the message now shows when it should.
+
+7.9.9
+========================================
+(Omnia 7.9.9 / Workplace 7.9.9 / WCM 7.9.9 / MS 7.9.9 / Analytics 7.9.5 / Feed 7.9.1)
+
+- Fixed an issue making the media gallery using the root site instead of the default context site preventing external users from using the component (#169603).
+- SharePoint search is no longer called when creating a document from a template stored in Omnia.
+- Improved error message when self service account creation fails.
+
+
 7.9.7
 ========================================
 (Omnia 7.9.7 / Workplace 7.9.6 / WCM 7.9.8 / MS 7.9.5 / Analytics 7.9.5 / Feed 7.9.1)
