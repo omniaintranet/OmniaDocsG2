@@ -5,11 +5,11 @@ This description applies to Omnia 7.8 and later.
 
 See this page for important information on how to set up AI in your tenant: :doc:`Setup AI </setup/setup-ai/index>`
 
-The following settings are available here in Omnia 7.8:
+In Omnia 7.8, the following settings are available here:
 
 .. image:: settings-ai-engine-all-78.png
 
-In Omnia 7.9 settings for Dall-E are also available:
+In Omnia 7.9 and later, settings for Dall-E are also available:
 
 .. image:: settings-ai-engine-all-79.png
 
@@ -46,6 +46,7 @@ Add the name of the Dall-E depolyment you're using here:
 .. image:: dall-e-settings-tenant.png
 
 Note, additional settings för Dall-E are available in business profile settings, see: :doc:`Dall-E settings (business profile) </admin-settings/business-group-settings/settings/dall-e/index>`
+
 
 
 
