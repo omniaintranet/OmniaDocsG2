@@ -9,15 +9,17 @@ Use these settings to decide the default options for the rich text editor and th
 
 Both lists are handled the same way.
 
-1. Select and deselect options to be available in the editor and save when you're done.
+1. Select and deselect options to be available in the editor and save when you're done (Image from Omnia 7.11).
 
-.. image:: rtf-editor-options-78.png
+.. image:: rtf-editor-options-711.png
 
 (All options are not shown in the image above, there's a lot more).
 
 At the top you will see a preview of what the RTF editor will look like with the selected options.
 
 Most options should be self explanatory, but some options may need a description, see below.
+
++ **Auto-clean pasted content**: Available in Omnia 7.11 and later. When this option is active, pasted text is always pasted as "Text only", the same way as if you had used the "Keep text only" icon. When this option is NOT selected, you can still use the "Keep text only" icon for this purpose. For more information, see the headings *Pasting text only* and *Pasting contents from Microsoft Word*, on this page: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
 Language
 -----------
