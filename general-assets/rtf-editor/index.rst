@@ -193,6 +193,8 @@ All style tags are removed. Default HTML styles is kept.
 
 You can also use this option on text you already have in the block. Just select the text and the option becomes available.
 
+**Note!** In Omnia 7.11 and later, an option in the RTF editor settings is available that makes all pasting of text, text only, without having to use the icon.
+
 Pasting contents from Microsoft Word
 -------------------------------------
 When pasting contents from a Microsoft Word document into a rich text field, some of the text formats can also be pasted. Headings are also regocnized and the RTF editor settings for these headings are applied. 
