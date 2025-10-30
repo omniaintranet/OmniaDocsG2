@@ -109,7 +109,7 @@ Available fields and options depend on the user type. Also, some properties may 
 
 and at the bottom, somne general options are available:
 
-.. image:: user-management-users-list-omnia-edit-2-78.png
+.. image:: user-management-users-list-omnia-edit-78-2.png
 
 When editing Microsoft Graph users, the only thing you can change is the image.
 
@@ -159,4 +159,5 @@ Everything here can be edited if needed.
 When you're ready, click APPROVE or REJECT. If you choose to approve, the account is created and the user is notified. If you reject the request, type a message to explain why this request can't be approved. That message is sent to the user.
 
 Self-service is set up (if used) on business profile level. See this page for more information: :doc:`Self-service settings </admin-settings/business-group-settings/user-management-bp/self-service-users-bp/index>`
+
 
