@@ -1,19 +1,5 @@
 Edit settings
 =====================================
 
-(A description will be added soon).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(Will be part of the upcoming documentation for Omnia v8).
 
