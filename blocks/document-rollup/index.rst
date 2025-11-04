@@ -54,7 +54,7 @@ Here you add queries, which is the detailed "settings" for what to display in th
 
 + **All documents**: Always available, meaning ALL documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup. The rollup can then be set to display just standard documents or both standard and controlled documents. To rollup documents from one or more teamsites, use this option.
 + **Published documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents the logged in user has permissions to read. Use the query settings below to limit what will be shown in the rollup.
-+ **Archived documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few. This is for specialized implementations.
++ **Archived documents**: Available only if the feature Controlled documents is active. Meaning all published controlled documents in the archive. As permissions to read documents in the archive normally is given to just a few, this is for specialized implementations.
 + **Process documents**: Available in Omnia 7.8 and later. Available only if the feature Process managament is active. See below for more information. 
 + **Sharepoint library**: Available in Omnia 7.8 and later. You can choose to rollup all documents from a specific SharePoint library. When you have selected this option for the query, add the URL to the library in the field shown.
 
