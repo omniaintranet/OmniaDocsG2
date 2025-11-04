@@ -79,7 +79,7 @@ Rolling up process documents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Available in Omnia 7.8 and later. Using the query option "Process documents" you can rollup controlled documents that have been added to a process. This is meant to replace the Process documents block for the same purpose as that block was used.
 
-The primary usage is in a template for process pages. To list any documents a Process context block must be added to the same page so the document rollup "knows" which process to get the documents from.
+The primary usage is in a template for process pages. To list any documents, a Process context block must be added to the same page so the document rollup "knows" which process to get the documents from.
 
 Custom date filtering
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
