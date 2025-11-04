@@ -3,7 +3,9 @@ Welcome block
 
 This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions, to the logged in user.
 
-Here's a simple example:
+**Prerequisite**: You have to make sure that the properties you would like to use in this block is set up in Omnia admin. The Welcome block only supports Omnia user properties. Additional properties can be made available through the configuration of MS Graph user details property mappings.
+
+Here's a simple example of how the block can be used:
 
 .. image:: welcome-block.png
 
@@ -106,5 +108,6 @@ As for "Messages", it's set up to show three different messages depending on tim
 Note that the token "Display name" is used (last "message"). The message type "Time of day" is used for all three messages, and then Morning, Afternoon and Evening as "Display time". Here's the settings for Morning as an example:
 
 .. image:: Morning-example.png
+
 
 
