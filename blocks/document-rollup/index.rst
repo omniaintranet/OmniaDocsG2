@@ -15,9 +15,9 @@ The Analytics options can be available in Omnia 7.8 and later, if Matomo analyti
 
 General
 -----------------
-Here you can set the following:
+Here you can add a titel if needed, and choose how a document should be opened from the rollup:
 
-.. image:: document-rollup-settings-general-new6.png
+.. image:: document-rollup-settings-general-711.png
 
 + **Title**: If a title should be shown for the block, add it in this field. 
 + **Open in client app**: Documents are by default opened in the online app. If document should be opened in the client app instead, select this option.
