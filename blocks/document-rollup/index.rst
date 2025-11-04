@@ -7,7 +7,7 @@ For implementation examples, see this page: :doc:`Document rollup implementation
 
 Settings
 *************************
-The following settings are available (image from Omnia 7.8):
+The following settings are available:
 
 .. image:: document-rollup-settings-all-78.png
 
