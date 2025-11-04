@@ -109,7 +109,7 @@ You can select "List view", "Summary view", "Group by site" and "Card" here. Ava
 
 For **List view** you can set the following:
 
-.. image:: document-rollup-settings-display-new3.png
+.. image:: document-rollup-settings-display-711.png
 
 + **Add column**: Select the columns to show in the list. Note! If users should be able to send feedback on controlled documents, add the column "Feedback icon". An information icon can also be very useful as it displays more information about the document.
 + **Fixed header**: The header of the rollup can be shown all the time (Fixed). If you want that, select this option.
