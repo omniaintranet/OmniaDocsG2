@@ -142,7 +142,7 @@ For **Summary view** these settings are available:
 
 For **Group by site** these settings are available:
 
-.. image:: document-rollup-settings-display-group-new2.png
+.. image:: document-rollup-settings-display-group-711.png
 
 + **Title**: Select property to to get the title from.
 + **Modified at**: Select the property to get this information from.
