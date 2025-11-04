@@ -156,7 +156,7 @@ For **Group by site** these settings are available:
 
 For **Card** view the following settings are available:
 
-.. image:: document-rollup-settings-display-card-new3.png
+.. image:: document-rollup-settings-display-card-711.png
 
 + **Title**: Select property to to get the title from.
 + **Modified at**: Select the property to get this information from.
