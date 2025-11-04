@@ -127,7 +127,7 @@ If you select "Adjust columns" - displayed when you have selected columns - you 
 
 For **Summary view** these settings are available:
 
-.. image:: document-rollup-settings-summary-view.png
+.. image:: document-rollup-settings-summary-view-711.png
 
 + **Title**: Select property to to get the title from.
 + **Modified at**: Select the property to get this information from.
