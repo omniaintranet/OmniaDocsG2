@@ -21,6 +21,7 @@ In this part of the documentation you will find information about general assets
    page-picker/index
    security-trimming-apps/index
    share-document/index
+   single-site-collection/index
    using-anchors/index
    targeting-in-omnia/index
    using-people-picker/index
