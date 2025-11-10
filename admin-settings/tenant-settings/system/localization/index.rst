@@ -3,7 +3,7 @@ Localization
 
 The localization editor is used to view translations of different labels in different languages, edit these translations, and export the translated labels.
 
-For translation, or simply editing, of e-mail messages from Omnia, see this page for more information: :doc:`Tokens in Omnia emails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
+For translation, or simply editing, of Email messages from Omnia, see this page for more information: :doc:`Tokens in Omnia emails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
 
 + **View Mode**: Use this list to select the output:
 
