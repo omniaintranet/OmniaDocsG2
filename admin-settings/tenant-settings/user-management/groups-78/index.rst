@@ -1,4 +1,4 @@
-Groups (User management) in Omnia 7.8 and later
+Groups
 ==================================================
 
 This page describes the functionality in Omnia 7.8 and later. For Omnia 7.7 and earlier, see: :doc:`User management groups </admin-settings/tenant-settings/user-management/groups/index>`
@@ -86,4 +86,5 @@ In the list of deleted groups you can restore deleted Omnia groups or delete (Pu
 .. image:: user-management-groups-deleted-blood-78.png
 
 You can't restore deleted Microsoft Graph groups but you can purge them from your system.
+
 
