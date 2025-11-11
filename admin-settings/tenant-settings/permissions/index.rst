@@ -58,7 +58,7 @@ By clicking the pen, you can edit these settings:
 
 .. image:: secrets-connected-tenants-edit.png
 
-Event Management service account
+Event management service account
 ----------------------------------
 If you will be using Event Management with a connection to calendars in Outlook, you must add the service account that will be used to read and write from the calendars in the tenant. (Don't forget that this account needs permissions to that calendar.)
 
