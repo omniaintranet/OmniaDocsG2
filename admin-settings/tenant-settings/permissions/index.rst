@@ -25,7 +25,7 @@ For more information on the people picker, see: :doc:`Using the people picker </
 
 The semantic search reader setting
 --------------------------------------
-Semantic search is a new AI feature that can be available in Omnia 7.8 and later (if semantic search is activated in the tenant). Add the colleagues and groups that should be able to use semantic search. 
+Semantic search is an AI feature that can be available in Omnia 7.8 and later (if semantic search is activated in the tenant). Add the colleagues and groups that should be able to use semantic search. 
 If a search block is set up with semantic search and certain users are not allowed to use the feature, they get empty search result if trying to use this search block. Also note that other permissions apply as usual. 
 
 If pages or documents should be available for semantic search can be set at page collection level for pages, and in document types for controlled documents. Semantic search does not work for other types of documents yet.
