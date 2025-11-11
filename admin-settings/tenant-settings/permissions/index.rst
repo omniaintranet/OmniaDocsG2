@@ -90,21 +90,11 @@ Available in Omnia 7.8 and later. In order for the "Semantic search" feature to 
  
 .. image:: aifeatures-aisearch-711.png
 
-Azure OpenAI Dall-E configuration
+AI features: Dall-E
 ------------------------------------
-(Called AI features: Dall-E in 7.8 and earlier).
-
 To be able to use the Dall-E functionality within Omnia, the tenant feature "Dall-E" must be activated. When that is done, an API key and an API base URL must be entered here.
 
-.. image:: dall-e-secret-v878-frame.png
-
-**Important note!** The model version should be dall-e-3 and the deployment name needs to be “Dalle3” in Omnia 7.7, when setting up Dall-E.
-
-Unsplash
-----------
-If your organization will use images from Unsplash, Application ID and Client ID received from Unsplash, must be entered here.
-
-.. image:: unsplash-settings.png
+.. image:: dall-e-secret-v711.png
 
 reCAPTCHA
 -----------
