@@ -1,7 +1,7 @@
-Users (User management) in Omnia 7.8 and later
+Users
 ==================================================
 
-This page describes the Users list in tenant user management, in Omnia 7.8 and later. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-78/index>`
+This page describes the Users list in tenant user management, in Omnia 7.8 and later. For 7.7 and earlier, see: :doc:`User management users in Omnia 7.7 </admin-settings/tenant-settings/user-management/users-76/index>`
 
 User management is available in each business profile, see: :doc:`Users management options for business profiles </admin-settings/business-group-settings/user-management-bp/index>`
 
@@ -155,6 +155,7 @@ Everything here can be edited if needed.
 When you're ready, click APPROVE or REJECT. If you choose to approve, the account is created and the user is notified. If you reject the request, type a message to explain why this request can't be approved. That message is sent to the user.
 
 Self-service is set up (if used) on business profile level. See this page for more information: :doc:`Self-service settings </admin-settings/business-group-settings/user-management-bp/self-service-users-bp/index>`
+
 
 
 
