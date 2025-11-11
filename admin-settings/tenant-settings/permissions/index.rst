@@ -50,7 +50,7 @@ System account is a standard extension for specialized implementations only, nor
 
 Connected tenants
 ------------------
-This option has to do with to the cross tenant publilshing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
+This option has to do with to the cross tenant publishing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
 
 .. image:: secrets-connected-tenants.png
 
