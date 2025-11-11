@@ -36,13 +36,11 @@ This permission settings can be another way of restricting who can read informat
 
 Secrets
 ********
-A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's a common example from Omnia 7.7: 
+A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's an example from Omnia 7.11: 
 
-.. image:: tenant-secrets-v77.png
+.. image:: tenant-secrets-v711.png
 
-In Omnia 7.8 and later some options have been renamed and a few added:
-
-.. image:: tenant-secrets-v78-new.png
+Here are descriptions of some common secrets:
 
 System Account
 ------------------
@@ -52,7 +50,7 @@ System account is a standard extension for specialized implementations only, nor
 
 Connected tenants
 ------------------
-This option is connected to the cross tenant publilshing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
+This option has to do with to the cross tenant publilshing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
 
 .. image:: secrets-connected-tenants.png
 
