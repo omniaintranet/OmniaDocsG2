@@ -88,7 +88,7 @@ AI features: AI search
 ------------------------
 Available in Omnia 7.8 and later. In order for the "Semantic search" feature to work correctly, an Azure AI Search instance needs to be set up and it's read/write access credentials entered here.
  
-.. image:: aifeatures-aisearch.png
+.. image:: aifeatures-aisearch-711.png
 
 Azure OpenAI Dall-E configuration
 ------------------------------------
