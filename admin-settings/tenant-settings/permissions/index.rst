@@ -7,9 +7,9 @@ The following settings are found here:
 
 Users and groups
 ******************* 
-Use this setting to add and remove tenant administrators and separate administrators for shared links and announcements, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.8).
+Use this setting to add and remove tenant administrators and separate administrators for some areas, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.11).
 
-.. image:: tenant-permissions-v78.png
+.. image:: tenant-permissions-v711.png
 
 To delete an administrator in any of the lists, just click the x. To add an administrator, add the name the same way as in other name fields.
 
@@ -18,6 +18,8 @@ To delete an administrator in any of the lists, just click the x. To add an admi
 In the field "Directory reader" all users that should be able to list users in Omnia must be added. Users not added here can't use the people picker or see a list of users in the People rollup block. Groups can be added here as well, for example "Internal users", for all internal users. This can be a way of making sure external users, or some other type of users, can't list all users.
 
 If you see a field called "Username", as in the image above, it's a special case that can be necessary to handle when setting up a new tenant. As the user sync can't be executed until the tenant has been setup, you may need to add a tenant administrator in this field, in this special circumstance.
+
+In the "Block gallery editor" you can add additional users that should be able edit the block gallery. Available in Omnia 7.11 and later.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
