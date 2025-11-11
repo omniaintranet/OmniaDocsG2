@@ -13,11 +13,12 @@ Select option below for more information.
    :titlesonly:
 
    users-78/index
-   groups/index
+   groups-78/index
    dynamic-groups/index
    user-types/index
    user-properties/index
    synchronization/index
    login-log/index
+
 
 
