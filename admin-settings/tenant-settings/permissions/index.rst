@@ -19,7 +19,7 @@ In the field "Directory reader" all users that should be able to list users in O
 
 If you see a field called "Username", as in the image above, it's a special case that can be necessary to handle when setting up a new tenant. As the user sync can't be executed until the tenant has been setup, you may need to add a tenant administrator in this field, in this special circumstance.
 
-In the "Block gallery editor" you can add additional users that should be able edit the block gallery. Available in Omnia 7.11 and later.
+In the "Block gallery editor" field you can add additional users that should be able edit the block gallery. Available in Omnia 7.11 and later.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
@@ -50,7 +50,7 @@ System account is a standard extension for specialized implementations only, nor
 
 Connected tenants
 ------------------
-This option has to do with to the cross tenant publishing functionality. The first list simply lists the other tenant this tenant is connected to, for example:
+This option has to do with to the cross tenant publishing functionality. The first list simply lists the other tenants this tenant is connected to, for example:
 
 .. image:: secrets-connected-tenants.png
 
@@ -58,11 +58,8 @@ By clicking the pen, you can edit these settings:
 
 .. image:: secrets-connected-tenants-edit.png
 
-You have to communicate witth a tenant edmin to recieve the information you neeed for these two fields.
-
 Event Management service account
 ----------------------------------
-
 If you will be using Event Management with a connection to calendars in Outlook, you must add the service account that will be used to read and write from the calendars in the tenant. (Don't forget that this account needs permissions to that calendar.)
 
 .. image:: tenant-secrets-event-url-v78.png
@@ -81,10 +78,8 @@ In the process of enabling SharePoint app-only, Client ID and Client secret must
 
 .. image:: sharepoint-sync-app-v78.png
 
-Azure OpenAI text completion configuration
+AI features: OpenAI API
 --------------------------------------------
-(Called AI features: OpenAI API in 7.8).
-
 To be able to use AI text functionality within Omnia, the tenant feature "Text completion" must be activated. When that is done, an API key and an API base URL must be entered here
 
 .. image:: azure-open-ai-secret-v77.png
