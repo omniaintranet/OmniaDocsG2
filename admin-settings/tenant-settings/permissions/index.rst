@@ -42,7 +42,7 @@ A number of settings are available under Secrets. Exactly what is available here
 
 Here are descriptions of some common secrets:
 
-System Account
+System account
 ------------------
 System account is a standard extension for specialized implementations only, normally used by developers.
 
