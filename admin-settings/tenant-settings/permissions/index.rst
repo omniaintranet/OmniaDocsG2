@@ -82,7 +82,7 @@ AI features: OpenAI API
 --------------------------------------------
 To be able to use AI text functionality within Omnia, the tenant feature "Text completion" must be activated. When that is done, an API key and an API base URL must be entered here
 
-.. image:: azure-open-ai-secret-v77.png
+.. image:: azure-open-ai-secret-v711.png
 
 AI features: AI search
 ------------------------
