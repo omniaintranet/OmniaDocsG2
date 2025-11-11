@@ -1,3 +1,19 @@
+7.9.13
+========================================
+(Omnia 7.9.13 / Workplace 7.9.13 / WCM 7.9.13 / MS 7.9.13 / Analytics 7.9.6 / Feed 7.9.2)
+
+- Improved compatibility when combining anchors action buttons with the anchor navigation (#169941).
+- Promotion channel teams messages can now auto tag the channel, making the post show up in the MS Teams activity feed.
+- When switching App template, it is now possible to select another business profile (moving the app instance to another business profile)
+- Added support for browser back button in the anchor navigation (#46171, #39795).
+- The link picker now updates the title correctly when switching page (#48983).
+- Closing a people card no longer closes the search result panels (#).
+- The Omnia search provider can now display taxonomy values (#170144).
+- Initial setup account now persists as intended through the initial Entra ID sync.
+- Fixed an issue in the document rollup export where documents tagged with child terms would be included when they should not (#169952).
+- Stability improvements to the SendGrid email provider.
+- Fixed a rendering issue for block headers in edit mode (#38013).
+
 7.9.10
 ========================================
 (Omnia 7.9.10 / Workplace 7.9.10 / WCM 7.9.10 / MS 7.9.10 / Analytics 7.9.5 / Feed 7.9.2)
