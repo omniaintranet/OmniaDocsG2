@@ -1,3 +1,11 @@
+7.9.14
+========================================
+(Omnia 7.9.14 / Workplace 7.9.14 / WCM 7.9.14 / MS 7.9.14 / Analytics 7.9.6 / Feed 7.9.3)
+
+- Updated Danish translations (#49130).
+- The RSS feed now supports additional source text encodings (#42984).
+- Performance improvement to page rollups (#42984).
+
 7.9.13
 ========================================
 (Omnia 7.9.13 / Workplace 7.9.13 / WCM 7.9.13 / MS 7.9.13 / Analytics 7.9.6 / Feed 7.9.2)
