@@ -23,6 +23,8 @@ Decide to use the query builder or to just pick a single list. Here's the option
 
 .. image:: list-rollup-query-query-new.png
 
+**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
+
 If you decide to choose only one list, add the URL to the list here:
 
 .. image:: list-rollup-query-list-new.png
@@ -64,6 +66,7 @@ When Export to Excel is active, you can set how the rows should be sorted, using
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) among the new columns.
 
 .. image:: list-rollup-export2.png
+
 
 
 
