@@ -39,6 +39,8 @@ For SharePoint search you can add a query the same way as for many other blocks 
 
 .. image:: media-rollup-settings-query-search.png
 
+**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query, if SharePoint search is selected as source.
+
 Display
 -----------
 For display, you can choose a list view or a photowall view. For "List view" you must add at least one column for the rollup to work, and use these settings:
@@ -84,4 +86,5 @@ Under "Style", you can set some padding.
 Layout and Write
 ******************
 The Write tab is not used here. The Layout tab contains general settings for blocks. For more information see: :doc:`General block settings </blocks/general-block-settings/index>`
+
 
