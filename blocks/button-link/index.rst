@@ -37,11 +37,74 @@ The following actions are available to add as a button:
 
 Settings
 ***********
-The following settings are available (image from Omnia 7.8):
+The following settings are available:
 
 .. image:: action-button-v7-settings-78.png
 
-The analytics option can be available in Omnia 7.8 and later, if analytics is active in the tenant. For more information, see the bottom of the page.
+The analytics option can be available in Omnia 7.8 and later, if analytics is active in the tenant. For more information, see below.
+
+Button Style
+--------------
+These settings are available for style (available to the right of GENERAL for most buttons, see image above):
+
+.. image:: action-button-65-style.png
+
++ **Button style**: You can select Depressed, Flat or Raised as the style. Note that a flat button doesn't have any background color, so the text should normally be black for a flat button.
++ **Size**: The size of the button can be small, medium or large.
++ **Round**: For round button edges, select this option.
++ **Outline**: For an outlined button, select this option. Note that the outline has the same color as the text, and there's no background color, so the text color should normally be black, if you select Outline.
++ **Fill**: If the button should fill the whole width of the block, select this option.
++ **Background color and Text color**: Choose colors here. Note the comments about Flat button style and Outline above.
++ **Icon Type**: To add an icon to the buttton, first select the icon type here.
++ **Icon**: When you have selected the icon type, select the icon in this list. The icon is placed to the left of the button text.
++ **Icon Alignment**: Select the alignment of the buttons within the block area.
+
+Style
+-------
+These Style settings are available on the Style tab, below the Actions tab:
+
+.. image:: action-button-style-v7.png
+
++ **Grouping type**: Here you can choose to group the buttons in the block, by selecting "Dropdown".
++ **Alignment**: Here you can set alignment for alla buttons in the block.
+
+Layout
+----------
+The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
+
+Write
+-------
+On this tab you decide if settings for the block (the buttons) should be available for editing in Write mode or not. 
+
+.. image:: action-button-write-v7.png
+
+Action button order
+----------------------
+With several buttons in the block you can decide the order. Click the left-most icon and use drag and drop.
+
+.. image:: action-button-order.png
+
+Edit an action button
+-----------------------
+To edit a button, click the pen. To delete a button, click the dustbin. 
+
+When editing a button, the same settings as when you create a new button is available, see below.
+
+Analytics
+-------------
+It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. Also note that analytics data collecting must be on for the business profile for this to work, see the link to the analytics settings below.
+
+.. image:: action-button-analytics.png
+
+If activated, the following settings are available:
+
+.. image:: action-button-analytics-settings.png
+
+To display data for event tracking, use the query type "Event" in the Analytics report block.
+
+For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
+
+Some settings are needed for every business profile where analytics data should be collected. Read about that here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
 Add an action button
 ***********************
@@ -62,6 +125,10 @@ Available settings differ depending on type of button chosen. The following sett
 + **Type**: Select type of button here. 
 + **Text**: Add text to be shown on the button, in any tenant language.
 + **Tool tip**: Add the tool tip text for the button here. 
+
+Available actions
+*******************
+The following actions are available in the block:
 
 Add as favourite
 ------------------
@@ -236,6 +303,14 @@ Here's and example:
 
 For this to work, "Receive Email" must be selected in the page contact property settings. 
 
+Print
+-----------
+Using this action, the actual page can be printed. (Aailable in Omnia 7.11 and later).
+
+Only general settings for the button are available, see above.
+
+There are a number of print settings available for users, when this button is used, see this page: Linke to be added)
+
 Process Feedback
 ----------------------
 This action makes it possible for a user to send feedback on a process page.
@@ -287,6 +362,12 @@ An "End-user sign-off" button is used to make it possible for users to sign-off 
 The purpose of "Create new request" is to make it possible to create a new sign-off request on any page. When creating the button, select type of request that should be possible to create. The sign-off types are set up in Omnia admin, see: :doc:`Sign-off request types </admin-settings/tenant-settings/sign-off-requests-613/sign-off-types-613/index>`
 
 A new request can be created the same way as described on this page: :doc:`Requests </admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index>`
+
+Statistics export
+------------------
+Available in Omnia 7.11 and later.
+
+(A description will be added soon).
 
 Strengthen profile
 ----------------------
@@ -363,67 +444,4 @@ For more information about tutorials, see:
 
 + :doc:`Tutorial </admin-settings/tenant-settings/tutorial/index>`
 + :doc:`Tutorial implementation example </admin-settings/tenant-settings/tutorial/tutorial-implementation/index>`
-
-Button Style
-*******************
-These settings are available for style (available to the right of GENERAL for most buttons, see image above):
-
-.. image:: action-button-65-style.png
-
-+ **Button style**: You can select Depressed, Flat or Raised as the style. Note that a flat button doesn't have any background color, so the text should normally be black for a flat button.
-+ **Size**: The size of the button can be small, medium or large.
-+ **Round**: For round button edges, select this option.
-+ **Outline**: For an outlined button, select this option. Note that the outline has the same color as the text, and there's no background color, so the text color should normally be black, if you select Outline.
-+ **Fill**: If the button should fill the whole width of the block, select this option.
-+ **Background color and Text color**: Choose colors here. Note the comments about Flat button style and Outline above.
-+ **Icon Type**: To add an icon to the buttton, first select the icon type here.
-+ **Icon**: When you have selected the icon type, select the icon in this list. The icon is placed to the left of the button text.
-+ **Icon Alignment**: Select the alignment of the buttons within the block area.
-
-Style
-******
-These Style settings are available on the Style tab, below the Actions tab:
-
-.. image:: action-button-style-v7.png
-
-+ **Grouping type**: Here you can choose to group the buttons in the block, by selecting "Dropdown".
-+ **Alignment**: Here you can set alignment for alla buttons in the block.
-
-Layout
-*********
-The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
-
-Write
-******
-On this tab you decide if settings for the block (the buttons) should be available for editing in Write mode or not. 
-
-.. image:: action-button-write-v7.png
-
-Action button order
-*********************
-With several buttons in the block you can decide the order. Click the left-most icon and use drag and drop.
-
-.. image:: action-button-order.png
-
-Edit an action button
-**********************
-To edit a button, click the pen. To delete a button, click the dustbin. 
-
-When editing a button, the same settings as when you create a new button is available, see above.
-
-Analytics
-************
-It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. Also note that analytics data collecting must be on for the business profile for this to work, see the link to the analytics settings below.
-
-.. image:: action-button-analytics.png
-
-If activated, the following settings are available:
-
-.. image:: action-button-analytics-settings.png
-
-To display data for event tracking, use the query type "Event" in the Analytics report block.
-
-For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
-
-Some settings are needed for every business profile where analytics data should be collected. Read about that here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
