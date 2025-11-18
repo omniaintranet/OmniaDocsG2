@@ -62,6 +62,9 @@ Selecting "Users" you can rollup all users as set up in User anagement; Entra ID
 .. image:: query-property-1-v75.png
 
 4. Set additional query parameters. Exactly what needs to be done depends on the property chosen.
+
+**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
+
 5. Type a parameter if needed (needed for Manual or Query parameter).
 6. Click "ADD" to add the query from your settings.
 
