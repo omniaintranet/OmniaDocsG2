@@ -61,6 +61,8 @@ Here you add queries, which is the detailed "settings" for what to display in th
 
 .. image:: document-rollup-settings-query-scope-settings.png
 
+**Note!** In Omnia 7.11 and later, "Contains" can be used in the query.
+
 3. Click "Add" to add the Query. 
 
 Note that you can type the script directly in the field, if you know how. You can use all options in the Keyword Query Language (KQL). See this Microsoft page for reference: https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
