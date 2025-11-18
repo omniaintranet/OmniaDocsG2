@@ -23,10 +23,12 @@ The following actions are available to add as a button:
 + Notification panel
 + Omnia admin
 + Page feedback
++ Print (Omnia 7.11 and later)
 + Process feedback
 + Quick search
 + Share
 + Sign-off requests
++ Statistics export (Omnia 7.11 and later)
 + Strenghten profile
 + Strengthen profile (Classic)
 + Subscribe
