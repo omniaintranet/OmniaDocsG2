@@ -30,6 +30,7 @@ In this part of the documentation you will find information concerning how to wo
    pages-toolbar/index
    page-types/index
    permissions-for-variations/index
+   print-page/index
    publish-page-changes/index
    page-settings/index
    reports/index
