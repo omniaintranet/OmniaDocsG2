@@ -305,11 +305,11 @@ For this to work, "Receive Email" must be selected in the page contact property 
 
 Print
 -----------
-Using this action, the actual page can be printed. (Aailable in Omnia 7.11 and later).
+Using this action, the actual page can be printed. (Available in Omnia 7.11 and later).
 
 Only general settings for the button are available, see above.
 
-There are a number of print settings available for users, when this button is used, see this page: Linke to be added)
+There are a number of print settings available for users, when this button is used, see this page: :doc:`Print a page </pages/print-page/index>`
 
 Process Feedback
 ----------------------
