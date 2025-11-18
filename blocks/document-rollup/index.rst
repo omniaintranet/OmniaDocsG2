@@ -61,7 +61,7 @@ Here you add queries, which is the detailed "settings" for what to display in th
 
 .. image:: document-rollup-settings-query-scope-settings.png
 
-**Note!** In Omnia 7.11 and later, "Contains" can be used in the query.
+**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
 
 3. Click "Add" to add the Query. 
 
