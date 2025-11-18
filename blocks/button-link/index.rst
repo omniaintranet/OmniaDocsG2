@@ -367,7 +367,15 @@ Statistics export
 ------------------
 Available in Omnia 7.11 and later.
 
-(A description will be added soon).
+Using this button, an Excel file with decided statistics export can be created and downloaded.
+
+As the first step in the settings, "Search statistics" must be selected as button type:
+
+.. image:: statistics-button-button-type.png
+
+Then scope can be selected and the statistics period (Days to look back) can be set:
+
+.. image:: statistics-button-scope.png
 
 Strengthen profile
 ----------------------
