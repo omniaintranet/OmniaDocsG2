@@ -7,8 +7,8 @@ Available in Omnia 7.11 and later.
 
 When absolute security is needed, Omnia can be run in Single site collection mode, but works then quite differently. For example:
 
-+ No new sites can be created with the Omnia UI.
-+ Teamwork sites can not be used (CREATE button is hidden).
++ No new sites can be created with the Omnia UI (CREATE button is hidden).
++ Teamwork sites can not be used.
 + Follow site can not be used.
 + Document management and Process management must be used within a publishing app.
 
@@ -20,7 +20,7 @@ Single site collection should be activated on a new tenant only.
 
 Here's how:
 
-1. Activate the tenant feature "Web Content Management core (Sites.Selected)".
+1. Activate the tenant feature "Web Content Management core (limited access)".
 2. Use "Sites.Selected" in tenant settings: System > Microsoft 365 > Sites.Selected.
 
 
