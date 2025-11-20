@@ -1,24 +1,31 @@
 Single site collection
 =====================================
 
-This information is intended for experienced administrators, IT staff and IT consultants.
+This information is intended for experienced administrators, IT staff, and IT consultants.
 
-In Omnia 7.11 and later it's possible to run Omnia in Single site collection mode.
+Beginning in **Omnia 7.11**, it is possible to run Omnia in **Single Site Collection mode**. In this mode, all Omnia functionality is contained within a single SharePoint site collection, which imposes several functional limitations and configuration requirements.
 
-The main differences are:
+Key Differences in Single Site Collection Mode
+*************************************************
+When this feature is enabled:
 
-+ New sites can not be created with the Omnia UI (CREATE button is hidden when the feature is activated).
-+ Teamwork sites can not be used at all.
-+ Document management and Process management must be used within a publishing app.
++ New sites cannot be created through the Omnia UI.
+  The CREATE button is hidden.
++ Teamwork sites are not supported.**
++ Document Management and Process Management* must be configured within a Publishing app.
 
-A new site must be created outside of Omnia, site access setup scripts (info available in Omnia admins settings) run in PowerShell site collection admin, and then the site can be attached to Omnia, as a community site or a publishing app, using the usual ATTACH option. 
+To add a new site, administrators must:
 
-Activate Single site collection
-**********************************
-Single site collection should be activated on a new tenant only.
+1. Create the site outside of Omnia.
+2. Run the required Site access setup scripts using PowerShell with Site Collection Administrator permissions (scripts are available in Omnia under Admin aettings).
+3. Attach the site to Omnia, either as a Community site or a Publishing app using the standard ATTACH option.
 
-Here's how:
+Activating Single Site Collection Mode
+**********************************************
+**Important:** This feature should only be activated on new tenants.
 
-1. Activate the tenant feature "Web Content Management core (limited access)".
-2. Add settings and find the scripts in "Site access setup script" in tenant settings: System > Microsoft 365 > Site access setup script.
+To activate:
+
+1. Enable the tenant feature "Web Content Management core (limited access)".
+2. In Omnia, go to **System > Microsoft 365 > Site access setup script** to configure the necessary settings and download the PowerShell scripts.
 
