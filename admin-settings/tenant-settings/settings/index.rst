@@ -10,6 +10,7 @@ Select section for more information:
 .. toctree::
    :titlesonly:
 
+   ai-engine/index
    digital-signage-613/index
    favicon-tenant/index
    general/index
@@ -17,7 +18,6 @@ Select section for more information:
    link-handler/index
    media-picker/index
    metrics/index
-   ai-engine/index
    regional-settings/index
    rtf-editor/index
    setup-wizard/index
