@@ -1,3 +1,21 @@
+Release 7.9.4
+========================================
+
+- Fix for the functionality to clear notifications
+- Improvements to the login flow
+
+Release 7.9.3
+========================================
+
+- Update to the permission handling
+- Improvements to cleanup job
+
+Release 7.9.2
+========================================
+
+- Security enhancements
+- Optimizations of the activity feed synchronization functionality
+
 Release 7.9.1
 ========================================
 
@@ -214,5 +232,6 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
+
 
 
