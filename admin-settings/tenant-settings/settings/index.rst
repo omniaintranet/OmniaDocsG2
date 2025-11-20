@@ -25,7 +25,3 @@ Select section for more information:
    text-styles/index
    user-profile-completion/index
    
-
-In Omnia 7.8 and later, the Open AI option has been renamed AI features, and contains additional functionality (Semantic search). For the Omnia 7.7 functionality (Open AI), see:
-
-:doc:`Open AI </admin-settings/tenant-settings/settings/open-ai/index>`
