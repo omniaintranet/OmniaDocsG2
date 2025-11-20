@@ -11,7 +11,7 @@ The main differences are:
 + Teamwork sites can not be used at all.
 + Document management and Process management must be used within a publishing app.
 
-A new site must be created outside of Omnia, site access setup scripts (info available in Omnia admins settings) run in PowerShell site collection admin, and then the site can be attached to Omnia, as a community site or a publishing app, using the usual ATTACH option.
+A new site must be created outside of Omnia, site access setup scripts (info available in Omnia admins settings) run in PowerShell site collection admin, and then the site can be attached to Omnia, as a community site or a publishing app, using the usual ATTACH option. 
 
 Activate Single site collection
 **********************************
@@ -21,4 +21,5 @@ Here's how:
 
 1. Activate the tenant feature "Web Content Management core (limited access)".
 2. Add settings and find the scripts in "Site access setup script" in tenant settings: System > Microsoft 365 > Site access setup script.
+
 
