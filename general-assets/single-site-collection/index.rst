@@ -7,7 +7,7 @@ In Omnia 7.11 and later it's possible to run Omnia in Single site collection mod
 
 The main differences are:
 
-+ No new sites can not be created with the Omnia UI (CREATE button is hidden when the feature is activated).
++ New sites can not be created with the Omnia UI (CREATE button is hidden when the feature is activated).
 + Teamwork sites can not be used at all.
 + Document management and Process management must be used within a publishing app.
 
@@ -21,5 +21,4 @@ Here's how:
 
 1. Activate the tenant feature "Web Content Management core (limited access)".
 2. Add settings and find the scripts in "Site access setup script" in tenant settings: System > Microsoft 365 > Site access setup script.
-
 
