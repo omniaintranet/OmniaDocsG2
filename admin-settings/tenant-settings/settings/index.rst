@@ -1,7 +1,7 @@
 Settings
 ====================
 
-Here you can set the following in Omnia 7.8 and later (see below for a comment about Omnia 7.7):
+Here you can set the following:
 
 .. image:: tenant-settings-v79.png
 
