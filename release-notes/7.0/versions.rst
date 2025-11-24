@@ -1,3 +1,11 @@
+7.9.15
+========================================
+(Omnia 7.9.15 / Workplace 7.9.15 / WCM 7.9.15 / MS 7.9.15 / Analytics 7.9.7 / Feed 7.9.3)
+
+- Fixed an issue that would sometimes cause duplicate pages from automatic page creation when using it together with variations (#41889).
+- Stability fixes to teamwork provisioning (#48879).
+- Performance improvements to login flow.
+
 7.9.14
 ========================================
 (Omnia 7.9.14 / Workplace 7.9.14 / WCM 7.9.14 / MS 7.9.14 / Analytics 7.9.6 / Feed 7.9.3)
