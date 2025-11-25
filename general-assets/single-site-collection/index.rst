@@ -16,7 +16,7 @@ When this feature is enabled:
 To add a new site, administrators must:
 
 1. Create the site outside of Omnia.
-2. Run the required Site access setup scripts using PowerShell with Site Collection Administrator permissions (scripts are available in Omnia under Admin aettings).
+2. Run the required Site access setup scripts using PowerShell with Site collection administrator permissions (scripts are available in Omnia under Admin settings).
 3. Attach the site to Omnia, either as a Community site or a Publishing app using the standard ATTACH option.
 
 Activating Single site collection mode
@@ -27,5 +27,4 @@ To activate:
 
 1. Enable the tenant feature "Web Content Management core (limited access)".
 2. In Omnia, go to **System > Microsoft 365 > Site access setup script** to configure the necessary settings and download the PowerShell scripts.
-
 
