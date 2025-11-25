@@ -170,8 +170,8 @@ The following is shown:
 2. Add the settings.
 
 + **Action type**: Select action type from the list. Note that these actions are the same as can be added using an Action button block.
-+ **Title**: Add a title for the list here (not shown to users).
-+ **Icon type/Icon**: Add an icon if you wish, for this list (not shown for users).
++ **Title**: Add a title for the action here. If it's a button this will also be used as the tool tip. **Important note!** If you use several languages as system language in your solution, you have to add the title in all languages, otherwise the tool tip will be in the main language only.
++ **Icon type/Icon**: Add an icon if you wish.
 
 Different fields are shown depending on action type selected. See this page for detailed information about those fields: :doc:`Action button block </blocks/button-link/index>`
 
