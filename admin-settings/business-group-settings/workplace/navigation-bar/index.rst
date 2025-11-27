@@ -1,6 +1,8 @@
 Navigation bar
 =================
 
+**This page is being edited.**
+
 Here you can edit navigation bar settings for the business profile's workspace. You can add different settings for the default navigation bar and for the navigation bar used in MS Teams. 
 
 You can use several mega menu objects and several action menu objects, if needed.
@@ -11,7 +13,7 @@ Home settings
 ***************
 Here you can edit the settings for the link to the workspace home page. 
 
-.. image:: workplace-navigation-home-settings-new2.png
+.. image:: workplace-navigation-home-settings-711.png
 
 + **Home title**: If you would like to show a Home title, add it here, in any tenant language. Then select "Show title" below.
 + **Icon type**: To show an icon, select icon type here. If you select "Custom" here, you can upload any image, using the media picker, to use as an icon. (If an icon type is seleted, but no icon is selected, no icon is shown).
@@ -26,12 +28,7 @@ Note the separate settings for the home page in Microsoft Teams.
 To add a Logo, do the following:
 
 1. Click ADD LOGO.
-
-.. image:: workplace-navigation-home-settings-click-add-new2.png
-
 2. Use the media picker to find and select the image.
-
-.. image:: workplace-navigation-home-settings-media-picker-new.png
 
 See this page for more information: :doc:`The media picker </general-assets/media-picker/index>`
 
@@ -41,11 +38,11 @@ Mega menu settings
 ************************
 To open the Mega menu settings, click the cog wheel:
 
-.. image:: workplace-navigation-mega-menu-settings-cogwheel-new.png
+.. image:: workplace-navigation-mega-menu-settings-cogwheel-711.png
 
 Separate settings are available for the default mega menu, and for the mega menu used in MS Teams.
 
-.. image:: workplace-navigation-settings-mega-menu-new.png
+.. image:: workplace-navigation-settings-mega-menu-711.png
 
 + **Show icon**: Select to show/hide navigation icons.
 + **Show text**: Select to show/hide mavigation texts.
@@ -62,16 +59,15 @@ See below for information on how to add mega menu objects.
 
 Action menu settings
 **********************
-To open the settings for the action menu, click the cog wheel:
+To open the settings for the action menu, click this cog wheel:
 
-.. image:: workplace-navigation-action-menu-settings-cogwheel-new.png
+.. image:: workplace-navigation-action-menu-settings-cogwheel-711.png
 
 The following settings are available here, for the default action menu and for the action menu used in MS Teams (the action menu in MS Teams is not applicable in Omnia on-prem):
 
-.. image:: workplace-navigation-settings-action-menu-new.png
+.. image:: workplace-navigation-settings-action-menu-711.png
 
 + **Show icon**: For the top action menu, showing an icon is default. If you add other action menus, you can choose to show icons or not.
-+ **Show text**: For the top action menu, showing text is default. If you add other action menus, you can choose to show texts or not.
 + **Item limit**: Set the number of items that should be listed before a "Show more" link is shown.
 
 See below for information on how to add action menu objects.
