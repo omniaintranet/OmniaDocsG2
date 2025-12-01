@@ -172,7 +172,7 @@ If you would like to add different layouts for one or more of the other scren si
 
 .. image:: layout-screen-size-new-layout-711.png
 
-3. Select and existing layout or create a new one.
+3. Select an existing layout or create a new one.
 
 .. image:: layout-screen-size-new-layout-new-711.png
 
