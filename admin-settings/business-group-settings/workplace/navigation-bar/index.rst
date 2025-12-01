@@ -74,19 +74,15 @@ See below for information on how to add action menu objects.
 
 Adding a mega menu object
 ***************************
-To add a mega menu object, click the plus:
+To add a mega menu object, click the plus and choose to add a layout or create a link.
 
-.. image:: mega-menu-add-new-plus.png
-
-and choose to add a layout or create a link.
-
-.. image:: mega-menu-add-new2.png
+.. image:: mega-menu-add-711.png
 
 Create layout
 --------------
 When you choose to create a mega menu layout, the following is shown:
 
-.. image:: mega-menu-add-layout-new.png
+.. image:: mega-menu-add-layout-711.png
 
 1. Add a title in any of the Tenant languages, and an icon if you like. 
 
@@ -99,91 +95,57 @@ For more information, see *Working with the layout* and *Saving a draft and publ
 
 Create a link
 ---------------
-You can create a mega menu link to anything you can link to, for example a page in Omnia or external functionality.
+You can create a mega menu link to anything you can link to, for example a page in Omnia, or external functionality.
 
 Set the following for the link:
 
-.. image:: mega-menu-add-link-new.png
+.. image:: mega-menu-add-link-711.png
 
 + **URL**: Add the URL for the link here.
 + **Title**: Add a title in any tenant language here.
-+ **Open link in new tab**: If the link should be opened in a new tab, select this option.
++ **Open link in new tab**: If the link should be opened in a new tab in the Browser, select this option.
 + **Icon type/Icon**: Add an icon for the link if you wish.
 
 Mega menu object settings
 ---------------------------
 Some settings are available for each mega menu object, here:
 
-.. image:: mega-menu-select-settings.png
+.. image:: mega-menu-select-settings-711.png
 
 To edit them, click Edit:
 
-.. image:: mega-menu-select-settings-edit.png
-
-The follwing settings are then available:
-
-.. image:: mega-menu-settings-edit.png
+.. image:: mega-menu-select-settings-edit-711.png
 
 + **Title**: You can edit the title for any of the languages.
 + **Icon type/Icon**: You can edit the settings for icon here.
 + **Inherit size from mega menu settings**: Per default, this object has the same size settings as the whole mega menu. If you want to set specific size settings for this object, deselect the option.
-+ **Targeting**: Here you can set targeting for the mega menu object. See below for more information.
++ **Targeting**: Here you can set targeting for the mega menu object. You do that the same way as for many other options in Omnia. See this page for more information: :doc:`Using targeting </general-assets/targeting-in-omnia/index>` 
 + **A list of start URLs that will make the node selected**: This is a way of showing how different parts of the solution is connected. Any URL can make this node selected.
-
-Here's an example:
-
-.. image:: node-selected-list.png
-
-And here's how OUR ORGANIZATION is selected when any of these options is active:
-
-.. image:: node-selected-selected.png
-
-Target a mega menu object
--------------------------------
-When the mega menu object is created you can add a targeting filter, meaning you can decide who this mega menu object will be available for.
-
-1. Select the mega menu object.
-2. Open the settings (see above).
-3. Click "Edit" if needed.
-3. Add targeting filters.
-
-.. image:: mega-menu-targeting-new.png
-
-You do that the same way as for many other options in Omnia. See this page for more information: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Adding an action menu object
 ******************************
 The action menu can include almost any action available in Omnia. To add an action menu object, do the following:
 
-1. Click the plus.
+1. Click the plus for ACTION MENU.
 
-.. image:: action-menu-add-new.png
+The following settings are available:
 
-The following is shown:
-
-.. image:: action-menu-add-settings-new.png
-
-2. Add the settings.
+.. image:: action-menu-add-settings-711.png
 
 + **Action type**: Select action type from the list. Note that these actions are the same as can be added using an Action button block.
-+ **Title**: Add a title for the action here. If it's a button this will also be used as the tool tip. **Important note!** If you use several languages as system language in your solution, you have to add the title in all languages, otherwise the tool tip will be in the main language only.
++ **ARIA role**: (A description will be added soon).
++ **Title**: Add a title for the action here. If it's a button this will also be used as the tool tip. **Important note!** If you use several languages as system language in your solution, you have to add the title in all languages, otherwise the tool tip will be shown in the main language only.
 + **Icon type/Icon**: Add an icon if you wish.
 
 Different fields are shown depending on action type selected. See this page for detailed information about those fields: :doc:`Action button block </blocks/button-link/index>`
 
 Action menu object settings
 -----------------------------
-In the settings for an action menu object, you can edit the settings you used when adding the object:
+In the settings for an action menu object, you can edit some settings and set targeting:
 
-.. image:: action-menu-settings.png
+.. image:: action-menu-settings-711.png
 
-Target an action menu object
--------------------------------
-When the action menu object is created you can add a targeting filter, meaning you can decide who this action menu object will be available for.
-
-.. image:: action-menu-add-settings-targeting-new2.png
-
-You do that the same way as for many other options in Omnia. See this page for more information: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
+Targeting works the same way as for many other options in Omnia. See this page for more information: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Edit the order
 ****************
@@ -191,7 +153,7 @@ If you have created several objects of one type, you can decide in what order th
 
 Use this icon and drag and drop the desired order:
 
-.. image:: action-menu-add-settings-order-new.png
+.. image:: action-menu-add-settings-order-711.png
 
 Working with the layout
 *************************
@@ -203,17 +165,22 @@ Different layouts for different screen sizes
 ----------------------------------------------
 In addition to the options described above, you can add different layouts for different screen sizes, if needed.
 
-The default screen size is for computer screens. You can use the other screen sizes to check what the layout will look like in smaller sizes, and decide if specific layouts for other sizes are needed.
+The default screen size is for computer screens (called Large). You can use the other screen sizes to check what the layout will look like in smaller sizes, and decide if specific layouts for other sizes are needed. 
 
 If you would like to add different layouts for one or more of the other scren sizes available, do the following:
 
 1. Select Screen size.
+2. Open the list.
 
-.. image:: layout-screen-size-new.png
+.. image:: layout-screen-size-new-layout-711.png
 
-2. Open the list and select "Create new layout".
+3. Select and existing layout or create a new one.
 
-.. image:: layout-screen-size-new-layout-new.png
+.. image:: layout-screen-size-new-layout-new-711.png
+
+When you choose to create a new layout for this object, you can also copy from another publilshed layout, to use it as a starting point.
+
+.. image:: layout-screen-size-new-layout-copy-711.png
 
 You work with the layout for the different screen sizes as described above.
 
