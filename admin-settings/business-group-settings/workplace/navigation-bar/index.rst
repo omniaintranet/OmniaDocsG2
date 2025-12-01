@@ -1,8 +1,6 @@
 Navigation bar
 =================
 
-**This page is being edited.**
-
 Here you can edit navigation bar settings for the business profile's workspace. You can add different settings for the default navigation bar and for the navigation bar used in MS Teams. 
 
 You can use several mega menu objects and several action menu objects, if needed.
@@ -53,7 +51,7 @@ Separate settings are available for the default mega menu, and for the mega menu
 
 Layout theming are the same settings as are described here: :doc:`Layout theming </general-assets/layout-explorer/page-layout/layout-theming/index>`
 
-Block theming are the same settings as are decsribed here: :doc:`Block theming </general-assets/layout-explorer/page-layout/block-theming/index>`
+And Block theming has the same settings, but is used for blocks (obviously).
 
 See below for information on how to add mega menu objects.
 
@@ -91,7 +89,7 @@ What you add here is only shown in the list of mega menus, not shown for users.
 2. Click "Create".
 3. Create the mega menu layout by using sections and blocks available in Omnia.
 
-For more information, see *Working with the layout* and *Saving a draft and publishing* below.
+For more information, see *Working with the layout* below.
 
 Create a link
 ---------------
@@ -178,7 +176,7 @@ If you would like to add different layouts for one or more of the other scren si
 
 .. image:: layout-screen-size-new-layout-new-711.png
 
-When you choose to create a new layout for this object, you can also copy from another publilshed layout, to use it as a starting point.
+When you choose to create a new layout for this object, you can also copy from another published layout, to use it as a starting point.
 
 .. image:: layout-screen-size-new-layout-copy-711.png
 
