@@ -1,11 +1,13 @@
 Tabs - Omnia Feed
 =============================================
 
+**This desciption is being edited.**
+
 Use the settings here to edit tabs for this business profile in Omnia Feed.
 
 Here's an example with a number of tabs set up:
 
-.. image:: omnia-feed-tabs-v76.png
+.. image:: omnia-feed-tabs-v711.png
 
 + **PUBLISH/UNPUBLISH**: Use this to enable/disable this configuration in Omnia Feed. 
 
@@ -19,35 +21,25 @@ Adding a new tab
 ******************
 To add a new tab, click the plus. Then select the type of tab you want to add.
 
-.. image:: omnia-feed-tabs-select-76-2.png
+.. image:: omnia-feed-tabs-select-711.png
 
 General tab settings
 ***********************
-For all tabs, the following settings are available:
+For all tabs, these two settings always are available:
 
-General settings
------------------
-You can set the following here:
-
-.. image:: omnia-feed-tabs-general-v7.png
+.. image:: omnia-feed-tabs-general-v711.png
 
 + **Title**: Add a title for the tab.
 + **Icon type**: If you want an icon for the tab, select icon type here.
 + **Icon**: Choose icon from the selected type here. If you leave this field empty, no icon is shown.
 
-Targeting settings
--------------------
-Here you can target the tab to specific users:
-
-.. image:: omnia-feed-tabs-targeting-v7.png
-
-This works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
+Targeting settings works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Query tab
 ***********
 This type of tab can display a page rollup from Omnia. The following settings are available:
 
-.. image:: omnia-feed-tabs-query-v7.png
+.. image:: omnia-feed-tabs-query-v711.png
 
 For "General" and "Targeting", general tab settings are available, see above.
 
@@ -197,3 +189,4 @@ For queey, you can add filters for the sign-off request you want to list on the 
 .. image:: tab-sign-off-example-76.png
 
 For Notification, you can decide to enable push notification for this rollup, or not.
+
