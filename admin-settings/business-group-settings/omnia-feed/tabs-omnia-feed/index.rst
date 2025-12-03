@@ -39,9 +39,7 @@ Query tab
 ***********
 This type of tab can display a page rollup from Omnia. The following settings are available:
 
-.. image:: omnia-feed-tabs-query-v77.png
-
-For "General" and "Targeting", general tab settings are available, see above.
+For common settings, see above.
 
 Query settings
 ----------------
@@ -189,5 +187,6 @@ For queey, you can add filters for the sign-off request you want to list on the 
 .. image:: tab-sign-off-example-76.png
 
 For Notification, you can decide to enable push notification for this rollup, or not.
+
 
 
