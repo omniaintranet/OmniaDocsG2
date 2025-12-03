@@ -7,7 +7,7 @@ Omnia Feed - Business profile settings
 
 The following settings are available for Omnia Feed, for the business profile:
 
-.. image:: business-profile-omnia-feed-613.png
+.. image:: business-profile-omnia-feed-711.png
 
 Select section below for more information:
 
@@ -16,6 +16,7 @@ Select section below for more information:
 
    settings-omnia-feed/index
    tabs-omnia-feed/index
+   layout-settings/index
    advanced-omnia-feed/index
 
 
