@@ -1,7 +1,7 @@
 Setup Viva Engage in Omnia
 ============================
 
-**Reports indicate that this way of setting up Viva Engage in Omnia is deprecated. You may not be able to follow this instruction. This page will be updated or replaced shortly.**
+**Reports indicate that this way of setting up Viva Engage has been deprecated by Microsoft. You may not be able to follow this instruction. This page will be updated or replaced shortly.**
 
 Follow these steps to setup Viva Engage (former Yammer) in Omnia Online. 
 
@@ -52,5 +52,6 @@ For more information, see:
 + :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
 + :doc:`The Viva Engage feed block </blocks/yammer-feed/index>`
+
 
 
