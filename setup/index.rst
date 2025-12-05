@@ -13,8 +13,5 @@ This part of the documentaton contains setup instructions for different parts of
    communities/index
    setup-omnia-teams/index
    setup-enterprise-glossary/index
-   setup-viva-engage/index
    setup-ai/index
-
-
 
