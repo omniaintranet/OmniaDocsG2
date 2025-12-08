@@ -24,7 +24,7 @@ If you want to resync all users, just click RESYNC ALL USERS without any setting
 To just resync users of some user types, select the types in the list, and then click RESYNC ALL USERS
 
 Delete users
-**************.
+**************
 Use these settings to delete users from Omnia Feed, if needed. 
 
 You can delete all users, all users of one or more user types, or use Excklusion mode to select the user types that should not be deleted.
@@ -49,4 +49,5 @@ Using Exckusion mode is the other way around, you select the user types where us
 
 2. Select "Exclusion mode".
 2. Click DELETE USERS.
+
 
