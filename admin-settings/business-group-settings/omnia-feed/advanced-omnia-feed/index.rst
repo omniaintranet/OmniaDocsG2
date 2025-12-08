@@ -48,6 +48,5 @@ Using Exckusion mode is the other way around, you select the user types where us
 .. image:: delete-users-user-types.png
 
 2. Select "Exclusion mode".
-2. Click DELETE USERS.
-
+3. Click DELETE USERS.
 
