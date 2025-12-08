@@ -125,7 +125,7 @@ General tab settings are available for "General" and "Targeting", see above.
 
 Content
 -----------
-Add the URL for the embedded link here and select what should be shown as the tab title, the business profle title or the the web page title. You can also hide the header all together.
+Add the URL for the embedded link here and select what should be shown as the tab title, the business profle title or the the web page title. You can also hide the header all together. You can alos decide if a navigation button should be shown.
 
 .. image:: omnia-feed-embedded-link-content-v711.png
 
@@ -137,8 +137,6 @@ For an Activity feed tab, the following settings are available:
 
 .. image:: omnia-feed-activity-feed-v711.png
 
-For "General" and "Targeting", general tab settings are available, see above.
-
 Content
 ---------
 The Activity scope can be from the user's "My subscriptions" or from a "Page collection". 
@@ -149,13 +147,11 @@ When you choose "My subscription" no further settings are needed. When selecting
 
 Display
 ---------
-For Display, a number of detailed view settings are avalable.
+For Display, a number of detailed view settings are available.
 
 .. image:: omnia-feed-activity-feed-display-v711.png
 
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
-
-
 
