@@ -39,23 +39,19 @@ Multiple query tab
 *******************
 As the title implies, this tab can be used for multiple queries:
 
-.. image:: omnia-feed-tabs-query-mulitple-v76.png
-
-For general and targeting settings, see above.
+.. image:: omnia-feed-tabs-query-mulitple-v711.png
 
 To use one or more queries on this tab, click ADD QUERY, and select query type:
 
-.. image:: omnia-feed-tabs-query-mulitple-type-v76.png
+.. image:: omnia-feed-tabs-query-mulitple-type-v711.png
 
 Pages
 -------
 The following settings are available for Pages:
 
-.. image:: omnia-feed-tabs-query-mulitple-type-pages-all.png
+.. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711.png
 
 Query: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. And then, in the second list, one or more within the scope.
-
-.. image:: omnia-feed-tabs-query-mulitple-pages-query.png
 
 Display and Notification has the same type of options as for the Query tab, see above.
 
@@ -63,11 +59,11 @@ Forms
 ----------
 For a Forms rollup you can choose Tenant, one or more business profiles or one or more app instances, under Query. You can then add filters the same way as for other rollups.
 
-.. image:: omnia-feed-tabs-query-mulitple-type-forms-query.png
+.. image:: omnia-feed-tabs-query-mulitple-type-forms-query-711.png
 
 Display are somewhat different from the oher options:
 
-.. image:: omnia-feed-tabs-query-mulitple-type-forms-display.png
+.. image:: omnia-feed-tabs-query-mulitple-type-forms-display-711.png
 
 At the top, you can select tags to be diplayed, the rest you have seen before.
 
@@ -77,11 +73,11 @@ Sign-off requests
 ------------------
 For sign-off requests, the following settings are avaiable:
 
-.. image:: omnia-feed-tabs-query-mulitple-type-signoff.png
+.. image:: omnia-feed-tabs-query-mulitple-type-signoff-711.png
 
-For queey, you can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is active:
+For queey, you can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is open:
 
-.. image:: tab-sign-off-example-76.png
+.. image:: tab-sign-off-example-711.png
 
 For Notification, you can decide to enable push notification for this rollup, or not.
 
@@ -89,7 +85,7 @@ Link tab
 **********
 For Link tabs, the following settings are available:
 
-.. image:: omnia-feed-link-tab-v7.png
+.. image:: omnia-feed-link-tab-v711.png
 
 For "General" and "Targeting", general tab settings are available, see above.
 
@@ -97,7 +93,7 @@ Content
 -----------
 For content, the following is available:
 
-.. image:: omnia-feed-link-tab-content-v7.png
+.. image:: omnia-feed-link-tab-content-v711.png
 
 You can choose to use a "Web URL link" or a "Deep link". Then add the link below. A deep link can be used to link to another app, or content in another app, on the users device.
 
@@ -107,7 +103,7 @@ Embedded link tab
 **********************
 For an Embedded link tab, the following settings are available:
 
-.. image:: omnia-feed-embedded-v7.png
+.. image:: omnia-feed-embedded-v711.png
 
 General tab settings are available for "General" and "Targeting", see above.
 
@@ -115,7 +111,7 @@ Content
 -----------
 Add the URL for the embedded link here and select what should be shown as the tab title, the business profle title or the the web page title. You can also hide the header all together.
 
-.. image:: omnia-feed-embedded-link-v7.png
+.. image:: omnia-feed-embedded-link-content-v711.png
 
 Note the information about Omnia URL:s.
 
@@ -123,7 +119,7 @@ Activity feed tab
 **********************
 For an Activity feed tab, the following settings are available:
 
-.. image:: omnia-feed-activity-feed-v7.png
+.. image:: omnia-feed-activity-feed-v711.png
 
 For "General" and "Targeting", general tab settings are available, see above.
 
@@ -131,7 +127,7 @@ Content
 ---------
 The Activity scope can be from the user's "My subscriptions" or from a "Page collection". 
 
-.. image:: omnia-feed-activity-feed-content-v7.png
+.. image:: omnia-feed-activity-feed-content-v711.png
 
 When you choose "My subscription" no further settings are needed. When selecting "Page collection", you must select one or more page collections to get the activity feed from.
 
@@ -139,7 +135,7 @@ Display
 ---------
 For Display, a number of detailed view settings are avalable.
 
-.. image:: omnia-feed-activity-feed-display-v7.png
+.. image:: omnia-feed-activity-feed-display-v711.png
 
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
