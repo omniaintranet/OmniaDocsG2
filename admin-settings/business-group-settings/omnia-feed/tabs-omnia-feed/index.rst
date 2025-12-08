@@ -61,7 +61,7 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 .. image:: tabs-pages-mapping.png
 
-**Notification**: Here you choose if push notification should be on, and can edit a number of notidications settings. Should be self explanatory.
+**Notification**: Here you choose if push notifications should be on, and can edit a number of notifications settings. 
 
 .. image:: tabs-pages-notifications.png
 
@@ -156,5 +156,6 @@ For Display, a number of detailed view settings are avalable.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
