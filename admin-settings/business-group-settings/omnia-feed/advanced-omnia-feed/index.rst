@@ -1,8 +1,6 @@
 Advanced - Omnia Feed
 =============================================
 
-**This description is being edited.**
-
 Here you can resync tab content and users, if something has gone wrong. You can also delete users.
 
 Tabs content resync
@@ -13,13 +11,9 @@ This is available here. Read the text thoroughly for details.
 
 Users resync
 **************
-If you resync users the initial login to the app is quicker but it's an option, it's not mandatory. 
-
-The following settings are available for resyncing users:
+You can choose to resync actual users, all users of one or more user types, or even ALL users.
 
 .. image:: omnia-feed-resync-users-711.png
-
-You can choose to resync actual users, all users oof one or more user types, or even ALL users.
 
 In the top list, just select all specific users to resync and click RESYNC USERS.
 
