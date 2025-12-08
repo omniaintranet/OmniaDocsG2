@@ -85,47 +85,6 @@ For queey, you can add filters for the sign-off request you want to list on the 
 
 For Notification, you can decide to enable push notification for this rollup, or not.
 
-Query tab
-***********
-This type of tab can display a page rollup from Omnia. The following settings are available:
-
-Query settings
-----------------
-Here you set up the query for the tab.
-
-.. image:: omnia-feed-tabs-query-query-v7.png
-
-+ **Scope**: Select scope and then set the details similar to what you do in any page rollup. Can be "Tenant", "Business profiles", "Publishing apps" or "Page collections". Regarding business profiles, publishing apps and page collections, you can add one or more. Using Tenant as the scope, there's almost endless possibilities to rollup pages with certain properties from the tenant.
-+ **Title format**: Available when scope has been selected. Choose what should be shown as the metadata for source. (Note that you may have to expand the scope to find this setting).
-+ **ADD FILTER**: Available when scope has been selected. Here you select one or more filters for pages to rollup. One example is channels for the scope Tenant.
-+ **Sign Off Requests**: This option can be available depending on setup. You can choose to show sign-off requests for the scope and if you do that, you can choose to hide finished requests.
-
-Display settings
------------------
-The following settings are available here:
-
-.. image:: omnia-feed-tabs-query-display-v7-frame.png
-
-Use "Tab View Settings" for settings for the tab itself. Use "Detail View Settings" for objects opened in the tab. What you do in both cases is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
-
-For example, this is what can be selected for "Tab View Settings":
-
-.. image:: omnia-feed-tabs-query-display-tab-view-v7.png
-
-At the bottom you can also set the sorting "Descending" or "Ascending" (not available for Detail View Settings). 
-
-For "Detail View Settings" you can also select the order shown for comments, "Older To Newer" or "Newer To Older".
-
-Notification settings
-----------------------
-The following is available here:
-
-.. image:: omnia-feed-tabs-query-notification-v76.png
-
-+ **Enable push notification**: Select this option if users should recieve a push notification when new information, for example a new page, has been added.
-
-For the detailed options, read the options carefully. They should be self explanatory.
-
 Link tab
 **********
 For Link tabs, the following settings are available:
