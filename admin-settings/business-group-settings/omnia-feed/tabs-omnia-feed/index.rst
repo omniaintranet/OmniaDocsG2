@@ -25,7 +25,7 @@ To add a new tab, click the plus. Then select the type of tab you want to add.
 
 Common settings
 ***********************
-For all tabs, these two settings always are available:
+For all tabs, these settings are always available:
 
 .. image:: omnia-feed-tabs-general-v711.png
 
@@ -35,11 +35,59 @@ For all tabs, these two settings always are available:
 
 Targeting settings works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
+Multiple query tab
+*******************
+As the title implies, this tab can be used for multiple queries:
+
+.. image:: omnia-feed-tabs-query-mulitple-v76.png
+
+For general and targeting settings, see above.
+
+To use one or more queries on this tab, click ADD QUERY, and select query type:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-v76.png
+
+Pages
+-------
+The following settings are available for Pages:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-pages-all.png
+
+Query: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. And then, in the second list, one or more within the scope.
+
+.. image:: omnia-feed-tabs-query-mulitple-pages-query.png
+
+Display and Notification has the same type of options as for the Query tab, see above.
+
+Forms
+----------
+For a Forms rollup you can choose Tenant, one or more business profiles or one or more app instances, under Query. You can then add filters the same way as for other rollups.
+
+.. image:: omnia-feed-tabs-query-mulitple-type-forms-query.png
+
+Display are somewhat different from the oher options:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-forms-display.png
+
+At the top, you can select tags to be diplayed, the rest you have seen before.
+
+For Notification, you can decide to enable push notification for this rollup, or not.
+
+Sign-off requests
+------------------
+For sign-off requests, the following settings are avaiable:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-signoff.png
+
+For queey, you can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is active:
+
+.. image:: tab-sign-off-example-76.png
+
+For Notification, you can decide to enable push notification for this rollup, or not.
+
 Query tab
 ***********
 This type of tab can display a page rollup from Omnia. The following settings are available:
-
-For common settings, see above.
 
 Query settings
 ----------------
@@ -136,57 +184,5 @@ For Display, a number of detailed view settings are avalable.
 
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
-As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older"
-
-Multiple query tab
-*******************
-As the title implies, this tab can be used for multiple queries:
-
-.. image:: omnia-feed-tabs-query-mulitple-v76.png
-
-For general and targeting settings, see above.
-
-To use one or more queries on this tab, click ADD QUERY, and select query type:
-
-.. image:: omnia-feed-tabs-query-mulitple-type-v76.png
-
-Pages
--------
-The following settings are available for Pages:
-
-.. image:: omnia-feed-tabs-query-mulitple-type-pages-all.png
-
-Query: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. And then, in the second list, one or more within the scope.
-
-.. image:: omnia-feed-tabs-query-mulitple-pages-query.png
-
-Display and Notification has the same type of options as for the Query tab, see above.
-
-Forms
-----------
-For a Forms rollup you can choose Tenant, one or more business profiles or one or more app instances, under Query. You can then add filters the same way as for other rollups.
-
-.. image:: omnia-feed-tabs-query-mulitple-type-forms-query.png
-
-Display are somewhat different from the oher options:
-
-.. image:: omnia-feed-tabs-query-mulitple-type-forms-display.png
-
-At the top, you can select tags to be diplayed, the rest you have seen before.
-
-For Notification, you can decide to enable push notification for this rollup, or not.
-
-Sign-off requests
-------------------
-For sign-off requests, the following settings are avaiable:
-
-.. image:: omnia-feed-tabs-query-mulitple-type-signoff.png
-
-For queey, you can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is active:
-
-.. image:: tab-sign-off-example-76.png
-
-For Notification, you can decide to enable push notification for this rollup, or not.
-
-
+As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
 
