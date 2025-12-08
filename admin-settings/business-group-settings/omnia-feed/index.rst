@@ -3,7 +3,7 @@ Omnia Feed - Business profile settings
 
 **Important note!** Omnia Feed is "Forward only" meaning that a page that has been sent to a user can't be recalled. This is important to remember for example when creating or editing a query. 
 
-**Note!** Omnia Feed is not available for Omnia on-prem due to push notifications.
+**Also note!** Omnia Feed is not available in Omnia on-prem due to push notifications.
 
 The following settings are available for Omnia Feed, for the business profile:
 
