@@ -27,19 +27,17 @@ Common settings
 ***********************
 For all tabs, these settings are always available:
 
-.. image:: omnia-feed-tabs-general-v711.png
+.. image:: omnia-feed-tabs-general-v711-1.png
 
-+ **Title**: Add a title for the tab.
-+ **Icon type**: If you want an icon for the tab, select icon type here.
-+ **Icon**: Choose icon from the selected type here. If you leave this field empty, no icon is shown.
+.. image:: omnia-feed-tabs-general-v711-2.png
+
+Title, Icon type and Icon can be selected the same way as in many other options in Omnia.
 
 Targeting settings works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Multiple query tab
 *******************
-As the title implies, this tab can be used for multiple queries:
-
-.. image:: omnia-feed-tabs-query-mulitple-v711.png
+As the title implies, this tab can be used for multiple queries.
 
 To use one or more queries on this tab, click ADD QUERY, and select query type:
 
@@ -51,23 +49,37 @@ The following settings are available for Pages:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711.png
 
-Query: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. And then, in the second list, one or more within the scope.
+**Query**: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. 
 
-Display and Notification has the same type of options as for the Query tab, see above.
+When you have added a scope for the rollup, you can select where to get the title from and add filters, for each part of the scope:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-pages-all-filters-711.png
+
+**Display**: Note the comment, it's for layout engine previewers only. Layouts have to be created, using "Layout settings" option, for anything to be available in the list. 
+
+**Data mapping**: Here you select properties to get certain information from, and at the bottom you can edit settings for sorting.
+
+.. image:: tabs-pages-mapping.png
+
+**Notification**: Here you choose if push notification should be on, and can edit a number of notidications settings. Should be self explanatory.
+
+.. image:: tabs-pages-notifications.png
 
 Forms
 ----------
-For a Forms rollup you can choose Tenant, one or more business profiles or one or more app instances, under Query. You can then add filters the same way as for other rollups.
+For a Forms rollup, the following settings are available: 
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-query-711.png
 
-Display are somewhat different from the oher options:
+**Query**: You can choose Tenant, one or more business profiles or one or more app instances. You can then add filters for each part of the scope.
+
+.. image:: omnia-feed-tabs-query-mulitple-type-forms-query-filters-711.png
+
+**Display**: Here you can select tags to be diplayed, select properties to get author name and article date from, and add settings for sorting.
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-display-711.png
 
-At the top, you can select tags to be diplayed, the rest you have seen before.
-
-For Notification, you can decide to enable push notification for this rollup, or not.
+**Notification**: Here you can simply decide if push notifications should be on or off for this rollup.
 
 Sign-off requests
 ------------------
@@ -75,11 +87,15 @@ For sign-off requests, the following settings are avaiable:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-signoff-711.png
 
-For queey, you can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is open:
+**Query**: You can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is open:
 
 .. image:: tab-sign-off-example-711.png
 
-For Notification, you can decide to enable push notification for this rollup, or not.
+**Display**: Contains only settings for sorting.
+
+**Notification**: You can decide if push notifications should be on or off for this rollup, and set two reminder notifications on or off.
+
+.. image:: tab-sign-off-notification-711.png
 
 Link tab
 **********
@@ -140,4 +156,5 @@ For Display, a number of detailed view settings are avalable.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
