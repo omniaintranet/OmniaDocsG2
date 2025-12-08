@@ -1,7 +1,7 @@
 Settings - Omnia Feed
 =============================================
 
-You can change colours and decide for a number of options to be on or off.
+Here you can change colours and decide for some of options to be on or off.
 
 .. image:: omnia-feed-settings-711.png
 
@@ -13,4 +13,5 @@ You can change colours and decide for a number of options to be on or off.
 When you select "Enable Customize color" you can set custom colors for the following:
 
 .. image:: omnia-feed-custom-colors-711.png
+
 
