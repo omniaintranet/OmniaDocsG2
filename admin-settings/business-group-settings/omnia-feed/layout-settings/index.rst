@@ -1,7 +1,9 @@
 Layout settings
 ===========================================
 
-**This description is just started. Mor will be added soon.**
+**This description is just started. More will be added soon.**
+
+**Note!** Working with layouts for the tabs in Omnia Feed is meant for advanced administrators and developers.
 
 The following settings are available here:
 
@@ -62,3 +64,4 @@ To use a templateb as a starting point, do the following:
 Activate layout engine migration
 *********************************
 (A description will be added soon).
+
