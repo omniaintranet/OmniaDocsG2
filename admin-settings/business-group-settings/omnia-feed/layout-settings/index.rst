@@ -3,15 +3,27 @@ Layout settings
 
 **This description is just started. More will be added soon.**
 
-**Note!** Working with layouts for the tabs in Omnia Feed is meant for advanced administrators and developers.
+Using layouts, available in Omnia 7.11 and later, you can decide how the tabs should look - for example selecting properties and settting the order. If needed, you can use different layouts for each business profile. 
+
+**Note!** Working with layouts for the tabs in Omnia Feed is suitable for advanced administrators and developers. Also, if you plan to continue using the "old" way, the legacy way, of working with the tabs, you don't need to do anything here.
 
 The following settings are available here:
 
 .. image:: layout-settings.png
    
-+ **Previewers**: You can choose one or more users as previewers of layouts.
+This is how you are meant to work with these options:
 
-When one or more layouts are created, a list will be shown. For activating layout engine migration, se below.
+1. Add one or more previewers that can comment on the drafts and point out necessary changes, if needed.
+2. Create one or more layout drafts.
+3. Collect comments for the previewers.
+4. Do final changes and publish the layouts.
+5. Activate the layout engine migration.
+
+**Note!** The layout engine migration can not be reversed for this business profile, omce started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
+
+This is done for each business profiles, meaning you can choose to work the new way, with layouts, for some business profiles, and continue working the legacy way with other business profiles.
+
+You can also share layouts between business profiles if you wish, to make sure the tabs look the same for some, or all, business profiles within the tenant.
 
 Creating new layouts
 **********************
@@ -19,7 +31,7 @@ To create one or more new layouts, click the plus and use the following settings
 
 .. image:: new-layout.png
 
-You can import a layout or select a layout template as a starting point, see below.
+You can import a layout or select a layout template as a starting point, see below. One layouot template is always available, mirroring the legacy set of properties.
 
 Layout settings
 -----------------
@@ -27,9 +39,9 @@ Use these settings to create a new layout or edit a template or an imported layo
 
 + **Title**: The title will be used in the list of layouts, and as the base for the file name, if the layout is exported.
 + **Page Types**: You can add one or more page types.
-+ **Tab view settings**: (A description will be added soon).
-+ **Detail view settings**: (A description will be added soon).
-+ **Version history**: This is information only.
++ **Tab view settings**: Here you set up the tab view settings for the tab.
++ **Detail view settings**: Here you set up the detail view setting for the tab.
++ **Version history**: Each time you edit a layout and publish it, a new version is created. When there's more than one version, you can continue working on any version.
 
 When all settings are done, don't forget to click CREATE to create the new layout.
 
@@ -47,9 +59,11 @@ If there are layouts that have been exported (migrated), you can import a layout
 
 3. When you have selected a file, click IMPORT.
 
+You can now edit the imported layout if you wish, and publish a new version.
+
 Use a template
 ******************
-To use a templateb as a starting point, do the following:
+To use a template as a starting point, do the following:
 
 1. Click this icon.
 
@@ -59,9 +73,5 @@ To use a templateb as a starting point, do the following:
 
 .. image:: layout-template-select.png
 
-3. When you have selected a file, click IMPORT.
-
-Activate layout engine migration
-*********************************
-(A description will be added soon).
-
+3. Click IMPORT.
+4. Edit the template if you wish, and publish a new version.
