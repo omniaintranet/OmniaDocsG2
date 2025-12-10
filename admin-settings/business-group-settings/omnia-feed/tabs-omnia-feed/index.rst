@@ -3,7 +3,7 @@ Tabs - Omnia Feed
 
 **This desciption is being edited.**
 
-**Note!** If you have migrated Omnia Feed to the new layout engine for this business profile (available in Omnia 7.11 and later), the way you work with the tabs are mostly the same. The big difference is that you now select a layout setting for Display, instead of detailed settings for tab view or detailed tab view. This documentation will soon be updated with more information about how that works.
+**Note!** If you have migrated Omnia Feed to the new layout engine for this business profile (available in Omnia 7.11 and later), the way you work with the tabs are mostly the same. The big difference is that you now select a layout setting for Display, instead of editing detailed settings for tab view or detailed tab view. This documentation will soon be updated with more information about how that works.
 
 Use the settings here to edit tabs for this business profile in Omnia Feed.
 
@@ -156,5 +156,6 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
