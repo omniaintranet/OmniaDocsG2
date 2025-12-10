@@ -15,15 +15,15 @@ This is how you are meant to work with these options:
 
 1. Add one or more previewers that can comment on the drafts and point out necessary changes, if needed.
 2. Create one or more layout drafts.
-3. Collect comments for the previewers.
+3. Collect comments from the previewers.
 4. Do final changes and publish the layouts.
 5. Activate the layout engine migration.
 
-**Note!** The layout engine migration can not be reversed for this business profile, omce started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
+**Note!** The layout engine migration can not be reversed for this business profile, once started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
 
 This is done for each business profiles, meaning you can choose to work the new way, with layouts, for some business profiles, and continue working the legacy way with other business profiles.
 
-You can also share layouts between business profiles if you wish, to make sure the tabs look the same for some, or all, business profiles within the tenant.
+You can also share layouts between business profiles if you wish, to make sure the tabs look the same for some, or all, business profiles within the tenant - or simply use already created layouts as starting points for new layouts.
 
 Creating new layouts
 **********************
@@ -43,7 +43,7 @@ Use these settings to create a new layout or edit a template or an imported layo
 + **Detail view settings**: Here you set up the detail view setting for the tab.
 + **Version history**: Each time you edit a layout and publish it, a new version is created. When there's more than one version, you can continue working on any version.
 
-When all settings are done, don't forget to click CREATE to create the new layout.
+When all settings are done, don't forget to click CREATE to create a draft of the new layout. When the layout is finalized, you can publish the layout.
 
 Import a layout
 ****************
@@ -75,3 +75,4 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
+
