@@ -131,11 +131,15 @@ The following settings are available:
 .. image:: action-menu-add-settings-711.png
 
 + **Action type**: Select action type from the list. Note that these actions are the same as can be added using an Action button block.
-+ **ARIA role**: The ARIA role is important for accessibility. The ARIA role attribute is used to instruct assistive technologies to treat the element as something other than it's native HTML element type, if needed. When an assistive technology encounters an element whose role attribute has an invalid value, it might ignore the element or respond to it in an unexpected way. As a result, people who use assistive technologies might find the element difficult or impossible to detect or use. 
++ **ARIA role**: For now, use Button as ARIA role for all objects in the action menu. (More details will be added soon).
 + **Title**: Add a title for the action here. If it's a button this will also be used as the tool tip. **Important note!** If you use several languages as system language in your solution, you have to add the title in all languages, otherwise the tool tip will be shown in the main language only.
 + **Icon type/Icon**: Add an icon if you wish.
 
 Different fields are shown depending on action type selected. See this page for detailed information about those fields: :doc:`Action button block </blocks/button-link/index>`
+
+More on ARIA role
+---------------------
+The ARIA role is important for accessibility. The ARIA role attribute is used to instruct assistive technologies to treat the element as something other than it's native HTML element type, if needed. When an assistive technology encounters an element whose role attribute has an invalid value, it might ignore the element or respond to it in an unexpected way. As a result, people who use assistive technologies might find the element difficult or impossible to detect or use. 
 
 Action menu object settings
 -----------------------------
