@@ -1,7 +1,7 @@
 Layout settings
 ===========================================
 
-**This description is just started. More will be added soon.**
+**We are still working on this descriptiond. More will be added soon.**
 
 Using layouts, available in Omnia 7.11 and later, you can decide how the tabs should look - for example selecting properties and settting the order. If needed, you can use different layouts for each business profile. 
 
@@ -105,5 +105,6 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
+
 
 
