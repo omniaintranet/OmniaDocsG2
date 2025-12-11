@@ -71,9 +71,11 @@ Export a layout
 *****************
 You can export a published layout so it can be used as a starting point, or as is, in another business profile.
 
-Click this button, select where to save it and add a file name:
+Click this button to export the layout:
 
 .. image:: layout-export-layout.png
+
+A file is now created as a json file in your computer's Downloads folder, using the title of the layout as the file name. This file can be copied or moved anywhere you need.
 
 Import a layout
 ****************
@@ -89,7 +91,7 @@ If there are a layout that have been exported available, you can import it, but 
 
 3. When you have selected a file, click IMPORT.
 
-You can now edit the imported layout if you wish, and publish a new version.
+You can now edit the imported layout if you wish, and publish a new version. Note that the title is not imported, you always have to add a  new title.
 
 Use a template
 ******************
@@ -105,8 +107,4 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
-
-
-
-
 
