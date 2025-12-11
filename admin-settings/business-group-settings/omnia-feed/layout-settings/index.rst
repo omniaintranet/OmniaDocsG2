@@ -14,7 +14,7 @@ The following settings are available here:
 This is how you are meant to work with these options:
 
 1. Add one or more previewers that can comment on the drafts and point out necessary changes, if needed.
-2. Create one or more layout drafts.
+2. Create one or more layout drafts. (The draft(s) are now listed.
 3. Collect comments from the previewers.
 4. Do final changes and publish the layouts.
 5. Activate the layout engine migration.
@@ -31,7 +31,7 @@ To create one or more new layouts, click the plus and use the following settings
 
 .. image:: new-layout.png
 
-You can import a layout or select a layout template as a starting point, see below. One layouot template is always available, mirroring the legacy set of properties.
+You can import a layout or select a layout template as a starting point, see below. One layout template is always available.
 
 Layout settings
 -----------------
@@ -41,13 +41,43 @@ Use these settings to create a new layout or edit a template or an imported layo
 + **Page Types**: You can add one or more page types.
 + **Tab view settings**: Here you set up the tab view settings for the tab.
 + **Detail view settings**: Here you set up the detail view setting for the tab.
-+ **Version history**: Each time you edit a layout and publish it, a new version is created. When there's more than one version, you can continue working on any version.
++ **Version history**: Each time you edit a layout and save or publish it, a new version is created. Published editions are noted with an integer, work in progress with a decimal. When there's more than one version, you can continue working on any version. 
 
 When all settings are done, don't forget to click CREATE to create a draft of the new layout. When the layout is finalized, you can publish the layout.
 
+Edit a layout
+*****************
+When you have created a layout draft, it's shown in the list and you can edit or delete it. Click here to edit:
+
+.. image:: edit-layout-edit.png
+
+The settings are shown:
+
+.. image:: edit-layout-edit-preview.png
+
+If you click the EDIT button you can edit all settings as shown above. If there are more than one version of this layout available, you can choose the version to work with.
+
+When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
+
+Create a draft from a published version
+*****************************************
+When you have opened a published version of a layout, you can create a new draft from that layout:
+
+.. image:: layout-create-draft.png
+
+When a new draft is created, you work with it as described above.
+
+Export a layout
+*****************
+You can export a published layout so it can be used as a starting point, or as is, in another business profile.
+
+Click this button, select where to save it and add a file name:
+
+.. image:: layout-export-layout.png
+
 Import a layout
 ****************
-If there are layouts that have been exported (migrated), you can import a layout, but note that you must know the file name. Here's how:
+If there are a layout that have been exported available, you can import it, but note that you must know the file name. Here's how:
 
 1. Click this icon.
 
@@ -75,4 +105,5 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
+
 
