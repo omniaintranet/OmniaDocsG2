@@ -14,7 +14,7 @@ The following settings are available here:
 This is how you are meant to work with these options:
 
 1. Add one or more previewers that can comment on the drafts and point out necessary changes, if needed.
-2. Create one or more layout drafts. (The draft(s) are now listed.
+2. Create one or more layout drafts. The draft(s) are now listed.
 3. Collect comments from the previewers.
 4. Do final changes and publish the layouts.
 5. Activate the layout engine migration.
@@ -105,6 +105,7 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
+
 
 
 
