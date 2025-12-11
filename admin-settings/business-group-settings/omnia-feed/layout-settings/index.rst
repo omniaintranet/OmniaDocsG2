@@ -3,9 +3,12 @@ Layout settings
 
 **We are still working on this description. More will be added soon.**
 
-Using layouts, available in Omnia 7.11 and later, you can decide what the tabs should contain in detail. If needed, you can use different layouts for each business profile. 
+In Omnia 7.11 and later, there is a new way of working with the views for the Omnia Feed tabs. You can now set up a number of layouts for views (Tab view and Detail view). The possibilities are almost endless. 
+To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
 
-**Note!** Working with layouts for the tabs in Omnia Feed is suitable for advanced administrators and developers. Also, if you plan to continue using the "old" way, the legacy way, of working with the tabs, you don't need to do anything here.
+You must decide for each business profile, if you would like to work with the views the new way, or the legacy way. You can't use both. To be clear, you can take different decisions for the business profiles in your tenant, but note that once you have chosen to go for the new way for a business profile, it can't be reversed.
+
+**Note!** Working with layouts for the tabs in Omnia Feed is suitable for advanced administrators and developers. Also, if you plan to continue using the "old" way, the legacy way, of working with the tabs for this business profile, you don't need to do anything here.
 
 The following settings are available here:
 
@@ -20,8 +23,6 @@ This is how you are meant to work with these options:
 5. Activate the layout engine migration.
 
 **Note!** The layout engine migration can not be reversed for this business profile, once started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
-
-This is done for each business profiles, meaning you can choose to work the new way, with layouts, for some business profiles, and continue working the legacy way with other business profiles.
 
 You can also share layouts between business profiles if you wish, to make sure the tabs look the same for some, or all, business profiles within the tenant - or simply use already created layouts as starting points for new layouts.
 
@@ -107,6 +108,7 @@ To use a template as a starting point, do the following:
 
 3. Click IMPORT.
 4. Edit the template if you wish, and publish a new version.
+
 
 
 
