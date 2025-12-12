@@ -16,13 +16,13 @@ The following settings are available here:
    
 This is how you are meant to work with these options:
 
-1. Add one or more previewers if you like som comments along the way.
+1. Add one or more previewers if you like some comments along the way.
 2. Create one or more layout drafts. The draft(s) are now listed.
 3. Collect comments from the previewers, if any.
 4. Do final changes and publish the layouts.
 5. Activate the layout engine migration.
 
-Before the migration, previewers can see the new layout(s) in their unit, for others the legacay display is used. Efter the migration, previewers can select the different versions of a layout, other users can only see the last one published.
+Before the migration, previewers can see the new layout(s) in their unit, for others the legacay display is used. After the migration, previewers can select the different versions of a layout available, other users can only see the last one published.
 
 **Note!** The layout engine migration can not be reversed for this business profile, once started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
 
@@ -113,33 +113,30 @@ To use a template as a starting point, do the following:
 
 Editing layout settings
 **************************
-When creating a new or editing a layout you can add a great number of settings for both Tab view settings and Detail view settings. You work the same way with both.
+When creating a new or editing a layout, you can add a great number of settings for both Tab view settings and Detail view settings. You work the same way with both.
 
 The work order is roughly:
 
 1. Add one or more page types (mandatory).
 2. Select a block and click ADD.
 
-Additional settings for the block are now shown - different settings depending on typ of block. Here's an example for the Heading block:
+Additional settings for the block are now shown - different settings depending on type of block. Here's an example for the Heading block:
 
 .. image:: layout-heading-block.png
 
-For several blocks you choose the property the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
+For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
 For a few blocks, you can select a number of child blocks to be displayed. Here's an example from the template with blocks and a custom style sheet:
 
 .. image:: layout-heading-block-example-1.png
 
-To edit a child block, click the pen. Now you can edit one or more child blocks and decide the view order, for example:
+To edit child blocks, click the pen. Now you can edit one or more child blocks and decide the view order, for example:
 
 .. image:: layout-heading-block-example-2.png
 
-As you can see, in this work view you can delete child blocks, but you can also add new child blocks.
+As you can see, in this work view you can delete child blocks, and you can add new ones.
 
-You can edit any settings for a child block (differ between blocks). Here's an example of settings for a Heading child block:
+You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
-
-
-
 
