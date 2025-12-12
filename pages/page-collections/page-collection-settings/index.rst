@@ -37,7 +37,7 @@ Use the settings this way:
 + **Publishing policies**: Available in Omnia 7.8 and later. Prompts set up under "AI features" in Omnia admin can be available for page authors to use, to let AI review a page before publishing. 
 + **Automatic page creation**: A copy of a page can be published automatically to another page collection or another tenant, when certain rules are met. For more information, see this page: :doc:`Automatic page creation </pages/automatic-page-creation/index>`
 + **Promotion channels**: You can configure promotion channels to send teasers to Microsoft Teams, Viva Engage, and via Email - for example to use in a publishing campaign. For details, see below.
-+ **Viva Engage integration**: When Viva Engage (former Yammer) integration is setup, a post will be created in the selected Viva Engage community whenever a new page, matching the selected criteria, is created. See below for more information.
++ **Viva Engage integration**: (A description will be added soon).
 + **Taxonomy connection**: When this option is activated, it's possible to connect the page collection to a taxonomy. Whenever a page is created in the page collection, a term will be created in the connected taxonomy and the page will automatically be tagged with the newly created term. This can, for example, be useful in different rollups. For more information, see below.
 + **Approval**: (Called Publishing approval in Omnia 7.10 and later). If approval should be needed for publication of pages (new pages and updates), enable this. If not enabled, editors can publish directly. See more info about approval settings below.
 + **Deletion approval**: Available in Omnia 7.10. Works the same and has almost the same settings as publishing approval (see below), but for page deletion. The only difference is that multistep approval is not availble for deletion approval. When a page deletion has been approved, the page is also removed from the archive.
@@ -102,41 +102,6 @@ In this simple example, a teaser should only be published to this promotion chan
 You can add several posting rules if needed, to further limit what will be published.
 
 (Don't forget to save when you're done).
-
-Setup Viva Engage integration for the page collection
--------------------------------------------------------
-The Viva Engage (former Yammer) integration you can set up here is a one way integration; from Omnia to Viva Engage. A prerequisite is that the Feature "Viva Engage integration" is activated in Omnia admin (Tenant level).
-
-To set up Viva Engage integration, do the following:
-
-1. Select "Edit" to edit the settings.
-2. Click the cogwheel for "Viva Engage integration".
-
-.. image:: viva-integration-cogwheel.png
-
-3. Use these settings:
-
-.. image:: viva-integration-settings.png
-
-+ **Viva Engage group**: Select a Viva Engage group to intergrate this page collection with.
-+ **Initial properties**: Select the properties used on pages for Title, Summary and Content.
-+ **Page creation rule**: Select if a Viva Engage post should always be created when a page is added, or only according to certain rules.
-
-4. Save when you're done.
-
-To set up rules, do the following:
-
-1. Select "Only create if*.
-2. Click ADD to add a rule.
-3. Select a property.
-
-.. image:: viva-integration-property.png
-
-4. Add settings for that property as needed.
-
-By using settings in the Page likes and comments block, you can set up a two way Viva Engage integration. Note that you must set up the integration here first.
-
-For more information, see: :doc:`Page likes and comments block </blocks/page-likes-and-comments/index>`
 
 Enable taxonomy connection
 ---------------------------
@@ -274,6 +239,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
