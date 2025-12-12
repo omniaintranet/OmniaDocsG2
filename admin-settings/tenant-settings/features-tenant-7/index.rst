@@ -48,10 +48,6 @@ When Microsoft Teams presence is active, this type of icon indicates Teams prese
 
 In this example the icon indicates that the colleagues are offline at the moment.
 
-For more information on how to set up Viva Engage (former Yammer) in Omnia, see:
-
-:doc:`Setup Viva Engage in Omnia </setup/setup-yammer-in-omnia/index>` 
-
 System
 **********
 The following is an example of features that may be avaialable here:
@@ -67,4 +63,5 @@ and these:
 Regarding Teamwork provisioning using application context
 --------------------------------------------------------------
 The purpose of this option is to make sure users are only able to create Microsoft 365 Groups through Omnia templates. Note that additional settings needs to be made, to make sure Microsoft 365 Group can not be created any other way. More information can be found on this Microsoft page: https://docs.microsoft.com/en-us/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide
+
 
