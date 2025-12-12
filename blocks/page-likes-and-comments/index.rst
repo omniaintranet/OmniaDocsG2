@@ -34,7 +34,7 @@ The following settings are available on this tab:
 .. image:: likes-general-v75-2.png
 
 + **Title**: If a title should be shown for the block, add it in this field. 
-+ **Enable Viva Engage sync**: If Viva Engage (former Yammer) sync is enabled for the page collection, this option is available. See more information below about how to use it.
++ **Enable Viva Engage sync**: (A description will be added soon).
 + **Rich text mode**: If you enable rich Text, some basic formatting will be availble for users.          
 + **Enable mention**: If it should be possible to use mentions in comments on this page or in this page type, select this option. See below for an example.
 + **Allow social reactions**: Can be available if settings allow it. If it should be possible to to use social reactions in this block, select this option. The same social reactions functionality as in Teams can be used. The tenant feature "Social reactions" must be activated for this option to be available.
@@ -46,34 +46,6 @@ The following settings are available on this tab:
 If "Allow social reactions" is activated, these social reactions can be used when commenting:
 
 .. image:: comment-social-v75.png
-
-More about Viva Engage integration
--------------------------------------
-If Viva Engage (former Yammer) integration is set up on page collection level, you can choose to activate a two-way integration of comments here by selecting "Enable Viva Engage sync". When this option is on, a comment added in Viva Engage is also shown in Omnia.
-
-**Important note!** Due to limitations in the Viva Engage API, a comment on a comment is not placed as expected (but a comment on a post is). The comment on a comment is shown in Omnia, but is not indented, as you would expect it to be. This is a limitation in the Viva Engage API, not in Omnia.
-
-For more information about setting up Viva Engage integration on page collection level, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
-
-More information about setting up Viva Engage in Omnia is found here: :doc:`Setup Viva Engage in Omnia </setup/setup-yammer-in-omnia/index>`
-
-Style
-----------
-These settings are available onf the Style tab:
-
-.. image:: likes-65-style-v75.png
-
-You can add some padding if needed and it's also possible to set styling for the "cards" (meaning each comment with sub comments). By selecting "Custom Card styling" you can set the following:
-
-.. image:: likes-67-style-card-v75.png
-
-You use the pipette to select a theme. The rest of the options should be self-explanatory.
-
-For advanced settings, the following is available:
-
-.. image:: likes-65-style-card-advanced-v75.png
-
-Should be self-explanatory.
 
 Layout and Write
 *********************
