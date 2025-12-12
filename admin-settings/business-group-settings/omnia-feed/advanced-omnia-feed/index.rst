@@ -29,6 +29,8 @@ Use these settings to delete users from Omnia Feed, if needed.
 
 You can delete all users, all users of one or more user types, or use Excklusion mode to select the user types that should not be deleted.
 
+To delete all users, just the DELETE UERS without any settings.
+
 Delete all users of one or more user types
 ----------------------------------------------
 Here's how:
