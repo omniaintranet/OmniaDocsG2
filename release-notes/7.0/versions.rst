@@ -1,3 +1,13 @@
+7.9.17
+========================================
+(Omnia 7.9.17 / Workplace 7.9.17 / WCM 7.9.17 / MS 7.9.17 / Analytics 7.9.8 / Feed 7.9.4)
+
+- Fixed an issue where a newly copied page would edit the original page when break edit permissions is enabled (#46911).
+- When switching between documents in hte document link picker, the title now updates correctly (#49351).
+- Stability improvements to the draft documents view in controlled documents (#170094).
+- Performance improvements for matomo.
+
+
 7.9.15
 ========================================
 (Omnia 7.9.15 / Workplace 7.9.15 / WCM 7.9.15 / MS 7.9.15 / Analytics 7.9.7 / Feed 7.9.3)
