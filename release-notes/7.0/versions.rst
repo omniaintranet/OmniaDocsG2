@@ -6,13 +6,14 @@
 - Added a help message to the Script/HTML block to ensure the copy block and block gallery implementations would work as expected.
 - Fixed an issue in the Sign-off request current page template logic (#48209).
 - Added several performance improvements to the sync between page data and the Omnia search page index.
-- Fixed an issue with short youtube urls in the media picker (#49799).
+- Fixed an issue with short YouTube URLs in the media picker (#49799).
 - Fixed an issue that would cause the public and private profile card layouts to be replaced.
-- Manage links now works as expected when the quick links block have no links (#49161).
+- Manage links now works as expected when the quick links block has no links (#49161).
 - Thumbnails from Microsoft stream now works as expected in the page rollups (#49403).
-- Added a sitting to encorce certain character encoding in the RSS block (#49653).
+- Added a sitting to enforce certain character encoding in the RSS block (#49653).
 - Stability improvements to the page rollup export to excel function.
-
+- Updates to Omnia rendering to align with Microsoft changes in SPFx, the SharePoint header no longer shows above Omnia components (#52581).
+- Stability improvements to the Analytics excel export feature.
 
 7.9.17
 ========================================
