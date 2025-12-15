@@ -1,3 +1,19 @@
+7.9.20
+========================================
+(Omnia 7.9.20 / Workplace 7.9.20 / WCM 7.9.20 / MS 7.9.20 / Analytics 7.9.9 / Feed 7.9.4)
+
+- Fixed an issue that would prevent a process from being edited (#49078).
+- Added a help message to the Script/HTML block to ensure the copy block and block gallery implementations would work as expected.
+- Fixed an issue in the Sign-off request current page template logic (#48209).
+- Added several performance improvements to the sync between page data and the Omnia search page index.
+- Fixed an issue with short youtube urls in the media picker (#49799).
+- Fixed an issue that would cause the public and private profile card layouts to be replaced.
+- Manage links now works as expected when the quick links block have no links (#49161).
+- Thumbnails from Microsoft stream now works as expected in the page rollups (#49403).
+- Added a sitting to encorce certain character encoding in the RSS block (#49653).
+- Stability improvements to the page rollup export to excel function.
+
+
 7.9.17
 ========================================
 (Omnia 7.9.17 / Workplace 7.9.17 / WCM 7.9.17 / MS 7.9.17 / Analytics 7.9.8 / Feed 7.9.4)
