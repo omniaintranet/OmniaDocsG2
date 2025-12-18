@@ -47,6 +47,8 @@ Add groups to an Omnia group
 ------------------------------
 You can add Omnia groups and Entra ID groups to an Omnia group (you can't add Omnia groups to an Entra group, though).
 
+**Important note!** If you add Entra ID groups to an Omnia group, these groups will not be added to SharePoint.
+
 1. Click the Groups icon.
 
 .. image:: add-group-1.png
@@ -86,5 +88,6 @@ In the list of deleted groups you can restore deleted Omnia groups or delete (Pu
 .. image:: user-management-groups-deleted-blood-78.png
 
 You can't restore deleted Microsoft Graph groups but you can purge them from your system.
+
 
 
