@@ -1,3 +1,13 @@
+7.9.21
+========================================
+(Omnia 7.9.21 / Workplace 7.9.21 / WCM 7.9.21 / MS 7.9.21 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Fixed an issue that would cause the controlled documents library permission dialog a very long time to load (#49041).
+- Matomo performance improvements. 
+- Fixed two issues that could cause the controlled documents library to show the wrong multilingual value for columns and terms (#49435).
+- Performance improvements to permission checking in the page rollup.
+
+
 7.9.20
 ========================================
 (Omnia 7.9.20 / Workplace 7.9.20 / WCM 7.9.20 / MS 7.9.20 / Analytics 7.9.9 / Feed 7.9.4)
