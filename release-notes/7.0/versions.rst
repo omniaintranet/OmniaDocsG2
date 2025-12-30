@@ -1,3 +1,13 @@
+7.9.22
+========================================
+(Omnia 7.9.22 / Workplace 7.9.22 / WCM 7.9.22 / MS 7.9.22 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Stability improvements in navigating back using the anchor navigation.
+- Fix an issue that would case related processes to show empty records (#46090).
+- When creating multiple drafts in a row, old values no longer carry over from the previous document (#167303).
+- Fixed an issue that would cause certain processes to lock and be unable for editing (#52866, #52831, #52772). 
+- Document links in email notifications for new controlled documents now work correctly with the Default and SendGrid email providers (#48909).
+
 7.9.21
 ========================================
 (Omnia 7.9.21 / Workplace 7.9.21 / WCM 7.9.21 / MS 7.9.21 / Analytics 7.9.10 / Feed 7.9.4)
