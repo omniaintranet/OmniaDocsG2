@@ -1,3 +1,17 @@
+7.9.23
+========================================
+(Omnia 7.9.23 / Workplace 7.9.23 / WCM 7.9.23 / MS 7.9.23 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Fixed an issue that caused search results to always open in a new tab regardless of its setting (#52920).
+- Numbers are no longer allowed as the first character of an internal name of an enterprise property.
+- Fixed an issue that would sometimes cause the scroll bars to not display properly in a process authoring site.
+- Page type tag styles now apply correctly to the page rollup card view (#49509).
+- Improved rendering of folders in the media picker, including automatic hyphens for long words (#52605).
+- Fixed an issue where a variation would sometimes edit an unintended variation (#46087).
+- Improved stability to automatic translations when having very long text content.
+- Text colour is not supported from theming settings in the current navigation (#52737).
+
+
 7.9.22
 ========================================
 (Omnia 7.9.22 / Workplace 7.9.22 / WCM 7.9.22 / MS 7.9.22 / Analytics 7.9.10 / Feed 7.9.4)
@@ -7,6 +21,7 @@
 - When creating multiple drafts in a row, old values no longer carry over from the previous document (#167303).
 - Fixed an issue that would cause certain processes to lock and be unable for editing (#52866, #52831, #52772). 
 - Document links in email notifications for new controlled documents now work correctly with the Default and SendGrid email providers (#48909).
+- Performance improvements during login.
 
 7.9.21
 ========================================
