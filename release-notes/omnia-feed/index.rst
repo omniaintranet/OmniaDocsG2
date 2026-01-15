@@ -1,7 +1,8 @@
-Omnia Feed (Mobile App)
+Omnia Feed (Mobile extension)
 =============================
 
-Below you will find release notes for the Omnia Feed mobile app.
+Below you will find release notes for the Omnia Feed extension, deployed together with Omnia.
+Release notes for the actual Omnia Feed mobile app are available on App Store (iOS) and Google Play (Android).
 
 .. toctree::
    :titlesonly:
