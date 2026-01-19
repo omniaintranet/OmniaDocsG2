@@ -28,6 +28,10 @@ These permissions can be set for the tenant:
 
 .. image:: announcements-tenant.png
 
+**Block gallery editor**: If the block gallery is used, additional editors can be added here. Tenant administrators can always edit the block gallery.
+
+**Semantic search reader**: If Semantic search is activated in the tenant, the colleagues and groups that should be able to use semantic search must be added here. For more information about semantic search, see the heading *The semantic search reader setting* on this page: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index.html#the-semantic-search-reader-setting>`
+
 Business profile administrator
 --------------------------------
 A tenant administrator creates the business profiles needed, and adds at least one administrator for each business profile.
@@ -117,5 +121,6 @@ And these permissions can be set here:
 **Page collection author**: Can edit contents on pages in the page collection, using Write mode.
 
 **Page collection reader**: All colleagues that should be able to read information in a page collection must have the permission “Page collection reader”. 
+
 
 
