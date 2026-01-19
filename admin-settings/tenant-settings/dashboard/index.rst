@@ -1,7 +1,7 @@
 Dashboard
 ===========
 
-Here you can build the Admin Dashboard to your needs, to display dashboard information on many different aspects of the tenant. You set up the Dashboard the same way as you would any layout in Omnia. Most sections and blocks can be used.
+Here you can build the Admin Dashboard to your needs, to display dashboard information on many different aspects of the tenant. You set up the Dashboard the same way as you would any layout in Omnia. Most sections and blocks can be used. Here's an example:
 
 .. image:: dashboard-new2.png
 
