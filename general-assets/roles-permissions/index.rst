@@ -16,13 +16,13 @@ A tenant administrator can:
 
 These permissions can be set for the tenant:
 
-.. image:: permissions-tenant.png
+.. image:: permissions-tenant-new.png
 
 **Directory Reader**: Can view all user profiles in the user directory (read-only access). This includes permissions to use the identity picker for selecting users and to access aggregated user information in the people rollup using the Users scope.
 
 **Shared links administrator (tenant)**: Can use all Shared links options for the tenant.
 
-.. image:: shared-links-tenant.png
+.. image:: shared-links-tenant-new.png
 
 **Announcements administrator (tenant)**: Can use all announcements options for the tenant.
 
@@ -117,4 +117,5 @@ And these permissions can be set here:
 **Page collection author**: Can edit contents on pages in the page collection, using Write mode.
 
 **Page collection reader**: All colleagues that should be able to read information in a page collection must have the permission “Page collection reader”. 
+
 
