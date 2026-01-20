@@ -13,6 +13,8 @@ Use the icons this way: the left-most icon to edit Omnia alias, if applicable; t
 
 For descriptions of settings, see: :doc:`Business profile settings </admin-settings/business-group-settings/index>`
 
+Regarding roles and permissions, some information can be found here: :doc:`Roles and permissions in Omnia </general-assets/roles-permissions/index>`
+
 Edit Omnia alias
 ******************
 If needed (and if it's applicable for the business profile) you can click the left-most icon to edit the Omnia alias.
