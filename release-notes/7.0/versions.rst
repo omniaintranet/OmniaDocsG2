@@ -1,3 +1,11 @@
+7.9.24
+========================================
+(Omnia 7.9.24 / Workplace 7.9.24 / WCM 7.9.24 / MS 7.9.24 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Videos in SharePoint now play correctly via the media rollup (#52778).
+- Text compare now has better support for images (#52642).
+- Fixed an issue that prevented Omnia users from being added to groups.
+
 7.9.23
 ========================================
 (Omnia 7.9.23 / Workplace 7.9.23 / WCM 7.9.23 / MS 7.9.23 / Analytics 7.9.10 / Feed 7.9.4)
