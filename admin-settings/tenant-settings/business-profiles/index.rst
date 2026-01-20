@@ -31,11 +31,7 @@ The root route can only be assigned once in the tenant, for a business profile's
 
 Create a new business profile
 *******************************
-To create a new business profile, click the plus:
-
-.. image:: business-profile-click-v77.png
-
-Use the following settings:
+To create a new business profile, click the plus, and use the following settings:
 
 .. image:: business-profile-add-v77.png
 
