@@ -3,7 +3,7 @@ Business profiles
 
 Within a tenant several business profiles can be used, for different settings, for different areas of the tenant. Even if you will have the same settings everywhere in the tenant, you still need at least one business profile, to set, for example, themes (Colors) and content header settings.
 
-Settings for teamwork, the notification panel, search, event management, workspace and app templates are also found among the business profile settings, to just mention som of the settings for a business profile.
+Settings for teamwork, the notification panel, search, event management, workspace and app templates are also found among the business profile settings, to just mention some of the settings for a business profile.
 
 When adding and editing settings for a specific Business Profile, you must first select the Profile in this list. The available settings for the Business Profile are then available.
 
