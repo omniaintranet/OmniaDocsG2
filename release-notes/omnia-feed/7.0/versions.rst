@@ -1,7 +1,6 @@
 Release 7.9.6
 ========================================
 
-- Improved error logging
 - Added localization support for announcement notifications
 
 Release 7.9.4
@@ -238,6 +237,7 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
+
 
 
 
