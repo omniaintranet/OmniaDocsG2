@@ -24,7 +24,7 @@ This is how you are meant to work with these options:
 
 Before the migration, previewers can see the new layout(s) in their unit, for others the legacay display is used. After the migration, previewers can select the different versions of a layout available, other users can only see the last one published.
 
-**Note!** The layout engine migration can not be reversed for this business profile, once started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
+**Note!** The layout engine migration can not be reversed for a business profile, once started, as stated in the text above the button. When the migration is completed, the Display settings for the tabs work differently. Now you select a layout there.
 
 You can also share layouts between business profiles if you wish, to make sure the tabs look the same for some, or all, business profiles within the tenant - or simply use already created layouts as starting points for new layouts.
 
@@ -139,5 +139,6 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
 
