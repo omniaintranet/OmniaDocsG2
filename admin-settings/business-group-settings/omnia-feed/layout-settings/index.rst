@@ -6,7 +6,7 @@ Layout settings
 In Omnia 7.11 and later, there is a new way of working with the views for the Omnia Feed tabs. You can now set up a number of layouts for views (Tab view and Detail view). The possibilities are almost endless. 
 To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
 
-You must decide for each business profile, if you would like to work with the views the new way, or the legacy way. You can't use both. To be clear, you can take different decisions for the business profiles in your tenant, but note that once you have chosen to go for the new way for a business profile, it can't be reversed.
+You must decide for each business profile, if you would like to work with the views the new way, or the legacy way. You can't use both. To be clear, you can take different decisions for the business profiles in your tenant, but note that once you have chosen to go for the new way for a specific business profile, it can't be reversed.
 
 **Note!** Working with layouts for the tabs in Omnia Feed is suitable for advanced administrators and developers. Also, if you plan to continue using the "old" way, the legacy way, of working with the tabs for this business profile, you don't need to do anything here.
 
@@ -139,4 +139,5 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
