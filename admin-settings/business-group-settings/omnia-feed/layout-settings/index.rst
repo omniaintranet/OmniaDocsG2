@@ -1,8 +1,6 @@
 Layout settings
 ===========================================
 
-**We are still working on this description. More will be added soon.**
-
 In Omnia 7.11 and later, there is a new way of working with the views for the Omnia Feed tabs. You can now set up a number of layouts for views (Tab view and Detail view). The possibilities are almost endless. 
 To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
 
@@ -139,6 +137,7 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
 
 
