@@ -1,3 +1,14 @@
+7.9.25
+========================================
+(Omnia 7.9.25 / Workplace 7.9.25 / WCM 7.9.25 / MS 7.9.25 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Added a new feature to enable or disable Managed metadata write permissions, to lower the required EntraID permission footprint. 
+- New designs for the simple intranet setup wizard.
+- A new media picker provider for AI generated images, now supports gpt-image-1 and gpt-image-mini.
+- Improved stability for the analytics excel export (#52972).
+- Fixed an issue that would prevent the Org Tree from loading correctly. 
+- Performance improvements related to important announcements and tutorial targeting.
+
 7.9.24
 ========================================
 (Omnia 7.9.24 / Workplace 7.9.24 / WCM 7.9.24 / MS 7.9.24 / Analytics 7.9.10 / Feed 7.9.4)
