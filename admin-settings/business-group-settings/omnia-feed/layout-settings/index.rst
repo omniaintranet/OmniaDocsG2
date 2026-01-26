@@ -10,7 +10,7 @@ You must decide for each business profile, if you would like to work with the vi
 
 The following settings are available here:
 
-.. image:: layout-settings.png
+.. image:: layout-settings-new.png
    
 This is how you are meant to work with these options:
 
@@ -137,6 +137,7 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
 
 
