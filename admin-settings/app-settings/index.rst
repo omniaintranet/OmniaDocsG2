@@ -5,7 +5,7 @@ There are a few settings available on App level (site level). Here's what can be
 
 .. image:: app-settings-v7.png
 
-It looks like this in the legacy ui: !Click to show image(/https://github.com/omniaintranet/OmniaDocsG2/blob/master/admin-settings/app-settings/app-settings-features-v7.png)
+It looks like this in the legacy ui: ![Click to view](https://www.markdownlang.com/markdown-logo.png)
 
 To reach the app settings as described here, you must do the following:
 
