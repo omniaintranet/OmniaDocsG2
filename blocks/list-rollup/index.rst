@@ -11,8 +11,6 @@ These settings are available for the block:
 
 .. image:: list-rollup-settings-all-new.png
 
-More will be added to this description soon.
-
 General
 ---------
 As for most blocks, you can add a block title here if needed:
@@ -68,4 +66,5 @@ When Export to Excel is active, you can set sorting for the rows, using "Sort by
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) for the new columns.
 
 .. image:: list-rollup-export2.png
+
 
