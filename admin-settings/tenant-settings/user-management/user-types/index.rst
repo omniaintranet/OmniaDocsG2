@@ -132,8 +132,7 @@ You can preview the card layout for different users:
 
 **Important note!** When you preview a colleagues card, all permissions are valid, meaning you can only see what YOU have permissions to see, not what the user has permissions for.
 
-User edits of the profile card
+Profile card - user edits
 ************************************
 It's up to each user to edit the profile card. On this page you can see how it works: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
-
 
