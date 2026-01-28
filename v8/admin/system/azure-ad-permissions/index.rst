@@ -8,17 +8,18 @@ Here, a tenant administrator can view all permissions consented to Omnia in Entr
 + Office 365 Sharepoint online – Shows the list of permissions Omnia requests in Microsoft 365.
 + Viva Engage – If available, displays the list of permissions Omnia requests in Viva Engage.
 
-It looks like this in the legacy ui: !(/https://github.com/omniaintranet/OmniaDocsG2/blob/master/v8/admin/system/azure-ad-permissions/azure-ad-permissions-graph-v8.png)
-
 Here’s an example of the Microsoft Graph permissions list:
 
 .. image:: azure-ad-permissions-graph-v8.png
+
+It looks like this in the legacy ui: !(/https://github.com/omniaintranet/OmniaDocsG2/blob/master/v8/admin/system/azure-ad-permissions/azure-ad-permissions-graph-v8.png)
 
 Invalidate all user tokens
 ******************************************
 If you click **Invalidate all user tokens**, all users are signed out of Omnia. This action affects only Omnia — not SharePoint, Office apps, email, or other Microsoft services.
 
 If an editor or author is working on a page when the logout occurs, the user will be signed out, but any changes made are automatically saved frequently, even if not published, to minimize content loss.
+
 
 
 
