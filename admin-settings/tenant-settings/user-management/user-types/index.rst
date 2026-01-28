@@ -51,7 +51,7 @@ If the button INVALIDATE ALL USER TOKENS is clicked to force a log out from Omni
 If an editor or author is working on a page in Omnia, the user will be logged out but content added to a page, even if it's not published, is automatically saved quite often, to minimize content lost.
 
 Properties
-*************
+------------
 On the Properties tab, something like the following is available:
 
 .. image:: user-management-types-prop-78-2.png
@@ -59,7 +59,7 @@ On the Properties tab, something like the following is available:
 Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselectedy.
 
 User profile completion
-*****************************
+------------------------
 All edits can be done on the user profile card. On this tab you work with the settings for profile completion. (The previous, classic, functionality for profile completion is still available).
 
 .. image:: tab-profile-completion-78-2.png
@@ -135,4 +135,5 @@ You can preview the card layout for different users:
 User edits of the profile card
 ************************************
 It's up to each user to edit the profile card. On this page you can see how it works: :doc:`Edit your user profile card </user-options/edit-user-profile-card/index>`
+
 
