@@ -5,7 +5,7 @@ There are a few settings available on App level (site level). Here's what can be
 
 .. image:: app-settings-v7.png
 
-It looks like this in the legacy ui: ![Click to view](https://www.markdownlang.com/markdown-logo.png)
+It looks like this in the legacy ui: ![Click to view](/admin-settings/app-settings/app-settings-features-78.png)
 
 To reach the app settings as described here, you must do the following:
 
