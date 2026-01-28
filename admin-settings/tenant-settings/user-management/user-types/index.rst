@@ -1,7 +1,7 @@
 User types
 =============================================
 
-All users in Omnia will be assigned a user type. User types are also used when creating Omnia users and when setting up dynamic groups. It's also possible to create customized user profile cards for different user types.
+All users in Omnia will be assigned a user type. User types are also used when adding Omnia users and when setting up dynamic groups. It's also possible to create customized user profile cards for different user types.
 
 Authentication settings are set per user type. See below for more information.
 
@@ -13,16 +13,19 @@ If any user types for Omnia users has been set up so far, they are listed here, 
 
 Use the dust bin to delete a user type, the pen to edit and the third icon to create a customized user profile card for the profile, if needed.
 
+User type settings
+**********************
+
 These settings can be used when creating a new user type:
 
 .. image:: user-management-types-settings-78-2.png
 
 General
-********
+------------
 Add the title and description here (se image above).
 
 Authentication
-****************
+----------------
 Here you can set the following:
 
 .. image:: user-management-types-auth-78-2.png
@@ -31,17 +34,15 @@ Here you can set the following:
 + **Onboarding**: Set the expiration time for the one-time link and add the URL to the onboardring page, if needed.
 + **Built-in**: Select the authentication you want to use for this user type and for more options, see below.
 + **Refresh token expiration**: Used by mobile apps only. Set the number of days that can pass until a user is forced to log in again.
-+ **INVALIDATE ALL USER TOKENS**: When permissions for Omnia has been changed, users needs to log out and log in for the changes to take effect. You can click this button to force a log out from Omnia for all users. Important information on this below.
++ **INVALIDATE ALL USER TOKENS**: When permissions for Omnia has been changed, users need to log out and log in for the changes to take effect. You can click this button to force a log out from Omnia for all users. Important information on this below.
 
 When expanding one of the options for "Built-in", additional settings are available, for example:
 
 .. image:: user-management-types-auth-more-78-2.png
 
-If "Two-factor authentication" is selected, the following must also be set:
+If "Two-factor authentication" is selected, You must select one of the other authentication methods available, as the second authentication.
 
 .. image:: user-management-types-auth-more-two-78-2.png
-
-You must select one of the other authentication methods available, as the second authentication.
 
 More on Invalidate all user tokens
 ------------------------------------
@@ -55,7 +56,7 @@ On the Properties tab, something like the following is available:
 
 .. image:: user-management-types-prop-78-2.png
 
-Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselected, they are marked with gray.
+Here you select the properties to be available for this user type. A few properties are mandatory and can not be deselectedy.
 
 User profile completion
 *****************************
@@ -63,7 +64,7 @@ All edits can be done on the user profile card. On this tab you work with the se
 
 .. image:: tab-profile-completion-78-2.png
 
-The selected properties are listed here (in a new user type, this list is empty). Use the pen to edit the settings and the dust bin to remove a property from the list. Of course, these properties must also be present in the card layout for the follow up on profile completion to be meaningful. See below for more information on custom profile card layouts.
+The selected properties are listed here (in a new user type, this list is empty). Use the pen to edit the settings and the dust bin to remove a property from the list. These properties must also be present in the card layout for the follow up on profile completion to be meaningful. See below for more information on custom profile card layouts.
 
 Add a property
 ----------------
@@ -77,7 +78,7 @@ The following settings are available:
 
 .. image:: tab-profile-completion-settings.png
 
-+ **Data source**: Select the data source to get the properties from; User (meaning Omnia user), User (Microsoft Graph) or User (Sharepoint). 
++ **Data source**: Select the data source to get the properties from; User - meaning Omnia user, User (Microsoft Graph) or User (Sharepoint). 
 + **Select properties**: Select the property here.
 + **Completeness impact**: You can set the completeness impact to Low, Medium or High. When the completeness impact is calculated, Low is 1, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
 
@@ -89,7 +90,7 @@ When editing the settings for a property (using the pen), an additional setting 
 
 Schedule
 ------------
-You can schedule the check for how complete the user profle is, according to the settings for the user type. Click the pen to set or to change the setting:
+You can schedule the check for how complete the user profle is, according to the settings for the user type. Click the pen to set or change the setting:
 
 .. image:: tab-profile-completion-schedule-change.png
 
@@ -107,7 +108,7 @@ An action button can be used to open the user's profile card for editing, see th
 
 Create a custom user profile card
 ************************************
-You can create a custom user profile card for each user user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. In Omnia 7.7 and later, the private view of the card can be used to edit the information shown on the public view. 
+You can create a custom user profile card for each user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. In Omnia 7.7 and later, the private view of the card can be used to edit the information shown in the public view. 
 
 To work with the user profile card layout, click this icon:
 
@@ -129,7 +130,7 @@ You can preview the card layout for different users:
 
 .. image:: user-card-layout-user-78.png
 
-**Important note!** When you preview a colleagues card, all permissions are valid, meaning you can just see what YOU have permissions to see, not what the user has permissions for.
+**Important note!** When you preview a colleagues card, all permissions are valid, meaning you can only see what YOU have permissions to see, not what the user has permissions for.
 
 User edits of the profile card
 ************************************
