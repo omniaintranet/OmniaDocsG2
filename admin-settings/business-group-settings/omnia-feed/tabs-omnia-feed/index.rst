@@ -43,8 +43,8 @@ To use one or more queries on this tab, click ADD QUERY, and select query type:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-v711.png
 
-Pages
--------
+Query type Pages
+-----------------
 The following settings are available for Pages:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711.png
@@ -65,8 +65,8 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 .. image:: tabs-pages-notifications.png
 
-Forms
-----------
+Query type Forms
+------------------
 For a Forms rollup, the following settings are available: 
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-query-711.png
@@ -81,8 +81,8 @@ For a Forms rollup, the following settings are available:
 
 **Notification**: Here you can simply decide if push notifications should be on or off for this rollup.
 
-Sign-off requests
-------------------
+Query type Sign-off requests
+------------------------------
 For sign-off requests, the following settings are avaiable:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-signoff-711.png
@@ -154,6 +154,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
