@@ -5,8 +5,6 @@ There are a few settings available on App level (site level). Here's what can be
 
 .. image:: app-settings-v7.png
 
-It looks like this in the legacy ui: ![Click to view](https://omnia-docs-g2.readthedocs.io/en/latest/_images/feature-site-expand-78.png)
-
 To reach the app settings as described here, you must do the following:
 
 1. Go to the site.
