@@ -9,7 +9,7 @@ The page describes how this option works in Omnia 7.8. In Omnia 7.9 and later, t
 
 .. image:: edit-variations-3-79.png
 
-Other than that, this option works exactly the same in Omnia 7.9 as described here.
+Other than that, this option works exactly the same in Omnia 7.9 and later, as described here.
 
 When a page variation exists for a page, omnia keeps track of changes on the main page. When the main page has been edited, compare icons are displayed to notify the ariation author about where changes have been made. It's shown when a varation is edited.
 
