@@ -35,11 +35,11 @@ Note that this permissions setting is valid for the settings here, only. To be a
 
 Variations
 ************
-Here you set up the page variations that should be possible to use in the publishing app. It's then up to page editors to use a variation, or not, for a page. A page variation is created for a page when it's needed.
+Here you set up the page variations that should be possible to use in the publishing app. It's then up to page editors to use a variation, or not, for a page. 
 
 A variation can also be set up for automatic machine translation, see below. (Not available in Omnia on-prem).
 
-In Omnia 7.8 it's possible to add one variation author for each variation, in Omnia 7.9 several variation authors can added. Here's an example with a number of variations set up:
+In Omnia 7.8 it's possible to add one variation author for each variation, in Omnia 7.9 and later several variation authors can be added. Here's an example with a number of variations set up:
 
 .. image:: page-settings-variations-612.png
 
@@ -70,7 +70,7 @@ Do the following to create a new variation (you have to scroll down to the end o
 + **Icon**: Shown when you have selected icon type. Select the icon here.
 + **URL Segment**: Add a suitable URL Segment in this field.
 + **Variation author**: You can add a variation author for this variation. See this page for more information: :doc:`Edit page variations </pages/edit-page-variations/index>`
-+ **Automatic machine translation**: You can select machine translation for this variation, to any language that is set up in the tenant. If you do, you can't select a variation author, and the machine translated variation can not be edited manually. When you have selected this option, choose language in the list shown. Automatic machine translation is executed when the page is published. It will be noted on the variation page that it has been machine translated, see below. **Note!** Machine translation is not available in Omnia on-prem.
++ **Automatic machine translation**: You can select machine translation for this variation, to any language that is set up in the tenant. If you do, you can't select a variation author, and the machine translated variation can not be edited manually. When you have selected this option, choose language in the list shown. Automatic machine translation is executed when the main page is published. It will be noted on the variation page that it has been machine translated, see below. **Note!** Machine translation is not available in Omnia on-prem.
 + **Right to left**: If you're creating a variation for a language that is read right to left, select this option.
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
@@ -120,7 +120,7 @@ When more than one variation of the page exists, an editor can select variation 
 
 .. image:: select-variation-new4.png
 
-If no variation exists yet for the page, the editor can select to create one.
+If no variation exists yet for the page, the editor can choose to create one.
 
 .. image:: variation-create-page-new2.png
 
