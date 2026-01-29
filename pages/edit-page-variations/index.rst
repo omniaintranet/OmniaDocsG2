@@ -1,7 +1,7 @@
 Edit page variations
 ========================
 
-A page variation can be edited by a variation editor, or can be automatically machine translated. This choice can be made for each variation that has been set up for a specific page. If a page is automatically machine translated, it's noted on the page and it can't be edited manually att all. Don't confuse this with the machine translation option that CAN be used by a variation author during editing.
+A page variation can be edited by a variation editor, or can be automatically machine translated. This choice can be made for each variation that has been set up for a specific page. If a page is automatically machine translated, it's noted on the page and it can't be edited manually at all. Don't confuse this with the machine translation option that CAN be used by a variation author during editing.
 
 This page describes how it works when there have been one more variation editors assigned to the variation page. These options are not available if automatic machine translation has been selected for the variation.
 
