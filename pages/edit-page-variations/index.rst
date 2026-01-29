@@ -5,7 +5,7 @@ A page variation can be edited by a variation editor, assisted by machine transl
 
 This page describes how it works when there have been one more variation editors assigned to the variation page. These options are not available if automatic machine translation has been selected for the variation.
 
-This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 and later, there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
+The page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 and later, there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
 
 .. image:: edit-variations-3-79.png
 
