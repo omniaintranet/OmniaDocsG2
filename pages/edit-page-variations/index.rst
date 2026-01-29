@@ -1,7 +1,7 @@
 Edit page variations
 ========================
 
-This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
+This page describes how this option works in Omnia 7.8 and earlier. In Omnia 7.9 and later, there is a tiny difference, the option "Changes" has been renamed "Compare versions", as seen in this image:
 
 .. image:: edit-variations-3-79.png
 
