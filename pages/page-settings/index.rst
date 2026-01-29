@@ -87,6 +87,10 @@ In Omnia 7.9 and later there are some additions here:
 
 Also note that notifications of new pages created in the publishing app, always are sent to all variation authors.
 
+If Automatic machine translation is active, the notation that a page has been machine translated can look like this (see the text on the grey area at the top):
+
+.. image:: autto-translated.png
+
 Targeting a page variation
 ----------------------------
 Use targeting for a variation to set which variation of a page that will be displayed to the logged in user. Note that if a Variation selector block is added to a page, users can always select any of the available variations. This is true even if no targeting is set up. See this page for information about the Variation selector block: :doc:`Variation selector </blocks/variation-selector/index>`
