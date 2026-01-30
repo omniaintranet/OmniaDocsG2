@@ -1,3 +1,9 @@
+Release 7.9.9
+========================================
+
+- Improved handling of authentication flow
+- Logic to prevent starting multiple instances of a synchronization job
+
 Release 7.9.6
 ========================================
 
@@ -237,6 +243,7 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
+
 
 
 
