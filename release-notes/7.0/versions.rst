@@ -1,3 +1,12 @@
+7.9.26
+========================================
+(Omnia 7.9.26 / Workplace 7.9.26 / WCM 7.9.26 / MS 7.9.26 / Analytics 7.9.10 / Feed 7.9.4)
+
+- Fixed an issue where multiple page review reminder emails would be sent (#52690).
+- Properties now align correctly in the properties and page properties blocks in horizontal view mode (#52789).
+- Fixed an issue in the card view where alignment would be wrong when displaying summary in some scenarios (#53168).
+- Performance improvements to sing-off request checking on pages.
+
 7.9.25
 ========================================
 (Omnia 7.9.25 / Workplace 7.9.25 / WCM 7.9.25 / MS 7.9.25 / Analytics 7.9.10 / Feed 7.9.4)
