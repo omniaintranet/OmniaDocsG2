@@ -21,7 +21,7 @@ When any settings for tabs are done, users that already are using the app will b
 
 Adding a new tab
 ******************
-To add a new tab, click the plus. Then select the type of tab you want to add.
+To add a new tab, click the plus. Then select the type of tab you want to add (imaage with the layout engine migrated).
 
 .. image:: omnia-feed-tabs-select-711.png
 
@@ -37,9 +37,15 @@ Title, Icon type and Icon can be selected the same way as in many other options 
 
 Targeting settings works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
+Query tab
+**********
+If you have chosen to work with the tabs the legacy way with a business profile, there's a query tab available.
+
+(The documentation will soon be updated with information on how to use this tab).
+
 Multiple query tab
 *******************
-As the title implies, this tab can be used for multiple queries.
+As the title implies, this tab can be used for multiple queries. This tab is available if you have migrated the business profile to the new layout engine.
 
 To use one or more queries on this tab, click ADD QUERY, and select query type:
 
@@ -156,6 +162,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
