@@ -3,7 +3,7 @@ Tabs - Omnia Feed
 
 **This page is being updated**.
 
-If you have migrated Omnia Feed to the new layout engine there will be no Query tab, but a Mulitple query tab instead. The Multiple query tab has some different options, the main one being the use of layouts for page views. The other tabs works the same as before.
+If you have migrated Omnia Feed to the new layout engine the Query tab will be replaced with Mulitple query tab, witk some different options, the main one being the use of layouts for page views. The other tabs work the same as before.
 
 Use the settings here to edit tabs for this business profile in Omnia Feed.
 
@@ -162,6 +162,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
