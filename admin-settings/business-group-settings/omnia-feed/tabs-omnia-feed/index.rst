@@ -65,6 +65,8 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 **Display**: Here you can select one or more layouts. 
 
+.. image:: omnia-feed-tabs-query-mulitple-type-pages-display-711.png
+
 **Data mapping**: Here you select properties to get certain information from, and at the bottom you can edit settings for sorting.
 
 .. image:: tabs-pages-mapping.png
@@ -162,6 +164,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
