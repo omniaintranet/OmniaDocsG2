@@ -21,7 +21,7 @@ When any settings for tabs are done, users that already are using the app will b
 
 Adding a new tab
 ******************
-To add a new tab, click the plus. Then select the type of tab you want to add (imaage with the layout engine migrated).
+To add a new tab, click the plus. Then select the type of tab you want to add (image with the layout engine migrated).
 
 .. image:: omnia-feed-tabs-select-711.png
 
@@ -162,6 +162,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
