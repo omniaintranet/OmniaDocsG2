@@ -97,7 +97,7 @@ For sign-off requests, the following settings are avaiable:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-signoff-711.png
 
-**Query**: You can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that is open:
+**Query**: You can add filters for the sign-off request you want to list on the tab. Here's an example listing all sign-off requests that are open:
 
 .. image:: tab-sign-off-example-711.png
 
@@ -164,6 +164,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
