@@ -85,7 +85,7 @@ For a Forms rollup, the following settings are available:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-query-filters-711.png
 
-**Display**: Here you can select tags to be diplayed, select properties to get author name and article date from, and add settings for sorting.
+**Display**: Here you can select tags to be displayed, select properties to get author name and article date from, and add settings for sorting.
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-display-711.png
 
@@ -164,6 +164,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
