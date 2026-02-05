@@ -39,7 +39,7 @@ Targeting settings works the same way as in many other parts of Omnia, described
 
 Query tab
 **********
-If you have chosen to work with the tabs the legacy way with a business profile, there's a query tab available (not a Multiple query tab).
+If you have chosen to work with the tabs the legacy way with a business profile (meaning haven't migrated to the new layout engine), there's a query tab available (not a Multiple query tab).
 
 (The documentation will soon be updated with information on how to use this tab).
 
@@ -162,6 +162,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
