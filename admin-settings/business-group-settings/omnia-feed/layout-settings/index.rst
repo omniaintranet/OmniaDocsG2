@@ -15,6 +15,8 @@ This is how it works for users:
 
 + **After migration**: legacy page view display is not available for any user. The new layouts are used.
 
+Available settings also differ when you work with the tab settings. More information is found here: :doc:`Tabs - Omnia Feed </admin-settings/business-group-settings/omnia-feed/tabs-omnia-feed/index>`
+
 The following settings are available for layout settings:
 
 .. image:: layout-settings-new.png
@@ -144,6 +146,7 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
 
 
