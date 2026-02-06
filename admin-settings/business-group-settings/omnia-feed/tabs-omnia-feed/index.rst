@@ -194,29 +194,3 @@ and:
 
 What you do is select properties for a number of fields and set sorting.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
