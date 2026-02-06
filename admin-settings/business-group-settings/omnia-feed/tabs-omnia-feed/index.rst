@@ -19,9 +19,11 @@ When any settings for tabs are done, users that already are using the app will b
 
 Adding a new tab
 ******************
-To add a new tab, click the plus. Then select the type of tab you want to add (image with the layout engine migrated).
+To add a new tab, click the plus. Then select the type of tab you want to add (image from Omnia 7.11).
 
 .. image:: omnia-feed-tabs-select-711.png
+
+In Omnia 7.10 and earlier, you will se a Query tab instead of the Multiple query tab. Differences are noted below.
 
 Common settings
 ***********************
@@ -35,15 +37,9 @@ Title, Icon type and Icon can be selected the same way as in many other options 
 
 Targeting settings works the same way as in many other parts of Omnia, described here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
-Query tab
-**********
-If you have chosen to work with the tabs the legacy way with a business profile (meaning haven't migrated to the new layout engine), there's a query tab available (not a Multiple query tab).
-
-(The documentation will soon be updated with information on how to use this tab).
-
 Multiple query tab
 *******************
-As the title implies, this tab can be used for multiple queries. This tab is available if you have migrated the business profile to the new layout engine.
+As the title implies, this tab can be used for multiple queries. This tab replaces the Query tab from earlier Omnia versions. There are a few differences but most of the options are the same.
 
 To use one or more queries on this tab, click ADD QUERY, and select query type:
 
@@ -61,9 +57,13 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-all-filters-711.png
 
-**Display**: Here you can select one or more layouts. 
+**Display**: Available options in Omnia 7.11 and later depend on migration to the new layout engine. If migration has been made, the following options are available:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-display-711.png
+
+If migration has not been made (yet), these options are available:
+
+(Image to be added soon)
 
 **Data mapping**: You select properties to get certain information from, and at the bottom you can edit settings for sorting.
 
@@ -162,6 +162,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
