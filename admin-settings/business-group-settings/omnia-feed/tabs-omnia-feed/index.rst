@@ -39,11 +39,12 @@ Targeting settings work the same way as in many other parts of Omnia, described 
 
 Multiple query tab
 *******************
-As the title implies, this tab can be used for multiple queries. This tab replaces the Query tab from earlier Omnia versions. There are a few differences but most of the options are the same.
-
+As the title implies, this tab can be used for multiple queries. This tab replaces the Query tab from earlier Omnia versions. 
 To use one or more queries on this tab, click ADD QUERY, and select query type:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-v711.png
+
+The query types "Forms" and "Sign-off request" are new, not available for the Query tab.
 
 Query type Pages
 -----------------
@@ -162,6 +163,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
