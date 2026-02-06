@@ -190,7 +190,8 @@ The following settings are available for legacy display. They are similar to the
 
 and:
 
-.. image:: legacy-detail-view-settings.png
+.. image:: legacy-detail-view-settings-frame.png
 
 What you do is select properties for a number of fields and set sorting.
+
 
