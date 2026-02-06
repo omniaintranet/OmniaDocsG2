@@ -58,12 +58,6 @@ When migration to the new layout engine has NOT been made (yet), the following s
 
 Settings can be made both for legacy display view and the new display view based on layouts. The legacy settings are similar to the display settings in Omnia 7.10 and earlier.
 
-**Note!** Previewers can choose to use the legacy display or any of the layouts available. Other users can only see the legacy view.
-
-If migration to the new layout engine HAS BEEN MADE, options for legacy settings are no longer available:
-
-.. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711new.png
-
 **Query**: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. 
 
 When you have added a scope for the rollup, you can select where to get the title from and add filters, for each part of the scope:
@@ -78,7 +72,17 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 .. image:: pages-display-legacy.png
 
-**Data mapping**: You select properties to get certain information from, and at the bottom you can edit settings for sorting.
+**Note!** Previewers can choose to use the legacy display or any of the layouts available. Other users can only see the legacy view.
+
+If migration to the new layout engine HAS BEEN MADE, options for legacy settings are no longer available:
+
+.. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711new.png
+
+**Data mapping**: If migration to the new layout engine has NOT been made, only Title format can be set:
+
+.. image:: data-mapping-no-migration.png
+
+When migration HAS BEEN MADE, you select properties to get certain information from, and at the bottom you can edit settings for sorting.
 
 .. image:: tabs-pages-mapping.png
 
@@ -179,6 +183,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
