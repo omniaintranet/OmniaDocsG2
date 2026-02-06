@@ -44,11 +44,21 @@ To use one or more queries on this tab, click ADD QUERY, and select query type:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-v711.png
 
-The query types "Forms" and "Sign-off request" are new, not available for the Query tab.
+The query types "Forms" and "Sign-off request" are available in 7.11 and later, not available for the Query tab.
 
 Query type Pages
 -----------------
-The following settings are available for Pages:
+In Omnia 7.11 and later available options differ, depending on if migration to the layout engine has been made, or not.
+
+When migration to the new layout engine has not been made (yet), the following settings are available for Pages:
+
+.. image::pages-display-no-migration.png
+
+Settings can now be made both for legacy display view and the new display view based on layouts.
+
+**Note!** Previewers can choose to use the legacy display or any of the layouts available. The legacy settings are similar to the dispolay settings in Omnia 7.10 and earlier.
+
+If migration to the new layout engine has been made, options for legacy settings are no longer available:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711new.png
 
@@ -76,6 +86,8 @@ If migration has not been made (yet), these options are available:
 
 Query type Forms
 ------------------
+Available in 7.11 and later.
+
 For a Forms rollup, the following settings are available: 
 
 .. image:: omnia-feed-tabs-query-mulitple-type-forms-query-711.png
@@ -92,6 +104,8 @@ For a Forms rollup, the following settings are available:
 
 Query type Sign-off requests
 ------------------------------
+Available in 7.11 and later.
+
 For sign-off requests, the following settings are avaiable:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-signoff-711.png
@@ -163,6 +177,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
