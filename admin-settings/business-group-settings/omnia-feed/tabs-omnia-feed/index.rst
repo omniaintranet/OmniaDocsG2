@@ -11,7 +11,7 @@ Here's an example with a number of tabs set up:
 
 + **PUBLISH/UNPUBLISH**: Use this to enable/disable this configuration in Omnia Feed. 
 
-To edit settings for one of the existing tabs, click the pen, to delete it, click the dust bin.
+To edit settings for one of the existing tabs, click the pen. To delete it, click the dust bin.
 
 All settings used when adding a new tab can be edited, except the tab type, see below.
 
@@ -193,6 +193,7 @@ and:
 .. image:: legacy-detail-view-settings.png
 
 What you do is select properties for a number of fields and set sorting.
+
 
 
 
