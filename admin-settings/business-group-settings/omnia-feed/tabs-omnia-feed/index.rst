@@ -64,7 +64,7 @@ When you have added a scope for the rollup, you can select where to get the titl
 
 **Display/Display - previewers only**: Different name if the migration to the new layout engine has not been made yet, but settings are the same, you select one or more layouts. (see image above)
 
-Form more information on layouts in Omnia 76.11 and later, see: :doc:`Layout settings </admin-settings/business-group-settings/omnia-feed/layout-settings/index>`
+Form more information on layouts in Omnia 7.11 and later, see: :doc:`Layout settings </admin-settings/business-group-settings/omnia-feed/layout-settings/index>`
 
 **Display - legacy only**: If migration to the new layout engine has NOT been made, settings for the legacy page view are still available:
 
@@ -181,6 +181,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
