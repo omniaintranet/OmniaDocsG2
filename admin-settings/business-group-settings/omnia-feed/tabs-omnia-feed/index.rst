@@ -54,7 +54,7 @@ When migration to the new layout engine has NOT been made (yet), the following s
 
 .. image:: pages-display-no-migration.png
 
-Settings can be made both for legacy display view and the new display view based on layouts. The legacy settings are similar to the display settings in Omnia 7.10 and earlier.
+Settings can be made both for legacy display view and the new display view based on layouts. A default layout is always available. If other layouts are needed, use the Layout settings option, see link below. The legacy settings are similar to the display settings in Omnia 7.10 and earlier, see the end of the page.
 
 **Query**: For a Pages rollup you can choose one or more page collections, business profiles, publishing apps or the whole tenant. 
 
@@ -182,15 +182,17 @@ What you do here is to select properties in Omnia that contain the information n
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
 
+Legacy display settings for page (rollup) view
+*************************************************
+The following settings are available for legacy display. They are similar to the display settings in Omnia 7.10 and earlier, settings for Tab view and Detailed tab view:
 
+.. image:: legacy-tab-view-settings-new.png
 
+and:
 
+.. image:: legacy-detail-view-settings.png
 
-
-
-
-
-
+What you do is select properties for a number of fields and set sorting.
 
 
 
