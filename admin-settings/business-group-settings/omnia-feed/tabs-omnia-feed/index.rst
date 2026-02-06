@@ -52,7 +52,7 @@ In Omnia 7.11 and later available options differ, depending on if migration to t
 
 When migration to the new layout engine has not been made (yet), the following settings are available for Pages:
 
-.. image::pages-display-no-migration.png
+.. image:: pages-display-no-migration.png
 
 Settings can now be made both for legacy display view and the new display view based on layouts.
 
@@ -177,6 +177,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
