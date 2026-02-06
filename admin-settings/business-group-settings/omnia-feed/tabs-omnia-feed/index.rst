@@ -50,15 +50,15 @@ Query type Pages
 -----------------
 In Omnia 7.11 and later available options differ, depending on if migration to the layout engine has been made, or not.
 
-When migration to the new layout engine has not been made (yet), the following settings are available for Pages:
+When migration to the new layout engine has NOT been made (yet), the following settings are available for Pages:
 
 .. image:: pages-display-no-migration.png
 
 Settings can be made both for legacy display view and the new display view based on layouts.
 
-**Note!** Previewers can choose to use the legacy display or any of the layouts available. The legacy settings are similar to the dispolay settings in Omnia 7.10 and earlier.
+**Note!** Previewers can choose to use the legacy display or any of the layouts available. The legacy settings are similar to the display settings in Omnia 7.10 and earlier.
 
-If migration to the new layout engine has been made, options for legacy settings are no longer available:
+If migration to the new layout engine HAS BEEN MADE, options for legacy settings are no longer available:
 
 .. image:: omnia-feed-tabs-query-mulitple-type-pages-all-711new.png
 
@@ -177,6 +177,7 @@ For Display, a number of detailed view settings are available.
 What you do here is to select properties in Omnia that contain the information needed. Note that properties must have been set up in Omnia admin to be available to select here, see: :doc:`Properties </admin-settings/tenant-settings/properties/index>`
 
 As the last option you can choose to order for how comments are shown, "Older To Newer" or "Newer To Older".
+
 
 
 
