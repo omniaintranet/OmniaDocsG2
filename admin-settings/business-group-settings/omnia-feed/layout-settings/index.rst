@@ -1,7 +1,7 @@
 Layout settings
 ===========================================
 
-In Omnia 7.11 and later, there are new options available for layouts, to be used as display settings for page views. If you decide to migrate to the new layout engine, the older (legacy) display will be replaced for end users. 
+In Omnia 7.11 and later, there are new options available for layouts, to be used as display settings for page views in Omnia Feed. If you decide to migrate to the new layout engine, the older (legacy) display will be replaced for end users. 
 
 You can set up a number of layouts, to be used with the new layout engine. To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
 
@@ -142,6 +142,7 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
 
 
