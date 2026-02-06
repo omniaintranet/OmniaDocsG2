@@ -9,8 +9,9 @@ You can set up a number of layouts, to be used with the new layout engine. To sp
 
 You can decide to migrate to the new layout engine, or not, for each business profile.
 
-**No migration** (or before migration): previewers can choose to use the legacy display for page views, or choose any of the new layout settings aailable. Other end users can only see the legacy display.
-**After migration**: legacy page view display is not available for any user.
++ **No migration** (or before migration): previewers can choose to use the legacy display for page views, or choose any of the new layout settings aailable. Other end users can only see the legacy display.
+
++ **After migration**: legacy page view display is not available for any user.
 
 The following settings are available for layout settings:
 
@@ -141,4 +142,5 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
+
 
