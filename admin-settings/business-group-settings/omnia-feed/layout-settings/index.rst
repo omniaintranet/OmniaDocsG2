@@ -1,27 +1,30 @@
 Layout settings
 ===========================================
 
-In Omnia 7.11 and later, there are new options available for layouts. If you decide to migrate to the new layout engine, the Query tab will be replaced by a Multiple query tab. 
+In Omnia 7.11 and later, there are new options available for layouts, to be used as display settings for page views. If you decide to migrate to the new layout engine, the older (legacy) display will be replaced for end users. 
 
-For the Multiple query tab you can set up a number of layouts for page views. To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
-
-You must decide for each business profile, if you would like to work with the page views the new way, or the legacy way. You can't use both. To be clear, you can take different decisions for the business profiles in your tenant, but note that once you have chosen to go for the new way for a specific business profile, it can't be reversed.
+You can set up a number of layouts, to be used with the new layout engine. To speed up the process, you can base a new layout on a template or on an existing (exported) layout file.
 
 **Note!** Working with layouts in Omnia Feed is suitable for advanced administrators and developers. Also, if you plan to continue using the "old" way, the legacy way, of working with the tabs for this business profile, you don't need to do anything here.
 
-The following settings are available here:
+You can decide to migrate to the new layout engine, or not, for each business profile.
+
+**No migration** (or before migration): previewers can choose to use the legacy display for page views, or choose any of the new layout settings aailable. Other end users can only see the legacy display.
+**After migration**: legacy page view display is not available for any user.
+
+The following settings are available for layout settings:
 
 .. image:: layout-settings-new.png
    
 This is how you are meant to work with these options:
 
-1. Add one or more previewers if you like some comments along the way. Also see more information about Previewers at the bottom of this page.
+1. Add one or more previewers, for example if you like some comments along the way. 
 2. Create one or more layout drafts. The draft(s) are now listed.
 3. Collect comments from the previewers, if any.
 4. Do final changes and publish the layouts.
 5. Activate the layout engine migration.
 
-**Note!** The layout engine migration can not be reversed for a business profile, once started, as stated in the text above the button. When the migration is completed, the Query tab is replaced by a Multiple query tab, and the Display settings for page views work differently. Now you select a layout there.
+**Note!** The layout engine migration can not be reversed for a business profile, once started, as stated in the text above the button. 
 
 After the migration, you can continue working on layouts, as described here.
 
@@ -138,10 +141,4 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
-
-More about Previewers
-------------------------
-Before the migration, previewers can see the new layout(s) in their unit, others can only see the legacay display. 
-
-After the migration, previewers can see and select the different versions of available layouts for page view, other users can only see the last version of the page view (Display) published.
 
