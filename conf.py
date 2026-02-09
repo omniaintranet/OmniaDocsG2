@@ -51,8 +51,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Omnia'
-copyright = str(datetime.date.today().year) + ', Precio Fishbone'
-author = 'Precio Fishbone'
+copyright = str(datetime.date.today().year) + ', Omnia Digital Workplace AB'
+author = 'Omnia Digital Workplace'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
