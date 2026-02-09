@@ -1,3 +1,18 @@
+7.9.29
+========================================
+(Omnia 7.9.29 / Workplace 7.9.29 / WCM 7.9.29 / MS 7.9.29 / Analytics 7.9.10 / Feed 7.9.9)
+
+- SharePoint CSP enforcement compatibility, Omnia has been updated to be compliant with the upcoming CSP enforcement rules, ensure to update your SPFx package. Information is sent separately. 
+- Improved validation when deleting Business Profiles.
+- Ensured encoding for certain special characters in filenames when opening files from search (#53445).
+- Fixed an issue that caused sorting to be unavailable on datetime columns in the page rollup (#53609).
+- Fixed an issue that caused the filter state not to load correctly from the URL if the page was unset (#53496).
+- Improved compatibility when broken data is returned for the org chart component loads (#48291).
+- It is now possible to edit the text, text colour and background colour for the "Go to page" button in the Newsletter view.
+- Export to excel in the page rollup now supports additional URL characters (#53479).
+- Fixed an issue that caused certain review reminder emails to have invalid document links (#53389).
+
+
 7.9.26
 ========================================
 (Omnia 7.9.26 / Workplace 7.9.26 / WCM 7.9.26 / MS 7.9.26 / Analytics 7.9.10 / Feed 7.9.4)
