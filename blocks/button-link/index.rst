@@ -47,7 +47,11 @@ Button Style
 --------------
 These settings are available under STYLE (available to the right of GENERAL for most buttons, see image below):
 
-.. image:: action-button-65-style.png
+.. image:: action-button-style-new.png
+
+and these:
+
+.. image:: action-button-style-2.png
 
 + **Button style**: You can select Depressed, Flat or Raised as the style. Note that a flat button doesn't have any background color, so the text should normally be black for a flat button.
 + **Size**: The size of the button can be small, medium or large.
@@ -57,7 +61,9 @@ These settings are available under STYLE (available to the right of GENERAL for 
 + **Background color and Text color**: Choose colors here. Note the comments about Flat button style and Outline above.
 + **Icon Type**: To add an icon to the buttton, first select the icon type here.
 + **Icon**: When you have selected the icon type, select the icon in this list. The icon is placed to the left of the button text.
-+ **Icon Alignment**: Select the alignment of the buttons within the block area.
++ **Icon Alignment**: Select the alignment for the icon on the button.
++ **Text alignment**: Select the alignment for the text on the button.
++ ** Text uppercase**: If you would like all text on the buttn to be upper case, select this option.
 
 Style
 -------
