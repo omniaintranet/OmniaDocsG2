@@ -7,7 +7,7 @@ A form can be a survey, a poll or a checkup. These forms are created and maintai
 
 Here's an example with a poll that the user already has submitted to, and only the result is available:
 
-.. image:: poll-example.png
+.. image:: poll-example-new.png
 
 Settings
 **********
