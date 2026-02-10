@@ -17,6 +17,6 @@ You can find more information about the Share document functionality here: :doc:
 
 Use the iFrame block on a section tab
 ********************************************
-There is a known problem that may occur when using the iFrame block on a section tab.You may have to disable lazy load, or the block won't work. This will eventually be fixed, but, for now, if you encounter this problem, simply disable lazy load. And to make sure, disable lazy load on all sections on the same levels as well, even if they don't contain an iFrame block.
+There is a known problem that may occur when using the iFrame block on a section tab. You may have to disable lazy load, or the block won't work. This will eventually be fixed, but, for now, if you encounter this problem, simply disable lazy load. And to make sure, disable lazy load on all sections on the same levels as well, even if they don't contain an iFrame block.
 
 This settings is found under "Advanced" in the settings for the section. For more information, see: :doc:`Settings for sections </pages/page-types/section-settings/index>`
