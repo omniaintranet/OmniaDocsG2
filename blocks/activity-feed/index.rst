@@ -5,17 +5,7 @@ Use this block to show activities for the subscriptions the logged in user has o
 
 Here's an example of an activity feed with the scope set to My subscriptions:
 
-.. image:: activity-feed-example.png
-
-The icon indicates the type of activity:
-
-.. image:: activity-feed-example-icons.png
-
-There's an additional icon not shown in the image above:
-
-.. image:: activity-feed-example-icons-additional.png
-
-The icon at the bottom, with the arrow pointing down, is the "see more" icon displayed when there are more items to show.
+.. image:: activity-feed-example-new.png
 
 Settings
 **********
