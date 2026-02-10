@@ -45,7 +45,7 @@ The analytics option can be available in Omnia 7.8 and later, if analytics is ac
 
 Button Style
 --------------
-These settings are available for style (available to the right of GENERAL for most buttons, see image above):
+These settings are available for style (available to the right of GENERAL for most buttons):
 
 .. image:: action-button-65-style.png
 
