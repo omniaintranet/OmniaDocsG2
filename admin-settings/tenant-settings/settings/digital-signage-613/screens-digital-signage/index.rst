@@ -40,7 +40,7 @@ Use the icons (from left to right) to:
 
 + Edit the settings.
 + Delete the step.
-+ Set the order between the steps.
++ Set the order for the steps (if more than one).
 
 To add more steps, repeat the process.
 
@@ -66,4 +66,5 @@ On this tab, the following is available:
 
 + **Embed images in result**: If data for the images should be part of the data sent for the view, select this option. If not selected, images must be retrieved some other way.
 + **ADD PROPERTY**: Click here to add one or more properties that should be sent as data.
+
 
