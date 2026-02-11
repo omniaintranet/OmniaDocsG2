@@ -37,12 +37,12 @@ The following settings can be available, depending on scope chosen:
 
 When you have chosen to use the query builder, select scope for the block. This is where you choose where to get the pages from. You can select:
 
-  + Tenant.
-  + Business profile(s).
-  + Publishing app(s).
-  + Page collection(s).
-  + Navigation path.
-  + Channel(s).
++ Tenant.
++ Business profiles.
++ Publishing apps.
++ Page collections.
++ Navigation path.
++ Channels.
 
 When you have selected Business profiles, Publishing apps, Page collections or Channels, you select one or more to get the pages from as the next step, just as you would in the Page rollup block. 
 
@@ -89,4 +89,5 @@ Use this tab for view settings, similar to those in the Page rollup block:
 + **QR code text**: Available when "Show QR code" is selected. You can add a text here, to be shown by the QR code.
 + **QR code position**: Available when "Show QR code" is selected. You can choose to display the QR code Top right, Bottom right, Top left or Bottom left.
 + **QR code size**: Available when "Show QR code" is selected. Use the slider to set the display size of the QR code.
+
 
