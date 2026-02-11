@@ -63,7 +63,7 @@ and these:
 + **Icon**: When you have selected the icon type, select the icon in this list. The icon is placed to the left of the button text.
 + **Icon Alignment**: Select the alignment for the icon on the button.
 + **Text alignment**: Select the alignment for the text on the button.
-+ ** Text uppercase**: If you would like all text on the button to be upper case, select this option.
++ **Text uppercase**: If you would like all text on the button to be upper case, select this option.
 
 Style
 -------
