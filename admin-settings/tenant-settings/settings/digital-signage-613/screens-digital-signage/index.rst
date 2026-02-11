@@ -52,7 +52,7 @@ When you select this option the following is available:
 
 Use the settings according to information from the provider.
 
-Here's how to set up integration between Omnia and PLAYin, as an example: https://helpcenter.playipp.com/article/1489
+Here's how to set up integration between Omnia and PLAYipp, as an example: https://helpcenter.playipp.com/article/1489
 
 QUERY
 ------
@@ -66,6 +66,7 @@ On this tab, the following is available:
 
 + **Embed images in result**: If data for the images should be part of the data sent for the view, select this option. If not selected, images must be retrieved some other way.
 + **ADD PROPERTY**: Click here to add one or more properties that should be sent as data.
+
 
 
 
