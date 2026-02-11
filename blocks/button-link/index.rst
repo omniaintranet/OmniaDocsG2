@@ -69,10 +69,22 @@ Style
 -------
 These Style settings are available on the Style tab, below the Actions tab:
 
-.. image:: action-button-style-v7.png
+.. image:: action-button-style-v711.png
 
 + **Grouping type**: Here you can choose to group the buttons in the block, by selecting "Dropdown".
 + **Alignment**: Here you can set alignment for alla buttons in the block.
+
+Analytics
+----------
+This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant.
+
+.. image:: action-button-analytics-v711.png
+
+If analytics data is collected by Matomo, navigation is always tracked. Here you can add different Matomo events for action buttons, to also be tracked, if needed. Also note that analytics data collecting must be on for the business profile for this to work.
+
+When activatedm the following can be set:
+
+.. image:: action-button-analytics-activated-v711.png
 
 Layout
 ----------
@@ -82,7 +94,7 @@ Write
 -------
 On this tab you decide if settings for the block (the buttons) should be available for editing in Write mode or not. 
 
-.. image:: action-button-write-v7.png
+.. image:: action-button-write-v711.png
 
 Action button order
 ----------------------
