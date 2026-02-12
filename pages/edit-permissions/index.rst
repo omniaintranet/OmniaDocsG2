@@ -31,7 +31,7 @@ You can now set the following permissions, for this page and all sub pages:
 
 .. image:: page-permissions-select-user-711.png
 
-You can also search for users the same way as in other people lists. For more information on how to use the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+You can also search for users the same way as in other people lists. For more information, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 6. Click "SAVE" when you're done. (If you don't want to save, just close the window to ignore the changes.
 
