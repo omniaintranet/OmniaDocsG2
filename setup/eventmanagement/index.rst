@@ -16,10 +16,10 @@ Default properties for Event management are added automatically.
 .. image:: add-pagecollection-for-eventsmanagement.png
 
 4. Set the newly created page collection as default in the publishing app settings.
-5. Set reader and author permissions on the cage Collection.
-6. Go to Omnia admin in context of the new publishing app and activate the app instance feature "Default Page types for Event Management".
-7. Refresh the page and go to the page Collection settings.
-8. Add a create page sialog title, uncheck the box "Show Url" and check the box "Show properties".
+5. Set reader and author permissions on the page collection.
+6. Go to Omnia admin in context of the new publishing app and activate the app instance feature "Default page types for event management".
+7. Refresh the page and go to the page collection settings.
+8. Add a create page dialog title, uncheck the box "Show URL" and check the box "Show properties".
 9. Add the page type "Event".
 
 .. image:: pagecollection-settings-eventsmanagement.png
