@@ -1,7 +1,9 @@
-Edit permissions for a page
+Permissions to edit a page
 =============================
 
-Default settings is that the same edit permissions apply to all pages, including variations, but that can be changed if needed. If you change permissions for a page that has sub pages, all the sub pages gets the new permissions (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
+Default settings is that the same edit permissions apply to all pages, including variations in the whole page collection, but that can be changed if needed. If you change permissions for a page that has sub pages, the same permissions apply to the sub pages (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
+
+For more information about permissions for the page collection, see: :doc:`Page collections permissions </pages/page-collections/page-collection-permissions/index>`
 
 Do the following:
 
@@ -9,7 +11,7 @@ Do the following:
 2. Select the page where you need to edit permissions.
 3. Open the menu and select "Permissions".
 
-.. image:: page-select-permissions-new.png
+.. image:: page-select-permissions-711.png
 
 Omnia works with inheritance, just as Sharepoint does, so the first thing you have to do is:
 
