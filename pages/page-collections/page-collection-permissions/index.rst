@@ -19,5 +19,5 @@ You can edit the following settings here:
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
-For information on how to change edit permissions for a page and it's sub pages, see: :doc:`General block settings </blocks/general-block-settings/index>`
+For information on how to change edit permissions for a page and it's sub pages, see: :doc:`General block settings </pages/edit-permissions/index>`
 
