@@ -1,17 +1,20 @@
 Page collection permissions
 =============================
 
-To be able to set page collection permissions, click the main node of the page collection, and select "Permissions" in the menu:
+To be able to set page collection permissions, you must be page collection administrator or tenant administrator. The settings at this level apply to alla pages and other nodes in the page collection, but can be changed for each page or node of needed.
 
-.. image:: page-collection-menu-permissions.png
+Click the main node of the page collection, and select "Permissions" in the menu:
+
+.. image:: page-collection-menu-permissions-711.png
 
 You can edit the following settings here:
 
-.. image:: page-collection-permissions.png
+.. image:: page-collection-permissions-711.png
 
-+ **Page collection admin**: Needed to be able to edit all page collection settings. The page collection admin permission is also needed to be able to edit the top node of the page collection. Publishing app administrators (set in the publishing app settings) can edit the top node as well.
++ **Page collection admin**: Needed to be able to edit all page collection settings. The page collection admin permission is also needed to be able to edit the top node of the page collection. Publishing app administrators (set in the publishing app settings) can edit the top node as well. 
 + **Editor**: Editors can create pages using the available page types and edit pages using both Design mode and Write mode. 
-+ **Author**: Authors can edit pages using Write mode only. 
++ **Author**: Authors can create new pages and add and edit other nodes in the navigation tre. Authors can edit page contents using Write mode only. 
++ **Update-only author**: This type of author can edit existing content for the page only, meaning can not create new pages and other nodes.
 + **Reader**: All colleagues that should be able to read information in this page collection must be added here or belong to a permission group added here. "Everyone" (Internal users + External users) or "Everyone except external users" (Internal users except restricted") are two commonly used permission groups.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
