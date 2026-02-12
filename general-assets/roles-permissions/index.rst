@@ -114,9 +114,10 @@ The permissions settings are available here:
 
 And these permissions can be set here:
 
-.. image:: top-node-settings-permissions-details.png
+.. image:: page-collection-permissions-711.png
 
 Note that all permissions for editing and deleting pages and cerating pages and other nodes, are inherited in the page collection, but permissions for specific pages and other nodes can be changed if needed.
 
 Page collection permissions are described on this page: :doc:`General block settings </pages/page-collections/page-collection-permissions/index>`
+
 
