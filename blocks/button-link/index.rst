@@ -67,7 +67,7 @@ and these:
 
 Style
 -------
-These Style settings are available on the Style tab, below the Actions tab:
+These settings are available on the Style tab, below the Actions tab:
 
 .. image:: action-button-style-v711.png
 
