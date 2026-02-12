@@ -134,7 +134,7 @@ Available settings differ depending on type of button chosen. The following sett
 
 Available actions
 *******************
-The following actions are available in the block:
+The following actions can be adde to the block:
 
 Add as favourite
 ------------------
