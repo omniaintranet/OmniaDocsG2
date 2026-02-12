@@ -20,6 +20,8 @@ The setting for making the wizard available in the action menu is found in the h
 
 An action button block can be placed on any publishing page. For more information, see this page: :doc:`The Action button block </blocks/button-link/index>` 
 
+**Important note!** In Omnia 7.11 and later, new settings are available for the action button Create document. Depending on how the button is set up, not all options described below may be available.
+
 Creating a new controlled document
 ************************************
 Use the wizard this way to create a new controlled document:
