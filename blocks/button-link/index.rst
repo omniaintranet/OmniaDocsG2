@@ -88,6 +88,8 @@ When activated, the following can be set:
 
 For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
 
+Some settings are needed for every business profile where analytics data should be collected. More information is found here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
+
 Layout
 ----------
 The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
@@ -109,22 +111,6 @@ Edit an action button
 To edit a button, click the pen. To delete a button, click the dustbin. 
 
 When editing a button, the same settings as when you create a new button is available, see below.
-
-Analytics
--------------
-It can be possible to use Matomo event tracking for action buttons, in Omnia 7.8 and later, if analytics is active in the tenant. Also note that analytics data collecting must be on for the business profile for this to work, see the link to the analytics settings below.
-
-.. image:: action-button-analytics.png
-
-If activated, the following settings are available:
-
-.. image:: action-button-analytics-settings.png
-
-To display data for event tracking, use the query type "Event" in the Analytics report block.
-
-For more information about how Matomo event tracking works and how to use the settings, see: :doc:`About Matomo event tracking </general-assets/about-matomo-event-tracking/index>`
-
-Some settings are needed for every business profile where analytics data should be collected. Read about that here: :doc:`Analytics (Matomo) settings </admin-settings/business-group-settings/settings/analytics/index>`
 
 Add an action button
 ***********************
