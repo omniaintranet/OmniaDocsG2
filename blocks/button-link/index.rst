@@ -181,7 +181,7 @@ In Omnia 7.10 and later, you can set available options in the Create new documen
 
 + **Is controlled document**: If this option is active, only controlled documents can be created. If not active, only general documents can be created.
 + **ADD DOCUMENT TYPE**: If "Is controlled document" is active, and just certain document types for controlled documents should be available, add them here. If you don't select anything, all document types for controlled documents are available.
-+ **ADD TEMPLATE**: If "Is coontrolled document" is NOT active, you can select just certain document types for general documents to be available. If you don't select anything, all document types for general documents are available.
++ **ADD TEMPLATE**: If "Is controlled document" is NOT active, you can select just certain document types for general documents to be available. If you don't select anything, all document types for general documents are available.
 + **ADD LOCATION**: If just certain locations for storing a document should be available, add them here. If you don't select anything, all locations that the user has permissions to use are available. 
 
 Create form
