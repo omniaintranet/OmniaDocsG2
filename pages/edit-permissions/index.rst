@@ -25,28 +25,21 @@ You can now set the following permissions, for this page and all sub pages:
 + **Author**: Can create pages, can use the navigation panel to create new pages and other nodes, and can use Write mode to edit contents in some blocks.
 + **Update-only author**: Available in Omnia 7.10 and later. Colleagues with this permission can only update existing pages using Write mode, and publish a new version of the page, but can not use the navigation panel, meaning can not, for example, create new pages. Also, this permission does not allow pages being deleted.
 
-For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
-
 **Note!** Page collection administrators are always permitted to work with pages (Editor permissions). They don't need to be added here.
 
 5. To add an editor or an author, just open the list and select the user.
 
-.. image:: page-permissions-select-user-new.png
+.. image:: page-permissions-select-user-711.png
 
-You can also search for users the same way as in other people lists.
+You can also search for users the same way as in other people lists. For more information on how to use the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
-6. To remove a user from one of the list, click the x. 
-
-.. image:: page-permissions-remove-user-new.png
-
-7. Click "SAVE" when you're done. (If you don't want to save, just close the window to ignore the changes.
+6. Click "SAVE" when you're done. (If you don't want to save, just close the window to ignore the changes.
 
 Permissions for variations
 ***************************
 A variation page is simply a copy of a source page, with some sort of alternative content, for example in another language.
 
-An author can be assigned to a specific variation (in Omnia 7.9 and later several authors). This doesn't brake inheritance. A variation author must have the same permisssions as the author(s) of the source page.
+Permissions for editing variations can be set up in several ways, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
-Read more about variation authors on this page: :doc:`Publishing app settings </pages/page-settings/index>`
+Read more about variation authors is found on this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
-In 7.9 and later, permissions for editing variations can be set up differenty if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
