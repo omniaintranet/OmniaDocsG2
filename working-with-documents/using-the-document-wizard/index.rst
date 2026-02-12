@@ -59,7 +59,7 @@ An i-icon is displayed if a description has been added to a document type. Point
 
 .. image:: new-controlled-6-77.png
 
-**Note!** In some rare cases available properties depends on where the document will be saved. In these cases, the correct propertes are shown after the place to save the document has been selected.
+**Note!** In some rare cases available properties depend on where the document will be saved. In these cases, the correct propertes are shown after the place to save the document has been selected.
 
 If you are creating a new document in a controlled documents library, the active site is selected in the SUGGESTED list. If you have started the wizard from the action menu, some common locations can be suggested.
 
