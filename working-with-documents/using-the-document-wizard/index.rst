@@ -16,11 +16,11 @@ Here's an example for the action menu:
 
 .. image:: action-menu-document-wizard-77.png
 
-The setting for making the wizard available in the action menu is found in the header settings for the business profile. See the heading "Action menu" on this page for more information about the setting: :doc:`Header settings for the business profile </admin-settings/business-group-settings/settings/header/index>`
+The setting for making the wizard available in the action menu is found in the workspace navigation bar settings for the business profile. For more information, see: :doc:`Navigation bar </admin-settings/business-group-settings/workplace/navigation-bar/index>`
 
 An action button block can be placed on any publishing page. For more information, see this page: :doc:`The Action button block </blocks/button-link/index>` 
 
-**Important note!** In Omnia 7.11 and later, new settings are available for the action button "Create document". Depending on how the button is set up, not options described below may not be available.
+**Important note!** In Omnia 7.11 and later, new settings are available for the action button "Create document". Depending on how the button is set up, all options described below may not be available. For more informaation, see the end of the page.
 
 Creating a new controlled document
 ************************************
@@ -146,5 +146,11 @@ When you have selected library, and folder if necessary:
 .. image:: normal-document-7-77.png
 
 The document is normally opened so you can start working on it. 
+
+More on using the action button Create document
+***************************************************
+If creating a document is made available on a page, the action button "Create document" is used. Available options can then be different than described above, when the wizard is started from s button. When the wizard is started that way, only controlled documents or only general documents can be created, never both. The editor of the page may also have decided that only some page types/templates should be available, and that only certain locations for saving documents may be used. This can be different for every button.
+
+
 
 
