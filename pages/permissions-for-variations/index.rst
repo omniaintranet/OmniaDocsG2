@@ -7,7 +7,7 @@ As a variation is a page, normal permissions for pages within a page collection 
 
 Variation specific permissions
 **********************************
-In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view.
+In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view. **Note!** If automatic machine translation is set for the variation, variation authors can not be assigned and setting edit permissions are therefore not available.
 
 You can set permissions for all variation pages of a certain type in the page collection, this way:
 
@@ -44,4 +44,5 @@ This is how it's set up:
 6. Save.
 
 Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected.
+
 
