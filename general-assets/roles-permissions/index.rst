@@ -116,15 +116,7 @@ And these permissions can be set here:
 
 .. image:: top-node-settings-permissions-details.png
 
-Note that all permissions for editing and deleting pages and cerating pages and other nodes, are inherited in the whol page collection, but permissions for specific pages and other nodes can be changed if needed.
+Note that all permissions for editing and deleting pages and cerating pages and other nodes, are inherited in the page collection, but permissions for specific pages and other nodes can be changed if needed.
 
-**Page collection editor**: Can create, delete and restore pages in the page collection and use Design mode to work with sections and blocks on pages. A page collection editor can also use Write mode (meaning, can do all an author can do, as well).
-
-**Page collection author**: Can edit contents on pages in the page collection, using Write mode.
-
-**Page collection reader**: All colleagues that should be able to read information in a page collection must have the permission “Page collection reader”. 
-
-
-
-
+Page collection permissions are described on this page: :doc:`General block settings </pages/page-collections/page-collection-permissions/index>`
 
