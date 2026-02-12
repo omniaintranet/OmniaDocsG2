@@ -1,7 +1,7 @@
 Permissions to edit a page
 =============================
 
-Default settings is that the same edit permissions apply to all pages, including variations in the whole page collection, but that can be changed if needed. If you change permissions for a page that has sub pages, the same permissions apply to the sub pages (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
+Default settings is that the same edit permissions apply to all pages, including variations in the whole page collection, but it can be changed if needed. If you change permissions for a page that has sub pages, the same permissions apply to the sub pages (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
 
 For more information about permissions for the page collection, see: :doc:`Page collections permissions </pages/page-collections/page-collection-permissions/index>`
 
@@ -22,7 +22,7 @@ Omnia works with inheritance, just as Sharepoint does, so the first thing you ha
 You can now set the following permissions, for this page and all sub pages:
 
 + **Editor**: Can create, delete and move pages and nodes, can use both Design mode and Write mode and can edit permissions here.
-+ **Author**: Can create pages and can use Write mode to edit contents in some blocks.
++ **Author**: Can create pages, can use the navigation panel to create new pages and other nodes, and can use Write mode to edit contents in some blocks.
 + **Update-only author**: Available in Omnia 7.10 and later. Colleagues with this permission can only update existing pages using Write mode, and publish a new version of the page, but can not use the navigation panel, meaning can not, for example, create new pages. Also, this permission does not allow pages being deleted.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
