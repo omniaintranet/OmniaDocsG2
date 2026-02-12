@@ -149,6 +149,6 @@ The document is normally opened so you can start working on it.
 
 More on using the action button Create document
 ***************************************************
-If creating a document is made available on a page, the action button "Create document" is used. Available options can then be different than described above, when the wizard is started from s button. When the wizard is started that way, only controlled documents or only general documents can be created, never both. The editor of the page may also have decided that only some page types/templates should be available, and that only certain locations for saving documents may be used. This can be different for every button.
+If creating a document is made available on a page, the action button "Create document" is used. Available options can then be different than described above. When the wizard is started by a button, only controlled documents or only general documents can be created, never both. The editor of the page may also have decided that only some document types/templates should be available, and that only certain locations for saving documents may be available. This can be different for every button.
 
-The general steps is still the same every time: first select the page type/template, then add properties for the document. and finally select where to save the document.
+The general steps is still the same every time: first select the document type/template, then add name and properties for the document. and finally select where to save the document.
