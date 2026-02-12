@@ -8,7 +8,6 @@ In this part of the documentation you will find information concerning how to wo
    :titlesonly:
 
    accessibility-check/index
-   add-link-navigation/index
    page-approval/index 
    automatic-page-creation/index
    check-page-feedback/index
@@ -16,6 +15,7 @@ In this part of the documentation you will find information concerning how to wo
    copy-page/index
    create-page/index
    create-label/index
+   add-link-navigation/index
    delete-page/index
    edit-page/index
    edit-page-navigation/index
