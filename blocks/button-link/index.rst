@@ -122,36 +122,36 @@ To add an action button in this block, do the following:
 2. Click ADD BUTTON.
 3. Use the settings. Here's an example:
 
-.. image:: action-button-v7-settings-v75.png
+.. image:: action-button-v7-settings-v711.png
 
 General
 **********
 Available settings differ depending on type of button chosen. The following settings are available for all types:
 
 + **Type**: Select type of button here. 
-+ **Text**: Add text to be shown on the button, in any tenant language.
++ **Text**: Add text to be shown on the button.
 + **Tool tip**: Add the tool tip text for the button here. 
 
 Available actions
 *******************
-The following actions can be adde to the block:
+The following actions can be added to the block:
 
 Add as favourite
 ------------------
 The purpose of this action is for the logged in user to add a favourites link for a page:
 
-.. image:: action-button-favourite-v75.png
+.. image:: action-button-favourite-v711.png
 
 + **Remove link**: When a favourites link has been added, the text on the button changes so the user can remove the page from the favourites list. Add that text here. 
 + **Category**: If the Favourite link should be added to a specific category, type the name of the category here. It can be a new or an existing category.
 
 Add to My calendar
 --------------------
-Can be placed on any Omnia page. When a user clicks the button, an ics file for the page is created and downloaded to the users Download folder. The ics file can then be added to the user's calendar. For use with events, or for som other use.
+Can be placed on any Omnia page. When a user clicks the button, an ics file for the page is created and downloaded to the user's Download folder. The ics file can then be added to the user's calendar. For events, or for som other use.
 
 Settings specific for the button, which all are related to events, are the following:
 
-.. image:: action-button-my-calendar-v75.png
+.. image:: action-button-my-calendar-v711.png
 
 Select property to be used for a description and information on location, event start and end or for an all day event.
 
