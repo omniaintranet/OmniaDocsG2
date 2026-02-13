@@ -1,6 +1,87 @@
 Release 7
 ========================================
 
+(7.10) Approval flow for deleting pages
+------------------------------------------------------
+A new approval flow has been introduced for page deletion, giving organizations better control and traceability when content is removed.
+
+Editors can now be required to submit deletion requests for approval, ensuring that page removals follow established governance and compliance rules before being finalized.
+
+(7.10) A-Z paging
+------------------------------------------------------
+A–Z paging has been added to relevant rollup and listing scenarios, available in both card and list views.
+
+This provides an additional navigation option for end users when browsing large sets of structured or alphabetically sorted content.
+
+.. image:: a-z.png
+
+
+(7.10) Better display templates for search results from SharePoint
+------------------------------------------------------
+Display templates for search results originating from SharePoint have been improved.
+
+These updates enhance how SharePoint-based content — such as sites, pages, documents, and list items — is presented in search results, providing clearer and more consistent information display.
+
+(7.10) Pick in write mode
+------------------------------------------------------
+Picking content is now supported directly in Write mode for People, Page, and Document rollups.
+
+This allows editors to select specific items while authoring content, improving efficiency and reducing the need to switch between modes.
+
+.. image:: Pick-write-mode.png
+
+
+(7.10) Rollup SharePoint list content 
+------------------------------------------------------
+Omnia now supports rolling up content from SharePoint Lists using KQL queries, specific lists, list views, or selected columns.
+
+This makes it possible to reuse and present structured SharePoint list data within Omnia pages, supporting advanced aggregation and integration scenarios.
+
+.. image:: SP-list-rollup.png
+
+(7.10) Export search statistics
+------------------------------------------------------
+Search statistics can now be exported using a dedicated action button.
+
+Exports can be scoped to specific business profiles and custom time periods, enabling deeper analysis of search usage and behavior outside of Omnia.
+xport of search statistics is also available within Omnia admin Search section.
+
+(7.10) Update only authors
+------------------------------------------------------
+A new editorial role, Update-only author, has been introduced.
+
+Users with this role can update existing pages but cannot create new pages, delete pages, or access advanced configuration options such as automatic page creation, reusable content setup, or Yammer integration. On existing pages, Update-only authors have the same editing permissions as Authors.
+
+.. image:: update-only-author.png
+
+
+(7.10) Target publishing channels to editors
+------------------------------------------------------
+Publishing channels can now be targeted to specific editors.
+
+This helps organizations limit available publishing options based on editorial responsibility, supporting clearer workflows and reduced publishing complexity.
+
+(7.10) Check WCAG compliance when publishing pages
+------------------------------------------------------
+WCAG compliance checks are now available during page preview before publishing.
+
+This supports early identification of accessibility-related issues and helps organizations align published content with WCAG requirements.
+
+.. image:: WCAG-Checker.png
+
+(7.10) Scheduled publishing of Documents
+------------------------------------------------------
+Support has been added for scheduled publishing of documents.
+
+This allows documents to be published at a defined time, aligning document governance with page publishing workflows and supporting planned releases.
+
+(7.10) Support for link and text nodes
+------------------------------------------------------
+Navigation now supports both Link and Label nodes.
+
+Link nodes can point to custom URLs, pages, or documents and can be edited, moved, archived, restored, or deleted. Label nodes allow grouping of navigation items, improving structure and manageability in complex navigation setups.
+
+.. image:: Link-Label-03.png
 
 (7.9) Block Gallery
 ------------------------------------------------------
