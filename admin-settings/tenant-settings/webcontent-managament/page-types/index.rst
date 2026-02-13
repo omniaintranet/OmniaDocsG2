@@ -41,6 +41,6 @@ Note that you must save or discard any changes that has not been saved, for the 
 
 Deleted Tenant page types are placed in the tenant archive:
 
-.. image:: WCM-page-types-archive-new.png
+.. image:: WCM-page-types-archive-711.png
 
 This archive works the same way as the archive for the local page types, see: :doc:`Delete or restore a page type </pages/page-types/archive-restore-page-type/index>`
