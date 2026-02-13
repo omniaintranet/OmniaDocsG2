@@ -35,9 +35,9 @@ Deleting a tenant page type
 ******************************
 You can delete a tenant page type:
 
-.. image:: WCM-page-types-archive-menu-new.png
+.. image:: WCM-page-types-archive-menu-711.png
 
-(Note that you must save or discard any changes that has not been saved, for the DELETE option to be available).
+Note that you must save or discard any changes that has not been saved, for the DELETE option to be available. You can delete a draft as well, but it must have been saved at least once.
 
 Deleted Tenant page types are placed in the tenant archive:
 
