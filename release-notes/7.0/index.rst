@@ -1,6 +1,81 @@
 Release 7
 ========================================
 
+(7.11) Integration to Copilot 
+------------------------------------------------------
+Support has been added for integration with Copilot.
+
+This includes the ability to enable Copilot integration as well as a Copilot plugin generator, supporting extended use of Omnia content and functionality in Copilot-based scenarios.
+
+(7.11) Silent publish
+------------------------------------------------------
+This new setting enables the author to decide if an update of a page should generate a notification in the notification panel or not. And also to variation authors if variations are enabled in the publishing app.
+
+.. image:: publish-notifications-settings.png
+
+The setting is on page collection level, and when the setting is enabled there is an additional publish button to choose from when publishing a page.
+
+.. image:: silent-publish-button.png
+
+Please note that the combination of disabling the setting "Update notification panel on re-publish" and enabling the setting "Enable silent publish" only makes sense if variations are used within the publishing app.
+
+(7.11) Improved querying of people based page properties
+------------------------------------------------------
+Querying of people based on page properties has been updated.
+
+Querying of people in People rollups based on page properties has been enhanced.
+
+It is now possible to match multiple values within a page property (for example, Department = HR + IT), enabling more accurate and flexible people listings.
+
+(7.11) Print pages
+------------------------------------------------------
+Printing of pages has been significantly improved.
+
+When printing, headers (including mega menu), notifications, and footers are automatically hidden. A dedicated print display breakpoint ensures content flows cleanly to the left and empty sections are removed.
+
+.. image:: display-breakpoint-settings-print.png
+
+In addition, individual blocks can be configured to be visible or hidden in print, giving editors greater control over the printed output.
+The print action button make it possible to print a page with an accordion unfolded.
+
+.. image:: Print-pages.png
+
+(7.11) Improved document creation
+------------------------------------------------------
+The document creation dialog has been significantly enhanced by focusing on what is relevant in the context it's used.
+
+Editors can now select one or multiple document types, templates, and target locations when creating documents using a action button. 
+Document creation in context of a SharePoint or Controlled library always default to create documents within that library simplifying the creation process.
+
+.. image:: document-creation-controlled-library.png
+
+This provides a clearer and more flexible document creation experience.
+
+(7.11) Reusable sections
+------------------------------------------------------
+Support has been added for reusable sections.
+
+A new “Reusable” section type can be configured and mapped to a data property. Content blocks are maintained centrally on a source page and reused across target pages through property connection.
+
+This ensures consistent content across pages and simplifies maintenance. Certain limitations apply, such as restrictions on moving or copying blocks within reusable sections.
+
+(7.11) Improved lifecycle of archive link and text 
+------------------------------------------------------
+Lifecycle management of navigation link and label nodes has been improved.
+
+It is now easier to archive, restore, move, and manage these nodes over time, supporting better governance and navigation structure maintenance.
+
+(7.11) Restrict Omnia permissions to specific sites
+------------------------------------------------------
+Administrators can now restrict Omnia permissions to specific SharePoint sites with the delegated Sites.Selected permission, strengthening security and governance.
+
+
+(7.11) Semantic search response
+------------------------------------------------------
+The semantic search response has been enhanced with improved formatting, significantly increasing readability. This enables users to quickly review the summary and decide whether to consult one of the references or refine their question.
+
+.. image:: Semantic-search-ui.png
+
 (7.10) Approval flow for deleting pages
 ------------------------------------------------------
 A new approval flow has been introduced for page deletion, giving organizations better control and traceability when content is removed.
