@@ -5,7 +5,7 @@ Tenant page types can be created to be used in any publishing app in the tenant.
 
 The tenant page types are handled from here:
 
-.. image:: WCM-page-types-v6-new.png
+.. image:: WCM-page-types-v711.png
 
 You create and edit the tenant page types exactly the same way as the local page types, as described here: :doc:`Page types </pages/page-types/index>`
 
