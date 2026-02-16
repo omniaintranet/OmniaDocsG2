@@ -40,7 +40,7 @@ Use the settings this way:
 + **Viva Engage integration**: (A description will be added soon).
 + **Taxonomy connection**: When this option is activated, it's possible to connect the page collection to a taxonomy. Whenever a page is created in the page collection, a term will be created in the connected taxonomy and the page will automatically be tagged with the newly created term. This can, for example, be useful in different rollups. For more information, see below.
 + **Approval**: (Called Publishing approval in Omnia 7.10 and later). If approval should be needed for publication of pages (new pages and updates), enable this. If not enabled, editors can publish directly. See more info about approval settings below.
-+ **Deletion approval**: Available in Omnia 7.10 and later. Works the same and has almost the same settings as publishing approval (see below), but for page deletion. An important difference is that multistep approval is not availble for deletion approval for a page. For more information, see below.
++ **Deletion approval**: Available in Omnia 7.10 and later. Works the same and has almost the same settings as publishing approval, but for page deletion. An important difference is that multistep approval is not availble for deletion approval for a page. For more information, see below.
 + **Activities**: For a community, activity tracking can be activated. See the heading *Settings for activity points* on this page, for more information: :doc:`Setting up a community </using-communities/settings/index>` 
 + **Notifications**: This setting defines when a notification that a page is new should be shown for users, for example in the Notification panel. Normally it's only when the page is created, not when it's updated. If this option is activated the page is considered to be new every time it's updated and a new version is published. Therefore it's probably more relevant for pages in communities than for publishing pages.
 + **Send as Email**: Select "Enable send page as Email" if pages in the page collection should be available to send through Email. One example of when this is needed is in a Newsletter inplementation. If this option is activated, authors can decide to send the new or edited page by email, or decide not to, each time the page is published.
@@ -130,7 +130,7 @@ When approval is activated, you can select who can approve the creation of a pag
 + **Anyone**: The author can select any colleague as approver when a page is published. See below for more information.
 + **Limited list of people**: You define the approvers using the field shown (see below). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
 + **Based on person property**: You select property from the list shown (see below).
-+ **Term driven**: Authors can select approvers from a defined list only. Which approvers will be available depends on the properties selected for the documents. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
++ **Term driven**: Authors can select approvers from a defined list only. Available approvers depend on the properties selected for the pages. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
 
 When "Anyone" is selected the following is shown when an editor sends the page for approval:
 
@@ -201,11 +201,11 @@ When deletion approval is activated, the following settings are available:
 
 .. image:: page-collection-deletion-approval-settings.png
 
-+ **Apply to authors only**: If you select this, editors never need approval, they can always publish directly. When an author publishes, approval is needed.
-+ **Anyone**: The author can select any colleague as approver when a page is published. See below for more information.
-+ **Limited list of people**: You define the approvers using the field shown (see below). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
-+ **Based on person property**: You select property from the list shown (see below).
-+ **Term driven**: Authors can select approvers from a defined list only. Which approvers will be available depends on the properties selected for the documents. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
++ **Apply to authors only**: If you select this, editors never need approval, they can always delete a page directly. When an author deletes, approval is needed.
++ **Anyone**: The author can select any colleague as approver when a page is deleted. See above for more information.
++ **Limited list of people**: You define the approvers using the field shown (see above). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
++ **Based on person property**: You select property from the list shown (see above).
++ **Term driven**: Authors can select approvers from a defined list only. Available approvers depend on the properties selected for the pages. You select the term(s) here. When you have selected one or more terms you can use the cogwheel to set approvers for individual terms in the set.
 
 Note that Multi-step approval is not available for deletion approval. Other than that, settings work the same as for publishing approval, see above.
 
@@ -253,6 +253,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
