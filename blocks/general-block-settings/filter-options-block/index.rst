@@ -70,9 +70,11 @@ Here's an example:
 + **Fixed filter width**: The filter width is per default dynamic. Set a value here to make the filter width fixed.
 + **Delete**: Click to delete the filter.
 
-A new filter in Omnia 7.10
+A-Z filter
 -----------------------------
-In Omnia 7.10, a new filter called A-Z filtering can be available (which really can filter on all available letters for a language, not just A-Z). To be available, queryable properties must be set up for A-Z filtering, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+In Omnia 7.10 and later, a filter called A-Z filtering can be available (which really can filter on all available letters for a language, not just A-Z). To be available, queryable properties must be set up for A-Z filtering, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+
+Here's an exampla of 
 
 Style options
 ***************
@@ -85,6 +87,7 @@ the following options are available for filter style:
 + Default: sets a color contrasting the background for good visibility.
 + Enterprise Glossary: will use these settings.
 + Custom: you can set custom colors for the chip colors for this block specifically. 
+
 
 
 
