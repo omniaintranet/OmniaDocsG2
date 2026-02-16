@@ -1,12 +1,6 @@
 Release 7
 ========================================
 
-(7.11) Integration to Copilot 
-------------------------------------------------------
-Support has been added for integration with Copilot.
-
-This includes the ability to enable Copilot integration as well as a Copilot plugin generator, supporting extended use of Omnia content and functionality in Copilot-based scenarios.
-
 (7.11) Silent publish
 ------------------------------------------------------
 This new setting enables the author to decide if an update of a page should generate a notification in the notification panel or not. And also to variation authors if variations are enabled in the publishing app.
