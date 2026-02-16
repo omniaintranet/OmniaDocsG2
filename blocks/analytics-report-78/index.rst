@@ -1,7 +1,5 @@
-Analytics report in Omnia 7.8 and later
-==========================================
-
-This page describes the settings in Omnia 7.8 and later. See the following page for Omnia 7.7: :doc:`Analytics report </blocks/analytics-table-block/index>`
+Analytics report
+=================
 
 To be able to view the contents of the block, users need the permission "Analytics report viewers" (settings for the business profile).
 
@@ -102,4 +100,5 @@ Not much to it here. You can set some padding if needed.
 Layout and Write
 ******************
 The Write tab is not used here. The Layout tab contains general settings for blocks. For more information see: :doc:`General block settings </blocks/general-block-settings/index>`
+
 
