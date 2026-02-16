@@ -23,7 +23,9 @@ Decide to use the query builder or to just pick a single list. Here's the option
 
 .. image:: list-rollup-query-query-new.png
 
-**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
+Note that you can type the script directly in the field, if you know how. You can use all options in the Keyword Query Language (KQL). See this Microsoft page for reference: https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
+
+In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
 
 If you decide to choose only one list, add the URL to the list here:
 
@@ -66,6 +68,7 @@ When Export to Excel is active, you can set sorting for the rows, using "Sort by
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) for the new columns.
 
 .. image:: list-rollup-export2.png
+
 
 
 
