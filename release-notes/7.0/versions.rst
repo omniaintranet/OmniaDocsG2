@@ -2,7 +2,7 @@
 ========================================
 (Omnia 7.9.29 / Workplace 7.9.29 / WCM 7.9.29 / MS 7.9.29 / Analytics 7.9.10 / Feed 7.9.9)
 
-- SharePoint CSP enforcement compatibility; Omnia has been updated to be compliant with the upcoming CSP enforcement rules, ensure to update your SPFx package. Follow the instructions in Omnia Admin, System > Microsoft 365 > SPFx instruction. Additional information is sent separately. 
+- SharePoint CSP enforcement compatibility; Omnia has been updated to be compliant with the upcoming CSP enforcement rules, ensure to update your SPFx package. Follow the instructions in Omnia Admin, System > Microsoft 365 > SPFx instruction. Additional information is sent separately. **Note:** To manage apps (as a SharePoint administrator), you need to add yourself as a site admin to the Apps site. Go to the Active sites page, select the Apps site, and then select Permissions > Manage admins.
 - Improved validation when deleting Business Profiles.
 - Ensured encoding for certain special characters in filenames when opening files from search (#53445).
 - Fixed an issue that caused sorting to be unavailable on datetime columns in the page rollup (#53609).
