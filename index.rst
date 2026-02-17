@@ -22,8 +22,9 @@ Topics
    user-options/index
    general-assets/roles-permissions/index
    setup/index
-   switch-site-selected/index
    accessability/index
+   switch-site-selected/index
+   about-SharePoint-CSP-enforcement-compatibility/index
    cookies-consent-information/index
    release-notes/index
    roadmap/index
