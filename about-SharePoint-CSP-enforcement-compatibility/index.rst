@@ -14,7 +14,9 @@ Actions needed
 
 Need more time?
 ******************
-You can post-pone the enforcement of the stricter script-loading rules until June 1 2026. To do so, run the following PowerShell command as a SharePoint Administrator: Set-SPOTenant -DelayContentSecurityPolicyEnforcement $true
+You can post-pone the enforcement of the stricter script-loading rules until June 1 2026. To do so, run the following PowerShell command as a SharePoint Administrator: 
+
+Set-SPOTenant -DelayContentSecurityPolicyEnforcement $true
  
 Need assistance?
 *******************
