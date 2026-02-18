@@ -37,8 +37,8 @@ Here's how to create a new channel:
 + **Administrator**: One or more administrators of the channel must be added. Administrators approve or reject publication to the channel. An administrator also has Publisher permissions to the channel.
 + **Publisher**: One or more publishers can be added. This is not mandatory. The colleagues you add here can always publish to the channel without approval.
 + **Force channel description to target group**: Targeting for the channel can be used to add a mandatory subscription to the channel for colleagues or groups. If you want to do that, select this option.
-+ **Target channel to specific editors**: Available in Omnia 7.10 and later. Now you can target a channel to specific editors if needed.
-+ **Add targeting filter**: Shown when any of the the options above is selected. Targeting settings are done the same way as in other places in Omnia, but the result is different. For the colleagues or groups targeted, a mandatory subscription to the channel is added. For more information about how to set up targeting, see this page : :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
++ **Target channel to specific editors**: Available in Omnia 7.10 and later. If you use this option for a channel, only the editors targeeted can see and use the channel.
++ **Add targeting filter**: Shown when any of the the options above is selected. Targeting settings are done the same way as in other places in Omnia, but the result may be different, see above. For more information about how to set up targeting, see this page : :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 3. Save when you're done.
 
@@ -76,5 +76,6 @@ How to publish a page to a channel is described at the bottom of this page: :doc
 A list of pages belonging to one or more channels can be created using the Page rollup block: :doc:`The Page rollup block </blocks/page-rollup/index>`
 
 Users can subscribe to channels, as described on this page: :doc:`My subscriptions </user-options/my-subscriptions/index>`
+
 
 
