@@ -14,7 +14,7 @@ To create a new search category, click the plus and use the settings available f
 .. image:: search-config-categories-78.png
 
 + **Title**: Add a title for the search category.
-+ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. Semantic search is available in Omnia 7.8 and later, see more info below. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. 
++ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. 
 + **Search result source**: Select Source from the list.
 + **Search query**: Add the search query here. Tokens can be used for a dynamic search query, see this page: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 + **Enable query rules**: Query rules can be set up in SharePoint. If these query rules should be used for this category, select this option.
@@ -42,7 +42,7 @@ See above for descriptions if the rest of the settings.
 
 A note on semantic search
 ----------------------------
-Semantic search is available in Omnia 7.8 and later. The tenant feature "Semantic search" must be active for this functionality to be available.
+The tenant feature "Semantic search" must be active for this functionality to be available.
 
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. 
 
@@ -55,8 +55,4 @@ Search templates are created by developers and are simply listed here. A search 
 In this example there's a search template that is named default, but any other template can be selected.
 
 .. image:: search-templates-78.png
-
-Image/Icon sizes
-******************
-(A description will be added soon).
 
