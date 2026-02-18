@@ -182,6 +182,9 @@ As it suggests, this view is suitable for use in a newsletter set up. The specia
 + **Content**: Select the property that contains the page content for the item to display. 
 + **Page content character limit**: If the number of characters displayed for Page content should be limited, add the number here. The content is simply just cut after that. 
 + **Page summary character limit**: If the number of characters displayed for Page summary should be limited, add the number here. The summary is simply just cut after that. 
++ **Go to page text**: For a speceific text on the "Got ot page" button, add it here.
++ **Go to page button color**: Available in Omnia 7.11 and later. You can set the button colour specifically for this button.
++ **Go to page text color**: Available in Omnia 7.11 and later. You can set the button text colour specifically for this button.
 
 For general settings, see above.
 
