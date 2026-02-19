@@ -74,7 +74,7 @@ If it’s rejected, there’s some changes the approver would like you to do. Yo
 
 Scheduled publishing for controlled documents
 **********************************************
-In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, meaning it may not be available for all document types.
+In Omnia 7.10 and later, scheduled publishing can be used for controlled documents. It's set up for each document type, meaning it may not be available for all documents.
 
 If scheduled publishing is allowed, the publishing settings contain this field (property):
 
