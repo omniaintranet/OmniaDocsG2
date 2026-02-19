@@ -157,7 +157,7 @@ If you selected that publishing approval is needed for this document type, you m
 
 Options for scheduled publishing
 ----------------------------------
-When you have selected to allow scheduled publishing för this document type, choose the property to base that on and set the approval reminder period.
+When you have chosen to allow scheduled publishing for this document type, select the property to base that on and set the approval reminder period.
 
 .. image:: doc-scheduled-v10.png
 
