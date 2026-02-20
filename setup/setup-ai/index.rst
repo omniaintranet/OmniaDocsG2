@@ -98,7 +98,7 @@ Text completion and content analysis
 Dall-E for AI generated images
 -------------------------------------
 
-[To be done]
+[To be done]text-embedding-3-small
 
 Semantic search
 -------------------------------------
@@ -107,7 +107,7 @@ Semantic search
 
 **Step 2**: Navigate to 'Deployments' and create a new deployment.
 
-**Step 3**: Select an embeddings model for vectorization. As of today, we recommend the model 'text-embedding-ada-002'.
+**Step 3**: Select an embeddings model for vectorization, for example text-embedding-ada-002. text-embedding-3-small is also supported.
 
 .. image:: 18-create-embeddings-model.png
 
