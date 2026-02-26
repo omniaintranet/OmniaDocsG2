@@ -25,14 +25,13 @@ You can really work the way you want, you don't need a section to add a block, f
 
 Just to be clear, you can add such a section directly to the page as well, if needed.
 
-The folllwing are the type of sections you can use. All sections can be added to the page or to another section.
+The following are the type of sections you can use. All sections can be added to the page or to another section.
 
 + **Section with columns**: Used primarily for the base layout, to add other sections or blocks for the content. 
 + **Section with tabs**: Useful for many types of layout where content are added to different tabs.
 + **Accordion section**: Useful for a layout or content organized with labels or headings that can be expanded to display the full content.
 + **Stepper section**: Useful when organizing information in steps. It's also used with the forms functionality. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
-+ **Reusable section**: Available in Omnia 7.11 and later. This type of section can be a part of reusable content on a page. For this to work, you must select a property to store the data from the section. That option is shown after you have selected "Reusable". Note that there are some limitations regarding the content that can be reused, see the bottom of the page.
-
++ **Reusable section**: Available in Omnia 7.11 and later. This type of section can be a part of reusable content on a page. 
 Here's an example where a stepper section is used:
 
 .. image:: working-with-stepper-example.png
@@ -153,12 +152,4 @@ The following options are available here:
 + **Lock can be edited**: If this option is selected, editors (Design permission) can unlock or lock the settings for the block - and if unlocked, can edit the block's settings.
 
 For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
-
-More about reusable sections
-*********************************
-When reusing content from sections there are some limitations you should be aware of:
-
-+ A Reusable section can't be moved or copied.
-+ You can't move a block within the section if the sections has been used for reusable content at least once.
-+ A Reusable section can't contain a block that uses a property for some or all content. 
 
