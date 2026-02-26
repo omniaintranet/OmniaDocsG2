@@ -159,4 +159,6 @@ More about reusable sections
 When reusing content from sections there are some limitations you should be aware of:
 
 + A Reusable section can't be moved or copied.
++ You can't move a block within the section if the sections has been used for reusable content at least once.
 + A Reusable section can't contain a block that uses a property for some or all content. 
+
