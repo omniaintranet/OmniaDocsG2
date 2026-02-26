@@ -1,7 +1,7 @@
 Reusable content
 ===================
 
-Content from one Omnia page can be reused on another Omnia page. It's true for variations as well. To be more precise, it is content from defined properties that are being reused, so applicable blocks must be present on the target page, for information to show up. 
+Content from one Omnia page can be reused on another Omnia page. It's true for variations as well. To be more precise, it's content from defined properties that are being reused, so applicable blocks must be present on the target page, for information to show up. In Omnia 7.11 and later content from reuasable sections can be used as well, with some limitations, see the bottom of the page.
 
 A property that are not shown for users can be reused as well, for example Review date.
 
@@ -66,3 +66,17 @@ If the source page is deleted, nothing happens to the pages with reused content.
 Automatic page creation
 ****************************
 Content can also be reused in automatic page creation. For more information, see: :doc:`Automatic page creation </pages/automatic-page-creation/index>`
+
+More about reusable sections
+*********************************
+You can't reuse content from any section. It's a section type, available in Omnia 7.11 and later. "Reusable" must be selected as type for the section for this to work.
+
+When reusing content from sections, there are some limitations you should be aware of:
+
++ A Reusable section can't be moved or copied.
++ You can't move a block within the section if the sections has been used for reusable content at least once.
++ A Reusable section can't contain a block that uses a property for some or all content. 
+
+And it's the same as for blocks - an applicable section must be present on the target page, for information to show up.
+
+For more information, see this page: :doc:`General block settings </blocks/general-block-settings/index>`
