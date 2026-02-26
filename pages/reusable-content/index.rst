@@ -79,4 +79,4 @@ When reusing content from sections, there are some limitations you should be awa
 
 And it's the same as for blocks - an applicable section must be present on the target page, for information to show up.
 
-For more information, see this page: :doc:`General block settings </blocks/general-block-settings/index>`
+For more information, see this page: :doc:`Settings for sections </pages/page-types/section-settings/index>`
