@@ -31,7 +31,7 @@ The folllwing are the type of sections you can use. All sections can be added to
 + **Section with tabs**: Useful for many types of layout where content are added to different tabs.
 + **Accordion section**: Useful for a layout or content organized with labels or headings that can be expanded to display the full content.
 + **Stepper section**: Useful when organizing information in steps. It's also used with the forms functionality. It is possible to configure the stepper to allow for an author to add new steps in Write mode.
-+ **Reusable section**: This type of section can be a part of reusable content on a page. For this to work, you must select a property to store the data from the section. That optiopn is shown after you have selected "Reusable".
++ **Reusable section**: This type of section can be a part of reusable content on a page. For this to work, you must select a property to store the data from the section. That optiopn is shown after you have selected "Reusable". Note that there are some limitations regarding the content that can be reused, see the bottom of the page.
 
 Here's an example where a stepper section is used:
 
@@ -154,3 +154,9 @@ The following options are available here:
 
 For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
 
+More about reusable sections
+*********************************
+When reusing content from sections there are some limitations you should be aware of:
+
++ A Reusable section can't be moved or copied.
++ A Reusable section can't contain a block that uses a property for some or all content. 
