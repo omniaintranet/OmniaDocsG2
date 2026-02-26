@@ -1,91 +1,99 @@
 Using tokens in Omnia
-=============================================
+=====================
 
-There are a number of tokens in Omnia that can be used for various purposes. This following lists are not to be considered the absolute full lists. Tokens can be added for specific uses. Note that tokens must not be translated.
+Omnia supports tokens in several areas. Tokens are replaced with contextual values at runtime.
 
-Tokens in search query
-***********************
-Tokens can be used in the search category queries. Tokens will be replaced with values in context when the query is executed. This makes it possible to create context dependent queries based on the underlying SharePoint site, app instance or user properties.
+The lists below are examples and are not guaranteed to include every token available in all solutions or modules. Additional tokens can be added for specific scenarios.
 
-Examples of tokens that can be used:
+.. note::
+	Tokens and placeholders should not be translated.
 
-+ {User.Id} - Logged in user's login id (usually email).
-+ {User.Name} - Logged in user's display name.
-+ {User.Email} - Logged in user's email.
-+ {User.Language} - User selected language as ISO language code.
-+ {SPSite.Id} - SharePoint id for the current site.
-+ {SPSite.FullUrl} - Communication URL of the current Omnia page.
-+ {Page.Id} - Id of the SharePoint folder.
-+ {Page.SPPath} - Full URL to the folder where the page is located in Site Pages. Example: (Path:{Page.SPPath}).
-+ {Variation.Segment} - URL segment of the current variation.
-+ {TargetingProperty.InternalName} - TermID of matching property of current user.
-+ {AppInstance.InternalName} - TermID of matching property of current user.
+Tokens in search queries
+************************
+You can use tokens in search category queries. At execution time, each token is replaced with a value from the current context (for example site, app instance, variation, or current user).
 
-Some examples of how the tokens can be used:
+Examples of supported tokens:
 
-To search this site: Path:{SPSite.FullUrl}*
+- ``{User.Id}`` - Logged-in user login ID (usually email).
+- ``{User.Name}`` - Logged-in user display name.
+- ``{User.Email}`` - Logged-in user email.
+- ``{User.Language}`` - User-selected language as ISO language code.
+- ``{SPSite.Id}`` - SharePoint ID for the current site.
+- ``{SPSite.FullUrl}`` - URL of the current Omnia page site.
+- ``{Page.Id}`` - ID of the SharePoint folder.
+- ``{Page.SPPath}`` - Full URL to the folder where the page is located in Site Pages.
+- ``{Variation.Segment}`` - URL segment of the current variation.
+- ``{TargetingProperty.PropertyTitle}`` - Targeting value(s) for the current user based on targeting property title (for example ``{TargetingProperty.Department}``).
+- ``{AppInstance.InternalName}`` - App instance enterprise property value by internal name.
 
-To search PDF:s in my department: FileType:pdf AND RefinableString110:{TargetingProperty.Department}
+Example queries:
 
-To search pages in my language: FileType:aspx AND OmniaVariationSegmentOWSTEXT:{Variation.Segment}
+- Search only this site: ``Path:{SPSite.FullUrl}*``
+- Search PDFs in my department: ``FileType:pdf AND RefinableString110:{TargetingProperty.Department}``
+- Search pages in my language: ``FileType:aspx AND OmniaVariationSegmentOWSTEXT:{Variation.Segment}``
+- Search current app instance property: ``RefinableString120:{AppInstance.YourPropertyInternalName}``
 
 Tokens used with action buttons
-************************************
-Examples of tokens that can be used in text fields when using action buttons:
+********************************
+You can use tokens in text fields for action buttons.
 
-+ AppInstance tokens like {{AppInstance.Title}} etc.
-+ {{Action.Type}}: The type of the button that is clicked.
-+ {{Action.Title}}: The title from the button that is clicked.
+- App instance tokens, for example ``{{AppInstance.Title}}``
+- ``{{Action.Type}}`` - Type of the button that was clicked.
+- ``{{Action.Title}}`` - Title of the button that was clicked.
 
-If possible (WCM dependent), the following placeholders may be used as well:
+If supported by your WCM configuration, the following placeholders may also be available:
 
-+ {{Page.Id}}
-+ {{Page.Title}}
+- ``{{Page.Id}}``
+- ``{{Page.Title}}``
 
-Tokens in document rollup
-***************************
-Examples of tokens that can be used in document rollups:
+In document-based sign-off request scenarios, ``{{Document.Title}}`` is also supported.
 
-+ Document.FullUrl
-+ Document.RelativeUrl
-+ Document.FileName
-+ Document.Title
-+ Document.[InternalName]: Any enterprise property internal name. (Note! Empty value if the data is not available in the result set).
+Tokens in document rollups
+**************************
+Examples of tokens for document rollups:
 
-Tokens in e-mails
-*******************
-For tokens used in e-mails within Omnia, se this page: :doc:`Tokens in Omnia e-mails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
+- ``{{Document.FullUrl}}``
+- ``{{Document.RelativeUrl}}``
+- ``{{Document.FileName}}``
+- ``{{Document.Title}}``
+- ``{{Document.[InternalName]}}`` - Any enterprise property internal name (empty if the property is not included in the result set).
 
-Text field tokens and tokens for Matomo event trackning
-********************************************************
-These tokens can be used in text fields in WCM and can also be used for Matomo event tracking. Here are some examples:
+Tokens in emails
+****************
+For email tokens in Omnia, see: :doc:`Tokens in Omnia e-mails </admin-settings/tenant-settings/system/tokens-in-emails/index>`
 
-+ {{Appinstance.Title}}
-+ {{Appinstance.Description}}
-+ {{Appinstance.Url}}
-+ {{Page.Id}}
-+ {{Page.Title}}
-+ {{PublishingApp.PageCollections["UrlSegment"]}}
+Text field tokens and tokens for Matomo event tracking
+*******************************************************
+These tokens can be used in WCM text fields and for Matomo event tracking. Examples:
+
+- ``{{AppInstance.Id}}``
+- ``{{AppInstance.Title}}``
+- ``{{AppInstance.Description}}``
+- ``{{AppInstance.Url}}``
+- ``{{User.Username}}``
+- ``{{Page.Id}}``
+- ``{{Page.Title}}``
+- ``{{PublishingApp.PageCollections["UrlSegment"]}}``
 
 Using placeholders in process management
-*****************************************
-Placeholders are a special kind of tokens. They are properties added between double brackets. When you print, the placeholders are replaced by by actual data, for example the title for the process or a date.
+****************************************
+Placeholders are a special kind of token. They are properties wrapped in double brackets. When you print, placeholders are replaced with actual values, such as process title or date.
 
-You can use these placeholders in the cover page, the header or the footer. Short information about them is available through the i icon. Here are som ex<amples:
+You can use these placeholders in the cover page, header, or footer. Short descriptions are available from the info icon in the UI.
 
-+ [[OPMProcessTitle]]	- adds the titel of the process printed.
-+ [[OPMEdition]] - adds the edition number of the process printed.
-+ [[OPMPublished]] - adds the date for when the edition printed was published.
-+ [[Comment]]	 - if the publisher of the process added any comments, they can be displayed using this placeholder.
-+ [[OPMProcessIdNumber]] - adds the id number for the process.
-+ [[OPMApprovedBy]]	- adds the name of the approver (if any) when the process was published.
-+ [[OPMProcessType]] - adds the name of the process type used for this process.
-+ [[OPMRevision]]	- adds the revision number for the process.
-+ [[EnterpriseInternalName]] - displays the internal name for the process.
+- ``[[OPMProcessTitle]]`` - Adds the title of the printed process.
+- ``[[OPMEdition]]`` - Adds the edition number of the printed process.
+- ``[[OPMPublished]]`` - Adds the publication date of the printed edition.
+- ``[[Comment]]`` - Adds publisher comments (if any).
+- ``[[OPMProcessIdNumber]]`` - Adds the process ID number.
+- ``[[OPMApprovedBy]]`` - Adds the approver name (if any) when published.
+- ``[[OPMProcessType]]`` - Adds the process type name.
+- ``[[OPMRevision]]`` - Adds the process revision number.
+- ``[[EnterpriseInternalName]]`` - Adds the internal enterprise name for the process.
 
 Using placeholders in document management
-******************************************
-For tokens (placeholders) that can be used in document management, see this page: :doc:`Creating a document template with place holders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
+*****************************************
+For document management placeholders, see: :doc:`Creating a document template with placeholders </admin-settings/tenant-settings/document-management/document-template-with-placeholders/index>`
 
 
 
