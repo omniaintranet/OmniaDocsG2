@@ -25,6 +25,7 @@ Topics
    accessability/index
    switch-site-selected/index
    about-SharePoint-CSP-enforcement-compatibility/index
+   SharePoint-Server-2019-Testing-and-Support-Policy-Update/index
    cookies-consent-information/index
    release-notes/index
    roadmap/index
