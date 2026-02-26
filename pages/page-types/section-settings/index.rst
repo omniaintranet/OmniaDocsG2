@@ -7,7 +7,7 @@ The following settings are available when working with sections:
 
 General
 **********
-What you can set under General depends on the section type selected; Column, Tab, Accordion and Stepper.
+What you can set under General depends on the section type selected; Column, Tab, Accordion, Stepper and Reusable.
 
 General settings for a section with columns
 ------------------------------------------------
