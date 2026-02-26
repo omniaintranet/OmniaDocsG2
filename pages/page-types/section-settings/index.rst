@@ -92,7 +92,7 @@ General settings for a reusable section
 -----------------------------------------
 When you have selected "Reusable", available in Omnia 7.11 and later, you must select a property for storing the content:
 
-.. image:: reusale-section-settings.png
+.. image:: reusable-section-settings.png
 
 When reusing content from sections, there are some limitations you should be aware of:
 
