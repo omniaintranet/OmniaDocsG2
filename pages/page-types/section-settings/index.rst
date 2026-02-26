@@ -88,6 +88,18 @@ When editing steps, you can add or edit a title, and set a custom anchor name, i
 
 For more information on custom anchor names, see above.
 
+General settings for a reusable section
+-----------------------------------------
+When you have selected "Reusable", available in Omnia 7.11 and later, you must select a property for storing the content:
+
+.. image:: reusale-section-settings.png
+
+When reusing content from sections, there are some limitations you should be aware of:
+
++ A Reusable section can't be moved or copied.
++ You can't move a block within the section if the sections has been used for reusable content at least once.
++ A Reusable section can't contain a block that uses a property for some or all content. 
+
 Spacing
 ***********
 Here you can set the following:
