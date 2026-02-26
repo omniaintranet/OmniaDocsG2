@@ -71,12 +71,9 @@ More about reusable sections
 *********************************
 You can't reuse content from any section. It's a section type, available in Omnia 7.11 and later. "Reusable" must be selected as type for the section for this to work.
 
-When reusing content from sections, there are some limitations you should be aware of:
-
-+ A Reusable section can't be moved or copied.
-+ You can't move a block within the section if the sections has been used for reusable content at least once.
-+ A Reusable section can't contain a block that uses a property for some or all content. 
+When reusing content from sections, there are some limitations you should be aware of. See the link to the settings page below: 
 
 And it's the same as for blocks - an applicable section must be present on the target page, for information to show up.
 
 For more information, see this page: :doc:`Settings for sections </pages/page-types/section-settings/index>`
+
