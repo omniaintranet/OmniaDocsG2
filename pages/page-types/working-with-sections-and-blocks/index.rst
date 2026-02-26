@@ -151,5 +151,3 @@ The following options are available here:
 + **Locked by default**: If this option is selected, and not the following, it works as before; settings for the block can not be changed but content can be edited using Write mode. If this option is NOT selected and the next is, the block's settings are simply not locked. Design permission is still needed to be able to change settings.
 + **Lock can be edited**: If this option is selected, editors (Design permission) can unlock or lock the settings for the block - and if unlocked, can edit the block's settings.
 
-For information on the settings: :doc:`Section settings </pages/page-types/section-settings/index>`
-
