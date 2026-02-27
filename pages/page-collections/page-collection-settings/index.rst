@@ -42,7 +42,9 @@ Use the settings this way:
 + **Approval**: (Called Publishing approval in Omnia 7.10 and later). If approval should be needed for publication of pages (new pages and updates), enable this. If not enabled, editors can publish directly. See more info about approval settings below.
 + **Deletion approval**: Available in Omnia 7.10 and later. Works the same and has almost the same settings as publishing approval, but for page deletion. An important difference is that multistep approval is not availble for deletion approval for a page. For more information, see below.
 + **Activities**: For a community, activity tracking can be activated. See the heading *Settings for activity points* on this page, for more information: :doc:`Setting up a community </using-communities/settings/index>` 
-+ **Notifications**: This setting defines when a notification that a page is new should be shown for users, for example in the Notification panel. Normally it's only when the page is created, not when it's updated. If this option is activated the page is considered to be new every time it's updated and a new version is published. Therefore it's probably more relevant for pages in communities than for publishing pages.
++ **Notifications**: (Available in Omnia versions before 7.11). This setting defines when a notification that a page is new should be shown for users, for example in the Notification panel. Default setting (this optin is not selected), it's only when the page is created, not when it's updated. If this option is activated the page is considered to be new every time it's updated and a new version is published. 
++ **Update notification panel on republish**: Renamed option in 7.11 and later. Other than that, the same as Notifications above. 
++ **Enable silent publish**: Select this option if it should be possible to publish small changes to a page without any notifications created, not even for variations. When this option is active, an additonal button for publishing is available, for authors to use when they see fit. If publishing approval is activated, publishing still has to be approved. For more information, see below.
 + **Send as Email**: Select "Enable send page as Email" if pages in the page collection should be available to send through Email. One example of when this is needed is in a Newsletter inplementation. If this option is activated, authors can decide to send the new or edited page by email, or decide not to, each time the page is published.
 + **Scheduling**: If scheduling should be available in this page collection, select this option and select the property to be used. The author can then set a scheduled start date and time, using the PROPERTIES tab for the page. Note that scheduled publishing never is mandatory, an author can always choose to publish without using scheduling. 
 + **Break permission inheritance by default**: Select this option if inheritance should be broken when a new page is created within the page collection. This could, for example, be useful for communities. When this option is active, the colleague creating the page will be the page owner, meaning that he or she has full control over who can edit. The new option "Invite co-authors" can then be used to easily add authors for the page, see below.
@@ -209,6 +211,14 @@ When deletion approval is activated, the following settings are available:
 
 Note that Multi-step approval is not available for deletion approval. Other than that, settings work the same as for publishing approval, see above.
 
+Enable silent publish
+-----------------------
+When "Enable silent publish" is selected, an additional publishing button is available for authors, for example:
+
+.. image:: silent-publish-button.png
+
+**Note!** Silent publishing is available when the page is updated, not when it's published the first time.
+
 Allow invitation of co-authors
 ------------------------------------
 If "Allow invitation of co-authors" is selected, an author can use this menu option to invite one or more co-authors:
@@ -253,6 +263,7 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
+
 
 
 
