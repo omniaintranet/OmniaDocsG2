@@ -3,7 +3,7 @@ Enterprise properties
 
 Here you add ALL properties that should be used within the tenant. The list displays all existing properties organized after category, for example:
 
-.. image:: enterprise-properties-list-v7.png
+.. image:: enterprise-properties-list-v711.png
 
 To find a property for editing, you can either search (note the search field at the top), or browse by category.
 
@@ -11,7 +11,7 @@ To find a property for editing, you can either search (note the search field at 
 
 Open a category to see the list of properties. Here's an example:
 
-.. image:: enterprise-properties-list-example-v7.png
+.. image:: enterprise-properties-list-example-v711.png
 
 Click the pen to edit a property. See below for editable settings. If it's possible to delete a property (meaning move it to the Property recycle bin) a dust bin is displayed.
 
@@ -19,13 +19,9 @@ Click the pen to edit a property. See below for editable settings. If it's possi
 
 Adding a property
 *********************
-To add a property, click the plus.
+To add a property, click the plus and use the following settings:
 
-.. image:: enterprise-properties-click-plus-v7.png
-
-Use the following settings:
-
-.. image:: tenant-properties-settings-v7.png
+.. image:: tenant-properties-settings-v711.png
 
 + **Title**: Add a title (name) for the property. Default language is mandatory. Add titles in other tenant languages as needed.
 + **Internal name**: An internal name can, or should in some instances, be used instead of the title, for example as a place holder. The first character of an internal name can't be a number, and the name can't contain spaces. Note that the internal name can not be edited once the prroperty is created.
