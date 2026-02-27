@@ -46,6 +46,14 @@ If approval has been activated you must instead send for approval and the button
 
 Fore more information on page approval, see: :doc:`Approve pages </pages/page-approval/index>`
 
+Another option that can be available in Omnia 7.11 and later, if settings allow it, is silent publish. It can be used to publish small updates to a page without any notifications being created, not even for variations. Silent publishing is never available when a page is published the first time, only for updates. All other settings for page publishing apply. If approval is activated, it's needed with silent publishing as well, for example.
+
+If silent publishing is activated, a new button is available:
+
+.. image:: silent-publish-button.png
+
+It's up to you decide when silent publish can be used, instead of the normal publish option. Don't forget, no notifications for variations updates are created when silent publishing is used.
+
 Scheduled publishing
 *********************
 If scheduled publishing has been activated for the page collection you can choose to set publishing at a later date, and, if the property allow it, time.
