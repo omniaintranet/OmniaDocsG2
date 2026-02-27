@@ -35,12 +35,8 @@ Some, but not all properties, can be selected as SharePoint Searchable and/or Mi
 .. image:: tenant-properties-settings-more-v7.png
 
 Editing a property
-**********************
-When editing a property, a few more settings can be available under SharePoint Searchable. What is available for editing differs from property to property. Here's an example:
+************************
+When you edit a property, you can't change the internal name or the type, but you can change settings for SharePoint searchable and Microsoft searchable if needed.
 
-.. image:: tenant-properties-settings-edit-v7.png
-
-**Note!** If you change settings for SharePoint Searchable it's only valid for new pages created from here on. If you want this setting to be active for all existing pages as well, you must execute Reindex for all publishing apps using this property, in the publishing app settings:
-
-.. image:: tenant-properties-settings-sync-v7-frame.png
+**Note!** If you change settings for SharePoint Searchable it's only valid for new pages created from here on. If you want this setting to be active for all existing pages as well, you must execute Reindex for all publishing apps using this property, in the publishing app settings.
 
