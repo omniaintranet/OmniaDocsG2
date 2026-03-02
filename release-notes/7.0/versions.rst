@@ -1,3 +1,13 @@
+7.9.30
+========================================
+(Omnia 7.9.30 / Workplace 7.9.30 / WCM 7.9.30 / MS 7.9.30 / Analytics 7.9.10 / Feed 7.9.9)
+
+- Fixed an issue where fields of a document in the document rollup would not show up in the details form (#49128).
+- Deleted users no longer make posts in the post block disappear (#52842).
+- Updated client-side validation of teamwork to align with Microsoft changes (#53427).
+- Added draft document deletions to the audit log.
+- Review date auto provisioned enterprise property can now be used in reusable content (#52592).
+
 7.9.29
 ========================================
 (Omnia 7.9.29 / Workplace 7.9.29 / WCM 7.9.29 / MS 7.9.29 / Analytics 7.9.10 / Feed 7.9.9)
