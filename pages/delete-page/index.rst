@@ -24,11 +24,11 @@ Here's how to delete (archive) a page:
 3. If there are changes that has not been saved, save or discard them, or the DELETE button will not be available.
 4. Click DELETE.
 
-.. image:: archive-menu2-new3.png
+.. image:: archive-711.png
 
 As an alternative, you can use DELETE in the menu in the navigation tree. This option is available all the time (even when you are editing the page).
 
-.. image:: delete-page-menu-new2.png
+.. image:: delete-page-menu-711.png
 
 When you select delete of a main page with sub pages, something like the following is shown:
 
