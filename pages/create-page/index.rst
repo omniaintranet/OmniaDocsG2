@@ -6,55 +6,49 @@ When you need to create a publishing page, do the following:
 1. Go to a page, for example the page where you are going to create the new page as a sub page.
 2. Open the editor.
 
-.. image:: select-edit-new2.png
+.. image:: select-edit-711.png
 
-The navigation structure with the existing pages are now opened to the left:
+Open the navigation at the top left.
 
-.. image:: page-structure-new2.png
-
-When already editing a page, you can open the navigation at the top left.
-
-.. image:: open-navigation-new2.png
+.. image:: open-navigation-711.png
 
 When the navigation is open, create a new page this way:
 
 3. Open the menu for the page where the new page will be a sub page:
 
-.. image:: new-page-open-menu-new2.png
+.. image:: new-page-open-menu-711.png
 
 4. Select "Create page".
 
-.. image:: new-page-create-page-new2.png
+.. image:: new-page-create-page-711.png
 
-5. Add a title for the page and select page type if availble (if there's only type available, then the page type is selected automatically and the field is simply not shown, as seen in the next image):
+5. Select page type if availble (if there's only type available, then the page type is selected automatically and the field is simply not shown), and add a title for the page.
 
-.. image:: new-page-create-page-title.png
+.. image:: new-page-create-page-title-711.png
 
 The URL is added automatically, based on the page name, but can be edited if needed.
 
 6. Click CREATE.
 
-.. image:: new-page-create-page-title-create.png
-
 What you can do from here depends on your permissions. The default mode is Write mode. If you are able to use Design mode, see below.
 
 In Write mode you can now add content to some of the blocks added by the page type, and besides that a wizard is started to help you with the necessary steps when creating a new page:
 
-.. image:: new-page-example-blocks.png
+.. image:: new-page-example-blocks-711.png
 
-If you add content to the page now or if you want to do that later, by editing the created page, it's up to you. The options for content are the same later. In this example there are four blocks where you can add/edit content:
+If you add content to the page now or if you want to do that later, by editing the created page, it's up to you. The options for content are the same later. In this example there are three blocks where you can add/edit content:
 
-.. image:: new-page-example-blocks-write-mode.png
+.. image:: new-page-example-blocks-write-mode-711.png
 
 See below for useful links to descriptions on how to add/edit content.
 
 7. Click "Next" for the next Wizard step.
 
-.. image:: new-page-example-next-new.png
+.. image:: new-page-example-next-711.png
 
 8. Add property information as needed:
 
-.. image:: new-page-example-properties.png
+.. image:: new-page-example-properties-711.png
 
 Available properties and if they are mandatory or not, are set up in settings for the page type.
 
