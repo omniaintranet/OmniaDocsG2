@@ -64,15 +64,17 @@ Here's an example from another page collection, with four channels available. Th
 
 .. image:: publish-to-channel.png
 
+An accessability check can also be performed (It's the icon in the down right corner in the image below). For more information, see: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
+
 When the last wizard step has been edited, something like the following is shown. What you will do next is really up to you, but to save a draft at this point is a good idea.
 
-.. image:: new-page-finished-new2.png
+.. image:: new-page-finished-711.png
 
 More information about how publishing works and the options in preview mode can be found on this page: :doc:`Publish page changes </pages/publish-page-changes/index>`
 
 **Note!** A new page is never shown for users until it's published at least once.
 
-Some useful links regarding editing of blocks:
+Some useful links regarding editing blocks:
 
 + :doc:`Edit a page </pages/edit-page/index>`
 
