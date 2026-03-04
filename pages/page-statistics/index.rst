@@ -3,19 +3,14 @@ Page statistics
 
 When the page editor is open you can have a look at some basic statistics for the page.
 
-**Note!** The page must be published, and not be actively edited, for the statistics to be available.
-
-When it looks like this, statistics is available:
-
-.. image:: page-statistics-available-new.png
-
+1. Open the page for editing.
 1. Open the menu to the right and select STATISTICS.
 
-.. image:: page-statistics-menu-statistics-new3.png
+.. image:: page-statistics-menu-statistics-711.png
 
 Here's an example:
 
-.. image:: page-statistics-example-new3.png
+.. image:: page-statistics-example-711.png
 
 The graph displays statistics for the last three months.
 
