@@ -3,7 +3,7 @@ Invite co-authors
 
 If settings in the page collection allow it, authors can invite co-authors for the page. Regarding permissions, co-authors will simply be authors, there's no separate permission for co-authors.
 
-Aonther thing to be aware of is that permission inheritance will be broken when co-authors are invited, if it isn't already, as the permission settings will be specific for the page.
+Another thing to be aware of is that permission inheritance will be broken when co-authors are invited, if it isn't already, as the permission settings will be specific for the page.
 
 For more information about the settings, see: :doc:`Page collections </pages/page-collections/index>`
 
