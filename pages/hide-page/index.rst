@@ -5,7 +5,7 @@ Using this option you can hide a page, draft or published, or a whole section of
 
 You can then unhide (Show) when it's time to make the page(s) available.
 
-While a page is hidden it can not be found through search, not by anyone, in fact even not by yourself. The only way to access a hidden page is through the navigation when in edit mode.
+While a page is hidden it can't be found through search, not by anyone, in fact even not by yourself. The only way to access a hidden page is through the navigation when in edit mode.
 
 You can hide any number of sub pages in one go. Just select the main page and hide, and all sub pages are also hidden. The reverse is also true, unhide (Show) the main page and all sub pages are also unhidden.
 
@@ -17,7 +17,7 @@ To hide a page, do the following:
 2. Select the page in the navigation (sub pages are automatically selected).
 3. Select "Hide".
 
-.. image:: hide-select-new2.png
+.. image:: hide-select-711.png
 
 Something like the following is shown:
 
@@ -29,7 +29,7 @@ If you selected a page that has sub pages, you are made aware of the fact by the
 
 A hidden page is indicated this way:
 
-.. image:: pages-hidden-new2.png
+.. image:: pages-hidden-711.png
 
 Show a hidden page
 *********************
@@ -39,13 +39,13 @@ To show a hidden page and all it's sub pages, do the following:
 
 1. Select the (main) page in the navigation and select "Show":
 
-.. image:: unhide-select-new2.png
+.. image:: unhide-select-711.png
 
-Something like to following is displayed:
+Something like to following is shown:
 
 .. image:: unhide-show-message-new2.png
 
-If the page has sub pages (that also will be shown now), you are made aware of that fact through this message, as it is in this example.
+If the page has sub pages, you are made aware of that fact through this message, as it is in this example.
 
 3. Click OK to show the page with all sub pages.
 
