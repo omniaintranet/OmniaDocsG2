@@ -49,4 +49,5 @@ If the page has sub pages, you are made aware of that fact through this message,
 
 3. Click OK to show the page with all sub pages.
 
-Note that hidden/shown pages keeps their status. Published pages reamined published and drafts remain drafts.
+Note that hidden/shown pages keep their status. Published pages remmain published and drafts remain drafts. Meaning, if a published page has been hidden for a while, you don't have to publish again when it's shown.
+
