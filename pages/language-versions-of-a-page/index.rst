@@ -5,9 +5,7 @@ Do you need to publish a page in more than one language? Then you use the option
 
 First a publishing app administrator must set up the variations in the settings, see this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
-A specific author can be set up for a variation, and if not, all authors of a page can edit all variations.
-
-You can either set up a variation for editing by a variation author, or you can set up a variation for automatic machine translation. You can decide this for each variation, either a variation author or automatic machine translation. Note that a a variation created with machine translation can not be edited.
+You can either set up a variation for editing by a variation author, or you can set up a variation for automatic machine translation. You can decide this for each variation. Note that a a variation created with machine translation can not be edited. If you don't set up a specific author for a variation (and don't use machine transaltion), all authors of a page can edit all variations.
 
 **Note!** Machine translation is not available in Omnia on-prem.
 
