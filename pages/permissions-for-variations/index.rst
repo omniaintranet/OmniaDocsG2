@@ -5,9 +5,11 @@ A variation page is a copy of a source page that contain some sort of alternativ
 
 As a variation is a page, normal permissions for pages within a page collection apply. Colleagues that are permitted to edit the source page, can edit the variations of that page as well, if no specific permissions are set up. Page collection administrators can always edit all pages in a page collection, variation pages included, regardless if how other permissions are set up.
 
+If a variation page is created by machine translation, it can't be edited by anyone. This is an exception to the rule above.
+
 Variation specific permissions
 **********************************
-In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view. **Note!** If automatic machine translation is set for the variation, variation authors can not be assigned and setting edit permissions are therefore not available.
+In Omnia 7.9 and later, you can set variation specific permissions if needed, using the navigation view. 
 
 You can set permissions for all variation pages of a certain type in the page collection, this way:
 
@@ -44,5 +46,6 @@ This is how it's set up:
 6. Save.
 
 Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected.
+
 
 
