@@ -75,7 +75,7 @@ Do the following to create a new variation (you have to scroll down to the end o
 + **Right to left**: If you're creating a variation for a language that is read right to left, select this option.
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
-Languages used for, for example titles, variations or for targering, must be set up in the tenant settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+Languages used for variations or for targering, must be set up in the tenant settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
 
 Permissions for variations can be set up in several different ways see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
