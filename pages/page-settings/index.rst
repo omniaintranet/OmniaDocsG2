@@ -15,7 +15,6 @@ The following settings are available here:
 
 + **Title**: Add the title to be displayed for the publishing app here. 
 + **Description**: Add a description if you wish (recommended).
-+ **Authors**: Add general authors for pages in the publishing app. Can be edited for specific pages if needed.
 + (Image): You use the media picker to add or change the image. For more information on how to use this asset, see: :doc:`Media picker </general-assets/media-picker/index>`
 
 Permissions
