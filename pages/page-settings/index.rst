@@ -38,7 +38,7 @@ Here you set up the page variations that should be possible to use in the publis
 
 A variation can also be set up for automatic machine translation, see below. (Not available in Omnia on-prem).
 
-In Omnia 7.8 it's possible to add one variation author for each variation, in Omnia 7.9 and later several variation authors can be added. Here's an example with a number of variations set up:
+Several variation authors can be added for a variation if needed. If a variation is set up with machine translators, such variation pages can not be edited. Here's an example with a number of variations set up:
 
 .. image:: page-settings-variations-612.png
 
