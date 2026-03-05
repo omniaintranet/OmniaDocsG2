@@ -1,3 +1,14 @@
+7.9.35
+========================================
+(Omnia 7.9.35 / Workplace 7.9.35 / WCM 7.9.35 / MS 7.9.35 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Mobile app: Possbility for administrators to enforce all user to authenticate.
+- Fixed an issue that could cause publishing app to not show (#54159)
+- Fixed an issue where some document links were correctly linking to the document (#54278)
+- Fixed an issue with the image crop ratio settings were not being applied correctly in the rich text editor (#53524)
+- Improved link handling to Microsoft Forms from process management
+- The workflows status now updates correctly when performing bulk update of page types (#52865)
+
 7.9.30
 ========================================
 (Omnia 7.9.30 / Workplace 7.9.30 / WCM 7.9.30 / MS 7.9.30 / Analytics 7.9.10 / Feed 7.9.9)
