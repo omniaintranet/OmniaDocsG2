@@ -60,29 +60,24 @@ Do the following to create a new variation (you have to scroll down to the end o
 
 .. image:: click-add-variation-612.png
 
-2. Use the following settings (Omnia 7.8 and earlier):
+2. Use the following settings:
 
-.. image:: variations-612.png
+.. image:: variations-79.png
 
 + **Title**: Add a title for the variation to be shown in the lists, for example the list where users can select variation. If needed, the title can be added in any of the languages set up in the tenant.
 + **Icon type**: If you want to show an icon for the variation, select icon type here, for example "Flags".
 + **Icon**: Shown when you have selected icon type. Select the icon here.
 + **URL Segment**: Add a suitable URL Segment in this field.
-+ **Variation author**: You can add a variation author for this variation. See this page for more information: :doc:`Edit page variations </pages/edit-page-variations/index>`
++ **Languages**: 
 + **Automatic machine translation**: You can select machine translation for this variation, to any language that is set up in the tenant. If you do, you can't select a variation author, and the machine translated variation can not be edited manually. When you have selected this option, choose language in the list shown. Automatic machine translation is executed when the main page is published. It will be noted on the variation page that it has been machine translated, see below. **Note!** Machine translation is not available in Omnia on-prem.
++ **Variation authors**: Several variation authors can be added if needed.
++ **Notifications for edits of pages**: When a source page has been edited a notification can be sent to the variation authors, and/or to someone else based on page property. One example is that a page approver can be notified. The list of page properties becomes available when "Page property" is selected. Note that only one page property can be selected.
 + **Right to left**: If you're creating a variation for a language that is read right to left, select this option.
 + **Add targeting filter**: To set up targeting for this variation, click here. It is not mandatory. See below for more information.
 
-Languages used for, for example titles, variations or for targering, must be set up in the tenant Settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
+Languages used for, for example titles, variations or for targering, must be set up in the tenant settings, see this page: :doc:`Regional settings </admin-settings/tenant-settings/settings/regional-settings/index>`
 
-Also note that a variation author needs to have the same permissions as other page authors in the page collection, and doesn't brake permission heritage. In Omnia 7.9 and later, permissions can be set up differently for variations if needed, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
-
-In Omnia 7.9 and later there are some additions here:
-
-.. image:: variations-79.png
-
-+ **Variation authors**: Several variation authors can be added if needed.
-+ **Notifications for edits of pages**: When a source page has been edited a notification can be sent to the variation authors, and/or to someone else based on page property. One example is that a page approver can be notified. The list of page properties becomes available when "Page property" is selected. Note that only one page property can be selected.
+Permissions for variations can be set up in several different ways see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
 Also note that notifications of new pages created in the publishing app, always are sent to all variation authors.
 
