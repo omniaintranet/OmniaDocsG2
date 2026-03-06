@@ -21,14 +21,16 @@ Permissions
 ************
 Use these settings to Edit permissions in the publishing app. 
 
-.. image:: page-settings-permissions-76.png
+.. image:: page-settings-permissions-711.png
 
-+ **Administrators**: Page collection administrators can always edit all pages in the page collection, including variations, regardless if other permissions are set. Page collection administrators can also edit all settings.
++ **Administrators**: Page collection administrators can always edit all pages in the page collection, including variations, regardless if other permissions are set. Page collection administrators can also edit all settings for the app.
 + **Contributors**: This permissions settings is needed if colleagues should be able to add comments to pages.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 Note that this permissions setting is valid for the settings here, only. To be able to edit publishing app settings in Omnia admin, you need to be either a tenant administrator or administrator for the business profile. Regarding these settings a tenant administrator and business profile administrator can go here and add him or herself to the permissions list and that way gain access to the settings.
+
+For more information on permissions in Omnia, see: :doc:`Roles and permissions in Omnia </general-assets/roles-permissions/index>`
 
 Variations
 ************
