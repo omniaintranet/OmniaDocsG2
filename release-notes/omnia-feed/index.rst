@@ -9,7 +9,6 @@ Release notes for the actual Omnia Feed mobile app are available on App Store (i
 .. toctree::
    :titlesonly:
 
-   omnia-feed-app/index
    7.0/index
    6.13/index
    6.12/index
@@ -20,3 +19,4 @@ Release notes for the actual Omnia Feed mobile app are available on App Store (i
    4/index   
    3.1/index
    2/index
+   omnia-feed-app/index
