@@ -151,37 +151,25 @@ Here's how to add a menu option:
 1. Click the plus to the right of "Editor navigation".
 2. Use the following settings:
 
-.. image:: editor-navigation-settings.png
-
-+ **Layout**: Select layout here.
-+ **Title**: Add a title in any tenant language. 
-+ **Icon type/Icon**: Add an icon if you wish by first selecting icon type.
+.. image:: editor-navigation-settings-711.png
 
 3. Click OK when you're done.
-
-.. image:: editor-navigation-settings-ok.png
-
 4. Save the changes to the publishing app settings.
-
-.. image:: editor-navigation-settings-save.png
 
 The new option is now added to the menu, for example:
 
-.. image:: editor-navigation-settings-added.png
+.. image:: editor-navigation-settings-added-711.png
 
-To edit a menu option, click the pen, to delete it, click the dust bin.
-
-.. image:: editor-navigation-settings-editdelete.png
+A menu option can be edited or deleted at any time.
 
 Document management settings
 -----------------------------------
-The following settings are available here (example from an existing site):
+The following settings can be available here (example from an existing site):
 
-.. image:: document-management-settings.png
+.. image:: document-management-settings-711.png
 
 + **Document picker categories**: If the document picker categories that are set up in Omnia admin should be available here, select this option.
-+ **SharePoint document library**: If the documents created here should be saved in a specific SharePoint document library, enter the address to the library here.
-+ **Allow user upload document**: Available when a document library has been defined here. Editors and authors can normally upload documents. If this should be possible for all users, select this option.
++ **SharePoint document library**: If the documents created here should be saved in a specific SharePoint document library, activate the option and enter the address to the library here.
 + **File storage**: Select the option if a copy of a document an editor or author uploads, should be saved locally. The document is then saved in Omnia, not in SharePoint. This is useful if a specific version of a document should be saved with the page, for example a news page. 
-
++ **Allow user upload document**: Available when a document library has been defined here. Editors and authors can normally upload documents. If this should be possible for all users, select this option.
 
