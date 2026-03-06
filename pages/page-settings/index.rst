@@ -5,13 +5,13 @@ A number of publishing app settings are available. You have to be publishing app
 
 Open the publishing app settings by clicking here:
 
-.. image:: page-settings-612.png
+.. image:: page-settings-711.png
 
 General 
 *********
 The following settings are available here:
 
-.. image:: page-settings-general-612.png
+.. image:: page-settings-general-711.png
 
 + **Title**: Add the title to be displayed for the publishing app here. 
 + **Description**: Add a description if you wish (recommended).
@@ -23,10 +23,8 @@ Use these settings to Edit permissions in the publishing app.
 
 .. image:: page-settings-permissions-76.png
 
-+ **Administrators**: Add and remove publishing app administrators here as needed.
++ **Administrators**: Page collection administrators can always edit all pages in the page collection, including variations, regardless if other permissions are set. Page collection administrators can also edit all settings.
 + **Contributors**: This permissions settings is needed if colleagues should be able to add comments to pages.
-
-Also note that page collection administrators always can edit all pages in the page collection, including variations, regardless if other permissions are set.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
