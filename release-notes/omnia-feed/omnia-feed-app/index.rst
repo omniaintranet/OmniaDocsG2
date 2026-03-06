@@ -14,6 +14,9 @@ For example, if the current version is iOS X, the app supports iOS X, X-1, X-2, 
 
    This support policy is partly due to the app’s reliance on external authentication solutions, including Microsoft Authenticator and BankID. These applications maintain similar support policies for iOS versions, which may limit compatibility with older operating system versions.
 
+Release notes
+=============
+
 Below are the latest release notes for the app.
 
 .. toctree::
