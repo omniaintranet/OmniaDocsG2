@@ -1,6 +1,8 @@
 Publishing app settings
 =======================================
 
+**This page is being editd.**
+
 A number of publishing app settings are available. You have to be publishing app administrator to use them.
 
 Open the publishing app settings by clicking here:
@@ -23,7 +25,7 @@ Use these settings to Edit permissions in the publishing app.
 
 .. image:: page-settings-permissions-711.png
 
-+ **Administrators**: Page collection administrators can always edit all pages in the page collection, including variations, regardless if other permissions are set. Page collection administrators can also edit all settings for the app.
++ **Administrators**: Page collection administrators can edit all settings for the app, and can always edit all pages in the page collection, including variations, regardless if other permissions are set. (But also see more about permissions for variations below).
 + **Contributors**: This permissions settings is needed if colleagues should be able to add comments to pages.
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
@@ -40,13 +42,11 @@ A variation can also be set up for automatic machine translation, see below. (No
 
 Several variation authors can be added for a variation if needed. If a variation is set up with machine translators, such variation pages can not be edited. Here's an example with a number of variations set up:
 
-.. image:: page-settings-variations-612.png
+.. image:: page-settings-variations-711.png
 
 You see the variations that has been set up so far, with information about for example targeting. A "Variaton" in the tenant's default language is also listed here - note the label "Default" in the image above. For all pages, a variation with the default language must always exist. That is what is added when a page is created the first time.
 
 To edit the settings for a variation, click the pen. To delete a variation, click the dust bin.
-
-.. image:: page-settings-variations-edit-delete-612.png
 
 When you edit a variation, the same settings as when you create a new variation are available, see below.
 
@@ -54,15 +54,14 @@ Create a new variation
 -----------------------
 Note that you can use variations for a lot of implementations, not just languages, even if language versions of a page probably is the most common.
 
-Do the following to create a new variation (you have to scroll down to the end of the list):
+Do the following to create a new variation:
 
 1. Click ADD VARIATION.
-
-.. image:: click-add-variation-612.png
-
 2. Use the following settings:
 
-.. image:: variations-79.png
+.. image:: variations-711.png
+
+(Not all options are shown in the image, but described below).
 
 + **Title**: Add a title for the variation to be shown in the lists, for example the list where users can select variation. If needed, the title can be added in any of the languages set up in the tenant.
 + **Icon type**: If you want to show an icon for the variation, select icon type here, for example "Flags".
@@ -89,40 +88,21 @@ Targeting a page variation
 ----------------------------
 Use targeting for a variation to set which variation of a page that will be displayed to the logged in user. Note that if a Variation selector block is added to a page, users can always select any of the available variations. This is true even if no targeting is set up. See this page for information about the Variation selector block: :doc:`Variation selector </blocks/variation-selector/index>`
 
-**Note!** The targeting properties to use must be set up in Omnia admin. See this page for more information: :doc:`Targeting properties </admin-settings/tenant-settings/properties/targeting-properties>`
+**Note!** The targeting properties to use must be set up in Omnia admin. See this page for more information: :doc:`Targeting properties </admin-settings/tenant-settings/properties/targeting-properties/index>`
 
-To target a page variation, do the following: 
-
-1. Click "Add targeting filter" when editing a page variation's settings.
-
-.. image:: page-variation-add-targeting-612.png
-
-2. Select targeting property from the list. 
-3. If there are children in the property, as the next step you can select to include all children, or you can target one or more of the children specifically. 
-
-Here's an example which will see to that all users that has Danish set as preferred language will see the Danish variation of the page.
-
-.. image:: page-targeting-danish.png
-
-4. Click "OK" to save your changes.
-
-You can add as many targeting properties for a variation as is needed this way (and remember that variations can be a lot more than just languages). To remove a target, just click the X.
-
-Note that the targeting settings also are shown in the variations list, for example:
-
-.. image:: page-variation-example-612.png
+For more information on targeting settings, see: :doc:`Using targeting </general-assets/targeting-in-omnia/index>` 
 
 Edit contents of a page variation
 --------------------------------------
-When more than one variation of the page exists, an editor can select variation to work with in the list, in the lower left corner:
+When more than one variation of the page exists, an editor can select variation to work with in the list. 
 
-.. image:: select-variation-new4.png
+.. image:: select-variation-711.png
 
 If no variation exists yet for the page, the editor can choose to create one.
 
-.. image:: variation-create-page-new2.png
+.. image:: variation-create-page-711.png
 
-Editing a page variation works exactly the same way as editing the default page.
+Editing a page variation works exactly the same way as editing the parent page.
 
 Statistics
 *************
