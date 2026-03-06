@@ -1,8 +1,6 @@
 Publishing app settings
 =======================================
 
-**This page is being editd.**
-
 A number of publishing app settings are available. You have to be publishing app administrator to use them.
 
 Open the publishing app settings by clicking here:
