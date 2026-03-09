@@ -34,7 +34,7 @@ You can either pick specific users to display in the list, or use the query buil
 
 Pick users
 -------------
-You can pick a number of users to display in the rollup. In Omnia 7.10 and later, you can also allow authors to pick users in Write mode.
+You can pick a number of users to display in the rollup. In Omnia 7.10 and later, you can also allow authors to pick users in Write mode. **Note!* If you select this options, the ADD PAGE option is not available in the settings.
 
 .. image:: peoplerollup-settings-query-picker-710.png
 
