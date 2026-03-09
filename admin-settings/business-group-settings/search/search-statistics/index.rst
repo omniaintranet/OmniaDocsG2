@@ -11,9 +11,10 @@ You can can decide to collect search statistics in the settings for either quick
 + **No result queries**: The number of search queries being executed, where the search didn't find anything.
 + **EXPORT LAST 30 DAYS**: Available in Omnia 7.10 and later. As it says - an export to Excel with results for the last 30 days.
 
- You can click the result for a month for a detailed view. Here's an example of details from a test environment:
+You can click the result for a month for a detailed view. Here's an example of details from a test environment:
 
 .. image:: search-statistics-details-710.png
 
 You can click "Show details" for more details of every single search query. Also note that you can go to the previous month or the next month, if available.
+
 
