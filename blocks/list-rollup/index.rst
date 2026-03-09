@@ -1,7 +1,7 @@
 List rollup
 ===================================
 
-Available in Omnia 7.10 and later. Use this block to rollup data from SharePoint lists, especially custom lists. You can also aggregate data from several SharePoint lists for the rollup, using the query builder.
+Available in Omnia 7.10 and later. Use this block to rollup content from SharePoint Lists using KQL queries, specific lists, list views, or selected columns. This makes it possible to reuse and display structured SharePoint list data within Omnia pages, supporting advanced aggregation and integration scenarios.
 
 **Note!** A document library should not be used as a source to roll up data from, as it's a special type of library. Also note that SharePoint list formatting is not used.
 
@@ -68,6 +68,7 @@ When Export to Excel is active, you can set sorting for the rows, using "Sort by
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) for the new columns.
 
 .. image:: list-rollup-export2.png
+
 
 
 
