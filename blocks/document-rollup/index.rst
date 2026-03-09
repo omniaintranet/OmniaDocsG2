@@ -27,7 +27,7 @@ You can either choose to pick documents to be displayed in the block, or use the
 
 Pick documents
 ^^^^^^^^^^^^^^^^^
-You can pick a number of documents to be displayed in the rollup. In Omnia 7.10 and later you can also allow authors to pick documents in Write mode. **Note!* If you select this options, the ADD PAGE option is not available in the settings.
+You can pick a number of documents to be displayed in the rollup. In Omnia 7.10 and later you can also allow authors to pick documents in Write mode. **Note!** If you select this options, the ADD PAGE option is not available in the settings.
 
 .. image:: document-rollup-pick-710.png
 
