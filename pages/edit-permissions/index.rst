@@ -1,7 +1,9 @@
 Permissions to edit a page
 =============================
 
-Per default the same edit permissions apply to all pages and other nodes, including variations in the whole page collection, but it can be changed if needed. If you change permissions for a page that has sub pages, the same permissions apply to the sub pages (they inherit the permissions settings from the "parent"). Also note the comments about variations, below.
+Per default the same edit permissions apply to all pages and other nodes, including variations in the whole page collection, but it can be changed if needed. 
+
+If you change permissions for a page that has sub pages, the same permissions apply to the sub pages (they inherit the permissions settings from the "parent"). Edit permissions for a specific sub page can be changed as well. Also note the comments about variations, below.
 
 For more information about permissions for the page collection, see: :doc:`Page collections permissions </pages/page-collections/page-collection-permissions/index>`
 
