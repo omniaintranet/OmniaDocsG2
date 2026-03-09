@@ -1,7 +1,7 @@
 Reports
 ==========
 
-A number of reports are available for pages in the active publishing app. Note that some settings must be made for the reports to work, see below.
+A number of reports are available for pages in the active publishing app. **Note!** Some settings must be made for the reports to work, see the bottom of the page.
 
 **Also note** that Title has to be set up as querable for pages, for anything to be shown in the reports.
 
