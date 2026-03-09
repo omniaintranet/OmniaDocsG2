@@ -82,7 +82,7 @@ If scheduled publishing is allowed, the publishing settings contain this field (
 
 The name of the property can of course differ, this is just an example.
 
-Add the planned publishing date in the field. The document must of course be approved before it can be published, if approval is needed.
+Add the planned publishing date in the field. The document must still be approved before it can be published, if approval is needed.
 
 Note that the date for scheduled publishing can be set in the properties for the document. If it is, it can  be changed here.
 
