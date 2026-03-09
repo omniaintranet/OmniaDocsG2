@@ -7,29 +7,27 @@ A number of reports are available for pages in the active publishing app. Note t
 
 Select "Reports" here:
 
-.. image:: pages-reports-menu-new2.png
+.. image:: pages-reports-menu-711.png
 
 The following reports are available:
 
-.. image:: pages-reports-all-new3.png
+.. image:: pages-reports-all-711.png
+
+OpenAI must be set up for content analysis in the business profile, for ANAKLYSIS to be availble.
 
 All reports can be exported to Excel by clicking here:
 
-.. image:: reports-excel-new3.png
+.. image:: reports-excel-711.png
 
-You can sort the lists on most column headings by clicking the heading, for example:
-
-.. image:: reports-sort-new3.png
+You can sort the lists on most column headings by clicking the heading.
 
 You can use the links in the "Page" column to go to a page, and the links in people columns (for example "Contact") to click the name to see more information about that colleague, for example contact information. The user profile card will then open, if it's used within your organization. If it's not, the colleague's Delve page will be displayed.
 
-Also note that the icon on the lower right of a person image indicates Microsoft Teams presence. The icon in the image above indicates that Annabelle Dixon is offline.
+Also note that the icon on the lower right of a person image indicates Microsoft Teams presence. 
 
 Usage
 *********
-This list contains all pages in the Publishing App. You can filter the list by using the fields and lists at the top.
-
-.. image:: reports-usage.png
+This list contains all pages in the Publishing App. You can filter the list by using the fields and lists at the top. See example above.
 
 **Important note!** The usage report can't show more than five million entries. When that limit is reached, a message is shown and the recommendation is to use Matomo analytics instead. 
 
@@ -37,27 +35,25 @@ For more information about Matomo analytics, see: :doc:`Analytics (Matomo) setti
 
 Checked out
 ************
-In this list you can see all pages that are currently checked out, meaning someone is working on them. New pages are shown here as well, even if they are not published yet, as long as a draft has been saved.
+In this list you can see all pages that are currently checked out, meaning an author or edsitor is working on them. New pages are shown here as well, even if they are not published yet, as long as a draft has been saved.
 
-.. image:: pages-reports-checked-out-new3.png
+.. image:: pages-reports-checked-out-711.png
 
 Use the lists at the top to filter the Checked out-list.
 
 Review
 ********
-If a property for review date for pages is being used, this list displays all pages that has a review date set.
+A review property must be set up in the publishing apps settings for this report to show anything.
 
-.. image:: pages-reports-review-new3.png
+.. image:: pages-reports-review-711.png
 
 You can filter the list on Contact (Page contact). If the review date has passed, it's indicated by a black triangle, so in the example above, the page editors has a lot of work to do!
  
 Pending approval
 **********************
-If approval for pages has been set up, this list will show all pages with pending approval.
+If approval for pages has been set up, this list will show all pages with pending approval. Here's an example from a test environment:
 
-.. image:: pending-approval-example-new2.png
-
-(This image is from a test environment, these requests should normally not be that old.)
+.. image:: pending-approval-example-711.png
 
 How to approve or reject here is described on this page, where you can find more information about approval: :doc:`Approve pages </pages/page-approval/index>`
 
@@ -65,13 +61,11 @@ Scheduled
 ***********
 This report displays an overview of all pages that are scheduled for publishing, in the publishing app. Here's an example:
 
-.. image:: pages-repoprt-scheduled.png
+.. image:: pages-repoprt-scheduled-711.png
 
 You can filter the list on dates, for a shorter list. Set Start Date and and End Date. You can also filter on page type and who the publication was scheduled by. 
 
-Default is List view, as shown in the image above. You can also choose to see a calendar view, monthly or weekly. Here's an example with WEEK VIEW selected:
-
-.. image:: pages-repoprt-scheduled-week.png
+Default is List view, as shown in the image above. You can also choose to see a calendar view, monthly or weekly. 
 
 Analysis
 ***********
@@ -79,7 +73,7 @@ OpenAI can be used for content analysis. If set up, this tab is available.
 
 **Note!** An analysis can only be executed on pages within the active page collection.
 
-The first you will see is a list of already created analysis, if any. Here's a simple example:
+The first you will see is a list of already created analysises, if any. Here's a simple example:
 
 .. image:: analysis-tab-v7.png
 
