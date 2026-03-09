@@ -43,5 +43,5 @@ A variation page is simply a copy of a source page, with some sort of alternativ
 
 Permissions for editing variations can be set up in several ways, see: :doc:`Permissions for variation pages </pages/permissions-for-variations/index>`
 
-Read more about variation authors is found on this page: :doc:`Publishing app settings </pages/page-settings/index>`
+Read more about variation authors on this page: :doc:`Publishing app settings </pages/page-settings/index>`
 
