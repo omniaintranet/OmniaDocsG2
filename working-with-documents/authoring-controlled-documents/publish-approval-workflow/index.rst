@@ -90,7 +90,7 @@ A document waiting to be published is still considered to be a draft. That it's 
 
 .. image:: publish-settings-status.png
 
-For more info about the publishing, click the link. Here's an example:
+For more publishing information, click the link. Here's an example:
 
 .. image:: publish-settings-status-example.png
 
