@@ -9,7 +9,7 @@ Select "Reports" here:
 
 .. image:: pages-reports-menu-711.png
 
-The following reports are available:
+The following reports can be available:
 
 .. image:: pages-reports-all-711.png
 
