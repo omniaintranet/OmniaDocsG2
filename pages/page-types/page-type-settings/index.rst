@@ -58,11 +58,11 @@ When you activate this option, the following is shown:
 
 .. image:: page-type-settings-override-message-v7.png
 
-And then something like the following is available (image from Omnia 7.8):
+And then something like the following is available:
 
 .. image:: page-type-settings-override-v78.png
 
-+ **Enable promote to Viva**: Available in Omnia 7.8 and later. Select this option if pages of this page type should appear in Viva connections.
++ **Enable promote to Viva**: Select this option if pages of this page type should appear in Viva connections.
 
 **Important note!** When promoting pages with variations to Viva, only the default page is promoted to avoid duplicates.
 
