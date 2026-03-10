@@ -1,5 +1,5 @@
 Release 7
-========================================
+=========
 
 - Compatible with Omnia release 7.
 - Possibility to export and email client-side logs. 
@@ -14,9 +14,19 @@ Release 7
 
 
 Versions
------------------------------------------
+--------
 
 .. toctree::
    :titlesonly:
 
    versions
+
+
+Hotfix releases
+---------------
+
+.. toctree::
+   :titlesonly:
+
+   hotfix-releases/versions
+
