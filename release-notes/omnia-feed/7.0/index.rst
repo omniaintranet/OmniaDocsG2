@@ -19,7 +19,8 @@ Versions
 .. toctree::
    :titlesonly:
 
-   versions
+   versions/7.11/index
+   versions/7.12/index
 
 
 Hotfix releases
@@ -29,4 +30,5 @@ Hotfix releases
    :titlesonly:
 
    hotfix-releases/versions
+
 
