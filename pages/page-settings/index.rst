@@ -134,7 +134,7 @@ and these settings can also be available:
 + **Promoted tags**: A publishing app can be configured to have promoted tags/terms for certain properties. Promoted tags/terms will be displayed at the top of the tag/term picker both for the author, when working with pages, and for the end user when filtering in a page rollup.
 + **Variations**: Select to share comments, reactions and ratings across variations. This option is only available if one or more varations exists in the app. **Important note!** This option should be activated before any variation pages are created. If this option is activated later on, the comments from the main page are shown on all variation pages. If comments had been added to a variation page, they will no longer be displayed.  
 + **Document management**: You use this part for documents settings, both forstandard documents and for controlled documents. For more information, see below.
-+ **Omnia search**: Content in the publishing app can be reindexet for Meilisearch, if needed. Use "Logging" to see logs from this reindexing.
++ **Omnia search**: When the tenant feature "Page rollup accelerator powered by search" is activated, this option is available. Use it to reindexet content for faster search, if needed. The accelerator mainly has effect on Omnia search, People rollup of Omnia users and Page rollup. Use "Logging" to see logs from this reindexing.
 
 For more information about layouts for publishing, see this page: :doc:`Publishing layouts </admin-settings/business-group-settings/publishing-apps/publishing-65/layout/index>`
 
