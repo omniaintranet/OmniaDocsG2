@@ -1,1 +1,2 @@
-Omnia Feed release 7.11
+Release 7.11
+============
