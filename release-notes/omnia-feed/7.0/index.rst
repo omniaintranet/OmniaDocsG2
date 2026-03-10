@@ -25,7 +25,8 @@ Versions
 
 Hotfix releases
 ---------------
-The release notes for the older hotfix releases can be found :doc:`here </hotfix-releases/index>`.
+The release notes for the older hotfix releases can be found :doc:`here <../hotfix-releases/index>`.
+
 
 
 
