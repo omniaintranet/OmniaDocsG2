@@ -25,10 +25,6 @@ Versions
 
 Hotfix releases
 ---------------
-
-.. toctree::
-   :titlesonly:
-
-   hotfix-releases/versions
+:doc:`Release notes for the older hotfix releases </hotfix-releases/index>`
 
 
