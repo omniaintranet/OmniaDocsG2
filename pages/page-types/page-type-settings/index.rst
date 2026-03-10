@@ -1,16 +1,14 @@
 Page type settings
 ======================
 
-The following can be available on the Settings tab (image from Omnia 7.9):
-
-.. image:: page-type-settings-left-v79.png
+The following can be available on the Settings tab:
 
 + **Title**: The name of the page type can be edited here.
 + **Enable automatic archiving**: Set automatic archiving on or off for the page type. See below for more information.
-+ **Override SharePoint sync settings**: Available for local page types (not for tenant ones). See below for a description.
++ **Override SharePoint sync settings**: Available for local page types (not for tenant ones). When this optiin is selected, a number of other settings are available, see below.
 + **Properties**: Select the properties that should be available for pages created from this page type. In many cases it results in fields the page editor has to or can fill in for a page. You can select any of the properties defined in the tenant. See this page for more information about setting up properties: :doc:`Tenant settings - Properties </admin-settings/tenant-settings/properties/index>` 
-+ **Analytics**: Available in Omnia 7.8 and later. Here you can enable event tracking and add some settings. See below for more information.
-+ **Page review rule**: Available in Omnia 7.9 and later. Using this option you can create settings for page review rules, if needed. See below for more information.
++ **Analytics**: Here you can enable event tracking and add some settings. See below for more information.
++ **Page review rule**: Using this option you can create settings for page review rules, if needed. See below for more information.
 
 Enable automatic archiving
 ***************************
