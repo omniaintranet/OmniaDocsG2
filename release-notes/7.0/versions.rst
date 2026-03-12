@@ -1,3 +1,18 @@
+7.9.37
+========================================
+(Omnia 7.9.37 / Workplace 7.9.37 / WCM 7.9.37 / MS 7.9.37 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Pages variations created using machine translation will now update page type to match the default variation page type (#54331).
+- Promotion channels now support sending email notifications to distribution groups.
+- The text block now also supports text formating settings for multilingual texts (#54328).
+- Card view in page rollup now supports showing Channel information.
+- Fixed a issue were some properties in the teamwork rollup would automatically change value after being edited (#54528).
+- We now ensure that users are directed to the correct mode based on permissions when linking directly to the edit mode of a page (#53781).
+- Search 
+  - Search results now show long people names correctly (#54494).
+  - Updated the behavior of the search in the header to always show the quick search panel when beginning a new search (#54550).
+  - Added the possibility to show in what publishing app pages are located when searching.
+
 7.9.35
 ========================================
 (Omnia 7.9.35 / Workplace 7.9.35 / WCM 7.9.35 / MS 7.9.35 / Analytics 7.9.10 / Feed 7.9.10)

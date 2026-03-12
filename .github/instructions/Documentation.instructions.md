@@ -28,6 +28,8 @@ This document provides comprehensive instructions for AI agents tasked with anal
 - **Follow established format patterns** from existing documentation (e.g., banner.md structure)
 - **Provide complete, runnable solutions** for code generation tasks
 - **Include comprehensive troubleshooting** and best practices sections
+- **Cross-reference related documentation** to create a cohesive knowledge base
+- **Usecase examples** to illustrate concepts and guide users
 - **Maintain consistency** with existing documentation style and terminology
 
 ### Code Analysis Methodology
@@ -35,7 +37,8 @@ This document provides comprehensive instructions for AI agents tasked with anal
 - **Use appropriate tools** systematically to collect necessary information
 - **Verify file paths, APIs, and commands** before acting
 - **Prefer large meaningful chunks** over small sections when reading files
-- **Validate changes** with relevant build/tests/linters after substantive edits
+- **Validate changes** with relevant build/tests/linters after substantive edits 
+- **Apply the Multi-Module Architecture Analysis Protocol** for features that may be distributed across multiple modules
 
 ### Security and Best Practices
 - **Never exfiltrate secrets** or make unauthorized network calls
@@ -43,6 +46,10 @@ This document provides comprehensive instructions for AI agents tasked with anal
 - **Add/update tests** when changing public behavior
 - **Use minimal, pinned, widely-used libraries** for dependencies
 - **Apply green-before-done validation** - run tests after changes
+- **Document any assumptions** made during analysis or documentation
+- **Flag incomplete information** or analysis limitations clearly in prompts and documentation
+- **Maintain a clear separation** between documentation and development activities to ensure the integrity of the codebase and the reliability of the documentation.
+- 
 
 ## Multi-Module Architecture Analysis Protocol
 
