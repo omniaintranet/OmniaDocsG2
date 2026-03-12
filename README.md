@@ -7,4 +7,5 @@ Product Documentation - Omnia (Azure AD App)
 - Create a root folder on your machine "OmniaDocsRoot"
   - Clone documentation repo "OmniaDocG2" to folder inside "OmniaDocsRoot"
   - Clone code repo "OmniaMono" to folder inside "OmniaDocsRoot"
-- Setup the chat to use the instuction markdown
+- Setup the AI Chat to use the instuction markdown 
+- Using vS Code installing a .rst previewer extension can be of great help to check the updates
