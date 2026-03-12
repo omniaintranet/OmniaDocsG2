@@ -5,8 +5,6 @@ Available in Omnia 7.10 and later. Use this block to rollup content from SharePo
 
 **Note!** A document library should not be used as a source to roll up data from, as it's a special type of library. Also note that SharePoint list formatting is not used.
 
-Test note.
-
 Settings
 ***********
 These settings are available for the block:
@@ -70,6 +68,7 @@ When Export to Excel is active, you can set sorting for the rows, using "Sort by
 You can also add columns as addition(s) to the standard columns. New columns are placed to the right. If you have added several extra columns, you can select ""Adjust columns" to set the order (left to right) for the new columns.
 
 .. image:: list-rollup-export2.png
+
 
 
 
