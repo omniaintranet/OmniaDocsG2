@@ -1,3 +1,9 @@
+7.9.38
+========================================
+(Omnia 7.9.38 / Workplace 7.9.38 / WCM 7.9.38 / MS 7.9.38 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Fixed an issue that caused anchor links to misbehave (#54753).
+
 7.9.37
 ========================================
 (Omnia 7.9.37 / Workplace 7.9.37 / WCM 7.9.37 / MS 7.9.37 / Analytics 7.9.10 / Feed 7.9.10)
