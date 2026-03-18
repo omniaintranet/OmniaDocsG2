@@ -164,8 +164,8 @@ The following settings are available for this purpose (se above for the general 
 .. image:: action-button-create-app-v75.png
 
 + **Dialog position**: Select position for the dialog that will open; Center or Right.
-+ **Select app definition**: Publishing, Community or Teamwork.
-+ **Select template to show**: When you have selected app definition, here you select the template(s) that should be available. A list of all available templates for the definition is shown. You select one or more templates there.
++ **Select app definition**: Select Publishing, Community or Teamwork.
++ **Select template to show**: When you have selected app definition, you can select the template(s) that should be available. A list of all available templates for the definition is shown. You select one or more templates there.
 
 Create document
 ----------------
@@ -186,9 +186,9 @@ In Omnia 7.10 and later, you can set available options for the Create new docume
 
 Create form
 --------------
-The purpose of this button is to make it possible for app administrators to create a form from any page. Note that the administrator must be app administrator for the app where the form is created.
+The purpose of this button is to make it possible for app administrators to create a form on any page. Note that the administrator must be app administrator for the app where the form is created.
 
-**Important note!** Forms created this way only exists within the app, they can not be found or edited using the form options for the business profile.
+**Important note!** Forms created this way only exist within the app, they can not be found or edited using the form options for the business profile.
 
 The following settings are available:
 
@@ -209,6 +209,7 @@ Using this button the action Create page can be executed:
 
 + **Publishing app**: Select publishing app to create the new page in.
 + **Set default value from current page**: When you select theis option, also choose property in the field shown. When this is selected, the new page gets the value for this property from the current page.
++ **Disable redirect to created page**: (A descitption will be added soon).
 
 Event management
 ------------------
