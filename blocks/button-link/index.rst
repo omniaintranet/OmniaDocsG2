@@ -258,6 +258,7 @@ Using this action a link action can be added, meaning a link can be opened:
 + **Anchor name**: Type the anchor name in this field to create a link to an anchor.
 + **Target**: Choose how to open the link. Current (Navigate) means the same window. Current (Open) is used for pages with anonymous access. 
 + **Dialog position**: If you selected "Dialog" for target, you can select where to place the dialog: Center, Full screen, Left or Right. 
++ **Close on click-out**: (A description will be added soon).
 
 **Note!** Dialog is not suitable for external links. Select "Current Window" or " New Window" for external links.
 
