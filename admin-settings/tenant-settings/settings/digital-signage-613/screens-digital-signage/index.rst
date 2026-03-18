@@ -52,7 +52,7 @@ When you select this option the following is available:
 
 Use the settings according to information from the provider.
 
-Here's how to set up integration between Omnia and PLAYipp, as an example: https://helpcenter.playipp.com/article/1489
+Here's how to set up integration between Omnia and PLAYipp, as an example: https://helpcenter.playipp.com/everything-you-need-to-know-about-the-omnia-integration
 
 QUERY
 ------
