@@ -310,7 +310,7 @@ Information about who the feedback is sent to is shown, for example:
 
 .. image:: action-button-feedback-send-who.png
 
-Unlike the Page feedback block (where the feedback can be accessed in the block in Write mode), the feedback sent this way is available, in Design mode or Write mode, in the menu:
+Unlike the Page feedback block (where the feedback can be accessed in the block in Write mode), the feedback sent this way is available in Design mode or Write mode, in the menu:
 
 .. image:: action-button-feedback-menu.png
 
@@ -338,15 +338,9 @@ The feedback will be sent to the process owner and will be available in the team
 
 Quick search
 ---------------
-Using this action quick search can be used, like it can in the Search block.
+Using this action quick search can be used, the same wayms as in in the Search block.
 
-.. image:: action-button-quick-search-v75.png
-
-+ **Inherit business profile settings**: You can inherit the search settings from the business profile and if that is what you want to do, you don’t need to change anything, it’s default. If you would like to set specific category settings for this block, deselect and the following will be available:
-
-.. image:: action-button-quick-search-specific-v75.png
-
-You use these settings the same way as in the Search block. For more information, see: :doc:`The Search block </blocks/search/index>`
+You use the settings the same way as in the Search block, see: :doc:`The Search block </blocks/search/index>`
 
 Share
 --------
