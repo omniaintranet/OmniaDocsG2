@@ -274,15 +274,15 @@ See this page for more information: :doc:`My links </user-options/my-links/index
 
 My subscriptions
 ------------------
-My subscriptions is available in a person's "My profile" menu but can also be added as an action button:
+My subscriptions is available in a person's "My profile" menu but can also be added as an action button.
 
-Subscriptions are meant to be used in communities, for now. See this page for more information: :doc:`My subscriptions </using-communities/subscriptions/my-subscriptions/index>`
+See this page for more information: :doc:`My subscriptions </user-options/my-subscriptions/index>`
 
 (Only general settings are available, see above).
 
 Notification panel
 --------------------
-Using this action button a notification panel can be shown just like it is in the Notification panel block.
+Using this action button a notification panel can be shown just like in the Notification panel block.
 
 .. image:: action-button-notification-panel-v75-frame.png
 
