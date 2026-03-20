@@ -1,3 +1,9 @@
+Release 7.9.10
+==============
+
+- Improved authentication process logging
+- Support for multiple external authentication providers
+
 Release 7.9.9
 ========================================
 
