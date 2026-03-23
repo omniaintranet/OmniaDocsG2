@@ -217,12 +217,12 @@ Using this type you can add buttons for Event management actions:
 
 .. image:: action-button-event-management-v75.png
 
-+ **Button type**: Decide what this button will do; Sign up, Sign up other, Add to Outlook or Cancel:
++ **Button type**: Decide what this button will do; Sign up, Sign up other, Add to Outlook or Cancel/Leave:
 
 + Sign up: Used by the logged in user to register for an event. 
 + Sign up other: Used by the logged in user to register others - colleagues or external partners - for an event.
 + Add to Outlook: In the case event management is set up to use a specific calendar, this button can be added to make it possible for users to add the event to their personal calendar.
-+ Cancel: Used by the logged in user to cancel the registration he or she has made in their own name, ie done by using the button "Sign up".
++ Cancel/Leave: Used by the logged in user to cancel the registration he or she has made in their own name, ie done by using the button "Sign up". In later Omnia version, this option has been renamed "Leave", meaning Leave the event, as it's a better description of what the result actually is.
 + Open Microsoft Teams meeting: If a Teams Meeting was created when the event was created, this button can be used to open that meeting. If no meeting has been created this option has no effect.
 
 For more information about how the buttons work and more useful tips for event management, see: :doc:`Working with events </working-with-events/index>`
