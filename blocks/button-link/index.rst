@@ -340,13 +340,13 @@ Quick search
 ---------------
 Using this action quick search can be used as a button.
 
-See above for general settings and style. The following search settings can be ued:
+See above for general settings and style. The following search settings can be used for the button:
 
 .. image:: quick-settings-1.png
 
-+ **Inherit business profile settings**: An administrator can edit both quick search settings and advanced search settings in Omnia admin. If you would like to use them, just active the option and your done.
++ **Inherit business profile settings**: An administrator can edit both quick search settings and advanced search settings in Omnia admin. If you would like to use them, just active this option and your done.
 
-If you would to set specific settings for this button, the quick searh settings are these:
+If you would like to set specific settings for this button, the quick search settings are these:
 
 .. image:: quick-settings-2.png
 
