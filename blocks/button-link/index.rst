@@ -338,9 +338,21 @@ The feedback will be sent to the process owner and will be available in the team
 
 Quick search
 ---------------
-Using this action quick search can be used, the same wayms as in in the Search block.
+Using this action quick search can be used as a button.
 
-You use the settings the same way as in the Search block, see: :doc:`The Search block </blocks/search/index>`
+See above for general settings and style. The following search settings can be ued:
+
+.. image:: quick-settings-1.png
+
++ **Inherit business profile settings**: An administrator can edit both quick search settings and advanced search settings in Omnia admin. If you would like to use them, just active the option and your done.
+
+If you would to set specific settings for this button, the quick searh settings are these:
+
+.. image:: quick-settings-2.png
+
+You use these settings the same way as described on this page: :doc:`Quick search settings </admin-settings/business-group-settings/search/quick-search-612/index>`
+
+The advanced search settings are almost the same, described here: :doc:`Advanced search settings </admin-settings/business-group-settings/search/advanced-search/advanced-search-612/index>`
 
 Share
 --------
