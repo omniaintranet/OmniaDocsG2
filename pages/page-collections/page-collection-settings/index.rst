@@ -20,13 +20,7 @@ In this example, three page collections has been added in the publishing app, be
 
 .. image:: page-collection-click-edit-new2.png
 
-4. Use the following settings (image from an existing page collection):
-
-.. image:: page-collection-settings-79.png
-
-All settings are not shown in the image above, but listed below.
-
-Use the settings this way:
+4. Use the following settings:
 
 + **Navigation structure/Flat**: Here you can see what was selected when the page collection was created. If you want to change from navigation structure to flat in an existing page collection, you need to first manually flatten the page structure (move sub pages so they all become main pages, or remove them) and then use the option here. You can always change from flat to navigation structure.
 + **Title**: The title for the page collection is shown here. It can be edited if needed. It's updated everywhere it's shown when the changes here are published.
