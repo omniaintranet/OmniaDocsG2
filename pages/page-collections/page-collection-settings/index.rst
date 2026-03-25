@@ -40,13 +40,13 @@ In this example, three page collections has been added in the publishing app, be
 + **Activities**: For a community, activity tracking can be activated. See the heading *Settings for activity points* on this page, for more information: :doc:`Setting up a community </using-communities/settings/index>` 
 + **Notifications**: (Available in Omnia versions before 7.11). This setting defines when a notification that a page is new should be shown for users, for example in the notification panel. Default setting (this option is not selected), it's only when the page is created, not when it's updated. If this option is activated the page is considered to be new every time it's updated and a new version is published. 
 + **Publish notifications**: Renamed option in 7.11 and later. Contains twoo settings. See below for more information.
-+ **Send as Email**: Select "Enable send page as Email" if pages in the page collection should be available to send through Email. One example of when this is needed is in a Newsletter inplementation. If this option is activated, authors can decide to send the new or edited page by email, or decide not to, each time the page is published.
++ **Send as Email**: Select "Enable send page as Email" if pages in the page collection should be available to send through Email. One example of when this is needed is in a Newsletter implementation. If this option is activated, authors can decide to send the new or edited page by email, or decide not to, each time the page is published.
 + **Scheduling**: If scheduling should be available in this page collection, select this option and select the property to be used. The author can then set a scheduled start date and time, using the PROPERTIES tab for the page. Note that scheduled publishing never is mandatory, an author can always choose to publish without using scheduling. 
 + **Break permission inheritance by default**: Select this option if inheritance should be broken when a new page is created within the page collection. This could, for example, be useful for communities. When this option is active, the colleague creating the page will be the page owner, meaning that he or she has full control over who can edit. The new option "Invite co-authors" can then be used to easily add authors for the page, see below.
-+ **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. 
-+ **Channel**: If you enable "Enabel publishing to channels", it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
-+ **AI generated content**: (This option is called "Open AI" in Omnia 7.7 and earlier). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI have to be made in Omnia Admin.
-+ **Semantic search**: Can be available in Omnia 7.8 and later (a tenant feature must be activated). It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. 
++ **Allow invitation of co-authors**: If this option is selected, authors can invite co-authors. See below for more information.
++ **Channel**: If you activate "Enable publishing to channels", it will be possible for an author to select channels the page should be published to. Publication to a channel may require approval from the channel administrator. See more information below.
++ **AI generated content**: (This option was called "Open AI" in Omnia 7.7 and earlier). When you activate this option, if available, you can set properties for what the AI should be able to work with, see below. Also note that tenant features must be activated for this option to be available and settings for AI have to be made in Omnia Admin.
++ **Semantic search**: Can be available if a tenant feature is activated. It's applicable for all pages in the page collection, but note that if there are existing pages when you activate this option, these pages have to be re-published to be indexed for semantic search. 
 + **Enable page checker**: Available in Omnia 7.10 and later. This is a validation for accessibility you can select. When you preview the page (Preview mode), you can receive a warning if there are any accessibility issues. See this page for more information: :doc:`Accessibility check when editing pages </pages/accessibility-check/index>`
 
 **Note!** A prerequisite for semantic search is SharePoint sync. It's needed to be able to index page collections. Also see *Important notes about semantic search* below.
@@ -263,20 +263,6 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
