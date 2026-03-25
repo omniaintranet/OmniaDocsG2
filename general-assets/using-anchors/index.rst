@@ -4,11 +4,12 @@ Using anchors you can link to a specific place on a page in Omnia:
 
 + To a place in text.
 + To a block (heading).
++ To a Link button (using an Action button).
 + To a Tab in a section (type Tab).
 + To a step in a section (type Stepper).
 + To a post in an accordion section (type Accordion).
 
-For the section types, an anchor is created automatically for each tab, step or accordion post - it's actually the end part of the Url. Anchors in text or for a block, must be created by an editor or an author, when needed.
+For the section types, an anchor is created automatically for each tab, step or accordion post - it's actually the end part of the URL. Anchors in text or for a block, must be created by an editor or an author, when needed.
 
 If there are several sections of the same type on a page, you can add a custom anchor instead of the automatically generated one, for each tab, step or accordion post.
 
