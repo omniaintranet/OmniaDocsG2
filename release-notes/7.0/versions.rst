@@ -1,3 +1,18 @@
+7.9.39
+========================================
+(Omnia 7.9.39 / Workplace 7.9.39 / WCM 7.9.39 / MS 7.9.39 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Routing functionality has been improved to support additional naming options
+- Fixed an issue where copy/pasting certain characters resulted in no search results (#54393)
+- The Related Links block now opens all documents correctly in the browser (#54699, #54278)
+- In some cases, paging navigation was not displayed in the Controlled Document Library; this has now been resolved
+- The behavior when creating pages with auto-publish from the editor experience has been updated (#54479)
+- It is now possible to use ‘#’ in file names within the Document Rollup (#54074)
+- Phone number rendering in the People Rollup has been updated to align with other properties (#54068)
+- Resizing the settings panel could cause the term picker to stop working; this issue has now been fixed (#54939, #49114)
+- Links in .url files now open correctly from the Document Rollup (#157603)
+- Support has been added for sending emails to mail-enabled groups using the default provider
+
 7.9.38
 ========================================
 (Omnia 7.9.38 / Workplace 7.9.38 / WCM 7.9.38 / MS 7.9.38 / Analytics 7.9.10 / Feed 7.9.10)
