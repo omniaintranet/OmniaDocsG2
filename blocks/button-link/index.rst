@@ -257,7 +257,7 @@ Using this action a link action can be added, meaning a link can be opened:
 + **URL**: Type or paste the URL to go to when a user clicks the link. 
 + **Anchor name**: Type the anchor name in this field to create a link to an anchor, if needed.
 + **Target**: Choose how to open the link. Current (Navigate) means the same window. Current (Open) is used for pages with anonymous access. You can also choose "New window" and "Dialog".
-+ **Close on click-out**: Shown when "Target-Dialog is selected. (A description will be added soon).
++ **Close on click-out**: Shown when "Target-Dialog is selected. When this option is active, the dialog closes when the user clicks outside the dialog.
 + **Selected text color/Selected background color**: You know what to do here, if you don't want to use the default colors. 
 
 **Note!** Dialog is not suitable for external links. Select "Current Window" or " New Window" for external links.
