@@ -33,7 +33,7 @@ In this example, three page collections has been added in the publishing app, be
 + **Publishing policies**: Prompts set up under "AI features" in Omnia admin can be available for page authors to use, to let AI review a page before publishing. 
 + **Automatic page creation**: A copy of a page can be published automatically to another page collection or another tenant, when certain rules are met. For more information, see this page: :doc:`Automatic page creation </pages/automatic-page-creation/index>`
 + **Promotion channels**: You can configure promotion channels to send teasers to Microsoft Teams, Viva Engage, and via Email - for example to use in a publishing campaign. For details, see below.
-+ **Viva Engage integration**: A Viva integration canm be set up here. See below for details.
++ **Viva Engage integration**: A Viva integration can be set up here. See below for details.
 + **Taxonomy connection**: When this option is activated, it's possible to connect the page collection to a taxonomy. Whenever a page is created in the page collection, a term will be created in the connected taxonomy and the page will automatically be tagged with the newly created term. This can, for example, be useful in different rollups. For more information, see below.
 + **Publishing approval**: (Called juast Approval in earlier versions of Omnia 7.10). If approval should be needed for publication of pages (new pages and updates), enable this. If not enabled, editors can publish directly. See more info about approval settings below.
 + **Deletion approval**: Works the same and has almost the same settings as publishing approval, but for page deletion. An important difference is that multistep approval is not availble for deletion approval for a page. For more information, see below.
@@ -80,13 +80,14 @@ Do the following to set up a promotion channel:
 1. Click the plus.
 2. Use the following settings:
 
-.. image:: publishing-channels.png
+.. image:: publishing-channels-711.png
 
 + **Name**: Add a name for the promotion channel here.
 + **Posting rule**: You can choose that a teaser for a new page in this page collection should always be published in this promotion channel, or you can set up rules for publishing. More information about this below.
 + **Type**: Can be Microsoft Teams, Viva Engage or Email.
 + **Group**: Select which group the promotion channel is tied to. If you selected Microsoft Teams, it's a list of Teams groups and so on.
 + **Channel**: For a Microsoft Teams group, several Teams channels can exist. Select channel here. (Not available for Viva Engage or Email).
++ **Automatically mention channel in post**: If the channel name should be shown in postings, select this option.
 + **Property mapping**: The properties used for the teaser are listed here (properties in the image above is an example). Map properties you use for these purposes.
 
 3. To set a posting rule, first select "Only post if".
@@ -99,6 +100,16 @@ In this simple example, a teaser should only be published to this promotion chan
 You can add several posting rules if needed, to further limit what will be published.
 
 (Don't forget to save when you're done).
+
+Viva Engage integration
+-------------------------
+Only one integration with a Viva Engage group can be set up for a page coillection. To set up a the integration, use these settings:
+
+.. image:: page-collection-viva.png
+
+Choose the Viva Engage group and set the properties for Title, Summary and Content, where the content will be collected and sent to the Viva Engage group.
+
+A page creation rule is set up the same way as for channels, see above.
 
 Enable taxonomy connection
 ---------------------------
