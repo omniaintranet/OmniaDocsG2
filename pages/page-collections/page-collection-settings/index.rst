@@ -219,7 +219,7 @@ Publish notifications
 ------------------------
 Two options are available here:
 
-+ **Update notification panel on re-publish**: A notification is shown in the notification panel when a new page is created, but not when it's updated. If you activate this option, a notification is shown when publihing changes as well. This is the same option that was just called "Notifications" in earlier Omnia versions.
++ **Update notification panel on re-publish**: Default setting: a notification is shown in the notification panel when a new page is created, but not when it's updated. If you activate this option, a notification is shown when publishing changes as well. This is the same option that was just called "Notifications" in earlier Omnia versions.
 + **Enable silent publish**: Available in Omnia 7.10 and later. Select this option if it should be possible to publish small changes to a page without any notifications created, not even for variations. If publishing approval is activated, publishing still has to be approved. 
 
 When "Enable silent publish" is selected, an additional publishing button is available for authors, for example:
