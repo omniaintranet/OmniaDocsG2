@@ -257,7 +257,7 @@ When activating the AI option, the following settings are available for this pag
 + **Summary**: To activate AI functionality for page summary, select the appropriate summary property here.
 + **Text**: Likewise for text fields, select property to activate AI functionality.
 + **Image**: Dall-E is an AI option that can be activated (a tenant feature) and is then available as an image provider in the image picker. Select the image property used to activate the functionality.
-+ **Image ratio**: In Omnia 7.9 and later, you also select image ratio for the Dall-E image, when clicking the cig wheel. Here you can alos choose to use the image as background.
++ **Image ratio**: You can also select image ratio for the Dall-E image, when clicking the cog wheel. Here you can also choose to use the image as background.
 
 See the bottom of this page for information about how AI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
 
@@ -272,7 +272,4 @@ An additional way of restricting access to information gathered by semantic sear
 Saving page collection settings
 ********************************
 To save the changes to the page collection settings, you need to publish. You can't save a draft, even if that option is present. 
-
-
-
 
