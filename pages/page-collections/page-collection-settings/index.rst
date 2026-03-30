@@ -242,11 +242,11 @@ For more information about inviting co-authors, see: :doc:`Invite co-authors </p
 
 Channel settings
 -------------------
-When you enable publishing to channels you can also choose that at least one publishing channel is required:
+When you enable publishing to channels you can also choose at least one publishing channel to be required:
 
 .. image:: channel-settings.png
 
-I you select this there must be at least one channel selected when a new page is created in the page collection, or the the new page can not be saved.
+I you select this there must be at least one channel selected when a new page is created in the page collection, or the new page can not be saved.
 
 Options for AI
 -----------------------
