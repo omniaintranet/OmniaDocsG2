@@ -19,7 +19,7 @@ When the block is added to a page (or to the page type), authors can turn on or 
 
 This can be very handy if the block "Page likes and comments" is present in a page type, but should not be used on every page.
 
-(Note that social reactions is allowed here. If social reactions is not allowed, the option is be "Allow likes" instead of "Allow social reactions".)
+(Note that social reactions is allowed in this example. If social reactions is not allowed, the option is "Allow likes" instead of "Allow social reactions".)
 
 Settings for the block
 ************************
