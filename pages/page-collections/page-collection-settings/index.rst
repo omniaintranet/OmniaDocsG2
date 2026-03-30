@@ -101,7 +101,7 @@ You can add several posting rules if needed, to further limit what will be publi
 
 Viva Engage integration
 -------------------------
-Only one integration with a Viva Engage group can be set up for a page coillection. To set up a the integration, use these settings:
+Only one integration with a Viva Engage group can be set up for a page collection. To set up a the integration, use these settings:
 
 .. image:: page-collection-viva.png
 
