@@ -34,7 +34,7 @@ The following settings are available on this tab:
 .. image:: likes-general-v75-2.png
 
 + **Title**: If a title should be shown for the block, add it in this field. 
-+ **Enable Viva Engage sync**: (A description will be added soon).
++ **Enable Viva Engage sync**: Enables the likes and comments to be available in Viva Engage as well.
 + **Rich text mode**: If you enable rich Text, some basic formatting will be availble for users.          
 + **Enable mention**: If it should be possible to use mentions in comments on this page or in this page type, select this option. See below for an example.
 + **Allow social reactions**: Can be available if settings allow it. If it should be possible to to use social reactions in this block, select this option. The same social reactions functionality as in Teams can be used. The tenant feature "Social reactions" must be activated for this option to be available.
