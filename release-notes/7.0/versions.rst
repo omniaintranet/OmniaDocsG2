@@ -1,3 +1,15 @@
+7.9.40
+========================================
+(Omnia 7.9.40 / Workplace 7.9.40 / WCM 7.9.40 / MS 7.9.40 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Event management now ensures that downloaded .ics files always include a title (#54634)
+- An issue causing process feedback emails to not always be sent correctly has been fixed (#49262, #54758)
+- Rollups without a local time format setting will now follow the general setting (#54859)
+- Image cropping in rollups is now displayed correctly after fixing a previous issue (#55144, #55081, #55132, #551276)
+- Controlled documents can now be moved even if document types from previous versions have been deleted (#53589)
+- Handling of special characters in the filter control has been improved (#54401, #55001)
+- A URL routing issue that prevented the use of “analytics” in some cases has been resolved (#54905)
+
 7.9.39
 ========================================
 (Omnia 7.9.39 / Workplace 7.9.39 / WCM 7.9.39 / MS 7.9.39 / Analytics 7.9.10 / Feed 7.9.10)
