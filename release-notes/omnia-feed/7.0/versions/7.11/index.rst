@@ -3,8 +3,8 @@ Release 7.11
 
 Version **7.11** introduces enhanced layout options for feed tabs, Matomo statistics in the mobile app, and improvements to theming, localization, and link handling.
 
-> **Note**
-> When upgrading to 7.11, existing *Query* tabs will be automatically migrated to the new *Multiple Query* tab.
+.. note::
+When upgrading to 7.11, existing *Query* tabs will be automatically migrated to the new *Multiple Query* tab.
 
 Layout engine
 -------------
@@ -12,8 +12,7 @@ Omnia Feed now supports custom templates for both feed and detail views. You can
 
 This new rendering approach also introduces several new blocks for content display. See below for brief descriptions of some of them.
 
-For more information on how to work with the layout engine, see the documentation:
-[https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/omnia-feed/layout-settings/index.html](https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/omnia-feed/layout-settings/index.html)
+For more information on how to work with the layout engine, see the documentation :doc:`here </admin-settings/business-group-settings/omnia-feed/layout-settings/index>`.
 
 Bookmarks
 *********
