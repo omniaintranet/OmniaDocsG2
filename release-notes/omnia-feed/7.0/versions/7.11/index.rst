@@ -4,7 +4,8 @@ Release 7.11
 Version **7.11** introduces enhanced layout options for feed tabs, Matomo statistics in the mobile app, and improvements to theming, localization, and link handling.
 
 .. note::
-When upgrading to 7.11, existing *Query* tabs will be automatically migrated to the new *Multiple Query* tab.
+
+   When upgrading to 7.11, existing *Query* tabs will be automatically migrated to *Multiple Query* tabs.
 
 Layout engine
 -------------
