@@ -12,11 +12,7 @@ Azure OpenAI
 
 **Step 2**: Click on 'Create Azure OpenAI'.
 
-**Step 3**: Create a new OpenAI instance in your subscription by selecting a region and a name for the instance.
-
-We currently recommend choosing East US 2 or Sweden Central due to the availability of AI models in these regions.
-
-We recommend using your unique domain as a basis for the service name for better identification (Domain: contoso.com > Name: constosocom).
+**Step 3**: Create a new OpenAI instance in your subscription by selecting a region and a name for the instance. We currently recommend choosing East US 2 or Sweden Central due to the availability of AI models in these regions. We recommend using your unique domain as a basis for the service name for better identification (Domain: contoso.com > Name: constosocom).
 
 .. Note:: Different regions have different AI models available. Check out this page for more information: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models.
 
