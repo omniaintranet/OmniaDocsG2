@@ -10,6 +10,8 @@ Azure OpenAI
 
 **Step 1**: Browse into your subscription in the Azure Portal and find the Azure OpenAI service.
 
+No new image?
+
 .. image:: 01-create-azure-openai.png
 
 **Step 2**: Click on 'Create Azure OpenAI'.
@@ -20,12 +22,22 @@ We recommend using your unique domain as a basis for the service name for better
 
 .. Note:: Different regions have different AI models available. Check out this page for more information: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models.
 
-.. image:: 02-create-azure-openai.png
+.. image:: 02-create-azure-openai-711.png
 
 **Step 4**: If you have no specific requirements, you can keep the default settings for 'Network' and 'Tags'.
 
-.. image:: 03-create-azure-openai.png
-.. image:: 04-create-azure-openai.png
+Ev new step:
+
+.. image:: 030-create-azure-openai-711.png
+
+.. image:: 03-create-azure-openai-711.png
+
+Ev 2 new steps:
+
+.. image:: 0401-create-azure-openai-711.png
+.. image:: 0402-create-azure-openai-711.png
+
+.. image:: 04-create-azure-openai-711.png
 
 **Step 5**: Review the settings and submit the deployment request.
 
@@ -33,9 +45,11 @@ We recommend using your unique domain as a basis for the service name for better
 
 **Step 7**: Once the service is up and running, you can browse into it an click on 'Go to Azure AI Foundry portal'.
 
-.. image:: 05-create-azure-openai.png
+.. image:: 05-create-azure-openai-711.png
 
 **Step 8**: Browse to the Chat Playground and create a new deployment from base models.
+
+Images for step 8 to 11?
 
 .. image:: 06-create-azure-openai.png
 
@@ -53,7 +67,7 @@ We recommend using your unique domain as a basis for the service name for better
 
 **Step 12**: Navigate to Omnia Admin > Permissions > Secrets > AI features: OpenAI API and paste the key and url.
 
-.. image:: 10-configure-azure-openai.png
+.. image:: 10-configure-azure-openai-711.png
 
 Azure AI Search
 -------------------------------------
@@ -62,6 +76,8 @@ Azure AI Search
 
 **Step 1**: Browse into your subscription in the Azure Portal and find the AI Search service.
 
+No mew image?
+
 .. image:: 11-create-azure-aisearch.png
 
 **Step 2**: Click on 'Create search service'.
@@ -69,6 +85,8 @@ Azure AI Search
 **Step 3**: Input a service name. We recommend using your unique domain as a basis for the service name for better identification (Domain: contoso.com > Name: constosocom).
 
 **Step 3**: Choose a location for the service and select a pricing tier. We recommend the Standard pricing tier.
+
+No new image?
 
 .. image:: 12-create-azure-aisearch.png
 
@@ -80,11 +98,13 @@ Azure AI Search
 
 **Step 7**: Copy the 'Primary admin key' to notepad.
 
+No new image?
+
 .. image:: 13-configure-azure-aisearch.png
 
 **Step 8**: Go to 'Omnia Admin > Permissions > Secrets > AI features: AI Search' and paste the key. Fill in the base url to your search service https://[service name].search.windows.net.
 
-.. image:: 14-configure-azure-aisearch.png
+.. image:: 14-configure-azure-aisearch-711.png
 
 
 Text completion and content analysis
@@ -93,12 +113,6 @@ Text completion and content analysis
 **Step 1**: Navigate to 'Omnia Admin > Settings > AI features > Model configuration > Text completion configuration'. Add an alias for the AI bot and enter the model name from your previous OpenAI setup.
 
 .. image:: 15-configure-textcompletion.png
-
-
-Dall-E for AI generated images
--------------------------------------
-
-[To be done]text-embedding-3-small
 
 Semantic search
 -------------------------------------
