@@ -51,8 +51,6 @@ Ev 2 new steps:
 
 .. image:: 06-create-azure-openai.png
 
-Images for step 9 to 11?
-
 **Step 9**: As of today, we recommend using the 'GPT-4o Mini' model.
 
 .. image:: 07-create-azure-openai.png
