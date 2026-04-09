@@ -1,3 +1,9 @@
+Release 7.9.11
+==============
+
+- Replaced Microsoft font icon with alternative MIT licensed font icon
+- Added support for displaying different type of tab headers
+
 Release 7.9.10
 ==============
 
