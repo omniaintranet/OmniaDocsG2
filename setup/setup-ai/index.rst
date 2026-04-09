@@ -49,9 +49,9 @@ Ev 2 new steps:
 
 **Step 8**: Browse to the Chat Playground and create a new deployment from base models.
 
-Images for step 8 to 11?
-
 .. image:: 06-create-azure-openai.png
+
+Images for step 9 to 11?
 
 **Step 9**: As of today, we recommend using the 'GPT-4o Mini' model.
 
