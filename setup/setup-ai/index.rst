@@ -3,7 +3,7 @@ Setup AI
 
 Currently, all AI services in Omnia require Azure OpenAI to be set up. To deploy semantic search, you must also set up Azure AI Search.
 
-**Note! Update of this page is ongoing. Most of the imges are still old. Will updated soon.**
+**Note! Update of this page is ongoing (really just started). Will updated soon.**
 
 Azure OpenAI
 -------------------------------------
