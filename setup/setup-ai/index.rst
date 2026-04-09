@@ -18,7 +18,7 @@ Azure OpenAI
 
 .. image:: 02-create-azure-openai.png
 
-**Step 4**: If you have no specific requirements, you can keep the default ofthe rest of the setting.
+**Step 4**: If you have no specific requirements, you can keep the default of the rest of the settings.
 
 .. image:: 04-create-azure-openai.png
 
