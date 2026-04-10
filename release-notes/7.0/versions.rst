@@ -1,3 +1,13 @@
+7.9.41
+========================================
+(Omnia 7.9.41 / Workplace 7.9.41 / WCM 7.9.41 / MS 7.9.41 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Fixed a bug that allowed the use of illegal characters when creating layouts (#53628)
+- It is now possible to cancel an ongoing approval flow, even if the approver has created a draft (#38829)
+- The behavior of scheduled publishing in combination with publish approval has been corrected (#55083)
+- The information panel is now displayed correctly for both controlled and uncontrolled documents (#55372, #53827, #54074)
+- Behavior of rollup blocks with no data to display has been aligned (#53564)
+
 7.9.40
 ========================================
 (Omnia 7.9.40 / Workplace 7.9.40 / WCM 7.9.40 / MS 7.9.40 / Analytics 7.9.10 / Feed 7.9.10)
