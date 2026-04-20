@@ -105,7 +105,8 @@ If Read Receipt is selected **EmailBodyWithReadReceiptTemplate**, these tokens a
 + {{DocumentTitle}}
 + {{ReadReceiptUrl}}
 
-**Send for approval Emails**: In these Document managment Emails, this token is supported in Subject (in **EmailSubjectTemplate**, **SubjectApproval**, **SubjectReject** and **CancelSubjectTemplate**):
+**Send for approval Emails**: 
+In these Document managment Emails, this token is supported in Subject (in **EmailSubjectTemplate**, **SubjectApproval**, **SubjectReject** and **CancelSubjectTemplate**):
 
 + {{Name}}
 
@@ -144,6 +145,10 @@ In **CancelBodyTemplate**:
 + {{Approver}}
 + {{Name}}
 
+In **ApprovalEditionMessageToApproverTemplate**:
+
++ {{MessageToApprover}}
+
 **Feedback Email**:
 In this Document management Email, these tokens are supported in Subject:
 
@@ -156,12 +161,22 @@ In Body for that Email, the following tokens are supported:
 + {{Feedback}}
 + {{DocumentLink}}
 
-**Related document Emails**: Here, no tokens are supported in Subject. The following tokens are supported in Body:
+**Related document Emails**: 
+Here, no tokens are supported in Subject. The following tokens are supported in Body:
 
 + {{Recipient}}
 + {{RelatedDocument}}
 + {{Publisher}}
 + {{ControlledDocuments}}
+
+**Related processes**: 
+In the Email "SuggestionsAdded" no token is allowed in Subject but the following can be used in Body:
+
++ {{Receiver}}
++ {{Suggestor}}
++ {{ProcessStepTitle}}
++ {{ProcessTitle}}
++ {{LinkToProcess}}
 
 **Retention policy Email**: In this Email, no tokens are supported in Subject. The following tokens are supported in Body:
 
@@ -174,9 +189,24 @@ In Body for that Email, the following tokens are supported:
 + {{DocumentUrl}}
 + {{DocumentTitle}}
 
+**ScheduleApprovalReminder Emails**: In these Document Management Emails, the following token can be used in Subject:
+
++ {{DocumentTitle}}
+
+And the following in Body:
+
++ {{Recipient}}
++ {{DocumentUrl}}
++ {{DocumentTitle}}
++ {{SiteUrl}}
++ {{SiteTitle}}
++ {{TaskUrl}}
++ {{TaskTitle}}
++ {{SchedulePublishDate}}
+
 Emails for processes
 ------------------------
-**Feedback Email**: In the feedback Email for processes, these two tokens are supported in Subject:
+**Feedback Email**: In the feedback Email for pr{{DocumentTitle}}ocesses, these two tokens are supported in Subject:
 
 + {{ProcessTitle}}
 + {{ProcessStepId}}
