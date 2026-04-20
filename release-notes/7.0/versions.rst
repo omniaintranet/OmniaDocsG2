@@ -1,3 +1,54 @@
+7.11.0
+========================================
+(Omnia 7.11.0 / Workplace 7.11.x / WCM 7.11.x / MS 7.11.x / Analytics 7.11.x / Feed 7.11.x)
+
+New features
+************
+
+- Silent publish is now available, allowing authors to publish a new page version without triggering notifications for minor updates and corrections.
+- Reusable sections are now available for pages, making it possible to define reusable section content on a source page and connect it to target pages.
+- Print support for pages has been improved. Header, footer, and other non-essential areas can now be hidden for print, and a Print action button is available to prepare content for printing.
+- The Create Document action has been improved and now supports selecting one or multiple document types, templates, and locations.
+- Omnia permissions can now be restricted to specific sites using a limited-access setup mode.
+- Search results can now show a link to the Omnia page when using both Meilisearch and SharePoint search.
+
+Fixes
+************
+
+- Fixed an issue where the add media action could require two clicks in some environments (#55136).
+- Fixed an issue in the rich text editor where link titles could overwrite the selected text instead of being used for accessibility attributes (#53523).
+- Fixed an issue where some action button scenarios could behave incorrectly when query parameters were appended to the URL (#55242).
+- Fixed an issue where closing a PDF opened from the Document Rollup could take the user to the SharePoint library (#54703).
+- Fixed an issue where search category actions were not shown correctly in some quick search configurations (#54652).
+- Fixed an issue where the People Rollup or profile card interaction could require an additional click in some cases (#54450).
+
+7.10.0
+========================================
+(Omnia 7.10.0 / Workplace 7.10.x / WCM 7.10.x / MS 7.10.x / Analytics 7.10.x / Feed 7.10.x)
+
+New features
+************
+
+- Navigation now supports link and label nodes, making it possible to group navigation entries without creating landing pages.
+- A new Update-only Author role is now available for page collections. This role allows limited authoring without access to the full set of editing capabilities.
+- WCAG compliance can now be checked before publishing pages by using the new WCAG checker in page preview.
+- A new approval flow for deleting pages is now available.
+- A-Z paging is now available in the Page Rollup for card and list views.
+- Pick in write mode is now supported in the People, Page, and Document Rollups, allowing authors to manually select content to show.
+- Rollups can now display SharePoint list content using either KQL-based queries or specific SharePoint lists and views.
+- SharePoint search display templates can now be used to show SharePoint content together with Omnia content in search results.
+- Search statistics can now be exported using a new Statistics export action button.
+- Publishing channels can now be targeted to specific editors.
+- Controlled documents now support scheduled publishing, including approval reminders before the scheduled publish time.
+
+Fixes
+************
+
+- Fixed several issues related to the Related Links block.
+- Fixed an issue that could prevent creation of Microsoft 365 groups in the Teamwork app.
+- Fixed an issue where the Archive Page Type dialog could open unexpectedly.
+- Fixes for tickets (#160539, #160067, #146890, #166333)
+
 7.9.43
 ========================================
 (Omnia 7.9.43 / Workplace 7.9.43 / WCM 7.9.43 / MS 7.9.43 / Analytics 7.9.10 / Feed 7.9.12)
