@@ -1,3 +1,24 @@
+7.9.43
+========================================
+(Omnia 7.9.43 / Workplace 7.9.43 / WCM 7.9.43 / MS 7.9.43 / Analytics 7.9.10 / Feed 7.9.12)
+
+- Corrected the move operation for controlled documents to ensure properties are retained correctly (#55290)
+- Fixed an issue where “Save favorite” would truncate link names containing “-” in the title (#55488, #150952, #153311)
+- Improved the provisioning of authoring and archive apps for controlled documents to better handle special cases (#55398)
+
+
+
+7.9.42
+========================================
+(Omnia 7.9.42 / Workplace 7.9.42 / WCM 7.9.42 / MS 7.9.42 / Analytics 7.9.10 / Feed 7.9.10)
+
+- Updated the behavior of date refiners so they remain visible even when the selected period contains no results (#55019)
+- Fixed a bug that prevented deletion of business profiles in a specific state (#55399)
+- The format in which process content is stored has been updated to make it retrievable through SharePoint search (#54738)
+- Controlled documents restored from the recycle bin now retain their connections to related documents (#53637)
+- Improved handling when renaming controlled documents after entering illegal characters (#55580, #55514)
+
+
 7.9.41
 ========================================
 (Omnia 7.9.41 / Workplace 7.9.41 / WCM 7.9.41 / MS 7.9.41 / Analytics 7.9.10 / Feed 7.9.10)
