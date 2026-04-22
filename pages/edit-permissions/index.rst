@@ -25,7 +25,7 @@ You can now set the following permissions, for this page and all sub pages:
 
 + **Editor**: Can create, delete and move pages and nodes, can use both Design mode and Write mode and can edit permissions here.
 + **Author**: Can create pages, can use the navigation panel to create new pages and other nodes, and can use Write mode to edit contents in some blocks.
-+ **Update-only author**: Available in Omnia 7.10 and later. Colleagues with this permission can only update existing pages using Write mode, and publish a new version of the page, but can not use the navigation panel, meaning can not, for example, create new pages. Also, this permission does not allow pages being deleted.
++ **Update-only author**: Available in Omnia 7.10 and later. Colleagues with this permission can only update existing pages using Write mode, and publish a new version of the page (or send for approval, depending on setup), but can not create new pages or delete pages, or perform any other actions for pages or the page navigation.
 
 **Note!** Page collection administrators are always permitted to work with pages (Editor permissions). They don't need to be added here.
 
