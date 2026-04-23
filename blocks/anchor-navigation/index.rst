@@ -15,7 +15,7 @@ General
 --------
 Set a title for the block here, if needed.
 
-.. image:: anchor-navigation-block-general-711.png
+.. image:: anchor-navigation-block-general.png
 
 Anchors
 --------
