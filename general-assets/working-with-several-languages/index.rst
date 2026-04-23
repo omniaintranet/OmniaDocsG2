@@ -13,7 +13,7 @@ For more information about variations, see: :doc:`Language version of a page </p
 
 Texts in blocks and variations
 ********************************
-When there are several languages set up in the tenant settings, but no variations in the publishing app, you can add the text in several tenant, in most text fields in blocks. If it's possible, it's indicated by a flag in the field, for example:
+When there are several languages set up in the tenant settings, but no variations in the publishing app, you can add the text in several languages, in most text fields in blocks. If it's possible, it's indicated by a flag in the field, for example:
 
 .. image:: flag-in-field.png
 
