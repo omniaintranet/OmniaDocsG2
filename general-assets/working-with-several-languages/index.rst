@@ -23,9 +23,13 @@ Just click the flag and select the language you want to use, and add the text. I
 
 Users should see the text in the language they have chosen in the language setting. If the text has not been added in the language a user has chosen, the text in the field falls back to default language as set in Omnia admin for the business profile.
 
-When variations has been set up in a publishing app, adding texts in several languages are now done in the variation, in most block fields. This is also called a multi -ingual field. This is indicated by a "clean" field, for example:
+When variations has been set up in a publishing app, adding texts in several languages are now done in the variation, in most block fields. This is also called a multiingual field. This is indicated by a "clean" field, for example:
 
 .. image:: flag-in-field-clean.png
 
 For more information on how an author/variation editor can work with a variation page, see: :doc:`Edit page variation </pages/edit-page-variations/index>`
+
+Languages in settings and more
+*********************************
+If a text of some sort in a setting can be added in several languages, a flag is always shown. Variations is only applicable for the pages. One example is the title for the Create page dialog.
 
