@@ -9,13 +9,13 @@ Here's an example of a anchor navigation:
 
 The following settings are available:
 
-.. image:: anchor-navigation-block.png
+.. image:: anchor-navigation-block-711.png
 
 General
 --------
 Set a title for the block here, if needed.
 
-.. image:: anchor-navigation-block-general.png
+.. image:: anchor-navigation-block-general-711.png
 
 Anchors
 --------
