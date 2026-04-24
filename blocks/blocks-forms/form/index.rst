@@ -27,7 +27,7 @@ and these:
 + **Legend alignment**: Select the alignment of the description in the diagrams here. Works together with the Legend position. In the example at the top of this page, the legend alignment is "Start".
 + **Legend position**: Select position for the description in the diagrams, in relation to the Legend alignment. In the example at the top of this page, the legend position is "Bottom".
 + **Show form title**: When the form was created, a title is added. If you want to show that title here, select this option.
-+ **Show form image**: (Available in 7.6.2). If you would like to show the form image, if any, select this option.
++ **Show form image**: If you would like to show the form image, if any, select this option.
 + **Open form as a dialog**: To open the form as a dialog, not as a page, select this option.
 + **Question padding**: If needed, add som padding.
 
