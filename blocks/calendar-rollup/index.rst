@@ -83,16 +83,15 @@ Display
 ---------
 Here you can set the following:
 
-.. image:: calendar-rollup-display-new4.png
+.. image:: calendar-rollup-display-711.png
 
 + **View**: Select the view for the list here. (Only Listing is available for now.)
-+ **Item limit**: Set the number of items to display on each "page" of the list.
++ **Max display item limit**: Set the number of items to display on each "page" of the list.
++ **Display 'Show more'**: To display a "Show more" option at the end of the list, select this option.
++ **No result text**: Here you ad a text to be displayed if no calendar events could be shown.
 + **Padding**: Set some padding around the list if needed.
 
 Layout and Write
 *********************
 The WRITE TAB is not used here. The LAYOUT tab contains general settings, see: :doc:`General Block Settings </blocks/general-block-settings/index>`
-
-
-
 
