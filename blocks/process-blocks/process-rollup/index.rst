@@ -1,9 +1,7 @@
 Process rollup block
 ========================
 
-Use the Process rollup block for a list of available processes. To display processes when a user clicks a process you don't have to set up specific pages if you don't want to. You can use the system page for processes that is always available.
-
-Note that this block is found in the "Content rollup" catagory, not the "Process information" category.
+Use the Process rollup block for a list of available processes. To display a process when a user clicks it you don't have to set up specific pages if you don't want to. You can use the system page for processes that is always available.
 
 Here's an example of a process rollup:
 
@@ -21,7 +19,7 @@ The following settings are available for Display:
 
 .. image:: process-rollup-block-settings-display-v78.png
 
-Note that you have select List view for the options to show up, even if that's the only available view.
+Note that you have to select "List view" for the options to show up, even if that's the only available view.
 
 (All options are not shown in the image but described below.)
 
@@ -30,7 +28,7 @@ Note that you have select List view for the options to show up, even if that's t
 + **Fixed header**: Select this option for the header to always be shwon when scrolling. 
 + **Title**: If variatons exists for the page, you can only set the title in the default language. Titles in other languages are set in the variations. If no variations exists, it looks like in the image above, and you can add a title in any or all available languages. 
 + **View page URL**: If you have created a page that will be used to display any process when a user clicks on it, add the Url to the page here. Note that you don't have to create a page for this purpose. If you don't, a system page will be used.
-+ **Open in a new window**: Select this option if the clicked process should be opened in a new window.
++ **Open in new window**: Select this option if the clicked process should be opened in a new window.
 + **Paging**: Select how paging should work; “No paging”, “Classic” or “Scroll”. 
 + **Item limit**: To limit the number of processes being displayed per "page", add a fixed number here. Works together with Paging.
 + **Sort by**: Select the property to sort the list by.
