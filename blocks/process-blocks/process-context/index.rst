@@ -1,7 +1,7 @@
 Process context block
 =======================
 
-You use this block to make sure the property process is available on the Properties tab for the page, so the page can be linked to the intended process. If you create a page to display a specific process, this is absolutely necessary so the various blocks will be populated with data from the process.
+You use this block to make sure the Process property is available on the Properties tab for the page, so the page can be linked to the intended process. If you create a page to display a specific process, this is absolutely necessary so the various blocks will be populated with data from the process.
 
 .. image:: process-context-block-v78.png
 
