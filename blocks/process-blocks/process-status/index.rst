@@ -1,9 +1,9 @@
 Process status block
 =======================================
 
-This block can be used in a process context to set and view the status for a step in the process. Mainly for use in Teams.
+This block can be used in a process context to set and view the status for a step in the process, mainly for use in Teams.
 
-Here's an user example. The user selcts a process step and can then see or edit the status for that step.
+Here's an example. The user selects a process step and can then see or edit the status for that step.
 
 .. image:: process-status-user.png
 
