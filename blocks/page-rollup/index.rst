@@ -50,7 +50,7 @@ For query builder, the following options are available:
   + Navigation path.
   + Channels.
 
-When you have selected apps, business profiles, channels or page collections, as the next step, you select one or more to get the pages from. 
+When you have selected apps, business profiles, channels or page collections, as the next step, you choose one or more to get the pages from. 
 
 .. image:: page-rollup-select.png
 
@@ -301,7 +301,7 @@ Most options should be self explanatory, just try out these settings. A preview 
 
 A few notes, though:
 
-+ **Mix card sizes**: When you select this option, the cards can be displayed with different sizes, which can change every time page is updated/opened. Note that you must have selected "Mixed" under "Layout" for this to work fully.
++ **Mix card sizes**: When you select this option, the cards can be displayed with different sizes, which can change every time the page is updated/opened. Note that you must have selected "Mixed" under "Layout" for this to work fully.
 + **Mix card types**: Select this option if you would like an automatic mix of card types. Card types are remixed every time the page is loaded. If you click this option on and off a few times while you work with the settings, you can see the mix changing. If you select "Mixed" for "Layout", this option is not available.
 + **Static title size**: If the size of the title always should be the same on all cards, select this option.
 + **Colorful**: Available for some Layout options. It's really colorful! Try it and see what you think.
