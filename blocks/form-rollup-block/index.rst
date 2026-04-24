@@ -54,7 +54,7 @@ Here's a simple example of a Form view:
 
 .. image:: form-rollup-display-example.png
 
-If you select "Form view", the top part of the settings is different:
+If you select "Form view", the top part of the settings are different:
 
 .. image:: form-rollup-display-form-view-76.png
 
