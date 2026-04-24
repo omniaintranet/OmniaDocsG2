@@ -1,25 +1,25 @@
 Page feedback block
 =====================
 
-This block makes it possible for users to send feedback about the page to the owner of the page. 
+This block makes it possible for users to send feedback about the page to the owner of the page. The user just types the message in the field and clicks "Post".
 
-The user just types the message in the field and clicks "Post".
+Here's an example with Limited rich text options available:
 
-.. image:: page-feedback-plain-new2x.png
-
-If rich text has been enabled for the block (see below), some formatting options are available, here's an example:
-
-.. image:: page-feedback-rich-new2.png
+.. image:: page-feedback-rich-711.png
 
 When the post has been sent, something like the following is shown:
 
 .. image:: page-feedback-sent.png
 
-In Write mode a page author will see the feedback, for example:
+In Write mode a page author can click the plus to see the feedback posts:
 
-.. image:: page-feedback-writemode-new.png
+.. image:: page-feedback-writemode-new-711.png
 
-The latest feeback posts are shown here. The name of the person who sent the feedback is clickable. The user profile card will open, if it's used within your organization. If it's not, the colleague's delve page will be displayed.
+Here's a simple example:
+
+.. image:: page-feedback-writemode-posts-711.png
+
+All feeback posts are shown here. The name of the person who sent the feedback is clickable. The user profile card will open, if it's used within your organization. If it's not, the colleague's delve page will be displayed.
 
 The number in the top right corner indicates the total number of feedback posts. If you click that number, all posts are shown.
 
