@@ -42,7 +42,7 @@ Here you can select List view or Card view.
 
 .. image:: publishing-app-rollup-settings-display-v7.png
 
-Available settings depends on what you select. All options are listed below (not all options are shown in the image).
+Available settings depend on what you select. All options are listed below (not all options are shown in the image).
 
 + **Add column**: If you select List View, you must add at least one column for the display to work.
 + **Cards per row**: Available for Card view. As it says, set the number of cards to show per row.
@@ -58,7 +58,7 @@ Available settings depends on what you select. All options are listed below (not
 + **Show follow status**: Follow status is indicated by a star, filled if the teamwork is followed, hollow if not, see below for an example.
 + **Term properties**: For Card view, you can add term properties to be shown on the cards. Click "Add" and select one or more properties.
 
-If you select STYLES for Card View, the following, additional settings becomes available:
+If you select STYLES for Card view, the following, additional settings is available:
 
 .. image:: publishing-app-rollup-settings-styles.png
 
