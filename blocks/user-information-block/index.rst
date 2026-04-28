@@ -61,9 +61,9 @@ Also note that for some properties it can be possible to use Edit to select Mult
 
 Actions
 *************
-Here you can select some actions to be available as links. Default=none. Note that there are actions only the current user (the user shown on the card) can use, and actions for all other users. 
+Here you can select some actions to be available as links. Default=none. Note, there are actions only the current user (the user shown on the card) can use, and actions for all other users. 
 
-.. image:: user-information-settings-actions.png
+.. image:: user-information-settings-actions-711.png
 
 LAYOUT and WRITE
 ******************
