@@ -17,7 +17,7 @@ The following is available here:
 
 .. image:: quick-links-settings-general-v78.png
 
-(All options are not shown in the image.)
+(All options are not shown in the image but described below.)
 
 + **Title**: If a title should be shown for the block, add it in this field. 
 + **Sorted by**: Decide how to sort the link list; Alphabetic or Last visited order.
