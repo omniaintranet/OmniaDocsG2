@@ -23,11 +23,11 @@ Here you can add a title for the block.
 
 Query
 ---------
-Here you select tha taxonomy to be used for navigation.
+Here you select the taxonomy to be used for navigation.
 
 .. image:: taxonomy-navigation-settings-query-v75.png
 
-For several of the taxanomies you must select where to get the term from - or to get it from the current page. 
+For several of the taxanomies you must select where to get the term from. 
 
 .. image:: taxonomy-navigation-settings-query-term-v75.png
 
