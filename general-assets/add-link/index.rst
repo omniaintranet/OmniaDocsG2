@@ -63,5 +63,31 @@ Note that you can also link to an anchor on a page, using a custom link. See abo
 
 Document
 *********
-When you want to link to a document, the options are exactly the same as those in "Document picker". For more information see: :doc:`Document picker </general-assets/document-picker/index>`
+Picking documents here is very similar to using the document picker, but there are som differences. Similar is the way you can search and browser for documents depends on settings in Omnia admin. Here's an example:
+
+.. image:: link-picker-documents-1.png
+
+Use the document picker this way:
+
+1. Select tab if more than one is shown.
+2. Select a document.
+3. Click "OK".
+
+If the list is long, use the navigation at the bottom of the page to go between pages:
+
+.. image:: link-picker-documents-2.png
+
+Depending on settings, a search can be available, and it can also be possible to filter the list on a property, in the example above on document owner. It's also possible to set a date interval for when the document was updated. 
+
+The section to the right is not found in the document picker, they are available in other places, for example in the settings for a document rollup. 
+
++ **Title**: You can set a title (name) for the link using this field.
++ **Open in browser**: If the document should be opened in the browser, and not in an application on the user's computer, select this option.
++ **Open in browers (New tab)**: Similar to the above but also opened in a new tab.
++ **Download**: If it should be possible to download the document from the link, select this option. Note that other settings in the system may prevent dpwnload.
++ **Icon**: If you would like to add an icon to the link, use these settings.
+
+Settings for the document picker
+-----------------------------------
+Settings for the document picker is found in the business Profile. As stated above, these settings is also used here. See: :doc:`Document picker settings </admin-settings/business-group-settings/settings/document-picker/index>`
 
