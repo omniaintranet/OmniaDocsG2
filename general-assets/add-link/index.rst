@@ -84,7 +84,7 @@ The section to the right is not found in the document picker, they are available
 + **Title**: You can set a title (name) for the link using this field.
 + **Open in browser**: If the document should be opened in the browser, and not in an application on the user's computer, select this option.
 + **Open in browers (New tab)**: Similar to the above but also opened in a new tab.
-+ **Download**: If it should be possible to download the document from the link, select this option. Note that other settings in the system may prevent dpwnload.
++ **Download**: If it should be possible to download the document from the link, select this option. Note that other settings in the system may prevent download.
 + **Icon**: If you would like to add an icon to the link, use these settings.
 
 Settings for the document picker
