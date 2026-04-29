@@ -63,7 +63,7 @@ Note that you can also link to an anchor on a page, using a custom link. See abo
 
 Document
 *********
-Picking documents here is very similar to using the document picker, but there are som differences. Similar is the way you can search and browser for documents depends on settings in Omnia admin. Here's an example:
+Picking documents here is very similar to using the document picker, but there are som differences. Similar is that the way you can search and browse for documents depends on settings in Omnia admin. Here's an example:
 
 .. image:: link-picker-documents-1.png
 
