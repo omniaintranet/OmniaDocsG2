@@ -1,13 +1,11 @@
 Teamwork rollup
 ======================
 
-Use this block to list team sites and other teamworks the user has access to. Here's an example when the block is used to rollup projects (projects are teamworks):
+Use this block to list team sites and other teamworks, including projects, the user has access to. Here's a simple example:
 
-.. image:: sitedirectory-v7.png
+.. image:: sitedirectory-v711.png
 
-Note the metadata for project status and project sponsor.
-
-Icons indicate if a Teams group, Viva Engage (former Yammer) or Facebook workplace group is connected to the teamsite. Users can click the icon to go to the group. In the image above a Teams group is connected to each team site.
+Icons can indicate if a Teams group, Viva Engage (former Yammer) or Facebook workplace group is connected to the teamsite. Users can click the icon to go to the group. In the image above a Teams group is connected to some of the team sites.
 
 Settings
 *********
