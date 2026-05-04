@@ -25,6 +25,7 @@ In this part of the documentation you will find information about general assets
    single-site-collection/index
    using-anchors/index
    targeting-in-omnia/index
+   using-omnia-webparts-sharepoint/index
    using-people-picker/index
    using-tokens-in-omnia/index
    working-with-layouts/index
