@@ -15,7 +15,7 @@ Now you can find the webparts in the toolbox, for example:
 
 .. image:: toolbox.png
 
-2. Click the webpart on the page, where you want to place the new webpart.
+2. Click a webpart on the page, where you want to place the new webpart.
 3. Select webpart in the toolbox.
 
 The new webpart is now placed under the selected webpart.
