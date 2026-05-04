@@ -9,7 +9,7 @@ Using the webparts on a teamsite
 ***********************************
 As teamsites really are SharePoint sites, you can also opt to use the webparts on such pages. Here's how:
 
-1. Edit the teamsite paage.
+1. Edit the teamsite page.
 
 Now you can find the webparts in the toolbox, for example:
 
