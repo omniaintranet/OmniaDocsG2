@@ -24,3 +24,4 @@ The new webpart is now placed under the selected webpart.
 5. Edit any settings to your liking.
 6. Publish the changes.
 
+:doc:`General block settings </blocks/general-block-settings/index>`
