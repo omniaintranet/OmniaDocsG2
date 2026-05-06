@@ -72,7 +72,7 @@ Here's an example:
 
 A-Z filtering
 ---------------
-In Omnia 7.10 and later, A-Z filtering can be available for some proerties. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language contains special letters in the alphabet, A-Z filering works for those letters as well, and for numbers, if applicable.
+In Omnia 7.10 and later, A-Z filtering can be available for some properties. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language contains special letters in the alphabet, A-Z filering works for those letters as well, and for numbers, if applicable.
 
 Here's an example where A-Z filtering is used:
 
