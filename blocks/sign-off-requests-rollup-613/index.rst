@@ -31,7 +31,7 @@ Controlled documents can be part of a sign-off request. A single sign-off reques
 
 Here's an example of two documents being requested for sign-off :
 
-.. image:: sign-off-document-new.png
+.. image:: sign-off-document-new-edit.png
 
 A document opens the usual way and after having read it, the user then returns to this list and ticks the box.
 
