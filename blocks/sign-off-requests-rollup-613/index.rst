@@ -13,7 +13,7 @@ The colored dots indicates the progress for the whole request, meaning the progr
 
 A request contains one or more pages/documents to sign-off. In this example, the user has read and signed off seven of the posts, but has yet to read and sign-off two more.
 
-.. image:: sign-off-block-example-signed-off.png
+.. image:: sign-off-block-example-signed-off-edit.png
 
 The user can read the information by clicking the link and can then sign off using a button. Here's an example of how that button can look:
 
