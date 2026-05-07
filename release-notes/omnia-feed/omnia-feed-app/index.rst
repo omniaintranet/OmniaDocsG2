@@ -19,6 +19,10 @@ Release notes
 
 Below are the latest release notes for the app.
 
+.. note::
+   
+   Hotfix release notes for the Omnia Feed extension (deployed together with other Omnia extensions) are included in the release notes for Omnia here: :doc:`Release notes for Omnia </release-notes/index>`
+
 .. toctree::
    :titlesonly:
 
