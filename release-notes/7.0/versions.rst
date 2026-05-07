@@ -1,6 +1,25 @@
+7.11.4
+========================================
+(Omnia 7.11.4 / Workplace 7.11.4 / WCM 7.11.4 / MS 7.11.4 / Analytics 7.11.2 / Feed 7.9.12)
+
+- Fixed a bug that could cause images to not display correctly (#56107)
+
+7.11.2
+========================================
+(Omnia 7.11.2 / Workplace 7.11.2 / WCM 7.11.2 / MS 7.11.2 / Analytics 7.11.2 / Feed 7.9.12)
+
+- The ability to open documents in the client application from the Document Rollup has been reintroduced
+- Dropdown action buttons now support scrolling when containing more than 20 items (#55902, #156621, #153189)
+- Advanced filtering options have been added to the user sync
+- The FAQ block now uses the title from the default variation as a fallback
+- Fixed an issue where the user language could cause analytics data to be displayed incorrectly (#55839)
+- The number of dynamic groups displayed in the identity selector has been increased
+
+
+
 7.11.0
 ========================================
-(Omnia 7.11.0 / Workplace 7.11.x / WCM 7.11.x / MS 7.11.x / Analytics 7.11.x / Feed 7.11.x)
+(Omnia 7.11.0 / Workplace 7.11.0 / WCM 7.11.0 / MS 7.11.0 / Analytics 7.11.0 / Feed 7.9.12)
 
 New features
 ************
