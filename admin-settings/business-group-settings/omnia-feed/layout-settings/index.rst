@@ -72,11 +72,13 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
+You can use the PREVIEW button to check yoour progress as you're working. 
+
 Create a draft from a published version
 *****************************************
 When you have opened a published version of a layout, you can create a new draft from that layout:
 
-.. image:: layout-create-draft.png
+.. image:: layout-create-draft-711.png
 
 When a new draft is created, you work with it as described above.
 
