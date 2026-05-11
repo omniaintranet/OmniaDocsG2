@@ -19,7 +19,7 @@ Available settings also differ when you work with the tab settings. More informa
 
 The following settings are available for layout settings:
 
-.. image:: layout-settings-new.png
+.. image:: layout-settings-new-edit.png
    
 This is how you are meant to work with these options:
 
