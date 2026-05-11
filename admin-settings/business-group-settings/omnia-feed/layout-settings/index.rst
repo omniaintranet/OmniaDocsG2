@@ -19,7 +19,7 @@ Available settings also differ when you work with the tab settings. More informa
 
 The following settings are available for layout settings:
 
-.. image:: layout-settings-new-edit2.png
+.. image:: layout-settings-new-edit.png
    
 This is how you are meant to work with these options:
 
@@ -39,7 +39,7 @@ Creating new layouts
 **********************
 To create one or more new layouts, click the plus and use the following settings:
 
-.. image:: new-layout.png
+.. image:: new-layout-edit.png
 
 You can import a layout or select a layout template as a starting point, see below. One layout template is always available.
 
