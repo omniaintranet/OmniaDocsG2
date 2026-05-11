@@ -70,9 +70,9 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 .. image:: edit-layout-edit-preview-edit-711.png
 
-When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
-
 You can use the PREVIEW button to check yoour progress as you're working. 
+
+When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
 Create a draft from a published version
 *****************************************
