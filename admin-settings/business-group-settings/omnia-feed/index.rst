@@ -7,7 +7,7 @@ Omnia Feed - Business profile settings
 
 The following settings are available for Omnia Feed, for the business profile:
 
-.. image:: business-profile-omnia-feed-711.png
+.. image:: business-profile-omnia-feed-711-new.png
 
 Select section below for more information:
 
