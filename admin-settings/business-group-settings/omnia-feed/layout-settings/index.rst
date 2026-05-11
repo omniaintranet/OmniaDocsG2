@@ -52,6 +52,7 @@ Use these settings to create a new layout or edit a template or an imported layo
 + **Tab view settings**: Here you set up the tab view settings for the tab.
 + **Detail view settings**: Here you set up the detail view setting for the tab.
 + **Version history**: Each time you edit a layout and save or publish it, a new version is created. Published editions are noted with an integer, work in progress with a decimal. When there's more than one version, you can continue working on any version. 
++ **Preview**: Use this button to preview the tab you're working on.
 
 When all settings are done, don't forget to click CREATE to create a draft of the new layout. When the layout is finalized, you can publish the layout.
 
