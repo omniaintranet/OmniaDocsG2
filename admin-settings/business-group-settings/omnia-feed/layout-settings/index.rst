@@ -60,13 +60,15 @@ Edit a layout
 *****************
 When you have created a layout draft, it's shown in the list and you can edit or delete it. Click here to edit:
 
-.. image:: edit-layout-edit.png
+.. image:: edit-layout-edit-711.png
 
-The settings are shown:
+Something like the following is shown:
 
-.. image:: edit-layout-edit-preview.png
+.. image:: edit-layout-edit-preview-711.png
 
-If you click the EDIT button you can edit all settings as shown above. If there are more than one version of this layout available, you can choose the version to work with.
+Click EDIT to enter edit mode, which can look someting like this:
+
+.. image:: edit-layout-edit-preview-edit-711.png
 
 When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
