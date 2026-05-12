@@ -17,7 +17,7 @@ The following actions, using the dot menu to the right, are available for a comm
 
 .. image:: community-actions-v79-frame.png
 
-**Note!** To be able to delete a community, you must be app administrator for the community and site collection admin for the site in SharePoint. Also note that deleting a community from this list deletes 
+**Note!** To be able to delete a community, you must be app administrator for the community and site collection admin for the site in SharePoint. Also note, deleting a community from this list deletes 
 the connected Sharepoint site as well, which is different from publishing sites and teamwork sites.
 
 For more information, see below.
