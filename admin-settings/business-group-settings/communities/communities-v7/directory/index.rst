@@ -31,7 +31,7 @@ To create a community from here, do the following:
 
 Here's an example:
 
-.. image:: community-template-v7.png
+.. image:: community-template-v711.png
 
 3. Add the information needed. All steps in the setup may not be needed for a certain template. Available settings depend on how the template is set up. Here's a common example:
 
@@ -71,11 +71,11 @@ Using the action EDIT you can edit the settings for a community. Available optio
 
 An important note about SharePoint URL
 -----------------------------------------
-For the apps that needs a SharePoint site, the URL to that site is shown in the field "SharePoint URL/Alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is recognized by the system.
+For the apps that need a SharePoint site, the URL to that site is shown in the field "SharePoint URL/Alias". If, for some reason, the URL for the SharePoint site is edited in SharePoint admin, it must be edited in Omnia as well, or the Omnia app won't work. Beware that this is to be regarded as an advanced action and can cause problems. Be also aware that it can take some time, 10 minutes or more, before the new SharePoint URL is recognized by the system.
 
 Edit alias
 ****************
-If it should be needed to edit the alias (app route), Select "Alias" in the dot menu for the community and the following is shown:
+If editing the alias (app route) is needed, Select "Alias" in the dot menu for the community and the following is shown:
 
 .. image:: app-route-community-v79.png
 
