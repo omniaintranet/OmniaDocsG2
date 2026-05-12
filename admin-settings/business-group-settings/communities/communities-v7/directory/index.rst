@@ -11,7 +11,7 @@ Use this icon to close the menu to the left and work in full window mode:
 
 .. image:: communities-icon-v79.png
 
-You can click the link to go to a community. You can search for a community and use the headings "Title", "Template" and "Created date" to sort the list, in Omnia 7.7 and earlier, "URL" and "Created date" in Omnia 7.8 and later.
+You can click the link to go to a community. You can search for a community and use the headings "URL" and "Created date" tom sort the list.
 
 The following actions, using the dot menu to the right, are available for a community in the "All" list:
 
