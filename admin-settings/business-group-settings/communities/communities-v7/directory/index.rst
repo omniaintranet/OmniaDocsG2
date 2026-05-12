@@ -3,8 +3,6 @@ Directory of communities
 
 Within a business profile several communities can be active for different settings. To be able to create a community, at least one template for this purpose must be available. If none are, create a template first.
 
-(Images from Omnia 7.9 in this description).
-
 Here you will see a list of communities in the business profile, for example:
 
 .. image:: communities-apps-v79.png
