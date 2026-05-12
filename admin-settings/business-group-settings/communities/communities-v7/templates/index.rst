@@ -23,3 +23,4 @@ Firstly, there are no features available for a Viva Engage community template. B
 
 Select either Viva Engage group or SharePoint as default resource.
 
+The rest of the settings are general, as described on the page linked above.
