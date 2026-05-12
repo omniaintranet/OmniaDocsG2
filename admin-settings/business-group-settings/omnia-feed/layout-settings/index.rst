@@ -62,7 +62,7 @@ When you have created a layout draft, it's shown in the list and you can edit or
 
 .. image:: edit-layout-edit-711.png
 
-Something like the following is shown:
+The settings for the layout is shown, for example:
 
 .. image:: edit-layout-edit-preview-711.png
 
@@ -70,7 +70,7 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 .. image:: edit-layout-edit-preview-edit-711.png
 
-You can use the PREVIEW button to check yoour progress as you're working. 
+Use the icons to add, edit or delete. You can use the PREVIEW button to check yoour progress as you're working. 
 
 When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
@@ -88,25 +88,25 @@ You can export a published layout so it can be used as a starting point, or as i
 
 Click this button to export the layout:
 
-.. image:: layout-export-layout.png
+.. image:: layout-export-layout-711.png
 
 A file is now created as a json file in your computer's Downloads folder, using the title of the layout as the file name. This file can be copied or moved anywhere you need.
 
 Import a layout
 ****************
-If there are a layout that have been exported available, you can import it, but note that you must know the file name. Here's how:
+If there is a layout that have been exported available, you can import it when you have started working on a new layout, but note that you must know the file name. Here's how:
 
 1. Click this icon.
 
-.. image:: import-layout-icon.png
+.. image:: import-layout-icon-711.png
 
 2. Click "Choose file" to browse and find the layout file.
 
-.. image:: import-layout-choose.png
+.. image:: import-layout-choose-711.png
 
 3. When you have selected a file, click IMPORT.
 
-You can now edit the imported layout if you wish, and publish a new version. Note that the title is not imported, you always have to add a  new title.
+You can now edit the imported layout as you you wish, and publish a new version. Note that the title is not imported, you always have to add a  new title.
 
 Use a template
 ******************
@@ -114,14 +114,14 @@ To use a template as a starting point, do the following:
 
 1. Click this icon.
 
-.. image:: layout-template-icon.png
+.. image:: layout-template-icon-711.png
 
 2. Select a layout.
 
-.. image:: layout-template-select.png
+.. image:: layout-template-select-711.png
 
 3. Click IMPORT.
-4. Edit the template if you wish, and publish a new version.
+4. Edit the template as you wish, and publish a new version.
 
 Editing layout settings
 **************************
@@ -134,7 +134,7 @@ The work order is roughly:
 
 Additional settings for the block are now shown - different settings depending on type of block. Here's an example for the Heading block:
 
-.. image:: layout-heading-block.png
+.. image:: layout-heading-block-711.png
 
 For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
