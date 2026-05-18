@@ -70,7 +70,7 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 .. image:: edit-layout-edit-preview-edit-711.png
 
-Use the icons to add, edit or delete. You can use the PREVIEW button to check yoour progress as you're working. 
+Use the icons to add, edit or delete. You can use the PREVIEW button to check your progress as you're working. 
 
 For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
