@@ -72,7 +72,7 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 Use the icons to add, edit or delete. You can use the PREVIEW button to check your progress as you're working. 
 
-For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
+For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you know how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
 For some blocks, you can select a number of child blocks to be displayed. If it's possible, a plus is shown. Click the plus and add child blocks if needed. If it's not possible to add a child block, the plus is simply not shown.
 
