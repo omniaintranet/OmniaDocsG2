@@ -78,6 +78,8 @@ For some blocks, you can select a number of child blocks to be displayed. If it'
 
 When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
+**Important note**: New blocks can only be added directly when creating a new layout. To add blocks when editing a layout, a container, like Row or Column, must first be added, and then a block can be added in the container.
+
 Create a draft from a published version
 *****************************************
 When you have opened a published version of a layout, you can create a new draft from that layout:
@@ -127,29 +129,3 @@ To use a template as a starting point, do the following:
 3. Click IMPORT.
 4. Edit the template as you wish, and publish a new version.
 
-Editing layout settings
-**************************
-When creating a new or editing a layout, you can add a great number of settings for both Tab view settings and Detail view settings. You work the same way with both.
-
-The work order is roughly:
-
-1. Add one or more page types (mandatory).
-2. Select a block and click ADD.
-
-Additional settings for the block are now shown - different settings depending on type of block. Here's an example for the Heading block:
-
-.. image:: layout-heading-block-711x.png
-
-For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
-
-For some blocks, you can select a number of child blocks to be displayed. If it's possible, a plus is shown. Click the plus and add child blocks if needed. If it's not possible to add a child block, the plus is simply not shown.
-
-To edit child blocks, click the pen. Now you can edit one or more child blocks and decide the view order, for example:
-
-.. image:: layout-heading-block-example-2x.png
-
-As you can see, in this work view you can delete child blocks, and you can add new ones.
-
-You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
-
-.. image:: layout-heading-block-example-3x.png
