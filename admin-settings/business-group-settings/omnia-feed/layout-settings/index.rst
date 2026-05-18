@@ -138,7 +138,7 @@ The work order is roughly:
 
 Additional settings for the block are now shown - different settings depending on type of block. Here's an example for the Heading block:
 
-.. image:: layout-heading-block-711.png
+.. image:: layout-heading-block-711x.png
 
 For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
@@ -146,10 +146,10 @@ For some blocks, you can select a number of child blocks to be displayed. If it'
 
 To edit child blocks, click the pen. Now you can edit one or more child blocks and decide the view order, for example:
 
-.. image:: layout-heading-block-example-2.png
+.. image:: layout-heading-block-example-2x.png
 
 As you can see, in this work view you can delete child blocks, and you can add new ones.
 
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
-.. image:: layout-heading-block-example-3.png
+.. image:: layout-heading-block-example-3x.png
