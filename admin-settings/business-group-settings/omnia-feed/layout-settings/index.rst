@@ -72,6 +72,10 @@ Click EDIT to enter edit mode, which can look someting like this:
 
 Use the icons to add, edit or delete. You can use the PREVIEW button to check yoour progress as you're working. 
 
+For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
+
+For some blocks, you can select a number of child blocks to be displayed. If it's possible, a plus is shown. Click the plus and add child blocks if needed. If it's not possible to add a child block, the plus is simply not shown.
+
 When all edits are done, and saved, you use the PUBLISH button to finalize the layout.
 
 Create a draft from a published version
@@ -138,9 +142,7 @@ Additional settings for the block are now shown - different settings depending o
 
 For several blocks you choose properties the get information from. For most blocks you can also add a custom style sheet if needed, if you now how to use Text style syntax for React Native: https://reactnative.dev/docs/text-style-props
 
-For a few blocks, you can select a number of child blocks to be displayed. Here's an example from the template with blocks and a custom style sheet:
-
-.. image:: layout-heading-block-example-1.png
+For some blocks, you can select a number of child blocks to be displayed. If it's possible, a plus is shown. Click the plus and add child blocks if needed. If it's not possible to add a child block, the plus is simply not shown.
 
 To edit child blocks, click the pen. Now you can edit one or more child blocks and decide the view order, for example:
 
@@ -151,11 +153,3 @@ As you can see, in this work view you can delete child blocks, and you can add n
 You can edit any settings for a child block (settings differ between blocks). Here's an example of settings for a Heading child block:
 
 .. image:: layout-heading-block-example-3.png
-
-
-
-
-
-
-
-
