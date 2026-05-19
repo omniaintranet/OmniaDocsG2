@@ -1,3 +1,15 @@
+7.11.5
+========================================
+(Omnia 7.11.5 / Workplace 7.11.5 / WCM 7.11.5 / MS 7.11.5 / Analytics 7.11.2 / Feed 7.9.12)
+
+- Updated the behavior of birthday properties to prevent the wrong day from being displayed
+- Improved the display handling of long group names in the mapping of targeting properties (#55951)
+- Changed the default label of sections when using multilingual support
+- It is now possible to change the order of page types in a newly created page collection (#55959)
+- Updated the process for deleting enterprise properties to prevent issues with the search sync flow
+- Fixed an issue in the newsletter that could cause social reactions to be duplicated
+
+
 7.11.4
 ========================================
 (Omnia 7.11.4 / Workplace 7.11.4 / WCM 7.11.4 / MS 7.11.4 / Analytics 7.11.2 / Feed 7.9.12)
