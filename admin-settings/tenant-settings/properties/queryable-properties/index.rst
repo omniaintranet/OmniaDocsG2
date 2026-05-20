@@ -1,6 +1,8 @@
 Queryable properties
 ===========================
 
+**This page is being updated.**
+
 Here, you add properties that should be queryable in Omnia's database. The properties are used in the query builder, so far in these blocks:
 
 + **App Instances**: In Teamwork rollup.
