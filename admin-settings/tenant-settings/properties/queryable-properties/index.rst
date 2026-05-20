@@ -43,15 +43,15 @@ Note that once a queryable property for semantic search has been created, it can
 
 .. image:: queryable-semantic-v79.png
 
-A-Z filtering
+A-Z paging
 ---------------
-In Omnia 7.10 and later, A-Z filtering can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
+In Omnia 7.10 and later, A-Z paging can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
 
-A-Z filtering can be activated for some views. It's not available under Filter settings. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language has special letters in the alphabet, meaning other letters than A-Z, A-Z filering works for those letters as well.
+A-Z paging can be activated for some views. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language has special letters in the alphabet, meaning other letters than A-Z, A-Z paging works for those letters as well.
 
-For A-Z filtering to work, you must set it up for all applicable queryable properties.
+For A-Z paging to work, you must set it up for all applicable queryable properties.
 
-When creating a queryable property, if the property is of the right type (Text or Processes). you can select A-Z filtering for it:
+When creating a queryable property, if the property is of the right type (Text or Processes). you can select A-Z paging for it:
 
 .. image:: a-z-select.png
 
@@ -67,7 +67,7 @@ A list of properties, of type Text and type Processes, are shown. Here's an exam
 
 2. Select the properties that should be available for A-Z filtering and save.
 
-When a rollup is set up, editors can choose an A-Z property for some views. Here's an example for a Page rollup where A-Z filtering can be selected for List view, Card and Event list. 
+When a rollup is set up, editors can activate A-Z paging for some views. Here's an example for a Page rollup where A-Z paging can be selected for List view, Card and Event list. 
 
 .. image:: a-z-block-example-new.png
 
