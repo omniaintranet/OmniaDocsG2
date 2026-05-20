@@ -67,7 +67,7 @@ A list of properties, of type Text and type Processes, are shown. Here's an exam
 
 2. Select the properties that should be available for A-Z filtering and save.
 
-When a rollup is set up, editors can choose an A-Z property, as in this example (Page rollup) where "Title (A-Z)" has been added as a filter. This is the setting in the example image above.
+When a rollup is set up, editors can choose an A-Z property for some views. Here's an example for a Page rollup (Page rollup) where A-Z filtering can be selected for List view, Card and Event list. 
 
-.. image:: a-z-block-example.png
+.. image:: a-z-block-example-new.png
 
