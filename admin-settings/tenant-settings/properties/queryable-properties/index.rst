@@ -45,7 +45,7 @@ Note that once a queryable property for semantic search has been created, it can
 
 A-Z paging
 ---------------
-In Omnia 7.10 and later, A-Z paging can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
+In Omnia 7.10, this option was called A-Z filtering och worked a bit differently. In Omnia 7.11 and later, A-Z paging can be added for queryable properties for Appinstances, Pages, Processes, Sign-off requests and Forms. **Note!** A-Z filtering can only be activated for properties of type Text and type Processes.
 
 A-Z paging can be activated for some views. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language has special letters in the alphabet, meaning other letters than A-Z, A-Z paging works for those letters as well.
 
