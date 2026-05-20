@@ -23,7 +23,7 @@ These lists are available here:
 
 The lists are handled the same way. Here's part of the list for App instances as an example (but note that queryable properties for semantic search works a bit differently, see below):
 
-.. image:: queryable-app-instances-v79.png
+.. image:: queryable-app-instances-v711.png
 
 To remove a poperty from the list, click the dust bin.
 
