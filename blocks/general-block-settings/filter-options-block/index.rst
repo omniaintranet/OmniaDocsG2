@@ -80,7 +80,7 @@ Here's an example where A-Z paging is used:
 
 .. image:: a-z-example.png
 
-In this example, not all letters exist in that data set, for example D and J, and those letters are then simply not shown as filters. To filter, you click the letter, just as you would with other filters.
+In this example, not all letters exist in that data set, for example D and J, and those letters are then simply not shown as filters. To filter, the user just clicks a letter.
 
 And here's an example from settings of a Page rollup. In this rollup, A-Z paging can be made available for the views List view, Card and Event list.
 
