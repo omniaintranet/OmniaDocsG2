@@ -118,6 +118,8 @@ These options are available for most views, shown in different order for differe
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
 + **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
++ **Show A-Z paging**: If you would A-Z paging to be available for users, select this option. Available for List view, Card and Event list.
++ **A-Z filtering property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
@@ -251,7 +253,15 @@ If the purpose is that new pages should be created (or rather published) on spec
 
 See this page for information on how to activate scheduled publishing: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
-See this page for information on how to use scheduled publishing: :doc:`Publish page changes </pages/publish-page-changes/index>`
+See this page for information on how to use scheduled publishing: :doc:`Filter options for blocks </pages/publish-page-changes/index>`
+
+More information about A-Z paging
+----------------------------------
+For A-Z paging to work, one or more Queryable properties must be activated for this functionality.
+
+For more information on the property settings, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+
+There's more information on this page as well: :doc:`General block settings </blocks/general-block-settings/filter-options-block/index>`
 
 Adding columns
 ----------------
