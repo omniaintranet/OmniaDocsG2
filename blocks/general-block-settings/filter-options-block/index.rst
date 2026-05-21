@@ -72,15 +72,17 @@ Here's an example:
 
 A-Z paging
 ---------------
-In Omnia 7.10, this option was called A-Z filtering and worked a bit differently. In 7.11 and later it's now found as an option for some views under Display (meaning not available under Filter). When used, a list can be filtered on any of the letters that exist in the data set. The property to base A-Z paging on is selected. And it's not just A-Z. If a language contains special letters in the alphabet, meaning other letters than A-Z, A-Z filtering works for those letters as well, and for numbers, if applicable.
+In Omnia 7.10, this option was called A-Z filtering and worked a bit differently. In 7.11 and later it's now found as an option for some views under Display (meaning not available under Filter). When used, a list can be filtered on any of the letters that exist in the data set. The property to base A-Z paging on is selected. 
 
-Here's an example where A-Z filtering is used:
+And it's not just A-Z. If a language contains special letters in the alphabet, meaning other letters than A-Z, A-Z paging works for those letters as well, and for numbers, if applicable.
+
+Here's an example where A-Z paging is used:
 
 .. image:: a-z-example.png
 
 In this example, not all letters exist in that data set, for example D and J, and those letters are then simply not shown as filters. To filter, you click the letter, just as you would with other filters.
 
-For A-Z filtering to work, it must be set up for all applicable queryable properties, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+For A-Z paging to work, it must be set up for all applicable queryable properties, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
 
 Style options
 ***************
