@@ -1,3 +1,13 @@
+7.11.8
+========================================
+(Omnia 7.11.8 / Workplace 7.11.8 / WCM 7.11.8 / MS 7.11.8 / Analytics 7.11.2 / Feed 7.9.12)
+
+- It is now possible to crop images that have been rotated (#56508)
+- The "Auto-clean pasted content" feature in the rich text editor now applies correctly after page type updates (#56392)
+- Variation filters can now be used in all scopes within the Digital Signage Rollup (#56207)
+- Users are now redirected correctly when using links from emails requiring authentication (#56642)
+- Publishing app rollups now support sorting based on Canadian English (#55849)
+
 7.11.6
 ========================================
 (Omnia 7.11.6 / Workplace 7.11.6 / WCM 7.11.6 / MS 7.11.6 / Analytics 7.11.2 / Feed 7.9.12)
