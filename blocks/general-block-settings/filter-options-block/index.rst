@@ -70,9 +70,9 @@ Here's an example:
 + **Fixed filter width**: The filter width is per default dynamic. Set a value here to make the filter width fixed.
 + **Delete**: Click to delete the filter.
 
-A-Z filtering
+A-Z paging
 ---------------
-In Omnia 7.10 and later, A-Z filtering can be available for some properties. When used, a list can be filtered on any of the letters that exist in the data set. Filtering is done on the main column, for example names of pages. And it's not just A-Z. If a language contains special letters in the alphabet, meaning other letters than A-Z, A-Z filtering works for those letters as well, and for numbers, if applicable.
+In Omnia 7.10, this option was called A-Z filtering and worked a bit differently. In 7.11 and later it's now found as an option for some views under Display (meaning not available under Filter). When used, a list can be filtered on any of the letters that exist in the data set. The property to base A-Z paging on is selected. And it's not just A-Z. If a language contains special letters in the alphabet, meaning other letters than A-Z, A-Z filtering works for those letters as well, and for numbers, if applicable.
 
 Here's an example where A-Z filtering is used:
 
