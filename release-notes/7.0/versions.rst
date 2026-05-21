@@ -1,14 +1,23 @@
-7.11.5
+7.11.6
 ========================================
-(Omnia 7.11.5 / Workplace 7.11.5 / WCM 7.11.5 / MS 7.11.5 / Analytics 7.11.2 / Feed 7.9.12)
+(Omnia 7.11.6 / Workplace 7.11.6 / WCM 7.11.6 / MS 7.11.6 / Analytics 7.11.2 / Feed 7.9.12)
 
-- Updated the behavior of birthday properties to prevent the wrong day from being displayed
 - Improved the display handling of long group names in the mapping of targeting properties (#55951)
 - Changed the default label of sections when using multilingual support
 - It is now possible to change the order of page types in a newly created page collection (#55959)
 - Updated the process for deleting enterprise properties to prevent issues with the search sync flow
 - Fixed an issue in the newsletter that could cause social reactions to be duplicated
+- Corrected the setup wizard for on-prem customers to allow creation of business profiles
 
+7.11.5
+========================================
+(Omnia 7.11.5 / Workplace 7.11.5 / WCM 7.11.5 / MS 7.11.5 / Analytics 7.11.2 / Feed 7.9.12)
+
+- Updated the behavior of birthday properties to prevent the wrong day from being displayed
+- Email Document Management now uses the correct language throughout the entire body text (#55026)
+- Improved synchronization of user profile images to ensure changes are propagated correctly
+- Corrected an issue that could cause automatic page translation to fail
+- The Document Rollup now displays the loading indicator correctly
 
 7.11.4
 ========================================
