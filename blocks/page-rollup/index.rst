@@ -119,7 +119,7 @@ These options are available for most views, shown in different order for differe
 + **Padding**: Add some padding between the list and the block border, if needed.
 + **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
 + **Show A-Z paging**: If you would A-Z paging to be available for users, select this option. Available for List view, Card and Event list.
-+ **A-Z filtering property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
++ **A-Z paging property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
