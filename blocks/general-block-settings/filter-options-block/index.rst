@@ -3,7 +3,7 @@ Filter options for blocks
 
 All filter and refiner options for blocks, are now found under Filter. A-Z paging is an exception, see below.
 
-Exactly which options will be available for filtering will depend on the type of block and sometimes other options already selected.This page describes common options.
+Exactly which options will be available for filtering will depend on the type of block and sometimes other options already selected. This page describes common options.
 
 Here's an example of available filter options:
 
