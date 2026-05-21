@@ -82,7 +82,15 @@ Here's an example where A-Z paging is used:
 
 In this example, not all letters exist in that data set, for example D and J, and those letters are then simply not shown as filters. To filter, you click the letter, just as you would with other filters.
 
-For A-Z paging to work, it must be set up for all applicable queryable properties, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
+And here's an example from settings of a Page rollup. In this rollup, A-Z paging can be made available for the views List view, Card and Event list.
+
+.. image:: a-z-paging.png
+
+You then must select the property to base the A-Z paging on. In this list, all properties made available for this functionality is shown. If there's just one property in the list, you must still select it for A-Z paging to work in this rollup.
+
+.. image:: a-z-paging-property.png
+
+To be available in the above list, all applicable queryable properties must be set up in Omnia admin, see: :doc:`Queryable properties </admin-settings/tenant-settings/properties/queryable-properties/index>`
 
 Style options
 ***************
