@@ -1,3 +1,15 @@
+Release 7.11
+============
+
+Release 7.11.1
+==============
+- Added support for "login hint" configuration in Intune
+- Removal of unused permissions
+- Improvements regarding token handling
+
+Release 7.9
+===========
+
 Release 7.9.11
 ==============
 
