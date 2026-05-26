@@ -88,7 +88,7 @@ The settings are the same for all form types. All settings you use when creating
 
 .. image:: forms-settings-76.png
 
-+ **ADD IMAGE**: (Available in Omnia 7.6.2). Click here to add an image for the form, using Media picker. When adding the form to the Form block, the editor can decide to use the image, or not. For the Form rollup block, a general option to show images or not, is available. Also, see below for an example.
++ **ADD IMAGE**: Click here to add an image for the form, using Media picker. When adding the form to the Form block, the editor can decide to use the image, or not. For the Form rollup block, a general option to show images or not, is available. Also, see below for an example.
 + **Title**: Add a Title for the form here, in any or all of the available languages.
 + **Use points**: Selected per default for Surveys, but can be changed.
 + **Use correct answer**: If it should be possible to show correct answers, after the user has submitted answers, select this option. Selected per default for checkups.
