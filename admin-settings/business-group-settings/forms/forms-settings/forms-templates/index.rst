@@ -5,7 +5,7 @@ You can create templates for all three types of forms, to make it easier to cons
 
 If any forms are created, they are shown in this list.
 
-.. image:: forms-templates-list.png
+.. image:: forms-templates-list-711.png
 
 All settings can be edited by clicking the pen, see below. Click the dustbin to delete a template. To create a new template, click the plus.
 
@@ -13,7 +13,7 @@ Settings for a template
 ********************************
 The following settings are available when creating a new template or editing an existing one:
 
-.. image:: forms-templates-settings.png
+.. image:: forms-templates-settings-711.png
 
 + **Type**: Select type of form for the template: Poll, Survey or Checkup.
 + **Title**: Add a title for the template here (required).
