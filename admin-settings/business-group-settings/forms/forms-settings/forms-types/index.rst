@@ -23,7 +23,7 @@ The settings available when creating a new type or editing an existing are these
 + **Templates**: You can select a template for the type.
 + **Allow multiple questions**: If it should be possible to create several questions, select the option. If not, only one question can be created.
 + **Show form settings**: If the form settings should be shown so the administrator can edit them, when creating a form, select this option.
-+ **Enable event tracking**: Available in Omnia 7.8 and later. If Matomo event tracking should be on for this form type, select this option. (For more information, see below).
++ **Enable event tracking**: If Matomo event tracking should be on for this form type, select this option. (For more information, see below).
 
 For more information about property sets, see: :doc:`Property sets </admin-settings/tenant-settings/properties/property-sets/index>`
 
