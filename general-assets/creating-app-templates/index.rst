@@ -72,7 +72,7 @@ To edit settings, click "Publishing app settings" or similar, and use the follow
 
 .. image:: publishing-edit-setup-settings-v7.png
 
-+ **Allow reuse content**: If apps created from this template should allow reuse of content, select "Enable reuse content". 
++ **Allow reuse content**: If apps created from this template should allow reuse of content, select "Enable reuse content". More information can be found here: :doc:`Reusable content </pages/reusable-content/index>`
 + **Contact property**: Select the default property for page contact.
 + **Review date property**: Select the default property for review date.
 + **Permisson**: Users, or groups, that should be able to take part in the sites activites should be added in this field. A suggestion can be added here, but it can be edited when a site is created from this template.
