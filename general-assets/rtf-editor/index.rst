@@ -245,7 +245,7 @@ Any language can be selected here. The languages set up in Omnia admin are shown
 
 **Note!** You can use Ctrl-Z or just discard changes if you change your mind.
 
-Using OpenAI
+Chat OpenAI
 -----------------
 If available, you can use OpenAI to suggest changes to the text, or maybe even to suggest some text for you.
 
