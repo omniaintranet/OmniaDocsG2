@@ -1,7 +1,6 @@
 About semantic search
 ===================================
-
-Semantic search can be available in Omnia 7.8 and later, depending on settings in Omnia admin. 
+Is settings allow it, semantic search can be available in Omnia (see below for prerequisites).
 
 For users
 **********
@@ -25,6 +24,4 @@ For semantic search to work, pages and documents must be indexed. It's needed to
 **Very important!** The semantic search will soon be developed further in Omnia but for now (Omnia 7.8 and 7.9) it does **not support security trimming**. Therefore, the easiest way forward at this point, is to use semantic search only for common information that anyone in the organization have permission to read. 
 
 Also, there's a permission group available where you can add the colleagues or groups that should be able to use semantic search. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
-
-
 
