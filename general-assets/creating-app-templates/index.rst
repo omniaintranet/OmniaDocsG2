@@ -1,9 +1,9 @@
 Creating app templates
 =============================================
 
-In Omnia, templates for publishing apps, communities and teamwork are created in a simlar way. This page describes the general options for these three types of templates. Available options can differ depending on type of app/site is being created. See the respective page in Omnia admin for more information (links at the bottom of this page).
+In Omnia, templates for publishing apps, communities and teamwork are created in a simlar way. This page describes the general options for these three types of templates. Available options can differ depending on type of app/site being created. See the respective page in Omnia admin for more information (links at the bottom of this page).
 
-Images in this description from templates for publishing Apps.
+Images in this description from templates for publishing apps.
 
 Creating a new template
 ****************************************
