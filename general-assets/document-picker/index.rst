@@ -1,7 +1,7 @@
 Document picker
 =================
 
-The document picker is used in various places in Omnia where documents is selected, but it's slightly differtent then picking documents and the link picker (Add links). What will actually be available in the picker depends on settings in Omnia admin. Here's an example:
+The document picker is used in various places in Omnia where documents is selected, but it's slightly different compared to picking documents in the link picker (Add links). What is actually be available in the picker depends on settings in Omnia admin. Here's an example:
 
 .. image:: document-picker-example-76.png
 
@@ -21,5 +21,5 @@ Depending on settings, a search can be available, and it can also be possible to
 
 Settings for the document picker
 *********************************
-Settings for the document picker is found in the business Profile, see: :doc:`Document picker settings </admin-settings/business-group-settings/settings/document-picker/index>`
+Settings for the document picker is found in settings for the business profile, see: :doc:`Document picker settings </admin-settings/business-group-settings/settings/document-picker/index>`
 
