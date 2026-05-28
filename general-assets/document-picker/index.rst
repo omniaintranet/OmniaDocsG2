@@ -3,7 +3,7 @@ Document picker
 
 The document picker is used in various places in Omnia where documents is selected. It's slightly different compared to picking documents in the link picker (Add links). What is actually available in the picker depends on settings in Omnia admin. Here's an example:
 
-.. image:: document-picker-example-76.png
+.. image:: document-picker-example-711.png
 
 Use the document picker this way:
 
@@ -13,11 +13,11 @@ Use the document picker this way:
 
 If the list is long, use the navigation at the bottom of the page to go between pages:
 
-.. image:: document-picker-navigation-76.png
+.. image:: document-picker-navigation-711.png
 
-Depending on settings, a search can be available, and it can also be possible to filter the list on a property, in this example on document owner. It's also possible to set a date interval for when the document was updated. 
+Depending on settings, a search can be available, and it can also be possible to filter the list on a property, in this example on document owner. It's also possible to set a date interval for when the document was modified. 
 
-.. image:: document-picker-search-76.png
+.. image:: document-picker-search-711.png
 
 Settings for the document picker
 *********************************
