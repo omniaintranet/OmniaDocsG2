@@ -1,6 +1,6 @@
 About semantic search
 ===================================
-Is settings allow it, semantic search can be available in Omnia (see below for prerequisites).
+If settings allow it, semantic search can be available in Omnia (see below for prerequisites).
 
 For users
 **********
