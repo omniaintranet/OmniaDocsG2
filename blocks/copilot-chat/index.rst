@@ -11,7 +11,7 @@ For this block to be available, the tenant feature "Experimental - Copilot chat"
 
 For more information on block dialogs, see the heading "Block dialog" on this page: :doc:`Block gallery </admin-settings/tenant-settings/block-gallery/index>`
 
-Setting
+Settings
 **********
 The following settings are available:
 
