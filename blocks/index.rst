@@ -55,6 +55,7 @@ Blocks
    search/index
    sign-off-requests-rollup-613/index
    subscribe/index
+   table-of-contents-block/index
    task-rollup/index
    taxonomy-navigation/index
    team-collaboration-rollup/index
