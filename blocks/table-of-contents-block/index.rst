@@ -21,11 +21,11 @@ Anchors
 --------
 These settings are available here:
 
-table-of-contents-settings-anchors.png
+.. image:: table-of-contents-settings-anchors.png
 
-You can either add the headings you would like to be used in the table of contents or select a property.
+You can either add the headings you would like to be used in the table of contents or select a property. 
 
-When you select "Read from property" a list is shwon where you select the property to use.
+When you select "Read from property" a list is shown where you select the property to use.
 
 Display
 --------
