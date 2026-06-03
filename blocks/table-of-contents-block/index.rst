@@ -3,7 +3,7 @@ Table of contents block
 
 **We're working on a description of this block. Will be finished soon.**
 
-Use this block to genereate a navigation from headings on the page or from s configured property.
+Use this block to genereate a navigation from headings on the page or from a configured property.
 
 Settings
 ********
