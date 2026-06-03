@@ -3,7 +3,7 @@ Copilot chat
 
 **Important note!** This block is to be considered experimental for now. It will be developed further soon.
 
-Use this block for (experimental) Copilot chats. The purpose is NOT primarily finding information within Omnia, but general chats.
+Use this block for (experimental) Copilot chats. The purpose is NOT primarily finding information within Omnia, but general chats, the same way as you would use Copilot in Microsoft Office.
 
 Prerequisites
 **************
