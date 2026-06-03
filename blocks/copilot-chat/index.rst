@@ -17,11 +17,11 @@ The following settings are available:
 
 .. image:: copilot-settings.png
 
-**Title**: A title for the block can be added.
-**Input placeholder**: If you would like another text than "Message Copilot" as seen in the input field, add that text here.
-**No messages**: Before an chat is started, the message "Welcome, how can I help? is shown. If you would like some other message there, add it to this field.
-**Border radius**: This settings changes the shape of the input field.
-**Use streaming**: If this option is **not activated**, Copilot will work until the complete answer is finished, and will then show it. If this option is **activated** Copilot will show partial answers whilw it's woking, meaning users will see answers poping upp more rapdidly, but it will still take time before the complete anwers is shown.
++ **Title**: A title for the block can be added.
++ **Input placeholder**: If you would like another text than "Message Copilot" as seen in the input field, add that text here.
++ **No messages**: Before an chat is started, the message "Welcome, how can I help? is shown. If you would like some other message there, add it to this field.
++ **Border radius**: This settings changes the shape of the input field.
++ **Use streaming**: If this option is **not activated**, Copilot will work until the complete answer is finished, and will then show it. If this option is **activated** Copilot will show partial answers whilw it's woking, meaning users will see answers poping upp more rapdidly, but it will still take time before the complete anwers is shown.
 
 Layout and Write
 ******************
