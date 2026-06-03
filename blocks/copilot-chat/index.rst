@@ -15,7 +15,7 @@ Setting
 **********
 The following settings are available:
 
-..image:: copilot-settings.png
+.. image:: copilot-settings.png
 
 **Title**: A title for the block can be added.
 **Input placeholder**: If you would like another text than "Message Copilot" as seen in the input field, add that text here.
