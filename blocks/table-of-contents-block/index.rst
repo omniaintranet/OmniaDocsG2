@@ -1,7 +1,7 @@
 Table of contents block
 ========================
 
-**We're working on a description of this block. Will be finished soon.**
+(We're still working on the description of this block. More will be finished soon.)
 
 Use this block to genereate a navigation from headings on the page or from a configured property.
 
