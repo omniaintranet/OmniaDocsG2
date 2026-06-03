@@ -69,7 +69,7 @@ Content can also be reused in automatic page creation. For more information, see
 
 More about reusable sections
 *********************************
-To be able to resuse contents from a section, that section must of the correct section type, available in Omnia 7.11 and later. 
+To be able to resuse contents from a section (available in Omnia 7.11 and later) that section must be of type "Reusable", set up in Page types. See the link to the settings page below. 
 
 When reusing content from sections, there are some limitations you should be aware of. See the link to the settings page below. 
 
