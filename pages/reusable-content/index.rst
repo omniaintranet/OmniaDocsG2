@@ -7,7 +7,7 @@ A property that are not shown for users can be reused as well, for example Revie
 
 A prerequisite for reusable content to be available, is that "Enable reuse content" is turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
-Note that blocks with reused content are locked on the target page. They can not be edited there. Reused content can only be edited on the source page. 
+Note that blocks and sections with reused content are locked on the target page. They can not be edited there. Reused content can only be edited on the source page. 
 
 Regarding permissions, the editor working with the reusable content on the source page must have editing permissions on the target pages as well, for publishing to the target pages to work.
 
