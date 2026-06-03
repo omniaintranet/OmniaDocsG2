@@ -1,7 +1,7 @@
 Reusable content
 ===================
 
-Content from one Omnia page can be reused on another Omnia page. It's true for variations as well. To be more precise, it's content from defined properties that are being reused, so applicable blocks must be present on the target page, for information to show up. In Omnia 7.11 and later content from reuasable sections can be used as well, with some limitations, see the bottom of the page.
+Content from one Omnia page can be reused on another Omnia page. It's true for variations as well. To be more precise, it's content from defined properties that are being reused, so applicable blocks or sections must be present on the target page, for information to show up. For more information on reusing sections, see the bottom of the page.
 
 A property that are not shown for users can be reused as well, for example Review date.
 
