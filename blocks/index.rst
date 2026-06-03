@@ -22,6 +22,7 @@ Blocks
    calendar-rollup/index
    channel-rollup/index
    controlled-documents-library/index
+   copilot-chat/index
    create-app/index
    create-teamwork/index
    community-rollup/index
