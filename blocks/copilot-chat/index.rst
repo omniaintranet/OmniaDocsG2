@@ -21,7 +21,7 @@ The following settings are available:
 + **Input placeholder**: If you would like another text than "Message Copilot" as seen in the input field, add the text here.
 + **No messages**: Before any chat is started, the message "Welcome, how can I help?" is shown. If you would like some other message there, add it to this field.
 + **Border radius**: This settings changes the shape of the input field.
-+ **Use streaming**: If this option is **not activated**, Copilot will work until the complete answer is finished, and will then show it. If this option is **activated** Copilot will show partial answers while it's woking, meaning users will see answers poping up faster, but it will still take time before the complete anwers is shown.
++ **Use streaming**: If this option is **not activated**, Copilot will work until the complete answer is finished, and will then show it. If this option is **activated** Copilot will show partial answers while it's working, meaning users will see answers poping up faster, but it will still take time before the complete anwers is shown.
 
 Layout and Write
 ******************
