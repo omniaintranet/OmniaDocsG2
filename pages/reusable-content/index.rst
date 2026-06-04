@@ -5,7 +5,12 @@ Content from one Omnia page can be reused on another Omnia page. It's true for v
 
 A property that are not shown for users can be reused as well, for example Review date.
 
-A prerequisite for reusable content to be available, is that "Enable reuse content" is turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
+Prerequisite: "Enable reuse content" must turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
+
+More infomation:  
+
++ :doc:`Setup reusable sections </setup/reusable-content/index>`
++ :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
 Important notes
 *****************
@@ -17,11 +22,6 @@ When using reusable content, it's important to be aware of:
 + A Reusable section can’t be moved or copied.
 + You can’t move a block within the section if the section has been used for reusable content at least once.
 + A Reusable section can’t contain a block that uses a property for some or all content.
-
-More infomation:  
-
-+ :doc:`Setup reusable sections </setup/reusable-content/index>`
-+ :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
 Reuse content
 *******************
