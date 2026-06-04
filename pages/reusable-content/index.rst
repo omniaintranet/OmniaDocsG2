@@ -7,6 +7,8 @@ A property that is not shown for users can be reused as well, for example Review
 
 Prerequisite: "Enable reuse content" must be turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
+If you encounter the message “the page is not reusable”, see the bottom of the page.
+
 More infomation:  
 
 + :doc:`Setup reusable sections </setup/reusable-content/index>`
@@ -43,8 +45,6 @@ The following is shown:
 
 The page picker starts and you use it to select a source page or variation. See this page for more information on how to use the page picker: :doc:`Page picker </general-assets/page-picker/index>`
 
-**Note!** If an error message is shown saying "the page is not reusable", reausable content has not been activated for the publishing app, see above. 
-
 The properties that are or can be reused on the target page are listed, for example:
 
 .. image:: reuse-content-list-new.png
@@ -62,6 +62,14 @@ If you are reusing properties used for settings, that is indicated as well, with
 .. image:: reuse-content-on-page-settings-properties-new.png
 
 In this example, three of the property fields are being reused from another page: Page contact, Applies to, and Preview before.
+
+The page is not reusable
+***************************
+If you encounter the message “the page is not reusable”, here's the steps to take:
+
++ Verify that reusable content is enabled in Publishing app settings.
++ Verify that the page type includes a Reusable section mapped to the correct Data property.
++ Verify that the source and target pages use the expected page type.
 
 Editing the source page
 *************************
