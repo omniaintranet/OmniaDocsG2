@@ -94,10 +94,10 @@ When you have selected "Reusable", available in Omnia 7.11 and later, you must s
 
 .. image:: reusable-section-settings.png
 
-FGor more infomation, see:  
+For more infomation, see:  
 
 + :doc:`Setup reusable sections </setup/reusable-content/index>`
-+ :doc:`Settings for sections </pages/page-types/section-settings/index>`
++ :doc:`Reusable content </pages/reusable-content/index>`
 
 Spacing
 ***********
