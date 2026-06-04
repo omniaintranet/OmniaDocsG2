@@ -5,9 +5,9 @@ In Omnia 7.11 and later, you can use reusable sections to reuse content across p
 
 Prerequisite
 ***************
-Before you start, make sure Enable reusable content is turned on in Publishing app settings.
+Before you start, make sure "Enable reusable content" is turned on in Publishing app settings.
 
-See: Publishing app settings
+See: :doc:`Publishing app settings </pages/page-settings/index>`
 
 Set up a reusable section
 **************************
@@ -31,22 +31,6 @@ When content in the reusable section on the source page is updated and published
 
 .. image:: reusable-content-new.png
 
-Important notes
-*****************
-+ Reused content is locked on the target page and can only be edited on the source page.
-+ The editor who updates source content must have edit permissions on the target pages.
-+ The reusable section cannot be moved or copied.
-+ If a reusable section has been used at least once, blocks in that section cannot be rearranged.
-+ A reusable section cannot contain blocks that use a property for some or all content.
-
-Troubleshooting
-*********************
-If you see an error such as “the page is not reusable”:
-
-+ Verify that reusable content is enabled in Publishing app settings.
-+ Verify that the page type includes a Reusable section mapped to the correct Data property.
-+ Verify that the source and target pages use the expected page type.
-
 Verification
 ***************
 To confirm setup is correct:
@@ -54,4 +38,8 @@ To confirm setup is correct:
 + Edit content in the source page reusable section.
 + Publish the source page.
 + Open the target page and verify the updated content is shown.
+
 More information
+****************
+More information on reusable content is found here: :doc:`Reusable content </pages/reusable-content/index>`
+
