@@ -94,11 +94,8 @@ When you have selected "Reusable", available in Omnia 7.11 and later, you must s
 
 .. image:: reusable-section-settings.png
 
-When reusing content from sections, there are some limitations you should be aware of:
+For more information, see:
 
-+ A Reusable section can't be moved or copied.
-+ You can't move a block within the section if the sections has been used for reusable content at least once.
-+ A Reusable section can't contain a block that uses a property for some or all content. 
 
 Spacing
 ***********
