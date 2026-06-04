@@ -7,9 +7,21 @@ A property that are not shown for users can be reused as well, for example Revie
 
 A prerequisite for reusable content to be available, is that "Enable reuse content" is turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
-Note that blocks and sections with reused content are locked on the target page. They can not be edited there. Reused content can only be edited on the source page. 
+Important notes
+*****************
+When using reusable content, it's important to be aware of:
 
-Regarding permissions, the editor working with the reusable content on the source page must have editing permissions on the target pages as well, for publishing to the target pages to work.
++ Blocks and sections with reused content are locked on the target page. They can not be edited there. Reused content can only be edited on the source page. 
++ The editor working with reusable content on the source page must have editing permissions on the target pages as well.
++ To be able to reuse content from a section (available in Omnia 7.11 and later) that section must be of type "Reusable", set up in Page types.
++ A Reusable section can’t be moved or copied.
++ You can’t move a block within the section if the section has been used for reusable content at least once.
++ A Reusable section can’t contain a block that uses a property for some or all content.
+
+More infomation:  
+
++ :doc:`Setup reusable sections </setup/reusable-content/index>`
++ :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
 Reuse content
 *******************
@@ -66,14 +78,4 @@ If the source page is deleted, nothing happens to the pages with reused content.
 Automatic page creation
 ****************************
 Content can also be reused in automatic page creation. For more information, see: :doc:`Automatic page creation </pages/automatic-page-creation/index>`
-
-More about reusable sections
-*********************************
-To be able to resuse contents from a section (available in Omnia 7.11 and later) that section must be of type "Reusable", set up in Page types. See the link to the settings page below. 
-
-When reusing content from sections, there are some limitations you should be aware of. See the link to the settings page below. 
-
-And it's the same as for blocks - an applicable section must be present on the target page, for information to show up.
-
-For more information, see this page: :doc:`Settings for sections </pages/page-types/section-settings/index>`
 
