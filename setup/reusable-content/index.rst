@@ -21,16 +21,8 @@ Follow these steps to setup a reusable section:
 
 When the content of the reusable section on the page from step 3 is updated it will be reflected on the page from step 4.
 
-Important notes
-*****************
-+ A Reusable section can’t be moved or copied.
-+ You can’t move a block within a reusable section if the sections has been used for reusable content at least once.
-+ A Reusable section can’t contain a block that uses a property for some or all content.
-+ Blocks and sections with reused content are locked on the target page. They can not be edited there. Reused content can only be edited on the source page.
-+ The editor working with the reusable content on the source page must have editing permissions on the target pages as well.
-
 More information on reusable content
 ***************************************
-See these pages for more information:
+See this pages for more information:
 
 + :doc:`Reusable content </pages/reusable-content/index>`
