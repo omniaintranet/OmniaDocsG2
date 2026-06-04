@@ -14,4 +14,5 @@ This part of the documentaton contains setup instructions for different parts of
    setup-omnia-teams/index
    setup-enterprise-glossary/index
    setup-ai/index
+   reusable-content
 
