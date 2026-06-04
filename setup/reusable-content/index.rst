@@ -23,6 +23,6 @@ Follow these steps to setup a reusable section:
 
 When the content of the reusable section on the page from step 3 is updated it will be reflected on the page from step 4.
 
-More information on reusable content is found here:
+.. image:: reusable-content.png
 
-+ :doc:`Reusable content </pages/reusable-content/index>`
+More information on reusable content is found here: :doc:`Reusable content </pages/reusable-content/index>`
