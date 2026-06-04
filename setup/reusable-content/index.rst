@@ -5,15 +5,15 @@ Prerequisite: "Enable reuse content" must be turned on in the publishing app set
 
 Follow these steps to setup a reusable section:
 
-1. Create an enterprise property of type Data.
-2. Create a page type.
+1. **Create an enterprise property of type Data.**
+2. **Create a page type.**
 	a. Add a section of type Reusable section. 
 	b. Map it to the property from step 1.
 	c. Publish the page type.
-3. Create a page using the page type from step 2.
+3. **Create a page using the page type from step 2.**
 	a. Add blocks to the reusable section.
 	b. Publish the page.
-4. Create another page using the page type from step 2.
+4. **Create another page using the page type from step 2.**
 	a. Configure reusable content. 
 	b. Select the page from step 3 as source. 
 	c. add the property from step 1. 
