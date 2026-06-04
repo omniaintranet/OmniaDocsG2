@@ -1,6 +1,8 @@
 Setup reusable sections
 =========================
 
+In omnia 7.11 and later, reusable sections can be used for reusable content.
+
 Prerequisite: "Enable reuse content" must be turned on in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
 Follow these steps to setup a reusable section:
@@ -21,8 +23,6 @@ Follow these steps to setup a reusable section:
 
 When the content of the reusable section on the page from step 3 is updated it will be reflected on the page from step 4.
 
-More information on reusable content
-***************************************
-See this pages for more information:
+More information on reusable content is found here:
 
 + :doc:`Reusable content </pages/reusable-content/index>`
