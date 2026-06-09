@@ -1,3 +1,15 @@
+7.11.10
+========================================
+(Omnia 7.11.10 / Workplace 7.11.10 / WCM 7.11.10 / MS 7.11.10 / Analytics 7.11.2 / Feed 7.9.12)
+
+- Workflow history now correctly reflects when a publishing process has been canceled (#55468)
+- Added configuration options to allow specific users to be excluded from synchronization between Entra ID and Omnia
+- Improved the responsiveness of the Mega Menu (#56781)
+- User property synchronization now supports mapping a single source property to multiple Omnia properties
+- Documents previously configured for publishing with special read rights are now validated to ensure that read-rights users have been specified (#169706)
+- Hardened page status updates when multiple users are working on the same page and the approval flow is changed
+- Added image support to additional blocks in the Send as Email functionality (#54030)
+
 7.11.8
 ========================================
 (Omnia 7.11.8 / Workplace 7.11.8 / WCM 7.11.8 / MS 7.11.8 / Analytics 7.11.2 / Feed 7.9.12)
