@@ -80,7 +80,9 @@ When you have done that, Omnia's settings are shown, as described below.
 
 Using Dall-E to create images
 ******************************
-If Dall-E is available, it can be used to create images in the Media picker. Here's how to use it:
+Dall-E can be used to create images in the Media picker. The be available, the tenant feature "Dall-E" must be active. 
+
+Here's how to use Dall-E:
 
 1. Click Dall-E.
 
@@ -99,6 +101,12 @@ Now you can choose size and edit the image the normal way, see below.
 As an alternative, you can point at the image and select to download it (left icon) or scrap it and try another instruction (right icon).
 
 .. image:: image-picke-dall-e-save.png
+
+Using GPT Image to create images
+**********************************
+GPT Image is another option for creating images. To use it, the tenant feature "GPT Image" must be active.
+
+When activated, you use it the same way as Dall-E, described above.
 
 File size larger than recommended
 ****************************************
