@@ -52,7 +52,7 @@ Unsplash
 **************************
 For Unsplash only a search field is available (the same way as for Pexels, see above).
 
-For Mediaflow to be available, the prerequisites in Omnia are:
+For Unsplash to be available, the prerequisites in Omnia are:
 
 1. The feature "Unsplash" must be active.
 2. Application ID and Client ID must be added under "Permissions" > "Secrets" > "Unsplash" for the tenant. (These settings are provided by Unsplash).
