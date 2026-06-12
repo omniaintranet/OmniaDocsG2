@@ -1,3 +1,13 @@
+7.11.11
+========================================
+(Omnia 7.11.11 / Workplace 7.11.11 / WCM 7.11.11 / MS 7.11.11 / Analytics 7.11.2 / Feed 7.9.12)
+
+- Fixed an issue that could cause Analytics blocks to fail to load (#57100)
+- Document properties are now displayed without unnecessary spacing (#56856)
+- Improved semantic search responses (#56634)
+- Added the ability to maintain a list of words that will not be translated by automatic machine translation
+
+
 7.11.10
 ========================================
 (Omnia 7.11.10 / Workplace 7.11.10 / WCM 7.11.10 / MS 7.11.10 / Analytics 7.11.2 / Feed 7.9.12)
