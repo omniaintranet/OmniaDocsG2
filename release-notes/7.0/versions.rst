@@ -5,7 +5,7 @@
 - Fixed an issue that could cause Analytics blocks to fail to load (#57100)
 - Document properties are now displayed without unnecessary spacing (#56856)
 - Improved semantic search responses (#56634)
-- Added the ability to maintain a list of words that will not be translated by automatic machine translation
+- Added the ability to mark words and sentences that will not be translated by automatic machine translation
 
 
 7.11.10
