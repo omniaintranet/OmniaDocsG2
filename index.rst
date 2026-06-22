@@ -27,6 +27,7 @@ Topics
    about-SharePoint-CSP-enforcement-compatibility/index
    SharePoint-Server-2019-Testing-and-Support-Policy-Update/index
    cookies-consent-information/index
+   mcp/index
    release-notes/index
    roadmap/index
    contribute-to-doc/index
