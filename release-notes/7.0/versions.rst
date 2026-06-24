@@ -2,7 +2,7 @@
 ========================================
 (Omnia 7.11.16 / Workplace 7.11.16 / WCM 7.11.16 / MS 7.11.16 / Analytics 7.11.4 / Feed 7.9.12)
 
-- The Document Bulk Update functionality has received major improvements
+- The Document Bulk Update functionality has received major improvements `Learn more <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/index.html#71116-document-bulk-update--a-new-way-to-manage-document-changes-at-scale>`_
 - Document templates for controlled documents now use the template language when resolving term-based token replacements
 - Fixed an issue that prevented users from signing up for events created with both scheduled publishing and a limited sign-up period (#57004)
 - The Calendar Rollup now requires the "Group.Read.All" delegated permission to ensure users can view events (#57211)
