@@ -1,6 +1,36 @@
+7.11.16
+========================================
+(Omnia 7.11.16 / Workplace 7.11.16 / WCM 7.11.16 / MS 7.11.16 / Analytics 7.11.4 / Feed 7.9.12)
+
+- The Document Bulk Update functionality has received major improvements
+- Document templates for controlled documents now use the template language when resolving term-based token replacements
+- Fixed an issue that prevented users from signing up for events created with both scheduled publishing and a limited sign-up period (#57004)
+- The Calendar Rollup now requires the "Group.Read.All" delegated permission to ensure users can view events (#57211)
+- A–Z filtering is no longer incorrectly displayed in the Navigation Path view (#57006)
+- Language-specific characters are now sorted correctly in A–Z filtering (#56994)
+- Fixed an issue that could cause filter values to appear more than once (#56599)
+- Corrected link behavior for customers using custom domains (#57738)
+- Updated media inherited from page types to allow page editors to remove the default image (#57003, #57544)
+- Fixed an issue that could cause images to not be displayed in Page Rollups under certain circumstances
+- Page and Document Rollup titles are no longer shown in the notification panel when no items can be displayed (#56869, #55681)
+- Corrected the autoplay functionality of the Page Rollup when used within tabs (#57045)
+- It is now possible to filter on user type when creating user synchronization filters (#57682)
+- Fixed an issue that caused likes and comments to display incorrect counts in certain views (#56425)
+- Quick Links sorting now takes language-specific characters into consideration (#56413)
+- Corrected the behavior of the "Site Properties" button on SharePoint sites (#57209)
+- Added support for GPT-5 models
+- Navigating to an unpublished page as an editor now correctly opens the appropriate variation (#57071)
+- Fixed an issue where flipped shapes in Processes were not saved correctly (#57347)
+- Updated the horizontal scrolling behavior in Processes to display scrollbars only when necessary (#56205)
+- The action button type "Flat" has been renamed to "Text only" to better reflect its appearance
+- Corrected an issue that could cause page version history to not be displayed (#56810)
+- Large logos on mobile devices will no longer overflow (#56951)
+- Improved the automatic translation flow to reduce cases where translations were not performed (#57686)
+
+
 7.11.11
 ========================================
-(Omnia 7.11.11 / Workplace 7.11.11 / WCM 7.11.11 / MS 7.11.11 / Analytics 7.11.2 / Feed 7.9.12)
+(Omnia 7.11.11 / Workplace 7.11.11 / WCM 7.11.11 / MS 7.11.11 / Analytics 7.11.4 / Feed 7.9.12)
 
 - Fixed an issue that could cause Analytics blocks to fail to load (#57100)
 - Document properties are now displayed without unnecessary spacing (#56856)
