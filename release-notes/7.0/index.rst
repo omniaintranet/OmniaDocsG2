@@ -10,6 +10,7 @@ Managing large collections of controlled documents has never been easier. We've 
 The new interface makes it simple to find the right documents, review the impact of planned changes, and apply updates with confidence. This is especially valuable during reorganizations, mergers, or governance initiatives where document ownership and metadata need to be updated across many documents at once.
 
 By reducing manual effort and increasing transparency throughout the update process, organizations can keep their document landscape accurate, compliant, and aligned with the way they work today.
+
 .. image:: Document-Bulk-Update.png
 
 (7.11) Silent publish
