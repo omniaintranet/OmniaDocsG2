@@ -29,7 +29,14 @@ Sign-off requests can now be completed directly within the Omnia Feed app using 
 
 Matomo statistics
 -----------------
-Matomo tracking is now supported in the mobile app, making it possible to see how many users access pages from the app.
+Matomo tracking is now supported in the mobile app, making it possible to track page visits and the following actions (set on the page type) made within the app.
+
+- Add comment
+- Add reaction
+- Add comment reply
+- Add comment reaction
+- Share
+- First read
 
 Colors and contrasts
 --------------------
