@@ -1,6 +1,11 @@
 Release 7.11
 ============
 
+Release 7.11.2
+--------------
+- Resolved an issue where URL settings were not syncing correctly to the mobile app
+- WCAG improvements for screen reader compatibility
+
 Release 7.11.1
 --------------
 - Added support for "login hint" configuration in Intune
