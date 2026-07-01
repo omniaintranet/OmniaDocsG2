@@ -1,88 +1,92 @@
 Release 7.12 (Draft)
 ========================================
 
-Accesibilty improvements WCAG
+Accessibility Improvements (WCAG)
 ------------------------------------------------------
-- FAQ block headings element can be configure to h1, h2, h3 ets.
-- WCAG compliant header search option
-- Page rollup - calendar view
-- New Date/time picker
-- Page rollup card view
-- People rollup
-- Notification panel
-- Filter component across all rollups
+- FAQ block heading elements can be configured as H1, H2, H3, etc.
+- WCAG-compliant header search
+- WCAG improvements for the Page Rollup calendar view
+- New date/time picker
+- WCAG improvements for the Page Rollup card view
+- WCAG improvements for People Rollup
+- WCAG improvements for the notification panel
+- WCAG improvements for filter components across all rollups
 
-Improved SharePoint integration
+Improved SharePoint Integration
 ------------------------------------------------------
-- Improved page view experience in dialog - Variation picker, Additional metadata, edit
+- Improved page viewing experience in dialogs, including the Variation Picker, additional metadata, and editing
 - View Omnia pages within SharePoint
-- Creating and Edit Omnia page from a SharePoint site
-- Sharepoint page picker
-- Team news rollup
+- Create and edit Omnia pages directly from a SharePoint site
+- SharePoint page picker
+- Team News Rollup
   - Improved querying
-  - multiple views
-  - Filter options
-- Support for process blocks on SharePoint pages
-- Sign of request includes SharePoint pages
-- Support for SharePoint Brand Center 
-- Matomo analytics for SharePoint pages
+  - Multiple views
+  - Additional filter options
+- Support for Process blocks on SharePoint pages
+- Sign-off requests now include SharePoint pages
+- Support for SharePoint Brand Center
+- Matomo Analytics for SharePoint pages
 
-Search 
+Search
 ------------------------------------------------------
-- Reindex Semantic search page and document index
+- Reindex semantic search page and document indexes
 - Support for Excel files in Semantic Search
-- Search template consilidation
+- Search template consolidation
 
-UI improvements
+UI Improvements
 ------------------------------------------------------
-- Property selector
-- New templates
-- Page rollup - Horizontal card, Additional metadata
-- Banner - Image on left/righ
-- Left Navigation - More settings
-- Improve comment deletion tracking options
-- M365 look for header search
-- Mega menu - Centered, optional icons and uppercase 
-- Adjusted the order of dynamic content in the mega menu block
-- Dynamic font size based on action button sizes 
+- Improved Property Selector
+- New page and page type templates
+- Page Rollup horizontal card view with additional metadata
+- Banner support for left- and right-aligned images
+- Additional Left Navigation settings
+- Improved comment deletion tracking
+- Microsoft 365 look and feel for header search
+- Mega Menu improvements:
+  - Centered layout
+  - Optional icons
+  - Uppercase menu items
+- Improved ordering of dynamic content in the Mega Menu
+- Dynamic font sizing based on action button size
 - Custom font support
-- App selector UI is align with M365
-- React to content directly from the page rollup
-- New Date/time picker
-- Quick publish dialog UI improvements
-- Additional Breadcrumb styles
-- Events - Event rollup card view - New display options for event information
-- Updated your seesion is expired screen
+- App Selector aligned with the Microsoft 365 experience
+- React to content directly from Page Rollup
+- New date/time picker
+- Quick Publish dialog improvements
+- Additional breadcrumb styles
+- Event Rollup card view with additional display options for event information
+- Updated "Your session has expired" screen
 
 Editor
 ------------------------------------------------------
-- Divider block
-- Possibility to link to users from text
-- Easy "Call to action" in text editoir 
-- Action button now supports creating pages in dialog
-- Its now possible to select links and labels in in the navigation selectors
-- Text styles can now be applied everywhere, inheritance
-- Possibility for rounded corners on images and cards
-- Scheduled publishing and auto publish can be combined
+- New Divider block
+- Link directly to users from text
+- Easy "Call to Action" creation in the text editor
+- Action buttons can now create pages in dialogs
+- Navigation selectors now support selecting both links and labels
+- Text styles can now be inherited consistently across content
+- Support for rounded corners on images and cards
+- Scheduled publishing and auto-publishing can be combined
 
 Fluent Content
 ------------------------------------------------------
-- a new authoring experience that makes it easier to work with content
-- AI assitance integrated
+- A new authoring experience that makes it easier to create engaging content
+- Integrated AI assistance
 
-Document rollup
+Document Rollup
 ------------------------------------------------------
-- New block specificly to show documents and the library structure
+- Dedicated Document Rollup block for displaying documents and document library structures
 
-Run as targeting Persona
+Run as Persona
 ------------------------------------------------------
+- Run the intranet as another targeting persona to verify personalized content
 
-Left panel "Everywhere panel"
+Everywhere Panel
 ------------------------------------------------------
+- A new left-side panel providing access to common functionality throughout the interface
 
-Misc
+Miscellaneous
 ------------------------------------------------------
 - Bypass page approval
-- Sign of request group membership syncronization
-- Improved data structure to support copilot
-
+- Group membership synchronization for Sign-off requests
+- Improved data structure to enhance Copilot and AI capabilities
