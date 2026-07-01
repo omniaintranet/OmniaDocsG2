@@ -13,7 +13,7 @@ You can also go to the central media location from here, to handle the images th
 
 This option was earlier called "Central image location". Now both images and videos can be handled centrally the same way, but the settings here remains the same.
 
-Also note that all editing and settings for a video must be handled in the SharePoint library, not in the Media Picker in Omnia (as is the case with videos from Stream).
+Also note that all editing and settings for a video must be handled in the SharePoint library, not in the Media Picker in Omnia (as is the case with videos from Microsoft Clipchamp).
 
 Add a new central image location
 **********************************
