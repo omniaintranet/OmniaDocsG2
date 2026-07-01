@@ -5,8 +5,12 @@ Accesibilty improvements WCAG
 ------------------------------------------------------
 - FAQ block headings element can be configure to h1, h2, h3 ets.
 - WCAG compliant header search option
-- Page rollup calendar view
+- Page rollup - calendar view
 - New Date/time picker
+- Page rollup card view
+- People rollup
+- Notification panel
+- Filter component across all rollups
 
 Improved SharePoint integration
 ------------------------------------------------------
@@ -47,10 +51,8 @@ UI improvements
 - New Date/time picker
 - Quick publish dialog UI improvements
 - Additional Breadcrumb styles
-
-Page lifecycle
-------------------------------------------------------
-- Scheduled publishing and auto publish can be combined
+- Events - Event rollup card view - New display options for event information
+- Updated your seesion is expired screen
 
 Editor
 ------------------------------------------------------
@@ -59,16 +61,18 @@ Editor
 - Easy "Call to action" in text editoir 
 - Action button now supports creating pages in dialog
 - Its now possible to select links and labels in in the navigation selectors
-- Text styles can now be appe everywhere
+- Text styles can now be applied everywhere, inheritance
+- Possibility for rounded corners on images and cards
+- Scheduled publishing and auto publish can be combined
+
+Fluent Content
+------------------------------------------------------
+- a new authoring experience that makes it easier to work with content
+- AI assitance integrated
 
 Document rollup
 ------------------------------------------------------
 - New block specificly to show documents and the library structure
-
-Copilot improvements 
-------------------------------------------------------
-- Improved data structure to support copilot
-- 
 
 Run as targeting Persona
 ------------------------------------------------------
@@ -76,13 +80,9 @@ Run as targeting Persona
 Left panel "Everywhere panel"
 ------------------------------------------------------
 
-Bypass page approval
+Misc
 ------------------------------------------------------
+- Bypass page approval
+- Sign of request group membership syncronization
+- Improved data structure to support copilot
 
-
-
-Section header
-------------------------------------------------------
-Description
-
-.. image:: image-title.png
