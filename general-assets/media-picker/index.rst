@@ -165,7 +165,7 @@ To the right in the Media picker, you can add an alt text and a caption for the 
 
 Videos
 *******
-To add a video, select one of the providers that are set up, for example your company's Microsoft 365 Stream, or YouTube.
+To add a video, select one of the providers that are set up, for example your company's Microsoft Clipchamp, or YouTube.
 
 .. image:: media-picker-video-v7.png
 
