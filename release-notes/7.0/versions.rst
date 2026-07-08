@@ -1,3 +1,23 @@
+7.11.18
+========================================
+(Omnia 7.11.18 / Workplace 7.11.18 / WCM 7.11.18 / MS 7.11.18 / Analytics 7.11.4 / Feed 7.9.12)
+
+- Support for custom domain URL:s in links in emails related to Event management (#57631)
+- Fix to support redirect links in the Quick links block (#56878)
+- Optimization to the file upload process for both controlled documents and other documents, to avoid timeouts (#57270)
+- Fixed an issue with default filter settings for dates for the List rollup block (#57255)
+- Corrected the image sizing logic in the Teams channel feed block (#57310)
+- Fixed an issue where document history for controlled documents didn't show as expected in the recycle bin (#57437)
+- Promoted search results now display correctly in Advanced search, even if no other search results are returned (#57011)
+- Signed copies can now be added to controlled documents having white space in the title, regardless of file type
+- Fixed an issue where the people search result was closed when closing a user detail dialog (#57786)
+- An update to the Channel administration list reader permissions was made (#57571)
+- Fixed an issue where publishing to a promotion channel failed due to image mapping settings
+- The underscore of a link in the RTF editor now has the same color as the link text (#57636)
+- Corrected the video thumbnail rendering with image ratios in all page rollup views
+- Fixed an issue where document properties were not correctly displayed in the document bulk update preview view
+
+
 7.11.16
 ========================================
 (Omnia 7.11.16 / Workplace 7.11.16 / WCM 7.11.16 / MS 7.11.16 / Analytics 7.11.4 / Feed 7.9.12)
