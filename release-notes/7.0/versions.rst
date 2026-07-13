@@ -1,3 +1,17 @@
+7.11.19
+========================================
+(Omnia 7.11.19 / Workplace 7.11.19 / WCM 7.11.19 / MS 7.11.19 / Analytics 7.11.4 / Feed 7.11.5)
+
+- Fixed an issue with navigating to events from the Page Rollup (#58151)
+- Performance improvements to cascading events on page publishing (#57874)
+- Corrected an issue related to the Document Rollup info icon (#57338)
+- The mobile view now displays the close button in SharePoint (#57477)
+- URLs are now correct when using the pick document function (#58120)
+- Fixed an issue with manual sorting of picked documents for Processes (#57587)
+- The action button type for printing now works as expected (#57115)
+- Fixed an issue with the display of filtering numbers in the Page Rollup (#56766)
+
+
 7.11.18
 ========================================
 (Omnia 7.11.18 / Workplace 7.11.18 / WCM 7.11.18 / MS 7.11.18 / Analytics 7.11.4 / Feed 7.9.12)
