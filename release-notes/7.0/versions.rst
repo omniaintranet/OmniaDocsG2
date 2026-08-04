@@ -1,3 +1,27 @@
+7.11.20
+========================================
+(Omnia 7.11.20 / Workplace 7.11.20 / WCM 7.11.20 / MS 7.11.20 / Analytics 7.11.4 / Feed 7.11.5)
+
+- Fixed a time zone issue that could cause birthdays to be displayed incorrectly (#58324)
+- Teamwork creation has been adjusted to avoid timeout issues (#58216)
+- Page Rollup now displays page hits and visits correctly (#58246)
+- Authentication screens now correctly display text blocks (#58229)
+- Related documents in Processes are now displayed as expected (#58284)
+- Tokens inside controlled documents now retrieve updated Process titles after republishing (#57117)
+- Improved support for video playback from SharePoint (#58419)
+- Added support for Multi-Geo environments (#57351)
+- Updated the color settings for manually selected pages in the Page Rollup (#58314)
+- Tenant page types are now correctly recognized in the Metrics block settings (#54123)
+- Multi-line text properties for controlled documents now display multiple lines (#56114)
+- Changed the behavior for opening PDF files in the browser to avoid using temporary local storage (#57406)
+- Fixed an issue that could cause console errors (#57256)
+- Corrected how Processes are opened from Quick Search on small screens (#54739)
+- Updated the click-out behavior in the feedback dialog (#58029)
+- The context menu now displays the correct label for showing or hiding pages with variations (#55822)
+- The Banner block now supports automatic translation when used with page variations
+- Emails sent to variation authors can now be sent from a custom domain
+
+
 7.11.19
 ========================================
 (Omnia 7.11.19 / Workplace 7.11.19 / WCM 7.11.19 / MS 7.11.19 / Analytics 7.11.4 / Feed 7.11.5)
