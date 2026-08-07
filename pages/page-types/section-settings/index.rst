@@ -33,7 +33,7 @@ For a section with tabs, the following can be set:
 
 By clicking the pen, the following can be set for a tab:
 
-.. image:: page-types-tabs-pen-77.png
+.. image:: page-types-tabs-pen-712.png
 
 + **Label**: If a label should be shown for the tab, add the label here. You can add a label in any tenant language. 
 + **Scroll anchor into view**: To have the anchor for this section automatically scrolled into view, select this option.
@@ -84,13 +84,13 @@ For a stepper section, the following can be set:
 
 When editing steps, you can add or edit a title, and set a custom anchor name, if needed.
 
-.. image:: stepper-steps.png
+.. image:: stepper-steps-712.png
 
 For more information on custom anchor names, see above.
 
 General settings for a reusable section
 -----------------------------------------
-When you have selected "Reusable", available in Omnia 7.11 and later, you must select a property for storing the content:
+When you have selected "Reusable", if available (can be available in Omnia 7.11 and later), you must select a property for storing the content:
 
 .. image:: reusable-section-settings.png
 
@@ -203,7 +203,7 @@ Here you can set the following:
 + **Icon type/Icon**: If you would like to use an icon, first select type and then an icon from the list.
 + **Custom settings**: If you don't want to use the global settings for the business profile, for this section, Select "Custom settings" (selected in the image above). 
 
-The global settings are set in Omnia dmin, see this page: :doc:`Content header (Business profile) </admin-settings/business-group-settings/settings/block-title/index>`
+The global settings are set in Omnia admin, see this page: :doc:`Content header (Business profile) </admin-settings/business-group-settings/settings/block-title/index>`
 
 When selecting custom settings, the following is available:
 
