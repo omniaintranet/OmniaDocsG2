@@ -1,6 +1,25 @@
 Release 7.11
 ============
 
+Release 7.11.5
+--------------
+
+- Web view bug fixes
+- The app now targets Android 16 (for Android only)
+
+Release 7.11.4
+--------------
+
+- Improvements to the cookie handling
+- Upgrade of the Microsoft Intune SDK
+
+Release 7.11.3
+--------------
+- Optimizing the loading of embedded tabs
+- Added link handler support for all links in Omnia Feed
+- The app now supports the latest Intune App SDK version
+- Added descriptions readable by screen readers on all clickable elements
+
 Release 7.11.2
 --------------
 - Resolved an issue where URL settings were not syncing correctly to the mobile app
