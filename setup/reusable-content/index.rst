@@ -11,7 +11,7 @@ See: :doc:`Publishing app settings </pages/page-settings/index>`
 
 Set up a reusable section
 **************************
-Follow these steps:Follow these steps to setup a reusable section:
+Follow these steps to setup a reusable section:
 
 1. **Create an enterprise property of type Data.**
 2. **Create a page type.**
