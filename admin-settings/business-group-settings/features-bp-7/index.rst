@@ -17,7 +17,7 @@ Media Providers
 ******************
 Here you handle image and video providers - activating, upgrading, removing.
 
-.. image:: bp-features-media-78.png
+.. image:: bp-features-media-712.png
 
 **Note**! In Omnia on-prem, an internet connection must be available both on the server and on the client, for the internet based providers (for example Microsoft Clipchamp - formerly known as Stream, YouTube, Pexel and Bing) to work. Also note that a separate subscription is needed for Microsoft Stream to be used on-prem.
 
