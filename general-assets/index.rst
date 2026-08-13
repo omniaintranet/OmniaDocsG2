@@ -13,6 +13,7 @@ In this part of the documentation you will find information about general assets
    creating-app-templates/index
    creating-form-button/index
    custom-date-filtering/index
+   date-and-time-picker-712/index
    document-picker/index
    rtf-editor/index
    filter-options-block/index
