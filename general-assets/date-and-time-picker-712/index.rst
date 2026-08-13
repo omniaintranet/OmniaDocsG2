@@ -25,7 +25,7 @@ You can change the hour and minute by:
 
 Just click OK when to save you settings.
 
-Keyboardsupport
+Keyboard support
 -----------------------------------
 You can use the keyboard to navigate to and select all options.
 
