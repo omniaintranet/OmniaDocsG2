@@ -9,10 +9,6 @@
 - Improved performance for G1 customers.
 
 
-6.7.1
-========================================
-- Improved login stability.
-
 6.7.0
 ========================================
 

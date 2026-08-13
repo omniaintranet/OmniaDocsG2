@@ -29,9 +29,21 @@ Pages being set to hidden now will also disappear from Omnia Feed.
 
 
 Versions
------------------------------------------
+--------
 
 .. toctree::
    :titlesonly:
 
-   versions
+   versions/6.6/index
+   versions/6.10/index
+   versions/6.12/index
+   versions/6.13/index
+
+
+Hotfix releases
+---------------
+
+.. toctree::
+   :titlesonly:
+
+   hotfix-releases/index
