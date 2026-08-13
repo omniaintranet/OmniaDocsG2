@@ -43,7 +43,7 @@ You can use the keyboard to:
 + Navigate to the time in the header.
 + Navigate to and use the **Increase** and **Decrease** buttons.
 + Enter hour and minute values directly.
-+Navigate to and select **AM** or **PM** when using the 12-hour time format.
++ Navigate to and select **AM** or **PM** when using the 12-hour time format.
 
 Screen readers can identify the selected date and time values and announce the available controls, including **Increase**, **Decrease**, **AM**, and **PM**.
 
