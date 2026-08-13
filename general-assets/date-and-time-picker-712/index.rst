@@ -21,19 +21,9 @@ Switch to the time picker (the cklock) to set time.
 
 You can change the hour and minute by:
 
-+ Entering a value directly in the time fields.
-+ Using the **Increase** and **Decrease** buttons to adjust the value by one.
+.. image:: date-time-time-712.png
 
-If the time format is 12-hour, **AM** and **PM** options are available. The selected option is highlighted, while the other option is shown as unselected. The AM/PM setting is synchronized between the header and the time picker, so changing it in one location also updates the other.
-
-Confirm or cancel your selection
------------------------------------
-When you have selected the required date and time:
-
-+ Select **Add** to add the value to the field.
-+ Select **Cancel** to close the picker without adding the value.
-
-If you navigate to another part of the page, the picker closes. Any value that you have already added is retained.
+Just click OK when to save you settings.
 
 Keyboard and screen reader support
 -----------------------------------
