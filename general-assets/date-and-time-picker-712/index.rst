@@ -25,17 +25,7 @@ You can change the hour and minute by:
 
 Just click OK when to save you settings.
 
-Keyboard and screen reader support
+Keyboardsupport
 -----------------------------------
-The date and time picker supports keyboard navigation and screen readers.
-
-You can use the keyboard to:
-
-+ Navigate to and select the day, month, and year in the header.
-+ Navigate to the time in the header.
-+ Navigate to and use the **Increase** and **Decrease** buttons.
-+ Enter hour and minute values directly.
-+ Navigate to and select **AM** or **PM** when using the 12-hour time format.
-
-Screen readers can identify the selected date and time values and announce the available controls, including **Increase**, **Decrease**, **AM**, and **PM**.
+You can use the keyboard to navigate to and select all options.
 
