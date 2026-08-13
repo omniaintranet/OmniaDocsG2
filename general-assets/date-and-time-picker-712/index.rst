@@ -1,23 +1,23 @@
 Date and time picker
 =====================
 
+**This page is a work in progress. Will be finished soon.**
+
 This page describes the date and time picker in Omnia 7.12 and later.
 
-The date and time picker provides an accessible and easy-to-use way to select both a date and a time. You can select the date using the calendar and the time using the time picker.
+The date and time picker provides an accessible and easy-to-use way to select both a date and a time. The header at the top of the picker displays the selected date and time, todays date and actual time when you enter the picker.
+
+Here's an exampla:
 
 .. image:: date-time-712.png
 
 Select a date
 -----------------
-When you select a date and time field, the date and time picker opens with the **Date** view displayed by default. The current date is selected, and the time is set to **00:00**.
-
-The header at the top of the picker displays the selected date and time. You can select the day, month, or year in the header to switch to the corresponding picker.
-
-The selected day, month, or year is highlighted to indicate the current selection.
+You can change to another month using the arrows. Select day by clicking on it. You can also select month or year by clicking on it.
 
 Select a time
 ---------------
-Select the time in the header or select the **Time** tab to switch to the time picker.
+Switch to the time picker (the cklock) to set time.
 
 You can change the hour and minute by:
 
