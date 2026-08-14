@@ -1,27 +1,45 @@
 Date and time picker
 =====================
 
-**This page is a work in progress. Will be finished soon.**
-
 This page describes the date and time picker in Omnia 7.12 and later.
 
-The header at the top of the picker displays the selected date and time. When you enter the picker, todays date and actual time are shown automatically. 
+When you click in a date or time field, the date and time picker opens, with today's date and the actual time selected.
 
-Here's an exampla:
+The header then displays the date and time you have selected.
+
+You can use mouse navigation, which is described here, but you can also use the keyboard, see below.
+
+Here's an example:
 
 .. image:: date-time-712.png
 
-Select a date
------------------
-You can change to another month using the arrows. Select day by clicking on it. You can also select month or year by clicking on it.
-
-Select a time
+Quick select
 ---------------
-Switch to the time picker (the cklock) to set time and use the arrows:
+To select a date and time can be really quick:
+
+1. Click on the date.
+
+The time picker is automatically opened.
+
+2. Select the time and click OK to save the settings.
+
+Select date
+-----------------
+In the date picker, you can change to another month using the arrows. Another way is to click on the month and select another month in the calendar shown. Another year can be selected the same way.
+
+Select time
+---------------
+Click on the clock to open the time picker. If 24 hour system is set, it looks like this:
 
 .. image:: date-time-time-712.png
 
-Just click OK to save you settings.
+If 12 hour system is set, you can select AM or PM:
+
+.. image:: date-time-ampm-712.png
+
+Click on the arrows to set time.
+
+When you're finished, just click OK to save you settings.
 
 Keyboard support
 -----------------------------------
