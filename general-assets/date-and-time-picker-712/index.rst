@@ -23,7 +23,7 @@ The time picker is automatically opened.
 
 Select date
 -----------------
-In the date picker, you can change to another month using the arrows. Another way is to select the month and scoose another month in the calendar shown. Another year can be selected the same way.
+In the date picker, you can change to another month using the arrows. Another way is to select the month and choose another month in the calendar shown. Another year can be selected the same way.
 
 Select time
 ---------------
