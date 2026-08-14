@@ -9,7 +9,7 @@ Here's an example:
 
 .. image:: date-time-712.png
 
-You can use mouse navigation, use the keyboard, to navigate and select options.
+You can use mouse navigation or use the keyboard, to navigate and select options.
 
 Quick select
 ---------------
