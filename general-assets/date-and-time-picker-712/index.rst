@@ -29,11 +29,11 @@ In the date picker, you can change to another month using the arrows. Another wa
 
 Select time
 ---------------
-Click on the clock to open the time picker. If 24 hour system is set, it looks like this:
+Click on the clock to open the time picker. If a 24 hour time format is set, it looks like this:
 
 .. image:: date-time-time-712.png
 
-If 12 hour system is set, you can select AM or PM:
+If 12 hour format is set, you can select AM or PM:
 
 .. image:: date-time-ampm-712.png
 
