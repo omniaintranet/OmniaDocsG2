@@ -29,11 +29,11 @@ Select time
 ---------------
 Select the clock to open the time picker. If a 24 hour time format is set, it looks like this:
 
-.. image:: date-time-time-712.png
+.. image:: date-time-time-712-new.png
 
 If a 12 hour format is set, you can select AM or PM:
 
-.. image:: date-time-ampm-712.png
+.. image:: date-time-ampm-712-new.png
 
 Use the arrows to set time, or type the time in the fields.
 
