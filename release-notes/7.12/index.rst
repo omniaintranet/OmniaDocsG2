@@ -25,6 +25,7 @@ Improved SharePoint Integration
 - Support for Process blocks on SharePoint pages
 - Sign-off requests now include SharePoint pages
 - Support for SharePoint Brand Center
+- Improved performance of Omnia running in SharePoint context
 - Matomo Analytics for SharePoint pages
 
 Search
