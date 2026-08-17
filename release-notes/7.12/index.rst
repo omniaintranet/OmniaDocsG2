@@ -68,7 +68,7 @@ Editor
 - Support for rounded corners on images and cards
 - Scheduled publishing and auto-publishing can be combined
 
-Fluent Content
+Content Builder
 ------------------------------------------------------
 - A new authoring experience that makes it easier to create engaging content
 - Integrated AI assistance
