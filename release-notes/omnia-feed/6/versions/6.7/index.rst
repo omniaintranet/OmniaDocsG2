@@ -1,4 +1,4 @@
-Release 6.6 / 6.7 / 6.8
+Release 6.7
 ========================================
 
 Configurable Notifications
@@ -60,7 +60,7 @@ Detection for new content in both pages and announcements have also improved.
 
 
 6.7.0
-========================================
+---------------------------------------
 
 - Intune SDK has been implemented. This should help solve login problems for any customer using Intune. 
 - Its now possible to create queries for pages that has no value set in a specific property field. 

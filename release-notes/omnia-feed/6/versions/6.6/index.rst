@@ -1,4 +1,4 @@
-Release 6.6 / 6.7 / 6.8
+Release 6.6
 ========================================
 
 Configurable Notifications
@@ -60,7 +60,7 @@ Detection for new content in both pages and announcements have also improved.
 
 
 6.6.0
-========================================
+---------------------------------------
 
 - Major performance improvments.
  - Data load from the app.

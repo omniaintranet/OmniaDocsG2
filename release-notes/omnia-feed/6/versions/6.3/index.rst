@@ -1,8 +1,8 @@
-Release 6.1
+Release 6.3
 ========================================
 
 6.3.0
-========================================
+----------------------------------------
 
 - Articles read in Omnia will now also be marked as read in Omnia Feed, and vice versa.
 - Announcements dismissed in Omnia will now also disappear from Omnia Feed, and vice versa.

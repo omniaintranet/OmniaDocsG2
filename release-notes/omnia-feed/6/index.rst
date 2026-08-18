@@ -34,6 +34,8 @@ Versions
 .. toctree::
    :titlesonly:
 
+   versions/6.1/index
+   versions/6.3/index
    versions/6.6/index
    versions/6.7/index
    versions/6.8/index

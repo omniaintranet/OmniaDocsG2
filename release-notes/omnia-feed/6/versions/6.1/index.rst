@@ -2,7 +2,7 @@ Release 6.1
 ========================================
 
 6.1.0
-========================================
+----------------------------------------
 
 - Fixed issue where Omnia Feed does not render images correctly from Omnia 6.x.
 - Added setting to control notifications for comments (#127349).

@@ -19,7 +19,7 @@ Yammer comments
 Omnia Feed will sync comments with Yammer if page has setup Yammer intergation.
 
 6.10.0
-========================================
+---------------------------------------
 
 - Support sync Yammer comments.
 - Support Channel management in query tab.

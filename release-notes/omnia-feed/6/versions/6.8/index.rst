@@ -1,4 +1,4 @@
-Release 6.6 / 6.7 / 6.8
+Release 6.8
 ========================================
 
 Configurable Notifications
@@ -59,7 +59,7 @@ Omnia Feed should now load much quicker when opening the app and looking for new
 Detection for new content in both pages and announcements have also improved.
 
 6.8.0
-========================================
+---------------------------------------
 
 - Guest users are now supported in Omnia Feed. Note: The domain needs to be supplied by the end user. (#136414).
 - Its now possible to login using either UPN or Email.
