@@ -22,7 +22,10 @@ Versions
    versions/7.11/index
    versions/7.12/index
 
-
 Hotfix releases
 ---------------
-The release notes for the older hotfix releases can be found :doc:`here </release-notes/omnia-feed/7/hotfix-releases/index>`.
+
+.. toctree::
+   :titlesonly:
+
+hotfix-releases/versions
