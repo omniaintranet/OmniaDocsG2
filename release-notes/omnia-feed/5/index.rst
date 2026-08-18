@@ -71,10 +71,17 @@ Omnia Feed will now display code block, qoute block, and image-text-flow from Om
 
 .. image:: app-detail-view-with-rich-text.png
 
-Hotfix releases
------------------------------------------
+Versions
+--------
 
 .. toctree::
    :titlesonly:
 
-   versions
+   versions/5.1/index
+
+Hotfix releases
+---------------
+.. toctree::
+   :titlesonly:
+
+   hotfix-releases/versions

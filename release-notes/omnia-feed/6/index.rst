@@ -45,4 +45,4 @@ Versions
 
 Hotfix releases
 ---------------
-The release notes for the older hotfix releases can be found :doc:`here </release-notes/omnia-feed/6/hotfix-releases/index>`.
+hotfix-releases/versions
