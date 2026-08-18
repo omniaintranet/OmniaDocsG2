@@ -1,4 +1,4 @@
-Hotfix releases for release 7
+Hotfix releases for release 6
 =============================
 
 Versions
