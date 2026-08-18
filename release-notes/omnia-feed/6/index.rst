@@ -35,15 +35,12 @@ Versions
    :titlesonly:
 
    versions/6.6/index
+   versions/6.7/index
+   versions/6.8/index
    versions/6.10/index
    versions/6.12/index
    versions/6.13/index
 
-
 Hotfix releases
 ---------------
-
-.. toctree::
-   :titlesonly:
-
-   hotfix-releases/index
+The release notes for the older hotfix releases can be found :doc:`here </release-notes/omnia-feed/6/hotfix-releases/index>`.

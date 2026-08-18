@@ -4,11 +4,24 @@ Release 6.13.7
 - Fixed an issue causing page sort order to be incorrect (#148236, #145859).
 - Fixed an error related to non-default language version of the mobile app (#148538, #145135).
 
-- Release 6.13.5
+Release 6.13.5
 ========================================
 - Performance improvements to the gathering of targeted news (#147507).
 - Fixed an issue related to custom icons in important announcements (#146966).
 - Improved performance when loading opening the app for the first time.
+
+Release 6.12.1
+========================================
+
+- Allow to configure the display of properties per tab, new admin setting UI make it consistent with Page Rollup.
+- Support activity feed. User will get notification by their subscriptions.
+- Allow user to clear all notifications from settings screen.
+- Handle like and comments permission by App Instance Reader/Contributor role.
+- Announcements show icon by Announcement Type.
+- Share button in page detail.
+- Support rotation in app.
+- Improve webview in app.
+- Fix issue External user can't sign out in iOS.
 
 Release 6.7.1
 ========================================
