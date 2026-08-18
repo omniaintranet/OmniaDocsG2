@@ -25,6 +25,7 @@ Improved SharePoint Integration
 - Support for Process blocks on SharePoint pages
 - Sign-off requests now include SharePoint pages
 - Support for SharePoint Brand Center
+- Improved performance of Omnia running in SharePoint context
 - Matomo Analytics for SharePoint pages
 
 Search
@@ -68,7 +69,7 @@ Editor
 - Support for rounded corners on images and cards
 - Scheduled publishing and auto-publishing can be combined
 
-Fluent Content
+Content Builder
 ------------------------------------------------------
 - A new authoring experience that makes it easier to create engaging content
 - Integrated AI assistance
