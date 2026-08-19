@@ -62,7 +62,7 @@ The following settings can then be available, depending on scope chosen:
 + **Current node/Custom**: Available for scope Navigation path. Choose the start point for the navigation path to be displayed. If you select "Custom", you can use the page picker to select start node.
 + **Exclude current page**: Available when you have chosen scope for the query builder. The default setting is to exclude the current page, but if you, for some reason, would like to include the current page, uncheck this option.
 + **Exclude start node**: Available for scope Navigation path. If the start page selected should not be displayed in the block, select this option.
-+ **Exclude variations**: Usings this option, you can exclude varations from the query. Not available for Navigation path.
++ **Exclude variations**: Usings this option, you can exclude variations from the query. Not available for Navigation path.
 + **Filter by user subscription**: Available for scope Channels. Select this if the list should display only thos channels the logged in user follows.
 + **Navigation depth Level**: Available for scope Navigation path. Choose the number of nodes that should be displayed, including the start node.
 + **Page size**: Use the slider, or type the number (1-99) to set the number of items (pages) that should be displayed on each "page" of the list. Also see under *Display* below for additional settings for the list. 
