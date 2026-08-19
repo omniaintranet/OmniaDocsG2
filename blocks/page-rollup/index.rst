@@ -21,7 +21,7 @@ Settings
 *********
 These settings are available for the block:
 
-.. image:: page-rollup-settings-v75.png
+.. image:: page-rollup-settings-v712.png
 
 General
 --------
