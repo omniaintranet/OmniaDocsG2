@@ -1,54 +1,90 @@
+Release 7.11
+============
+
+Release 7.11.5
+---------------------------------------
+
+- Fix for sign-off request sorting order
+- Added link handler support to all links in Omnia Feed
+- Added descriptions readable by screen readers on all clickable elements
+
+Release 7.11.3
+---------------------------------------
+
+- Fix for broken save logic in the tab configuration.
+- WCAG improvements for screen reader compatibility
+
+Release 7.9
+===========
+
+Release 7.9.12
+---------------------------------------
+
+- Deprecated & disallow Microsoft Fabric tab icon selection. Existing one will continue to work until next configuration change.
+- Added support for header title configuration in tabs
+
+Release 7.9.10
+---------------------------------------
+
+- Removed unused permissions
+
 Release 7.9.9
-========================================
+---------------------------------------
 
 - Improved handling of authentication flow
 - Logic to prevent starting multiple instances of a synchronization job
 
 Release 7.9.6
-========================================
+---------------------------------------
 
 - Added localization support for announcement notifications
 
 Release 7.9.4
-========================================
+---------------------------------------
 
 - Fix for the functionality to clear notifications
 - Improvements to the login flow
 
 Release 7.9.3
-========================================
+---------------------------------------
 
 - Update to the permission handling
 - Improvements to cleanup job
 
 Release 7.9.2
-========================================
+---------------------------------------
 
 - Security enhancements
 - Optimizations of the activity feed synchronization functionality
 
 Release 7.9.1
-========================================
+---------------------------------------
 
 - Fix for publishing to channels and publishing of page collections
 
 Release 7.9.0
-========================================
+---------------------------------------
 
 - Fix for login session timeout when upgrading the app
 
+Release 7.8
+===========
+
 Release 7.8.1
-========================================
+----------------------------------------
 
 - Enhanced encryption support for tokens
 
 Release 7.8.0
-========================================
+----------------------------------------
 
 - Fix regarding the sorting capabilities of sign off requests
 
+Release 7.7
+===========
+
 Release 7.7.4
-========================================
+----------------------------------------
 
 - Support for adding comments in tabs with multiple queries
 - Fix for notifications for important announcements
@@ -56,21 +92,21 @@ Release 7.7.4
 - Fix for the "Mark all as read" functionality
 
 Release 7.7.3
-========================================
+----------------------------------------
 
 - Fix for the user resync button display
 - Support for login with external accounts
 - Support for documents in sign off requests
 
 Release 7.7.2
-========================================
+----------------------------------------
 
 - Fix for notifications for polls
 - Support for sorting multiple queries sign off requests
 - Support for filtering sign off requests based on completion status
 
 Release 7.7.1
-========================================
+----------------------------------------
 
 - Fix for sync issues for the news feed
 - Support for scheduling of publishing forms
@@ -79,8 +115,11 @@ Release 7.7.1
 - Update to priority settings for notifications
 - Support for accented characters in embedded links
 
+Release 7.6
+===========
+
 Release 7.6.23
-========================================
+----------------------------------------
 
 - Improve channels targeting time
 - Collect logging info sync time for active user
@@ -92,7 +131,7 @@ Release 7.6.23
 - Fix deepling to Omnia feed app
 
 Release 7.6.20
-========================================
+----------------------------------------
 
 - Fix deleting page event issue
 - Fix internal links in query tabs articles
@@ -101,7 +140,7 @@ Release 7.6.20
 - Fix error with signoff request query that is not filtering items
 
 Release 7.6.19
-========================================
+----------------------------------------
 
 - Support handling event type when all automatics translations are complete when publishing a page
 - Support checking and skipping dowloaded images when syncing news
@@ -110,68 +149,68 @@ Release 7.6.19
 - Fix targeting channels issues
 
 Release 7.6.12
-========================================
+----------------------------------------
 
 - Fix whitelist page events in Extension
 - Fiz notification for sign-off continuously pushing
 
 Release 7.6.10
-========================================
+----------------------------------------
 
 - Fix multiple thread issue when get page detail for variation
 - Update option newBatchSize
 
 Release 7.6.9
-========================================
+----------------------------------------
 
 - Fix sync message to apply VisibilityTimeout
 
 Release 7.6.8
-========================================
+----------------------------------------
 
 - Fix 64kb queu limit in statistic logging
 - Fix notification issue
 
 Release 7.6.7
-========================================
+----------------------------------------
 
 - Fix showing pages that should not be showns
 - Fix form scheduling issues
 - Fix sync Data range settings
 
 Release 7.6.6
-========================================
+----------------------------------------
 
 - Support retry for job synchrinize process
 - Fix issues for creating pages and news
 
 Release 7.6.5
-========================================
+----------------------------------------
 
 - Fixed like behavior
 - Support sign-off request in multiple query
 - Fix form behavior 
 
 Release 7.6.4
-========================================
+----------------------------------------
 
 - Support Omnia Feed app using Omnia AD for login
 
 Release 7.6.3
-========================================
+----------------------------------------
 
 - Fix downloading files from sharepoint related links
 - Support opening MS stream videos correctly
 
 Release 7.6.2
-========================================
+----------------------------------------
 
 - Fix opening news
 - Fix notifications when new article published
 - Fix sound for notifications
 
 Release 7.6.1
-========================================
+----------------------------------------
 
 - Handle deeplink to display username and domain correctly in guest login page
 - Migration to google FireBase
@@ -182,13 +221,16 @@ Release 7.5
 - Support Notification Lib to profide an additional option in advance settings screen to remind user to re-login to receive notifications
 - Fix returning to login page when token expired
 
+Release 7.1
+===========
+
 Release 7.1.8
-========================================
+----------------------------------------
 
 - Support new key in AppSetting
 
 Release 7.1.6
-========================================
+----------------------------------------
 
 - Fix number of likes/comments and last activities shown for non-default variations
 - Support mentions in comments 
@@ -200,12 +242,12 @@ Release 7.1.6
 - Support having both emoticons and GIFs in comments
 
 Release 7.1.5
-========================================
+----------------------------------------
 
 - Fix opening pdf documents
 
 Release 7.1.4
-========================================
+----------------------------------------
 
 - Fix login issue in OFMC after updating packages
 - Fix audit issue in Mobile app
@@ -214,19 +256,19 @@ Release 7.1.4
 - Fix missing activities feed
 
 Release 7.1.3
-========================================
+----------------------------------------
 
 - Fix LCIDs
 - Fix migration configuration problem
 - Support "Send push notification to me" in iOS
 
 Release 7.1.2
-========================================
+----------------------------------------
 
 - Fix Omnia user getting stucked in Omnia login screen 
 
 Release 7.1.1
-========================================
+----------------------------------------
 
 - Support to sign in using an Omnia user. 
 - Support for targeting rules for Omnia users. 
@@ -243,8 +285,3 @@ Release 7.1.1
 - Fix for embedded link web view
 - Fix for new activity notification
 - Fix for activity feed tab to be cleared once item read
-
-
-
-
-

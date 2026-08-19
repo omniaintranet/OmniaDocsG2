@@ -1,5 +1,11 @@
 Release 7.11
 ============
+Release 7.11.6
+--------------
+
+- Improved FAQ fallback content when the layout engine is inactive.
+- Fixed Layout Version Picker display issue with long text.
+- Updated Clear All button styling on the Sign In screen.
 
 Release 7.11.5
 --------------
