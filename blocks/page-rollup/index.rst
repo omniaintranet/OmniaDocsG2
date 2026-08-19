@@ -164,6 +164,7 @@ The special settings for this view are:
 
 + **Preview**: Select the property to base the preview on. It can be either a media property or a document data property.
 + **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
++ **Allow liking**: Allows liking on the cards. Available in Omnia 7.12 and later. Shown when "Show likes/comments" has been selected. 
 + **Show last activity**: If you seect this, the last activity for the page, if any, will be displayed on the card.
 + **Person**: This option can be used to show properties in Card view.
 + **Show page type**: If this option is selected, the page type used for the page is shown as metadata, the same way as other properties.
