@@ -169,9 +169,12 @@ The special settings for this view are:
 
 + **Preview**: Select the property to base the preview on. It can be either a media property or a document data property.
 + **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
++ **Placeholder image if empty**: Available in Omnia 7.12 and later. Select this if a placholder image should be diplayed when necessary.
 + **Show last activity**: If you seect this, the last activity for the page, if any, will be displayed on the card.
-+ **Person**: This option can be used to show properties in Card view.
++ **Person**: This option can be used to show properties in Card view
++ **Show last activity**: Available in Omnia 7.12 and later. (A description will be added soon).
 + **Show page type**: If this option is selected, the page type used for the page is shown as metadata, the same way as other properties.
++ **Show person as text**: Available in Omnia 7.12 and later. If you select a person, the name can be displayed as a metadata image, or, if you select this option, as plain text.
 + **Show rating**: Use it to show the page's rating in the card.
 + **Term properties**: Can be used to show properties in Card view. Click "Add" and select a property. Continue the same way for additional properties.
 
