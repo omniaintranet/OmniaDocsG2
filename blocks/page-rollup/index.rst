@@ -115,6 +115,7 @@ These options are available for most views, shown in different order for differe
 + **No result text**: Enter the text that will be shown if no page can be displayed.
 + **Open in editor**: Available for all views. If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
++ **Open in SharePoint full page**: Available in Omnia 7.12 and later. (A description will be added soon).
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
 + **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
@@ -132,8 +133,10 @@ Contains general settings only, see above.
 
 Listing with image
 -------------------
-Contains mostly general settings, see above. The only special setting is:
+Contains mostly general settings, see above. Special settings are:
 
++ **ADD PROPERTY**: Available in Omnia 7.12 and later. Use it to select or edit properties shown for the posts.
++ **Properties separator**: Available in Omnia 7.12 and later. Use it to select how spaces between properties should be displayed.
 + **Show rating**: If the rating for the page(s) displayed should be shown, select this option. 
 
 List view
@@ -152,8 +155,9 @@ The special settings for this view are:
 + **Delay between slides**: Set the time between slides in milli seconds.
 + **Loop**: Normally a roller stops when the last post is reached (and can restart after a short while). When this option is selected, there is no "end" and the roller just keeps rolling. Important note: When Loop is selected the arrows users can use to roll "manually" are not shown.
 + **Number of slides to display**: Select number of slides, 1-12.
++ **Show default image**: Select this if the default image should be shown. You can se what happens in the preview.
 + **Show paging**: Small icons shown that users can use to page back and fort. See image below for an example.
-+ **Show anvigation**: If navigation icons for the users to use for rolling should be shown, select this option.
++ **Show navigation**: If navigation icons for the users to use for rolling should be shown, select this option.
 + **Slider size**: Select the size of the slider here: Small, Medium, Large or Extra large. 
 + **Slider type**: Select Horisontal slider or Vertical slider. 
 
