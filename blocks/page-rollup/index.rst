@@ -184,6 +184,10 @@ You can also choose where properties for date, person, tags and reactions (if ad
 
 .. image:: place-meta-new.png
 
+Card (WCAG)
+-----------
+Available in Omnia 7.12 and later. (A description will be added soon).
+
 Newsletter
 -----------
 As it suggests, this view is suitable for use in a newsletter set up. The special settings are:
@@ -201,6 +205,10 @@ For general settings, see above.
 Event List
 ------------
 As it suggests, this view is suitable for use in a Event Management set up. Contains general settings only, see above. You also have to add at least one column, for the display to work. See below for more information.
+
+Event card
+-----------
+Available in Omnia 7.12 and later. (A description will be added later).
 
 Navigation view
 -----------------
