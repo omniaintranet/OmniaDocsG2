@@ -6,6 +6,8 @@ Below you will find release notes for the Omnia Feed extension, deployed togethe
 Release notes for the actual Omnia Feed mobile app are available on App Store (iOS) and Google Play (Android), and also here: :doc:`Release notes for the Omnia Feed app </release-notes/omnia-feed/omnia-feed-app/index>`
 
 Versions
+--------
+
 .. toctree::
    :titlesonly:
 
@@ -19,7 +21,6 @@ Versions
 
 
 The latest hotfixes
-.. toctree::
-   :titlesonly:
+-------------------
 
-   7/hotfix-releases/index 
+The latest hotfix releases for Omnia Feed are available here: :doc:`Hotfix releases </release-notes/omnia-feed/7/hotfix-releases/index>`.
