@@ -317,12 +317,16 @@ A few notes, though:
 + **Static title size**: If the size of the title always should be the same on all cards, select this option.
 + **Colorful**: Available for some Layout options. It's really colorful! Try it and see what you think.
 
+Show in dialog
+****************
+(A description will be added soon).
+
 Filter
--------
+***********
 The filters available are the same in most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Time Period
---------------
+*************
 These settings where called "Social period" in earlier Omnia versions. The following settings are available here:
 
 .. image:: page-rollup-settings-social-new3.png
@@ -343,6 +347,10 @@ This can for example be used to create a rather compact page or section with dif
 + **Icon type/Icon**: Select an icon type and an icon, if you want to.
 + **Color**: This sets the color for the divider above the metric. 
 + **Dialog width/height**: Set width and height for the dialog displaying the list of pages.
+
+AI Insights
+**************
+(A description will be added soon).
 
 Layout and Write
 **********************
