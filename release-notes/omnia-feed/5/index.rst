@@ -81,7 +81,5 @@ Versions
 
 Hotfix releases
 ---------------
-.. toctree::
-   :titlesonly:
 
-   hotfix-releases/index
+The hotfix releases for Omnia Feed version 5 are available here: :doc:`Hotfix releases </release-notes/omnia-feed/5/hotfix-releases/index>`.

@@ -45,4 +45,5 @@ Versions
 
 Hotfix releases
 ---------------
-hotfix-releases/versions
+
+The hotfix releases for Omnia Feed version 6 are available here: :doc:`Hotfix releases </release-notes/omnia-feed/6/hotfix-releases/index>`.
