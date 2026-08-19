@@ -84,4 +84,4 @@ Hotfix releases
 .. toctree::
    :titlesonly:
 
-   hotfix-releases/versions
+   hotfix-releases/index
