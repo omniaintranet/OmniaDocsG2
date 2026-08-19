@@ -19,7 +19,7 @@ For implementation examples, see this page: :doc:`Page rollup implementation exa
 
 Settings
 *********
-These settings are available for the block:
+These settings are available for the block (image from Omnia 7.12):
 
 .. image:: page-rollup-settings-v712.png
 
@@ -27,7 +27,7 @@ General
 --------
 Here you can add a title for block:
 
-.. image:: page-rollup-settings-general-v75.png
+.. image:: page-rollup-settings-general-712.png
 
 Query
 ------
