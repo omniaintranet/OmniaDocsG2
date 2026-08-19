@@ -121,6 +121,7 @@ These options are available for most views, shown in different order for differe
 + **Show A-Z paging**: If you would A-Z paging to be available for users, select this option. Available for List view, Card and Event list.
 + **A-Z paging property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
++ **Allow liking**: Allows liking on the cards. Available in Omnia 7.12 and later. Option shown when "Show likes/comments" has been selected. 
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
 + **Summary**: Select the property that contains the page summary for the item to display. Available for Listing with image, ListvView, Dynamic roller, Card and Newsletter.
@@ -164,7 +165,6 @@ The special settings for this view are:
 
 + **Preview**: Select the property to base the preview on. It can be either a media property or a document data property.
 + **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
-+ **Allow liking**: Allows liking on the cards. Available in Omnia 7.12 and later. Shown when "Show likes/comments" has been selected. 
 + **Show last activity**: If you seect this, the last activity for the page, if any, will be displayed on the card.
 + **Person**: This option can be used to show properties in Card view.
 + **Show page type**: If this option is selected, the page type used for the page is shown as metadata, the same way as other properties.
