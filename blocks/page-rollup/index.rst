@@ -257,9 +257,7 @@ When Enable page creation has been turned on, the following settings are also av
 + **Set the default value from current page**: This is a suggested setting the author can change. If a default value for a property in the new pages, should be set from this page, select this option and then select property. This can be useful for rollup purposes, for example, when all new pages created from this view share a property value.
 + **Set the default date from the calendar**: This is also a suggested setting the author can change. This is simliar to the above, but concerning date properties. An example: if Article date is selected as property, the article date for the new page will be set from the calendar, the date that was clicked to create the new page.
 
-When page creation from the calendar is set up, an author can create a page by clicking a date, and the option to create a page is available, for example:
-
-.. image:: page-creation-settings-example-1.png
+When page creation from the calendar is set up, an author can create a page by clicking a date, and the option to create a page is available:
 
 As the first step, the author selects where to add the new page. Available options depends on settings in the block. The author can also choose to edit the settings for "Set the default value from current page" and "Set the default date from the calendar".
 
