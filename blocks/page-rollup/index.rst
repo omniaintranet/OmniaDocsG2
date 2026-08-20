@@ -21,7 +21,7 @@ Settings
 *********
 These settings are available for the block (image from Omnia 7.12):
 
-.. image:: page-rollup-settings-general-712.png
+.. image:: page-rollup-settings-all-712.png
 
 General
 --------
