@@ -363,10 +363,6 @@ This can for example be used to create a rather compact page or section with dif
 + **Color**: This sets the color for the divider above the metric. 
 + **Dialog width/height**: Set width and height for the dialog displaying the list of pages.
 
-AI Insights
-**************
-(A description will be added soon).
-
 Layout and Write
 **********************
 The WRITE tab is not used here. The Layout tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
