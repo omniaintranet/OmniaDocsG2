@@ -240,11 +240,15 @@ It's possible to create pages from the calendar view, useful for publishing camp
 
 **Note!** All permissions and all settings for the page collection where a new page is STORED always apply. That is true for which colleagues have permissions to create a page and settings for scheduled publishing and if approval is needed, for example.
 
-.. image:: page-creation-option.png
+The following, general display options are always available:
 
-When Enable page creation has been turned on, the following settings are available:
+.. image:: page-creation-option-general.png
 
-.. image:: page-creation-settings-more.png
+For information, see above.
+
+When Enable page creation has been turned on, the following settings are also available:
+
+.. image:: page-creation-settings-more-712.png
 
 + **Title**: Add a title for the button used to create pages.
 + **Tooltip**: A tooltip for the button can be added here.
