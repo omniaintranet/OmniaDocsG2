@@ -208,7 +208,7 @@ As it suggests, this view is suitable for use in a Event Management set up. Cont
 
 Event card
 -----------
-Available in Omnia 7.12 and later. This is a card variant for event listing.
+Available in Omnia 7.12 and later. This is a card variant for event listing. Mostly general settings or same settings for the general card view. The rest of the options should be obvious. (More info will be added soon)
 
 Navigation view
 -----------------
