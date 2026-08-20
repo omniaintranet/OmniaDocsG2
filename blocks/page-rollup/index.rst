@@ -113,9 +113,9 @@ These options are available for most views, shown in different order for differe
 + **Link URL**: Add the URL to open when a user clicks the link. Available only if "Show link" is selected.
 + **Max display limit**: Available only for scope Navigation path, for all views. Set the number of pages that should be displayed. 
 + **No result text**: Enter the text that will be shown if no page can be displayed.
-+ **Open in editor**: Available for all views. If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
++ **Open in editor**: If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
-+ **Open in SharePoint full page**: Available in Omnia 7.12 and later. (A description will be added soon).
++ **Open in SharePoint full page**: Available in Omnia 7.12 and later. Main usage: if the page rollup block is used in a SharePoint page to keep user in context of SharePoint when opening the pages shown in the rollup.
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
 + **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
