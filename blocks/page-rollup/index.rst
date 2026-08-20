@@ -21,13 +21,13 @@ Settings
 *********
 These settings are available for the block (image from Omnia 7.12):
 
-.. image:: page-rollup-settings-v712.png
+.. image:: page-rollup-settings-general-712.png
 
 General
 --------
 Here you can add a title for block:
 
-.. image:: page-rollup-settings-general-712.png
+.. image:: page-rollup-settings-v712.png
 
 Query
 ------
