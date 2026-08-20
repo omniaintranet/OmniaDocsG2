@@ -172,9 +172,9 @@ The special settings for this view are:
 + **Placeholder image if empty**: Available in Omnia 7.12 and later. Select this if a placholder image should be diplayed when necessary.
 + **Show last activity**: If you seect this, the last activity for the page, if any, will be displayed on the card.
 + **Person**: This option can be used to show properties in Card view
-+ **Show last activity**: Available in Omnia 7.12 and later. (A description will be added soon).
++ **Show last activity**: Enabling this option has the following effect: pages with the latest comment will be listed first. If comments exist for a page the most recent will be shown at the bottom of the card.
 + **Show page type**: If this option is selected, the page type used for the page is shown as metadata, the same way as other properties.
-+ **Show person as text**: Available in Omnia 7.12 and later. If you select a person, the name can be displayed as a metadata image, or, if you select this option, as plain text.
++ **Show person as text**: Available in Omnia 7.12 and later. If you select a person, the name can be displayed as metadata (most often with a colored background), or, if you select this option, as plain text.
 + **Show rating**: Use it to show the page's rating in the card.
 + **Term properties**: Can be used to show properties in Card view. Click "Add" and select a property. Continue the same way for additional properties.
 
@@ -186,7 +186,7 @@ You can also choose where properties for date, person, tags and reactions (if ad
 
 Card (WCAG)
 -----------
-Available in Omnia 7.12 and later. (A description will be added soon).
+Available in Omnia 7.12 and later. The reason for two card displays is that existing customers should be able to continue using a card display, which may have a lot of settings. The "Card (WCAG)" has full WCAG compatibility and some settings can therefore nor be used, meaning somewhat fewre settings are available for Card (WCAG). For the settings available, see above. 
 
 Newsletter
 -----------
