@@ -186,7 +186,7 @@ You can also choose where properties for date, person, tags and reactions (if ad
 
 Card (WCAG)
 -----------
-Available in Omnia 7.12 and later. The reason for two card displays is that existing customers should be able to continue using a card display, which may have a lot of settings. The "Card (WCAG)" has full WCAG compatibility and some settings can therefore nor be used, meaning somewhat fewre settings are available for Card (WCAG). For the settings available, see above. 
+Available in Omnia 7.12 and later. The reason for two card displays is that existing customers should be able to continue using already setup card displays, which may have a lot of settings. The new "Card (WCAG)" has full WCAG compatibility and some settings can therefore not be used, meaning somewhat fewer settings are available for Card (WCAG). For the settings available, see above. 
 
 Newsletter
 -----------
@@ -208,7 +208,7 @@ As it suggests, this view is suitable for use in a Event Management set up. Cont
 
 Event card
 -----------
-Available in Omnia 7.12 and later. This is a card variant for event listing. Mostly general settings or same settings for the general card view. The rest of the options should be obvious. (More info will be added soon)
+Available in Omnia 7.12 and later. This is a card variant for event listing. Mostly general settings or same settings as for the general card view. The rest of the options should be obvious. (More info will be added soon)
 
 Navigation view
 -----------------
