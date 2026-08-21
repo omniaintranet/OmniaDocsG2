@@ -1,3 +1,34 @@
+7.11.23
+========================================
+(Omnia 7.11.23 / Workplace 7.11.23 / WCM 7.11.23 / MS 7.11.23 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Calculated SharePoint property values now display in the correct format in Quick Search and Advanced Search (#168860)
+- Added a tenant-level Matomo Super User role to improve the management of Matomo permissions
+- Improved authentication for Analytics widgets to ensure that Matomo data continues to display correctly (#58382)
+- Microsoft Teams provisioning now supports custom team templates in additional languages (#56882)
+- Page Rollup sorting now works correctly when pages contain a large number of term values (#58215)
+- Text block content is now retained when switching between Write, Preview, and Design modes
+- Pages sent by email are now delivered to the correct recipients across different approval configurations (#58539)
+- Tenant administrators are now protected from being removed by user synchronization filters (#57683)
+- FAQ titles and other stored block content can now be translated automatically after block configuration changes (#58121, #53241)
+- The Business Profile scope in the Teamwork Rollup now returns the correct Teamwork sites
+- The People Rollup now retrieves all matching values when querying properties from the current page (#56963)
+- Controlled Document and Process pages now correctly respect SharePoint page editing permissions (#53759)
+- Page Rollup Event List links now open correctly when variations are excluded and the App scope is used
+- Added support for configuring a call action for other users in the User Information block (#56433)
+- Deleted users are now displayed correctly on pages and in Page Rollup exports (#58496)
+- Search statistics can now be exported correctly for the selected period (#58345)
+- Default variation pages now display the correct workflow and scheduled archiving status (#58195)
+- Corrected the header and close button display in the Event Participant List dialog (#58439)
+- The Rich Text Editor link picker now opens the correct tab when adding or editing a link
+- Improved the behavior for editing and validating central media location URLs in the Media Picker (#57974)
+- The page title field is no longer duplicated when “Show in new page” is enabled for a page type (#58611)
+- Help text in Text blocks now supports multilingual content (#57802)
+- Page Rollup filters in the Notification Panel now display consistently across different views (#58416)
+- Chat OpenAI can now be used when creating or editing content in a dialog (#58411)
+- Improved the visibility of the close button in the Document Rollup information dialog (#58161)
+- Updated the user profile action with the Microsoft 365 profile label and icon (#57994)
+
 7.11.20
 ========================================
 (Omnia 7.11.20 / Workplace 7.11.20 / WCM 7.11.20 / MS 7.11.20 / Analytics 7.11.4 / Feed 7.11.5)
