@@ -7,7 +7,6 @@
 - Improved authentication for Analytics widgets to ensure that Matomo data continues to display correctly (#58382)
 - Microsoft Teams provisioning now supports custom team templates in additional languages (#56882)
 - Page Rollup sorting now works correctly when pages contain a large number of term values (#58215)
-- Text block content is now retained when switching between Write, Preview, and Design modes
 - Pages sent by email are now delivered to the correct recipients across different approval configurations (#58539)
 - Tenant administrators are now protected from being removed by user synchronization filters (#57683)
 - FAQ titles and other stored block content can now be translated automatically after block configuration changes (#58121, #53241)
