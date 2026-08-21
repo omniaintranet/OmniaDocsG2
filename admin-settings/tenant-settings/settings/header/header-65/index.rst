@@ -21,11 +21,11 @@ You can create the feeling that when entering Omnia the user is still in Microso
 
 Note that there's a feature available for the tenant to install default app launcher links to make it really easy to get going with the Omnia app launcher. For more information, see: :doc:`Features - Tenant </admin-settings/tenant-settings/features/index>`
 
-In 7.12 and later, the optipons are organized differently:
+In 7.12 and later, the options are organized differently:
 
 .. image:: omnia-app-launcher-v712.png
 
-Options are geneally the same. More information about this will be added soon.
+Avaiblabe options are geneally the same. More information about this will be added soon.
 
 App launcher button
 --------------------
