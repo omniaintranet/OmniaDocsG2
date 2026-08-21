@@ -91,11 +91,15 @@ Available in Omnia 7.8 and later. In order for the "Semantic search" feature to 
  
 .. image:: aifeatures-aisearch-711.png
 
-AI features: Dall-E
+AI features: Dall-E (legacy)
 ------------------------------------
-To be able to use the Dall-E functionality within Omnia, the tenant feature "Dall-E" must be activated. When that is done, an API key and an API base URL must be entered here.
+This secret is retained for existing Dall-E configurations. Dall-E is not recommended for a new deployment; use GPT Image instead.
 
 .. image:: dall-e-secret-v711.png
+
+AI features: GPT Image
+------------------------------------
+To use GPT Image within Omnia, activate the tenant feature **GPT Image**, then enter the Azure API key and API base URL here. For the model to deploy, see :doc:`Recommended AI models </setup/recommended-ai-models/index>`.
 
 reCAPTCHA
 -----------
