@@ -12,11 +12,7 @@ Versions
    :titlesonly:
 
    7/index
-   6/index
-   5/index
-   4/index   
-   3/index
-   2/index
+   older-releases/index
    omnia-feed-app/index
 
 
