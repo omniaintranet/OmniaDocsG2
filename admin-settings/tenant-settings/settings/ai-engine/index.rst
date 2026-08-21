@@ -9,6 +9,8 @@ Prerequisite: An Azure Open AI subscription is needed for the AI features to be 
 
 See this page for important information on how to set up AI in your tenant: :doc:`Setup AI </setup/setup-ai/index>`
 
+For current model IDs and deployment recommendations, see: :doc:`Recommended AI models </setup/recommended-ai-models/index>`
+
 Select section for more information.
 
 .. toctree::

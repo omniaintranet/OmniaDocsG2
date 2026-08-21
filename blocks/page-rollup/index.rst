@@ -19,15 +19,15 @@ For implementation examples, see this page: :doc:`Page rollup implementation exa
 
 Settings
 *********
-These settings are available for the block:
+These settings are available for the block (image from Omnia 7.12):
 
-.. image:: page-rollup-settings-v75.png
+.. image:: page-rollup-settings-all-712.png
 
 General
 --------
 Here you can add a title for block:
 
-.. image:: page-rollup-settings-general-v75.png
+.. image:: page-rollup-settings-v712.png
 
 Query
 ------
@@ -62,7 +62,7 @@ The following settings can then be available, depending on scope chosen:
 + **Current node/Custom**: Available for scope Navigation path. Choose the start point for the navigation path to be displayed. If you select "Custom", you can use the page picker to select start node.
 + **Exclude current page**: Available when you have chosen scope for the query builder. The default setting is to exclude the current page, but if you, for some reason, would like to include the current page, uncheck this option.
 + **Exclude start node**: Available for scope Navigation path. If the start page selected should not be displayed in the block, select this option.
-+ **Exclude variations**: Usings this option, you can exclude varations from the query. Not available for Navigation path.
++ **Exclude variations**: Usings this option, you can exclude variations from the query. Not available for Navigation path.
 + **Filter by user subscription**: Available for scope Channels. Select this if the list should display only thos channels the logged in user follows.
 + **Navigation depth Level**: Available for scope Navigation path. Choose the number of nodes that should be displayed, including the start node.
 + **Page size**: Use the slider, or type the number (1-99) to set the number of items (pages) that should be displayed on each "page" of the list. Also see under *Display* below for additional settings for the list. 
@@ -102,7 +102,7 @@ Options for most views
 These options are available for most views, shown in different order for different displays, here listed in alphabetical order:
 
 + **Date**: Select the property that contains the date for the item(s) to display. Available for Roller, Listing with image, Dynamic roller, Card and Newsletter.
-+ **Dialog image**: Select image to display, if any. Available when ypu have selected "Open page as a dialog".
++ **Dialog image**: Select image to display, if any. Available when you have selected "Open page as a dialog".
 + **Fixed header**: Available for List view. When this option is selected, the heading will always be shown when scrolling.
 + **Hide block when no data**: Select this option if the block should be hidden when there's nothing to display.
 + **Hide if read**: Select this option to hide all pages the logged in user has visited. This affects all pages, including news.
@@ -113,14 +113,16 @@ These options are available for most views, shown in different order for differe
 + **Link URL**: Add the URL to open when a user clicks the link. Available only if "Show link" is selected.
 + **Max display limit**: Available only for scope Navigation path, for all views. Set the number of pages that should be displayed. 
 + **No result text**: Enter the text that will be shown if no page can be displayed.
-+ **Open in editor**: Available for all views. If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
++ **Open in editor**: If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
++ **Open in SharePoint full page**: Available in Omnia 7.12 and later. Main usage: if the page rollup block is used on a SharePoint page to keep user in SharePoint context when opening the pages shown in the rollup.
 + **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
 + **Padding**: Add some padding between the list and the block border, if needed.
 + **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
 + **Show A-Z paging**: If you would A-Z paging to be available for users, select this option. Available for List view, Card and Event list.
 + **A-Z paging property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
 + **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
++ **Allow liking**: Allows liking on the cards. Available in Omnia 7.12 and later. Option shown when "Show likes/comments" has been selected. 
 + **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
 + **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
 + **Summary**: Select the property that contains the page summary for the item to display. Available for Listing with image, ListvView, Dynamic roller, Card and Newsletter.
@@ -131,8 +133,10 @@ Contains general settings only, see above.
 
 Listing with image
 -------------------
-Contains mostly general settings, see above. The only special setting is:
+Contains mostly general settings, see above. Special settings are:
 
++ **ADD PROPERTY**: Available in Omnia 7.12 and later. Use it to select or edit properties shown for the posts.
++ **Properties separator**: Available in Omnia 7.12 and later. Use it to select how spaces between properties should be displayed.
 + **Show rating**: If the rating for the page(s) displayed should be shown, select this option. 
 
 List view
@@ -151,8 +155,9 @@ The special settings for this view are:
 + **Delay between slides**: Set the time between slides in milli seconds.
 + **Loop**: Normally a roller stops when the last post is reached (and can restart after a short while). When this option is selected, there is no "end" and the roller just keeps rolling. Important note: When Loop is selected the arrows users can use to roll "manually" are not shown.
 + **Number of slides to display**: Select number of slides, 1-12.
++ **Show default image**: Select this if the default image should be shown. You can se what happens in the preview.
 + **Show paging**: Small icons shown that users can use to page back and fort. See image below for an example.
-+ **Show anvigation**: If navigation icons for the users to use for rolling should be shown, select this option.
++ **Show navigation**: If navigation icons for the users to use for rolling should be shown, select this option.
 + **Slider size**: Select the size of the slider here: Small, Medium, Large or Extra large. 
 + **Slider type**: Select Horisontal slider or Vertical slider. 
 
@@ -164,9 +169,12 @@ The special settings for this view are:
 
 + **Preview**: Select the property to base the preview on. It can be either a media property or a document data property.
 + **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
++ **Placeholder image if empty**: Available in Omnia 7.12 and later. Select this if a placholder image should be diplayed when necessary.
 + **Show last activity**: If you seect this, the last activity for the page, if any, will be displayed on the card.
-+ **Person**: This option can be used to show properties in Card view.
++ **Person**: This option can be used to show properties in Card view
++ **Show last activity**: Enabling this option has the following effect: pages with the latest comment will be listed first. If comments exist for a page the most recent will be shown at the bottom of the card.
 + **Show page type**: If this option is selected, the page type used for the page is shown as metadata, the same way as other properties.
++ **Show person as text**: Available in Omnia 7.12 and later. If you select a person, the name can be displayed as metadata (most often with a colored background), or, if you select this option, as plain text.
 + **Show rating**: Use it to show the page's rating in the card.
 + **Term properties**: Can be used to show properties in Card view. Click "Add" and select a property. Continue the same way for additional properties.
 
@@ -175,6 +183,10 @@ For general settings, see above.
 You can also choose where properties for date, person, tags and reactions (if added) will be placed. Use these settings:
 
 .. image:: place-meta-new.png
+
+Card (WCAG)
+-----------
+Available in Omnia 7.12 and later. The reason for two card displays is that existing customers should be able to continue using already setup card displays, which may have a lot of settings. The new "Card (WCAG)" has full WCAG compatibility and some settings can therefore not be used, meaning somewhat fewer settings are available for Card (WCAG). For the settings available, see above. 
 
 Newsletter
 -----------
@@ -193,6 +205,10 @@ For general settings, see above.
 Event List
 ------------
 As it suggests, this view is suitable for use in a Event Management set up. Contains general settings only, see above. You also have to add at least one column, for the display to work. See below for more information.
+
+Event card
+-----------
+Available in Omnia 7.12 and later. This is a card variant for event listing. Mostly general settings or same settings as for the general card view. The rest of the options should be obvious. 
 
 Navigation view
 -----------------
@@ -224,11 +240,15 @@ It's possible to create pages from the calendar view, useful for publishing camp
 
 **Note!** All permissions and all settings for the page collection where a new page is STORED always apply. That is true for which colleagues have permissions to create a page and settings for scheduled publishing and if approval is needed, for example.
 
-.. image:: page-creation-option.png
+The following, general display options are always available:
 
-When Enable page creation has been turned on, the following settings are available:
+.. image:: page-creation-option-general.png
 
-.. image:: page-creation-settings-more.png
+For information, see above.
+
+When Enable page creation has been turned on, the following settings are also available:
+
+.. image:: page-creation-settings-more-712.png
 
 + **Title**: Add a title for the button used to create pages.
 + **Tooltip**: A tooltip for the button can be added here.
@@ -237,15 +257,9 @@ When Enable page creation has been turned on, the following settings are availab
 + **Set the default value from current page**: This is a suggested setting the author can change. If a default value for a property in the new pages, should be set from this page, select this option and then select property. This can be useful for rollup purposes, for example, when all new pages created from this view share a property value.
 + **Set the default date from the calendar**: This is also a suggested setting the author can change. This is simliar to the above, but concerning date properties. An example: if Article date is selected as property, the article date for the new page will be set from the calendar, the date that was clicked to create the new page.
 
-When page creation from the calendar is set up, an author can create a page by clicking a date, and the option to create a page is available, for example:
-
-.. image:: page-creation-settings-example-1.png
+When page creation from the calendar is set up, an author can create a page by clicking a date, and the option to create a page is available.
 
 As the first step, the author selects where to add the new page. Available options depends on settings in the block. The author can also choose to edit the settings for "Set the default value from current page" and "Set the default date from the calendar".
-
-In this example, settings in the block states that a new page should be created in the current publishing app and that the author can select page collection.
-
-.. image:: page-creation-settings-example-2.png
 
 After that, the creation of the page works as usual, see: :doc:`Create a page </pages/create-page/index>`
 
@@ -316,12 +330,28 @@ A few notes, though:
 + **Static title size**: If the size of the title always should be the same on all cards, select this option.
 + **Colorful**: Available for some Layout options. It's really colorful! Try it and see what you think.
 
+Show in dialog
+****************
+Available in Omnia 7.12 and later. You can choose to open a page from the rollup in a dialog. The settings are done here.
+
+.. image:: show-in-dialog.png
+
+After you have activated the option two more options are available. If you would like to set your own detailed settings, select "Override default settings".
+
+.. image:: show-in-dialog-override.png
+
+and you can use these as well:
+
+.. image:: show-in-dialog-override2.png
+
+(More info will be added soon).
+
 Filter
--------
+***********
 The filters available are the same in most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Time Period
---------------
+*************
 These settings where called "Social period" in earlier Omnia versions. The following settings are available here:
 
 .. image:: page-rollup-settings-social-new3.png
