@@ -3,7 +3,7 @@ SharePoint page picker settings
 
 Available in Omnia 7.12 and later.
 
-Links to SharePoint pages can selected in the Add link picker. To be available one or more SharePoint page categories, must first be set up in Omnia Admin.
+Links to SharePoint pages can be selected in the Add link picker, if one or more SharePoint page categories are set up here.
 
 These settings are available:
 
