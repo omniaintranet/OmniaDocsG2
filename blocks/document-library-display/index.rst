@@ -35,7 +35,7 @@ For Display the following settings are available:
 
 Filter
 --------
-Filtering is done as in other blocks, see: (link)
+Filter options are the same for almost all blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Export
 -------
