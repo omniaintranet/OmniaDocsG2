@@ -27,6 +27,7 @@ If you choose to show a search box, these additional settings are available:
 + **Search text**: Add a text to be shown in the field before a search is conducted.
 + **Search on page title and**: You can select one or more additional properties to search on here (not mandatory). As stated in the label, a search on page title is always conducted.
 + **Enable partial word search**: Per default the search will only find whole words, but if you select this option, the search will find parts of words as well.
++ **Add filter**: Here you can add one or more filters to be used by end users.
 
 Don't forget to click "Save" when you're finished, to create the document picker category.
 
