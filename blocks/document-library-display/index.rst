@@ -5,7 +5,7 @@ Available in Omnia 7.12 and later.
 
 **This is a preliminary description. Will be edited soon.**
 
-Use this block to display the folder structure for a SharePoint document library.
+Use this block to display the folder structure for a SharePoint document library, to make it possible to open a document from the folder or any sub folder.
 
 Settings
 *********
