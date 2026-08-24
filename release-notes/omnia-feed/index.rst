@@ -13,7 +13,13 @@ Versions
 
    7/index
    omnia-feed-app/index
+   
+.. toctree::
+   :titlesonly:
+      :maxdepth: 1
+
    older-releases/index
+
 
 The latest hotfixes
 -------------------
