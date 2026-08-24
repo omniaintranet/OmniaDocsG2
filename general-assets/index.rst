@@ -23,6 +23,7 @@ In this part of the documentation you will find information about general assets
    roles-permissions/index
    security-trimming-apps/index
    share-document/index
+   sharepoint-page-picker/index
    single-site-collection/index
    using-anchors/index
    targeting-in-omnia/index
