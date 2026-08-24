@@ -19,6 +19,7 @@ For detailed information, select settings here:
    central-image-location/index
    media-Picker/index
    document-picker/index
+   sharepoint-page-picker/index
    event-management/index
    info-screen/index
    media-flow/index
