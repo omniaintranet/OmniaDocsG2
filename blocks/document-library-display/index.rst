@@ -31,7 +31,12 @@ For Display the following settings are available:
 
 .. image:: document-library-settings-display.png
 
-(More info will be added soon).
++ **Use SharePoint view**: To display the result in an existing SharePoint view, select the view from the list.
++ **Select fields directly**: If there isn't any suitable view available, you can instead select the fields for the list.
++ **Show breadcrumb**: Select to show a breadcrumb for the folders.
++ **Paging**: Select "No paging" or "Classic".
++**Rows per page**: The default settings is 50. Can be edited.
++ **Data type**: (A description will be added soon).
 
 Filter
 --------
