@@ -16,7 +16,7 @@ Versions
    
 .. toctree::
    :titlesonly:
-      :maxdepth: 1
+   :maxdepth: 1
 
    older-releases/index
 
