@@ -11,6 +11,8 @@ In Omnia 7.12 and later, one or more SharePoint page categories can be available
 
 For SharePoint pages to available here, it must be set up in Omnia admin, see: :doc:`SharePoint page picker settings </admin-settings/business-group-settings/settings/sharepoint-page-picker/index>`
 
+If no SharePoint categories are set up, the option is simply not shown here.
+
 Custom link
 ************
 The following settings are available:
