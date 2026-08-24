@@ -12,9 +12,8 @@ Versions
    :titlesonly:
 
    7/index
-   older-releases/index
    omnia-feed-app/index
-
+   older-releases/index
 
 The latest hotfixes
 -------------------
