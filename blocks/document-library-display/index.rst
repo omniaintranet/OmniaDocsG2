@@ -35,7 +35,7 @@ For Display the following settings are available:
 + **Select fields directly**: If there isn't any suitable view available, you can instead select the fields for the list.
 + **Show breadcrumb**: Select to show a breadcrumb for the folders.
 + **Paging**: Select "No paging" or "Classic".
-+**Rows per page**: The default settings is 50. Can be edited.
++ **Rows per page**: The default settings is 50. Can be edited.
 + **Data type**: (A description will be added soon).
 
 Filter
