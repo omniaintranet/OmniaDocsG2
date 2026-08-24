@@ -27,6 +27,7 @@ Blocks
    create-teamwork/index
    community-rollup/index
    current-navigation/index
+   document-library-display/index
    divider-block-712/index
    document-rollup/index
    faq/index
