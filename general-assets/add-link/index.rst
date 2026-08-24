@@ -1,11 +1,15 @@
 Add link
 ===========================================
 
-Add link is used when a link is added in a block and a few other instances. 
+You can use this asset to add a link to a page or document in the tenant, or create a custom link to any web page. A mailto link can be created using a custom link. Anchors are supported and can be used here, in a Custom link. 
 
 .. image:: add-link-v75.png
 
-You can use this asset to add a link to a page or document in the tenant, or create a custom link to any web page. A mailto link can be created using a custom link. Anchors are supported and can be used here, in a Custom link. 
+In Omnia 7.12 and later, one or more SharePoint page categories can be available. Here's an example from a test environment with two categories, simply called SP pages and SP pages 2:
+
+.. image:: add-link-v712.png
+
+For SharePoint pages to available here, it must be set up in Omnia admin, see: :doc:`SharePoint page picker settings </admin-settings/business-group-settings/settings/sharepoint-page-picker/index>`
 
 Custom link
 ************
