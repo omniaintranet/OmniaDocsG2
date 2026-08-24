@@ -5,7 +5,7 @@ You can use this asset to add a link to a page or document in the tenant, or cre
 
 .. image:: add-link-v75.png
 
-In Omnia 7.12 and later, one or more SharePoint page categories can be available. Here's an example from a test environment with two categories, simply called SP pages and SP pages 2:
+In Omnia 7.12 and later, one or more SharePoint page categories can be available. Here's an example from a test environment with two categories, simply called SP PAGES and SP PAGES 2:
 
 .. image:: add-link-v712.png
 
