@@ -5,7 +5,7 @@ Available in Omnia 7.12 and later.
 
 **This is a preliminary description. Will be edited soon.**
 
-Use this block to display the folder structure for a document library in SharePoint.
+Use this block to display the folder structure for a SharePoint document library.
 
 Settings
 *********
@@ -13,25 +13,33 @@ The following settings are available:
 
 .. image:: document-library-settings.png
 
-Pick one document library
+General
+----------
+Add a title for the block if needed, and decide how a document that is opened from the list should be opened.
 
-Pick it in the same way as we pick lists/document libraries.
+.. image:: document-library-settings-general.png
 
-Use CSOM
+Query
+-------
+Add the URL to the document library here:
 
-Support folders and all SharePoint views.
+.. image:: document-library-settings-query.png
 
-Support picking individual columns (to be consistent with the list rollup)
+Display
+---------
+For Display the following settings are available:
 
-Prompt:
+.. image:: document-library-settings-display.png
 
-I am creating a new block in the legacy project for management system. This block will render a document library that the user selects in the settings panel.
+(More info will be added soon).
 
-For the settings form we should have a similar structure as other blocks. (Query, Display, Filter, Export)
-- Picking the library should be built similar to the list rollups pick single list.
+Filter
+--------
+Filtering is done as in other blocks, see: (link)
 
-When picking, only show document libraries (should be easy to identify)
+Export
+-------
+You can decide that export till Excel will be available for end users:
 
-For display, we should show all SharePoint views that are available on the picked library.
+.. image:: document-library-settings-export.png
 
-We should support all sorts of views and settings that SharePoint provides.
