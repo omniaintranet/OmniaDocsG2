@@ -99,9 +99,9 @@ In Omnia 7.12 and later it can be possible to link to a colleagues user profile:
 
 .. image:: link-picker-user.png
 
-When you click to open the list, the people picker is available, see: (link)
+When you click to open the list, the people picker is available, see: :doc:`General block settings </general-assets/using-people-picker/index>`
 
-When you have selected a colleague, the person's name is displayed in the "Title" field. This becomes the title of the clockable link. It can be edited if needed.
+When you have selected a colleague, the person's name is displayed in the "Title" field. This becomes the title of the clickable link. It can be edited if needed.
 
 Settings for the document picker
 -----------------------------------
