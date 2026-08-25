@@ -1,9 +1,11 @@
 Semantic search reindex
 =================================
 
-Available in Omnia 7.12 and later.
+Available in Omnia 7.12 and later. 
 
 Use this to reindex documents for semantic search fast and easy. You can choose to reindex all documents, only some document types and even select individual documents.
+
+For this option to be available, semantic search must be enabled in the tenant. Only documents whose document type is configured as semantic-search-indexable can show up in the list. 
 
 .. image:: semantic-search-reindex-all.png
 
