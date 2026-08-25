@@ -22,4 +22,5 @@ Select section for a description:
    tasks-bulk-update/index
    document-termination/index
    about-merging-terms/index
+   semantic-search-reindex/index
 
