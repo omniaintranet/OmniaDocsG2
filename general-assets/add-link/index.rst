@@ -5,13 +5,13 @@ You can use this asset to add a link to a page or document in the tenant, or cre
 
 .. image:: add-link-v75.png
 
-In Omnia 7.12 and later, one or more SharePoint page categories can be available. Here's an example from a test environment with two categories, simply called SP PAGES and SP PAGES 2:
+In Omnia 7.12 and later, SharePoint page categories and user links can be available here. Here's an example from a test environment with two categories, simply called SP PAGES and SP PAGES 2:
 
 .. image:: add-link-v712.png
 
 For SharePoint pages to available here, it must be set up in Omnia admin, see: :doc:`SharePoint page picker settings </admin-settings/business-group-settings/settings/sharepoint-page-picker/index>`
 
-If no SharePoint categories are set up, the option is simply not shown.
+If no SharePoint categories are set up, the option is simply not shown. For information about user links, see below.
 
 Custom link
 ************
@@ -92,6 +92,16 @@ The section to the right is not found in the document picker, they are available
 + **Open in brower (New tab)**: As above but also opened in a new tab.
 + **Download**: If it should be possible to download the document from the link, select this option. Note that other settings in the system may prevent download.
 + **Icon**: If you would like to add an icon to the link, use these settings.
+
+User
+*****
+In Omnia 7.12 and later it can be possible to link to a colleagues user profile:
+
+.. image:: link-picker-user.png
+
+When you click to open the list, the people picker is available, see: (link)
+
+When you have selected a colleague, the person's name is displayed in the "Title" field. This becomes the title of the clockable link. It can be edited if needed.
 
 Settings for the document picker
 -----------------------------------
