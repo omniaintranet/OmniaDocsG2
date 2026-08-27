@@ -21,7 +21,7 @@ Here you can set background color, icon color and hover color, if you're not hap
 
 General
 ********
- You can set a title for the app launcher. This is shown as the tool tip for the button.
+You can set a title for the app launcher. This is shown as the tool tip for the button.
 
 .. image:: app-launcher-settings-general-v712.png
 
