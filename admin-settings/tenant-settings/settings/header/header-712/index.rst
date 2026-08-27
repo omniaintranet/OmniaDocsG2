@@ -57,7 +57,7 @@ Here you can set custom colors for the icons, if needed:
 
 Custom Sort
 ************
-Use the arrows to decide in which order links form the various sources are shown.
+Use the arrows to decide in which order links from the various sources are shown.
 
 .. image:: header-custom-sort-712.png
 
