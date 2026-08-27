@@ -25,7 +25,7 @@ In 7.12 and later, the options are organized differently:
 
 .. image:: omnia-app-launcher-v712.png
 
-Avaiblabe options are geneally the same. More information about this will be added soon.
+Find the 7.12 documentation for App launcher (Heading) here: :doc:`Header settings in Omnia 7.12 </admin-settings/tenant-settings/settings/header/header-712/index>`
 
 App launcher button
 --------------------
