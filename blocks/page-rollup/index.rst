@@ -25,7 +25,7 @@ These settings are available for the block (image from Omnia 7.12):
 
 General
 --------
-Here you can add a title for block:
+Here you can add a title for the block:
 
 .. image:: page-rollup-settings-v712.png
 
