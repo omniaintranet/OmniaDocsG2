@@ -334,8 +334,6 @@ Show in dialog
 ****************
 Available in Omnia 7.12 and later. You can choose to open a page from the rollup in a dialog. The settings are done here.
 
-.. image:: show-in-dialog.png
-
 After you have activated the option two more options are available. If you would like to set your own detailed settings, select "Override default settings".
 
 .. image:: show-in-dialog-override.png
