@@ -1,4 +1,4 @@
-  Header settings in Omnia 7.12 and later
+Header settings in Omnia 7.12 and later
 ==========================================
 
 This page describes the App launcher settings for Header in Omnia 7.12 and later. The rest of the Header settings are the same as in 7.11. For 7.11 and earlier, see this page: :doc:`Header settings </admin-settings/tenant-settings/settings/header/header-65/index>`
