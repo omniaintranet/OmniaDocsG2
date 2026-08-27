@@ -332,11 +332,11 @@ A few notes, though:
 
 Show in dialog
 ----------------
-Available in Omnia 7.12 and later. You can choose that selected content from pages in the rollup should be opened in a dialog. The settings are done here.
+Available in Omnia 7.12 and later. Instead of opening the page when the link is clicked in the rollup, selected content from pages in the rollup can be opened in a dialog. The settings are done here.
 
 **Important note!** Show in dialog can't be used if any of the following settings are selected for Display: "Open in new tab", "Open in editor" or "Open in SharePoint full page". 
 
-After you have activated the option two more options are available. If you would like to set your own detailed settings, select "Override default settings".
+After activation two more options are available. If you would like to set your own detailed settings, select "Override default settings".
 
 .. image:: show-in-dialog-override.png
 
@@ -344,7 +344,7 @@ and you can use these as well:
 
 .. image:: show-in-dialog-override2.png
 
-+ **Enable rich text**: If this option is activated, rich text settings from the page are shown in the dialog. If this option is not activated, only plain text is shown in the dialog.
++ **Enable rich text**: If this option is activated, some text formats from the page are shown in the dialog. If this option is not activated, only plain text is shown in the dialog.
 + **Show likes/comments in dialog**: If it should be possible to use likes and comments, and maybe mentions, in the dialog, select this option.
 + **Enable view button on dialog**: Select this option to add a View button (or rather link) to the dialog. This can be used to go to the page.
 + **Enable mention**: Enables mentions in comments. "Show likes/comments in dialog" must be active for this to work.
