@@ -31,6 +31,6 @@ As you could see above, you can reindex selected documents even when you have ch
 2. Type what you will search for in the Search field.
 3. Click FIND.
 4. Select some or all of the listed documents.
-4. Click REINDEX.
+5. Click REINDEX.
 
 .. image:: semantic-search-reindex-renidex-search.png
