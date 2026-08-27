@@ -135,7 +135,7 @@ Listing with image
 -------------------
 Contains mostly general settings, see above. Special settings are:
 
-+ **ADD PROPERTY**: Available in Omnia 7.12 and later. Use it to select or edit properties shown for the posts.
++ **ADD PROPERTY**: Available in Omnia 7.12 and later. Use it to select or edit properties shown for the pages.
 + **Properties separator**: Available in Omnia 7.12 and later. Use it to select how spaces between properties should be displayed.
 + **Show rating**: If the rating for the page(s) displayed should be shown, select this option. 
 
@@ -143,7 +143,7 @@ List view
 ------------
 Contains mostly general settings, see above. The only special setting is:
 
-+ **Show Export to Excel**: If it should be possible for users to export a list to Excel, select this option. When this is done, an "Export to Excel" button is shown. 
++ **Show Export to Excel**: If it should be possible for users to export the list to Excel, select this option. When this is done, an "Export to Excel" button is shown. 
 
 You also have to add at least one column, for the display to work. See below for more information.
 
@@ -204,7 +204,7 @@ For general settings, see above.
 
 Event List
 ------------
-As it suggests, this view is suitable for use in a Event Management set up. Contains general settings only, see above. You also have to add at least one column, for the display to work. See below for more information.
+As it suggests, this view is suitable for use in an Event Management set up. Contains general settings only, see above. You also have to add at least one column, for the display to work. See below for more information.
 
 Event card
 -----------
