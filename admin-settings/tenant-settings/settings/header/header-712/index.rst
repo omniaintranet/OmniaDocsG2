@@ -5,17 +5,11 @@ This page describes the App launcher settings for Header in Omnia 7.12 and later
 
 In 7.12 and later, the settings are organized this way: 
 
-.. image:: omnia-app-launcher-v78.png
+.. image:: omnia-app-launcher-v712.png
 
 + **Enable**: The first step is to decide to use the Omnia app launcher or not. If it's not enabled, the space is simply empty.
 
 Note that there's a feature available for the tenant to install default app launcher links to make it really easy to get going with the Omnia app launcher. For more information, see: :doc:`Features - Tenant </admin-settings/tenant-settings/features/index>`
-
-In 7.12 and later, the options are organized differently:
-
-.. image:: omnia-app-launcher-v712.png
-
-Avaiblabe options are geneally the same. More information about this will be added soon.
 
 App launcher button
 --------------------
@@ -23,9 +17,11 @@ Here you can set background color, icon color and hover color, if you're not hap
 
 General
 ----------
-The following settings are available here:
+Here you can add a title, if needed:
 
-.. image:: app-launcher-settings-general-v78.png
+.. image:: app-launcher-settings-general-v712.png
+
+
 
 + **Title**: Set the title for the app launcher. This is shown as the tool tip for the button.
 + **Sorted by**: Open the list and decide how to sort the icons; Custom, Alphabetic or Last Visited. If you choose Custom, use the option "Custom" below for sorting (not shown for Alphabetical or Last visited).
