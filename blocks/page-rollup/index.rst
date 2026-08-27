@@ -331,10 +331,12 @@ A few notes, though:
 + **Colorful**: Available for some Layout options. It's really colorful! Try it and see what you think.
 
 Show in dialog
-----------------
+*****************
 Available in Omnia 7.12 and later. Instead of opening the page when the link is clicked in the rollup, selected content from pages in the rollup can be opened in a dialog. The settings are done here.
 
 **Important note!** Show in dialog can't be used if any of the following settings are selected for Display: "Open in new tab", "Open in editor" or "Open in SharePoint full page". 
+
+If variations exist for a page, a variation selector is automatically displayed in the dialog.
 
 After activation two more options are available. If you would like to set your own detailed settings, select "Override default settings".
 
