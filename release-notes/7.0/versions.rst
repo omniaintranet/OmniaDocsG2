@@ -1,3 +1,18 @@
+7.11.24
+========================================
+(Omnia 7.11.24 / Workplace 7.11.24 / WCM 7.11.24 / MS 7.11.24 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Controlled documents with extensive version histories can now be published using an approval workflow (#58012)
+- Improved Identity Picker performance when searching for users and groups in large environments (#58157)
+- The Broken Links metric now only reports links that return a 404 response (#44205)
+- Fixed an on-premises caching issue that could cause errors when a publishing app has no default page collection
+- Improved automatic machine translation handling for page content (#59354)
+- Document Bulk Update now returns the correct documents when filtering on person properties (#58800)
+- Accordion sections now expand automatically when printing a page using the Print action (#58910)
+- Improved tenant administrator provisioning during new Omnia installations (#58866)
+- Controlled Document and Process Management interfaces on SharePoint pages now follow the Omnia user language (#166490)
+- The Publishing Channel edit panel now remains usable when switching between channels (#59183)
+
 7.11.23
 ========================================
 (Omnia 7.11.23 / Workplace 7.11.23 / WCM 7.11.23 / MS 7.11.23 / Analytics 7.11.4 / Feed 7.11.6)
