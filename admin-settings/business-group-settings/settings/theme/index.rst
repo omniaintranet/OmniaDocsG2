@@ -91,9 +91,15 @@ A theme can be set for the page type. When the page type is edited, themes can b
 
 Call to action style
 *********************
-Available in Omnia 7.12 and later. Use this to set a general style for the call to actions buttons you can use in the RTF editor.
+Available in Omnia 7.12 and later. Use this to set a general style for the call to action buttons you can use in the RTF editor.
 
-.. imag:: call-to-action-style-all.png
+.. image:: call-to-action-style-all.png
 
-(A description will be added soon).
+And these as well:
+
+.. image:: call-to-action-style-rest.png
+
+All such buttons will then look the same everywhere in the business profile. Here's an example with a very visual button:
+
+.. image:: call-to-action-button-example.png
 
