@@ -5,9 +5,12 @@ Use this Web content management option to make sure all Omnia pages in the tenan
 
 Just click REINDEX CONTENT:
 
-.. image:: reindex-pages-conten.png
+.. image:: reindex-pages-content.png
 
 When a reindex is running, a TERMINATE CURRENT JOB button is shown so you can stop the reindex if needed. You can also see info about the progress.
 
 Other than that, you can see info about recent reindexing and if it succeeded or not.
+
+If the reindex failes, just try again. If you experience repeated failures, report an issue to Omnia support.
+
 
