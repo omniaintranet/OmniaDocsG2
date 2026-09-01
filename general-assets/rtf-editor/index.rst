@@ -1,7 +1,7 @@
 Editing text with the RTF editor
 =====================================
 
-When editing text in Omnia, a RTF editor can be available. What is available in the editor is set up in Omnia admin, and in a few cases in the block itself. In a Text block, the mode must be Limited rich text, Rich text or Custom rich text for the RTF editor to be available. When editing text in a Text block it's done using Write mode.
+When editing text in Omnia, a RTF editor can be available. What is available in the editor is set up in Omnia admin, and in a few cases in the block itself. In a Text block, the mode must be Limited rich text, Rich text or Custom rich text for the RTF editor to be available. When editing text in a Text block it's done using Write mode. Editors can also use the RTF editor when adding text to some blocks.
 
 **Note!** Options available in the RTF editor can differ a lot, depending on how it's set up. Not all options described below may be available.
 
@@ -294,4 +294,20 @@ The window where you can edit the HTML code can look something like this:
 .. image:: rtf-editor-edit-html-76.png
 
 Just save when you're done and you will be returned to the RTF editor.
+
+Call to action
+----------------
+An option called "Call to action" can be available in Omnia 7.12 and later. It's used to create link buttons in the text. Here's an example with a quite visual button:
+
+.. image:: call-to-action-button-example.png
+
+The button's appearance is set in the business profile's admin settings, see this page for more informtion: :doc:`Theme for business profile </admin-settings/business-group-settings/settings/theme/index>`
+
+You use this option to add a "Call to action":
+
+.. image:: call-to-action-button-add.png
+
+Add a title (the label on the button), and an URL.
+
+.. image:: call-to-action-button-settings.png
 
