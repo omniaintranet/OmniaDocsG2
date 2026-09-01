@@ -1,9 +1,9 @@
 Theme for the business profile
 =================================
 
-Here you can work with theming for the business profile:
+Here you can work with theming for the business profile (image from Omnia 7.12):
 
-.. image:: theme-all.png
+.. image:: theme-all-712.png
 
 Color palette
 ****************
@@ -89,8 +89,11 @@ Themes and inheritance
 ************************
 A theme can be set for the page type. When the page type is edited, themes can be set for sections, overwriting the theme settings there. Unique block settings will overwrite theme settings for the sections.
 
+Call to action style
+*********************
+Available in Omnia 7.12 and later. Use this to set a general style for the call to actions buttons you can use in the RTF editor.
 
+.. imag:: call-to-action-style-all.png
 
-
-
+(A description will be added soon).
 
