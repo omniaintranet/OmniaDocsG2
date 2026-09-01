@@ -1,4 +1,4 @@
-Reindex pages for semantic search
+Semantic search - reindex pages
 ====================================
 
 Use this Web content management option to make sure all Omnia pages in the tenant are indexet for semantic search. Available in Omnia 7.12 and later.
