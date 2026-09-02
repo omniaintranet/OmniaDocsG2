@@ -1,7 +1,7 @@
 Text styles
 =============
 
-Here you can edit the settings for the text styles used in the RTF editor, as well as create new styles. In Omnia 7.12 and later, you can set other settings for a business profile if needed. Apply everwhere settings are also available in Omnia 7.12 and later, see below.
+Here you can edit the settings for the text styles used in the RTF editor, as well as create new styles. In Omnia 7.12 and later, you can set other settings for a business profile if needed. Apply everywhere settings are also available in Omnia 7.12 and later, see below.
 
 .. image:: tenant-settings-text-styles-78.png
 
@@ -30,5 +30,9 @@ Here's an example with settings open for Font size and Font color:
 
 Apply everywhere
 ******************
+In Omnia 7.12 and later, you can choose a number of the built-in text styles to be applied to all matching elements across the solution. If you don't enable this, they only affect rich text editor content. Custom text styles always remain scoped to the rich text editor, not matter what you choose here. 
 
+.. image:: apply-everywhere-tenant.png
+
+If you would like to set other settings for a business profile, som more information is found on this page: :doc:`Text styles - business profile </blocks/general-block-settings/index>`
 
