@@ -21,13 +21,9 @@ In Omnia 7.12 long-running requests sent to a group are treated differently than
 
 **Important note**: Omnia groups are not suppported (all other types of groups are).
 
-In this list you can see the update logs, so you can note recipient changes and have a clear starting point when troubleshooting problems.
+In the list you can see the update logs, so you can note recipient changes and have a clear starting point when troubleshooting problems.
 
-Here's an example from a test environment:
-
-.. image:: user-sync-list.png
-
-If there are any changes to a request, it can be noted this way:
+If there are any changes to a request, it can be noted this way (image from a test environment):
 
 .. image:: user-sync-list2-frame.png
 
