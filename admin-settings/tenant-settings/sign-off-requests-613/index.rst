@@ -3,9 +3,9 @@ Sign-off requests
 
 Sign-off requests can be used for read receipts for pages, including news. One example of implementation is pages a new employee should study. In Omnia 7.7 and later, sign-off requests can be used for controlled documents as well.
 
-The following settings are available here:
+The following settings are available here (image from Omnia 7.12):
 
-.. image:: sign-off-requests-settings-77.png
+.. image:: sign-off-requests-settings-712.png
 
 Select section for more information:
 
@@ -18,6 +18,7 @@ Select section for more information:
    sign-off-templates-613/index   
    sign-off-types-613/index
    recurring-requests/index
+   user-sync-sign-off-requests/index
 
 A rollup block for sign-off requests, useful both for making sign-off requests available and for keeping track of status for the requests, is also be available: :doc:`Sign-off requests block </blocks/sign-off-requests-rollup-613/index>`
 
