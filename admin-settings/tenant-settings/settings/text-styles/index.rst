@@ -34,5 +34,5 @@ In Omnia 7.12 and later, you can choose a number of the built-in text styles to 
 
 .. image:: apply-everywhere-tenant.png
 
-If you would like to set other settings for a business profile, som more information is found on this page: :doc:`Text styles - business profile </blocks/general-block-settings/index>`
+If you would like to set other settings for a business profile, som more information is found on this page: :doc:`Text styles - business profile </admin-settings/business-group-settings/settings/text-styles-bp/index>`
 
