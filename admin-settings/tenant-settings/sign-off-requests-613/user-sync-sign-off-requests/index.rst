@@ -29,5 +29,5 @@ Here's an example from a test environment:
 
 If there are any changes to a request, it can be noted this way:
 
-.. image:: user-sync-list2.png
+.. image:: user-sync-list2-frame.png
 
