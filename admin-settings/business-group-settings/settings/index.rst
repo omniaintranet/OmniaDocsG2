@@ -14,6 +14,8 @@ For detailed information, select settings here:
    language/index
    favicon-bp/index
    theme/index
+   text-styles-bp/index
+   fonts-bp/index
    block-title/index
    content-header/index
    central-image-location/index
