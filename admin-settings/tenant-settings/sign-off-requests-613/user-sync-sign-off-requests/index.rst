@@ -3,7 +3,7 @@ User sync - sign-off requests
 
 Avaialable in Omnia 7.12 and later.
 
-In Omnia 7.12 long-running requests sent to a group are treated differently than before. These sign-off requests now stay in sync with current group membership, meaning the correct people will always receive the request, even new group members.
+Long-running requests sent to a group are treated differently than before. These sign-off requests now stay in sync with current group membership, meaning the correct people will always receive the request, even new group members.
 
 + New group members are added to the existing request if they are not already assigned when the sync runs.
 
