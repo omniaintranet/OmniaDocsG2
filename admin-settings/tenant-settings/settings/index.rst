@@ -1,9 +1,9 @@
 Settings
 ====================
 
-Here you can set the following:
+Here you can set the following (image from Omnia 7.12):
 
-.. image:: tenant-settings-v79.png
+.. image:: tenant-settings-v712.png
 
 Select section for more information:
 
@@ -13,6 +13,7 @@ Select section for more information:
    ai-engine/index
    digital-signage-613/index
    favicon-tenant/index
+   fonts-tenant/index
    general/index
    header/header-65/index
    link-handler/index
