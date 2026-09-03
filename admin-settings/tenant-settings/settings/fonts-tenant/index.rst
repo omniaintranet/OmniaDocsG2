@@ -1,7 +1,7 @@
 Fonts - Tenant
 ================================
 
-Here you can edit settings for fonts for the tenant, to be used for different text styles, if needed. Available in Omnia 7.12 and later. 
+Here you can add a custom fonts, to be used for different text styles. Available in Omnia 7.12 and later. 
 
 **This documentation is preliminary. Will be updated soon.**
 
