@@ -9,7 +9,7 @@ Here you can add a custom fonts, to be used for different text styles. Available
 
 In the first step, you select one custom font. Also see "Apply to" below.
 
-+ **Enable custom font**: If you would like to use custom fonts in Omnia, the first step is to activate this option.
++ **Enable custom font**: If you would like to use a custom font in Omnia, the first step is to activate this option.
 + **Font family name**: (A description will be added soon).
 + **Font source**: The source can be file upload, a CDN file link or a browser font. "Browser font" uses a font already available in the browser. Just enter the font family name above, no file or link is needed.
 + **CHOOSE FONT FILE**: If you have chosen to upload a font file, click this button and find the file. Supported font files: WOFF, WOFF2, TTF and OTF. Maximum size is 10 MB (As noted below the button).
