@@ -23,6 +23,7 @@ Topics
    general-assets/roles-permissions/index
    setup/index
    accessability/index
+   use-omnia-in-sharepoint/index
    switch-site-selected/index
    about-SharePoint-CSP-enforcement-compatibility/index
    SharePoint-Server-2019-Testing-and-Support-Policy-Update/index
