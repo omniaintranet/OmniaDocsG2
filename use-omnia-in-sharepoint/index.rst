@@ -11,9 +11,9 @@ There's a lot of useful blocks in Omnia. Most of them can be used as webparts on
 
 How to use the Omnia webparts is described on this page: :doc:`Webparts </admin-settings/tenant-settings/system/microsoft-365/system-webparts/index>`
 
+Using the same font
+*********************
+In Omnia 7.12 and later the fint that has been configured in SharePoint can be applied to Omnia as well. (In Omnia up to 7.11, only the default SharePoint could be used in Omnia).
 
-
-
-
-
+(More information about this will be added soon).
 
