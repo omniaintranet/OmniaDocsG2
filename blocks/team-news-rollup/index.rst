@@ -1,7 +1,7 @@
 Team news rollup
 ===========================================
 
-Use this block to show team news for the logged in user. Here's a simple example of how it can look:
+Use this block to show team news for the logged in user. Here's a simple example:
 
 .. image:: team-news-example-1-new.png
 
