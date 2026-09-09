@@ -15,7 +15,7 @@ Us these settings for a new persona:
 
 Add a title (name) and description for the persona. You can add one or more targeting filters.
 
-Here's an example from the danish targeting persona from the list:
+Here's an example from the danish targeting persona in the list above:
 
 .. image:: targeting-personas-example.png
 
