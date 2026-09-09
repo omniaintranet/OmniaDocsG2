@@ -1,7 +1,7 @@
 Team news rollup
 ===========================================
 
-Use this block to show team news for the logged in user. In Omnia 7.12 and later, this block is renamed "SharePoint page rollup". Mor info about that will be added soon.
+Use this block to show team news for the logged in user. In Omnia 7.12 and later, this block is renamed "SharePoint page rollup". More info about that will be added soon.
 
 Here's a simple example:
 
