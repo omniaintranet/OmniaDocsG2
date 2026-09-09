@@ -54,5 +54,7 @@ Search templates are created by developers and are simply listed here. A search 
 
 Image from Omnia 7.12:
 
-  .. image:: search-templates-712.png
+.. image:: search-templates-712.png
+
+The SharePoint templates can be used when SharePoint sites, list items or pages should be part of the result in any Omnia search. 
 
