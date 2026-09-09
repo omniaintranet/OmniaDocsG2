@@ -7,7 +7,7 @@ To test targeting settings you can use targeting personas, so you don't have to 
 
 All settings can be edited using the pen.
 
-Create a new targeting-persona
+Create a new targeting persona
 *******************************
 Us these settings for a new persona:
 
