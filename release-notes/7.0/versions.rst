@@ -1,3 +1,16 @@
+7.11.26
+========================================
+(Omnia 7.11.26 / Workplace 7.11.26 / WCM 7.11.26 / MS 7.11.26 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Semantic Search now supports GPT-5.5 and GPT-5.6 Luna
+- Added Traditional Chinese language options for Taiwan and Hong Kong for multilingual content and page variations (#59275)
+- SharePoint root sites can now be attached to Omnia Publishing Apps (#59129)
+- A–Z filtering in the Page Rollup now works as expected (#59558, #59606)
+- Document titles are now displayed correctly in Document Bulk Update (#59012)
+- Page variations now display in the correct language when navigating from another workspace or publishing app (#59068)
+- Improved performance when loading approver lists in the Controlled Document publishing dialog (#59259)
+- Page Bulk Update now continues processing if an individual page cannot be updated (#57754)
+
 7.11.24
 ========================================
 (Omnia 7.11.24 / Workplace 7.11.24 / WCM 7.11.24 / MS 7.11.24 / Analytics 7.11.4 / Feed 7.11.6)
