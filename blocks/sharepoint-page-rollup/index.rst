@@ -12,24 +12,28 @@ The followig settings are availble:
 Use this block to show team news for the logged in user. 
 
 General
----------
+**********
 Under General, you can add a title for the block:
 
 .. image:: sharepoint-page-rollup-general.png
 
 Query
--------
-The following settings are available here:
+**********
+You can either pick page or use the query builder.
 
-.. image:: sharepoint-page-rollup-general-query.png
-
-(Not all optiopns are shown in the image above but explained below, well soon.)
-
+Picka pages
+--------------
 If you choose to pick pages, the settings are the same as similar blocks:
 
 .. image:: sharepoint-page-rollup-general-query-pick.png
 
+
+
 If you choose to use the query builder, do it this way:
+
+.. image:: sharepoint-page-rollup-general-query.png
+
+(Not all optiopns are shown in the image above but explained below, well soon.)
 
 (A description will be added soon).
 
