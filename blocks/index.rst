@@ -55,6 +55,7 @@ Blocks
    related-links/index
    rss-reader/index
    search/index
+   sharepoint-page-rollup/index
    sign-off-requests-rollup-613/index
    subscribe/index
    table-of-contents-block/index
