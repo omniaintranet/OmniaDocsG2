@@ -37,25 +37,23 @@ If you choose to use the query builder, you can choose to rollup all pages, with
 
 .. image:: sharepoint-page-rollup-general-query.png
 
-If you choose to rollup pages from a specific SharePoint, add the URL to the library:
+To rollup pages from a specific SharePoint, add the URL to the site here, to list page libraries, and then select the library:
 
 .. image:: sharepoint-page-rollup-library.png
 
+To rollup all, or a part of all pages:
+
 Use the three lists for base settings and the field to add a query parameter. 
 
-.. image:: document-rollup-settings-query-scope-settings.png
+.. image:: sharepoint-page-rollup-query-scope-settings.png
 
-**Note!** In Omnia 7.11 and later, the "Contains" parameter can be used in the query.
-
-3. Click "Add" to add the Query. 
+You use "Add" to add the settings to the Query field below. 
 
 Note that you can type the script directly in the field, if you know how. You can use all options in the Keyword Query Language (KQL). See this Microsoft page for reference: https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
 
 Additionally you can set:
 
-
-
-(A description will be added soon).
+.. image:: sharepoint-page-rollup-query-additional.png
 
 + **Day limit**: Use this settings for how old a news article should be to be displayed here. It's counted from the day it's published.
 + **Include legacy announcements**: If you're using the older Omnia solution for team announcements, select this option to show them here.
