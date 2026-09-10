@@ -87,48 +87,16 @@ Has the following settings part from general settings:
 + **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
 
 Custom view
------------
+--------------
 This is a custom list view. Select the column to show in the view. Note that you can se width for a colummn if needed, by clickning the cogwheel.
 
 Grouped by site
 -----------------
-This display does what it says, groups by site
+(A description will be added soon).
 
-
-Options for most views
-------------------------
-These options are available for most views, shown in different order for different displays, here listed in alphabetical order:
-
-
-+ **No result text**: Enter the text that will be shown if no page can be displayed.
-+ **Date**: Select the property that contains the date for the item(s) to display. Available for Card view.
-+ **Fixed header**: Available for List view. When this option is selected, the heading will always be shown when scrolling.
-+ **Image**: Select the property that contains the image for the item(s) to display. Available for Card view.
-
-
-
-+ **Dialog image**: Select image to display, if any. Available when you have selected "Open page as a dialog".
-+ **Hide block when no data**: Select this option if the block should be hidden when there's nothing to display.
-+ **Hide if read**: Select this option to hide all pages the logged in user has visited. This affects all pages, including news.
-+ **Highlight non-read**: This option makes sure non-read pages are highlighted. Default=selected. Deselect if you don't want that.
-+ **Image ratio**: Select ratio for the image; Landscape, Square or Wide. Available for Roller, Listing with image, Dynamic Roller and Newsletter.
-+ **Link label**: Add the text to be shown for the link here. Available only if "Show link" is selected.
-+ **Link URL**: Add the URL to open when a user clicks the link. Available only if "Show link" is selected.
-+ **Max display limit**: Available only for scope Navigation path, for all views. Set the number of pages that should be displayed. 
-+ **Open in editor**: If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
-+ **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
-+ **Open in SharePoint full page**: Available in Omnia 7.12 and later. Main usage: if the page rollup block is used on a SharePoint page to keep user in SharePoint context when opening the pages shown in the rollup.
-+ **Open page as a dialog**: If the page should be opened in a dialog instead for in a page (new or current), select this option. 
-+ **Padding**: Add some padding between the list and the block border, if needed.
-+ **Paging**: Select paging here; "No paging", "Classic" or "Scroll". Available for List view, Dynamic roller, Card and Newsletter. **Note!** If you select "Trim duplicates" under Query, paging can't be used (= it's automatically set to None).
-+ **Show A-Z paging**: If you would A-Z paging to be available for users, select this option. Available for List view, Card and Event list.
-+ **A-Z paging property**: Available when "Show A-Z paging" is selected. You must select a property here for the A-Z paging to work. For more information, see below.
-+ **Show likes/comments**: If the number of likes and comments should be displayed for the item, select this option. Available for Roller, Listing with image, Dynamic roller and Card.
-+ **Allow liking**: Allows liking on the cards. Available in Omnia 7.12 and later. Option shown when "Show likes/comments" has been selected. 
-+ **Show link**: You can add a link button at the bottom of the list. The first page collection is default, but you can link to any target. 
-+ **Sort by**: Choose what the list should be sorted by, and then select ascending or descending. Available for all, except Navigation view. For the Navigation view you can also sort on Navigation. 
-+ **Summary**: Select the property that contains the page summary for the item to display. Available for Listing with image, ListvView, Dynamic roller, Card and Newsletter.
-
+List
+---------
+(A description will be added soon).
 
 Filter
 ---------
