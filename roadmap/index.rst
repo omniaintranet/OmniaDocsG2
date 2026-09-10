@@ -3,7 +3,6 @@ In Development
 We are continually developing Omnia to make it easier to manage content, connect employees and support everyday work. Below is an early look at some of the features and improvements we are currently designing, building or testing.
 
 .. note::
-
   This page reflects our current priorities and is not a fixed release plan. Features may be added, changed, postponed or removed as we learn from customer feedback and testing.
 
 
