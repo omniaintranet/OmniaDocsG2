@@ -21,13 +21,15 @@ Query
 **********
 You can either pick page or use the query builder.
 
-Picka pages
+Pick pages
 --------------
 If you choose to pick pages, the settings are the same as similar blocks:
 
 .. image:: sharepoint-page-rollup-general-query-pick.png
 
-
++ **Pick pages**: To be able to pick some pages in Design mode, select this option.
++ **Pick pages in Write mode**: Select this option if authors should be able to pick pages in Write mode. **Note!** If you select this options, the ADD PAGE option is not available in the settings. 
++ **ADD PAGE**: When you have selected "Pick pages", you can pick some pages to always be displayed in the list. Click this option and use the SharePoint page picker. See this page for more information: (link to add)
 
 If you choose to use the query builder, do it this way:
 
