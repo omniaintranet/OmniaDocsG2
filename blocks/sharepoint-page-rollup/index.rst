@@ -3,8 +3,6 @@ SharePoint page rollup
 
 In Omnia 7.12 and later, this block replaces Team news rollup.
 
-**Work on this page has just started.**
-
 The followig settings are availble:
 
 .. image:: sharepoint-page-rollup.png
