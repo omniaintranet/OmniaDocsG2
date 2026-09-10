@@ -66,6 +66,8 @@ Here, the following can be set:
 
 .. image:: sharepoint-page-rollup-general-display.png
 
+General settings
+------------------
 + **Row limit**: Decide the number of rows to show for each "page" of the list.
 + **View**: Select view for the list; "Card view", "Custom view", "Grouped by site" or "List".
 + **Order by**: Select what to sort the lists by.
@@ -73,22 +75,32 @@ Here, the following can be set:
 + **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
 + **Padding**: You can add some padding between the list and the block border if needed.
 
+Card view
+-----------
+Has the following settings part from general settings:
+
+
+
 Options for most views
 ------------------------
 These options are available for most views, shown in different order for different displays, here listed in alphabetical order:
 
-+ **Date**: Select the property that contains the date for the item(s) to display. Available for Roller, Listing with image, Dynamic roller, Card and Newsletter.
-+ **Dialog image**: Select image to display, if any. Available when you have selected "Open page as a dialog".
+
++ **No result text**: Enter the text that will be shown if no page can be displayed.
++ **Date**: Select the property that contains the date for the item(s) to display. Available for Card view.
 + **Fixed header**: Available for List view. When this option is selected, the heading will always be shown when scrolling.
++ **Image**: Select the property that contains the image for the item(s) to display. Available for Card view.
+
+
+
++ **Dialog image**: Select image to display, if any. Available when you have selected "Open page as a dialog".
 + **Hide block when no data**: Select this option if the block should be hidden when there's nothing to display.
 + **Hide if read**: Select this option to hide all pages the logged in user has visited. This affects all pages, including news.
 + **Highlight non-read**: This option makes sure non-read pages are highlighted. Default=selected. Deselect if you don't want that.
-+ **Image**: Select the property that contains the image for the item(s) to display. Available for Roller, Listing with image, Dynamic roller, Card and Newsletter views.
 + **Image ratio**: Select ratio for the image; Landscape, Square or Wide. Available for Roller, Listing with image, Dynamic Roller and Newsletter.
 + **Link label**: Add the text to be shown for the link here. Available only if "Show link" is selected.
 + **Link URL**: Add the URL to open when a user clicks the link. Available only if "Show link" is selected.
 + **Max display limit**: Available only for scope Navigation path, for all views. Set the number of pages that should be displayed. 
-+ **No result text**: Enter the text that will be shown if no page can be displayed.
 + **Open in editor**: If this option is selected, a page link can be clicked to open the page in edit mode. This options was devolped with rollups for editors and authors in mind. Permissions apply, so if a user without any edit permissions for the page opens a page this way, nothing can be edited.
 + **Open in new tab**: If the link should be opened in a new tab (as opposed to in current window or dialog), select this option.
 + **Open in SharePoint full page**: Available in Omnia 7.12 and later. Main usage: if the page rollup block is used on a SharePoint page to keep user in SharePoint context when opening the pages shown in the rollup.
