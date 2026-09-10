@@ -11,51 +11,38 @@ The followig settings are availble:
 
 Use this block to show team news for the logged in user. 
 
-In Omnia 7.12 and later, this block is replaced by the block "SharePoint page rollup". See this page for more information: (link to add)
-
-Here's a simple example:
-
-.. image:: team-news-example-1-new.png
-
-The user can click the team to see a list of news items from that team, for example (with dummy text):
-
-.. image:: team-news-example-2-new.png
-
-Note the name at the bottom of the post. You can click it to go to the colleague's profile card for contact information (in Omnia 7.8 and later).
-
-Block Settings
-****************
-The following settings are available:
-
-.. image:: team-news-rollup-settings-v75.png
-
 General
 ---------
-Under General, you can add a title for the block in any tenant language:
+Under General, you can add a title for the block:
 
-.. image:: team-news-rollup-settings-general-v75.png
+.. image:: sharepoint-page-rollup-general.png
 
 Query
 -------
 The following settings are available here:
 
-.. image:: team-news-rollup-settings-query-v75.png
+.. image:: sharepoint-page-rollup-general-query.png
 
-Use the top field to add a custom query. The custom query can be used to only show team news with certain properties. It can also be used to include or exclude certain sites. In the example below, it is used to exclude all news from communication sites:
+(Not all optiopns are shown in the image above but explained below, well soon.)
 
-.. image:: team-news-rollup-settings-query-exmple.png
+If you choose to pick pages, the settings are the same as similar blocks:
+
+.. image:: sharepoint-page-rollup-general-query-pick.png
+
+If you choose to use the query builder, do it this way:
+
+(A description will be added soon).
 
 + **Day limit**: Use this settings for how old a news article should be to be displayed here. It's counted from the day it's published.
 + **Include legacy announcements**: If you're using the older Omnia solution for team announcements, select this option to show them here.
 + **Filter by followed sites**: If team news only from the sites the user follows should be shown, select this option.
-
-Note that you can type the script directly in the field, if you know how. You can use all options in the Keyword Query Language (KQL). See this Microsoft page for reference: https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference
++ **Filter by expiration date**: (A descirption will be added soon).
 
 Display
 ---------
 Here, the following can be set:
 
-.. image:: team-news-rollup-settings-display-v75.png
+.. image:: sharepoint-page-rollup-general-display.png
 
 + **Row limit**: Decide the number of rows to show for each "page" of the list.
 + **View**: Select view for the list; "List" or "Grouped by site".
@@ -64,11 +51,15 @@ Here, the following can be set:
 + **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
 + **Padding**: You can add some padding between the list and the block border if needed.
 
+Filter
+---------
+Here, the following can be set:
+
+.. image:: sharepoint-page-rollup-general-filter.png
+
+(A description will be added soon).
+
 Layout and Write
 **********************
 The Write tab is not used here. The Layout tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
-
-
-
-
 
