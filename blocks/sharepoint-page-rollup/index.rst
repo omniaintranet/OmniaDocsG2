@@ -31,11 +31,13 @@ If you choose to pick pages, the settings are the same as similar blocks:
 + **Pick pages in Write mode**: Select this option if authors should be able to pick pages in Write mode. **Note!** If you select this options, the ADD PAGE option is not available in the settings. 
 + **ADD PAGE**: When you have selected "Pick pages", you can pick some pages to always be displayed in the list. Click this option and use the SharePoint page picker. See this page for more information: (link to add)
 
-If you choose to use the query builder, do it this way:
+Query builder
+----------------
+If you choose to use the query builder, you can choose to rollup all pages, with property filtering if needed, or rollup the pages in a specific SharePoint library:
 
 .. image:: sharepoint-page-rollup-general-query.png
 
-(Not all optiopns are shown in the image above but explained below, well soon.)
+
 
 (A description will be added soon).
 
