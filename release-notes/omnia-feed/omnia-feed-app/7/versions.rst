@@ -1,5 +1,11 @@
 Release 7.11
 ============
+Release 7.11.7
+--------------
+
+- Reduced the loading time for content in embedded tabs
+- Fixed the behavior of links not opening correctly according to link handler configuration
+
 Release 7.11.6
 --------------
 
