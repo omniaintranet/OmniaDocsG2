@@ -58,7 +58,7 @@ Additionally you can set:
 + **Day limit**: Use this settings for how old a news article should be to be displayed here. It's counted from the day it's published.
 + **Include legacy announcements**: If you're using the older Omnia solution for team announcements, select this option to show them here.
 + **Filter by followed sites**: If team news only from the sites the user follows should be shown, select this option.
-+ **Filter by expiration date**: (A descirption will be added soon).
++ **Filter by expiration time**: (A description will be added soon).
 
 Display
 ---------
@@ -72,7 +72,6 @@ General settings
 + **View**: Select view for the list; "Card view", "Custom view", "Grouped by site" or "List".
 + **Order by**: Select what to sort the lists by.
 + **No result text**: If you would like a specific text to be shown when there are no news to display, add the text here, in any tenant language.
-+ **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
 + **Padding**: You can add some padding between the list and the block border if needed.
 
 Card view
@@ -92,19 +91,20 @@ This is a custom list view. Select the column to show in the view. Note that you
 
 Grouped by site
 -----------------
-(A description will be added soon).
+You can set general settings and:
+
++ **Force letter avatar**: If letter avatars always should be shown, select this option.
++ **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
 
 List
 ---------
-(A description will be added soon).
+You can set general settings and:
+
++ **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
 
 Filter
 ---------
-Here, the following can be set:
-
-.. image:: sharepoint-page-rollup-general-filter.png
-
-(A description will be added soon).
+The filter options are the same for most blocks, including this one. See this page: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
 Layout and Write
 **********************
