@@ -79,6 +79,20 @@ Card view
 -----------
 Has the following settings part from general settings:
 
++ **Description**: Add the property for the description of a card.
++ **Image**: Select the property that contains the image for the item(s) to display. Available for Card view.
++ **Date**: Add the property for the date shown on a card.
++ **Person**: Add the property for a person's name shown on a card.
++ **Term properties**: Can be used to show properties in Card view. Click "Add" and select a property. Continue the same way for additional properties.
++ **Cards per row**: As it says, set the number of cards to show per row. **Important note!** The card's placements are based on a grid with 12 positions. Therefore only numbers that is an integer part of 12 is available, for example 1,2,3,4 and 6.
+
+Custom view
+-----------
+This is a custom list view. Select the column to show in the view. Note that you can se width for a colummn if needed, by clickning the cogwheel.
+
+Grouped by site
+-----------------
+This display does what it says, groups by site
 
 
 Options for most views
