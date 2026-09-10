@@ -37,7 +37,7 @@ If you choose to use the query builder, you can choose to rollup all pages, with
 
 .. image:: sharepoint-page-rollup-general-query.png
 
-To rollup pages from a specific SharePoint, add the URL to the site here, to list page libraries, and then select the library:
+To rollup pages from a specific SharePoint library, add the URL to the site here, to list page libraries, and then select the library.
 
 .. image:: sharepoint-page-rollup-library.png
 
@@ -67,7 +67,7 @@ Here, the following can be set:
 .. image:: sharepoint-page-rollup-general-display.png
 
 + **Row limit**: Decide the number of rows to show for each "page" of the list.
-+ **View**: Select view for the list; "List" or "Grouped by site".
++ **View**: Select view for the list; "Card view", "Custom view", "Grouped by site" or "List".
 + **Order by**: Select what to sort the lists by.
 + **No result text**: If you would like a specific text to be shown when there are no news to display, add the text here, in any tenant language.
 + **Show thumbnail image**: If a thumbnail image should be shown for the news post, select this option.
