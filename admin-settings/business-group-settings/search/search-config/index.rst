@@ -14,7 +14,7 @@ To create a new search category, click the plus and use the settings available f
 .. image:: search-config-categories-78.png
 
 + **Title**: Add a title for the search category.
-+ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers. 
++ **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers.
 + **Search result source**: Select Source from the list.
 + **Search query**: Add the search query here. Tokens can be used for a dynamic search query, see this page: :doc:`Using tokens in Omnia </general-assets/using-tokens-in-omnia/index>`
 + **Enable query rules**: Query rules can be set up in SharePoint. If these query rules should be used for this category, select this option.
@@ -25,6 +25,10 @@ To create a new search category, click the plus and use the settings available f
 + **Targeting filter**: A search category can be targeted to a specific group of people based on the targeting system in Omnia. This setting will be used both in quick and advanced search. More information is found here: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 The same settings are available when editing a search category.
+
+For Microsoft Search external items from Microsoft 365 Copilot connectors, see
+:doc:`Microsoft Search connectors
+</admin-settings/business-group-settings/search/microsoft-search-connectors/index>`.
 
 A note on the Omnia search provider
 -------------------------------------

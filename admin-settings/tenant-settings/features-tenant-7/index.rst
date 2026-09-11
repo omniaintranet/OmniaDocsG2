@@ -42,6 +42,10 @@ and these:
 
 .. image:: tenant-features-integration-more-75.png
 
+For setup instructions for the **Microsoft Search connectors** feature, see
+:doc:`Microsoft Search connectors
+</admin-settings/business-group-settings/search/microsoft-search-connectors/index>`.
+
 When Microsoft Teams presence is active, this type of icon indicates Teams presence:
 
 .. image:: teams-presence.png

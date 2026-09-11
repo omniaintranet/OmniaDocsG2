@@ -9,6 +9,10 @@ To find a property for editing, you can either search (note the search field at 
 
 **Note!** In Omnia on-prem there is no support for Microsoft Search mappings.
 
+For the Microsoft Search paths and template mappings needed for external items,
+see :doc:`Microsoft Search connectors
+</admin-settings/business-group-settings/search/microsoft-search-connectors/index>`.
+
 Open a category to see the list of properties. Here's an example:
 
 .. image:: enterprise-properties-list-example-v711.png
@@ -39,4 +43,3 @@ Editing a property
 When you edit a property, you can't change the internal name or the type, but you can change settings for SharePoint searchable and Microsoft searchable if needed.
 
 **Note!** If you change settings for SharePoint Searchable it's only valid for new pages created from here on. If you want this setting to be active for all existing pages as well, you must execute Reindex for all publishing apps using this property, in the publishing app settings.
-
