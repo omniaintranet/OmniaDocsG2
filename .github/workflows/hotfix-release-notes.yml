@@ -23,12 +23,10 @@ jobs:
           gh api graphql -f query='
             query {
               organization(login: "omniaintranet") {
-                projectV2(number: 8)  {
-                  nodes {
-                    id
-                    number
-                    title
-                  }
+                projectV2(number: 8) {
+                  id
+                  title
+                  number
                 }
               }
             }
