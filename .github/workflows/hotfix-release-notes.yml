@@ -1,0 +1,23 @@
+name: Hotfix Release Notes
+
+on:
+  schedule:
+    - cron: "15 10 * * *"
+      timezone: "Europe/Stockholm"
+
+  workflow_dispatch:
+
+jobs:
+  detect-release:
+    name: Detect approved release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout OmniaDocsG2
+        uses: actions/checkout@v4
+
+      - name: Show trigger information
+        run: |
+          echo "Release notes automation started"
+          echo "Triggered by: ${{ github.event_name }}"
+          date
