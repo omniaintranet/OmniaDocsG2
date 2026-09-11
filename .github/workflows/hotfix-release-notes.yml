@@ -38,6 +38,12 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash .github/scripts/generate-release-notes.sh
 
+      - name: Create pull request for release notes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/create-pr.sh
+
+
       - name: Show trigger information
         run: |
           echo "Release notes automation started"

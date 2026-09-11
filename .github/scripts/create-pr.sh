@@ -87,6 +87,7 @@ gh pr create \
   --draft \
   --title "$pr_title" \
   --body "Automatically generated draft release notes for Omnia ${omnia_version}." \
-  --head "$branch_name"
+  --head "$branch_name" \
+  --reviewer ChristianHDegn
 
 echo "Draft PR created successfully."
