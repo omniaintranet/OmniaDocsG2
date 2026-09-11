@@ -6,8 +6,6 @@ INPUT_FILE="/tmp/release-issues.json"
 OUTPUT_FILE="/tmp/generated-release-notes.rst"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
 
-MODEL="${OPENAI_MODEL:-gpt-5.6}"
-
 if [ ! -f "$INPUT_FILE" ]; then
   echo "Input file not found: $INPUT_FILE"
   exit 1
@@ -15,11 +13,6 @@ fi
 
 if [ ! -f "$SKILL_FILE" ]; then
   echo "Skill file not found: $SKILL_FILE"
-  exit 1
-fi
-
-if [ -z "${OPENAI_API_KEY:-}" ]; then
-  echo "OPENAI_API_KEY is not configured."
   exit 1
 fi
 
@@ -36,7 +29,6 @@ if [ "$release_count" -gt 1 ]; then
   exit 1
 fi
 
-status_name=$(jq -r '.releases[0].statusName' "$INPUT_FILE")
 issue_count=$(jq '.releases[0].issues | length' "$INPUT_FILE")
 
 if [ "$issue_count" -eq 0 ]; then
@@ -44,74 +36,47 @@ if [ "$issue_count" -eq 0 ]; then
   exit 1
 fi
 
+status_name=$(jq -r '.releases[0].statusName' "$INPUT_FILE")
+
 echo "Generating release notes for:"
 echo "$status_name"
 echo "Issues: $issue_count"
 
 skill_instructions=$(cat "$SKILL_FILE")
+release_data=$(cat "$INPUT_FILE")
 
-release_input=$(
-  jq -c '
-    {
-      statusName: .releases[0].statusName,
-      issues: .releases[0].issues
-    }
-  ' "$INPUT_FILE"
-)
+prompt=$(cat <<EOF
+You are generating customer-facing Omnia hotfix release notes.
 
-user_prompt=$(cat <<EOF
-Generate the hotfix release notes for the following approved release.
+Follow these release-note instructions exactly:
 
-Use the supplied status name to construct the release heading and component-version line.
-
-Return ONLY the final RST release-note content.
-Do not include markdown code fences.
-Do not include explanations before or after the release notes.
+$skill_instructions
 
 Release data:
-$release_input
+
+$release_data
+
+Requirements:
+- Generate release notes only for the release in the supplied JSON.
+- Use the status name to construct the release heading and component-version line.
+- Use the supplied GitHub issue information as the source of truth.
+- Do not invent functionality or ticket numbers.
+- Return only the final RST release-note content.
+- Do not use Markdown code fences.
+- Do not include explanations, commentary, or introductory text.
 EOF
 )
 
-request_body=$(
-  jq -n \
-    --arg model "$MODEL" \
-    --arg instructions "$skill_instructions" \
-    --arg input "$user_prompt" \
-    '{
-      model: $model,
-      instructions: $instructions,
-      input: $input
-    }'
-)
+copilot \
+  -p "$prompt" \
+  -s \
+  --no-ask-user \
+  > "$OUTPUT_FILE"
 
-response=$(
-  curl --fail-with-body --silent --show-error \
-    https://api.openai.com/v1/responses \
-    -H "Authorization: Bearer $OPENAI_API_KEY" \
-    -H "Content-Type: application/json" \
-    -d "$request_body"
-)
-
-generated_text=$(
-  echo "$response" |
-    jq -r '
-      [
-        .output[]?.content[]?
-        | select(.type == "output_text")
-        | .text
-      ]
-      | join("\n")
-    '
-)
-
-if [ -z "$generated_text" ] || [ "$generated_text" = "null" ]; then
-  echo "The model did not return release-note content."
-  echo "$response" | jq .
+if [ ! -s "$OUTPUT_FILE" ]; then
+  echo "Copilot returned an empty response."
   exit 1
 fi
-
-printf '%s\n' "$generated_text" > "$OUTPUT_FILE"
 
 echo
 echo "Generated release notes:"

@@ -7,6 +7,10 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+  copilot-requests: write
+
 jobs:
   detect-release:
     name: Detect approved release
@@ -16,6 +20,9 @@ jobs:
       - name: Checkout OmniaDocsG2
         uses: actions/checkout@v6
 
+      - name: Install GitHub Copilot CLI
+        run: npm install -g @github/copilot
+
       - name: Detect release waiting for release notes
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
@@ -24,11 +31,11 @@ jobs:
       - name: Retrieve release issues
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
-        run: bash .github/scripts/get-release-issues.sh
-
+        run: bash .github/scripts/get-release-issues.sh      
+        
       - name: Generate release notes
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: bash .github/scripts/generate-release-notes.sh
 
       - name: Show trigger information
