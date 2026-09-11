@@ -28,4 +28,5 @@ For detailed information, select settings here:
    analytics/index
    system-layouts-bg/index
    dall-e/index
+   default-rendering/index
 

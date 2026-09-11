@@ -1,13 +1,11 @@
 SharePoint page rollup
 ================================
 
-In Omnia 7.12 and later, this block replaces Team news rollup.
+In Omnia 7.12 and later, this block replaces Team news rollup. And besides, you can actually rollup any types of SharePoint pages.
 
 The followig settings are availble:
 
 .. image:: sharepoint-page-rollup.png
-
-Use this block to show team news for the logged in user. 
 
 General
 **********
@@ -17,11 +15,11 @@ Under General, you can add a title for the block:
 
 Query
 **********
-You can either pick page or use the query builder.
+You can either pick one or more pages or use the query builder.
 
 Pick pages
 --------------
-If you choose to pick pages, the settings are the same as similar blocks:
+If you choose to pick pages, the settings are the same as in similar blocks:
 
 .. image:: sharepoint-page-rollup-general-query-pick.png
 
@@ -56,7 +54,7 @@ Additionally you can set:
 + **Day limit**: Use this settings for how old a news article should be to be displayed here. It's counted from the day it's published.
 + **Include legacy announcements**: If you're using the older Omnia solution for team announcements, select this option to show them here.
 + **Filter by followed sites**: If team news only from the sites the user follows should be shown, select this option.
-+ **Filter by expiration time**: (A description will be added soon).
++ **Filter by expiration time**: Use this to make sure the rollup doesn't list pages that are expired. When enabled, it adds an automatic search filter so the block only can rollup pages whose SharePoint scheduling/expiration is today or in the future, or not set.
 
 Display
 ---------
