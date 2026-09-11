@@ -16,21 +16,10 @@ jobs:
       - name: Checkout OmniaDocsG2
         uses: actions/checkout@v6
 
-      - name: List organization projects
+      - name: Detect release waiting for release notes
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
-        run: |
-          gh api graphql -f query='
-            query {
-              organization(login: "omniaintranet") {
-                projectV2(number: 8) {
-                  id
-                  title
-                  number
-                }
-              }
-            }
-          '
+        run: bash .github/scripts/detect-release.sh
 
       - name: Show trigger information
         run: |
