@@ -1,3 +1,16 @@
+7.11.27
+========================================
+(Omnia 7.11.27 / Workplace 7.11.27 / WCM 7.11.27 / MS 7.11.27 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Fixed an issue that could prevent document searches in Document Bulk Update from returning results in some scenarios (#59036)
+- Review Reminder tasks are now reassigned when a responsible user is replaced through Document Bulk Update
+- Current Navigation block titles now support automatic translation (#59391)
+- Improved security and authorization for the email service
+- Added configurable pre- and post-prompts for Semantic Search categories
+- Quick Search now continues to display results from other categories if one search category fails
+- Reusable-content target pages can now be updated using Page Bulk Update (#59251)
+- Process documents can now be exported to Excel when the Processes and Controlled Documents Integration feature is disabled (#59722, #59687)
+
 7.11.26
 ========================================
 (Omnia 7.11.26 / Workplace 7.11.26 / WCM 7.11.26 / MS 7.11.26 / Analytics 7.11.4 / Feed 7.11.6)
