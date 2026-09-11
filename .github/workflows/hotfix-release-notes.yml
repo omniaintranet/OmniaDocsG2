@@ -16,17 +16,19 @@ jobs:
       - name: Checkout OmniaDocsG2
         uses: actions/checkout@v6
 
-      - name: Read GitHub Project #8 (Prod)
+      - name: List organization projects
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh api graphql -f query='
             query {
               organization(login: "omniaintranet") {
-                projectV2(number: 8) {
-                  id
-                  title
-                  number
+                projectsV2(first: 20) {
+                  nodes {
+                    id
+                    number
+                    title
+                  }
                 }
               }
             }
