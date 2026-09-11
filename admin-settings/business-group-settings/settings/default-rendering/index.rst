@@ -1,9 +1,7 @@
 Default rendering
 ==============================
 
-Avaialable in Omnia 7.12 and later.
-
-As it says, it's fall back settings:
+Avaialable in Omnia 7.12 and later. As it says, it's fall back settings:
 
 .. image:: default-rendering-settings.png
 
