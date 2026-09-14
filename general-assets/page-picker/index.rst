@@ -3,7 +3,7 @@ Page picker
 
 You can use the page picker to select pages to display in a list. Only published and shown pages are available to pick. Variations can be picked as well, if available.
 
-Use the page picker this way:
+Note! In Omnia 7.12 and later, there's also a specific picker that's automatically activated when SharePoint pages should be picked, see: :doc:`SharePoint page picker </general-assets/sharepoint-page-picker-picker/index>`
 
 Navigating and picking
 **************************
