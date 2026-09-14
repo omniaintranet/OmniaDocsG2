@@ -1,3 +1,11 @@
+7.11.999
+========================================
+(Omnia 7.11.999 / Workplace 7.11.999 / WCM 7.11.999 / MS 7.11.999 / Analytics 7.11.999 / Feed 7.11.999)
+
+- Fixed an issue where document titles could display incorrectly in Document Bulk Update (#50000)
+
+
+
 7.11.27
 ========================================
 (Omnia 7.11.27 / Workplace 7.11.27 / WCM 7.11.27 / MS 7.11.27 / Analytics 7.11.4 / Feed 7.11.6)
