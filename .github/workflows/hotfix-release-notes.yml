@@ -6,52 +6,63 @@ on:
       timezone: "Europe/Stockholm"
 
   workflow_dispatch:
+    inputs:
+      release_status:
+        description: Exact project status to process when multiple releases are waiting
+        required: false
+        type: string
 
 permissions:
   contents: write
   pull-requests: write
   copilot-requests: write
-  
+
+concurrency:
+  group: hotfix-release-notes
+  cancel-in-progress: false
 
 jobs:
   detect-release:
     name: Detect approved release
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
       - name: Checkout OmniaDocsG2
         uses: actions/checkout@v6
 
-      - name: Install GitHub Copilot CLI
-        run: npm install -g @github/copilot
-
       - name: Detect release waiting for release notes
         id: detect-release
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
-        run: bash .github/scripts/detect-release.sh
+          RELEASE_STATUS: ${{ inputs.release_status }}
+        run: bash .github/scripts/hotfix-release-notes/detect-release.sh
 
       - name: Retrieve release issues
         if: steps.detect-release.outputs.found == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
-        run: bash .github/scripts/get-release-issues.sh      
-        
+        run: bash .github/scripts/hotfix-release-notes/get-release-issues.sh
+
+      - name: Install GitHub Copilot CLI
+        if: steps.detect-release.outputs.found == 'true'
+        run: npm install -g @github/copilot
+
       - name: Generate release notes
         if: steps.detect-release.outputs.found == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: bash .github/scripts/generate-release-notes.sh
+        run: bash .github/scripts/hotfix-release-notes/generate-release-notes.sh
 
       - name: Create pull request for release notes
         if: steps.detect-release.outputs.found == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RELEASE_NOTES_FILE: release-notes/7.0/versions.rst
-        run: bash .github/scripts/create-pr.sh
-
+        run: bash .github/scripts/hotfix-release-notes/create-pr.sh
 
       - name: Show trigger information
+        if: always()
         run: |
           echo "Release notes automation started"
           echo "Triggered by: ${{ github.event_name }}"

@@ -56,6 +56,21 @@ response=$(
                   title
                   body
                   url
+                  updatedAt
+                  labels(first: 100) {
+                    nodes {
+                      name
+                    }
+                  }
+                  comments(last: 50) {
+                    nodes {
+                      author {
+                        login
+                      }
+                      body
+                      createdAt
+                    }
+                  }
                   repository {
                     name
                     nameWithOwner
@@ -79,7 +94,7 @@ while IFS= read -r release; do
   status_name=$(echo "$release" | jq -r '.statusName')
 
   issues=$(
-    echo "$response" |
+    printf '%s\n' "$response" |
       jq -s -c --arg statusId "$status_id" '
         [
           .[]
@@ -98,6 +113,16 @@ while IFS= read -r release; do
               title: .content.title,
               body: (.content.body // ""),
               url: .content.url,
+              updatedAt: .content.updatedAt,
+              labels: [.content.labels.nodes[]?.name],
+              comments: [
+                .content.comments.nodes[]?
+                | {
+                    author: (.author.login // ""),
+                    createdAt: .createdAt,
+                    body: (.body // "")
+                  }
+              ],
               repository: .content.repository.name,
               repositoryWithOwner: .content.repository.nameWithOwner
             }
@@ -132,4 +157,6 @@ jq -n \
     releases: $releases
   }' > "$OUTPUT_FILE"
 
-cat "$OUTPUT_FILE"
+total_issue_count=$(jq '[.releases[].issues | length] | add // 0' "$OUTPUT_FILE")
+echo "Retrieved $total_issue_count issue(s) for release-note generation."
+jq -r '.releases[] | "- \(.statusName): \(.issues | length) issue(s)"' "$OUTPUT_FILE"

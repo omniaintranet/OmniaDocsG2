@@ -41,9 +41,9 @@ If two or more cards describe the same shipped correction, consolidate them into
 
 Use this format:
 
-```text
-# 7.11.x
-
+```rst
+7.11.x
+========================================
 (Omnia 7.11.x / Workplace 7.11.x / WCM 7.11.x / MS 7.11.x / Analytics x / Feed x)
 
 - Release-note bullet
@@ -65,9 +65,12 @@ When matching house style is uncertain, consult the published versions page:
 
 ## Deliver the draft
 
-Return the finished notes as a `document` writing block. Keep the same writing-block ID when revising that release within a chat.
+Choose the output wrapper requested by the caller:
 
-Outside the writing block, provide a compact audit summary:
+- In an interactive chat, return the finished notes as a `document` writing block. Keep the same writing-block ID when revising that release within a chat.
+- In automation that explicitly requests raw RST, return only the RST content without a writing block, code fence, audit summary, or commentary. Put every bullet on one physical line. If the caller says it constructs the heading separately, return only the requested RST bullet lines.
+
+For interactive delivery, provide a compact audit summary outside the writing block:
 
 - total matching GitHub cards;
 - number of published bullets;
