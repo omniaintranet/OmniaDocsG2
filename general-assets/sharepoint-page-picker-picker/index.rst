@@ -1,7 +1,9 @@
 SharePoint page picker
 =================================
 
-In Omnia 7.12 and later, a specific SharePoint page picker is available. Here's a simple example:
+In Omnia 7.12 and later, a specific picker is automatically activated when SharePoint pages should be picked. 
+
+Here's a simple example:
 
 .. image:: sharepoint-page-picker.png
 
