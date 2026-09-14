@@ -1,0 +1,68 @@
+name: Rich Release Descriptions
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: Major.minor release to process, for example 7.12; optional when only one version matches
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  copilot-requests: write
+
+concurrency:
+  group: rich-release-descriptions
+  cancel-in-progress: false
+
+jobs:
+  generate-release-descriptions:
+    name: Generate approved release highlights
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout OmniaDocsG2
+        uses: actions/checkout@v6
+
+      - name: Select Project 18 Feature candidates from approved and done sprints
+        id: select-highlights
+        env:
+          GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          RELEASE_VERSION: ${{ inputs.release_version }}
+        run: bash .github/scripts/rich-release-descriptions/select-highlights.sh
+
+      # TODO: Add agent-driven screenshot generation from a sanitized non-production
+      # tenant and require human approval before committing generated images.
+      - name: Prepare approved screenshots
+        if: steps.select-highlights.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          RELEASE_ASSET_DIRECTORY: release-notes/7.0
+        run: bash .github/scripts/rich-release-descriptions/prepare-assets.sh
+
+      - name: Install GitHub Copilot CLI
+        if: steps.select-highlights.outputs.found == 'true'
+        run: npm install -g @github/copilot
+
+      - name: Generate rich release descriptions
+        if: steps.select-highlights.outputs.found == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/rich-release-descriptions/generate-descriptions.sh
+
+      - name: Create pull request for release descriptions
+        if: steps.select-highlights.outputs.found == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          RELEASE_DESCRIPTION_FILE: release-notes/7.0/index.rst
+        run: bash .github/scripts/rich-release-descriptions/create-pr.sh
+
+      - name: Show trigger information
+        if: always()
+        run: |
+          echo "Rich release-description automation completed"
+          echo "Triggered by: ${{ github.event_name }}"
+          date
