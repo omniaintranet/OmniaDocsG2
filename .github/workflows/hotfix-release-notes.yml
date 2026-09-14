@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
   copilot-requests: write
 
 jobs:
@@ -24,23 +25,28 @@ jobs:
         run: npm install -g @github/copilot
 
       - name: Detect release waiting for release notes
+        id: detect-release
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
         run: bash .github/scripts/detect-release.sh
 
       - name: Retrieve release issues
+        if: steps.detect-release.outputs.found == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
         run: bash .github/scripts/get-release-issues.sh      
         
       - name: Generate release notes
+        if: steps.detect-release.outputs.found == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash .github/scripts/generate-release-notes.sh
 
       - name: Create pull request for release notes
+        if: steps.detect-release.outputs.found == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          RELEASE_NOTES_FILE: release-notes/7.0/versions.rst
         run: bash .github/scripts/create-pr.sh
 
 

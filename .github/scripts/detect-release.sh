@@ -54,6 +54,10 @@ count=$(echo "$matches" | jq 'length')
 if [ "$count" -eq 0 ]; then
   echo "No releases waiting for release notes."
 
+  if [ -n "${GITHUB_OUTPUT:-}" ]; then
+    echo "found=false" >> "$GITHUB_OUTPUT"
+  fi
+
   jq -n \
     --argjson found false \
     '{
@@ -65,6 +69,10 @@ if [ "$count" -eq 0 ]; then
 fi
 
 echo "Found $count release(s) waiting for release notes."
+
+if [ -n "${GITHUB_OUTPUT:-}" ]; then
+  echo "found=true" >> "$GITHUB_OUTPUT"
+fi
 
 jq -n \
   --argjson found true \

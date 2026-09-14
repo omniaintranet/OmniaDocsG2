@@ -24,7 +24,7 @@ status_name=$(jq -r '.releases[0].statusName' "$INPUT_FILE")
 
 omnia_version=$(
   echo "$status_name" |
-    sed -n 's/^Wait for RN Omnia \([^ /]*\).*/\1/p'
+    sed -n 's/^Wait for RN\( -\)\{0,1\} Omnia \([^ /]*\).*/\2/p'
 )
 
 if [ -z "$omnia_version" ]; then
@@ -40,16 +40,29 @@ echo "Version: $omnia_version"
 echo "Branch: $branch_name"
 echo "Release notes file: $RELEASE_NOTES_FILE"
 
-git config user.name "github-actions[bot]"
-git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-git checkout -b "$branch_name"
-
 if [ ! -f "$RELEASE_NOTES_FILE" ]; then
   echo "Target release notes file does not exist:"
   echo "$RELEASE_NOTES_FILE"
   exit 1
 fi
+
+existing_pr=$(
+  gh pr list \
+    --head "$branch_name" \
+    --state open \
+    --json number \
+    --jq '.[0].number // empty'
+)
+
+if [ -n "$existing_pr" ]; then
+  echo "Draft PR already exists: #$existing_pr"
+  exit 0
+fi
+
+git config user.name "github-actions[bot]"
+git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+git checkout -b "$branch_name"
 
 temp_file=$(mktemp)
 
@@ -69,19 +82,6 @@ fi
 git commit -m "Add release notes for ${omnia_version}"
 
 git push --set-upstream origin "$branch_name"
-
-existing_pr=$(
-  gh pr list \
-    --head "$branch_name" \
-    --state open \
-    --json number \
-    --jq '.[0].number // empty'
-)
-
-if [ -n "$existing_pr" ]; then
-  echo "Draft PR already exists: #$existing_pr"
-  exit 0
-fi
 
 gh pr create \
   --draft \
