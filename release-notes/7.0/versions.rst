@@ -1,3 +1,26 @@
+I need to read the full body and recent comments of the supplied issue to determine if it's suitable for public release notes.
+
+Looking at the provided data:
+- **Issue #3906** is marked as a "test issue" with body text stating "This is a test issue create to verify the automated release note creation"
+- It lacks any Zendesk ticket URL, OIM reference, or customer-visible change description
+- It contains no implementation details or QA verification
+
+**Audit Summary:**
+- **Total matching cards:** 1
+- **Published bullets:** 0
+- **Consolidated cards:** None
+- **Omitted cards:** 1 (test issue #3906 — unsuitable for public release; internal verification only, no customer-visible change)
+
+**Release Notes:**
+
+7.11.x
+
+(Omnia 7.11.x / Workplace 7.11.x / WCM 7.11.x / MS 7.11.x / Analytics 7.11.x / Feed 7.11.x)
+
+*No entries to publish*
+
+
+
 7.11.27
 ========================================
 (Omnia 7.11.27 / Workplace 7.11.27 / WCM 7.11.27 / MS 7.11.27 / Analytics 7.11.4 / Feed 7.11.6)
