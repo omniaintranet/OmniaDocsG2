@@ -340,6 +340,8 @@ If variations exist for a page, a variation selector is automatically displayed 
 
 After activation two more options are available. If you would like to set your own detailed settings, select "Override default settings".
 
+The default settings can be edited in Omnia admin. See this page for more information: :doc:`Default redering </admin-settings/business-group-settings/settings/default-rendering/index>`
+
 .. image:: show-in-dialog-override.png
 
 and you can use these as well:
