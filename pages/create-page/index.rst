@@ -28,6 +28,8 @@ When the navigation is open, create a new page this way:
 
 The URL is added automatically, based on the page name, but can be edited if needed.
 
+In Omnia 7.12 and later, it's possible to set scheduled publishing date in this dialog, if Autopublish is activated in the page collaction settings. For more information, see below.
+
 6. Click CREATE.
 
 What you can do from here depends on your permissions. The default mode is Write mode. If you are able to use Design mode, see below.
