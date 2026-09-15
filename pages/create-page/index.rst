@@ -82,6 +82,18 @@ Some useful links regarding editing blocks:
 
 + :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
+Scheduled publishing for autopublish
+*****************************************
+Settings can be made in the page collection to autopublish new pages. In Omnia 7.12 and later, it's also possible to set scheduled publishing date, if Autopublish is activated for the page collection settings.
+
+In the create page dialog, an additional field is then shown:
+
+.. image:: scheduled-auto.png
+
+It's never mandatory, but up to the editor. Just remember, if now date is set, the new page will be automatically published as soon as it's saved.
+
+For more information, see the heading "Scheduled publishing" on this page: :doc:`Publish page changes </pages/publish-page-changes/index>`
+
 Working with a new page in Design mode
 *****************************************
 When the page is created (or later when editing) you can add additional blocks, and edit some of the block's settings - if you have the right permissions, see: :doc:`Working with blocks </blocks/working-with-blocks/index>`
