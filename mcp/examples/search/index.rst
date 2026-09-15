@@ -36,6 +36,13 @@ Example
 
 .. TODO screenshot: search results in the conversation
 
+Promoted results
+****************
+
+Alongside the ordinary hits, a search returns the **promoted search results** that a Quick Search block would show above them for that same keyword - see :doc:`/mcp/examples/promoted-search-result/index`.
+
+If nothing comes back, you are told why: promoted results are switched off for the business profile, nothing is keyed on that word, or the matches are hidden by their status, date window or targeting.
+
 Good to know
 ************
 
@@ -48,4 +55,4 @@ Good to know
 Actions
 *******
 
-+ ``Search.Execute`` - search the current business profile with one keyword.
++ ``Search.Execute`` - search the current business profile with one keyword, including its promoted search results.

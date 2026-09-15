@@ -27,6 +27,7 @@ Examples per area
 
    mcp-tenant-context/index
    search/index
+   promoted-search-result/index
    my-link/index
    shared-link/index
    announcement/index
@@ -40,5 +41,6 @@ Examples per area
    page-collection/index
    page/index
    page-type/index
+   html-script-block/index
    feature/index
    azure-ad-permission/index

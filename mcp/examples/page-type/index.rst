@@ -75,3 +75,4 @@ Actions
 + ``TenantPageType.Save`` - change a page type's title or content properties.
 + ``TenantPageType.Publish`` - publish the current draft.
 + ``TenantPageType.Undo`` - discard the current draft.
++ ``TenantPageType.AddHtmlScriptBlock`` / ``TenantPageType.UpdateHtmlScriptBlock`` - add and patch an Html/Script block on the page type, see :doc:`/mcp/examples/html-script-block/index`.

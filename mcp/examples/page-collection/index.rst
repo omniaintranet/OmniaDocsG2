@@ -80,3 +80,4 @@ Actions
 + ``PageCollection.SetNotificationSettings``
 + ``PageCollection.SetDistributionSettings``
 + ``PageCollection.SetAiSettings``
++ ``PageCollection.AddHtmlScriptBlock`` / ``PageCollection.UpdateHtmlScriptBlock`` - add and patch an Html/Script block on the page collection's own landing page, see :doc:`/mcp/examples/html-script-block/index`.

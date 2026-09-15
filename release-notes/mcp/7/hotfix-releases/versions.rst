@@ -1,6 +1,23 @@
 Release 7.11
 ============
 
+Release 7.11.29
+---------------------------------------
+
+- Added support for adding and changing Html/Script blocks on pages, page collections and page types
+- A new block is placed in its own section at the bottom of the page, and can be moved from there in the Omnia interface
+- Adding an Html/Script block to a page type reports how many published pages use that page type and requires a confirmation before the block is added, since the block runs on every page of the type
+- Added an action that returns the script API contract for an Html/Script block, describing the globals a block script can use
+- A block script that uses the Omnia page globals is rejected while the block is set to run in an iframe, where those globals do not exist
+
+Release 7.11.28
+---------------------------------------
+
+- Added support for listing, adding, changing and deleting promoted search results in a business profile
+- Search results now include the promoted search results a Quick Search block would show for the same keyword, with an explanation when there are none
+- Promoted search results are created on hold, so a new result does not appear in search until it is activated
+- Images and targeting on a promoted search result are not changed by the connector and are preserved when a result is updated
+
 Release 7.11.27
 ---------------------------------------
 

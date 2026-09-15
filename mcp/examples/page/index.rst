@@ -98,3 +98,4 @@ Actions
 + ``Page.Publish`` - publish the current draft.
 + ``Page.Undo`` - discard the current draft.
 + ``Page.Archive`` - archive the page and its children.
++ ``Page.AddHtmlScriptBlock`` / ``Page.UpdateHtmlScriptBlock`` - add and patch an Html/Script block on the page, see :doc:`/mcp/examples/html-script-block/index`.
