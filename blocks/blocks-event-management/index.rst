@@ -12,5 +12,6 @@ Select block for more information:
    
    event-participant-list/index
    event-participant-counter/index
+   participant-counter-712/index
    
    
