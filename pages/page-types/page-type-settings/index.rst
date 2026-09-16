@@ -126,7 +126,7 @@ For more information about how Matomo event tracking works and how to use the se
 
 Page review rule
 ***********************
-Available in Omnia 7.9 and later. Here you can create rules for page reviews, for this page type. Note that you can create several page review rules that are active for this page type, by selecting different date properties.
+Here you can create rules for page reviews, for this page type. Note that you can create several page review rules that are active for this page type, by selecting different date properties.
 
 .. image:: page-review-rule.png
 
@@ -150,7 +150,7 @@ Send Email
 -----------------
 If you selected to send an Email, add the Email subject and the message, and then add one or more recipients. You can send this Email to any colleague, yourself as well of course. Any Email enabled group can also be added.
 
-**Note!** Only one Email per day for each receiver is sent.
+**Note!** Only one Email per day for each receiver is sent. Also note, the first time a rule to send Email is executed, it will trigger an Email for all pages that satisfy the rule and have not previously had an Email sent. 
 
 When you add a new page review rule, a suggested message can be available, which you can edit to your liking. Here's an example:
 
