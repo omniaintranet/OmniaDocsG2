@@ -3,7 +3,7 @@ Event participant counter
 
 This block is used to show the number of participants that has registered for the event and the number of possible participants. 
 
-This page describes the settings in Omnia 7.11 and earlier. Seettings in Omnia 7.12 and later are a bit different, see: :doc:`Event participant counter in Omnia 7.12 </blocks/blocks-event-management/participant-counter-712//index>
+This page describes the settings in Omnia 7.11 and earlier. Settings in Omnia 7.12 and later are a bit different, see: :doc:`Event participant counter in Omnia 7.12 </blocks/blocks-event-management/participant-counter-712//index>'
 
 Here's an example when an Event is fully booked:
 
