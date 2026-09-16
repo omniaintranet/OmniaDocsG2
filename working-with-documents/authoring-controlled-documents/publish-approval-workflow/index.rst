@@ -54,7 +54,7 @@ The workflow will be active until the task is completed and the document will be
 
 Semantic search
 *******************************
-In Omnia 7.8 and later, semantic search can be available. It can be set up in several ways, but a decision about including the document in semantic search, or not, may be needed.
+Semantic search can be available. It can be set up in several ways, but a decision about including the document in semantic search, or not, may be needed.
 
 If it's needed, an option is shown:
 
@@ -64,7 +64,9 @@ The option can be pre selected, or not, depending on settings. Either way, the d
 
 The semantic search settings can be different for each document type. Also note that the setting for a specific document type can state that all documents of the type should always be included in semantic search. If that is the case, no option is shown when publishing.
 
-For more information, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+For more information, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`semantic search, see
+
+For more information about semantic search, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
 Approved or rejected
 *********************
