@@ -157,9 +157,11 @@ fi
 body_file=$(mktemp)
 candidate_file=$(mktemp)
 highlights_file=$(mktemp)
+sanitized_body_file=$(mktemp)
+screenshot_file=$(mktemp)
 updated_file=$(mktemp)
 statuses_file=$(mktemp)
-trap 'rm -f "$body_file" "$candidate_file" "$highlights_file" "$updated_file" "$statuses_file"' EXIT
+trap 'rm -f "$body_file" "$candidate_file" "$highlights_file" "$sanitized_body_file" "$screenshot_file" "$updated_file" "$statuses_file"' EXIT
 
 extract_screenshot_section() {
   awk '
@@ -169,7 +171,7 @@ extract_screenshot_section() {
       sub(/[[:space:]]+$/, "", line)
       normalized = tolower(line)
 
-      if (normalized == "## public screenshots") {
+      if (normalized ~ /^##[[:space:]]+public screenshots?$/) {
         capture = 1
         next
       }
@@ -185,13 +187,61 @@ extract_screenshot_section() {
   ' "$body_file"
 }
 
+strip_screenshot_section() {
+  awk '
+    {
+      line = $0
+      sub(/\r$/, "", line)
+      comparison = line
+      sub(/[[:space:]]+$/, "", comparison)
+      normalized = tolower(comparison)
+
+      if (normalized ~ /^##[[:space:]]+public screenshots?$/) {
+        skip = 1
+        next
+      }
+
+      if (skip && comparison ~ /^##[[:space:]]+/) {
+        skip = 0
+      }
+
+      if (!skip) {
+        print line
+      }
+    }
+  ' "$body_file"
+}
+
 printf '[]\n' > "$highlights_file"
 
 for ((candidate_index = 0; candidate_index < highlight_count; candidate_index++)); do
   candidate=$(jq -c --argjson index "$candidate_index" '.[$index]' <<< "$selected_records")
   jq -r '.sourceBody' <<< "$candidate" > "$body_file"
-  screenshot_markdown=$(extract_screenshot_section)
-  candidate=$(jq -c --arg screenshots "$screenshot_markdown" '. + {screenshotMarkdown: $screenshots}' <<< "$candidate")
+
+  screenshot_section_count=$(grep -Eic '^##[[:space:]]+public screenshots?[[:space:]]*$' "$body_file" || true)
+
+  if [ "$screenshot_section_count" -gt 1 ]; then
+    echo "A Feature issue contains more than one Public screenshot section." >&2
+    exit 1
+  fi
+
+  extract_screenshot_section > "$screenshot_file"
+
+  if [ "$screenshot_section_count" -eq 1 ] && \
+     ! grep -q '[^[:space:]]' "$screenshot_file"; then
+    echo "A declared Public screenshot section does not contain an image." >&2
+    exit 1
+  fi
+
+  strip_screenshot_section > "$sanitized_body_file"
+
+  candidate=$(
+    jq -c \
+      --rawfile sourceBody "$sanitized_body_file" \
+      --rawfile screenshots "$screenshot_file" \
+      '.sourceBody = $sourceBody | . + {screenshotMarkdown: $screenshots}' \
+      <<< "$candidate"
+  )
   printf '%s\n' "$candidate" > "$candidate_file"
   jq -s '.[0] + [.[1]]' "$highlights_file" "$candidate_file" > "$updated_file"
   mv "$updated_file" "$highlights_file"

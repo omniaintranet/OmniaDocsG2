@@ -34,9 +34,7 @@ jobs:
           RELEASE_VERSION: ${{ inputs.release_version }}
         run: bash .github/scripts/rich-release-descriptions/select-highlights.sh
 
-      # TODO: Add agent-driven screenshot generation from a sanitized non-production
-      # tenant and require human approval before committing generated images.
-      - name: Prepare approved screenshots
+      - name: Fetch developer-provided public screenshots
         if: steps.select-highlights.outputs.found == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}

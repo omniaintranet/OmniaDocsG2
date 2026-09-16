@@ -7,7 +7,7 @@ OUTPUT_FILE="/tmp/release-highlights-with-assets.json"
 ASSET_MANIFEST="/tmp/release-highlight-assets.txt"
 
 if [ ! -s "$INPUT_FILE" ]; then
-  echo "Selected release-highlight data is missing or empty: $INPUT_FILE" >&2
+  echo "Selected Feature data is missing or empty: $INPUT_FILE" >&2
   exit 1
 fi
 
@@ -17,7 +17,7 @@ if [ -z "${RELEASE_ASSET_DIRECTORY:-}" ] || [ ! -d "$RELEASE_ASSET_DIRECTORY" ];
 fi
 
 if [ -z "${GH_TOKEN:-}" ]; then
-  echo "GH_TOKEN is required to retrieve approved private issue attachments." >&2
+  echo "GH_TOKEN is required to retrieve developer-provided public issue attachments." >&2
   exit 1
 fi
 
@@ -49,7 +49,7 @@ for ((highlight_index = 0; highlight_index < highlight_count; highlight_index++)
     fi
 
     if [[ ! "$declaration" =~ $image_line_pattern ]]; then
-      echo "A Public screenshots section contains unsupported content." >&2
+      echo "A Public screenshot section contains unsupported content." >&2
       echo "Use one GitHub user-attachment Markdown image per line." >&2
       exit 1
     fi
@@ -138,4 +138,4 @@ updated_file=$(mktemp)
 jq 'del(.highlights[].screenshotMarkdown)' "$OUTPUT_FILE" > "$updated_file"
 mv "$updated_file" "$OUTPUT_FILE"
 
-echo "Prepared $downloaded_count approved release screenshot(s)."
+echo "Fetched $downloaded_count developer-provided public screenshot(s)."
