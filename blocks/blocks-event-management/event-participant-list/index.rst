@@ -3,10 +3,6 @@ Event participant list
 
 Use this block to list participants that has registered for an event.
 
-Here's how it can look for a user:
-
-.. image:: register-for-event-3.png
-
 The user can edit or remove his or her registrations (and so can Event Administrators).
 
 Settings
