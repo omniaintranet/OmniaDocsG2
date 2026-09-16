@@ -64,7 +64,7 @@ The option can be pre selected, or not, depending on settings. Either way, the d
 
 The semantic search settings can be different for each document type. Also note that the setting for a specific document type can state that all documents of the type should always be included in semantic search. If that is the case, no option is shown when publishing.
 
-For more information, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`semantic search, see
+For more information, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
 For more information about semantic search, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
