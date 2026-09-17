@@ -20,6 +20,7 @@ The following settings are available for the block:
 + **Title**: Here you can add a title for the block. 
 + **Icon type**: Select an Icon Type here.
 + **Icon**: Choose the Icon in the icon type you have selected.
++ **Hide number of registered particpants (reader)**: Select this option if the number of participants should not be shown for users with Reader permission (Event admins can still see it).
 + **Padding**: If some padding is needed between the block edges and the list, add it here.
 
 Layout and Write
