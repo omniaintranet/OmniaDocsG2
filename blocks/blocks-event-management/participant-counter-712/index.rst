@@ -19,7 +19,7 @@ Here you can preview the style preset, for example:
 
 .. image:: event-counter-settings-style-v712.png
 
-(The whole preset is not shown in the image aboove).
+(The whole preset is not shown in the image above).
 
 General
 --------
