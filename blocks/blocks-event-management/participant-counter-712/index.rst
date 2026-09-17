@@ -5,8 +5,6 @@ This block is used to show the number of participants that has registered for th
 
 This describes the settings in Omnia 7.12 and later. For Omnia 7.11 and earlier, see: :doc:`Event participant counter </blocks/blocks-event-management/event-participant-counter/index>`
 
-**Work on this page has just started. Text below is not edited.**
-
 **Important note!** Event editors/admins can join events even though the max limit of participants has already been reached. The result can be that the number of registered participants seems to be higher than the max limit. If available seats in the image above would have been 21/20, it would simply have meant that an editor/admin also had joined the event.
 
 Settings
