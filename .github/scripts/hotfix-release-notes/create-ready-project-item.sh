@@ -5,9 +5,21 @@ set -euo pipefail
 ORG="omniaintranet"
 PROJECT_NUMBER=8
 INPUT_FILE="/tmp/release-issues.json"
+GENERATED_FILE="/tmp/generated-release-notes.rst"
+AUDIT_FILE="/tmp/release-notes-audit.json"
 
 if [ ! -s "$INPUT_FILE" ]; then
   echo "Release issue data is missing or empty: $INPUT_FILE" >&2
+  exit 1
+fi
+
+if [ ! -s "$GENERATED_FILE" ]; then
+  echo "Generated release notes are missing or empty: $GENERATED_FILE" >&2
+  exit 1
+fi
+
+if [ ! -s "$AUDIT_FILE" ]; then
+  echo "Release-note audit data is missing or empty: $AUDIT_FILE" >&2
   exit 1
 fi
 
@@ -41,12 +53,54 @@ else
   echo "The selected Wait for RN status does not contain a concrete Omnia version." >&2
   exit 1
 fi
+
 issue_title="Release notes for Omnia ${omnia_version} are now ready"
-issue_body=$(
-  printf 'The release notes for Omnia %s are now ready.\n\n[View the Omnia hotfix release notes](%s)\n' \
-    "$omnia_version" \
+
+source_issue_count=$(jq '.releases[0].issues | length' "$INPUT_FILE")
+included_issue_count=$(jq '[.bullets[].sourceIssues[]] | length' "$AUDIT_FILE")
+bullet_count=$(jq '.bullets | length' "$AUDIT_FILE")
+omitted_issue_count=$(jq '.omittedIssues | length' "$AUDIT_FILE")
+
+issue_body_file=$(mktemp)
+trap 'rm -f "$issue_body_file"' EXIT
+
+{
+  printf '> [!WARNING]\n'
+  printf '> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be reviewed before publication.\n\n'
+  printf 'Generated from **%s** source issues: **%s** represented in **%s** draft bullets and **%s** omitted.\n\n' \
+    "$source_issue_count" \
+    "$included_issue_count" \
+    "$bullet_count" \
+    "$omitted_issue_count"
+  printf '[View the currently published Omnia hotfix release notes](%s). The draft below will not appear there until its pull request is approved and merged.\n\n' \
     "$RELEASE_NOTES_URL"
-)
+  printf '## Generated draft release notes\n\n'
+  printf '```text\n'
+  cat "$GENERATED_FILE"
+  printf '\n```\n\n'
+  printf '## Issues not included in the draft\n\n'
+
+  if [ "$omitted_issue_count" -eq 0 ]; then
+    printf -- '- None. Every source issue is represented in the generated draft.\n'
+  else
+    jq -r --slurpfile releaseData "$INPUT_FILE" '
+      .omittedIssues[] as $omitted
+      | $releaseData[0].releases[0].issues[]
+      | select(
+          .repositoryWithOwner == $omitted.repositoryWithOwner
+          and .number == $omitted.number
+        )
+      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($omitted.reason)"
+    ' "$AUDIT_FILE"
+  fi
+} > "$issue_body_file"
+
+if [ "$(wc -c < "$issue_body_file")" -gt 60000 ]; then
+  echo "The generated Project notification exceeds the safe GitHub body size." >&2
+  exit 1
+fi
+
+issue_body=$(cat "$issue_body_file")
 
 # Use a Project draft issue so this notification cannot be selected as release-note
 # source material: detect-release.sh intentionally processes repository issues only.

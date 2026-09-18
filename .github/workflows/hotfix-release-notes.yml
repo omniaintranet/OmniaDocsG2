@@ -2,7 +2,7 @@ name: Hotfix Release Notes
 
 on:
   schedule:
-    - cron: "15 10 * * *"
+    - cron: "0 10 * * *"
       timezone: "Europe/Stockholm"
 
   workflow_dispatch:

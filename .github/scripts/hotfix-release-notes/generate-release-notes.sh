@@ -4,6 +4,7 @@ set -euo pipefail
 
 INPUT_FILE="/tmp/release-issues.json"
 OUTPUT_FILE="/tmp/generated-release-notes.rst"
+AUDIT_FILE="/tmp/release-notes-audit.json"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
 
@@ -85,29 +86,119 @@ Requirements:
 - Generate release notes only for the release in the supplied JSON.
 - Use the supplied issue bodies, labels, and recent comments as the source of truth. Prefer implemented and QA-verified behavior in recent comments over the initial proposal.
 - Do not invent functionality or ticket numbers.
-- Put each release-note bullet on one physical line.
-- Return only the RST bullet lines, each beginning with "- ". The script constructs the release heading and component-version line separately.
-- Do not use Markdown code fences.
-- Do not include explanations, commentary, or introductory text.
+- Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues.
+- When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
+- Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
+- Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
+- Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
+- Return only valid JSON matching this shape, without Markdown fences or commentary:
+{
+  "bullets": [
+    {
+      "text": "- Customer-facing release-note text",
+      "sourceIssues": [
+        {
+          "repositoryWithOwner": "owner/repository",
+          "number": 123
+        }
+      ]
+    }
+  ],
+  "omittedIssues": [
+    {
+      "repositoryWithOwner": "owner/repository",
+      "number": 456,
+      "reason": "Concise reason for omission"
+    }
+  ]
+}
 EOF
 )
 
+response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$bullets_file"' EXIT
+trap 'rm -f "$response_file" "$bullets_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
     -s \
     --no-ask-user \
     --no-custom-instructions \
-    > "$bullets_file"
+    > "$response_file"
 
-sed -i 's/\r$//' "$bullets_file"
+sed -i 's/\r$//' "$response_file"
 
-if [ ! -s "$bullets_file" ]; then
+if [ ! -s "$response_file" ]; then
   echo "Copilot returned an empty response."
   exit 1
 fi
+
+if ! jq -e '
+  type == "object"
+  and (.bullets | type == "array" and length > 0)
+  and (.omittedIssues | type == "array")
+  and all(
+    .bullets[];
+    (.text | type == "string" and startswith("- ") and (contains("\n") | not))
+    and (.sourceIssues | type == "array" and length > 0)
+    and all(
+      .sourceIssues[];
+      (.repositoryWithOwner | type == "string" and length > 0)
+      and (.number | type == "number" and floor == . and . > 0)
+    )
+  )
+  and all(
+    .omittedIssues[];
+    (.repositoryWithOwner | type == "string" and length > 0)
+    and (.number | type == "number" and floor == . and . > 0)
+    and (
+      .reason
+      | type == "string"
+        and length > 0
+        and length <= 300
+        and (contains("\n") | not)
+        and (test("https?://|www\\.|@|[<>]"; "i") | not)
+    )
+  )
+' "$response_file" >/dev/null; then
+  echo "Copilot did not return the required release-note audit JSON." >&2
+  exit 1
+fi
+
+jq '{bullets, omittedIssues}' "$response_file" > "$AUDIT_FILE"
+
+expected_issue_keys=$(
+  jq -c '
+    [
+      .releases[0].issues[]
+      | "\(.repositoryWithOwner)#\(.number)"
+    ]
+    | sort
+  ' "$INPUT_FILE"
+)
+accounted_issue_keys=$(
+  jq -c '
+    [
+      (
+        .bullets[].sourceIssues[],
+        .omittedIssues[]
+      )
+      | "\(.repositoryWithOwner)#\(.number)"
+    ]
+  ' "$AUDIT_FILE"
+)
+
+if ! jq -e -n \
+  --argjson expected "$expected_issue_keys" \
+  --argjson accounted "$accounted_issue_keys" \
+  '($accounted | length) == ($accounted | unique | length)
+   and $expected == ($accounted | sort)' \
+  >/dev/null; then
+  echo "The release-note audit does not account for every source issue exactly once." >&2
+  exit 1
+fi
+
+jq -r '.bullets[].text' "$AUDIT_FILE" > "$bullets_file"
 
 {
   printf '%s\n' "$omnia_version"
