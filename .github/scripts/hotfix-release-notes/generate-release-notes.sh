@@ -118,10 +118,11 @@ EOF
 )
 
 rm -f "$RESPONSE_FILE"
+extracted_response_file=$(mktemp)
 normalized_response_file=$(mktemp)
 canonical_response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
+trap 'rm -f "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
@@ -145,6 +146,50 @@ if jq -e -s '
   | .[0]
 ' "$RESPONSE_FILE" > "$normalized_response_file" 2>/dev/null; then
   :
+elif awk '
+  BEGIN {
+    in_json = 0
+    found = 0
+    complete = 0
+    invalid = 0
+  }
+
+  {
+    normalized_line = tolower($0)
+
+    if (!in_json && normalized_line ~ /^[[:space:]]*```json[[:space:]]*$/) {
+      if (found > 0) {
+        invalid = 1
+        exit
+      }
+
+      found = 1
+      in_json = 1
+      next
+    }
+
+    if (in_json && normalized_line ~ /^[[:space:]]*```[[:space:]]*$/) {
+      in_json = 0
+      complete = 1
+      next
+    }
+
+    if (in_json) {
+      print
+    }
+  }
+
+  END {
+    if (invalid || found != 1 || complete != 1 || in_json) {
+      exit 1
+    }
+  }
+' "$RESPONSE_FILE" > "$extracted_response_file" &&
+  jq -e -s '
+    select(length == 1 and (.[0] | type == "object"))
+    | .[0]
+  ' "$extracted_response_file" > "$normalized_response_file" 2>/dev/null; then
+  echo "Extracted Copilot's fenced JSON response."
 elif jq -Rse '
   capture("(?<payload>\\{.*\\})"; "s")
   | .payload
