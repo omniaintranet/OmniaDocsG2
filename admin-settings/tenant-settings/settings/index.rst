@@ -3,7 +3,7 @@ Settings
 
 Here you can set the following (image from Omnia 7.12):
 
-.. image:: tenant-settings-v712.png
+.. image:: tenant-settings-v712-new.png
 
 Select section for more information:
 
