@@ -227,7 +227,9 @@ For more information about anchor navigation, see: :doc:`Anchor navigation block
 
 Using machine translation
 ---------------------------
-If the option is available you can machine translate the text in a block. The whole text in the block is translated in one go. It's just a suggestion and you can edit it to finish the translation. 
+If the option is available you can machine translate the text in a block. The whole text in the block is translated in one go. It's just a suggestion and you can edit it to finish the translation.
+
+In Omnia 7.12 and later, you can mark words to not translate, before you do a machine translation, see below.
 
 Here's how:
 
@@ -244,6 +246,12 @@ Any language can be selected here. The languages set up in Omnia admin are shown
 .. image:: machine-translation-select-language-all-76.png
 
 **Note!** You can use Ctrl-Z or just discard changes if you change your mind.
+
+No translation
+----------------
+Before starting a machine translation, you can mark words and phrases in the text that should not be translated. One example is trade marks. Just select the text to not translate and click this icon:
+
+.. image:: no-translate.png
 
 Chat OpenAI
 -----------------
