@@ -116,8 +116,9 @@ EOF
 )
 
 response_file=$(mktemp)
+normalized_response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$response_file" "$bullets_file"' EXIT
+trap 'rm -f "$response_file" "$normalized_response_file" "$bullets_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
@@ -130,6 +131,25 @@ sed -i 's/\r$//' "$response_file"
 
 if [ ! -s "$response_file" ]; then
   echo "Copilot returned an empty response."
+  exit 1
+fi
+
+# Copilot can wrap an otherwise valid JSON object in an introduction or a
+# Markdown code fence. Normalize that presentation without weakening the
+# schema and issue-accounting validation below.
+if jq -e -s '
+  select(length == 1 and (.[0] | type == "object"))
+  | .[0]
+' "$response_file" > "$normalized_response_file" 2>/dev/null; then
+  :
+elif jq -Rse '
+  capture("(?<payload>\\{.*\\})"; "s")
+  | .payload
+  | fromjson
+' "$response_file" > "$normalized_response_file" 2>/dev/null; then
+  echo "Normalized Copilot's formatted JSON response."
+else
+  echo "Copilot did not return a JSON object for the release-note audit." >&2
   exit 1
 fi
 
@@ -160,12 +180,12 @@ if ! jq -e '
         and (test("https?://|www\\.|@|[<>]"; "i") | not)
     )
   )
-' "$response_file" >/dev/null; then
+' "$normalized_response_file" >/dev/null; then
   echo "Copilot did not return the required release-note audit JSON." >&2
   exit 1
 fi
 
-jq '{bullets, omittedIssues}' "$response_file" > "$AUDIT_FILE"
+jq '{bullets, omittedIssues}' "$normalized_response_file" > "$AUDIT_FILE"
 
 expected_issue_keys=$(
   jq -c '
