@@ -91,6 +91,7 @@ Requirements:
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
 - Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
 - Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
+- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, and reason exactly as shown. Emit issue numbers as JSON numbers, not strings.
 - Return only valid JSON matching this shape, without Markdown fences or commentary:
 {
   "bullets": [
@@ -117,8 +118,9 @@ EOF
 
 response_file=$(mktemp)
 normalized_response_file=$(mktemp)
+canonical_response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$response_file" "$normalized_response_file" "$bullets_file"' EXIT
+trap 'rm -f "$response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
@@ -153,6 +155,146 @@ else
   exit 1
 fi
 
+# Canonicalize harmless model variations while retaining strict validation of
+# issue identities and complete source-issue accounting below.
+if ! jq '
+  def clean_text:
+    gsub("[\\r\\n]+"; " ")
+    | gsub("^[[:space:]]+|[[:space:]]+$"; "");
+
+  def as_array:
+    if type == "array" then . elif . == null then [] else [.] end;
+
+  def clean_reason:
+    clean_text
+    | gsub("https?://[^[:space:]]+"; "[private link removed]"; "i")
+    | gsub("www\\.[^[:space:]]+"; "[private link removed]"; "i")
+    | gsub("@[[:alnum:]_.-]+"; "[mention removed]")
+    | gsub("[<>]"; "")
+    | .[0:300]
+    | clean_text;
+
+  def repository_name:
+    if type == "string" and length > 0 and (contains("/") | not)
+    then "omniaintranet/" + .
+    else .
+    end;
+
+  def issue_number:
+    if type == "string" and test("^[0-9]+$") then tonumber else . end;
+
+  def issue_reference:
+    if type == "string" then
+      capture("^(?<repositoryWithOwner>.+)#(?<number>[0-9]+)$")
+      | .repositoryWithOwner |= repository_name
+      | .number |= tonumber
+    else
+      {
+        repositoryWithOwner: (
+          (
+            .repositoryWithOwner
+            // .repository_with_owner
+            // .repository
+            // .repo
+            // ""
+          )
+          | repository_name
+        ),
+        number: (
+          (
+            .number
+            // .issueNumber
+            // .issue_number
+            // null
+          )
+          | issue_number
+        )
+      }
+    end;
+
+  {
+    bullets: [
+      (
+        (
+          .bullets
+          // .releaseNotes
+          // .release_notes
+          // []
+        )
+        | as_array
+      )[]
+      | {
+          text: (
+            .text
+            // .bullet
+            // .releaseNote
+            // .release_note
+            // ""
+            | if type == "string" then clean_text else . end
+            | if type == "string" and (startswith("- ") | not)
+              then "- " + .
+              else .
+              end
+          ),
+          sourceIssues: [
+            (
+              (
+                .sourceIssues
+                // .source_issues
+                // .issues
+                // []
+              )
+              | as_array
+            )[]
+            | issue_reference
+          ]
+        }
+    ],
+    omittedIssues: [
+      (
+        (
+          .omittedIssues
+          // .omitted_issues
+          // .omitted
+          // []
+        )
+        | as_array
+      )[]
+      | {
+          repositoryWithOwner: (
+            (
+              .repositoryWithOwner
+              // .repository_with_owner
+              // .repository
+              // .repo
+              // ""
+            )
+            | repository_name
+          ),
+          number: (
+            (
+              .number
+              // .issueNumber
+              // .issue_number
+              // null
+            )
+            | issue_number
+          ),
+          reason: (
+            .reason
+            // .omissionReason
+            // .omission_reason
+            // ""
+            | if type == "string" then clean_reason else . end
+          )
+        }
+    ]
+  }
+' "$normalized_response_file" > "$canonical_response_file" 2>/dev/null; then
+  echo "Copilot returned an unsupported release-note audit structure." >&2
+  exit 1
+fi
+
 if ! jq -e '
   type == "object"
   and (.bullets | type == "array" and length > 0)
@@ -180,12 +322,20 @@ if ! jq -e '
         and (test("https?://|www\\.|@|[<>]"; "i") | not)
     )
   )
-' "$normalized_response_file" >/dev/null; then
+' "$canonical_response_file" >/dev/null; then
+  audit_shape=$(
+    jq -r '
+      "bullets=\(.bullets | length), "
+      + "omittedIssues=\(.omittedIssues | length), "
+      + "sourceIssueReferences=([.bullets[].sourceIssues[]?] | length)"
+    ' "$canonical_response_file"
+  )
   echo "Copilot did not return the required release-note audit JSON." >&2
+  echo "Safe audit shape: $audit_shape" >&2
   exit 1
 fi
 
-jq '{bullets, omittedIssues}' "$normalized_response_file" > "$AUDIT_FILE"
+jq '{bullets, omittedIssues}' "$canonical_response_file" > "$AUDIT_FILE"
 
 expected_issue_keys=$(
   jq -c '
