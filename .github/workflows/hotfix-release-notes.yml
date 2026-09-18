@@ -61,6 +61,13 @@ jobs:
           RELEASE_NOTES_FILE: release-notes/7.0/versions.rst
         run: bash .github/scripts/hotfix-release-notes/create-pr.sh
 
+      - name: Create release-ready issue in Project 8
+        if: success() && steps.detect-release.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          RELEASE_NOTES_URL: https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html
+        run: bash .github/scripts/hotfix-release-notes/create-ready-project-item.sh
+
       - name: Show trigger information
         if: always()
         run: |
