@@ -5,6 +5,7 @@ set -euo pipefail
 INPUT_FILE="/tmp/release-issues.json"
 OUTPUT_FILE="/tmp/generated-release-notes.rst"
 AUDIT_FILE="/tmp/release-notes-audit.json"
+RESPONSE_FILE="/tmp/copilot-release-notes-response.txt"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
 
@@ -116,22 +117,22 @@ Requirements:
 EOF
 )
 
-response_file=$(mktemp)
+rm -f "$RESPONSE_FILE"
 normalized_response_file=$(mktemp)
 canonical_response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
+trap 'rm -f "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
     -s \
     --no-ask-user \
     --no-custom-instructions \
-    > "$response_file"
+    > "$RESPONSE_FILE"
 
-sed -i 's/\r$//' "$response_file"
+sed -i 's/\r$//' "$RESPONSE_FILE"
 
-if [ ! -s "$response_file" ]; then
+if [ ! -s "$RESPONSE_FILE" ]; then
   echo "Copilot returned an empty response."
   exit 1
 fi
@@ -142,13 +143,13 @@ fi
 if jq -e -s '
   select(length == 1 and (.[0] | type == "object"))
   | .[0]
-' "$response_file" > "$normalized_response_file" 2>/dev/null; then
+' "$RESPONSE_FILE" > "$normalized_response_file" 2>/dev/null; then
   :
 elif jq -Rse '
   capture("(?<payload>\\{.*\\})"; "s")
   | .payload
   | fromjson
-' "$response_file" > "$normalized_response_file" 2>/dev/null; then
+' "$RESPONSE_FILE" > "$normalized_response_file" 2>/dev/null; then
   echo "Normalized Copilot's formatted JSON response."
 else
   echo "Copilot did not return a JSON object for the release-note audit." >&2
@@ -378,5 +379,7 @@ jq -r '.bullets[].text' "$AUDIT_FILE" > "$bullets_file"
 } > "$OUTPUT_FILE"
 
 bash "$VALIDATOR_FILE" "$INPUT_FILE" "$OUTPUT_FILE"
+
+rm -f "$RESPONSE_FILE"
 
 echo "Generated release notes passed structural, reference, and privacy validation."

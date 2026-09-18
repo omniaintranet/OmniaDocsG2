@@ -49,10 +49,20 @@ jobs:
         run: npm install -g @github/copilot
 
       - name: Generate release notes
+        id: generate-release-notes
         if: steps.detect-release.outputs.found == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: bash .github/scripts/hotfix-release-notes/generate-release-notes.sh
+
+      - name: Upload Copilot response after generation failure
+        if: failure() && steps.generate-release-notes.outcome == 'failure'
+        uses: actions/upload-artifact@v7
+        with:
+          name: copilot-release-notes-response-${{ github.run_id }}-${{ github.run_attempt }}
+          path: /tmp/copilot-release-notes-response.txt
+          if-no-files-found: error
+          retention-days: 1
 
       - name: Create pull request for release notes
         if: steps.detect-release.outputs.found == 'true'
