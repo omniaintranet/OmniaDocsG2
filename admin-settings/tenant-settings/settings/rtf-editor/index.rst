@@ -37,6 +37,8 @@ Note that a machine translation is a suggestion - the text can always be edited 
 
 Information on how to use machine translation is found under the heading "Using machine translation" on this page: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
 
+In Omnia 7.12 and later, there's a handy, new option called "No translation", you can use to select words to not translate, before starting a machine translation.
+
 If you are working with language variations, a translator for the variations are always available there. See this page for more information: :doc:`Edit page variations </pages/edit-page-variations/index>`
 
 Make the RTF editor enterprise glossary aware
