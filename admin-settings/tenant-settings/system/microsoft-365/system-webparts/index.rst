@@ -7,8 +7,6 @@ If you're using SharePoint pages in an Omnia implementation, you can use many of
 
 There's also a SPFx block dialog you can use when adding these webparts. The block gallery must be active for this to be available, see the heading "Settings" on this page: :doc:`Block gallery </admin-settings/tenant-settings/block-gallery/index>`
 
-Descriptions of the settings are also available on that page, see link above.
-
 .. image:: system-webparts.png
 
 (All available webparts are not shown in the image).
