@@ -1,7 +1,7 @@
 Webparts
 ===================================
 
-If you're using SharePoint pages in an Omnia implementation, you can use many of the blocks in Omnia as webparts, on any SharePoint page. Click LEARN TO USE IT to go to the block description page. All block descriptions arew found here: :doc:`Blocks </blocks/index>`
+If you're using SharePoint pages in an Omnia implementation, you can use many of the blocks in Omnia as webparts, on any SharePoint page. Click LEARN TO USE IT to go to the block description from this page. All block descriptions are found here: :doc:`Blocks </blocks/index>`
 
 **Note!** There are a few, small differences compaired to the block description in the Omnia documentation. A few options that are not applicable to SharePoint have been removed.
 
