@@ -69,6 +69,8 @@ The following settings can then be available, depending on scope chosen:
 + **Status**: By using this option you can create rollups for pages with the status Never published, Published or Any status. 
 + **Trim duplicates**: If more than one Page Rollup block is added to a page, this option can be used to handle duplicates between the blocks. When the option is selected, you can enter a number indicating the priority for duplicates, for this block. If you set "1" for a block it means this block has priority showing a post that would have been a duplicate. **Note!** If you select this option paging is not available.
 
+**Important note!** When the refresh schedule is set to anything other than Every load, the AI insight is generated once and the same result is displayed to everyone who can see the component. The result is not regenerated per user and is not security trimmed, so it may contain or draw conclusions from information from content the viewer does not have permission to access. Only use a cached refresh schedule when every user who can see the component is also permitted to see all content matched by the query. If the query targets content with mixed or restricted permissions, use Every load, which generates the result in the context of the current user and therefore always respects that user's permissions.
+
 Custom date filtering
 ------------------------
 If the scope is filtered on some kind of time property, custom date filtering can be set.
