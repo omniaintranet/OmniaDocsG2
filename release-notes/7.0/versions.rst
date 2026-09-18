@@ -1,3 +1,21 @@
+7.11.28
+========================================
+(Omnia 7.11.28 / Workplace 7.11.28 / WCM 7.11.28 / MS 7.11.28 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Fixed an issue that prevented the Keep text only button from appearing when pasting or dragging content from Word/Excel into a text block (#38481)
+- The Variation filter is now hidden from the Business Profile query scope in Digital Signage (#56207)
+- Fixed an issue where the link title was not automatically filled when adding a document link to an image in the Rich Text Editor (#59742)
+- Fixed an issue that prevented rolling up content from folders with brackets or parentheses in their titles in Document Rollup and Media Rollup (#58849)
+- Improved the Properties block to display the data source beneath each property name, making it easier to identify where properties originate (#58938)
+- Fixed an issue where unselected options would disappear when toggling the Auto-clean pasted content option in Rich Text Editor settings (#59771)
+- Fixed an issue where sessions with display breakpoint rules set to hidden would not appear in write mode, preventing editors from adding content (#59507)
+- Fixed an issue where editing a link in the Rich Text Editor would incorrectly open the Document tab instead of the Custom tab (#58260)
+- Added support for the {{DocumentLink}} token in publishing approval workflow emails, allowing notifications to include document links
+- Fixed an issue where links in page rollup content set to open in a new tab would not function correctly (#59589)
+- Fixed an issue that prevented opening Document History when a site exceeded the SharePoint List View Threshold of 5000 items in the Unprocessed library (#59834)
+
+
+
 7.11.27
 ========================================
 (Omnia 7.11.27 / Workplace 7.11.27 / WCM 7.11.27 / MS 7.11.27 / Analytics 7.11.4 / Feed 7.11.6)
