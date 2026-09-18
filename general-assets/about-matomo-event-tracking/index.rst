@@ -3,7 +3,7 @@ About Matomo event tracking
 
 This information is intended for developers and administrators.
 
-Prequisites: The tenant feature "Analytics core setup" must be active and "Enable data collection" must be on for the business profiles you want to track.
+Prequisites: The tenant feature "Analytics core setup" must be active and "Enable data collection" must be on for the business profiles you want to track. If SharePoint pages should be tracked, the feature "Analytics for SPFx" must be activated for the applicable publishing apps.
 
 Matomo users and users that should have permissions to read analytics data, through any of the analytics blocks, must be added to the permissions settings for the business profile.
 

@@ -3,17 +3,13 @@ Event participant list
 
 Use this block to list participants that has registered for an event.
 
-Here's how it can look for a user:
-
-.. image:: register-for-event-3.png
-
 The user can edit or remove his or her registrations (and so can Event Administrators).
 
 Settings
 *********
-The following settings are available for the block:
+The following settings are available for the block (image from Omnia 7.12):
 
-.. image:: events-participant-settings-v75.png
+.. image:: events-participant-settings-v712.png
 
 + **Event participant list**: Here you can add a title for the block. If variations exists, you add a title in the default language. All other languages are handled by variations. If no variations exists, you can add a title in several languages here.
 + **Paging**: Select paging for the lists here; No paging, Classic or Scroll.
