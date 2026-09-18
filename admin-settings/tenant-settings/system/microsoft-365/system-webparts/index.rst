@@ -1,9 +1,13 @@
 Webparts
 ===================================
 
-If you're using SharePoint pages in an Omnia implementation, you can use these webparts (called blocks in Omnia) on any SharePoint page. Click LEARN TO USE IT to go to the block description page.
+If you're using SharePoint pages in an Omnia implementation, you can use many of the blocks in Omnia as webparts, on any SharePoint page. Click LEARN TO USE IT to go to the block description page. All block descriptions arew found here: :doc:`Blocks </blocks/index>`
 
 **Note!** There are a few, small differences compaired to the block description in the Omnia documentation. A few options that are not applicable to SharePoint have been removed.
+
+There's also a SPFx block dialog you can use when adding these webparts. The block gallery must be active for this to be available, see the heading "Settings" on this page: :doc:`Block gallery </admin-settings/tenant-settings/block-gallery/index>`
+
+Descriptions of the settings are also available on that page, see link above.
 
 .. image:: system-webparts.png
 
