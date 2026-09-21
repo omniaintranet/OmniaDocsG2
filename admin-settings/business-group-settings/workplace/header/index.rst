@@ -25,6 +25,8 @@ The following can be set here:
 
 If you choose to not inherit the app launcher settings, add settings using the options. You use them the same way as the App Lancher settings for the tenant. See the heading "App Launcher" on this page: :doc:`Tenant Header settings </admin-settings/tenant-settings/settings/header/header-65/index>`
 
+In Omnia 7.12, the app launcher settings are a bit different (but still works as the tenant settings in 7.12), see: :doc:`Header settings in Omnia 7.12 </admin-settings/tenant-settings/settings/header/header-712/index>`
+
 Logo
 ******
 The Logo settings are these:
