@@ -53,7 +53,7 @@ Custom colors
 -----------------
 Here you can set custom colors for the icons, if needed (in Omnia 7.12 and later, it's part of the App launher settings):
 
-.. image:: app-launcher-settings-custom-colors-v712.png
+.. image:: app-launcher-settings-custom-colors-v78.png
 
 Custom Sort
 -----------
@@ -65,7 +65,7 @@ Logo
 ************
 When a logo is selected it can look like this:
 
-.. image:: logo-settings-v712.png
+.. image:: logo-settings-v78.png
 
 + **Text**: A text can be displayed beside the logo. If you want that, add it here. 
 + **Logo text**: This text is used as tooltip and alt text for the logo.
