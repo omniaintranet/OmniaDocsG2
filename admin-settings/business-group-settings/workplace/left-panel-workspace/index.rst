@@ -1,13 +1,11 @@
 Left panel settings
 ================================
 
-Available in Omnia 7.12 and later. The purpose for the left panel is that some options always should be available if you work both Omnia pages and SharePoint pages.
+Available in Omnia 7.12 and later. Using this panel, some options can always be available, regardless of what you work with.
 
-**More information will be added soon**:
+The settings are the same as for other layouts:
 
+.. image:: left-panel-settings.png
 
-
-
-
-
+You work with these settings the same way as with the mega emenu settings, see this page: :doc:`Navigation bar </admin-settings/business-group-settings/workplace/navigation-bar/index>`
 
