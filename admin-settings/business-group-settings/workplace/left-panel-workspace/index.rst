@@ -1,7 +1,7 @@
 Left panel settings
 ================================
 
-Available in Omnia 7.12 and later. The app feature "Show navigation bar" must be activated in every app where it will be used, for the panel to be available.
+Available in Omnia 7.12 and later. The app feature "Show navigation bar" must be activated in every app where it will be used.
 
 These settings are available:
 
