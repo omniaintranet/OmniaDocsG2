@@ -9,9 +9,9 @@ When you create a new business Profile, the workspace functionality is always tu
 
 Settings
 **********
-The available settings in Omnia admin are these:
+The available settings in Omnia admin are these (image from Omnia 7.12):
 
-.. image:: workplace-settings-v7.png
+.. image:: workplace-settings-v712.png
 
 Note the information that classic settings are activated for this business profile.
 
@@ -24,6 +24,7 @@ Select section for more information:
    workspace-home/index
    header/index
    navigation-bar/index
+   left-panel-workspace/index
    footer/index
 
 
