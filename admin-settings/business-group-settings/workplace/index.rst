@@ -13,8 +13,6 @@ The available settings in Omnia admin are these (image from Omnia 7.12):
 
 .. image:: workplace-settings-v712.png
 
-Note the information that classic settings are activated for this business profile.
-
 Select section for more information:
 
 .. toctree::
