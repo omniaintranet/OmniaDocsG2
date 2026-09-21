@@ -1,7 +1,7 @@
 Settings
 ==========
 
-This page describes the settings in Omnia 7.11 and earlier. The settings in Omnia 7.12 and later are a bit different, described on this page: (link to be added)
+This page describes the settings in Omnia 7.11 and earlier. The settings in Omnia 7.12 and later are a bit different, described on this page: :doc:`Workdplace settings in Omnia 7.12 </admin-settings/business-group-settings/workplace/settings-settings-712/index>`
 
 The following settings are available here:
 
