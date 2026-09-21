@@ -39,11 +39,12 @@ I you do not choose to inherit settings, set the desired logo settings here. You
 
 Search
 **********
-Under Search, you can either inherit from tenant, or use these settings:
+Under Search, you can either inherit from tenant, or use these settings (image from Omnia 7.12):
 
-.. image:: workplace-header-search-v7.png
+.. image:: workplace-header-search-v712.png
 
 + **Search Box on Header**: If a search box should be available in the header, select this option.
++ **Search box style**: Available in Omnia 7.12 and later. You can choose M365 style or a WCAG compliant style.
 + **Add @search parameter to the query string**: Available when the option above is selected. For advanced search implementations. With this option active you can add parameters to the search query string, for various implementations.
 + **Inherit Business Profile settings**: This regards settings for Quick Search and Advanced search. If you would like to use the Business Profile Search setttings, keep this option selected. If you would like to set specific settings, deselect and use the settings shown. They work the same ways as the settings for the Search block, see: :doc:`Search block settings </blocks/search/index>`
 
