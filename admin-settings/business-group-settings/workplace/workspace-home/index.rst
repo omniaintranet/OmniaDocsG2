@@ -5,9 +5,9 @@ Here you can create the home page for a business profile's workspace. When start
 
 .. image:: workspace-home.png
 
-When editing, it can look like this (image from a 7.12 test environment):
+When editing, it can look like this:
 
-.. image:: workspace-home-edit.png
+.. image:: workspace-home-edit-new.png
 
 You work with the layout for the Home page the same way as any other workspace page, and actually any Omnia page, with sections and blocks, see the heading *Working with the layout* on this page: :doc:`Navigation bar </admin-settings/business-group-settings/workplace/navigation-bar/index>`
 
