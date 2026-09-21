@@ -9,7 +9,7 @@ Style
 *********
 Set background color and text color here.
 
-.. image:: tenant-header-settings-v78.png
+.. image:: tenant-header-settings-v712.png
 
 App launcher
 ***************
@@ -33,7 +33,7 @@ Here you can set background color, icon color and hover color, if you're not hap
 
 General
 ----------
-The following settings are available here:
+The following settings are available here (in Omnia 7.12 and later, it's part of the App launher settings):
 
 .. image:: app-launcher-settings-general-v78.png
 
@@ -51,13 +51,13 @@ The following settings are available here:
 
 Custom colors
 -----------------
-Here you can set custom colors for the icons, if needed:
+Here you can set custom colors for the icons, if needed (in Omnia 7.12 and later, it's part of the App launher settings):
 
-.. image:: app-launcher-settings-custom-colors-v78.png
+.. image:: app-launcher-settings-custom-colors-v712.png
 
 Custom Sort
 -----------
-Use the arrows to decide in which order links form the various sources are shown.
+Use the arrows to decide in which order links form the various sources are shown. (in Omnia 7.12 and later, it's part of the App launher settings)
 
 .. image:: header-custom-sort-v78.png
 
@@ -65,7 +65,7 @@ Logo
 ************
 When a logo is selected it can look like this:
 
-.. image:: logo-settings-v78.png
+.. image:: logo-settings-v712.png
 
 + **Text**: A text can be displayed beside the logo. If you want that, add it here. 
 + **Logo text**: This text is used as tooltip and alt text for the logo.
@@ -77,9 +77,10 @@ When a logo is added, click the pen to edit the image, or select another image, 
 
 Search
 ********
-The following settings are available here:
+The following settings are available here (image from Omnia 7.12):
 
-.. image:: header-search-settings-v78.png
+.. image:: header-search-settings-v712.png
 
 + **Search box on header**: If a search box should be available in the header, select this option.
++ **Search box style**: Available in Omnia 7.12 and later. Choose M365 style or WCAG compliant.
 + **Add @search parameter to the query string**: Available when the option above is selected. For advanced search implementations. With this option active you can add parameters to the search query string, for various implementations.
