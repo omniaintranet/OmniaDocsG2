@@ -23,7 +23,7 @@ An AI assistant can be available (depends on settings for the block). If it is, 
 
 .. image:: content-builder-ai-assistant.png
 
-And don't forget to save!
+And don't forget to save when yo´re finished!
 
 Reorder or delete
 --------------------
