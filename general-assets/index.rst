@@ -26,6 +26,7 @@ In this part of the documentation you will find information about general assets
    sharepoint-page-picker-picker/index
    single-site-collection/index
    using-anchors/index
+   using-content-builder/index
    targeting-in-omnia/index
    using-omnia-webparts-sharepoint/index
    using-people-picker/index
