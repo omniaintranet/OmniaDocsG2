@@ -21,6 +21,7 @@ Blocks
    breadcrumb/index
    calendar-rollup/index
    channel-rollup/index
+   content-builder/index
    controlled-documents-library/index
    copilot-chat/index
    create-app/index
