@@ -62,8 +62,6 @@ To add text, just click and write. When some text is in place, you can add some 
 
 The formats in the list to the left is set up in Omnia admin. Most of the formats are general ones you easily recognize, just som words about som of them.
 
-(To be continued ....)
-
 Add link
 ----------
 To add a link, do the following.
@@ -73,7 +71,7 @@ To add a link, do the following.
 
 .. image:: content-builder-link.png
 
-The Add link general asset is shown. If you selected text, it's added to the title field.
+The Add link general asset is shown. If you selected text, it's added to the title field there.
 
 See this page for more information: :doc:`Add link </general-assets/add-link/index>`
 
