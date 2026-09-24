@@ -23,6 +23,8 @@ An AI assistant can be available (depends on settings for the block). If it is, 
 
 .. image:: content-builder-ai-assistant.png
 
+And don't forget to save!
+
 Reorder or delete
 --------------------
 When you have added one or more objects, you can reorder objects or delete them, using these icons.
@@ -48,8 +50,14 @@ Just repeat to add the blocks needed. You can plan the content from the start or
 
 You can then add or remove the objects from the template as needed, before adding content. More info below.
 
-Add content
+Add text
 ***************
+To add text, just click and write. When some text is in place, you can add some formats.
+
+.. image:: content-builder-text.png
+
+The formats in the list to the left is set up in Omnia admin. Most of the formats are general ones you easily recognize, just som words about som of them.
+
 (To be continued ....)
 
 
