@@ -1,6 +1,31 @@
 Release 7.11
 ============
 
+Release 7.11.31
+---------------------------------------
+
+- Added support for listing the business profiles in the tenant, with their titles, addresses and default URLs
+- Added support for listing the Publishing Apps of a business profile in every state, including apps that are still being created or that failed, and other kinds of app such as workspaces and communities
+- Added support for reading one Publishing App's status, address, administrators and template, and for checking whether a new app is ready
+- Added support for listing the Publishing App templates of a business profile, and the kinds of app registered in the tenant
+- Added support for reading the property bag of the tenant, a business profile or a Publishing App, optionally filtered to one model
+- Added support for listing the Management System processes the user can read, filtered by library or title with drafts on request, and for reading a process and its step tree
+- Added support for listing, creating and configuring document types, reading their settings and checking whether a new document type has finished syncing to SharePoint
+- Added support for listing and creating document templates and template categories, and for downloading an uploaded template's file
+- Added support for creating Teamwork app templates and Teamwork apps, listing and activating their features, and activating the controlled document library on a Teamwork app
+- Added support for finding, reading and downloading controlled documents, and for listing a site's drafts, published documents and tasks
+- Added support for creating controlled documents from a document type and a template, and for starting a revision, uploading an edited file, changing properties and previewing the draft
+- Added support for publishing controlled document drafts directly or through approval. The choice must always be given explicitly, and approval requires an approver and a due date
+- Added support for republishing and unpublishing controlled documents, and for recovering documents whose publishing failed
+- Added support for approving, rejecting and cancelling approval workflows, and for sending documents to review and managing reviewers and review tasks
+- Added support for listing and terminating document retention
+- Added support for updating a property, such as the review date, on many published documents at once and republishing them
+- Search can now return diagnostics on request (the categories used, their queries and the unprocessed results). Diagnostics are no longer included in every answer
+- Fixed Quick Search category names showing a technical type name instead of the category title in the user's language
+- Fixed SharePoint search results showing raw user claims. The author and last editor are now shown by name and email, and empty property values are left out
+- Fixed the list of business profiles, Publishing Apps, page collections or pages offered as a scope being silently limited to five. It now shows up to 50 and says when there are more
+- Fixed the question asking which part of Omnia is meant being shown twice
+
 Release 7.11.29
 ---------------------------------------
 

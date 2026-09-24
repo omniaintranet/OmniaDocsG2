@@ -1,7 +1,7 @@
 Publishing App template
 =======================
 
-A Publishing App template is the blueprint every Publishing App in a business profile is created from: who may request one, how it is permissioned, which features it activates, which metadata it carries, and which page collections it starts with. The connector can create a template from the conversation.
+A Publishing App template is the blueprint every Publishing App in a business profile is created from: who may request one, how it is permissioned, which features it activates, which metadata it carries, and which page collections it starts with. The connector can list the templates in a business profile and create a new one from the conversation.
 
 This is the most involved area of the connector, and deliberately the most talkative one - every choice that has a fixed set of valid answers is put back to you as a list rather than being decided for you.
 
@@ -10,6 +10,7 @@ This is the most involved area of the connector, and deliberately the most talka
 What you can ask for
 ********************
 
++ List the Publishing App templates in this business profile.
 + Create a Publishing App template in this business profile.
 
 A template covers:
@@ -22,8 +23,22 @@ A template covers:
 + **Page property mapping** - which property holds the page contact, and which holds the review date.
 + **Page collections** the app starts with, each with its own structure, page types and settings.
 
-Example
-*******
+Listing templates
+*****************
+
+::
+
+   Which Publishing App templates are there in
+   https://contoso.omniacloud.net/sites/hr?
+
+The list is sorted by title. For each template you see its title and description, whether it is for a **native Omnia site** or attached to SharePoint, the enterprise property set it uses, the features it activates and the titles of the page collections it starts with.
+
+Only native Omnia site templates can be used to :doc:`create a Publishing App <../publishing-app/index>` through the connector, and the list tells you which ones those are.
+
+.. TODO screenshot: Claude listing the Publishing App templates of a business profile
+
+Creating a template
+*******************
 
 Start simply and answer the questions as they come:
 
@@ -50,6 +65,8 @@ If the template should start with no page collections at all, that has to be sai
 Good to know
 ************
 
++ Listing templates needs a **business profile** scope. Only the Publishing App templates of **that business profile** are listed - templates for workspaces or other kinds of apps are not included.
++ The list includes SharePoint-attached templates as well as native ones, so you can see everything the profile has, even though only native ones can be used to create an app here.
 + Creating a template needs a **business profile** scope and the permission to manage templates there.
 + Only **features that can be activated on an app instance** can be chosen. Tenant-wide and business-profile features are not offered and are rejected if named.
 + **Default property values** support text, number, date, boolean, taxonomy, enterprise keywords, tags and rich text. Person properties and other types are rejected. A member property's required, hidden and multiple-value settings belong to the property set itself and cannot be overridden here.
@@ -62,4 +79,5 @@ Good to know
 Actions
 *******
 
++ ``PublishingAppTemplate.List`` - the Publishing App templates of the business profile.
 + ``PublishingAppTemplate.Create`` - create a Publishing App template.

@@ -36,6 +36,14 @@ Example
 
 .. TODO screenshot: search results in the conversation
 
+SharePoint results name the **author** and the **last editor** of each item by display name and email, and the Quick Search categories are named in your language.
+
+When a result looks wrong, you can ask for the details behind the search - which Quick Search categories were used, what query each one ran, and the results exactly as the sources returned them:
+
+::
+
+   Search for parental leave again and include the diagnostics
+
 Promoted results
 ****************
 
@@ -50,9 +58,10 @@ Good to know
 + Only what is configured in that profile's Quick Search is searched. If a source is missing from the results, the place to fix it is the Quick Search settings, not the prompt.
 + Results are **security trimmed** - you only ever see what you are allowed to see in Omnia.
 + One keyword per search. Ask again to search for something else.
++ The **diagnostics** are only returned when you ask for them. They are meant for finding out why a search behaves as it does, and make the answer considerably longer.
 + If a single source fails - a SharePoint query that times out, for example - the other sources still return, and the failure is reported alongside the results.
 
 Actions
 *******
 
-+ ``Search.Execute`` - search the current business profile with one keyword, including its promoted search results.
++ ``Search.Execute`` - search the current business profile with one keyword, including its promoted search results, and with diagnostics when asked for.

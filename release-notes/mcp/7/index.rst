@@ -8,7 +8,7 @@ Release 7
 - Omnia MCP acts on behalf of the signed-in user and never grants more permission than the user already has in Omnia.
 - Reading information from Omnia happens as part of the conversation, while any action that creates, changes, archives or removes content must be approved in the MCP client first.
 - Tenant administrators can save an MCP context with the guidance every MCP session should follow, such as naming conventions, languages and publishing rules.
-- Supported areas are search and promoted search results, My Links, Shared Links, announcements, pages, page types, page collections, Html/Script blocks, Publishing Apps and templates, business profiles, enterprise properties, languages, date and time formats, theme colours, features and Azure AD permissions.
+- Supported areas are search and promoted search results, My Links, Shared Links, announcements, pages, page types, page collections, Html/Script blocks, Publishing Apps and templates, business profiles, property bags, Management System processes, document management (document types, templates, controlled documents, review, approval and retention), Teamwork apps, enterprise properties, languages, date and time formats, theme colours, features and Azure AD permissions.
 - Requires the OmniaMCP extension to be installed on the tenant.
 
 
