@@ -44,11 +44,11 @@ Do the following:
 
 .. image:: content-builder-template.png
 
-You can now just choose a template by clicking it, or, if allowed (depends on settings för the block) create a new template with AI help. Ifhe list is long, you can also search for a template (notice the search field at the very top).
+You can now just choose a template by clicking it, or, if allowed (depends on settings for the block) create a new template with AI help. If he list is long, you can search for a template (notice the search field at the very top).
 
-Just repeat to add the blocks needed. You can plan the content from the start or just work one step/block at a time.
+Just repeat to add the blocks needed. You can plan the content from the start or just work one step/template at a time.
 
-You can then add or remove the objects from the template as needed, before adding content. More info below.
+You can then add or remove the objects as needed, before adding content. More info below.
 
 Add text
 ***************
