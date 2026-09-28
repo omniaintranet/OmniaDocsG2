@@ -31,7 +31,7 @@ When you have added one or more objects, you can reorder objects or delete them,
 
 .. image:: content-builder-reorder-delete.png
 
-When click the dust bin, well no surprise, you remove the object. To reorder, grab the icon and move to another place. This will take som practice as you can move an object anywhere.
+When you click the dust bin, well no surprise, you remove the object. To reorder, grab the icon and move to another place. This will take some practice as you can't move an object anywhere.
 
 You can also delete or move whole sections. You can grab the icon here, or used the arrows to move up or down.
 
