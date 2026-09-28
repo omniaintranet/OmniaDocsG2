@@ -11,7 +11,7 @@ This is an option that has been available for some time, and still is. There's a
 
 How to use the Omnia webparts is described on this page: :doc:`Webparts </admin-settings/tenant-settings/system/microsoft-365/system-webparts/index>`
 
-In Omnia 7.12 a new concept has been launched, with considerably added possibiblites to use Omnia functionality in a SharePoint set up, see below.
+In Omnia 7.12 and later, a new concept is available, with considerably added possibiblites to use Omnia functionality in a SharePoint set up, see below.
 
 Using the same font
 *********************
