@@ -1,3 +1,14 @@
+7.11.31
+========================================
+(Omnia 7.11.31 / Workplace 7.11.31 / WCM 7.11.31 / MS 7.11.31 / Analytics 7.11.4 / Feed 7.11.6)
+
+- People Rollup can now display relationships bidirectionally, such as showing both lawyers and their supporting assistants when stored on one profile. The feature works with both Omnia user properties and SharePoint profile properties.
+- Added support for Burmese language in Omnia variation languages and multilingual content features (#55846)
+- Fixed an issue that could add an extra trailing slash to the redirect URL for Business Profile in onboarding flows (#59876)
+- Omnia quick search and advanced search now open SharePoint .url shortcut documents to their target links instead of triggering a download (#59672)
+- Omnia search now supports configuring which properties to search within, allowing administrators to limit searches to specific fields such as title or summary properties (#59282)
+
+
 7.11.28
 ========================================
 (Omnia 7.11.28 / Workplace 7.11.28 / WCM 7.11.28 / MS 7.11.28 / Analytics 7.11.4 / Feed 7.11.6)
