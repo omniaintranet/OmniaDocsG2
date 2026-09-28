@@ -119,13 +119,7 @@ rst_prolog = """
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-# This allows sphinx_rtd_theme to work locally
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-
-if not on_rtd:
-	import sphinx_rtd_theme
-	html_theme = 'sphinx_rtd_theme'
-	html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 def setup(app):
     app.add_css_file('custom.css?v=4')
