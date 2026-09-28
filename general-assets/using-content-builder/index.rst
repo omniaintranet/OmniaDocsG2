@@ -56,7 +56,7 @@ You can then add or remove the objects as needed, before adding content. More in
 
 Add text
 ***************
-To add text, just click and write. When some text is in place, you can add some formats.
+To add text, just click and write. When some text is in place, you can format the text.
 
 .. image:: content-builder-text.png
 
