@@ -163,7 +163,7 @@ Using the middle option you can add a caption for the table.
 
 Table tools
 ---------------
-Using the third option a tool set of table tools is availabale. You can add and remove rows and columns, align content and more.
+Using the third option a tool set of table tools is available. You can add and remove rows and columns, align content and more.
 
 .. image:: table-settings-table-tools.png
 
