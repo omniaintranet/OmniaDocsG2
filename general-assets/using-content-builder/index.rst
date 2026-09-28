@@ -19,7 +19,7 @@ To add objects, use the icons, explained below.
 
 .. image:: content-builder-objects2.png
 
-An AI assistant can be available (depends on settings for the block). If it is, you can clock this icon to use it:
+An AI assistant can be available (depends on settings for the block). If it is, you can click this icon to use it:
 
 .. image:: content-builder-ai-assistant.png
 
