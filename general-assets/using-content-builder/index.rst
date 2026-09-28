@@ -137,18 +137,11 @@ To add a media object, click this button:
 
 To add media in the object, just click the object and use the media picker. For more information, see: :doc:`Using the media picker </general-assets/media-picker/index>`
 
+Add a person object
+*********************
+To add a person object, click this button:
 
+.. image:: add-person-button.png
 
-
-
-  
-
-
-
-
-
-
-
-
-
+To add media the person, just click the object and use the people picker. For more information, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
