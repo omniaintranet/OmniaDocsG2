@@ -47,7 +47,7 @@ Users can react to Omnia pages directly from a page rollup, both in SharePoint a
 
 .. image:: full-page-react-cards.png
 
-This functionality is implemented in most of the view templates in the page rollup. The capability is enabled in the page rollup settings using “Allow liking” under the Display section.
+This functionality is implemented in most of the view templates in the page rollup. The capability is enabled in the page rollup settings using “Allow liking” in the Display section.
 
 .. image:: full-page-react.png
 
