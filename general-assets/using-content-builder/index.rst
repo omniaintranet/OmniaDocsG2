@@ -1,8 +1,6 @@
 Using Content builder
 =======================
 
-**This page is a work in progress. It will eventually describe all available options in the block.**
-
 This block is an authoring tool. It can be used instead of a text block and the RTF editor. Available in Omnia 7.12 and later.
 
 When you start working with content in this block, it can look like this:
