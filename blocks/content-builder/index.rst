@@ -57,7 +57,5 @@ Choose if AI assistance should be available for this block.
 
 .. image:: content-builder-ai-assistance.png
 
-Using AI an author can choose to let the AI create all content. Not mandatory of course.
-
-When enabled, you must select the AI media provider.
+Using AI, an author can choose to let the AI create suggested content. When enabled, you must select the AI media provider.
 
