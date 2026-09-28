@@ -145,3 +145,27 @@ To add a person object, click this button:
 
 To add media the person, just click the object and use the people picker. For more information, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
+Table
+********
+When adding a table object, three options are avaiable for settings.
+
+.. image:: table-settings.png
+
+Table style
+------------
+Here you'll find settings for colors and more:
+
+.. image:: table-settings-color.png
+
+A caption for the table
+---------------------------
+Using the middle option you can add a caption for the table.
+
+.. image:: table-settings-caption.png
+
+Table tools
+---------------
+Using the third option a tool set of table tools is availabale. You can add and remove rows and columns, align content and more.
+
+.. image:: table-settings-table-tools.png
+
