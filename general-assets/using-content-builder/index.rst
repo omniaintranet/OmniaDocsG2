@@ -47,7 +47,7 @@ You can also set object size relaitive to each other - should the object to the 
 
 Add a template
 ***************
-There's a number of templates available, as a quick and easy starting point. A new template is placed as a new area below.
+There's a number of templates available, as a quick and easy starting point. A new template is placed as a new area below. There are also two special templates, one to add space and one to add a divider.
 
 Do the following:
 
