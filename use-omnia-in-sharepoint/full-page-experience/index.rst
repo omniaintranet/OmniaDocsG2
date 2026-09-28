@@ -27,7 +27,7 @@ It is possible to allow the full page experience by enabling it on a page rollup
 
 On the Omnia system page it is possible to enable/disable “Allow edit”. This setting controls whether users can access editing within the SharePoint experience. When editing is enabled, users can update and publish the page if they have the right permissions to the Omnia pages presented in SharePoint.
 
-.. image:: full-allow-edit.png
+.. image:: full-allow-edit-frame.png
 
 The SharePoint editing experience has not the full functionality compared to an Omnia page. For example, it does not include the Design option. For access to the full Omnia editing tools, a shortcut can be clicked and the user will be redirected to the same page inside Omnia where the full editing experience is possible.
 
