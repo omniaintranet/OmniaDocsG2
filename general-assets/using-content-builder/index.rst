@@ -37,6 +37,16 @@ You can also delete or move whole sections. You can grab the icon here, or used 
 
 .. image:: content-builder-reorder-whole.png
 
+Add a divider
+----------------
+You can add a diviver between objcets by clicking here:
+
+.. image:: object-dividier.png
+
+You can also set object size relaitive to each other - should the object to the left use more space than the object to the right, etc.
+
+.. image:: object-size.png
+
 Add a template
 ***************
 There's a number of templates available, as a quick and easy starting point. A new template is placed as a new area below.
@@ -54,13 +64,28 @@ Just repeat to add the blocks needed. You can plan the content from the start or
 
 You can then add or remove the objects as needed, before adding content. More info below.
 
+Convert to another template
+------------------------------
+If a template really didn't work out for you, you can easily choose another template. Use the button Convert:
+
+.. image:: convert-button.png
+
+Duplicate areas
+-----------------
+If you need a number of areas that shoul be organized the same way, or even with similar content, use the Duplicate option.
+
+1. Select template, add content etc you would like to dublicate.
+2. Click the Duplicate button.
+
+.. image:: duplicate-button.png
+
 Add text
 ***************
-To add text, just click and write. When some text is in place, you can format the text.
+To add text, just click and write. Then you can format the text.
 
 .. image:: content-builder-text.png
 
-The formats in the list to the left is set up in Omnia admin. Most of the formats are general ones you easily recognize, just som words about som of them.
+The formats in the list to the left is set up in Omnia admin. Most of the other formats are general ones you easily recognize, just som words about som of them.
 
 Add link
 ----------
@@ -106,7 +131,15 @@ You can use the AI assistant for some help with the text.
 
 Add media
 **************
-(To be continued ....)
+To add a media object, click this button:
+
+.. image:: add-media-button.png
+
+To add media in the object, just click the object and use the media picker. For more information, see: :doc:`Using the media picker </general-assets/media-picker/index>`
+
+
+
+
 
   
 
