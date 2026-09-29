@@ -7,7 +7,7 @@ The following settings are found here:
 
 Users and groups
 ******************* 
-Use this setting to add and remove tenant administrators and separate administrators for some areas, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.11).
+Use this setting to add and remove tenant administrators and separate administrators for some areas, if needed. Only tenant administrators can use this setting. A tenant administrator can also edit all the settings for all business profiles within the tenant. (Image from Omnia 7.11). In Omnia 7.12 and later, 
 
 .. image:: tenant-permissions-v711.png
 
