@@ -25,6 +25,7 @@ In this part of the documentation you will find information about general assets
    share-document/index
    sharepoint-page-picker-picker/index
    single-site-collection/index
+   the-everywhere-panel/index
    using-anchors/index
    using-content-builder/index
    targeting-in-omnia/index
