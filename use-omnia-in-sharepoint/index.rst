@@ -41,5 +41,31 @@ See this page for more information: :doc:`The full page experience </use-omnia-i
 
 The Everywhere panel
 ---------------------
-Also called "Left panel". When activated, available in both Omnia and SharePolint. See this page for more information: :doc:`The Everywhere panel </general-assets/the-everywhere-panel/index>`
+Also called "Left panel". When activated it's available on the left while users browse different pages, allowing quick access to intranet areas and content in both Omnia and SharePoint. 
+
+See this page for more information: :doc:`The Everywhere panel </general-assets/the-everywhere-panel/index>`
+
+Quick editing and publish from a dialog
+----------------------------------------------
+It is now possible to do a light editing of a page in combination with the “Open page as a dialog”. An edit pencil is added to the page dialog. This pencil appears in SharePoint and is shown only to users who have permission to edit the page. 
+
+.. image:: quick-edit-dialog.png
+
+Clicking the pen opens a quick edit dialog where the author can change page information and publish the page directly.
+
+.. image:: quick-edit-dialog-edits.png
+
+The properties available in the quick edit dialog are controlled by the page type. Properties configured with “Show in new page” appear in this window. The dialog handles a page that another person has taken control of. It displays “Take control” in place of Publish so the author can take control before continuing working with the page.
+
+Restrict page types in the Create page action
+--------------------------------------------------
+An additional page type setting for an action button is available to the button type “Create page”. The option is available in both SharePoint and Omnia.
+
+This allows the administrator to specify which page types the user can choose when creating a page using that button.
+
+.. image:: restrict-page-types.png
+
+If no page types are selected in the action button settings, users can choose from all page types allowed by the selected page collection. If one or more page types are selected, users can choose only from that configured selection.
+
+This makes it possible to provide a creation button with a focused choice of page types for its particular purpose. 
 
