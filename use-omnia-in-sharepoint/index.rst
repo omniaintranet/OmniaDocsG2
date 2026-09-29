@@ -41,5 +41,5 @@ See this page for more information: :doc:`The full page experience </use-omnia-i
 
 The Everywhere panel
 ---------------------
-Also called "Left panel". When activated, available in both Omnia and SharePolint. See this page for more information: :doc:`The Everywhere panel </general-assets/the-everywhere-block/index>`
+Also called "Left panel". When activated, available in both Omnia and SharePolint. See this page for more information: :doc:`The Everywhere panel </general-assets/the-everywhere-panel/index>`
 
