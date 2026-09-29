@@ -44,6 +44,7 @@ Examples per area
    page/index
    page-type/index
    html-script-block/index
+   versioned-layout/index
    document-management/index
    feature/index
    azure-ad-permission/index

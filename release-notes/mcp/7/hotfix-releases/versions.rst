@@ -1,6 +1,20 @@
 Release 7.11
 ============
 
+Release 7.11.32
+---------------------------------------
+
+- Added support for listing the layouts of the tenant, a business profile or a Publishing App, such as headers, mega menus and home layouts, with their published version and checkout state
+- Added support for reading a layout's definition, either the published version or a draft that has not been published yet
+- Added support for checking out, changing, publishing and discarding business profile and Publishing App layouts. Tenant layouts, which affect every business profile, are read only
+- Changing a layout never adds or changes JavaScript or CSS, and the content of Html/Script blocks in a layout is left as it is
+- Added support for setting date and person properties when creating and changing pages. A person is given by user name, email address or user id and must match an existing user, otherwise nothing is saved
+- Added support for listing enterprise property categories and creating new ones
+- Added support for listing the SharePoint term groups and term sets that a taxonomy enterprise property can use
+- Pages now return their full address, including the part of the address that belongs to a variation
+- Fixed page addresses that contain a variation, such as a language version, not resolving to the variation's page
+- Fixed the kinds of app in the tenant being shown with a technical text instead of their name and description in the user's language
+
 Release 7.11.31
 ---------------------------------------
 

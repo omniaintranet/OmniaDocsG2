@@ -11,7 +11,7 @@ What you can ask for
 ********************
 
 + Create a page in a page collection.
-+ Read a page - its title, address, page type, property values, checkout state and version.
++ Read a page - its title, full address, page type, property values, checkout state and version.
 + Change a page's title or property values.
 + Publish the current draft.
 + Discard the current draft and go back to the published version.
@@ -50,12 +50,33 @@ An image property is the one property that needs a short conversation of its own
 + Cropping and ratio renditions are not supported through the connector.
 + The tenant's central image library is not supported yet.
 
+Dates and people
+****************
+
+Date and person properties - a publishing date, a review date, a page contact - can be set both when you create a page and when you change one:
+
+::
+
+   Create a news article called "New canteen opens" in the News page collection,
+   dated 15 September 2026, with alex@contoso.com as the page contact
+
+::
+
+   Move the date of that article to 1 October 2026 and make Kim Andersson
+   the contact instead
+
++ A **date** can be given as a plain date, which is stored as midnight UTC, or as a date and time. A time without a time zone is treated as UTC. A value that cannot be read as a date is refused, and you are told which formats work.
++ A **person** is given as one or more users - by user name, email address or Omnia user id. Every user must **match an existing user exactly**; the connector never picks the nearest match. If any of them cannot be found, nothing is created or saved and you are told which ones could not be found.
++ When you read the page back, a person property shows the users' **Omnia ids** rather than their names or email addresses.
+
 Working with an existing page
 *****************************
 
 ::
 
    Show me the page at https://contoso.omniacloud.net/sites/hr/travel-policy
+
+The page's address comes back as a **full link** you can open directly, both when you read a page and after you change one. In a Publishing App with **variations**, such as language versions, you can paste the address of a variation page - for example ``https://contoso.omniacloud.net/sites/hr/sv/travel-policy`` - and you get that variation's page, not the default one. The link given back includes the variation's part of the address as well.
 
 ::
 

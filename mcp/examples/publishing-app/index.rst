@@ -36,6 +36,8 @@ The kinds of app the connector can list come from the tenant's **app definitions
 
    What kinds of apps exist in this tenant?
 
+Each kind is shown with its name and description in your language, falling back to English when there is no translation.
+
 Looking at one app
 ******************
 

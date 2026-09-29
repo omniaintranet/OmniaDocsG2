@@ -11,6 +11,8 @@ What you can ask for
 + List every enterprise property in the tenant.
 + Look up specific properties.
 + List the available data types.
++ List the categories a property can belong to, and create a new one - see :doc:`../enterprise-property-category/index`.
++ List the SharePoint term groups and term sets a taxonomy property can use.
 + Create a property.
 + Change a property's title, category or search settings.
 
@@ -41,7 +43,7 @@ Good to know
 ************
 
 + The **internal name** and the **data type** are set at creation and cannot be changed afterwards. Pick both deliberately.
-+ A **taxonomy** property needs a term set. You are asked for it if you do not supply one.
++ A **taxonomy** property needs a term set. You are asked for it if you do not supply one. To see which term sets exist, ask for the term groups - for example *Which term groups and term sets are there in SharePoint?* If SharePoint taxonomy is not configured for the tenant, you are told so instead of getting an empty list.
 + **SharePoint searchable** and **Microsoft Search searchable** can each be turned on, with their own managed property settings.
 + An update needs the property's id plus at least one field to change; only the fields you mention are touched.
 + **Extended properties** are not handled here - they have their own flow in the Omnia interface.
@@ -53,5 +55,7 @@ Actions
 + ``EnterpriseProperty.List`` - every property definition in the tenant.
 + ``EnterpriseProperty.GetByIds`` - specific property definitions.
 + ``EnterprisePropertyDataType.List`` - the available data types.
++ ``EnterprisePropertyCategory.List`` - the categories a property can belong to.
++ ``Taxonomy.ListTermGroups`` - the SharePoint term groups and their term sets.
 + ``EnterpriseProperty.Create`` - create a property.
 + ``EnterpriseProperty.Update`` - change a property.
