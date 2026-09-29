@@ -1,7 +1,11 @@
 Targeting personas
 ================================
 
-To test targeting settings you can use targeting personas, so you don't have to use real users for that purpose. Set them up here. Available in Omnia 7.12 and later.
+To test targeting settings you can use targeting personas, so you don't have to use real users for that purpose. Available in Omnia 7.12 and later.
+
+This page describes how to set up targeting personas.
+
+For information on how to use them, see: :doc:`Using targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index>`
 
 .. image:: targeting-personas-list.png
 
