@@ -3,7 +3,7 @@ How to use Omnia in SharePoint
 
 In this section you will find documentation on how to use various parts of Omnia in SharePoint.
 
-**The work on these pages has just started - there's a lot of new features and options in Omnia 7.12 that will be described here. More information will be added in the coming weeks.**
+**This page is a work in progress - there's a lot of new features and options in Omnia 7.12 that will be described here. More information will be added in the coming weeks.**
 
 Webparts from Omnia in SharePoint
 **********************************
