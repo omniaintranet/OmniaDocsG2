@@ -33,6 +33,10 @@ Omnia 7.12 and later and SharePoint
 *************************************
 Omnia 7.12 introduces several improvements that bring Omnia and SharePoint Online closer together. These features allow users to access, navigate and work with Omnia content directly within SharePoint, creating a more consistent experience across both platforms.
 
+The full page experience
+---------------------------
+The main, intended use is to show and present news articles in the Omnia rollup inside SharePoint and to show the full page on a SharePoint page.
+
 See this page for more information: :doc:`The full page experience </use-omnia-in-sharepoint/full-page-experience/index>`
 
 The Everywhere panel
