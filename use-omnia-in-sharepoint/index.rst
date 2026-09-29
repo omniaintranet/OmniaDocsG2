@@ -35,5 +35,7 @@ Omnia 7.12 introduces several improvements that bring Omnia and SharePoint Onlin
 
 See this page for more information: :doc:`The full page experience </use-omnia-in-sharepoint/full-page-experience/index>`
 
-
+The Everywhere panel
+*********************
+Also called "Left panel". When activated, available in both Omnia and SharePolint. See this page for more information: :doc:`The Everywhere panel </blocks/general-block-settings/index>`
 
