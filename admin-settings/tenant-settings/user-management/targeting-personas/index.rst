@@ -7,6 +7,8 @@ This page describes how to set up targeting personas.
 
 For information on how to use them, see: :doc:`Using targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index>`
 
+The list will display the targeting personas that have been set up, for example:
+
 .. image:: targeting-personas-list.png
 
 All settings can be edited using the pen.
