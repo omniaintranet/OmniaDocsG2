@@ -1,8 +1,6 @@
 Current navigation in Omnia 7.12
 ==================================
 
-**Work on this page has just started.**
-
 This page decsribe the settings for the Current navigation block in Omnia 7.12 and later. For 7.11 and earlier, see: :doc:`Current navigation </blocks/current-navigation/index>`
 
 The current navigation can be set to be shown, as most blocks can, in all or some of the three display breakpoint settings, available when the block is edited; Extra small, Small, Medium or Large. See the heading "Display settings for blocks" on this page for more information: :doc:`Working with blocks </blocks/working-with-blocks/index>`
