@@ -53,7 +53,7 @@ Add Matomo super users here (image from a test environment).
 
 A Matomo Super User (or Superuser) is the highest-level administrator role in Matomo Analytics with global, unrestricted access across all monitored websites and system settings. 
 
-For a business profile, Matomo users can be added. A Matomo super user has extensive permissions. For more detailed information, see Matomo documentation.
+For a business profile, Matomo users can be added, a lower level of permissions compared to Matomo super user. For more detailed information, see Matomo documentation.
 
 For more information on the business profile "Matomo users" permission, see the heading "Analytics" on this page: :doc:`Permissions for a business profile </admin-settings/business-group-settings/permissions/index>`
 
