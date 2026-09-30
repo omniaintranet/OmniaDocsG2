@@ -29,11 +29,7 @@ Here you can set:
 
 .. image:: breadcrumb-query.png
 
-+ **Include tenant node**: Select this option to always display the tenant Node. The text for this is set in Omnia admin, in the Title field under Tenant-Settings-General.
-+ **Include business profile node**: Select this option to always display the business profile node. The text for this is the name for the business profile as set in Omnia admin, Tenant-Business profiles.
-+ **Include publishing spp default node**: This is especially useful if there are several page collections in a publishing app, and you want to show that they belong together. The title of the publishing app is set when it's created and can later be edited in OmniaaAdmin under Publishing for the business profile.
-+ **Include Page collecation node**: If the name of the page collection should be included, select this option.
-+ **Exclude current node**: To not show the current node in the breadcrum, select this option.
+Decide if the title for the tenant, business profile, publishing app and/or the page collection should be shown. Also decide if the current node should be shown or not. See links for settings below.
 
 Current node indicator
 -----------------------
@@ -67,7 +63,7 @@ For more information about the business profile title, see: :doc:`Business profi
 
 For more information about how to change a publishing app's title, see: :doc:`Publishing </admin-settings/business-group-settings/publishing-apps/index>`
 
-For more information about page collection settings, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
+For more information about page collection title, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
 Layout and Write
 *********************
