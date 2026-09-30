@@ -53,6 +53,13 @@ Derive the version line from the project status and remove the `Wait for RN - ` 
 
 Write short, customer-facing bullets in neutral English. Remove customer names unless essential. Name Omnia features consistently, such as Page Rollup, Document Bulk Update, Page Bulk Update, Quick Search, Semantic Search, Publishing App, and Controlled Documents.
 
+Make the affected product or functional scope explicit whenever the wording could apply to more than one Omnia area. Use the implementation and QA evidence to identify whether the change concerns documents, pages, processes, or a named product such as ODM or OPM; do not rely on readers to infer the scope from generic terms such as `publishing process` or `workflow history`. Prefer the clearest customer-facing wording, for example:
+
+- `Workflow history now correctly reflects when a document publishing process has been canceled (#55468)`
+- `Workflow history now correctly reflects when a publishing process in ODM has been canceled (#55468)`
+
+Prefer the first form when the affected object communicates the scope clearly; use a product name or acronym when it removes ambiguity more effectively.
+
 Prefer concrete descriptions of the affected scenario:
 
 - `Fixed an issue that could prevent document searches in Document Bulk Update from returning results in some scenarios (#59036)`
