@@ -3,7 +3,7 @@ Breadcrumb
 
 The breadcrumb block makes it possible for end user to navigate to any parent node of the current page in the navigation structure.
 
-This page describes the settings in Omnia 7.11 and earlier. For Omni 7.12 and later see: :doc:`Breadcrumb settings in Omnia 7.12 </blocks/breadcrumb-712/index>`
+This page describes the settings in Omnia 7.11 and earlier. For Omni 7.12 and later see: :doc:`Breadcrumb settings in Omnia 7.12 </blocks/breadcrumb-settings-712/index>`
 
 For physical pages, that is not part of the navigation structure (for example news articles), it will show the welcome page of the current publishing sites as the parent node.
 
