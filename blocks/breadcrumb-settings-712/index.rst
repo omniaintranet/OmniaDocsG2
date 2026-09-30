@@ -41,7 +41,7 @@ Separator
 ------------------
 Choose type of separator and separator color here.
 
-.. image:: breadcrumb-separator.png
+.. image:: breadcrumb-separator-frame.png
 
 Font size and spacing
 -------------------------
