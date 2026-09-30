@@ -47,9 +47,15 @@ General information above still apply and the Tenant settings, Shared links and 
 
 Analytics
 ------------
-Add Matomo users here (more info will be added soon).
+Add Matomo super users here (image from a test environment).
 
 .. image:: tenant-permissions-analytics-712.png
+
+A Matomo Super User (or Superuser) is the highest-level administrator role in Matomo Analytics with global, unrestricted access across all monitored websites and system settings. 
+
+For a business profile, Matomo users can be added. A Matomo super user has extensive permissions. For more detailed information, see Matomo documentation.
+
+For more information on the business profile "Matomo users" permission, see the heading "Analytics" on this page: :doc:`Permissions for a business profile </admin-settings/business-group-settings/permissions/index>`
 
 Targeting personas
 -----------------------
