@@ -11,6 +11,8 @@ Use this setting to add and remove tenant administrators and separate administra
 
 .. image:: tenant-permissions-v711.png
 
+In Omnia 7.12 and later, some new settings are available, see below.
+
 To delete an administrator in any of the lists, just click the x. To add an administrator, add the name the same way as in other name fields.
 
 **Note!** There must always be at least one tenant administrator. If there is only one, that administrator can not be removed until an additional administrator has been added.
@@ -34,6 +36,34 @@ If pages or documents should be available for semantic search can be set at page
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. Therefore, semantic search should only be used for common information that anyone in the organization have permission to read, for now. 
 
 This permission settings can be another way of restricting who can read information gathered by semantic search.
+
+Permissions in Omnia 7.12 and later
+*************************************
+In Omnia 7.12 and later, some additional settings are available:
+
+.. image:: tenant-permissions-712.png
+
+General information above still apply and the Tenant settings, Shared links and Announcements are handled as described above.
+
+Analytics
+------------
+Add Matomo users here (more info will be added soon).
+
+.. image:: tenant-permissions-analytics-712.png
+
+Targeting personas
+-----------------------
+Targeting personas administrators can create and edit personas, and use them. Targeting personas users can just use them. Tenant administrators are targeting personas admninistrators per default, they don’t need to be added here (image from a test environment).
+
+.. image:: tenant-permissions-personas-712.png
+
+For more information on setting up targeting personas, see: :doc:`Targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/index>`
+
+For more information on how to use targeting personas, see: :doc:`Using targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index>`
+
+Omnia Feed management console
+---------------------------------
+(Information will be added soon).
 
 Secrets
 ********
