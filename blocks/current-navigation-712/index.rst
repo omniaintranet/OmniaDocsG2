@@ -41,7 +41,7 @@ How should the current (active) node be indicated? That's what you set here.
 
 Open & collapse
 ------------------
-This section contains settings for opening and collapsing main nodes with sub nodes.
+This section contains settings for opening and collapsing main nodes that contain sub nodes.
 
 .. image:: current-collapse.png
 
