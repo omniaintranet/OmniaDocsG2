@@ -3,6 +3,8 @@ Current navigation
 
 The current navigation block makes it possible for the end user to navigate to siblings, parent nodes and parent node siblings. 
 
+This page describes the settings in Omnia 7.11 and eaerlier. For Omnia 7.12 and later, see: :doc:`Current navigation in Omnia 7.12 </blocks/current-navigation-712/index>`
+
 .. image:: current-navigation-example.png
 
 The current navigation can be set to be shown, as most blocks can, in all or some of the three display breakpoint settings, available when the block is edited; Extra small, Small, Medium or Large. See the heading "Display settings for blocks" on this page for more information: :doc:`Working with blocks </blocks/working-with-blocks/index>`
