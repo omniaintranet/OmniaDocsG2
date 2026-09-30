@@ -72,10 +72,10 @@ You add content to a new banner this way in Write mode:
 
 If editing is allowed, the banner editor starts and you use it to add the contents, see below.
 
-The banner editor in Omnia 7.12 contains some new options, see below.
+The banner editor in Omnia 7.12 and later contains some new options and are organized a bit differently, see below.
 
 The banner editor
-**********************************************
+**********************
 You use the banner editor to edit the banner's contents. You do it the same way for existing and newly added banners. As you edit the banner you can see a preview to the right. However, default content in the banner may be locked (settings on the WRITE tab, see above), and can therefore not be edited.
 
 .. image:: banner-editor-layout-new3.png
@@ -110,7 +110,9 @@ The banner editor can lok like this in Omnia 7.12 and later:
 
 .. image:: banner-editor-layout-712.png
 
-Use the icons to the left to go that part of the settings. You can also just scroll.
+Use the icons to the left to go that part of the settings. You can also just scroll. on the WRITE
+
+Note that the settings on the WRITE tab works the same, see above.
 
 Layout
 ---------------
@@ -124,7 +126,7 @@ Here you can add a title, work with the text and add a footer.
 
 .. image:: banner-editor-layout-content-712.png
 
-Note "Title element". Use it to seet the format for the title.
+Note "Title element". Use it to set the format for the title.
 
 Note that available options in the RTF editor can vary depending on settings in Omnia admin.
 
@@ -132,23 +134,23 @@ For mor information on how to use the RTF editor, see: :doc:`Editing text with t
 
 Media
 -----
-Here you can simply add or edit media for the banner.
+Here you can add or edit media for the banner.
 
 .. image:: banner-editor-layout-media-712.png
 
 When you click ADD MEDIA, the media picker starts, see this page for more information: :doc:`The media picker </general-assets/media-picker/media-picker-v6/index>`
 
-The selected media is shown in the live preview window.
+The selected media is shown in the preview window.
 
 When an image is selected, you can change media or remove it.
 
 .. image:: banner-editor-layout-media-change-712.png
 
-CHANGE MEDIA open the media picker, with the media selected so you can change settings, or choose another media.
+CHANGE MEDIA opens the media picker, with the media selected so you can change settings, or choose another media.
 
 Style
 ------
-Here you can try out a number of style settings. You can see the effect in the LIVE PREVIEW window.
+Here you can try out a number of style settings. You can see the effect in the preview window.
 
 .. image:: banner-editor-layout-style-712.png
 
@@ -158,5 +160,5 @@ If you wish a link to open when the banner is clicked, add the link here and dec
 
 .. image:: banner-editor-layout-link-712.png
 
-You cam add the complete link directly to the field, or use Add link. Click the icon to the right in the field to open it. For more information, see: :doc:`Add link </general-assets/add-link/index>`
+You can add the complete link directly to the field, or use Add link. Click the icon to the right in the field to open it. For more information, see: :doc:`Add link </general-assets/add-link/index>`
 
