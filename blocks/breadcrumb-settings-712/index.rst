@@ -57,13 +57,12 @@ Set how hovering over a node should be indicated.
 
 Read more
 ****************
-For more information about the tenant title, see: :doc:`Settings (Tenant) </admin-settings/tenant-settings/settings/index>`
+For more information about the the titles:
 
-For more information about the business profile title, see: :doc:`Business profiles </admin-settings/tenant-settings/business-profiles/index>`
-
-For more information about how to change a publishing app's title, see: :doc:`Publishing </admin-settings/business-group-settings/publishing-apps/index>`
-
-For more information about page collection title, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
++ Tenant title, see: :doc:`Settings (Tenant) </admin-settings/tenant-settings/settings/index>`
++ Business profile title, see: :doc:`Business profiles </admin-settings/tenant-settings/business-profiles/index>`
++ The publishing app's title, see: :doc:`Publishing </admin-settings/business-group-settings/publishing-apps/index>`
++ The page collection title, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
 Layout and Write
 *********************
