@@ -41,7 +41,7 @@ Permissions in Omnia 7.12 and later
 *************************************
 In Omnia 7.12 and later, some additional settings are available:
 
-.. image:: tenant-permissions-712.png
+.. image:: tenant-permissions-correct-712.png
 
 General information above still apply and the Tenant settings, Shared links and Announcements are handled as described above.
 
@@ -66,10 +66,6 @@ Targeting personas administrators can create and edit personas, and use them. Ta
 For more information on setting up targeting personas, see: :doc:`Targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/index>`
 
 For more information on how to use targeting personas, see: :doc:`Using targeting personas </admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index>`
-
-Omnia Feed management console
----------------------------------
-(Information will be added soon).
 
 Secrets
 ********
