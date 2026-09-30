@@ -15,11 +15,9 @@ These settings are available in Omnia 7.12 and later:
 
 Style presets
 -------------
-You can select a style preset as a starting point (all are not shown in the image):
+At the top you can select a style preset as a starting point.
 
-.. image:: current-style-preset.png
-
-A preview if the selected style is shown below the preset, here:
+A preview of the selected style is shown below the presets, here:
 
 .. image:: current-style-preset-preview.png
 
