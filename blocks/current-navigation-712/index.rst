@@ -47,7 +47,7 @@ This section contains settings for opening and collapsing main nodes that contai
 
 Row density
 ------------
-Find settings for the density of the text for rows in navigation, and for the size of the text for the nodes.
+Here you find settings for the density of the text for rows in navigation, and for the size of the text for the nodes.
 
 .. image:: current-density.png
 
