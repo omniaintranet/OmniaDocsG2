@@ -110,9 +110,9 @@ The banner editor can lok like this in Omnia 7.12 and later:
 
 .. image:: banner-editor-layout-712.png
 
-Use the icons to the left to go that part of the settings. You can also just scroll. on the WRITE
+Use the icons to the left to go to that part of the settings. You can also just scroll. 
 
-Note that the settings on the WRITE tab works the same, see above.
+Note that the settings on the WRITE tab still works the same, see above.
 
 Layout
 ---------------
