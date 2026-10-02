@@ -40,9 +40,11 @@ and these:
 
 6. Save when you're done.
 
-Add pages to be signed off
----------------------------
-Here's how to add pages to be signed off:
+Add Omnia pages to be signed off
+-----------------------------------
+(For SharePoint pages, see below).
+
+Here's how to add Omnia pages to be signed off:
 
 1. Click ADD.
 
@@ -74,9 +76,41 @@ To remove a page from the list, click the dust bin.
 
 8. Click SAVE to save the template.
 
+Add SharePoint pages to be signed off
+--------------------------------------
+Here's how to add SharePoint pages to be signed off:
+
+1. Click ADD.
+2. Choose "Current page" or a "Specific page".
+
+If you select "Current page" the actual page where the sign-off request is placed can be signed off, wherever that is. No further settings are needed.
+
+When you select "Specific page", continue like this:
+
+3. Select SharePoint site from the list.
+4. Browse the site for the page or use the "Search pages" field.
+
+(Instruction from here, still to be tested).
+
+5. Click ADD when you have selected one or more pages to add to the sign-off request.
+
+The selected pages are now added to the section, for example:
+
+.. image:: sign-off-requests-pages-sections-77-frame.png
+
+To remove a page from the list, click the dust bin.
+
+6. If you would like to add a message about a page, click the pen and add the message.
+
+.. image:: sign-off-requests-pages-section-message-77.png
+
+7. Repeat adding pages the same way until all pages you want in the template are in place.
+
+8. Click SAVE to save the template.
+
 Add documents to be signed off
 ---------------------------------
-In Omnia 7.7 and later, published controlled documents can be signed-off. A sign-off request can contain both pages and documents.
+Published controlled documents can also be signed-off. A sign-off request can contain both pages and documents.
 
 **Prerequisites**: The tenant feature "Sign-off request for controlled documents" must be active. In the settings for the document type, the option "Enable sign-off request" must be selected. (Meaning sign-off requests can be available for some document types and not for others.)
 
