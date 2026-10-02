@@ -69,3 +69,16 @@ If no page types are selected in the action button settings, users can choose fr
 
 This makes it possible to provide a creation button with a focused choice of page types for its particular purpose. 
 
+Sign-off requests for SharePoint pages
+----------------------------------------
+Sign-off requests can now be sent for SharePoint pages as well. Here's how it works:
+
++ The LinkPicker provider is used to select SharePoint pages when creating sign-off requests.
++ A Sign-off banner is shown on the SharePoint page. Look and feel is similar to Omnia pages. If the SharePoint page contains an Omnia Action Button of type “End-User Sign-Off”, the banner is not displayed (as the button is used instead).
+
+Other than that, it works the same way to sign-off Omnia pages and SharePoint pages. For more information, see:
+
+:doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
+
+:doc:`Sign-off requests rollup block </blocks/sign-off-requests-rollup-613/index>`
+
