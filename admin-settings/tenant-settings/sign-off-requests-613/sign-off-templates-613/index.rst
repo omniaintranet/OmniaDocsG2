@@ -1,7 +1,7 @@
 Templates
 =============================================
 
-Here you can work with templates for sign-off requests. A template can then be used in a type. When creating sign-off requests a type is always used, where pages, or published controlled documents (Omnia 7.7 and later) from the template can be removed, and additional pages/documents added, if needed.
+Here you can work with templates for sign-off requests. A template can then be used in a type. When creating sign-off requests a type is always used, where pages, or published controlled documents from the template can be removed, and additional pages/documents added, if needed.
 
 .. image:: sign-off-requests-templates-77.png
 
