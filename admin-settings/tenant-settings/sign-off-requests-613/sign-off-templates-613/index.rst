@@ -58,19 +58,27 @@ If you select "Current page" the actual page where the sign-off request is place
 
 When you select "Specific page", continue like this:
 
-3. Navigate and pick (Browse) or search for pages, the same way as in the page picker (it's a part of the page picker that is used here). See this page for more information: :doc:`The Page picker </general-assets/page-picker/index>`
+3. Choose an app and a pagecollection.
+
+4. Navigate and pick (Browse) or search for pages, the same way as in the page picker (it's a part of the page picker that is used here). See this page for more information: :doc:`The Page picker </general-assets/page-picker/index>`
+
+Here's an example of a page list:
+
+.. image:: sign-off-requests-pages-list.png
 
 5. Click ADD when you have selected one or more pages to add to the sign-off request.
 
+.. image:: sign-off-requests-pages-list-selected.png
+
 The selected pages are now added to the section, for example:
 
-.. image:: sign-off-requests-pages-sections-77-frame.png
+.. image:: sign-off-requests-pages-selected.png
 
 To remove a page from the list, click the dust bin.
 
 6. If you would like to add a message about a page, click the pen and add the message.
 
-.. image:: sign-off-requests-pages-section-message-77.png
+.. image:: sign-off-requests-pages-section-message-712.png
 
 7. Repeat adding pages the same way until all pages you want in the template are in place.
 
@@ -78,7 +86,7 @@ To remove a page from the list, click the dust bin.
 
 Add SharePoint pages to be signed off
 --------------------------------------
-Adding SharePoint pages to be signed off are similar to adding Omnia pages:
+Adding SharePoint pages to be signed off are very similar to adding Omnia pages. The difference is the way you pick pages:
 
 1. Click ADD.
 2. Choose "Current page" or a "Specific page".
@@ -96,19 +104,7 @@ When you select "Specific page", continue like this:
 
 .. image:: sharepoint-sign-off-pages-add.png
 
-The selected pages are now added to the section, for example:
-
-.. image:: sharepoint-sign-off-pages-added.png
-
-To remove a page from the list, click the dust bin.
-
-6. If you would like to add a message about a page, click the pen and add the message.
-
-.. image:: sharepoint-sign-off-pages-message.png
-
-7. Repeat adding pages the same way until all pages you want in the template are in place.
-
-8. Click SAVE to save the template.
+The rest of the steps are exactly the same as described above.
 
 Add documents to be signed off
 ---------------------------------
