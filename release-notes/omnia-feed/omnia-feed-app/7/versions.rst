@@ -1,5 +1,12 @@
 Release 7.11
 ============
+Release 7.11.8
+---------------
+
+- Extended support for acceptance of Terms of Use in the authentication flow
+- Improved handling of PDF links in embedded tabs
+- Updated logic for matching page variations when users switch business profiles
+
 Release 7.11.7
 --------------
 
