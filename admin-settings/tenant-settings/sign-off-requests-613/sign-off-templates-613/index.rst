@@ -86,7 +86,7 @@ To remove a page from the list, click the dust bin.
 
 Add SharePoint pages to be signed off
 --------------------------------------
-Adding SharePoint pages to be signed off are very similar to adding Omnia pages. The difference is the way you pick pages:
+Adding SharePoint pages to be signed off is very similar to adding Omnia pages. The difference is the way you pick pages:
 
 1. Click ADD.
 2. Choose "Current page" or a "Specific page".
