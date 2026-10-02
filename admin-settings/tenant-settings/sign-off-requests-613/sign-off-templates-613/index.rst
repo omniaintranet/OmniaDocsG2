@@ -58,7 +58,7 @@ If you select "Current page" the actual page where the sign-off request is place
 
 When you select "Specific page", continue like this:
 
-3. Choose an app and a pagecollection.
+3. Choose an app and a page collection.
 
 4. Navigate and pick (Browse) or search for pages, the same way as in the page picker (it's a part of the page picker that is used here). See this page for more information: :doc:`The Page picker </general-assets/page-picker/index>`
 
