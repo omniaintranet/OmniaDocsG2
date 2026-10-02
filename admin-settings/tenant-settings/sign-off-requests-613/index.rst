@@ -1,7 +1,12 @@
 Sign-off requests
 ====================================
 
-Sign-off requests can be used for read receipts for pages, including news. One example of implementation is pages a new employee should study. In Omnia 7.7 and later, sign-off requests can be used for controlled documents as well.
+Sign-off requests can be used for read receipts for pages, including news. One example of implementation is pages a new employee should study. Sign-off requests for controlled documents can also be available.
+
+Pre requisites:
+
++ For any sign-off functionality to be avaiable, the tenant feature "Sign-off request" must be active.
++ For sign-off for controlled documents to be available, the tenant feature "Sign-off request for published document" be active.
 
 The following settings are available here (image from Omnia 7.12):
 
