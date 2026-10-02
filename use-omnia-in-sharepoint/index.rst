@@ -78,7 +78,6 @@ Sign-off requests can now be created for SharePoint pages as well. Here's how it
 
 Other than that, it works the same way to sign-off Omnia pages and SharePoint pages. For more information, see:
 
-:doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
-
-:doc:`Sign-off requests rollup block </blocks/sign-off-requests-rollup-613/index>`
++ :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
++ :doc:`Sign-off requests rollup block </blocks/sign-off-requests-rollup-613/index>`
 
