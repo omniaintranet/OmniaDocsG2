@@ -1,7 +1,7 @@
 Sign-off requests
 ====================================
 
-Sign-off requests can be used for read receipts for pages, including news. One example of implementation is pages a new employee should study. Sign-off requests for controlled documents can also be available.
+Sign-off requests can be used for read receipts for pages, including news. Available for Omnia pages and (in Omnia 7.12 and later) SharePoint pages. Sign-off requests for controlled documents can also be available.
 
 Pre requisites:
 
