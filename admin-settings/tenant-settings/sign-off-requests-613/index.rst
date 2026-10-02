@@ -5,8 +5,8 @@ Sign-off requests can be used for read receipts for pages, including news. Avail
 
 Pre requisites:
 
-+ For any sign-off functionality to be avaiable, the tenant feature "Sign-off request" must be active.
-+ For sign-off for controlled documents to be available, the tenant feature "Sign-off request for published document" be active.
++ For any sign-off functionality to be available, the tenant feature "Sign-off request" must be active.
++ For sign-off for controlled documents to be available, the tenant feature "Sign-off request for published document" must be active.
 
 The following settings are available here (image from Omnia 7.12):
 
