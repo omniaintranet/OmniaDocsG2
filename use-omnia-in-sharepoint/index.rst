@@ -71,7 +71,7 @@ This makes it possible to provide a creation button with a focused choice of pag
 
 Sign-off requests for SharePoint pages
 ----------------------------------------
-Sign-off requests can now be sent for SharePoint pages as well. Here's how it works:
+Sign-off requests can now be created for SharePoint pages as well. Here's how it works:
 
 + The LinkPicker provider is used to select SharePoint pages when creating sign-off requests.
 + A Sign-off banner is shown on the SharePoint page. Look and feel is similar to Omnia pages. If the SharePoint page contains an Omnia Action Button of type “End-User Sign-Off”, the banner is not displayed (as the button is used instead).
