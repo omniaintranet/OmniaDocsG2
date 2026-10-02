@@ -96,7 +96,7 @@ If you select "Current page" the actual page where the sign-off request is place
 When you select "Specific page", continue like this:
 
 3. Select SharePoint site from the list.
-4. Browse the site for the page or use the "Search pages" field.
+4. Browse the site for pages or use the "Search pages" field.
 
 .. image:: sharepoint-sign-off-pages.png
 
