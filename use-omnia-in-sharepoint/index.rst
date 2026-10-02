@@ -73,8 +73,8 @@ Sign-off requests for SharePoint pages
 ----------------------------------------
 Sign-off requests can now be created for SharePoint pages as well. Here's how it works:
 
-+ Sign-off requests can be created for either Omnia pages, SharePoint pages, or a mix.
-+ A Sign-off banner is shown on the SharePoint page. Look and feel is similar to Omnia pages. If the SharePoint page contains an Omnia action button of type “End-user sign-off”, the banner is not displayed (as the button is used instead).
++ Sign-off requests can be created for either Omnia pages, SharePoint pages, published controlled documents, or a mix.
++ A Sign-off banner is shown on the SharePoint page. Look and feel is similar to what's shown on Omnia pages. If the SharePoint page contains an Omnia action button of type “End-user sign-off”, the banner is not displayed (as the button is used instead).
 
 Other than that, it works the same way to sign-off Omnia pages and SharePoint pages. For more information, see:
 
