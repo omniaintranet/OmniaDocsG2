@@ -1,4 +1,4 @@
-Release 7.12 (Functional release notes, draft)
+Release 7.12
 ========================================================
 
 Omnia 7.12 helps every part of your intranet team do more with less effort. Editors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
@@ -135,7 +135,7 @@ Run as persona
 
 The most requested features from last year's Omnia Conference! Targeting is powerful, but until now it was hard to know what a given audience really sees. With targeting personas, selected users can experience the intranet as a predefined persona, for example a frontline employee in a specific country, and verify that the right content reaches the right people. No test accounts, no asking colleagues to check.
 
-.. image:: run-as-a-persona-display.png
+.. image:: persona-select-in-profile.png
 
 A clear frame around the screen shows when a persona is active. Personas affect targeting only: they do not impersonate anyone or give additional permissions.
 
