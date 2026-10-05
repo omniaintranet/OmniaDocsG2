@@ -40,8 +40,6 @@ With AI assistance, authors can get a full draft or a single paragraph in second
 
 Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content. It can also be used instead of the rich text editor.
 
-.. REVIEW: Does the customer need to bring their own AI model/provider for Content Builder AI? The Q&A answer was unclear. Add a sentence once confirmed.
-
 Good to know: There is no migration from the rich text editor, so Content Builder is for new content.
 
 Call to action, dividers and links to people
@@ -62,8 +60,6 @@ Make the intranet look like your organization. Upload your **own fonts** and use
 
 .. image:: rounded-corners-cards.png
 
-.. REVIEW: The deck asks whether Custom Font can replace a custom extension. Confirm before claiming it reduces custom code.
-
 One-click page creation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Who it's for:** Intranet owners and employees who contribute.
@@ -75,8 +71,6 @@ Plan ahead, publish automatically
 **Who it's for:** Authors.
 
 Scheduled publishing and auto-publishing can now be combined, so authors can plan campaigns and announcements ahead of time and spend less time on manual follow-up.
-
-.. REVIEW: Confirm what "auto-publishing" refers to here (e.g. after approval) and add a concrete example.
 
 More for authors and editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -122,8 +116,6 @@ Omnia increasingly treats SharePoint content as a first-class citizen:
 - **The Omnia footer script** runs on SharePoint sites.
 - **Faster pages:** better performance of Omnia in SharePoint, including a better CSS load order on SPFx pages.
 
-.. REVIEW: Team News Rollup - confirm whether existing instances get the new views automatically.
-
 Document Library Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Who it's for:** Employees and editors.
@@ -132,9 +124,6 @@ Documents stay in SharePoint, but employees should not have to go looking for th
 
 .. image:: document-library-display-view.png
 
-.. REVIEW: The existing 7.12 notes call this block "Document Rollup". Confirm the final name.
-
-
 Know your audience
 ------------------------------------------------------
 
@@ -142,7 +131,7 @@ Run as persona
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Who it's for:** Intranet owners, editors and administrators.
 
-One of the most requested features from last year's Omnia Conference! Targeting is powerful, but until now it was hard to know what a given audience really sees. With targeting personas, selected users can experience the intranet as a predefined persona, for example a frontline employee in a specific country, and verify that the right content reaches the right people. No test accounts, no asking colleagues to check.
+The most requested features from last year's Omnia Conference! Targeting is powerful, but until now it was hard to know what a given audience really sees. With targeting personas, selected users can experience the intranet as a predefined persona, for example a frontline employee in a specific country, and verify that the right content reaches the right people. No test accounts, no asking colleagues to check.
 
 .. image:: run-as-a-persona-display.png
 
@@ -164,15 +153,10 @@ Everywhere Panel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Who it's for:** Employees, and intranet owners who design the navigation.
 
-Keep the key destinations always within reach. The Everywhere Panel puts the mega menu in a permanent panel on the left, visible while employees browse, in Omnia and SharePoint. Because it reuses the mega menu, there is no second navigation to maintain, and different audiences can get different panels.
+Keep the key destinations always within reach. The Everywhere Panel puts a menu in a permanent panel on the left, visible while employees browse, in Omnia and SharePoint. Similar to the mega menu targeting can be applied, so different audiences can get different panels.
 
 .. image:: everywhere-panel.png
 
-.. REVIEW: The label in the panel settings still says "mega menu"; the Q&A says this will be updated.
-
-.. REVIEW: Three QA items were open on the functional card (OmniaMono #3655): layout theming in read mode, layout max width/height, and left panel alignment in Microsoft Teams. Confirm they are fixed, or list them as known issues.
-
-.. REVIEW: "Everywhere Panel" is also the name of an older component in another product. Make sure support does not mix them up.
 
 Navigation that fits your design
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -210,8 +194,6 @@ AI-ready content
 
 The way Omnia stores content has been improved to help Copilot and other AI find and understand it.
 
-.. REVIEW: "Admin customization of AI prompts (pre- and post-prompts)" is listed for 7.13. In 7.12 central pre- and post-prompts are in Content Builder AI, and Semantic Search pre- and post-prompts were announced in 7.11.x. Confirm whether the 7.13 item is the same or an extension.
-
 
 Engage your readers
 ------------------------------------------------------
@@ -246,8 +228,6 @@ Long pages that are easy to navigate
 
 The new Table of contents block builds navigation from the headings on a page, or from a configured property. Policies, guides and handbooks become much easier to scan, and readers can jump straight to what they need.
 
-.. REVIEW: Landed after 7.11 but was never announced. Confirm the property-based option, and whether a screenshot is available.
-
 Conversations that are easy to follow
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 **Who it's for:** Employees and editors.
@@ -276,12 +256,8 @@ Governance with less friction
 - **Sign-off requests follow group membership**, so the right people are always asked as teams change.
 - **Page collection administrators can take control** of a page and cancel its approval, so a page does not wait for an absent approver.
 - **Distribution groups** can be used in promotion channels.
-- **Navigating without a variation** is supported.
 - **Setup wizard** can now create a business profile.
 - **Glossary terms** can have a default style, and built-in properties can be shown in dialogs.
-- **A new "Omnia Content" enterprise property type.**
-
-.. REVIEW: Bypass page approval - add who can bypass (role/permission) and whether it is logged.
 
 
 Faster, smoother, more accessible
@@ -293,24 +269,12 @@ Performance
 
 A broad performance overhaul makes Omnia feel faster. The editor loads only when needed, fewer bundles load with each page, and pages jump around less while loading. SharePoint pages load their styling in a better order too.
 
-.. REVIEW: No benchmark numbers are available, so none are given.
 
 Accessibility (WCAG)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Employees, and organizations with accessibility requirements, such as public sector customers.
+**Who it's for:** Employees, and organizations with accessibility requirements.
 
 An intranet that works for everyone. 7.12 brings WCAG improvements to header search, Page Rollup (card view and the calendar view with its new design), People Rollup, filters in all rollups, the notification panel, comments, tutorials, metrics, export buttons and the new Advanced Search refiners. Alt texts are fixed throughout, pagination is now one shared accessible control, and dialog headers are standardized. Editors can set the heading level of every block, not only the FAQ block, to keep a correct heading structure.
-
-.. REVIEW: "Calendar rollup new design" - confirm this is the Page Rollup calendar view.
-
-
-Before you upgrade
-------------------------------------------------------
-**Who it's for:** Administrators and consultants.
-
-- **Custom CSS or JavaScript:** the WCAG work and the move to the Vue Composition API have touched many frontend elements. Check tenants with custom CSS or JavaScript after the upgrade.
-- **Extensions:** check custom extensions for compatibility.
-- **Mega menu:** a mega menu set to "left" that also has left navigation nodes will show two menus when the Everywhere Panel is turned on.
 
 
 Recently added
@@ -325,7 +289,3 @@ Already announced in 7.11.x, and included in 7.12:
 - Semantic Search pre- and post-prompts.
 
 
-Versions
-------------------------------------------------------
-
-.. REVIEW: Add version list in the same format as 7.0.
