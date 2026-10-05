@@ -1,16 +1,7 @@
 Release 7.12 (Functional release notes, draft)
 ========================================================
 
-.. REVIEW NOTE: Rewritten as a lightweight pitch: capability first, key user named, no settings detail. Items marked "REVIEW" in rst comments need a fact check and are not rendered.
-
 Omnia 7.12 helps every part of your intranet team do more with less effort. Editors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
-
-Each feature below names the people who benefit most:
-
-- **Employees** - everyone who reads and uses the intranet.
-- **Editors** - the people who create and publish content.
-- **Intranet owners** - communications and intranet managers responsible for the whole experience.
-- **Administrators** - the people who configure and govern the platform.
 
 **Highlights**
 
@@ -46,9 +37,10 @@ Not everyone who writes for the intranet is a designer. Content Builder gives au
 
 With AI assistance, authors can get a full draft or a single paragraph in seconds. Administrators set the tone of voice and content standards, such as accessibility requirements, once, and every author in the business profile gets AI suggestions that follow them. The result is faster publishing with a more consistent voice, without taking the author out of control.
 
-Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content.
+.. image:: content-builder-authoring-element-ai.png
 
-.. REVIEW: Does the customer need to bring their own AI model/provider for Content Builder AI? The Q&A answer was unclear. Add a sentence once confirmed.
+
+Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content.
 
 Good to know: There is no migration from the rich text editor, so Content Builder is for new content.
 
