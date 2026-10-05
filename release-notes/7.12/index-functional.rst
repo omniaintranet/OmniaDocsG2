@@ -5,14 +5,6 @@ Release 7.12 (Functional release notes, draft)
 
 Omnia 7.12 helps every part of your intranet team do more with less effort. Authors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
 
-Each feature below names the people who benefit most:
-
-- **Employees** - everyone who reads and uses the intranet.
-- **Authors** - the people who create content within the blocks already on a page.
-- **Editors** - the people who design pages by adding, removing and configuring blocks.
-- **Intranet owners** - communications and intranet managers responsible for the whole experience.
-- **Administrators** - the people who configure and govern the platform.
-
 **Highlights**
 
 - `Content Builder`_ - build engaging pages quickly, with AI assistance that follows your organization's editorial standards.
