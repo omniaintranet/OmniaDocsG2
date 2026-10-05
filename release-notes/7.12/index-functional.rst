@@ -16,12 +16,12 @@ Omnia 7.12 is about three things: making it easier to create engaging content, b
 - **Performance** - faster, smoother page loading across the platform.
 
 **In this release**
- 
+
 .. contents::
    :local:
    :depth: 1
    :backlinks: none
- 
+
 
 Creating content
 ------------------------------------------------------
@@ -32,7 +32,7 @@ Content Builder is a new authoring experience designed to be simple. It gives ed
 
 .. image:: content-builder-authoring.png
 
-Editors can compose a page from ready-made elements, reorder them, convert an element to another layout, split elements and adjust element settings such as people and tables. With AI assistance enabled, editors can have AI create full content or individual texts, or ask it to add a new element to the page.
+Editors can compose a page from ready-made elements, reorder them, convert an element to another layout, split elements and adjust element settings such as people and tables. With AI assistance enabled, editors can have AI create full content or individual texts, or ask it to add a new block to the page.
 
 Content Builder is a block like any other. It is added to page types in the same way as other blocks, it can be used as an alternative to the rich text editor, and styling (layout spacing, media, divider style) is controlled in the block settings. The Block Gallery can be used to create customer-specific versions of the block. Administrators can also decide whether editors must confirm deletions, and select the AI assistance and media provider used by the block.
 
@@ -164,7 +164,7 @@ The Event Rollup card view has additional display options for event information,
 
 Event participant counter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A new block shows how many people have registered and how many places there are in total ("registered / max"), and shows a full state when the event is fully booked. Attendees see at a glance whether there is still room, and organizers avoid answering the same question repeatedly. 
+A new block shows how many people have registered and how many places there are in total ("registered / max"), and shows a full state when the event is fully booked. Attendees see at a glance whether there is still room, and organizers avoid answering the same question repeatedly. The block has responsive settings.
 
 Table of contents block
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -180,13 +180,13 @@ The Banner block has been redesigned with new views and a new editor. Predefined
 
 In addition to the existing layouts, two new options are available for banners combining text and images: Image on left and Image on right. For these, you can also control the ratio between the image and text areas. The result is more variation in how campaigns and messages are presented, without custom design work.
 
-Updated app launcher
+Quick Links: new app launcher view
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The app launcher design is updated with default icons provided, and the app icons view has new design options. This makes it simple to give colleagues a clear "my apps" area, in the style they know from Microsoft 365.
+Quick Links has a new app launcher design with default icons provided, and the app icons view has new design options. This makes it simple to give colleagues a clear "my apps" area, in the style they know from Microsoft 365.
 
 Current navigation and Breadcrumb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Current navigation and Breadcrumb now come with style presets and a live preview, so the navigation can match the design of the intranet in a few clicks. 
+Current navigation and Breadcrumb now come with style presets and a live preview, so the navigation can match the design of the intranet in a few clicks. Both also have responsive settings.
 
 .. image:: current-navigation-style-presets.png
 
