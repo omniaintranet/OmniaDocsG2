@@ -91,9 +91,3 @@ Miscellaneous
 - No translation dictionary
 
 .. REVIEW: FAQ/accordion, unread news, Microsoft Foundry, RBAC over OAuth and No translation dictionary come from the earlier draft and were not found in the dev commits. Confirm they are in 7.13.
-
-Before you upgrade
-------------------------------------------------
-- Old layout templates for Web Content Management have been removed.
-
-.. REVIEW: Confirm the impact of removing the old layout templates (#2780) and who is affected.
