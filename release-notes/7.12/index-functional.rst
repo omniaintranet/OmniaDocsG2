@@ -3,12 +3,13 @@ Release 7.12 (Functional release notes, draft)
 
 .. REVIEW NOTE: Rewritten as a lightweight pitch: capability first, key user named, no settings detail. Items marked "REVIEW" in rst comments need a fact check and are not rendered.
 
-Omnia 7.12 helps every part of your intranet team do more with less effort. Editors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
+Omnia 7.12 helps every part of your intranet team do more with less effort. Authors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
 
 Each feature below names the people who benefit most:
 
 - **Employees** - everyone who reads and uses the intranet.
-- **Editors** - the people who create and publish content.
+- **Authors** - the people who create content within the blocks already on a page.
+- **Editors** - the people who design pages by adding, removing and configuring blocks.
 - **Intranet owners** - communications and intranet managers responsible for the whole experience.
 - **Administrators** - the people who configure and govern the platform.
 
@@ -37,15 +38,15 @@ Create content faster
 
 Content Builder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Editors, and intranet owners who want consistent content.
+**Who it's for:** Authors, and the editors and intranet owners who want consistent content.
 
-Not everyone who writes for the intranet is a designer. Content Builder gives editors a simple, guided way to build engaging content: pick ready-made elements, rearrange them, change their layout, and see the result as they go.
+Not everyone who writes for the intranet is a designer. Content Builder gives authors a simple, guided way to build engaging content: pick ready-made elements, rearrange them, change their layout, and see the result as they go.
 
 .. image:: content-builder-authoring.png
 
-With AI assistance, editors can get a full draft or a single paragraph in seconds. Administrators set the tone of voice and content standards, such as accessibility requirements, once, and every editor in the business profile gets AI suggestions that follow them. The result is faster publishing with a more consistent voice, without taking the editor out of control.
+With AI assistance, authors can get a full draft or a single paragraph in seconds. Administrators set the tone of voice and content standards, such as accessibility requirements, once, and every author in the business profile gets AI suggestions that follow them. The result is faster publishing with a more consistent voice, without taking the author out of control.
 
-Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content.
+Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content. It can also be used instead of the rich text editor.
 
 .. REVIEW: Does the customer need to bring their own AI model/provider for Content Builder AI? The Q&A answer was unclear. Add a sentence once confirmed.
 
@@ -53,9 +54,9 @@ Good to know: There is no migration from the rich text editor, so Content Builde
 
 Call to action, dividers and links to people
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Editors.
+**Who it's for:** Authors and editors.
 
-Three small additions that make pages clearer and more actionable. Editors can add a **call to action** button straight from the text editor, so readers know what to do next, and every button follows the organization's design. A new **Divider** block gives long pages structure. And editors can **link directly to a person** from text, so readers reach the right contact in one click.
+Three small additions that make pages clearer and more actionable. Authors can add a **call to action** button straight from the text editor, so readers know what to do next, and every button follows the organization's design. A new **Divider** block gives editors an easy way to give long pages structure. And authors can **link directly to a person** from text, so readers reach the right contact in one click.
 
 .. image:: call-to-action-result.png
 
@@ -79,14 +80,14 @@ Turn contribution into a button. A "Share a story" or "Submit an idea" action bu
 
 Plan ahead, publish automatically
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Editors.
+**Who it's for:** Authors.
 
-Scheduled publishing and auto-publishing can now be combined, so editors can plan campaigns and announcements ahead of time and spend less time on manual follow-up.
+Scheduled publishing and auto-publishing can now be combined, so authors can plan campaigns and announcements ahead of time and spend less time on manual follow-up.
 
 .. REVIEW: Confirm what "auto-publishing" refers to here (e.g. after approval) and add a concrete example.
 
-More for editors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More for authors and editors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 - **A faster start:** new page and page type templates.
 - **Easier navigation picking:** choose both links and labels when selecting navigation.
 - **Easier property picking:** an improved property selector.
@@ -100,7 +101,7 @@ Omnia and SharePoint, working as one
 
 Omnia pages in SharePoint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Organizations that work in SharePoint, and the editors and employees in them.
+**Who it's for:** Organizations that work in SharePoint, and the authors and employees in them.
 
 Some organizations have decided to work inside SharePoint, and others have a mix of people in SharePoint and Omnia. With 7.12, they no longer have to choose. Omnia pages can be **viewed, created and edited from SharePoint**, so people stay in the tool they use every day, and the content stays the same everywhere. Employees can even react to content from Page Rollup directly in SharePoint.
 
@@ -108,9 +109,9 @@ Some organizations have decided to work inside SharePoint, and others have a mix
 
 Quick publish and edit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-**Who it's for:** Editors.
+**Who it's for:** Authors.
 
-Spot a typo or an old date? Editors can now open a page in a dialog, fix it and publish, without leaving the page they are on. The dialog also handles variations, takes control of a page when needed, and warns before publishing a machine-translated variation.
+Spot a typo or an old date? Authors can now open a page in a dialog, fix it and publish, without leaving the page they are on. The dialog also handles variations, takes control of a page when needed, and warns before publishing a machine-translated variation.
 
 .. image:: quick-edit-dialog.png
 
@@ -121,7 +122,7 @@ SharePoint content and governance in Omnia
 Omnia increasingly treats SharePoint content as a first-class citizen:
 
 - **Team News Rollup** gets better querying, multiple views and more filters, so team news can be shown the way each audience needs it.
-- **SharePoint page picker** lets editors select SharePoint pages where an Omnia page is expected.
+- **SharePoint page picker** lets authors and editors select SharePoint pages where an Omnia page is expected.
 - **Process blocks** can be used on SharePoint pages.
 - **Sign-off requests** include SharePoint pages, so governance applies to important content wherever it lives.
 - **SharePoint Brand Center** is supported, so branding done there is respected.
