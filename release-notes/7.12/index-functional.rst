@@ -1,480 +1,323 @@
 Release 7.12 (Functional release notes, draft)
 ========================================================
 
-.. REVIEW NOTE: Draft written for use cases and business value. Items marked "REVIEW" in rst comments need a fact check before publishing.
-.. Sections: Highlights, then one section per theme. "New to customers since 7.11" and "Recently added" are at the end.
+.. REVIEW NOTE: Rewritten as a lightweight pitch: capability first, key user named, no settings detail. Items marked "REVIEW" in rst comments need a fact check and are not rendered.
 
-Omnia 7.12 is about three things: making it easier to create engaging content, bringing Omnia pages and SharePoint closer together, and making the intranet faster, more consistent and more accessible for everyone who uses it.
+Omnia 7.12 helps every part of your intranet team do more with less effort. Editors get a simpler, smarter way to create engaging content. Intranet owners can see the intranet through their audiences' eyes. Organizations that live in SharePoint can bring Omnia pages with them. And everyone gets a faster, more accessible experience.
+
+Each feature below names the people who benefit most:
+
+- **Employees** - everyone who reads and uses the intranet.
+- **Editors** - the people who create and publish content.
+- **Intranet owners** - communications and intranet managers responsible for the whole experience.
+- **Administrators** - the people who configure and govern the platform.
 
 **Highlights**
 
-- **Content Builder** - a simple, guided way to build engaging content, with built-in AI assistance that follows your organization's editorial standards.
-- **Omnia in SharePoint** - view, create and edit Omnia pages directly from SharePoint, so no one has to choose between the two.
-- **Run as persona** - experience the intranet as a target audience, to verify that the right content reaches the right people.
-- **Everywhere Panel** - the mega menu in a permanent panel on the left, always one click away.
-- **Accessibility (WCAG)** - improvements across rollups, search, notifications, comments and dialogs.
-- **Performance** - faster, smoother page loading across the platform.
+- `Content Builder`_ - build engaging pages quickly, with AI assistance that follows your organization's editorial standards.
+- `Omnia pages in SharePoint`_ - view, create and edit Omnia pages directly from SharePoint.
+- `Run as persona`_ - see the intranet exactly as a target audience sees it.
+- `Everywhere Panel`_ - your key destinations, always one click away.
+- `Performance`_ - a broad overhaul that makes Omnia faster and smoother.
 
-**In this release**
+**More in 7.12**
 
-.. contents::
-   :local:
-   :depth: 1
-   :backlinks: none
+- `Create content faster`_ - calls to action, dividers, your own fonts, one-click page creation, scheduling.
+- `Omnia and SharePoint, working as one`_ - quick edit, document libraries, SharePoint governance and branding.
+- `Know your audience`_ - targeted search filters.
+- `Find things and find your way`_ - navigation styles, app launcher, search and AI.
+- `Engage your readers`_ - reactions, banners, events, table of contents, threaded comments.
+- `Governance with less friction`_ - approvals, sign-off and administration.
+- `Accessibility (WCAG)`_ - improvements across the intranet.
+- `Before you upgrade`_ and `Recently added`_ - what to check, and what you may have missed.
 
 
-Creating content
+Create content faster
 ------------------------------------------------------
 
 Content Builder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Content Builder is a new authoring experience designed to be simple. It gives editors more flexibility to create engaging content without needing design skills or detailed knowledge of Omnia blocks.
+**Who it's for:** Editors, and intranet owners who want consistent content.
+
+Not everyone who writes for the intranet is a designer. Content Builder gives editors a simple, guided way to build engaging content: pick ready-made elements, rearrange them, change their layout, and see the result as they go.
 
 .. image:: content-builder-authoring.png
 
-Editors can compose a page from ready-made elements, reorder them, convert an element to another layout, split elements and adjust element settings such as people and tables. With AI assistance enabled, editors can have AI create full content or individual texts, or ask it to add a new block to the page.
+With AI assistance, editors can get a full draft or a single paragraph in seconds. Administrators set the tone of voice and content standards, such as accessibility requirements, once, and every editor in the business profile gets AI suggestions that follow them. The result is faster publishing with a more consistent voice, without taking the editor out of control.
 
-Content Builder is a block like any other. It is added to page types in the same way as other blocks, it can be used as an alternative to the rich text editor, and styling (layout spacing, media, divider style) is controlled in the block settings. The Block Gallery can be used to create customer-specific versions of the block. Administrators can also decide whether editors must confirm deletions, and select the AI assistance and media provider used by the block.
-
-.. image:: content-builder-settings.png
-
-Content Builder AI is guided by prompts that are managed centrally. Administrators can write the organization's tone of voice and requirements, such as accessibility, once, and every editor in the business profile benefits from them. Administrators start from the default, make customer adjustments, state what must be preserved and can reset to the default at any time. The prompts act as a governance layer between the editor and the AI model: the aim is not to automate editorial judgment, but to give every editor a more consistent, organization-aware starting point.
+Content Builder works like any other block: it can be added to page types, content can be connected to properties and found in search, and it works with reusable content.
 
 .. REVIEW: Does the customer need to bring their own AI model/provider for Content Builder AI? The Q&A answer was unclear. Add a sentence once confirmed.
 
-Key Benefits:
+Good to know: There is no migration from the rich text editor, so Content Builder is for new content.
 
-- Easier creation: Editors can build engaging pages quickly without needing design experience.
-- Consistency: Layout, spacing and styling are controlled centrally, so pages look and feel the same across authors.
-- Organization-aware AI: Central prompts carry your tone of voice and content standards into every AI suggestion.
-- Findable content: Content Builder can be connected to an Omnia property and is searchable. It also works with reusable content through property mapping.
-
-Use Case Examples:
-
-- A communications team wants colleagues across the organization to publish local news. Content Builder gives them a simple structure to follow, and the central AI prompts keep the tone of voice consistent.
-- An intranet owner wants every news article to meet accessibility requirements. The requirements are added to the central AI prompts once.
-
-Please note:
-
-- There is no migration path from the rich text editor to Content Builder. Existing content is not converted, so Content Builder is used for new content.
-- The rich text formatting options of Content Builder are standard and cannot be configured.
-- If deletion confirmation is turned off, deleted elements are removed without warning. We recommend starting with the confirmation turned on.
-
-Divider block
+Call to action, dividers and links to people
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A new Divider block makes it easy to structure long pages and separate topics with a clean visual line. Style, color, weight, width and opacity can be configured.
+**Who it's for:** Editors.
 
-.. image:: divider-block-settings.png
-
-.. image:: divider-block-display.png
-
-Easy Call to Action in the text editor
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Editors can add a call to action button directly in the text editor by providing a label and a URL. This helps editors guide readers to the next step, such as signing up, opening a form or reading more, without having to add a separate block.
-
-.. image:: call-to-action-dialog.png
-
-The look of call to actions is configured by administrators on the business profile (Settings, Theme, Call to action style), so every call to action looks the same, whoever creates it.
+Three small additions that make pages clearer and more actionable. Editors can add a **call to action** button straight from the text editor, so readers know what to do next, and every button follows the organization's design. A new **Divider** block gives long pages structure. And editors can **link directly to a person** from text, so readers reach the right contact in one click.
 
 .. image:: call-to-action-result.png
 
-Link directly to users from text
+.. image:: divider-block-display.png
+
+Your brand, everywhere
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Editors can now link directly to a person from within a text. This makes it easy to point readers to the right contact, for example the owner of a process or the author of a statement, and reaches the person's profile in one click.
+**Who it's for:** Intranet owners and administrators.
 
-.. image:: link-to-user.png
-
-Rounded corners on images and cards
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Images and cards can now have rounded corners, so the intranet can follow a modern brand expression. The style is configured under Media Picker, Image style, on both tenant and business profile level, and is applied consistently wherever images are shown.
-
-.. image:: rounded-corners-image.png
+Make the intranet look like your organization. Upload your **own fonts** and use your corporate typography, apply **consistent text styles** to all content, and give images and cards **rounded corners** for a modern look. The result is an intranet that feels like part of your brand, not a separate tool.
 
 .. image:: rounded-corners-cards.png
 
-Consistent text styles
+.. REVIEW: The deck asks whether Custom Font can replace a custom extension. Confirm before claiming it reduces custom code.
+
+One-click page creation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Text styles can now be inherited consistently across content, so headings and body text look the same everywhere, regardless of who wrote the page.
+**Who it's for:** Intranet owners and employees who contribute.
 
-Custom fonts
+Turn contribution into a button. A "Share a story" or "Submit an idea" action button now creates the right type of page in a dialog, so contributors never have to leave the page they are on or choose between page types they do not need.
+
+Plan ahead, publish automatically
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Organizations can upload their own fonts and use their corporate typography in Omnia. Fonts can be set on tenant and business profile level, applied to read mode only or everywhere, and the out-of-the-box text styles can be applied to all matching elements across Omnia.
+**Who it's for:** Editors.
 
-.. image:: custom-font-settings.png
-
-.. image:: custom-font-text-styles.png
-
-Key Benefits:
-
-- Brand consistency: The intranet reflects the corporate identity, in both content and the surrounding interface.
-- Less custom code: Typography is configured in the settings instead of added with custom CSS.
-
-.. REVIEW: The deck asks whether Custom Font can replace a custom extension. Confirm before claiming "less custom code".
-
-Navigation selectors for links and labels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Wherever a navigation node is selected, for example in action buttons and navigation blocks, editors can now choose both link nodes and label nodes. This gives more flexibility when building navigation that mixes grouping and direct links.
-
-.. image:: navigation-selector-links-labels.png
-
-Action buttons can create pages in dialogs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The "Create page" action button has a new setting: select page type. If nothing is selected, the end user can choose from any page type allowed in the page collection. If one or more page types are selected, the end user can only choose among those.
-
-This lets an intranet owner offer a one-click "Submit an idea" or "Share a story" button that only offers the right page type, and the page is created in a dialog without leaving the current page.
-
-.. image:: action-button-create-page.png
-
-Scheduled publishing and auto-publishing combined
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Scheduled publishing and auto-publishing can now be used together. Editors can plan when a page goes live and still have the page publish automatically when other conditions are met, which supports campaigns and planned announcements with less manual follow-up.
+Scheduled publishing and auto-publishing can now be combined, so editors can plan campaigns and announcements ahead of time and spend less time on manual follow-up.
 
 .. REVIEW: Confirm what "auto-publishing" refers to here (e.g. after approval) and add a concrete example.
 
-Other authoring improvements
+More for editors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- New page and page type templates give editors a faster start.
-- The improved property selector makes it easier to find and pick the right properties.
-- Formatting is available in multilingual plain-text fields.
-- Auto-translated variations keep the original section order.
-- Editing document links is now possible in the rich text editor.
-- Non-sticky announcements are handled in the page editor and on SharePoint.
+- **A faster start:** new page and page type templates.
+- **Easier navigation picking:** choose both links and labels when selecting navigation.
+- **Easier property picking:** an improved property selector.
+- **Better multilingual work:** formatting in multilingual plain-text fields, auto-translated variations that keep the original section order, and machine translation of reusable sections.
+- **Fewer detours:** edit document links directly in the rich text editor.
+- **Announcements:** non-sticky announcements are handled in the page editor and on SharePoint.
 
 
-Pages, rollups and blocks
+Omnia and SharePoint, working as one
 ------------------------------------------------------
 
-Page Rollup: react and discover
+Omnia pages in SharePoint
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Readers can now react to content directly from Page Rollup, without opening the page. This lowers the threshold for engagement and gives authors faster feedback on which content works.
+**Who it's for:** Organizations that work in SharePoint, and the editors and employees in them.
 
-.. image:: page-rollup-card-reactions.png
+Some organizations have decided to work inside SharePoint, and others have a mix of people in SharePoint and Omnia. With 7.12, they no longer have to choose. Omnia pages can be **viewed, created and edited from SharePoint**, so people stay in the tool they use every day, and the content stays the same everywhere. Employees can even react to content from Page Rollup directly in SharePoint.
 
-Reacting is available in the Roller, Listing with image, Dynamic Roller, Card and Card (WCAG) views, and is enabled with the "Allow liking" setting.
+.. image:: sharepoint-rollup-reactions.png
 
-.. image:: page-rollup-reactions-list.png
-
-The new horizontal card view shows additional metadata next to the image, making it easier for readers to decide what to read.
-
-Event Rollup card view
+Quick publish and edit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Event Rollup card view has additional display options for event information, so organizers can show what matters most, such as time, location and type, directly on the card.
+**Who it's for:** Editors.
 
-.. image:: event-rollup-card-view.png
+Spot a typo or an old date? Editors can now open a page in a dialog, fix it and publish, without leaving the page they are on. The dialog also handles variations, takes control of a page when needed, and warns before publishing a machine-translated variation.
 
-Event participant counter
+.. image:: quick-edit-dialog.png
+
+SharePoint content and governance in Omnia
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A new block shows how many people have registered and how many places there are in total ("registered / max"), and shows a full state when the event is fully booked. Attendees see at a glance whether there is still room, and organizers avoid answering the same question repeatedly. The block has responsive settings.
+**Who it's for:** Intranet owners and administrators.
 
-Table of contents block
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Table of contents block creates navigation from the headings on a page, or from a configured property. For long pages, such as policies, guides and handbooks, readers can see the structure and jump straight to the section they need.
+Omnia increasingly treats SharePoint content as a first-class citizen:
 
-.. REVIEW: Landed after 7.11 but was never announced. Confirm the property-based option, and whether there is a screenshot available.
+- **Team News Rollup** gets better querying, multiple views and more filters, so team news can be shown the way each audience needs it.
+- **SharePoint page picker** lets editors select SharePoint pages where an Omnia page is expected.
+- **Process blocks** can be used on SharePoint pages.
+- **Sign-off requests** include SharePoint pages, so governance applies to important content wherever it lives.
+- **SharePoint Brand Center** is supported, so branding done there is respected.
+- **Matomo Analytics** covers SharePoint pages.
+- **The Omnia footer script** runs on SharePoint sites.
+- **Faster pages:** better performance of Omnia in SharePoint, including a better CSS load order on SPFx pages.
 
-Banner
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Banner block has been redesigned with new views and a new editor. Predefined layouts and a live preview make it easier for editors to create banners and immediately see the result.
-
-.. image:: banner-block-predefined-layouts.png
-
-In addition to the existing layouts, two new options are available for banners combining text and images: Image on left and Image on right. For these, you can also control the ratio between the image and text areas. The result is more variation in how campaigns and messages are presented, without custom design work.
-
-Quick Links: new app launcher view
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Quick Links has a new app launcher design with default icons provided, and the app icons view has new design options. This makes it simple to give colleagues a clear "my apps" area, in the style they know from Microsoft 365.
-
-Current navigation and Breadcrumb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Current navigation and Breadcrumb now come with style presets and a live preview, so the navigation can match the design of the intranet in a few clicks. Both also have responsive settings.
-
-.. image:: current-navigation-style-presets.png
-
-With the Custom preset, Current navigation can be fine-tuned: current node indicator, open and collapse controls, row density, hover state and indent guide.
-
-.. image:: current-navigation-block-settings.png
-
-.. image:: breadcrumb-block-style-presets.png
-
-The Breadcrumb block also has a Custom preset, with settings for the current node indicator, separator, font size and spacing, and hover state.
-
-.. image:: breadcrumb-block-settings.png
-
-Mega menu
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The workspace mega menu has new settings to centre the menu, show or hide icons and use uppercase letters. Dynamic content in the mega menu is also ordered better.
-
-.. image:: mega-menu-settings.png
-
-.. image:: mega-menu-centered.png
-
-Please note that the centering, uppercase and icon settings apply to the workspace mega menu only, not the classic mega menu.
-
-Threaded comments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Comments can be shown in a threaded view, with settings for the comment input style. Conversations stay together under the comment they respond to, which makes longer discussions on news and announcements much easier to follow. Deletion of comments is also tracked in more detail.
+.. REVIEW: Team News Rollup - confirm whether existing instances get the new views automatically.
 
 Document Library Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Document Library Display block makes it easy to display files and folders from a SharePoint document library directly on an Omnia page. It provides a familiar way for users to find and browse SharePoint content without having to leave the Omnia context.
+**Who it's for:** Employees and editors.
 
-.. image:: document-library-display-block.png
+Documents stay in SharePoint, but employees should not have to go looking for them. The Document Library Display block shows files and folders from a SharePoint document library right on the Omnia page, and employees can browse folders and search without leaving the intranet. Editors can reuse the views already maintained in SharePoint, so there is nothing extra to keep in sync. More SharePoint column types are supported, including currency and SharePoint-style date and time.
 
-Setting up the block starts with a SharePoint URL. From there, you can select the document library and, if needed, a specific folder as the starting point. This gives editors the flexibility to expose an entire library, or focus the block on the content most relevant to the page.
+.. image:: document-library-display-view.png
 
-.. image:: document-library-display-settings.png
-
-You can control how documents are presented by using an existing SharePoint view or by selecting the specific SharePoint fields to include. This makes it possible to reuse views that are already configured in SharePoint or tailor the information for a particular intranet experience.
-
-The block now has a search box and supports more SharePoint column types, including currency and SharePoint-style date and time. The List Rollup block also has a search box.
-
-Use Case Example:
-
-- A department shows its team folder from SharePoint on the department page, using the SharePoint view the team already maintains, so there is nothing to keep in sync.
-
-Blocks that hide when empty
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Blocks such as Document Rollup and process documents can now hide themselves when they have nothing to show. Pages stay clean, and readers do not see empty headings or empty lists.
-
-Other block improvements
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Built-in properties can be shown in the "Show in dialog" settings.
-- Glossary terms can have a configurable default style.
-- Targeting filters can hide the "include child terms" option, for a simpler filter.
-- A new "Omnia Content" enterprise property type.
+.. REVIEW: The existing 7.12 notes call this block "Document Rollup". Confirm the final name.
 
 
-Targeting and personalization
+Know your audience
 ------------------------------------------------------
 
 Run as persona
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-One of the most requested features from last year's Omnia Conference! Targeting personas make it possible for selected users to experience the intranet as a predefined persona, helping them understand what content different target audiences will see.
+**Who it's for:** Intranet owners, editors and administrators.
+
+One of the most requested features from last year's Omnia Conference! Targeting is powerful, but until now it was hard to know what a given audience really sees. With targeting personas, selected users can experience the intranet as a predefined persona, for example a frontline employee in a specific country, and verify that the right content reaches the right people. No test accounts, no asking colleagues to check.
 
 .. image:: run-as-a-persona-display.png
 
-This is particularly useful for intranet owners, editors and administrators who want to verify targeting and make sure the right content reaches the right people. Instead of creating test accounts or asking colleagues to check, they can see the start page, news and navigation exactly as, for example, a frontline employee in a given country would.
-
-Targeting personas are created and managed in Omnia Admin. Each persona represents a specific target audience. Access to create and manage targeting personas requires specific permissions.
-
-.. image:: persona-management.png
-
-Users with the required permissions can select a targeting persona in their profile settings. Once selected, they browse the intranet based on the targeting associated with that persona rather than their own. A clear frame around the intranet indicates that a persona is active, helping users distinguish the persona experience from their normal view.
-
-.. image:: persona-select-in-profile.png
+A clear frame around the screen shows when a persona is active. Personas affect targeting only: they do not impersonate anyone or give additional permissions.
 
 .. image:: persona-active-frame.png
 
-Important to note that targeting personas affect targeting only. They do not impersonate another user or grant additional permissions.
-
-Key Benefits:
-
-- Confidence: Verify targeted content before and after publishing.
-- Efficiency: No test accounts or manual checks.
-- Quality: Catch gaps, for example a target audience that sees nothing on its start page.
-
-Targeted semantic search filters
+Targeted search filters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Semantic Search filters can be targeted to the user, so each audience is offered the filters that are relevant for them.
+**Who it's for:** Employees and administrators.
+
+Semantic Search filters can be targeted to the user, so each audience only sees the filters that are relevant to them. Targeting filters can also hide the "include child terms" option for a simpler experience.
 
 
-Search and AI
-------------------------------------------------------
-
-Semantic Search: reindex and Excel files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Administrators can reindex the Semantic Search page and document indexes. A full reindex is an online rebuild: users keep searching in the current index while Omnia builds the replacement in the background, and only switches when the new index is ready. This means a reindex can be done without taking search away from users.
-
-.. image:: semantic-search-reindex.png
-
-A reindex is relevant when, for example, Semantic Search has just been enabled, a provider or major configuration has changed, pages or documents are unexpectedly missing or out of date, or search permissions appear out of sync.
-
-Semantic Search now also supports Excel files, so answers can include the content of spreadsheets, such as price lists, schedules and reports.
-
-Search result consolidation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-We have improved the alignment between the different types of search result templates, creating a more consistent experience when a search scope contains results from several sources or content types. Results share common properties (title, description, responsible person or author, date, URL and source location), presentation options and property mapping, and templates are evaluated in the order configured, in both Quick Search and Advanced Search.
-
-.. image:: search-result-consolidation-display.png
-
-.. image:: search-template-consolidation-quick-search.png
-
-This is especially useful for search solutions that combine different types of content. Readers can recognize what each result is at a glance, while content-specific functionality, such as document preview, is kept.
-
-Please note that it is not possible to set a default placeholder image for results without an image.
-
-.. REVIEW: "Admin customization of AI prompts (pre- and post-prompts)" is listed for 7.13. In 7.12 the pre- and post-prompts are in Content Builder AI. The semantic search pre- and post-prompts were announced in 7.11.x. Confirm whether the 7.13 item is the same or an extension, and wording here.
-
-Header search and Advanced Search
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The header search has a Microsoft 365 look and feel, and is WCAG-compliant. Advanced Search has new refiners.
-
-AI-ready content
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The data structure has been improved to enhance Copilot and AI capabilities, so AI assistants can better find and understand your content.
-
-
-Omnia and SharePoint
-------------------------------------------------------
-
-Omnia full page experience in SharePoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Some organizations have decided to run strategically inside SharePoint, and others have a hybrid setup where some people work in SharePoint and others work in both SharePoint and Omnia. In 7.12 it is possible to view, create and edit Omnia pages from SharePoint, so these organizations get the Omnia publishing experience without leaving the tool they use every day.
-
-An administrator activates the "Omnia full page experience" feature in the publishing app, which provisions a system page in the SharePoint site page library. A default rendering is selected in the tenant settings, and Page Rollup gets a setting to open pages in the SharePoint full page, so readers can open Omnia pages in SharePoint straight from a rollup.
-
-.. image:: sharepoint-full-page-feature.png
-
-.. image:: sharepoint-full-page-rollup-settings.png
-
-An Omnia block can be inserted on a page in SharePoint to show a selected Omnia page. With the "Allow edit" setting, authors get quick access to edit mode in SharePoint, with reduced functionality, and to the full edit mode in Omnia.
-
-.. image:: sharepoint-full-page-block.png
-
-Please note that "Open in SharePoint full page" is disabled if no default rendering has been set, or if no publishing site has the feature enabled.
-
-Readers can also react to content in Page Rollup directly from SharePoint, using the "Allow liking" setting.
-
-.. image:: sharepoint-rollup-reactions.png
-
-Please note that Omnia's like and comment controls cannot be added as a SharePoint web part (SPFx), as this would conflict with SharePoint's built-in functionality. They are available in the full page experience of Omnia pages.
-
-Key Benefits:
-
-- Flexibility: Customers can choose where people work, in SharePoint or Omnia, without separating the content.
-- One source: Omnia pages are the same wherever they are viewed.
-- Familiar tools: Authors who prefer SharePoint can stay there.
-
-.. REVIEW: Slide drafts asked for author entry points and licence/permission prerequisites. Add once confirmed.
-
-Quick publish and edit dialog
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The page dialog has an improved viewing and editing experience. An edit button is shown if the user has edit permission, visible properties are configured from the page type, the Variation Picker is visible, and the dialog shows when a page has been taken over with "Take control". When a machine-translated variation is open, a warning is displayed and publishing is disabled. Editors can fix a typo or update a date without leaving the page they are on.
-
-.. image:: quick-publish-dialog.png
-
-.. image:: quick-edit-dialog.png
-
-Also in SharePoint
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- **SharePoint page picker.** Pick SharePoint pages where an Omnia page is expected, such as in links and rollups.
-- **Team News Rollup.** Improved querying, multiple views and additional filter options, so team and site news from SharePoint can be presented the way each audience needs. REVIEW: confirm whether existing instances get the new views automatically.
-- **Process blocks on SharePoint pages.** Process documents and blocks can now be used on SharePoint pages.
-- **Sign-off requests include SharePoint pages.** Governance of important content also applies to pages that live in SharePoint.
-- **SharePoint Brand Center.** Omnia supports the SharePoint Brand Center, so branding set there is respected.
-- **Matomo Analytics for SharePoint pages.** Page statistics also cover pages in SharePoint.
-- **The Omnia footer script runs on SharePoint sites.**
-- **Better performance** of Omnia running in the SharePoint context, including a better CSS load order on SPFx pages.
-
-
-Navigation and everyday experience
+Find things and find your way
 ------------------------------------------------------
 
 Everywhere Panel
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The Everywhere Panel places the mega menu in a permanent panel on the left. It is always visible while users browse, and gives them quick access to intranet areas and content in Omnia and SharePoint. Instead of opening a menu every time, readers always have their key destinations within reach.
+**Who it's for:** Employees, and intranet owners who design the navigation.
+
+Keep the key destinations always within reach. The Everywhere Panel puts the mega menu in a permanent panel on the left, visible while employees browse, in Omnia and SharePoint. Because it reuses the mega menu, there is no second navigation to maintain, and different audiences can get different panels.
 
 .. image:: everywhere-panel.png
 
-The panel is switched on with the "Show left panel" setting in the publishing app feature and configured in Workspace settings, under Left panel. Everything that is supported in the mega menu is supported in the panel: layouts and links, audience targeting, theming, responsive views and multilingual titles. If the navigation bar is also placed on the left, the left panel is shown before the left navigation bar.
+.. REVIEW: The label in the panel settings still says "mega menu"; the Q&A says this will be updated.
 
-Key Benefits:
+.. REVIEW: Three QA items were open on the functional card (OmniaMono #3655): layout theming in read mode, layout max width/height, and left panel alignment in Microsoft Teams. Confirm they are fixed, or list them as known issues.
 
-- Orientation: Users always see where they are and where else they can go.
-- Reuse: The same mega menu content is used, so there is no second navigation to maintain.
-- Targeted: Different audiences can get different panels.
+.. REVIEW: "Everywhere Panel" is also the name of an older component in another product. Make sure support does not mix them up.
 
-Please note that:
-
-- The panel is placed on the left, regardless of the top or left mode of the mega menu. An existing mega menu that is set to "left" and also uses left navigation nodes will therefore show two menus after the upgrade. See Before you upgrade.
-- The Everywhere Panel is not the same as the older "Everywhere panel" component in other products.
-
-.. REVIEW: Three QA items were open on the functional card (OmniaMono #3655): layout theming settings in read mode, max width/height, and left panel alignment in Microsoft Teams. Confirm they are fixed, or add to known issues. Teams is also mentioned on the card as a place where the panel shows.
-
-.. REVIEW: The label in the panel settings still says "mega menu". The Q&A says this will be updated.
-
-New date and time picker
+Navigation that fits your design
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-A new date and time picker has separate tabs for date and time, and is WCAG-compliant. It is quicker to use and works with keyboard and assistive technology.
+**Who it's for:** Intranet owners.
 
-.. image:: date-time-picker-date.png
+Make the navigation match the intranet design in a few clicks. Current navigation and Breadcrumb now come with style presets and a live preview, and the workspace mega menu can be centered, with or without icons and uppercase letters.
 
-.. image:: date-time-picker-time.png
+.. image:: mega-menu-centered.png
 
-Notifications and subscriptions
+A better app launcher
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- A count badge in the notification panel shows how many notifications are waiting.
-- People can subscribe to publishing channels with a new action button handler, and manage them in a reworked "My subscriptions" view. Readers choose which channels matter to them and stay informed without searching.
+**Who it's for:** Employees and intranet owners.
 
-Updated "Your session has expired" screen
+The app launcher has a new design with default icons provided, and it is aligned with the Microsoft 365 experience. It gives colleagues a clear "my apps" area in a style they already know.
+
+Better search results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The message shown when a session has expired has a new, smaller design that is less disruptive. It uses the theme colors of the tenant.
+**Who it's for:** Employees and search administrators.
 
-.. image:: session-expired.png
+When results come from several sources, they should still look like one search. Search result templates are now aligned, so pages, documents and other content show the same key information, and employees recognize what each result is at a glance, while keeping content-specific features such as document preview.
 
-Other everyday improvements
+.. image:: search-result-consolidation-display.png
+
+Header search also has a Microsoft 365 look and feel and is WCAG-compliant, and Advanced Search has new refiners.
+
+Semantic Search: fresher and broader
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- The App Selector is aligned with the Microsoft 365 experience. It is still a manually maintained list of links based on Shared links, and supports custom, Microsoft, flag and Font Awesome icons.
-- Dynamic font sizing based on action button size.
-- Quick Publish dialog improvements.
-- The setup wizard can now create a Business Profile.
+**Who it's for:** Employees and administrators.
+
+Employees can now get answers from **Excel files** too. Administrators can **reindex** the page and document indexes if something looks stale or out of sync, while employees keep searching: the new index is built in the background and only takes over when it is ready.
+
+AI-ready content
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Who it's for:** Administrators and intranet owners.
+
+The way Omnia stores content has been improved to help Copilot and other AI find and understand it.
+
+.. REVIEW: "Admin customization of AI prompts (pre- and post-prompts)" is listed for 7.13. In 7.12 central pre- and post-prompts are in Content Builder AI, and Semantic Search pre- and post-prompts were announced in 7.11.x. Confirm whether the 7.13 item is the same or an extension.
 
 
-Governance and administration
+Engage your readers
 ------------------------------------------------------
 
-Bypass page approval
+React and discover in Page Rollup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Selected users can bypass page approval, for example when something urgent must be published without delay. This keeps the approval process strict for everyone else, while still allowing exceptions for authorized users.
+**Who it's for:** Employees and intranet owners.
 
-.. REVIEW: Add who can bypass (role/permission) and whether it is logged.
+Employees can react to content directly from Page Rollup, without opening the page, which makes engagement effortless and shows authors what resonates. A new horizontal card view adds extra metadata, so readers can choose what to read faster.
 
-Group membership synchronization for Sign-off requests
+.. image:: page-rollup-card-reactions.png
+
+Better banners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Sign-off requests can follow group membership, so the right people are always asked to sign off when teams change. Fewer manual updates, and fewer people missing a request.
+**Who it's for:** Editors and intranet owners.
 
-Page collection administrators can take control
+The Banner block has been redesigned with new views and a new editor with live preview. Editors can place the image to the left or right of the text, and see the result straight away, for more variation in campaigns and messages without design work.
+
+.. image:: banner-block-predefined-layouts.png
+
+Events people can act on
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Page collection administrators can cancel an approval and take control of a page. A page stuck in approval because the approver is absent no longer needs to wait.
+**Who it's for:** Employees and event organizers.
 
-Other governance improvements
+The Event Rollup card view shows richer event information, and a new participant counter shows "registered / max" and a clear full state. Attendees see at a glance if there is still room, and organizers answer fewer questions.
+
+.. image:: event-rollup-card-view.png
+
+Long pages that are easy to navigate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-- Machine translation of reusable sections.
-- Distribution groups can be used in promotion channels.
-- Navigating without a variation.
+**Who it's for:** Employees and editors.
 
+The new Table of contents block builds navigation from the headings on a page, or from a configured property. Policies, guides and handbooks become much easier to scan, and readers can jump straight to what they need.
+
+.. REVIEW: Landed after 7.11 but was never announced. Confirm the property-based option, and whether a screenshot is available.
+
+Conversations that are easy to follow
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Who it's for:** Employees and editors.
+
+Comments can be shown in a threaded view, so replies stay together under the comment they respond to. Longer discussions on news and announcements are much easier to follow.
+
+Stay informed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Who it's for:** Employees.
+
+Employees can subscribe to the publishing channels they care about, and manage them in a reworked "My subscriptions" view. A count badge in the notification panel shows what is waiting.
+
+More for readers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- **Cleaner pages:** blocks such as Document Rollup and process documents can hide themselves when they have nothing to show.
+- **A new date and time picker** that is quick to use and WCAG-compliant.
+- **A calmer "session expired" screen** with a new, smaller design.
+- **Better lists:** a search box in List Rollup.
+
+
+Governance with less friction
+------------------------------------------------------
+**Who it's for:** Intranet owners and administrators.
+
+- **Bypass page approval** for selected users, so urgent content can be published without delay while the process stays strict for everyone else.
+- **Sign-off requests follow group membership**, so the right people are always asked as teams change.
+- **Page collection administrators can take control** of a page and cancel its approval, so a page does not wait for an absent approver.
+- **Distribution groups** can be used in promotion channels.
+- **Navigating without a variation** is supported.
+- **Setup wizard** can now create a business profile.
+- **Glossary terms** can have a default style, and built-in properties can be shown in dialogs.
+- **A new "Omnia Content" enterprise property type.**
+
+.. REVIEW: Bypass page approval - add who can bypass (role/permission) and whether it is logged.
+
+
+Faster, smoother, more accessible
+------------------------------------------------------
 
 Performance
-------------------------------------------------------
-Omnia 7.12 includes a broad performance improvement. Most of the client code has been migrated to the Vue Composition API, the editor is only loaded when it is needed, fewer bundles are loaded with each page, and pages jump around less while they load. SharePoint (SPFx) pages also load their CSS in a better order.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Who it's for:** Everyone.
 
-The result is a faster and calmer experience for readers, and a quicker start for editors who only read most of the time.
+A broad performance overhaul makes Omnia feel faster. The editor loads only when needed, fewer bundles load with each page, and pages jump around less while loading. SharePoint pages load their styling in a better order too.
 
 .. REVIEW: No benchmark numbers are available, so none are given.
 
-
 Accessibility (WCAG)
-------------------------------------------------------
-7.12 continues the work to make the intranet usable by everyone, which is also important for organizations with accessibility requirements, such as public sector customers.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Who it's for:** Employees, and organizations with accessibility requirements, such as public sector customers.
 
-- Header search is WCAG-compliant.
-- WCAG improvements for the Page Rollup calendar view (with a new design), the card view, People Rollup and the filter components across all rollups.
-- WCAG improvements for the notification panel, comments, tutorials, metrics and the export buttons.
-- New refiners in Advanced Search are WCAG-compliant.
-- A new WCAG-compliant date and time picker.
-- The heading element can be configured on all blocks, not only the FAQ block, so authors can keep a correct heading hierarchy (H1, H2, H3, and so on).
-- Dialog headers are standardized as H2.
-- Missing alternative texts are fixed throughout.
-- A shared, accessible pagination control.
+An intranet that works for everyone. 7.12 brings WCAG improvements to header search, Page Rollup (card view and the calendar view with its new design), People Rollup, filters in all rollups, the notification panel, comments, tutorials, metrics, export buttons and the new Advanced Search refiners. Alt texts are fixed throughout, pagination is now one shared accessible control, and dialog headers are standardized. Editors can set the heading level of every block, not only the FAQ block, to keep a correct heading structure.
 
 .. REVIEW: "Calendar rollup new design" - confirm this is the Page Rollup calendar view.
 
 
 Before you upgrade
 ------------------------------------------------------
-- **Custom CSS or JavaScript.** The WCAG work and the move to the Composition API have touched many frontend elements. Tenants with custom CSS or JavaScript should be checked after the upgrade.
-- **Extensions.** Check custom extensions for compatibility.
-- **Mega menu.** A menu set to "left" that also has left navigation nodes will show two menus after the Everywhere Panel is turned on.
+**Who it's for:** Administrators and consultants.
+
+- **Custom CSS or JavaScript:** the WCAG work and the move to the Vue Composition API have touched many frontend elements. Check tenants with custom CSS or JavaScript after the upgrade.
+- **Extensions:** check custom extensions for compatibility.
+- **Mega menu:** a mega menu set to "left" that also has left navigation nodes will show two menus when the Everywhere Panel is turned on.
 
 
 Recently added
