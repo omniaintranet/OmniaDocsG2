@@ -123,12 +123,13 @@ When you have done that every new page in the page collection creates a term in 
 
 Settings for approval
 ----------------------
-When approval is activated, the following settings are available:
+When approval is activated, the following settings are available (image from Omnia 7.12):
 
-.. image:: page-collection-approval-settings-v79.png
+.. image:: page-collection-approval-settings-v712.png
 
 + **Apply to authors only**: If you select this, editors never need approval, they can always publish directly. When an author publishes, approval is needed.
 + **Apply to new pages only**: When this option is selected, only creating new pages needs approval, not when updating an existing page.
++ **Allow approval bypass**: Available in Omnia 7.12 and later. Use this option if certain users or groups shouldn't need approval when publishing. 
 + **Multi step approval**: Normally, when this option is not used, only one colleague can approve a page. When this option is used, a number of steps for approval can be set up, meaning several colleagues can need to approve a page. For more information, see below.
 
 When approval is activated, you can select who can approve the creation of a page this way (also used in the multi step approval settings, see below):
