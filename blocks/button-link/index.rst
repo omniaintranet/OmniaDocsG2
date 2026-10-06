@@ -203,13 +203,14 @@ To be able to edit a form created from an action button, add a form rollup with 
 
 Create page
 -------------
-Using this button the action Create page can be executed:
+Using this button the action Create page can be executed (image from Omnia 7.12):
 
-.. image:: action-button-create-page-v75.png
+.. image:: action-button-create-page-v712.png
 
 + **Publishing app**: Select publishing app to create the new page in.
 + **Set default value from current page**: When you select theis option, also choose property in the field shown. When this is selected, the new page receives the value for this property from the current page.
-+ **Disable redirect to created page**: Normally when a page has been created, the new page is activated so the author can, for example, continue working on the content. If this isn't needed the process can be sonewhat faster if this option is selected.
++ **Disable redirect to created page**: Available in Omnia 7.11 and earlier. Normally when a page has been created, the new page is activated so the author can, for example, continue working on the content. If this isn't needed the process can be sonewhat faster if this option is selected.
++ **Navigation mode**: Available in Omnia 7.12 and later. This settings replaces the above setting and "Disable redirect to created page" is one of the available options, together with "Navigate to Omnia page" and "Navigate to SharePoint full page". The "Navigate to SharePoint full page" has to with the full page experience in SharePoint. More information can be found here: :doc:`The full page experience </use-omnia-in-sharepoint/full-page-experience/index>`
 
 Event management
 ------------------
