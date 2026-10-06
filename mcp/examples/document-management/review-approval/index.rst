@@ -14,6 +14,7 @@ What you can ask for
 + Cancel a running approval workflow.
 + Send a draft to review, add a reviewer, forward a review to someone else, or remove a reviewer.
 + Complete a review task, or cancel the whole review.
++ Complete a review reminder - keep the document, revise it, or unpublish it.
 
 Approving and rejecting
 ***********************
@@ -60,7 +61,7 @@ Sending a draft to review
    Send the draft of "Fire Safety Procedure" to review by anna@contoso.com and
    erik@contoso.com, due 10 October, with the instruction "Check section 3"
 
-At least **one reviewer** is needed, given by e-mail address. A due date and instructions are optional. Afterwards the connector reads the new review task back and warns you if it was cancelled straight away.
+At least **one reviewer** is needed, given by user name, e-mail address or Omnia user id. Every reviewer must be an **existing user in the tenant**; if one cannot be found, nothing is sent and you are told which. Instructions are optional, and the due date is **14 days from today** unless you give one. Each reviewer gets a task of their own, and you are told how many were created. Afterwards the connector reads the new review task back and warns you if it was cancelled straight away.
 
 Changing who reviews
 --------------------
@@ -77,7 +78,7 @@ Changing who reviews
 
    Remove the review task that was sent to anna@contoso.com
 
-Adding a reviewer keeps the review running. Forwarding hands a task to someone else, optionally with a comment. Removing a reviewer removes only that task; if it was the last open task, the review is completed.
+Adding and forwarding take a user in the same way as sending to review. Adding a reviewer keeps the review running. Forwarding hands a task to someone else, optionally with a comment. Removing a reviewer removes only that task; if it was the last open task, the review is completed.
 
 Completing and cancelling
 -------------------------
@@ -90,7 +91,23 @@ Completing and cancelling
 
    Cancel the review of "Fire Safety Procedure"
 
-Cancelling a review ends every open review task on the document.
+Cancelling a review ends every open review task on the document. Completing or cancelling is refused if no open review task or review workflow can be found for it.
+
+Review reminders
+****************
+
+When a published document reaches its review date, Omnia creates a **review reminder** task. A reminder is not a workflow; it asks what should happen to the document:
+
+::
+
+   The review reminder for "Fire Safety Procedure" has come up - the document
+   is still correct, keep it as it is
+
+Keeping the document as it is **confirms the review**, and a new review date is set from the document type's review schedule. You can also complete the reminder in one of the other two ways, optionally with a comment:
+
++ **Create a draft**, to revise the document.
++ **Unpublish** the document.
++ **Set a new review date** and keep the document as it is.
 
 Good to know
 ************
@@ -100,6 +117,8 @@ Good to know
 + Approving and rejecting check that the **controlled-document library** is activated on the site first.
 + A task that is **already completed or cancelled**, or whose draft has already been published or removed, cannot be approved or rejected. The connector refuses with an explanation instead of sending an incomplete task to Omnia.
 + Task ids come from the task list. They are never invented, so ask for the list if you do not have one.
++ **A task in the list is not necessarily an approval task.** Before approving or rejecting, the connector reads the task and continues only if it really is an approval of a document. Other kinds of document task cannot be completed through the connector, and you are told so.
++ **An approver** given when publishing is checked against the tenant's users, and must be an existing user.
 + **Approval comes before publishing.** When you ask to approve a document, the approval tasks are completed first, and the connector never publishes a document in place of an approval.
 + Sending to review, completing a review and cancelling a review each take **two steps** in Omnia. If the second step fails, you are told that the first one already happened - for example that the review task was created - so you know what state it is in.
 + A **reason** can be given when cancelling a review, but it is not stored yet.
@@ -120,3 +139,5 @@ Actions
 + ``ReviewTask.RemoveReviewer`` - remove one reviewer's task.
 + ``ReviewTask.Complete`` - complete a review task.
 + ``ReviewTask.CancelWorkflow`` - cancel the whole review.
++ ``ReviewReminder.Confirm`` - keep a document as it is and set its next review date.
++ ``ReviewReminderTask.Complete`` - complete a review reminder by creating a draft, unpublishing, or setting a new review date.

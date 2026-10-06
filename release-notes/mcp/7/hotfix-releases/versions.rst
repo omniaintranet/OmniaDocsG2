@@ -1,6 +1,33 @@
 Release 7.11
 ============
 
+Release 7.11.33
+---------------------------------------
+
+- Added support for seeing which sections, columns and blocks of a page are the page's own and which are inherited from its page type, page collection or an External Layout
+- Added support for previewing and applying changes to a page's own layout: changing block settings, changing the padding or background of a section, column or block, and adding or removing blocks. Changes are saved to the draft, and inherited or shared layouts, scripts and styles are never changed this way
+- Added support for listing the pages, page collections and page types of a Publishing App with their state, reading the version history of a page, page collection or page type, and listing what a page refers to
+- Added support for publishing a page collection and for discarding its draft
+- Publishing a page or a page collection, archiving a page and changing an Html/Script block on a page type now show a preview that must be approved first. An approval is valid for 10 minutes, can be used once, and no longer applies if the content has changed since the preview
+- Added support for listing the connector's actions and describing what each one needs and changes, and for listing the blocks and the layout templates the connector knows about
+- Added support for checking what happened to an earlier change. When a change was sent but no clear answer came back, or was cancelled while running, the result is now reported as unknown instead of failed, with advice to read the content back before retrying
+- Asking again to create a page or activate a feature after an unanswered attempt no longer creates a second page or starts a second activation
+- Added support for completing review reminders, either by keeping the document and setting a new review date, or by creating a draft or unpublishing the document
+- Added support for deleting a plain controlled document draft that is not in any workflow
+- Publishing a controlled document draft by its title now follows the document type: it is published directly when the type does not require approval, and sent for approval otherwise. Publishing directly is refused when approval is required
+- Changing properties on a controlled document draft now keeps every property that was not mentioned, and the draft is read back to verify that the requested values were saved and nothing else changed
+- Reviewers and approvers can now be given by user name, email address or user id and must match an existing user. A review is due in 14 days unless a due date is given
+- Unpublishing a controlled document now requires a reason
+- A controlled document title that looks like a file name, or a file name without an extension, is now refused when creating a document
+- A URL of another tenant is now refused, and a business profile or app chosen for one request no longer carries over to the next one
+- A writing action sent to the Read tool, or a reading action sent to the Write tool, is now refused with the name of the right tool
+- Sign-in errors now return a clear reason, such as a missing, expired or invalid token
+- Image links that lead to a private or internal network address are now refused, including through redirects
+- Fixed publishing a page moving the page's own sections above the sections inherited from its page type
+- Fixed date properties on controlled document drafts shifting each time the draft was saved
+- Fixed downloading a controlled document without a file name, and downloading now always returns a published edition
+- Fixed the document id of a newly created controlled document sometimes being wrong, and a false warning about an orphaned draft
+
 Release 7.11.32
 ---------------------------------------
 

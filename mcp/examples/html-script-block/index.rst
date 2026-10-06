@@ -69,11 +69,13 @@ Because of that, the connector asks first. The first request changes nothing and
 
 The count is a **lower bound**: it covers published pages you are allowed to see, so drafts and pages outside your permissions are not in it. Only after you confirm is the block written.
 
+**Changing** a block that is already on a page type works the same way: you see a preview with the number of pages it reaches, and you approve that preview. The approval covers the count you saw - if the page type has changed in the meantime, or the approval is more than 10 minutes old, you are shown a new preview. See :doc:`/mcp/examples/capabilities/index`.
+
 Good to know
 ************
 
 + Changes are saved to the **draft**. A page or page type has to be published afterwards for anyone to see the block.
-+ A **page collection** has to be checked out first, and there is no connector action that publishes an existing page collection - it has to be published from the Omnia interface. Until it is, the page collection stays checked out to you and other editors cannot change it.
++ A **page collection** has to be checked out first, and published afterwards - see :doc:`/mcp/examples/page-collection/index`. Until it is published or the draft is discarded, the page collection stays checked out to you and other editors cannot change it.
 + A page collection's block goes on **its own landing page**, not on the pages inside it. Those inherit their layout from their page type instead.
 + The script does **not run while a page is being edited**, only when the page is rendered.
 + Wrap a script in ``(function(){ ... })();`` or ``(async () => { ... })();``. The script runs in the page's global scope, so top-level declarations collide with other blocks on the page.

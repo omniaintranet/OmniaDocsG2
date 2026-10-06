@@ -20,6 +20,7 @@ What you can ask for
 + Publish a draft - directly or through approval - and publish a new edition.
 + Publish a draft you only know by its title.
 + Republish a document, recover a document whose publishing failed, and unpublish a document.
++ Delete a plain draft, for example one created by mistake.
 
 Finding a document
 ******************
@@ -87,7 +88,9 @@ Downloading the file
 
    Download the file of "Fire Safety Procedure" so I can edit it
 
-You get the original file - usually a Word document - of the published edition, or of the draft if you ask for that. A view-only PDF copy can be downloaded instead. The connector does not change the contents of the file itself; you edit it and upload it again.
+You get the original file - a Word, Excel or PowerPoint document - of the **latest published edition**, unless you name another edition. A view-only PDF copy is downloaded only if you ask for one. The connector does not change the contents of the file itself; you edit it and upload it again.
+
+Only **published** editions can be downloaded. A draft's file is opened in SharePoint instead.
 
 Creating a new document
 ***********************
@@ -103,9 +106,13 @@ You are asked for what the connector cannot know:
 2. The **template** the file is created from. A template is required - there is no blank-document option - and only templates that actually have a file can be used. You are offered the valid ones.
 3. The **file name**. If you do not give one it is derived from the title, for example ``fire-safety-procedure.docx``, and shown to you so you can change it.
 
+The **title** is the readable name of the document, without a file extension, and the **file name** always has one. A title that looks like a file name, or a file name without an extension, is refused so the two do not get mixed up.
+
 You can also give the document's language and property values. Everything is summarised back to you before the document is created.
 
 The new document is created as a **draft**. It is not published until you ask for it.
+
+The document id you get back is the one Omnia gives the document. It can take a few seconds to appear; if it has not appeared yet, the draft is still created and you are told the id will show up shortly.
 
 .. TODO screenshot: Claude asking for the document type and template
 
@@ -119,7 +126,7 @@ Start a new revision
 
    Create a new revision of the published "Fire Safety Procedure" so I can edit it
 
-A document can have only one draft at a time. If there already is one, the request is refused and you are told to work on the existing draft - or, if it is locked by an approval workflow, to finish or cancel that workflow first.
+A document can have only one draft at a time. If there already is one, the request is refused. Check the existing draft and the site's tasks to see whether it is in an approval workflow; then either work on the existing draft, or finish or cancel the approval first.
 
 Upload an edited file
 ---------------------
@@ -140,7 +147,11 @@ Change properties
 
 You are always asked for the exact value and shown what will be written before anything changes. The property is matched against the tenant's enterprise properties; if the name does not match one, you are offered the available properties to choose from instead of the connector guessing the closest one.
 
-Only the properties you mention change. After the change the connector **reads the value back**, and reports a failure if it did not actually stick - a "saved" message on its own is never taken as proof.
+Only the properties you mention change. Every other property on the draft is **kept as it is** - if the current values cannot be read first, nothing is written. System properties, such as the document id, edition and created and modified dates, are never written. Dates are kept in UTC, so they do not shift each time the draft is saved.
+
+After the change the connector **reads the draft back** and compares it with what was asked for. It reports a failure if a value did not actually stick, or if a property you did not mention changed anyway - a "saved" message on its own is never taken as proof.
+
+A taxonomy or person property is cleared only when you ask for it to be cleared.
 
 Changing a property **never publishes** the document. You are asked afterwards whether you want to publish it.
 
@@ -169,7 +180,7 @@ Publishing
 
 The connector never decides on its own whether a draft goes through approval. You say it:
 
-+ **With approval** needs an **approver** and a real **due date**. The draft is submitted to the approval workflow, and it is published when the approver approves it - see :doc:`/mcp/examples/document-management/review-approval/index`.
++ **With approval** needs an **approver** - an existing user in the tenant - and a real **due date**. The draft is submitted to the approval workflow, and it is published when the approver approves it - see :doc:`/mcp/examples/document-management/review-approval/index`.
 + **Directly** publishes the draft straight away, without approval.
 
 If you do not say which, you are asked. The choice, the approver and the due date are summarised back to you before anything is submitted.
@@ -186,7 +197,12 @@ Publishing a draft by its title
 
 The connector first lists the drafts on the site, then matches the title - an exact match, or a title that starts with what you wrote. If several drafts match, you choose one. If none does, you get the list of drafts that exist, and nothing is created or published.
 
-By default it tries to publish directly, and sends the draft for approval if the document requires it. That is why an **approver** and a **due date** are needed unless you ask for direct publishing only. The approver is checked before anything is published, so a mistyped name fails without leaving the draft half-way.
+The draft's **document type decides** whether it needs approval - the connector reads it before doing anything:
+
++ If the document type **does not require approval**, the draft is published directly, and no approver is asked for.
++ If the document type **requires approval**, the draft is sent for approval, and you are asked for an **approver** - by user name or email address - and a **due date**. Asking to publish it directly is refused. If the document type cannot be read, nothing is published.
+
+The approver is checked before anything is sent, so a mistyped name fails without leaving the draft half-way. You are told whether the draft was **published** or **sent for approval** - a draft sent for approval is not published until it is approved. Publishing by title publishes a **new edition**.
 
 Republishing
 ------------
@@ -211,9 +227,28 @@ Unpublishing
 
 ::
 
-   Unpublish "Fire Safety Procedure 2024" on the QMS site
+   Unpublish "Fire Safety Procedure 2024" on the QMS site - it has been
+   replaced by the 2026 procedure
 
-Unpublishing removes the published document. Afterwards the connector checks whether the document is really gone, and tells you if it can still be found - the removal happens in more than one place, so it can partly fail. Confirm carefully before you approve it.
+A **reason** is required, and you are asked for one if you do not give it. The document is moved to the **recycle bin** unless you ask otherwise, and only a document that is currently published can be unpublished.
+
+Unpublishing removes the published document. Afterwards the connector checks whether the document is really gone, and tells you if it can still be found - the removal happens in more than one place, so it can partly fail. A document that is now archived or in the recycle bin counts as unpublished. Confirm carefully before you approve it.
+
+Deleting a draft
+****************
+
+::
+
+   Delete the draft "Fire Safety Procedure - copy" on the QMS site, it was created by mistake
+
+A **plain draft** - one that is not in any workflow - can be deleted, for example one created by mistake. The draft is read again from the site first, and it is deleted only if it is still a plain draft:
+
++ A draft that is in an **approval workflow**, or has any status other than draft, is not deleted.
++ A draft that is **locked** or being processed is not deleted.
++ A draft that is already deleted or recycled is not deleted again.
++ The draft is looked up among the first 100 drafts on the site.
+
+The draft is sent to the recycle and deactivation flow, which cannot be undone through the connector, so confirm carefully before you approve it. Deleting a draft is never a way around an approval, a lock or a published edition.
 
 Good to know
 ************
@@ -222,6 +257,7 @@ Good to know
 + **Everything runs as you in SharePoint.** You need access to the site, and to create or change documents you need write access to it. If SharePoint does not accept your sign-in you get a clear error, and the connector never falls back to a system account.
 + The **controlled-document library** has to be activated on the site before a document can be created there - see :doc:`/mcp/examples/document-management/controlled-document-library/index`.
 + A **file name that already exists** in the library is refused when creating a document. Choose another one.
++ **An error ends the attempt.** When an action is refused, you are told why and the client stops there - it does not try to reach the same result another way, such as through the browser or SharePoint directly.
 + The document **title and the document id are different things**. The connector always uses the id it read from Omnia, never the title, and never mixes an id from one site with another site.
 + A tenant-wide title search covers at most the **first 25 sites** you follow and does not page. Name the site to search the others, or to page through a large site.
 + Searching one site matches the title against the site's published documents one page at a time. If a document is not found, ask for the next page.
@@ -240,7 +276,7 @@ Actions
 + ``Document.GetDraft`` - read the current draft and all its properties.
 + ``Document.GetEdition`` - the edition, revision and status of a document, to confirm it is the right one.
 + ``Document.GetFields`` - the property values stored on a document's file.
-+ ``Document.DownloadFile`` - download the file of a published edition or a draft.
++ ``Document.DownloadFile`` - download the file of a published edition.
 + ``Document.CreateNew`` - create a new controlled document as a draft.
 + ``Document.CreateDraft`` - start a new revision draft of a published document.
 + ``Document.UploadEditedFile`` - upload an edited file as the draft.
@@ -253,4 +289,5 @@ Actions
 + ``Document.PublishDraftByTitle`` - publish a draft found by its title on a site.
 + ``Document.Republish`` - publish the pending draft of a document found by its title.
 + ``Document.FixPublishingFailed`` - resume a publish that failed part-way.
-+ ``Document.Unpublish`` - remove a published document.
++ ``Document.Unpublish`` - remove a published document, with a reason.
++ ``Document.DeleteDraft`` - delete a plain draft that is not in any workflow.

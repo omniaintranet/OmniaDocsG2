@@ -16,6 +16,7 @@ What you can ask for
 + Publish the current draft.
 + Discard the current draft and go back to the published version.
 + Archive a page.
++ Change the page's own layout - its blocks and their settings - see :doc:`/mcp/examples/page-layout/index`.
 
 Creating a page
 ***************
@@ -45,7 +46,8 @@ An image property is the one property that needs a short conversation of its own
 .. TODO screenshot: image candidates shown as thumbnails to pick from
 
 + **Alt text is required.** You are asked for it and it is never invented, because a wrong description is worse for someone using a screen reader than none at all. For an image that carries no information, say it is decorative and an empty alt text is stored.
-+ Only ``https`` links work, and the format is identified from the file itself - JPEG, PNG, GIF, BMP and WebP are supported; SVG and ICO are not.
++ Only ``https`` links to **public addresses** work. A link that leads - directly or through a redirect - to a private, internal or local network address is refused, and at most 3 redirects are followed. The image can be at most 10 MB.
++ The format is identified from the file itself - JPEG, PNG, GIF, BMP and WebP are supported; SVG and ICO are not.
 + If the image is larger than the tenant's limit, the tenant's image scalings are offered and you choose one - including keeping the original size.
 + Cropping and ratio renditions are not supported through the connector.
 + The tenant's central image library is not supported yet.
@@ -89,6 +91,17 @@ Changing a page **checks it out for you** if needed, and only the fields you men
 
    Discard the draft on the travel policy page
 
+Publishing
+**********
+
+::
+
+   Publish the travel policy page
+
+Publishing makes the draft live for everyone who can read the page, so it is shown to you as a **preview** first: which version goes live, that the checkout ends and the page's publish notifications are sent, and that publishing cannot be undone through the connector. Nothing is published until you approve the preview. If the page is changed by someone else after the preview, the approval no longer applies and you are shown a new preview - see :doc:`/mcp/examples/capabilities/index`.
+
+A page's own sections stay **below the sections it inherits** from its page type, the way the page editor publishes them. If the inherited layout cannot be read at that moment, publishing is refused rather than moving the page's sections to the top, and you can try again later.
+
 .. TODO screenshot: Claude publishing a page and reporting the result
 
 Archiving
@@ -98,15 +111,19 @@ Archiving
 
    Archive the page "Travel policy 2024", comment "Replaced by the 2026 policy"
 
+Archiving is previewed in the same way: the page and every page below it in the navigation, and that archived pages can be restored from Omnia's archive.
+
 Good to know
 ************
 
 + Creating needs a **page collection** scope; everything else needs the **page**.
++ Reading and publishing work on **plain pages** only. A page collection is read and published with its own actions, see :doc:`/mcp/examples/page-collection/index`, and a page type with the page type actions, see :doc:`/mcp/examples/page-type/index`.
++ If the answer to **creating a page** gets lost on the way back, asking again does not create a second page: the connector finds the page from the first attempt and returns it. Omnia has no page deletion, so an unwanted page has to be archived.
 + A new page is created as a **direct child of the page collection**. Nesting it under another page is not supported yet.
 + The page collection's allowed page types are read from its **last published** configuration, so a page collection that has never been published cannot take new pages yet.
 + A new page gets **no layout** - it is not copied from the page type.
 + The page's **address is generated from the title** and is never changed afterwards by the connector, because changing a live page's URL has consequences a chat message should not carry.
-+ **Publishing sends no notification.** Publishing twice with nothing changed in between is refused, because there is no draft to publish.
++ **Publishing sends the page's publish notifications**, the same as publishing in the Omnia interface. Publishing twice with nothing changed in between is refused, because there is no draft to publish.
 + **Discarding a draft** needs a draft to exist, and needs the page to have been published at least once - there is nothing to go back to otherwise.
 + **Omnia has no page deletion.** Archiving is the equivalent, it is reversible, and it **cascades to the page's children** - every archived page is listed back to you, so confirm before archiving a page that has children. Images are left in place so a restore brings the page back intact.
 
@@ -116,7 +133,8 @@ Actions
 + ``Page.Create`` - create a page in a page collection.
 + ``Page.Get`` - read a page.
 + ``Page.Save`` - change a page's title or property values.
-+ ``Page.Publish`` - publish the current draft.
++ ``Page.Publish`` - publish the current draft, after a preview you approve.
 + ``Page.Undo`` - discard the current draft.
-+ ``Page.Archive`` - archive the page and its children.
++ ``Page.Archive`` - archive the page and its children, after a preview you approve.
++ ``Page.ApplyLayoutPatch`` - change the page's own layout, see :doc:`/mcp/examples/page-layout/index`.
 + ``Page.AddHtmlScriptBlock`` / ``Page.UpdateHtmlScriptBlock`` - add and patch an Html/Script block on the page, see :doc:`/mcp/examples/html-script-block/index`.

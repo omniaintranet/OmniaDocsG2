@@ -63,7 +63,7 @@ Good to know
 + **The layout can never be changed** by an update. Pages refer to their page type rather than copying its layout, so swapping it would restyle every existing page of that type at once - that has to be done in the Omnia interface.
 + Removing a content property that automatic archiving or SharePoint sync still points at is **refused** rather than silently blanking the setting. Turn the setting off, or point it somewhere else, in the same request.
 + Turning the SharePoint sync override on **seeds the page type from the tenant's sync settings** first, exactly as the Omnia interface does. This matters: without it, enterprise property values would silently stop being indexed for search.
-+ **Publishing sends no notification**, and publishing twice with nothing changed in between is refused. Discarding a draft needs a draft, and needs the page type to have been published at least once.
++ **Publishing sends the publish notifications** the same as publishing in the Omnia interface, and publishing twice with nothing changed in between is refused. Discarding a draft needs a draft, and needs the page type to have been published at least once.
 + Page review rules and analytics settings on a page type are not exposed by the connector.
 
 Actions

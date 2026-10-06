@@ -50,6 +50,8 @@ You get the layout and its **definition** - the sections, section items and bloc
 
 The definition is the layout's own composition only. What a visitor sees can also include what the layout inherits from a parent layout, which is not merged into the answer.
 
+These are the layouts of the tenant, business profiles and Publishing Apps. The layout of a single page - which parts are its own and which come from its page type - is covered in :doc:`/mcp/examples/page-layout/index`.
+
 Changing a layout
 *****************
 

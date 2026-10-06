@@ -44,7 +44,7 @@ Activation and deactivation are asynchronous in Omnia. The connector waits up to
 + **Error** - the platform reported a problem, and the message comes back with it.
 + **Waiting for admin consent** - the work is blocked on a person, not on the platform. See below.
 
-If the wait times out, that is **not a failure**: the platform is still working on it. Ask for the feature list again rather than activating a second time, which would start a second run.
+If the wait times out, that is **not a failure**: the platform is still working on it, and you are told the result is not known yet. Ask for the feature list again to see how it ended. If you ask to activate or deactivate the same feature again while the first run is still going, the connector follows the run that is already going rather than starting a second one.
 
 Good to know
 ************

@@ -13,6 +13,7 @@ What you can ask for
 + Check out a page collection so its settings can be changed.
 + Add or remove the page types that may be used inside it.
 + Change its page creation, scheduling, collaboration, notification, distribution and AI settings.
++ Publish the checked-out draft, or discard it and go back to the published version.
 
 Creating one
 ************
@@ -54,6 +55,26 @@ The settings are grouped the same way as in the Omnia interface:
 + **AI** - the OpenAI-backed features and semantic search, and the properties they read.
 + **Available page types** - added and removed one call at a time, so you never resend the whole list.
 
+Publishing or discarding the changes
+************************************
+
+::
+
+   Publish the Policies page collection
+
+Publishing makes the checked-out draft - the settings and the page collection's own landing page - the next live version, and ends the checkout. It is shown to you as a **preview** first, and nothing is published until you approve it, see :doc:`/mcp/examples/capabilities/index`. The preview tells you that:
+
++ the settings apply to every page created or edited in the page collection from then on,
++ the landing page's layout goes live for everyone who can read it,
++ the pages inside the page collection are **not** published - they keep their own versions,
++ publishing sends the publish notifications and cannot be undone through the connector. Earlier versions stay in the version history, see :doc:`/mcp/examples/content-inventory/index`, and can be restored from Omnia.
+
+::
+
+   Discard my changes to the Policies page collection
+
+Discarding throws the draft away and goes back to the last published version. It cannot be reversed, needs the page collection or Publishing App admin role, and needs the page collection to have been published at least once.
+
 Good to know
 ************
 
@@ -61,7 +82,8 @@ Good to know
 + A page collection **cannot be nested inside another page collection**.
 + The **structure** is chosen at creation and cannot be changed safely afterwards.
 + The **layout** can only be chosen at creation. Changing an existing page collection's layout has to be done in the Omnia interface.
-+ **The settings actions never publish.** They save to the draft, so the changes stay invisible to readers until the page collection is published in the Omnia interface.
++ **The settings actions never publish.** They save to the draft, so the changes stay invisible to readers until the page collection is published - by asking for it, or in the Omnia interface.
++ Publishing and discarding need the page collection to be **checked out**. Publishing twice in a row is refused the second time, because the first one ended the checkout.
 + Settings are applied as **patches** - only what you mention changes, so you can turn one thing on without resending the rest.
 + **Scheduling** needs a date-and-time property, and the eligible ones are offered if the one you name will not do.
 + **Mandatory channels** cannot be turned on unless publishing to channels is on. Turning publishing to channels off also turns mandatory channels off.
@@ -73,6 +95,8 @@ Actions
 + ``PageCollection.Create`` - create a page collection.
 + ``PageCollection.GetSettings`` - read every setting in one call, no checkout needed.
 + ``PageCollection.CheckOut`` - check the page collection out for editing.
++ ``PageCollection.Publish`` - publish the checked-out draft, after a preview you approve.
++ ``PageCollection.Undo`` - discard the checked-out draft.
 + ``PageCollection.AddAvailablePageType`` / ``PageCollection.RemoveAvailablePageType`` - manage the page types allowed inside it.
 + ``PageCollection.SetPageCreationSettings``
 + ``PageCollection.SetSchedulingSettings``
