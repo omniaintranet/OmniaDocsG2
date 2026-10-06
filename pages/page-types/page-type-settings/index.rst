@@ -54,15 +54,11 @@ Override SharePoint sync settings
 ************************************
 SharePoint sync settings are set in Omnia admin (available under Web content management), for the whole tenant. If you need some other synchronization for pages created from this page type, you can override the tenant settings and create a specific synchronization here.
 
-When you activate this option, the following is shown:
+When you activate this option, the following is shown (image from Omnia 7.12):
 
-.. image:: page-type-settings-override-message-v7.png
+.. image:: page-type-settings-override-v712.png
 
-And then something like the following is available:
-
-.. image:: page-type-settings-override-v78.png
-
-+ **Enable promote to Viva**: Select this option if pages of this page type should appear in Viva connections.
++ **Enable promote to Viva**: Select this option if pages of this page type should appear in Viva connections. (this option is not found in the tenant settings).
 
 **Important note!** When promoting pages with variations to Viva, only the default page is promoted to avoid duplicates.
 
