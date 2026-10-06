@@ -23,6 +23,8 @@ Do the following to set up approval:
 2. Select SETTINGS.
 3. Select "Enable approval" and choose how approval will be executed.
 
+**Important note**: In 7.12 and later, there's more options when settings up approval. For example: some users or groups may be allowed to bypass approval, even if approval generally is actiavted. See link above.
+
 Sending for approval
 *********************
 When an editor has created a new page or edited a page, these are the simple steps to send for approval:
