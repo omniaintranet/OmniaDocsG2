@@ -132,7 +132,9 @@ When approval is activated, the following settings are available (image from Omn
 + **Allow approval bypass**: Available in Omnia 7.12 and later. Use this option if certain users or groups shouldn't need approval when publishing. 
 + **Multi step approval**: Normally, when this option is not used, only one colleague can approve a page. When this option is used, a number of steps for approval can be set up, meaning several colleagues can need to approve a page. For more information, see below.
 
-When approval is activated, you can select who can approve the creation of a page this way (also used in the multi step approval settings, see below):
+**Note!** When Multi step approval is activated, the list of who can approve is not available here, instead, it's available when setting up multi step approval.
+
+When approval is activated, you can select who can approve the creation of a page this way:
 
 + **Anyone**: The author can select any colleague as approver when a page is published. See below for more information.
 + **Limited list of people**: You define the approvers using the field shown (see below). You can define one or more approvers but only one approval is needed each time, from any of the approvers.
