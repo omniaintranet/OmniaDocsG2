@@ -1,6 +1,6 @@
 :orphan:
 
-7.13 (draft)
+Release 7.13 (draft)
 ================================================
 
 .. REVIEW NOTE: Built from the existing 7.13 draft plus the commits that are in the dev branch but not in 7.12 (preview/main), as of 5 Oct 2026. Items marked "REVIEW" in rst comments need a fact check and are not rendered. Bug fixes, build and internal changes are left out on purpose.
