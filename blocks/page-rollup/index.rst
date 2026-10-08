@@ -332,7 +332,7 @@ A few notes, though:
 
 Show in dialog
 *****************
-Available in Omnia 7.12 and later. Instead of opening the page when the link is clicked in the rollup, selected content from pages in the rollup can be opened in a dialog. The settings are done here.
+Available in Omnia 7.12 and later. Instead of opening the page when the link is clicked in the rollup, selected content from the the page can be opened in a dialog. The settings are done here.
 
 **Important note!** Show in dialog can't be used if any of the following settings are selected for Display: "Open in new tab", "Open in editor" or "Open in SharePoint full page". 
 
@@ -340,7 +340,7 @@ If variations exist for a page, a variation selector is automatically displayed 
 
 After activation two more options are available. If you would like to set your own detailed settings, select "Override default settings".
 
-The default settings can be edited in Omnia admin. See this page for more information: :doc:`Default redering </admin-settings/business-group-settings/settings/default-rendering/index>`
+The default settings can be edited in Omnia admin. See this page for more information: :doc:`Default rendering </admin-settings/business-group-settings/settings/default-rendering/index>`
 
 .. image:: show-in-dialog-override.png
 
