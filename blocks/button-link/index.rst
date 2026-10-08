@@ -203,7 +203,7 @@ To be able to edit a form created from an action button, add a form rollup with 
 
 Create page
 -------------
-Using this button the action Create page can be executed (image from Omnia 7.12):
+Using this button the action Create page can be executed. The following settings are available (image from Omnia 7.12):
 
 .. image:: action-button-create-page-v712.png
 
