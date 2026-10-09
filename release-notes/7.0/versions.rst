@@ -2,15 +2,14 @@
 ========================================
 (Omnia 7.11.32 / Workplace 7.11.32 / WCM 7.11.32 / MS 7.11.32 / Analytics 7.11.4 / Feed 7.11.6)
 
-- Teamwork Rollup now correctly respects permissions for dynamic and security groups, showing app instances only to group members rather than owners (#53515)
-- Fixed an issue where page review reminder emails were sent for non-editable variation pages; calculated date properties on editable variations are now properly preserved during automatic translation (#59984)
-- Fixed an issue that prevented users from searching in People Rollup when configured to query by page property (#59548)
-- Fixed an issue where Omnia service-DNS tokens were not resolved when syncing page content to SharePoint, preventing links from being stored in the Page Content column (#59621)
-- Fixed an issue in Page Bulk Update where the 'Total pages to update' count was incorrectly reflecting the current search results rather than the targeted pages from the bulk update session (#60049)
-- Added automatic full-sync scheduling for identity synchronization to ensure dynamic AD group members are kept reliably in sync, reducing access denial issues (#167501)
-- Improved Bing image search to exclude results from publicdomainpictures.net, which was causing connectivity errors due to external security requirements (#59965)
-- Fixed an issue where the reset-account redirect URL was incomplete, preventing successful account recovery flows
-- Fixed an issue in the Media Picker where multiple libraries with identical IDs were not displayed correctly, and where editing one library could overwrite settings for another (#59790)
+- Teamwork Rollup now correctly respects permissions for dynamic and security groups, ensuring app instances are only visible to group members and not group owners (#53515).
+- Page review reminders are no longer sent for non-editable page variations, and calculated date properties on editable variations are now preserved during automatic translation (#59984).
+- Searching in People Rollup now works as expected when configured to query by page property (#59548).
+- Links containing Omnia service-DNS tokens are now correctly resolved when synchronizing page content to SharePoint (#59621).
+- The "Total pages to update" count in Page Bulk Update now correctly reflects the pages selected for the bulk update rather than the current search results (#60049).
+- Identity synchronization has been improved with automatic scheduling of full synchronizations, ensuring dynamic AD group memberships are kept up to date (#167501).
+- Bing image search has been improved by excluding image sources that could cause connectivity errors (#59965).
+- Media Picker now correctly handles libraries with identical IDs, preventing display issues and unintended changes to library settings (#59790).
 
 
 7.11.31
