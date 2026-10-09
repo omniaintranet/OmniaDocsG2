@@ -21,7 +21,7 @@ Status and types
 ******************
 In Omnia 7.12 and later, status ad types are handled through this option. 
 
-In Omnia 7.11 and earlier you handle them through cogwheel in the annoncement list. Available options for status and types are the same. see below.
+In Omnia 7.11 and earlier you handle them through the cogwheel in the annoncement list. Available options for status and types are the same. see below.
 
 Announcements
 **************
