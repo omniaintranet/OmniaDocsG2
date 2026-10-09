@@ -25,13 +25,13 @@ This can be very handy if the block "Page likes and comments" is present in a pa
 
 Settings for the block
 ************************
-The following settings are available for the block (image from Omnia 7.12):
+The following settings are available for the block:
 
 .. image:: comments-and-likes-settings-all-v712.png
 
 General
 ----------
-The following settings are available on this tab:
+The following settings are available on this tab (image from Omnia 7.12):
 
 .. image:: likes-general-v712.png
 
