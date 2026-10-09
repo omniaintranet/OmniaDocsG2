@@ -56,7 +56,9 @@ It's up to you decide when silent publish can be used, instead of the normal pub
 
 Scheduled publishing
 *********************
-If scheduled publishing has been activated for the page collection you can choose to set publishing at a later date, and, if the property allow it, time.
+If scheduled publishing has been activated for the page collection you can choose to set publishing at a later date, and, if the property allow it, time. 
+
+In Omnia 7.12 and later it's also possible to combine scheduled publishing and auto publishing, meaning if auto publish also is active, the page will auto publish at the scheduled date. Autopublish is activated in the page collection settings.
 
 **Note!** Even if scheduled publishing has been activated, it is never mandatory. You can always publish directly, as described above.
 
