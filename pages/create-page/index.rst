@@ -84,11 +84,11 @@ Some useful links regarding editing blocks:
 
 Scheduled publishing for autopublish
 *****************************************
-Settings can be made in the page collection to autopublish new pages. In Omnia 7.12 and later, it's also possible to set scheduled publishing date, if Autopublish is activated for the page collection settings.
+Settings can be made in the page collection to autopublish new pages. In Omnia 7.12 and later, autopublishing can be active at the same time as schduled publising, meaning a scheduled page can be autopublished at the scheduled date.
 
 In the create page dialog, an additional field is then shown:
 
-.. image:: scheduled-auto.png
+.. image:: scheduled-auto-frame.png
 
 It's never mandatory, but up to the editor. Just remember, if now date is set, the new page will be automatically published as soon as it's saved.
 
