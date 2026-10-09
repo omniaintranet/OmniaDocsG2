@@ -1,7 +1,7 @@
 Table of contents block
 ========================
 
-Use this block to genereate a navigation from headings on the page or from a configured property.
+Use this block to genereate a dynamic navigation from headings on the page or from a configured property.
 
 Settings
 ********
