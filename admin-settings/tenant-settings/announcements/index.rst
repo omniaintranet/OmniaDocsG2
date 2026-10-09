@@ -19,7 +19,12 @@ Available in Omnia 7.12 and later. Decide if high priority should stay at the to
 
 Status and types
 ******************
+In Omnia 7.12 and later, status ad types are handled through this option. 
 
+In Omnia 7.11 and earlier you handle them through cogwheel in the annoncement list. Available options for status and types are the same. see below.
+
+Announcements
+**************
 All existing announcements, active or not, are shown in the list. From there you can edit or delete an announcement.
 
 .. image:: announcements-list-v75.png
