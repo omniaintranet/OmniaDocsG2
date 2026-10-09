@@ -11,11 +11,13 @@ It is possible for the end user to edit and delete a comment, made by the user, 
 
 When a comment is deleted it works this way: If there are no answers to the comment it will just be removed. If there are answers, the  comment will be replaced with a text that states that it has been deleted and by whom. Everyone can delete their own comments. A publishing app administrator can delete any comment. 
 
+In Omnia 7.12 and later, settings for comment deletion is available, see below.
+
 Turning the options on or off
 -------------------------------
-When the block is added to a page (or to the page type), authors can turn on or off likes and/or comments using Write mode.
+When the block is added to a page (or to the page type), authors can turn on or off likes and/or comments using Write mode (image from Omnia 7,12).
 
-.. image:: page-likes-author-v75.png
+.. image:: page-likes-author-v712.png
 
 This can be very handy if the block "Page likes and comments" is present in a page type, but should not be used on every page.
 
@@ -23,29 +25,30 @@ This can be very handy if the block "Page likes and comments" is present in a pa
 
 Settings for the block
 ************************
-The following settings are available for the block:
+The following settings are available for the block (image from Omnia 7.12):
 
-.. image:: comments-and-likes-settings-all-v75.png
+.. image:: comments-and-likes-settings-all-v712.png
 
 General
 ----------
 The following settings are available on this tab:
 
-.. image:: likes-general-v75-2.png
+.. image:: likes-general-v712.png
 
 + **Title**: If a title should be shown for the block, add it in this field. 
 + **Enable Viva Engage sync**: Enables the likes and comments to be available in Viva Engage as well. A prerequisite is that integraiton with Viva Engage has been set up.
-+ **Rich text mode**: If you enable rich Text, some basic formatting will be availble for users.          
-+ **Enable mention**: If it should be possible to use mentions in comments on this page or in this page type, select this option. See below for an example.
++ **Rich text mode**: If you enable rich text, some basic formatting will be availble for users.          
++ **Enable mention**: If it should be possible to use mentions in comments on this page or in this page type, select this option. 
 + **Allow social reactions**: Can be available if settings allow it. If it should be possible to to use social reactions in this block, select this option. The same social reactions functionality as in Teams can be used. The tenant feature "Social reactions" must be activated for this option to be available.
 + **Allow likes**: If it should be able to like a comment, select this option. If the tenant feature "Social reactions" is activated, the "Allow social reactions" option replaces this option. Then social reactions is used instead of likes.
 + **Allow share**: If it should be possible to share a comment, select this option - meaning the possibility to send a comment to another user by email.
 + **Sorting**: Here you choose how to sort the comments; older first or newer first.
 + **Paging size**: Add a number (1-99) to set the number of items (comments) that should be displayed on each “page” of the list.
++ **Deleted comment message**: Available in Omnia 7.12 and later. It can be possible to see if comments has been deleted. In 7.11 an earlier this works as stated above, but in 7.12 an later, this can also be turned off. Options here are "Always", "When referenced" and "Never".
 
 If "Allow social reactions" is activated, these social reactions can be used when commenting:
 
-.. image:: comment-social-v75.png
+.. image:: comment-social-v712.png
 
 Layout and Write
 *********************
