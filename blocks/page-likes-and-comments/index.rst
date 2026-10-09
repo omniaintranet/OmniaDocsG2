@@ -15,7 +15,7 @@ In Omnia 7.12 and later, settings for comment deletion is available, see below.
 
 Turning the options on or off
 -------------------------------
-When the block is added to a page (or to the page type), authors can turn on or off likes and/or comments using Write mode (image from Omnia 7,12).
+When the block is added to a page (or to a page type), authors can turn on or off likes and/or comments using Write mode (image from Omnia 7,12).
 
 .. image:: page-likes-author-v712.png
 
