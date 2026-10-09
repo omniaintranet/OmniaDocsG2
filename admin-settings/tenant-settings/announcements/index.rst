@@ -7,6 +7,19 @@ Tenant announcements can also be shown through the Announcements block. For more
 
 Note that an option to create announcements for a specific business group also is available. The options are identical, the only difference is where announcements are shown.
 
+The following options are available for tenant announements (image from Omnia 7.12):
+
+.. image:: announce-712.png
+
+Settings
+**********
+Available in Omnia 7.12 and later. Decide if high priority should stay at the top when scrolling or not (Default=sticky).
+
+.. image:: announce-settings.png
+
+Status and types
+******************
+
 All existing announcements, active or not, are shown in the list. From there you can edit or delete an announcement.
 
 .. image:: announcements-list-v75.png
