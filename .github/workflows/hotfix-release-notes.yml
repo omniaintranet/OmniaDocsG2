@@ -65,7 +65,7 @@ jobs:
           retention-days: 1
 
       - name: Create pull request for release notes
-        if: steps.detect-release.outputs.found == 'true'
+        if: steps.detect-release.outputs.found == 'true' && steps.generate-release-notes.outputs.has_notes == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           RELEASE_NOTES_FILE: release-notes/7.0/versions.rst

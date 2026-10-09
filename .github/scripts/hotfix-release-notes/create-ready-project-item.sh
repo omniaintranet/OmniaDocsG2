@@ -60,6 +60,7 @@ source_issue_count=$(jq '.releases[0].issues | length' "$INPUT_FILE")
 included_issue_count=$(jq '[.bullets[].sourceIssues[]] | length' "$AUDIT_FILE")
 bullet_count=$(jq '.bullets | length' "$AUDIT_FILE")
 omitted_issue_count=$(jq '.omittedIssues | length' "$AUDIT_FILE")
+pending_issue_count=$(jq '.pendingReviewIssues // [] | length' "$AUDIT_FILE")
 
 issue_body_file=$(mktemp)
 trap 'rm -f "$issue_body_file"' EXIT
@@ -67,11 +68,12 @@ trap 'rm -f "$issue_body_file"' EXIT
 {
   printf '> [!WARNING]\n'
   printf '> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be reviewed before publication.\n\n'
-  printf 'Generated from **%s** source issues: **%s** represented in **%s** draft bullets and **%s** omitted.\n\n' \
+  printf 'Generated from **%s** source issues: **%s** represented in **%s** draft bullets, **%s** omitted, and **%s** pending manual security review.\n\n' \
     "$source_issue_count" \
     "$included_issue_count" \
     "$bullet_count" \
-    "$omitted_issue_count"
+    "$omitted_issue_count" \
+    "$pending_issue_count"
   printf '[View the currently published Omnia hotfix release notes](%s). The draft below will not appear there until its pull request is approved and merged.\n\n' \
     "$RELEASE_NOTES_URL"
   printf '## Generated draft release notes\n\n'
@@ -81,7 +83,7 @@ trap 'rm -f "$issue_body_file"' EXIT
   printf '## Issues not included in the draft\n\n'
 
   if [ "$omitted_issue_count" -eq 0 ]; then
-    printf -- '- None. Every source issue is represented in the generated draft.\n'
+    printf -- '- None. No issues were finally omitted.\n'
   else
     jq -r --slurpfile releaseData "$INPUT_FILE" '
       .omittedIssues[] as $omitted
@@ -91,6 +93,21 @@ trap 'rm -f "$issue_body_file"' EXIT
           and .number == $omitted.number
         )
       | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($omitted.reason)"
+    ' "$AUDIT_FILE"
+  fi
+  printf '\n## Security-sensitive issues pending manual review\n\n'
+  if [ "$pending_issue_count" -eq 0 ]; then
+    printf -- '- None.\n'
+  else
+    printf 'These issues are held outside the public draft. Review whether to communicate them, use high-level wording if appropriate, or omit them under the applicable disclosure policy.\n\n'
+    jq -r --slurpfile releaseData "$INPUT_FILE" '
+      .pendingReviewIssues[] as $pending
+      | $releaseData[0].releases[0].issues[]
+      | select(
+          .repositoryWithOwner == $pending.repositoryWithOwner
+          and .number == $pending.number
+        )
+      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)"
     ' "$AUDIT_FILE"
   fi
 } > "$issue_body_file"
