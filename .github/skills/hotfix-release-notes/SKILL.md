@@ -31,11 +31,18 @@ Include changes that are customer-reported, materially customer-visible, new fun
 
 Omit an unreferenced internal defect when it is suitable for silent delivery. Typical examples are narrow regressions found by QA, internal logging corrections, and low-level maintenance fixes. Do not omit a meaningful feature merely because it lacks a formal ticket.
 
-For a security correction, use deliberately general wording that communicates improvement without exposing an exploitation path.
-
 When an implementation was made for one customer's special case, describe it cautiously or omit it. Do not imply broad platform support unless QA and the implemented behavior justify that claim.
 
 If two or more cards describe the same shipped correction, consolidate them into one bullet and combine distinct Zendesk/OIM references. Account for the consolidation when reporting card and bullet counts.
+
+### Security-sensitive changes
+
+Review changes involving authentication, authorization, account recovery, permissions, tokens, and other security-sensitive functionality before including them in public release notes.
+
+- Flag potentially security-sensitive entries for manual review rather than automatically publishing or excluding them. Keep pending entries separate from the public draft until that review determines how to communicate them.
+- Avoid technical details that could help identify, reproduce, or exploit a security weakness.
+- Prefer high-level, customer-focused descriptions of security-related improvements.
+- During manual review, omit security-sensitive fixes when public disclosure is unnecessary, unless a security disclosure policy or customer communication requirement applies.
 
 ## Write in the established Omnia style
 
@@ -65,7 +72,22 @@ Prefer concrete descriptions of the affected scenario:
 - `Fixed an issue that could prevent document searches in Document Bulk Update from returning results in some scenarios (#59036)`
 - `A–Z filtering in the Page Rollup now returns the correct results when users select a letter (#59558, #59606)`
 
-Avoid vague claims such as `now returns the expected results`, which can imply the feature never worked. Avoid raw technical causes, internal configuration names, database details, and unsupported guarantees. Use phrases such as `Fixed an issue that could...`, `Improved...`, or `Added support for...` according to the actual scope.
+Avoid vague claims such as `now returns the expected results`, which can imply the feature never worked. Identify the affected action and scenario when saying it now works as expected. Avoid raw technical causes, internal configuration names, database details, and unsupported guarantees.
+
+### Sentence variation and readability
+
+- Prefer describing the corrected behavior or customer-visible result rather than explaining what was previously broken.
+- Avoid repetitive sentence openings, particularly `Fixed an issue where...`, `Fixed an issue in...`, and `Improved...`. Vary sentence structure naturally across consecutive entries.
+- Use a mix of formulations as appropriate to the actual scope:
+  - `[Feature] now correctly handles...`
+  - `[Feature] now supports...`
+  - `Users can now...`
+  - `[Action] now works as expected...`
+  - `Corrected an issue preventing...`
+  - `Improved [feature] to ensure...`
+  - `Resolved an issue affecting...`
+- Do not force variation at the expense of clarity or technical accuracy. Keep entries concise, factual, and customer-focused; avoid unnecessary verbosity.
+- **Before finalizing, review all entries together and rewrite repetitive sentence openings.** As a guideline, avoid starting more than two consecutive entries with the same phrase or sentence pattern.
 
 When matching house style is uncertain, consult the published versions page:
 `https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html`.
@@ -77,11 +99,14 @@ Choose the output wrapper requested by the caller:
 - In an interactive chat, return the finished notes as a `document` writing block. Keep the same writing-block ID when revising that release within a chat.
 - In automation that explicitly requests raw RST, return only the RST content without a writing block, code fence, audit summary, or commentary. Put every bullet on one physical line. If the caller says it constructs the heading separately, return only the requested RST bullet lines.
 
+When automation requests structured JSON, follow its schema and record security-sensitive entries separately as pending manual review, outside public bullets.
+
 For interactive delivery, provide a compact audit summary outside the writing block:
 
 - total matching GitHub cards;
 - number of published bullets;
 - any consolidated cards;
-- omitted cards and the reason for omission.
+- omitted cards and the reason for omission;
+- potentially security-sensitive cards pending manual review, with a high-level reason; keep sensitive details out of the public notes.
 
 When the user requests only a wording revision or an omitted-item list, answer only that focused request unless the full draft is needed for clarity.

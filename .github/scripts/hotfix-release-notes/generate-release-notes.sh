@@ -87,12 +87,14 @@ Requirements:
 - Generate release notes only for the release in the supplied JSON.
 - Use the supplied issue bodies, labels, and recent comments as the source of truth. Prefer implemented and QA-verified behavior in recent comments over the initial proposal.
 - Do not invent functionality or ticket numbers.
-- Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues.
+- Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues or pendingReviewIssues.
+- Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
+- Review all bullets together for repetitive sentence openings before returning the response.
 - When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
 - Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
 - Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
-- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, and reason exactly as shown. Emit issue numbers as JSON numbers, not strings.
+- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, and reason exactly as shown. Emit issue numbers as JSON numbers, not strings.
 - Return only valid JSON matching this shape, without Markdown fences or commentary:
 {
   "bullets": [
@@ -111,6 +113,13 @@ Requirements:
       "repositoryWithOwner": "owner/repository",
       "number": 456,
       "reason": "Concise reason for omission"
+    }
+  ],
+  "pendingReviewIssues": [
+    {
+      "repositoryWithOwner": "owner/repository",
+      "number": 789,
+      "reason": "Security-sensitive change requires manual disclosure review"
     }
   ]
 }
@@ -334,6 +343,45 @@ if ! jq '
             | if type == "string" then clean_reason else . end
           )
         }
+    ],
+    pendingReviewIssues: [
+      (
+        (
+          .pendingReviewIssues
+          // .pending_review_issues
+          // .pendingReview
+          // []
+        )
+        | as_array
+      )[]
+      | {
+          repositoryWithOwner: (
+            (
+              .repositoryWithOwner
+              // .repository_with_owner
+              // .repository
+              // .repo
+              // ""
+            )
+            | repository_name
+          ),
+          number: (
+            (
+              .number
+              // .issueNumber
+              // .issue_number
+              // null
+            )
+            | issue_number
+          ),
+          reason: (
+            .reason
+            // .omissionReason
+            // .omission_reason
+            // ""
+            | if type == "string" then clean_reason else . end
+          )
+        }
     ]
   }
 ' "$normalized_response_file" > "$canonical_response_file" 2>/dev/null; then
@@ -343,8 +391,9 @@ fi
 
 if ! jq -e '
   type == "object"
-  and (.bullets | type == "array" and length > 0)
+  and (.bullets | type == "array")
   and (.omittedIssues | type == "array")
+  and (.pendingReviewIssues | type == "array")
   and all(
     .bullets[];
     (.text | type == "string" and startswith("- ") and (contains("\n") | not))
@@ -356,7 +405,7 @@ if ! jq -e '
     )
   )
   and all(
-    .omittedIssues[];
+    (.omittedIssues[], .pendingReviewIssues[]);
     (.repositoryWithOwner | type == "string" and length > 0)
     and (.number | type == "number" and floor == . and . > 0)
     and (
@@ -381,7 +430,7 @@ if ! jq -e '
   exit 1
 fi
 
-jq '{bullets, omittedIssues}' "$canonical_response_file" > "$AUDIT_FILE"
+jq '{bullets, omittedIssues, pendingReviewIssues}' "$canonical_response_file" > "$AUDIT_FILE"
 
 expected_issue_keys=$(
   jq -c '
@@ -397,7 +446,8 @@ accounted_issue_keys=$(
     [
       (
         .bullets[].sourceIssues[],
-        .omittedIssues[]
+        .omittedIssues[],
+        .pendingReviewIssues[]
       )
       | "\(.repositoryWithOwner)#\(.number)"
     ]
@@ -423,7 +473,17 @@ jq -r '.bullets[].text' "$AUDIT_FILE" > "$bullets_file"
   cat "$bullets_file"
 } > "$OUTPUT_FILE"
 
-bash "$VALIDATOR_FILE" "$INPUT_FILE" "$OUTPUT_FILE"
+if [ "$(jq '.bullets | length' "$AUDIT_FILE")" -gt 0 ]; then
+  bash "$VALIDATOR_FILE" "$INPUT_FILE" "$OUTPUT_FILE"
+  has_notes=true
+else
+  echo "No public bullets; all source issues are omitted or pending manual review."
+  has_notes=false
+fi
+
+if [ -n "${GITHUB_OUTPUT:-}" ]; then
+  printf 'has_notes=%s\n' "$has_notes" >> "$GITHUB_OUTPUT"
+fi
 
 rm -f "$RESPONSE_FILE"
 
