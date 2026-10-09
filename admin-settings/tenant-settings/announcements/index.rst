@@ -29,7 +29,7 @@ All existing announcements, active or not, are shown in the list. From there you
 
 .. image:: announcements-list-v75.png
 
-In Omnia 7.12 and later, the cog wheel is not present. Status and types are handled from the menu, see above, but the options are the same as is described below.
+In Omnia 7.12 and later, the cog wheel is not present. Status and types are handled from a menu, see above, but the options are the same as is described below.
 
 For explanation of Priority and Order, see below.
 
