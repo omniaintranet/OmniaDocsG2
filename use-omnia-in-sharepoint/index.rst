@@ -1,7 +1,7 @@
 How to use Omnia in SharePoint
 ================================
 
-In this section you will find documentation on how to use various parts of Omnia in SharePoint.
+In this section you will find documentation on how to use various parts of Omnia in SharePoint. 
 
 Webparts from Omnia in SharePoint
 **********************************
@@ -11,15 +11,13 @@ How to use the Omnia webparts is described on this page: :doc:`Webparts </admin-
 
 In Omnia 7.12 and later, a new concept is available, with considerably added possibiblites to use Omnia functionality in a SharePoint set up, see below.
 
-Using the same font and bradning
-************************************
-In Omnia 7.12 and later the font that has been configured in SharePoint can be applied to Omnia as well. (In Omnia up to 7.11, only the default SharePoint could be used in Omnia).
+Font and SharePoint Brand Center support
+********************************************
+In Omnia up to 7.11, the default SharePoint could be used in Omnia. In Omnia 7.12 and later settings in SharePoint Brand Center is respected in Omnia, including custom fonts.
 
-Activate this feature for each publishing app where it should be used:
+Activate this feature for each publishing app where settings from SharePopint Brand Center should be used:
 
 .. image:: sharepoint-font-feature.png
-
-Besides that, SharePoint Brand Center is supported, so branding done there is respected in Omnia.
 
 Automated user activity tracking on SharePoint pages via Matomo
 ****************************************************************
