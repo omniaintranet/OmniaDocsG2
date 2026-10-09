@@ -81,6 +81,8 @@ You set up targeting for an announcement the same way as for many other parts of
 
 Settings for announcements
 ***************************
+Status and types are handled through a menu in Omnia 7.12 and later, see above. The same options as described below (as handled in Omnia 7.11 and earlier) are available in 7.12 and later as well.
+
 Click the cog wheel to enter the settings:
 
 .. image:: cog-wheel-settings-v75.png
