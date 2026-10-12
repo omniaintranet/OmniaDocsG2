@@ -30,9 +30,15 @@ Here's an example with settings open for Font size and Font color:
 
 .. image:: text-styles-settings-edit-78.png
 
-Page element styles
-**********************
-In Omnia 7.12 and later, you can choose a number of the built-in text styles to be applied to all matching elements across the solution. If you don't enable this, they only affect rich text editor content. Custom text styles always remain scoped to the rich text editor, not matter what you choose here. 
+Content styles and Page element styles
+*********************************************
+The settings described above is called Content styles in Omnia 7.12 and later.
+
+.. image:: content-styles-tenant.png
+
+(All available styles are not shown in the image).
+
+You can also choose a number of the built-in text styles to be applied to all matching elements across the solution - Page element styles. If you don't enable this, they only affect rich text editor content. Custom text styles always remain scoped to the rich text editor, no matter what you choose here. 
 
 .. image:: page-element-styles-tenant.png
 
