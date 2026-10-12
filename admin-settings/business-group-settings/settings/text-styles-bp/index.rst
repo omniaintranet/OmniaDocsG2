@@ -23,5 +23,5 @@ These settings are made for the tenant as well. If you would like to do some oth
 
 .. image:: page-element-styles.png
 
-**Important note**: Inherit from tenant is applied for both Rich text editor settings and Appply everwhere settings. You can't choose to inherit one and not the other.
+**Important note**: Inherit from tenant is applied for both Content styles and Page element styles. You can't choose to inherit one and not the other.
 
