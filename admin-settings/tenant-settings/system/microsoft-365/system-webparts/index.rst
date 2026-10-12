@@ -3,7 +3,7 @@ Webparts
 
 If you're using SharePoint pages in an Omnia implementation, you can use many of the blocks in Omnia as webparts, on any SharePoint page. Click LEARN TO USE IT to go to the block description from this page. 
 
-This option has been available for some time. In Omnia 7.12 and later there are a lot more options for integrating Omnia with SharePoint. See this page for more information: :doc:`:doc:`How to use Omnia in SharePoint </use-omnia-in-sharepoint/index>`
+This option has been available for some time. In Omnia 7.12 and later there are a lot more options for integrating Omnia with SharePoint. See this page for more information: :doc:`How to use Omnia in SharePoint </use-omnia-in-sharepoint/index>`
 
 **Note!** There are a few, small differences compaired to the block description in the Omnia documentation. A few options that are not applicable to SharePoint have been removed. Also note, in Omnia 7.12 and later, more webparts are available here, for example the Omnia Process blocks.
 
