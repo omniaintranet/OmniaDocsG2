@@ -3,7 +3,7 @@ Text styles - Business profile
 
 Here you can choose to inherit text styles from the tenant, or choose the text styles that should be available specifically in this business profile. Available in Omnia 7.12 and later.
 
-You can choose available text styles, and even create new ones if needed, for the RTF editor when used in this business profile, and if some styles should be available as page element styles.
+You can choose available text styles, and even create new ones if needed, for content styles in this business profile, and if some styles should be available as page element styles.
 
 .. image:: text-styles-bp-all-712.png
 
@@ -23,5 +23,5 @@ These settings are made for the tenant as well. If you would like to do some oth
 
 .. image:: page-element-styles.png
 
-**Important note**: Inherit from tenant is applied for both Content styles and Page element styles. You can't choose to inherit one and not the other.
+**Important note**: Inherit from tenant is applied for both content styles and page element styles. You can't choose to inherit one and not the other.
 
