@@ -30,11 +30,13 @@ Here's an example with settings open for Font size and Font color:
 
 .. image:: text-styles-settings-edit-78.png
 
-Apply everywhere
-******************
+Page element styles
+**********************
 In Omnia 7.12 and later, you can choose a number of the built-in text styles to be applied to all matching elements across the solution. If you don't enable this, they only affect rich text editor content. Custom text styles always remain scoped to the rich text editor, not matter what you choose here. 
 
-.. image:: apply-everywhere-tenant.png
+.. image:: page-element-styles-tenant.png
+
+Settings are made the same way as for Contenty styles, see above.
 
 If you would like to set other settings for a business profile, som more information is found on this page: :doc:`Text styles - business profile </admin-settings/business-group-settings/settings/text-styles-bp/index>`
 
