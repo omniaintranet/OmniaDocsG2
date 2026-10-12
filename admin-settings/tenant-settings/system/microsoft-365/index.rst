@@ -1,9 +1,9 @@
 Microsoft 365 settings
 ==============================================
 
-Here, these settings can be used in Omnia 7,11 and later:
+Here, these settings can be used in Omnia (image from Omnia 7.12):
 
-.. image:: system-ms-v711.png
+.. image:: system-ms-v712.png
 
 .. toctree::
    :titlesonly:
