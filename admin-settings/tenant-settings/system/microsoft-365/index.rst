@@ -8,7 +8,7 @@ Here, these settings can be used in Omnia (image from Omnia 7.12):
 .. toctree::
    :titlesonly:
 
-   list-rollup-stting/index   
+   list-rollup-setting/index   
    power-apps-tenant-612/index
    sharepoint-user-profiles-sync/index
    site-selected-setting/index
