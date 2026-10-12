@@ -1,7 +1,7 @@
 Text styles
 =============
 
-Here you can edit the settings for the text styles used in the RTF editor, as well as create new styles. In Omnia 7.12 and later, you can set other settings for a business profile if needed. Apply everywhere settings are also available in Omnia 7.12 and later, see below.
+Here you can edit the settings for the text styles used in the RTF editor, as well as create new styles. In Omnia 7.12 and later, you can set other settings for a business profile if needed. Page element styles are also available in Omnia 7.12 and later, see below.
 
 .. image:: tenant-settings-text-styles-78.png
 
