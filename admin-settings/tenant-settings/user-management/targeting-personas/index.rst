@@ -19,7 +19,7 @@ Us these settings for a new persona:
 
 .. image:: targeting-personas-new.png
 
-Add a title (name) and description for the persona. You can add one or more targeting filters.
+Add a title (name) and description for the persona. You can add one or more targeting filters. For more information, see: :doc:`Using targeting </general-assets/targeting-in-omnia/index>`
 
 Here's an example from the danish targeting persona in the list above:
 
