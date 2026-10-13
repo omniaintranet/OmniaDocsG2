@@ -1,65 +1,62 @@
 Recommended AI models
 ===========================================
 
-Omnia uses Azure OpenAI model deployments created in Microsoft Foundry (formerly Azure AI Foundry). This page lists the recommended model IDs for new or updated Omnia installations.
+Omnia uses Azure OpenAI model deployments created in Microsoft Foundry (formerly Azure AI Foundry). This page lists the recommended models and capability levels for new or updated Omnia installations.
 
 .. note::
    Model availability varies by Azure region, deployment type, subscription and quota. Check the `current Azure model availability <https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability>`_ for your subscription before creating a deployment.
 
-   Azure lets you choose a custom deployment name. Omnia expects the **deployment name**, not the model display name, in its model configuration. We recommend using the model ID as the deployment name to make the configuration easy to identify.
+   Azure lets you choose a custom deployment name. Omnia expects the **deployment name**, not the model display name, in its model configuration. Use the deployment name you chose in Microsoft Foundry when configuring Omnia.
 
 Recommended models
 -------------------------------------------
 
 .. list-table::
-   :widths: 24 28 48
+   :widths: 24 28 12 36
    :header-rows: 1
 
    * - Omnia use case
-     - Recommended model and deployment name
+     - Recommended model
+     - Capability level
      - Guidance
    * - Semantic search (LLM)
-     - GPT-5.6 Luna
-
-       ``gpt-5.6-luna``
-     - Optimized for efficient, high-volume workloads. Use this deployment in **LLM deployment name** for semantic search.
+     - GPT 6 Luna
+     - Efficient
+     - Use this deployment in **LLM deployment name** for semantic search.
    * - Text completion and content analysis
-     - GPT-5.6 Terra
-
-       ``gpt-5.6-terra``
-     - Balances intelligence and cost for more demanding generation and analysis tasks. Use this deployment in **Text completion configuration**.
+     - GPT 6 Sol
+     - Powerful
+     - Use this deployment in **Text completion configuration**.
    * - Image generation
-     - GPT Image 2
-
-       ``gpt-image-2``
-     - The recommended image model for new deployments. Use this deployment in **GPT Image** configuration.
+     - GPT Image 2.5 Flare
+     - Powerful
+     - Use this deployment in **GPT Image** configuration.
    * - Semantic search embeddings
-     - Text Embedding 3 Small
+     - Text Embedding Ada 002
 
-       ``text-embedding-3-small``
+       ``text-embedding-ada-002``
+     - Capable
      - Generates the 1,536-dimensional vectors used by the current Omnia semantic search index. Use this deployment in **Embeddings deployment name**.
 
 .. important::
-   GPT-4-series models are no longer recommended for new Omnia deployments. Before migrating an existing text-completion or semantic-search deployment, confirm GPT-5 reasoning-model support for your Omnia version and feature, then validate the change in a non-production environment.
+   GPT-4-series models are no longer recommended for new Omnia deployments. Before migrating an existing text-completion or semantic-search deployment, confirm support for the recommended model in your Omnia version and feature, then validate the change in a non-production environment.
 
 Omnia version compatibility
 -------------------------------------------
 
-GPT-5.6 models are reasoning models and reject some generation parameters accepted by earlier chat models. Use them only after confirming that your Omnia version and the specific AI feature support GPT-5 reasoning models. This is especially important for semantic search.
+Before using GPT 6 Luna or GPT 6 Sol, confirm that your Omnia version and the specific AI feature support the selected model and its generation parameters. This is especially important for semantic search.
 
 Omnia 7.11.16 introduced support for GPT-5 models. Later model versions and individual AI features can have additional requirements, so check the release notes for your Omnia version or confirm compatibility with Omnia Support. Test custom prompts, content analysis and semantic-search answers before deploying the change to production.
 
-Why GPT Image 1.5 is not recommended
+Image model compatibility
 -------------------------------------------
 
-Omnia supports GPT Image 1.5 (``gpt-image-1.5``) and GPT Image 2 (``gpt-image-2``). GPT Image 1.5 requires limited-access registration in Azure, and availability varies by region and subscription. It is therefore **not recommended for new deployments**. Use GPT Image 2, which Azure lists as generally available.
-
-With current Omnia image settings, select ``1024x1024`` for GPT Image 1.5 or GPT Image 2. The legacy ``512x512`` and ``256x256`` options are not valid for these deployments.
+Use GPT Image 2.5 Flare for new image-generation deployments. Confirm that your Omnia version supports the model and select an image size supported by the deployment.
 
 Embedding model compatibility
 -------------------------------------------
 
-Use ``text-embedding-3-small`` for Omnia semantic search. The current Omnia search index expects 1,536-dimensional vectors, which matches this model's default output.
+Use Text Embedding Ada 002 (``text-embedding-ada-002``) for Omnia semantic search. The current Omnia search index expects 1,536-dimensional vectors, which matches this model's output.
 
 Do not configure ``text-embedding-3-large`` with the current Omnia semantic-search implementation. Omnia requests the model's default vector size and expects 1,536 dimensions; ``text-embedding-3-large`` returns 3,072 dimensions by default. Supporting it requires an Omnia/index configuration change and a full reindex.
 
@@ -71,9 +68,9 @@ Configure the deployments in Omnia
 After deploying the models in Azure:
 
 1. Go to **Omnia Admin > Settings > AI features > Model configuration**.
-2. Set **Text completion configuration** to the ``gpt-5.6-terra`` deployment.
-3. Under **Semantic search**, set **LLM deployment name** to the ``gpt-5.6-luna`` deployment and **Embeddings deployment name** to the ``text-embedding-3-small`` deployment.
-4. Set **GPT Image** to the ``gpt-image-2`` deployment.
+2. Set **Text completion configuration** to the deployment name for GPT 6 Sol.
+3. Under **Semantic search**, set **LLM deployment name** to the deployment name for GPT 6 Luna and **Embeddings deployment name** to the deployment name for Text Embedding Ada 002.
+4. Set **GPT Image** to the deployment name for GPT Image 2.5 Flare.
 5. Save the settings and validate each enabled AI feature.
 
 For instructions on creating the Azure resources and deployments, see :doc:`Setup AI </setup/setup-ai/index>`.
