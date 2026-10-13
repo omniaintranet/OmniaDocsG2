@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[3]
 STATE = ROOT / '.github/scripts/latest-changes/state.json'
 DIGEST = 'latest-changes/index.rst'
+PAGE_TITLE = 'Documentation updates'
 # The cumulative release page starts with the newest version number. Give its
 # digest link a stable title so older entries are not relabeled as that version.
 PAGE_TITLES = {'release-notes/7.0/versions.rst': 'Omnia 7 release notes'}
@@ -267,7 +268,7 @@ def escape_rst(value):
 
 
 def render(entries, pages):
-    lines = ['Latest changes', '==============', '',
+    lines = [PAGE_TITLE, '=' * len(PAGE_TITLE), '',
              f'Browse documentation pages updated in the last {RETENTION_DAYS} days. Select a page title to read more.', '']
     visible = [entry for entry in entries if entry['path'] in pages]
     if not visible:

@@ -1,4 +1,4 @@
-# Latest documentation changes
+# Documentation updates
 
 `latest-changes.yml` runs daily at 07:00 Europe/Copenhagen and can also be run
 manually. It updates `latest-changes/index.rst` on the repository default branch.
@@ -35,7 +35,7 @@ GitHub Actions must allow workflow-token writes and Copilot requests. The defaul
 branch must allow this workflow to push its two generated files. Branch rules
 are respected: if writes are blocked, the workflow fails without overwriting
 anything. Read the Docs must build the default branch for its `latest` version.
-Use **Actions → Latest documentation changes → Run workflow** for the initial
+Use **Actions → Documentation updates → Run workflow** for the initial
 backfill. No new repository secret is required by this implementation.
 
 ## Local validation

@@ -1,4 +1,4 @@
-name: Latest documentation changes
+name: Documentation updates
 
 on:
   schedule:
@@ -57,7 +57,7 @@ jobs:
             echo "No digest changes."
             exit 0
           fi
-          git commit -m "Update latest documentation changes"
+          git commit -m "Refresh documentation updates"
           # A concurrent edit causes a safe failure; the next run retries from
           # the unchanged persisted state. Never force-push documentation.
           git push origin "HEAD:refs/heads/$DOCS_BRANCH"
