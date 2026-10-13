@@ -282,7 +282,7 @@ def render(entries, pages):
             from urllib.parse import quote
             title = escape_rst(pages[entry['path']]['title'])
             url = 'https://omnia-docs-g2.readthedocs.io/en/latest/' + quote(entry['path'][:-4], safe='/') + '.html'
-            lines += [f'* `{title} <{url}>`_ — **{entry["classification"]}**',
+            lines += [f'* `{title} <{url}>`__ — **{entry["classification"]}**',
                       f'  {escape_rst(entry["description"])}', '']
     return '\n'.join(lines)
 
