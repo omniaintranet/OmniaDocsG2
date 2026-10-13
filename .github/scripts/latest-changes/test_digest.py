@@ -40,7 +40,7 @@ class DigestTests(unittest.TestCase):
 
     def test_local_calendar_window(self):
         now = datetime(2026, 10, 12, 23, 30, tzinfo=timezone.utc)
-        self.assertEqual(digest.cutoff_for(now).isoformat(), '2026-09-14')
+        self.assertEqual(digest.cutoff_for(now).isoformat(), '2026-07-16')
 
     def test_image_and_nested_include_dependencies(self):
         self.write('guide/index.rst', 'Example guide\n=============\n\n.. include:: snippets/extra.txt\n')
@@ -63,6 +63,7 @@ class DigestTests(unittest.TestCase):
         self.assertIn('Example guide <https://omnia-docs-g2.readthedocs.io/en/latest/guide/index.html>', text)
         self.assertIn('**Added information**', text)
         self.assertIn('Added an example.', text)
+        self.assertIn('last 90 days', text)
         self.assertNotIn('123', text)
         self.assertNotIn('github', text.lower())
         self.assertNotIn('pull request', text.lower())
@@ -116,13 +117,16 @@ class DigestTests(unittest.TestCase):
         self.assertIn('4', json.loads(self.state.read_text())['processed'])
 
     def test_expired_and_deleted_pages_are_removed(self):
-        state = {'version': 1, 'processed': {'1': '2026-09-13'}, 'entries': [
-            {'date': '2026-09-13', 'path': 'guide/index.rst'},
+        retained = {'date': '2026-07-16', 'path': 'guide/index.rst',
+                    'classification': 'Added information', 'description': 'Added an example.'}
+        state = {'version': 1, 'processed': {'1': '2026-07-15', '2': '2026-07-16'}, 'entries': [
+            {'date': '2026-07-15', 'path': 'guide/index.rst'},
+            retained,
             {'date': '2026-10-12', 'path': 'deleted/index.rst'}]}
         self.state.write_text(json.dumps(state))
         self.update([], {}, lambda *args: self.fail('No changes'))
-        self.assertEqual(json.loads(self.state.read_text())['entries'], [])
-        self.assertEqual(json.loads(self.state.read_text())['processed'], {})
+        self.assertEqual(json.loads(self.state.read_text())['entries'], [retained])
+        self.assertEqual(json.loads(self.state.read_text())['processed'], {'2': '2026-07-16'})
 
     def test_digest_and_automation_do_not_report_themselves(self):
         pages = digest.pages_in(self.root)
@@ -211,7 +215,7 @@ class DigestTests(unittest.TestCase):
             return {'number': number, 'merged_at': merged, 'updated_at': updated,
                     'base': {'ref': branch}, 'merge_commit_sha': str(number)}
         batch = [pr(1, None, '2026-10-13T09:00:00Z'),
-                 pr(2, '2026-09-01T09:00:00Z', '2026-10-13T09:00:00Z'),
+                 pr(2, '2026-07-01T09:00:00Z', '2026-10-13T09:00:00Z'),
                  pr(3, '2026-10-12T09:00:00Z', '2026-10-12T09:00:00Z', 'other'),
                  pr(4, '2026-10-12T09:00:00Z', '2026-10-12T09:00:00Z')]
         with patch.object(digest, 'api', side_effect=[batch, []]), \
