@@ -18,6 +18,7 @@ DIGEST = 'latest-changes/index.rst'
 # digest link a stable title so older entries are not relabeled as that version.
 PAGE_TITLES = {'release-notes/7.0/versions.rst': 'Omnia 7 release notes'}
 ZONE = ZoneInfo('Europe/Copenhagen')
+RETENTION_DAYS = 90
 CATEGORIES = {
     'New page', 'Updated guidance', 'Added information', 'Correction',
     'Spelling / grammar', 'Updated screenshots', 'Navigation update',
@@ -39,8 +40,8 @@ def parse_time(value):
 
 
 def cutoff_for(now):
-    # Inclusive window of 30 local calendar dates, not a rolling UTC duration.
-    return now.astimezone(ZONE).date() - timedelta(days=29)
+    # Inclusive window of local calendar dates, not a rolling UTC duration.
+    return now.astimezone(ZONE).date() - timedelta(days=RETENTION_DAYS - 1)
 
 
 def page_title(text):
@@ -267,7 +268,7 @@ def escape_rst(value):
 
 def render(entries, pages):
     lines = ['Latest changes', '==============', '',
-             'Browse documentation pages updated in the last 30 days. Select a page title to read more.', '']
+             f'Browse documentation pages updated in the last {RETENTION_DAYS} days. Select a page title to read more.', '']
     visible = [entry for entry in entries if entry['path'] in pages]
     if not visible:
         lines += ['No recent documentation updates are listed yet.', '']
