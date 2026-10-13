@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[3]
 STATE = ROOT / '.github/scripts/latest-changes/state.json'
-DIGEST = 'latest-changes/index.rst'
+DIGEST = 'documentation-updates/index.rst'
 PAGE_TITLE = 'Documentation updates'
 # The cumulative release page starts with the newest version number. Give its
 # digest link a stable title so older entries are not relabeled as that version.

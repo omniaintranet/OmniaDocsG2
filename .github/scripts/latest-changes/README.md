@@ -1,7 +1,7 @@
 # Documentation updates
 
 `latest-changes.yml` runs daily at 07:00 Europe/Copenhagen and can also be run
-manually. It updates `latest-changes/index.rst` on the repository default branch.
+manually. It updates `documentation-updates/index.rst` on the repository default branch.
 Read the Docs publishes this page through the existing repository integration.
 
 The report contains only linked documentation titles, a classification, and a
