@@ -1,0 +1,63 @@
+name: Latest documentation changes
+
+on:
+  schedule:
+    - cron: "17 7 * * *"
+      timezone: Europe/Copenhagen
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+  copilot-requests: write
+
+concurrency:
+  group: latest-documentation-changes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+      - name: Install classification and documentation tools
+        run: |
+          npm install -g @github/copilot@1.0.96
+          python -m pip install -r docs/requirements.txt
+      - name: Test digest generation
+        run: python -m unittest discover -s .github/scripts/latest-changes -p 'test_*.py'
+      - name: Update reader digest
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+          DOCS_BRANCH: ${{ github.event.repository.default_branch }}
+        run: python .github/scripts/latest-changes/update.py
+      - name: Build documentation and verify digest links
+        run: |
+          python -m sphinx -b html . _build/html
+          python .github/scripts/latest-changes/update.py --check-build _build/html
+      - name: Publish digest
+        env:
+          DOCS_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add latest-changes/index.rst .github/scripts/latest-changes/state.json
+          if git diff --cached --quiet; then
+            echo "No digest changes."
+            exit 0
+          fi
+          git commit -m "Update latest documentation changes"
+          # A concurrent edit causes a safe failure; the next run retries from
+          # the unchanged persisted state. Never force-push documentation.
+          git push origin "HEAD:refs/heads/$DOCS_BRANCH"
