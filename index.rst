@@ -9,6 +9,7 @@ Topics
 .. toctree::
    :titlesonly:
 
+   latest-changes/index
    admin-settings/index
    blocks/index
    general-assets/index
