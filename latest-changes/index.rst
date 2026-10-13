@@ -1,5 +1,5 @@
-Latest changes
-==============
+Documentation updates
+=====================
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
