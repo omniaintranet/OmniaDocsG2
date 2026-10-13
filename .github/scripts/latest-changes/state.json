@@ -10,7 +10,10 @@
     "35": "2026-10-09",
     "36": "2026-10-09",
     "37": "2026-10-13",
-    "38": "2026-10-13"
+    "38": "2026-10-13",
+    "24": "2026-08-21",
+    "27": "2026-09-08",
+    "39": "2026-10-13"
   },
   "entries": [
     {
@@ -72,6 +75,150 @@
       "path": "mcp/setup/index.rst",
       "classification": "Added information",
       "description": "Added a step-by-step Microsoft Copilot Studio MCP setup guide with troubleshooting, plus notes on one-time client secret display and the optional Redirect URI."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/theme/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how to read and manage primary and secondary theme colours for business profiles using the connector."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/shared-link/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for Shared Links covering how editors can publish links for intranet users, including usage examples and available API actions."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/search/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Search feature, which lets users search the intranet from conversation and use results for summarizing, comparing, or creating new content."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/publishing-app/index.rst",
+      "classification": "New page",
+      "description": "Added MCP documentation for Publishing Apps, explaining how to create, list, and manage apps through the connector."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/publishing-app-template/index.rst",
+      "classification": "New page",
+      "description": "Added documentation page for Publishing App templates in the MCP connector, covering template creation, configuration options, and usage examples."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/property/index.rst",
+      "classification": "New page",
+      "description": "Added new page documenting enterprise properties as tenant-wide metadata fields and connector operations for managing them."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/property/enterprise-property/index.rst",
+      "classification": "New page",
+      "description": "Adds documentation for Enterprise property MCP functionality, explaining how to list, create, and manage tenant-wide metadata fields."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/property/enterprise-property-set/index.rst",
+      "classification": "New page",
+      "description": "Added documentation page explaining enterprise property sets, their usage in Publishing App templates, and the EnterprisePropertySet.List action."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/page/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Pages MCP connector, covering page creation, property management, image handling, publishing, and archiving operations."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/page-type/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for tenant page types, covering creation, modification, and configuration options."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/page-collection/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for page collection creation and settings management, including guidance on structure, layout, collaboration, scheduling, and AI configuration."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/my-link/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for My Links feature covering personal link shortcuts, management operations, and connector actions."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/mcp-tenant-context/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for MCP context feature, explaining how tenant administrators can configure and read tenant-wide guidance that shapes chat sessions."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/language/tenant-language/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for tenant languages management, covering how to read, add, remove, and modify tenant languages and default language settings."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/language/index.rst",
+      "classification": "New page",
+      "description": "Added Languages page documenting how tenant and business profile language settings enable multilingual content in Omnia."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/language/business-profile-language/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for business profile languages, covering language configuration, inheritance settings, and available API actions."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/index.rst",
+      "classification": "Updated guidance",
+      "description": "Expanded introduction with detailed explanations of how the Omnia connector works, including conversation flow, tool usage, and permission model."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/feature/index.rst",
+      "classification": "New page",
+      "description": "Added documentation page explaining how to use the Features connector to list, activate, and deactivate features at tenant, business profile, and app instance levels."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/date-time-format/index.rst",
+      "classification": "New page",
+      "description": "New documentation page for configuring Omnia's date and time format, including date format, time format, and first day of week settings."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/business-profile/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for creating business profiles through the MCP connector, including prerequisites, examples, and key considerations for profile management."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/azure-ad-permission/index.rst",
+      "classification": "New page",
+      "description": "New page documenting Azure AD permissions connector for checking tenant consent status and which Omnia features require specific permissions."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/announcement/type/index.rst",
+      "classification": "New page",
+      "description": "Added documentation page explaining announcement types, their management per business profile, and the available actions for listing, adding, renaming, and removing them."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/announcement/status/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how to manage announcement statuses for tracking message states like Active, Resolved, and Postponed."
+    },
+    {
+      "date": "2026-09-08",
+      "path": "mcp/examples/announcement/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for using the Announcements feature, including how to list, read, publish, update and remove announcements through the connector."
     }
   ]
 }
