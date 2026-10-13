@@ -67,6 +67,11 @@ class DigestTests(unittest.TestCase):
         self.assertNotIn('github', text.lower())
         self.assertNotIn('pull request', text.lower())
 
+    def test_release_history_uses_a_stable_reader_title(self):
+        self.write('release-notes/7.0/versions.rst', '7.11.32\n=======\n\nRelease notes.\n')
+        pages = digest.pages_in(self.root)
+        self.assertEqual(pages['release-notes/7.0/versions.rst']['title'], 'Omnia 7 release notes')
+
     def test_same_page_day_combined_and_repeat_run_does_not_reclassify(self):
         other = {**self.pr, 'number': 5}
         files = {number: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '@@\n-old\n+new'}]
@@ -146,6 +151,15 @@ class DigestTests(unittest.TestCase):
         prompt = command.call_args.kwargs['input']
         self.assertIn('+Added an example.', prompt)
         self.assertLess(len(prompt), 40000)
+
+    def test_overlong_model_description_is_corrected_before_publication(self):
+        group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
+        invalid = json.dumps({'classification': 'Added information', 'description': 'Long description. ' * 20})
+        valid = json.dumps({'classification': 'Added information', 'description': 'Added an example.'})
+        with patch.object(digest, 'command', side_effect=[invalid, valid]) as command:
+            result = digest.classify(group, {'title': 'Guide', 'text': 'Guide\n=====\n'})
+        self.assertEqual(command.call_count, 2)
+        self.assertEqual(result['description'], 'Added an example.')
 
     def test_rename_updates_previous_links(self):
         entry = {'date': '2026-10-12', 'path': 'old/index.rst',

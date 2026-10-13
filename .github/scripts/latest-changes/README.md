@@ -16,7 +16,8 @@ workflow-token authentication pattern (`copilot-requests: write`). New pages and
 image-only updates have deterministic classifications. PR content is untrusted
 data: the classifier is denied file, shell, web, and memory tools, has built-in
 MCP servers disabled, uses no repository instructions, and
-must return validated JSON. It never receives GitHub credentials in its prompt.
+must return validated JSON. Invalid responses are retried up to three times.
+It never receives GitHub credentials in its prompt.
 Classifications describe documentation changes, not changes to product behavior.
 
 Internal state records processed PR numbers and reader entries. It is never

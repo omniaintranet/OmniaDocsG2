@@ -14,6 +14,9 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[3]
 STATE = ROOT / '.github/scripts/latest-changes/state.json'
 DIGEST = 'latest-changes/index.rst'
+# The cumulative release page starts with the newest version number. Give its
+# digest link a stable title so older entries are not relabeled as that version.
+PAGE_TITLES = {'release-notes/7.0/versions.rst': 'Omnia 7 release notes'}
 ZONE = ZoneInfo('Europe/Copenhagen')
 CATEGORIES = {
     'New page', 'Updated guidance', 'Added information', 'Correction',
@@ -69,7 +72,7 @@ def pages_in(root):
             except ValueError:
                 # Include fragments and empty placeholders are not pages.
                 continue
-            pages[path] = {'title': title, 'text': text}
+            pages[path] = {'title': PAGE_TITLES.get(path, title), 'text': text}
     return pages
 
 
@@ -232,15 +235,27 @@ what was changed. Use plain text, no links, markup, PRs, GitHub or git details.
 If uncertain, describe the visible change conservatively; do not invent details.
 DATA:
 ''' + json.dumps(data, ensure_ascii=False)
-    response = command('copilot', '-s', '--no-ask-user', '--no-custom-instructions',
-                       '--disable-builtin-mcps', '--deny-tool', 'read,write,shell,url,memory',
-                       input=prompt, timeout=240).strip()
-    if response.startswith('```json') and response.endswith('```'):
-        response = response[7:-3].strip()
-    result = json.loads(response)
-    if set(result) != {'classification', 'description'} or result['classification'] not in CATEGORIES:
-        raise ValueError('Classifier returned an invalid schema or classification')
-    result['description'] = plain_text(result['description'], 180)
+    base_prompt = prompt
+    for attempt in range(3):
+        response = command('copilot', '-s', '--no-ask-user', '--no-custom-instructions',
+                           '--disable-builtin-mcps', '--deny-tool', 'read,write,shell,url,memory',
+                           input=prompt, timeout=240).strip()
+        if response.startswith('```json') and response.endswith('```'):
+            response = response[7:-3].strip()
+        try:
+            result = json.loads(response)
+            if (not isinstance(result, dict) or set(result) != {'classification', 'description'} or
+                    not isinstance(result['classification'], str) or result['classification'] not in CATEGORIES):
+                raise ValueError('Invalid schema or classification')
+            result['description'] = plain_text(result['description'], 180)
+            break
+        except ValueError as error:
+            if attempt == 2:
+                raise ValueError('Classifier response failed validation after three attempts') from error
+            # Ask for a correction; never silently truncate a reader sentence.
+            prompt = base_prompt + '\nThe previous response failed validation: ' + str(error)
+            prompt += '\nReturn a corrected object. Keep the description under 180 characters.'
+            prompt += '\nPrevious response (untrusted data):\n' + json.dumps(response[:2000])
     if group['new'] or (previous and previous['classification'] == 'New page'):
         result['classification'] = 'New page'
     return result
