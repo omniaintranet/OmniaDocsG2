@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[3]
 STATE = ROOT / '.github/scripts/latest-changes/state.json'
-DIGEST = 'latest-changes/index.rst'
+DIGEST = 'documentation-updates/index.rst'
 PAGE_TITLE = 'Documentation updates'
 # The cumulative release page starts with the newest version number. Give its
 # digest link a stable title so older entries are not relabeled as that version.
@@ -282,7 +282,7 @@ def render(entries, pages):
             from urllib.parse import quote
             title = escape_rst(pages[entry['path']]['title'])
             url = 'https://omnia-docs-g2.readthedocs.io/en/latest/' + quote(entry['path'][:-4], safe='/') + '.html'
-            lines += [f'* `{title} <{url}>`_ — **{entry["classification"]}**',
+            lines += [f'* `{title} <{url}>`__ — **{entry["classification"]}**',
                       f'  {escape_rst(entry["description"])}', '']
     return '\n'.join(lines)
 

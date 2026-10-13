@@ -198,17 +198,23 @@ class DigestTests(unittest.TestCase):
         self.assertIn('-Old text', evidence['diff'])
         self.assertIn('+New text', evidence['diff'])
 
-    def test_generated_rst_parses_and_has_one_published_link(self):
+    def test_generated_rst_parses_with_duplicate_page_titles(self):
         from docutils.core import publish_doctree
         from docutils import nodes
+        self.write('guide/other.rst', 'Example guide\n=============\n\nAnother guide.\n')
         pages = digest.pages_in(self.root)
         entries = [{'date': '2026-10-13', 'path': 'guide/index.rst',
-                    'classification': 'Updated guidance', 'description': 'Changed *configuration* guidance.'}]
+                    'classification': 'Updated guidance', 'description': 'Changed *configuration* guidance.'},
+                   {'date': '2026-10-12', 'path': 'guide/other.rst',
+                    'classification': 'Added information', 'description': 'Added an example.'}]
         tree = publish_doctree(digest.render(entries, pages))
         self.assertEqual(len(list(tree.findall(nodes.system_message))), 0)
         links = list(tree.findall(nodes.reference))
-        self.assertEqual(len(links), 1)
-        self.assertEqual(links[0]['refuri'], 'https://omnia-docs-g2.readthedocs.io/en/latest/guide/index.html')
+        self.assertEqual(len(links), 2)
+        self.assertEqual({link['refuri'] for link in links}, {
+            'https://omnia-docs-g2.readthedocs.io/en/latest/guide/index.html',
+            'https://omnia-docs-g2.readthedocs.io/en/latest/guide/other.html',
+        })
 
     def test_merge_filter_handles_recent_updates_to_old_prs(self):
         def pr(number, merged, updated, branch='master'):

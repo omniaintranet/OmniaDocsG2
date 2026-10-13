@@ -52,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add latest-changes/index.rst .github/scripts/latest-changes/state.json
+          git add documentation-updates/index.rst .github/scripts/latest-changes/state.json
           if git diff --cached --quiet; then
             echo "No digest changes."
             exit 0
