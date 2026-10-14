@@ -20,6 +20,7 @@ Select section for more information:
    link-handler/index
    media-picker/index
    metrics/index
+   mcp-context/index
    regional-settings/index
    rtf-editor/index
    setup-wizard/index
