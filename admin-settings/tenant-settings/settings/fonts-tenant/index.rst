@@ -3,7 +3,7 @@ Font - Tenant
 
 Here you can add custom fonts, to be used for different text styles. Available in Omnia 7.12 and later. 
 
-.. image:: fonts-tenant-1.png
+.. image:: fonts-tenant-1-712.png
 
 In the first step, you select a custom font. Also see "Apply to" below.
 
@@ -19,9 +19,9 @@ You can also add additional fonts, that are loaded on the page, but are not appl
 
 Click the button and upload a font file (WOFF, WOFF2, TTF and OTF. Maximum size is 10 MB), or add a link to a CDN font file (Browser fonts can not be selected here).
 
-The selected additional fonts are listed, for example:
+The selected additional fonts are listed, for example (image from a test environment):
 
-.. image:: fonts-tenant-additional.png
+.. image:: fonts-tenant-additional-712.png
 
 You can edit settings for an additional font by clicking the pen, or use the dust bin to remove it.
 
@@ -29,8 +29,10 @@ Apply to
 ********
 Here you decide where the custom font should be applied. You can also see a preview.
 
-.. image:: fonts-tenant-apply-to.png
+.. image:: fonts-tenant-apply-to-712.png
 
 + **Read mode**: Will be applied where users can read published texts.
 + **Everywhere**: As above, and also in Omnia admin and in edit tools.
+
+And don't forget tp save if you have made any changes. (SAVE button at the bottom, not shown in image above).
 
