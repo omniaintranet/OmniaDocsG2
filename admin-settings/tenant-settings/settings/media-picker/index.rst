@@ -1,7 +1,9 @@
 Media picker settings
 ======================
 
-The following settings are available:
+Settings for media has been reorganized in Omnia 7.12 and later, see: (link to be added)
+
+The following settings are available in Omnia 7.11 and earlier:
 
 .. image:: media-picker-settings-78.png
 
