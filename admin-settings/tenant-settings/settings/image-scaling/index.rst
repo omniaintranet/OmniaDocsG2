@@ -1,9 +1,7 @@
-Image scaling settings in Omnia 7.12
+Image scaling settings
 ======================================
 
-**This page is just started. Mor info will be added soon.**
-
-In Omnia 7.11 and earlier image scaling settings is part of the media picker settings. In Omnia 7.12 and later, it's found as a separate option. The settings are the same, though.
+In Omnia 7.11 and earlier image scaling settings is part of the media picker settings. In Omnia 7.12 and later, it's found as a separate option, here. The settings are the same, though.
 
 Here you can set the following:
 
@@ -27,11 +25,11 @@ To create a new scaling setting, do the following:
 
 1. Click the plus.
 
-.. image:: scaling-click-plus-78.png
+.. image:: scaling-click-plus-712.png
 
 2. Use the following settings:
 
-.. image:: scaling-settings-new-78.png
+.. image:: scaling-settings-new-712.png
 
 + **Title**: Add a title for the scaling here. 
 + **Max dimension**: Set the maxumim size in pixels here.
