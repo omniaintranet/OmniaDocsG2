@@ -3,17 +3,11 @@ Image scaling settings in Omnia 7.12
 
 **This page is just started. Mor info will be added soon.**
 
-In Omnia 7.11 and earlier image scaling settings is part of the media picker settings. In Omnia 7.12 and later, it's found as a separate option.
+In Omnia 7.11 and earlier image scaling settings is part of the media picker settings. In Omnia 7.12 and later, it's found as a separate option. The settings are the same, though.
 
-
-
-**Just work material from here. Will be edited soon*:
-
-Scaling
-********
 Here you can set the following:
 
-.. image:: media-picker-settings-scaling-78.png
+.. image:: media-picker-settings-scaling-712.png
 
 + **File size limit**: Set the limit, in bytes, for what is considered to be "too large" for an image in your system. When the file size of an image, selected in the media picker, exceeds this limit, a warning is shown. See below for an example.
 
