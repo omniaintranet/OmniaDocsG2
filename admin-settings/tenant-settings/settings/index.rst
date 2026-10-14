@@ -16,6 +16,7 @@ Select section for more information:
    fonts-tenant/index
    general/index
    header/header-65/index
+   image-scaling/index
    link-handler/index
    media-picker/index
    metrics/index
