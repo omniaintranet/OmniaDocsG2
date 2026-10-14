@@ -34,5 +34,5 @@ Here you decide where the custom font should be applied. You can also see a prev
 + **Read mode**: Will be applied where users can read published texts.
 + **Everywhere**: As above, and also in Omnia admin and in edit tools.
 
-And don't forget tp save if you have made any changes. (SAVE button at the bottom, not shown in image above).
+And don't forget to save if you have made any changes. (SAVE button at the bottom, not shown in image above).
 
