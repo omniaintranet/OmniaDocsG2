@@ -1,7 +1,7 @@
 Media picker settings in Omnia 7.12
 ======================================
 
-**This page is just started. Mor infor will be added soon.**
+**This page is just started. More infor will be added soon.**
 
 Media picker settings, and other media settings have been reorganized in Omnia 7.12 and later, see below.
 
@@ -9,11 +9,7 @@ For media picker settings in Omnia 7.11 and earlier, see: :doc:`Media picker set
 
 **Just work material from here. Will be edited soon*:
 
-Settings for media has been reorganized in Omnia 7.12 and later, see: (link to be added)
 
-The following settings are available in Omnia 7.11 and earlier:
-
-.. image:: media-picker-settings-78.png
 
 Scaling
 ********
