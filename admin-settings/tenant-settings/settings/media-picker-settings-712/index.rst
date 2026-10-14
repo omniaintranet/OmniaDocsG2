@@ -1,13 +1,9 @@
 Media picker settings in Omnia 7.12
 ======================================
 
-**This page is just started. More infor will be added soon.**
-
 Media picker settings, and other media settings have been reorganized in Omnia 7.12 and later, see below.
 
 For media picker settings in Omnia 7.11 and earlier, see: :doc:`Media picker settings </admin-settings/tenant-settings/settings/media-picker/index>`
-
-**Just work material from here. Will be edited soon*:
 
 Central media locations
 *************************
