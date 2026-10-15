@@ -1,3 +1,18 @@
+7.11.33
+========================================
+(Omnia 7.11.33 / Workplace 7.11.33 / WCM 7.11.33 / MS 7.11.33 / Analytics 7.11.4 / Feed 7.11.6)
+
+- Omnia correctly identifies approved application permissions across all Microsoft Graph pages when activating features that require additional permissions
+- Media rollup now supports m4v video files; SVG and WebP files display correctly in the media dialog (#60368)
+- Fixed an issue where navigating between page collections in edit mode could display duplicate navigation drawers and cause unresponsiveness (#58476)
+- The Analytics widget now correctly resizes to fit content when automatic height adjustment is enabled (#59842, #59956)
+- Updated the Myanmar flag asset in language settings
+- Sign-off request exports now include a Resources worksheet showing resource titles and each recipient's sign-off status (#57703, #53397)
+- Icon selections in page type settings are no longer cached across different page types (#56954)
+- Omnia Admin now maintains the admin workspace view when switching from an analytics-enabled business profile to one with analytics disabled (#60121)
+- SharePoint sites with security groups in their administrator list can now be successfully attached to Omnia communities (#59875)
+
+
 7.11.32
 ========================================
 (Omnia 7.11.32 / Workplace 7.11.32 / WCM 7.11.32 / MS 7.11.32 / Analytics 7.11.4 / Feed 7.11.6)
