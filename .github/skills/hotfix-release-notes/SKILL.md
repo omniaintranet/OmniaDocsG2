@@ -25,6 +25,18 @@ The project may contain private data. Keep customer URLs, email addresses, envir
 - Do not invent, infer, or copy a number from a title. Trello and linked GitHub card numbers are not public release-note references.
 - A clearly customer-originated change without a Zendesk/OIM number may still be included without a number when it is meaningful to communicate.
 
+### Verify customer references before delivery
+
+Keep source issue identity separate from customer references. In automation, `sourceIssues[].number` identifies the internal GitHub card for audit accounting; it does not authorize appending that number to the public bullet's `text`.
+
+Before drafting each bullet, collect only the Zendesk/OIM numbers extracted from supported URLs in that bullet's source card bodies or trusted discussion. Treat no matching URLs as an empty customer-reference list. A GitHub URL ending in `/issues/4331` is never an OIM reference.
+
+- If a GitHub source card is numbered `4331` and has no supported Zendesk/OIM URL, an otherwise eligible bullet must have no reference suffix. Do not append `(#4331)` as a fallback.
+- If that same card contains a supported Zendesk URL ending in `/agent/tickets/59036`, use `(#59036)` and retain `4331` only in the internal source accounting.
+- For consolidated bullets, use only the union of verified customer references from the associated source cards. Do not borrow a reference from an unrelated card in the release.
+
+**Before finalizing, check every public `#` reference against a supported URL on an associated source card. Remove any reference without that evidence; do not replace it with the GitHub card number or remove an otherwise eligible bullet merely because it has no customer reference.** If automation rejects an unsupported reference, correct the reference while preserving source accounting and rerun validation; do not bypass the validator.
+
 ## Decide what belongs in the public notes
 
 Include changes that are customer-reported, materially customer-visible, new functionality, important compatibility changes, or security/reliability improvements worth communicating.
