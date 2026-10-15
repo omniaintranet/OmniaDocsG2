@@ -15,6 +15,7 @@ Select section for more information:
    publishing-channels/index
    permission/index
    page-types/index
-   page-bulk-update/index
+   omnia-search-renidex/index
    reindex-pages-semantic-search/index
+   page-bulk-update/index
    
