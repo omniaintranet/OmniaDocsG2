@@ -99,7 +99,7 @@ trap 'rm -f "$issue_body_file"' EXIT
   if [ "$pending_issue_count" -eq 0 ]; then
     printf -- '- None.\n'
   else
-    printf 'These issues are held outside the public draft. Review whether to communicate them, use high-level wording if appropriate, or omit them under the applicable disclosure policy.\n\n'
+    printf 'These issues and their suggested wording are held outside the public draft. Suggestions are not approved for publication. Review whether to use or revise the wording, or omit the change under the applicable disclosure policy.\n\n'
     jq -r --slurpfile releaseData "$INPUT_FILE" '
       .pendingReviewIssues[] as $pending
       | $releaseData[0].releases[0].issues[]
@@ -107,7 +107,7 @@ trap 'rm -f "$issue_body_file"' EXIT
           .repositoryWithOwner == $pending.repositoryWithOwner
           and .number == $pending.number
         )
-      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)"
+      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)\n\n  Suggested release note (pending approval):\n\n  > \($pending.suggestedText)\n"
     ' "$AUDIT_FILE"
   fi
 } > "$issue_body_file"

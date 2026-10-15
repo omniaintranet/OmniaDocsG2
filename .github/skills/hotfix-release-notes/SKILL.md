@@ -54,6 +54,7 @@ Review changes involving authentication, authorization, account recovery, permis
 - Flag potentially security-sensitive entries for manual review rather than automatically publishing or excluding them. Keep pending entries separate from the public draft until that review determines how to communicate them.
 - Avoid technical details that could help identify, reproduce, or exploit a security weakness.
 - Prefer high-level, customer-focused descriptions of security-related improvements.
+- For every pending entry, include both a high-level reason for manual review and suggested customer-facing release-note wording. Keep the suggestion concise, factual, and free of technical details that could identify, reproduce, or exploit a weakness. Apply the same verified customer-reference rules. Label it as pending approval and keep it outside public release-note bullets until a reviewer approves inclusion. In structured automation output, put this wording in `suggestedText` on the pending entry.
 - During manual review, omit security-sensitive fixes when public disclosure is unnecessary, unless a security disclosure policy or customer communication requirement applies.
 
 ## Write in the established Omnia style
@@ -119,6 +120,6 @@ For interactive delivery, provide a compact audit summary outside the writing bl
 - number of published bullets;
 - any consolidated cards;
 - omitted cards and the reason for omission;
-- potentially security-sensitive cards pending manual review, with a high-level reason; keep sensitive details out of the public notes.
+- potentially security-sensitive cards pending manual review, with a high-level reason and suggested release-note wording marked as pending approval; keep sensitive details out of the public notes.
 
 When the user requests only a wording revision or an omitted-item list, answer only that focused request unless the full draft is needed for clarity.
