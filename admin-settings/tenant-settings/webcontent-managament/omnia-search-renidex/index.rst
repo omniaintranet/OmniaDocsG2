@@ -3,7 +3,7 @@ Omnia search - reindex content
 
 **This page is a work in progress.**
 
-Use this Web content management option to make sure all Omnia pages in the tenant are indexet for Omnia search. This will most likely need to done now and then. Available in Omnia 7.12 and later.
+Use this Web content management option to make sure all Omnia content in the tenant is indexet for Omnia search. This will most likely need to done now and then. Available in Omnia 7.12 and later.
 
 In the list, you can see info about recent reindexing and if it succeeded or not.
 
