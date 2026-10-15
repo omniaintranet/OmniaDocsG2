@@ -1,27 +1,27 @@
 Announcements
 ===========================================
 
-Here a user with the approrpiate permissions can create announcements that can be displayed over the whole tenant, normally at the top. Tenant administrators can always create announcements. Also, any user can be granted this permission. This is set under "Permissions" for the tenant, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
+Here a user with the approrpiate permissions can create announcements that can be displayed over the whole tenant. Tenant administrators can always create announcements. Also, any user can be granted this permission. This is set under "Permissions" for the tenant, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
 Tenant announcements can also be shown through the Announcements block. For more information about the block, see: :doc:`The Announcements block </blocks/announcements/index>`
 
 Note that an option to create announcements for a specific business group also is available. The options are identical, the only difference is where announcements are shown.
 
-The following options are available for tenant announements (image from Omnia 7.12):
+The following options are available for tenant announcements (image from Omnia 7.12):
 
 .. image:: announce-712.png
 
 Settings
 **********
-Available in Omnia 7.12 and later. Decide if high priority should stay at the top when scrolling or not (Default=sticky).
+Available in Omnia 7.12 and later. Decide if high priority announcements should stay at the top when scrolling or not (Default=sticky).
 
 .. image:: announce-settings.png
 
 Status and types
 ******************
-In Omnia 7.12 and later, status ad types are handled through this option. 
+In Omnia 7.11 and earlier you handle status and types through the cogwheel in the annoncement list, as described below.
 
-In Omnia 7.11 and earlier you handle them through the cogwheel in the annoncement list. Available options for status and types are the same. see below.
+In Omnia 7.12 and later, status and types are handled through this option. Available options for are the same thoughr, see description below.
 
 Announcements
 **************
@@ -29,7 +29,7 @@ All existing announcements, active or not, are shown in the list. From there you
 
 .. image:: announcements-list-v75.png
 
-In Omnia 7.12 and later, the cog wheel is not present. Status and types are handled from a menu, see above, but the options are the same as is described below.
+In Omnia 7.12 and later, the cog wheel is not present. Status and types are handled from a menu, as explained above.
 
 For explanation of Priority and Order, see below.
 
