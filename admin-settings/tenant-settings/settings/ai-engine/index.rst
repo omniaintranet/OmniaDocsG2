@@ -1,9 +1,9 @@
 AI features
 ==================================
 
-The following options are available here in Omnia 7.8 and later:
+The following options are available here (image from Omnia 7.12):
 
-.. image:: ai-engine-menu-78.png
+.. image:: ai-engine-menu-712.png
 
 Prerequisite: An Azure Open AI subscription is needed for the AI features to be available in Omnia.
 
@@ -19,4 +19,6 @@ Select section for more information.
    settings-ai-engine/index
    improve-selected-text-ai-engine/index
    content-analysis-ai-engine/index
+   semantic-search-full-reindex/index
+   ai-features-logs/index
  
