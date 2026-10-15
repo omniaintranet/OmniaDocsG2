@@ -88,13 +88,13 @@ Requirements:
 - Use the supplied issue bodies, labels, and recent comments as the source of truth. Prefer implemented and QA-verified behavior in recent comments over the initial proposal.
 - Do not invent functionality or ticket numbers.
 - Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues or pendingReviewIssues.
-- Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
+- Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review and suggestedText containing a proposed customer-facing release-note bullet. The suggestion must be concise, factual, and safe for public disclosure, without vulnerability details or exploitation clues. It remains unapproved and separate from public bullets; apply the same customer-reference rules to it. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
 - Review all bullets together for repetitive sentence openings before returning the response.
 - When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
 - Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
 - Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
-- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, and reason exactly as shown. Emit issue numbers as JSON numbers, not strings.
+- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, reason, and suggestedText exactly as shown. Emit issue numbers as JSON numbers, not strings.
 - Return only valid JSON matching this shape, without Markdown fences or commentary:
 {
   "bullets": [
@@ -119,7 +119,8 @@ Requirements:
     {
       "repositoryWithOwner": "owner/repository",
       "number": 789,
-      "reason": "Security-sensitive change requires manual disclosure review"
+      "reason": "Security-sensitive change requires manual disclosure review",
+      "suggestedText": "- Improved the reliability of the sign-in process"
     }
   ]
 }
@@ -131,7 +132,9 @@ extracted_response_file=$(mktemp)
 normalized_response_file=$(mktemp)
 canonical_response_file=$(mktemp)
 bullets_file=$(mktemp)
-trap 'rm -f "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file"' EXIT
+review_input_file=$(mktemp)
+review_notes_file=$(mktemp)
+trap 'rm -f "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file" "$review_input_file" "$review_notes_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
@@ -380,6 +383,15 @@ if ! jq '
             // .omission_reason
             // ""
             | if type == "string" then clean_reason else . end
+          ),
+          suggestedText: (
+            .suggestedText
+            // ""
+            | if type == "string" then clean_text else . end
+            | if type == "string" and (startswith("- ") | not)
+              then "- " + .
+              else .
+              end
           )
         }
     ]
@@ -416,6 +428,10 @@ if ! jq -e '
         and (contains("\n") | not)
         and (test("https?://|www\\.|@|[<>]"; "i") | not)
     )
+  )
+  and all(
+    .pendingReviewIssues[];
+    (.suggestedText | type == "string" and startswith("- ") and length > 2)
   )
 ' "$canonical_response_file" >/dev/null; then
   audit_shape=$(
@@ -480,6 +496,22 @@ else
   echo "No public bullets; all source issues are omitted or pending manual review."
   has_notes=false
 fi
+
+# Validate each unapproved suggestion against only its own source issue. Never
+# copy these suggestions into the public release-note file automatically.
+while IFS= read -r pending_issue; do
+  jq --argjson pending "$pending_issue" '
+    .releases[0].issues |= map(select(
+      .repositoryWithOwner == $pending.repositoryWithOwner
+      and .number == $pending.number
+    ))
+  ' "$INPUT_FILE" > "$review_input_file"
+  {
+    sed -n '1,4p' "$OUTPUT_FILE"
+    jq -r '.suggestedText' <<< "$pending_issue"
+  } > "$review_notes_file"
+  bash "$VALIDATOR_FILE" "$review_input_file" "$review_notes_file"
+done < <(jq -c '.pendingReviewIssues[]' "$AUDIT_FILE")
 
 if [ -n "${GITHUB_OUTPUT:-}" ]; then
   printf 'has_notes=%s\n' "$has_notes" >> "$GITHUB_OUTPUT"
