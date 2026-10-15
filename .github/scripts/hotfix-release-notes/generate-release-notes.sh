@@ -89,6 +89,7 @@ Requirements:
 - Do not invent functionality or ticket numbers.
 - Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues or pendingReviewIssues.
 - Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review and suggestedText containing a proposed customer-facing release-note bullet. The suggestion must be concise, factual, and safe for public disclosure, without vulnerability details or exploitation clues. It remains unapproved and separate from public bullets; apply the same customer-reference rules to it. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
+- Keep security-related suggestedText deliberately general: name only a broad improvement category, such as URL validation. Omit the affected workflow, vulnerable component, trigger, attack method, and prevented exploit. Do not name login redirects, domain restrictions, or other clues to the weakness. Review and generalize any such clues before returning the suggestion.
 - Review all bullets together for repetitive sentence openings before returning the response.
 - When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
@@ -120,7 +121,7 @@ Requirements:
       "repositoryWithOwner": "owner/repository",
       "number": 789,
       "reason": "Security-sensitive change requires manual disclosure review",
-      "suggestedText": "- Improved the reliability of the sign-in process"
+      "suggestedText": "- Improved security validation of URLs"
     }
   ]
 }
