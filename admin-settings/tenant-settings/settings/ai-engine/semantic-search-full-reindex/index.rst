@@ -1,6 +1,6 @@
 Semantic search full reindex
 ================================
 
-**This page is a work in progress.**
+**Work on this page has just started.**
 
-Available in Omni 7.12 and later.
+Available in Omnia 7.12 and later.
