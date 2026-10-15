@@ -1,7 +1,7 @@
 Semantic search - reindex content
 ====================================
 
-Use this Web content management option to make sure all Omnia pages in the tenant are indexet for semantic search. This will most likely need to done now and then. Available in Omnia 7.12 and later.
+Use this Web content management option to make sure all content in the tenant is indexet for semantic search. This will most likely need to done now and then. Available in Omnia 7.12 and later.
 
 Just click REINDEX CONTENT:
 
@@ -12,5 +12,4 @@ When a reindex is running, a TERMINATE CURRENT JOB button is shown so you can st
 Other than that, you can see info about recent reindexing and if it succeeded or not.
 
 If the reindex failes, just try again. If you experience repeated failures, report an issue to Omnia support.
-
 
