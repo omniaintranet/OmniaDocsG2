@@ -332,7 +332,102 @@
     "311dfe8234910c8e38f14f581e49187db8e52704": "2026-10-02",
     "72b70e0b8ed73e0487b0885c4e0c1844a3dd9243": "2026-10-02",
     "a2ee70583a0d0ff2621a90ec4e51104809b6dae0": "2026-10-16",
-    "1453ef909099c483481caddc23ce47d69bae65b2": "2026-10-16"
+    "1453ef909099c483481caddc23ce47d69bae65b2": "2026-10-16",
+    "c0fcf4987858d9b9a55582c9f32fd0628f46a128": "2026-09-03",
+    "c86d31cead8a53606c15d753252c62361c34a286": "2026-09-03",
+    "4c212796c94b653ec1c9819414747c750839dbcc": "2026-09-03",
+    "58dc06c4b4c50c8cca4304f419dc491683dfea1f": "2026-09-03",
+    "a2884265ae3e5886d64e1a6830b5897a11cd3f6f": "2026-09-03",
+    "f0411bddc727fc03e2730f1c76d88ae1fcc3776c": "2026-09-03",
+    "ed0c9f6e5d5363934fbcb27210ccfd12ad1bd22d": "2026-09-03",
+    "17dc3992158f1e3a9cf52996a5b1eeb3f16eb407": "2026-09-03",
+    "ced3feea5ba3a8f879a7d5e2065ffee1ab8ab34f": "2026-09-03",
+    "f22265ca6f6da2447cac2360b19d3ac5d1e7207c": "2026-09-03",
+    "c949733462e782b677b00a244129f78bbcd6b948": "2026-09-04",
+    "bf8474308b68ea2261b9affd0d8cd600db137f3c": "2026-09-04",
+    "82b6b3b4e94888f0d7b117a0a4882809c6285bb0": "2026-09-09",
+    "3b756783fdc557b0e584ed6903b932d8b448c9cd": "2026-09-09",
+    "3e444cfc85bfcf45a823adc2960f3ab966ee4468": "2026-09-09",
+    "69d309a14218633ad78cd5da11b3271a992f5705": "2026-09-09",
+    "2812f729f8fed539b14ee1e8ad3660884f5ed01a": "2026-09-09",
+    "91a74005fcfbaaf892a8529bf93e64cea0c2bc96": "2026-09-09",
+    "78b2babae320ad03c906599d94b306a9204e34d7": "2026-09-09",
+    "ff55eb1611cf0dd41438462ebd3c84252b61b277": "2026-09-09",
+    "6e3ea0ab433fbaf0e4790c82d7b86c977c6d8908": "2026-09-09",
+    "494bca645febcc0d610f763c96d27e20523f8dd1": "2026-09-09",
+    "7cf52996abf7f9676ff6bbc240e5f9aaa182dc58": "2026-09-09",
+    "d64169d28dc75d9f93494c7a510d0dce3acd87ba": "2026-09-09",
+    "75cccdd742c50959bf3d66a5617696926691f0ea": "2026-09-09",
+    "6c8367d22eb49fc795956f07320aef159211f9e2": "2026-09-10",
+    "9ca523ce21659a3dfe15e5cc5c56765d23bdd3ee": "2026-09-10",
+    "4d9a0ddac9f8f2719ee9357cc4c5da0c94c4e663": "2026-09-10",
+    "61a94a096222b654bf1d95685c69cb680a0b2074": "2026-09-10",
+    "0aa29ab6f6f6721c446e9049fe0fe80ab20158ab": "2026-09-10",
+    "481096653f9e3f27a9d22e358b72cbef780c413f": "2026-09-10",
+    "e27af552dcb75b9e6f06cbb2451f19ea401814e4": "2026-09-10",
+    "f83e58c20e3aef6c6244b490c6b8ecb143c6c21f": "2026-09-10",
+    "753fd92016214845bdff0f97c4385fe146063932": "2026-09-10",
+    "f120a3d84ff7e9b0761c7cbead78414a72a083b1": "2026-09-10",
+    "15622ed2b91c2ca7d36bb73ada7dcbde6f615109": "2026-09-10",
+    "fa08c0cc3e2af3d788cdbc90dce1177cba6ee055": "2026-09-10",
+    "99edf8ef099144e28e7cc85c57f20c2928cddbf6": "2026-09-10",
+    "c24b091c15c1a59b963cde9f73d46a67eb90263c": "2026-09-10",
+    "ea45c94751e600167212b3c4f4015267d24bce9d": "2026-09-10",
+    "55badd6bf6152d9b37cbbbef9088455fe639df68": "2026-09-10",
+    "fca4f88577b265c2b220894c35c4020b78ca7717": "2026-09-10",
+    "4407088b40de930bb5c1bb193c1702ef12ddfd39": "2026-09-10",
+    "ad914e1607340c97617907860e1efb42d4b4e7c9": "2026-09-10",
+    "4f332f32fe7ae39930e28701d8db0ec504e9f9f6": "2026-09-10",
+    "f27c3989413edc79a5adf6ba0bc43a28c1340e07": "2026-09-10",
+    "95841a29131385c9d11bb66f74ff9343773070c6": "2026-09-10",
+    "4d9c12ec2101ccf51aa2554691ebdc08729c97d5": "2026-09-10",
+    "894f1a66c3474d04147590e09fcd6ecb0cf95444": "2026-09-10",
+    "bd2b2a02a284451b26e08bd8a7d45536feb60cd0": "2026-09-10",
+    "6f89409a3892d4de91de16ee93983f53271e07f1": "2026-09-11",
+    "3e724c989252293e84f46ffae3a933c17425d2a8": "2026-09-11",
+    "13fd8bbf07ba45d9c90cfd6c974f4e4e6a38b80b": "2026-09-11",
+    "aac7fffc453b113520fcf35d7f00657f4c15a504": "2026-09-11",
+    "d69b7c21482ca8c148e61017ab895c42472fa913": "2026-09-14",
+    "fea4faff593002b922c351f22f0df090bfe7f459": "2026-09-15",
+    "eef40c5c3cf555473ebbc00f54e7e3e7b2cb48ae": "2026-09-15",
+    "2f749d5ef6ce065d3709ee946d70abaa101dec35": "2026-09-15",
+    "de9f864325b4a7a0a62e4da1d533c7e3607a0b3b": "2026-09-15",
+    "5326b4fac9dbcc7f935d1696a381bd113e15bae8": "2026-09-15",
+    "c91d43ca2afb685325e8bd2db1e56d457a1083f1": "2026-09-16",
+    "04a40487a9a5aab9095e4f45b77750d482bfd6df": "2026-09-16",
+    "131d4f85eef7fbd5317a64adf3952dfa6c7a69ea": "2026-09-16",
+    "1d5a9b35536c8f4b1bdecc49835153df27652abb": "2026-09-16",
+    "aa7a1ab0ba95dafc0926b438d544b7a12513cb5e": "2026-09-16",
+    "9eefa2ac7f9ba6715f97ebd60ae695664d6e964f": "2026-09-16",
+    "0bb42c86dc247b8556cd3a762653cd491ef7a6d6": "2026-09-18",
+    "7b86f5bb73b93342bdb6aa682c7b12d87976f4f4": "2026-09-18",
+    "e5bdc2ec174f7cba698d5c149b304f456243485e": "2026-09-18",
+    "b7452d30abb401069938ac493e148eafbf4a461a": "2026-09-18",
+    "83ec19123795186f4cbcc6f59928187c820e7432": "2026-09-18",
+    "6f7601868ede418aad0d13a7ad7b70a142ac23bf": "2026-09-18",
+    "6643cd9ac41909d18e3a6899fa4333cc09b6b7cc": "2026-09-18",
+    "7f3013c659532626564cbfab406f51369c56b5a7": "2026-09-18",
+    "1d6afe01a28d3a575b1a7c5b7f0f339a8d567a80": "2026-09-21",
+    "b75924ad8d6b9c392607124a75cf6c648a9f6057": "2026-09-21",
+    "c6c0d1223ccad1a2d11bba6ea8dc0724b16f10e8": "2026-09-21",
+    "e35896309dbc913e065c383e2404acff34841727": "2026-09-21",
+    "2ee87c7140559d71031d13803a703d24b8975727": "2026-09-21",
+    "cd6d8a9078f6b72139bd0561b05149309fb21076": "2026-09-21",
+    "6346632f0019cf091a97c360ea9b0fd280f805e1": "2026-09-21",
+    "de3a089a45adefcaca4a6689a0f5644d4be8d5bb": "2026-09-21",
+    "266615e20ec44197a6bd28f637713db2ea5b80c5": "2026-09-21",
+    "c2ebf278dffa7d2cada02c2b1a7ec8cd76cce916": "2026-09-21",
+    "1ff7c90d3619dfd61cde7c90f45677a60ed88169": "2026-09-21",
+    "4893021c8a60c176fd986cae531369a539a6a296": "2026-09-21",
+    "81fa191af99d093d6cf229cc1946b35c2ee9cd3b": "2026-09-21",
+    "beb1c0d9846570e3e461a5b1b452e9b6ffb8356b": "2026-09-21",
+    "85c41a3412f0b261b1448af64a93339bc1f5fb24": "2026-09-21",
+    "474d730b51047efe64a2a44b6cf5d9e71ae51998": "2026-09-21",
+    "53b02b558ff7da6ee2afcbfa3c92530ab0ce030c": "2026-09-21",
+    "2ef2d5b255987409a59e24d8969c2ef9b35c0e3b": "2026-09-21",
+    "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
+    "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
+    "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16"
   },
   "entries": [
     {
@@ -1611,10 +1706,183 @@
       ]
     },
     {
+      "date": "2026-09-21",
+      "path": "admin-settings/business-group-settings/workplace/settings/index.rst",
+      "classification": "Added information",
+      "description": "Added note distinguishing settings for Omnia 7.11 and earlier from Omnia 7.12 and later versions.",
+      "sources": [
+        "4893021c8a60c176fd986cae531369a539a6a296",
+        "81fa191af99d093d6cf229cc1946b35c2ee9cd3b",
+        "8e4d2901d8607b75816478423a70d8cad9071e58",
+        "b42db935bd22f2b303db66d7d0bd0f4c52e1087a",
+        "beb1c0d9846570e3e461a5b1b452e9b6ffb8356b",
+        "c2ebf278dffa7d2cada02c2b1a7ec8cd76cce916"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "path": "admin-settings/business-group-settings/workplace/left-panel-workspace/index.rst",
+      "classification": "New page",
+      "description": "Added new page for left panel settings, available in Omnia 7.12 and later, with reference to related navigation bar configuration.",
+      "sources": [
+        "266615e20ec44197a6bd28f637713db2ea5b80c5",
+        "2ee87c7140559d71031d13803a703d24b8975727",
+        "6346632f0019cf091a97c360ea9b0fd280f805e1",
+        "c6c0d1223ccad1a2d11bba6ea8dc0724b16f10e8",
+        "cd6d8a9078f6b72139bd0561b05149309fb21076",
+        "de3a089a45adefcaca4a6689a0f5644d4be8d5bb",
+        "e35896309dbc913e065c383e2404acff34841727"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "path": "admin-settings/business-group-settings/workplace/index.rst",
+      "classification": "Navigation update",
+      "description": "Added left-panel-workspace section to the list of available workspace settings and updated the screenshot to Omnia 7.12.",
+      "sources": [
+        "1d6afe01a28d3a575b1a7c5b7f0f339a8d567a80",
+        "1ff7c90d3619dfd61cde7c90f45677a60ed88169",
+        "b75924ad8d6b9c392607124a75cf6c648a9f6057"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "path": "admin-settings/business-group-settings/workplace/header/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation of Omnia 7.12 search box style options (M365 or WCAG compliant) and version-specific guidance for app launcher and search settings.",
+      "sources": [
+        "474d730b51047efe64a2a44b6cf5d9e71ae51998",
+        "53b02b558ff7da6ee2afcbfa3c92530ab0ce030c",
+        "85c41a3412f0b261b1448af64a93339bc1f5fb24"
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "path": "admin-settings/business-group-settings/workplace/footer/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed outdated version reference and HTML example screenshot from footer configuration instructions.",
+      "sources": [
+        "2ef2d5b255987409a59e24d8969c2ef9b35c0e3b"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "use-omnia-in-sharepoint/index.rst",
+      "classification": "Added information",
+      "description": "Added activation instructions for SharePoint font feature and new documentation section for Matomo activity tracking with configuration examples.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
       "date": "2026-09-18",
       "path": "release-notes/7.0/versions.rst",
       "classification": "Added information",
-      "description": "Added release notes for version 7.11.28, listing fixes and improvements to Rich Text Editor, rollups, Properties block, Digital Signage and approval workflow emails."
+      "description": "Added release notes for version 7.11.28, listing fixes and improvements to Rich Text Editor, rollups, Properties block, Digital Signage and approval workflow emails.",
+      "sources": [
+        "7b86f5bb73b93342bdb6aa682c7b12d87976f4f4"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "pages/page-collections/page-collection-settings/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that Auto publish cannot be used with publishing approval and specified the two settings contained in Publish notifications.",
+      "sources": [
+        "7b86f5bb73b93342bdb6aa682c7b12d87976f4f4"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "general-assets/rtf-editor/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added instructions for marking words and phrases to exclude from machine translation in Omnia 7.12 and later.",
+      "sources": [
+        "b7452d30abb401069938ac493e148eafbf4a461a",
+        "e5bdc2ec174f7cba698d5c149b304f456243485e"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "general-assets/about-matomo-event-tracking/index.rst",
+      "classification": "Added information",
+      "description": "Added prerequisite information specifying that the Analytics for SPFx feature must be activated to track SharePoint pages.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "blocks/page-rollup/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added security guidance warning that AI insights cached with non-Every load refresh schedules are not security trimmed.",
+      "sources": [
+        "7f3013c659532626564cbfab406f51369c56b5a7"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "blocks/blocks-event-management/participant-counter-712/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Event participant counter block settings in Omnia 7.12.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "blocks/blocks-event-management/index.rst",
+      "classification": "Navigation update",
+      "description": "Added participant-counter-712 block reference to the Event management blocks table of contents.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "blocks/blocks-event-management/event-participant-list/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated settings screenshot for Omnia 7.12 and removed an outdated user example image.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "blocks/blocks-event-management/event-participant-counter/index.rst",
+      "classification": "Added information",
+      "description": "Added version-specific guidance and new setting option to hide registered participant counts from readers.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "admin-settings/tenant-settings/system/microsoft-365/system-webparts/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that only many of the Omnia blocks are available as webparts, not all of them.",
+      "sources": [
+        "0bb42c86dc247b8556cd3a762653cd491ef7a6d6",
+        "6f7601868ede418aad0d13a7ad7b70a142ac23bf"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "admin-settings/tenant-settings/settings/rtf-editor/index.rst",
+      "classification": "Added information",
+      "description": "Added information about the new \"No translation\" option in Omnia 7.12 and later for selecting words to exclude from machine translation.",
+      "sources": [
+        "83ec19123795186f4cbcc6f59928187c820e7432"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "path": "admin-settings/tenant-settings/settings/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated the screenshot image displaying Omnia 7.12 tenant settings options.",
+      "sources": [
+        "7b86f5bb73b93342bdb6aa682c7b12d87976f4f4"
+      ]
     },
     {
       "date": "2026-09-18",
@@ -1627,6 +1895,15 @@
       "path": "admin-settings/tenant-settings/features-tenant-7/index.rst",
       "classification": "Added information",
       "description": "Added a pointer in the Integration section to the Microsoft Search connectors page for setup instructions for that feature."
+    },
+    {
+      "date": "2026-09-18",
+      "path": "admin-settings/tenant-settings/block-gallery/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version constraint from block gallery introduction, indicating feature availability is no longer limited to Omnia 7.9 and later.",
+      "sources": [
+        "6643cd9ac41909d18e3a6899fa4333cc09b6b7cc"
+      ]
     },
     {
       "date": "2026-09-18",
@@ -1647,10 +1924,385 @@
       "description": "Added a Microsoft Search connectors section to the Search page's list of linked sections, placed after Search configuration."
     },
     {
+      "date": "2026-09-16",
+      "path": "working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed version restriction from semantic search availability and added a reference link to semantic search documentation.",
+      "sources": [
+        "04a40487a9a5aab9095e4f45b77750d482bfd6df",
+        "1d5a9b35536c8f4b1bdecc49835153df27652abb"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "path": "pages/page-types/page-type-settings/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that when an email rule first executes, it sends emails for all pages meeting the rule criteria that have not previously received emails.",
+      "sources": [
+        "c91d43ca2afb685325e8bd2db1e56d457a1083f1"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "path": "general-assets/about-semantic-search/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation of supported file formats for semantic search and updated version compatibility from 7.11 to 7.12.",
+      "sources": [
+        "131d4f85eef7fbd5317a64adf3952dfa6c7a69ea"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "path": "admin-settings/business-group-settings/settings/event-management/index.rst",
+      "classification": "Added information",
+      "description": "Added information about searching for publishing apps and documented the new 'Remove declined participants from the participant list' setting.",
+      "sources": [
+        "9eefa2ac7f9ba6715f97ebd60ae695664d6e964f",
+        "aa7a1ab0ba95dafc0926b438d544b7a12513cb5e"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "release-notes/mcp/7/index.rst",
+      "classification": "Added information",
+      "description": "Added promoted search results and Html/Script blocks to the list of supported MCP areas.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "release-notes/mcp/7/hotfix-releases/versions.rst",
+      "classification": "Added information",
+      "description": "Added Release 7.11.29 and 7.11.28 entries documenting new capabilities for Html/Script blocks and promoted search results.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "pages/create-page/index.rst",
+      "classification": "Added information",
+      "description": "Added information about setting scheduled publishing dates in Omnia 7.12 and later when creating new pages with autopublish enabled.",
+      "sources": [
+        "5326b4fac9dbcc7f935d1696a381bd113e15bae8",
+        "de9f864325b4a7a0a62e4da1d533c7e3607a0b3b"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/search/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation of promoted search results feature, explaining what they are and conditions when they may not appear.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/promoted-search-result/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how to list, add, modify, and delete promoted search results for business profiles.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/page/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for Page.AddHtmlScriptBlock and Page.UpdateHtmlScriptBlock actions to manage HTML and script blocks on pages.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/page-type/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for AddHtmlScriptBlock and UpdateHtmlScriptBlock actions on page types.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/page-collection/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for PageCollection.AddHtmlScriptBlock and PageCollection.UpdateHtmlScriptBlock actions to add and patch HTML/Script blocks on page collection landing pages.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/index.rst",
+      "classification": "Navigation update",
+      "description": "Added navigation links for promoted-search-result and html-script-block documentation pages to the examples index.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "mcp/examples/html-script-block/index.rst",
+      "classification": "New page",
+      "description": "Added comprehensive documentation for Html/Script blocks, covering how to add, modify, and script custom content blocks on pages, page collections, and page types.",
+      "sources": [
+        "fea4faff593002b922c351f22f0df090bfe7f459"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "general-assets/sharepoint-page-picker-picker/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the SharePoint page picker feature in Omnia 7.12 and later, with instructions for searching and browsing SharePoint pages.",
+      "sources": [
+        "eef40c5c3cf555473ebbc00f54e7e3e7b2cb48ae"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "general-assets/page-picker/index.rst",
+      "classification": "Added information",
+      "description": "Added note about SharePoint page picker feature available in Omnia 7.12 and later with cross-reference to related documentation.",
+      "sources": [
+        "eef40c5c3cf555473ebbc00f54e7e3e7b2cb48ae"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "general-assets/index.rst",
+      "classification": "Navigation update",
+      "description": "Added SharePoint page picker documentation entry to the general assets navigation menu.",
+      "sources": [
+        "eef40c5c3cf555473ebbc00f54e7e3e7b2cb48ae"
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "path": "blocks/page-rollup/index.rst",
+      "classification": "Added information",
+      "description": "Added guidance about accessing Omnia admin to edit default settings for the Show in dialog feature's rendering options.",
+      "sources": [
+        "2f749d5ef6ce065d3709ee946d70abaa101dec35"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "path": "release-notes/mcp/index.rst",
+      "classification": "New page",
+      "description": "New Omnia MCP release notes page documenting extension versions and providing links to MCP client integration setup and hotfixes.",
+      "sources": [
+        "d69b7c21482ca8c148e61017ab895c42472fa913"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "path": "release-notes/mcp/7/index.rst",
+      "classification": "New page",
+      "description": "New documentation page for Omnia MCP Release 7, covering compatibility, MCP clients, permissions model, administrator guidance, and supported features.",
+      "sources": [
+        "d69b7c21482ca8c148e61017ab895c42472fa913"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "path": "release-notes/mcp/7/hotfix-releases/versions.rst",
+      "classification": "New page",
+      "description": "Added new release notes page documenting the initial Omnia MCP release 7.11.27 with features and integration details.",
+      "sources": [
+        "d69b7c21482ca8c148e61017ab895c42472fa913"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "path": "release-notes/mcp/7/hotfix-releases/index.rst",
+      "classification": "New page",
+      "description": "Added new index page for organizing and accessing hotfix releases within release 7.",
+      "sources": [
+        "d69b7c21482ca8c148e61017ab895c42472fa913"
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "path": "release-notes/index.rst",
+      "classification": "Navigation update",
+      "description": "Added MCP release notes to the main release notes navigation menu.",
+      "sources": [
+        "d69b7c21482ca8c148e61017ab895c42472fa913"
+      ]
+    },
+    {
       "date": "2026-09-14",
       "path": "mcp/setup/index.rst",
       "classification": "Added information",
       "description": "Added a step-by-step Microsoft Copilot Studio MCP setup guide with troubleshooting, plus notes on one-time client secret display and the optional Redirect URI."
+    },
+    {
+      "date": "2026-09-11",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added release notes for Omnia 7.11.27 documenting bug fixes and feature improvements including document search enhancements, bulk update improvements, and security updates.",
+      "sources": [
+        "6f89409a3892d4de91de16ee93983f53271e07f1"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "path": "blocks/sharepoint-page-rollup/index.rst",
+      "classification": "Added information",
+      "description": "Added complete description for Filter by expiration time setting and clarified that the block can rollup any types of SharePoint pages beyond team news.",
+      "sources": [
+        "aac7fffc453b113520fcf35d7f00657f4c15a504"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "path": "admin-settings/tenant-settings/webcontent-managament/settings/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated for Omnia 7.12 with clarified image scope, added SharePoint page query and rollup base query settings.",
+      "sources": [
+        "13fd8bbf07ba45d9c90cfd6c974f4e4e6a38b80b",
+        "3e724c989252293e84f46ffae3a933c17425d2a8"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "path": "admin-settings/business-group-settings/settings/index.rst",
+      "classification": "Navigation update",
+      "description": "Added default-rendering settings link to the Settings documentation index.",
+      "sources": [
+        "aac7fffc453b113520fcf35d7f00657f4c15a504"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "path": "admin-settings/business-group-settings/settings/default-rendering/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for Default Rendering settings, explaining fallback settings and configuration options for dialog properties in Omnia 7.12 and later.",
+      "sources": [
+        "aac7fffc453b113520fcf35d7f00657f4c15a504"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "path": "roadmap/index.rst",
+      "classification": "Added information",
+      "description": "Restructured roadmap from bullet points to narrative descriptions with expanded details about planned features and improvements.",
+      "sources": [
+        "55badd6bf6152d9b37cbbbef9088455fe639df68",
+        "95841a29131385c9d11bb66f74ff9343773070c6",
+        "f27c3989413edc79a5adf6ba0bc43a28c1340e07"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
+      "classification": "Added information",
+      "description": "Added release notes for version 7.11.7 documenting improvements to embedded tab loading time and link handler behavior.",
+      "sources": [
+        "9ca523ce21659a3dfe15e5cc5c56765d23bdd3ee"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "path": "blocks/team-news-rollup/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that Team news rollup is replaced by SharePoint page rollup in Omnia 7.12 and added a documentation link to the replacement block.",
+      "sources": [
+        "6c8367d22eb49fc795956f07320aef159211f9e2",
+        "e27af552dcb75b9e6f06cbb2451f19ea401814e4",
+        "f83e58c20e3aef6c6244b490c6b8ecb143c6c21f"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "path": "blocks/sharepoint-page-rollup/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the SharePoint page rollup block, a replacement for Team news rollup in Omnia 7.12 and later.",
+      "sources": [
+        "0aa29ab6f6f6721c446e9049fe0fe80ab20158ab",
+        "15622ed2b91c2ca7d36bb73ada7dcbde6f615109",
+        "4407088b40de930bb5c1bb193c1702ef12ddfd39",
+        "481096653f9e3f27a9d22e358b72cbef780c413f",
+        "4d9c12ec2101ccf51aa2554691ebdc08729c97d5",
+        "4f332f32fe7ae39930e28701d8db0ec504e9f9f6",
+        "61a94a096222b654bf1d95685c69cb680a0b2074",
+        "753fd92016214845bdff0f97c4385fe146063932",
+        "894f1a66c3474d04147590e09fcd6ecb0cf95444",
+        "99edf8ef099144e28e7cc85c57f20c2928cddbf6",
+        "ad914e1607340c97617907860e1efb42d4b4e7c9",
+        "bd2b2a02a284451b26e08bd8a7d45536feb60cd0",
+        "c24b091c15c1a59b963cde9f73d46a67eb90263c",
+        "ea45c94751e600167212b3c4f4015267d24bce9d",
+        "f120a3d84ff7e9b0761c7cbead78414a72a083b1",
+        "fa08c0cc3e2af3d788cdbc90dce1177cba6ee055",
+        "fca4f88577b265c2b220894c35c4020b78ca7717"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "path": "blocks/index.rst",
+      "classification": "Navigation update",
+      "description": "Added SharePoint Page Rollup block entry to the blocks documentation index.",
+      "sources": [
+        "4d9a0ddac9f8f2719ee9357cc4c5da0c94c4e663"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added release notes for Omnia 7.11.26 including improvements to Semantic Search, multilingual support, and various bug fixes.",
+      "sources": [
+        "82b6b3b4e94888f0d7b117a0a4882809c6285bb0"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "path": "blocks/team-news-rollup/index.rst",
+      "classification": "Added information",
+      "description": "Added information about the block being renamed to SharePoint page rollup in Omnia 7.12 and later.",
+      "sources": [
+        "494bca645febcc0d610f763c96d27e20523f8dd1",
+        "7cf52996abf7f9676ff6bbc240e5f9aaa182dc58",
+        "d64169d28dc75d9f93494c7a510d0dce3acd87ba"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "path": "admin-settings/tenant-settings/user-management/targeting-personas/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for targeting personas, a feature for testing targeting settings without using real users, including setup and configuration guidance.",
+      "sources": [
+        "2812f729f8fed539b14ee1e8ad3660884f5ed01a",
+        "3e444cfc85bfcf45a823adc2960f3ab966ee4468",
+        "69d309a14218633ad78cd5da11b3271a992f5705",
+        "78b2babae320ad03c906599d94b306a9204e34d7",
+        "91a74005fcfbaaf892a8529bf93e64cea0c2bc96"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "path": "admin-settings/tenant-settings/user-management/index.rst",
+      "classification": "Navigation update",
+      "description": "Added targeting-personas link to user management navigation and updated screenshot to version 7.12.",
+      "sources": [
+        "3b756783fdc557b0e584ed6903b932d8b448c9cd",
+        "3e444cfc85bfcf45a823adc2960f3ab966ee4468"
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "path": "admin-settings/business-group-settings/search/search-config/index.rst",
+      "classification": "Added information",
+      "description": "Updated screenshot to Omnia 7.12 version and added explanation of when to use SharePoint templates in search results.",
+      "sources": [
+        "6e3ea0ab433fbaf0e4790c82d7b86c977c6d8908",
+        "75cccdd742c50959bf3d66a5617696926691f0ea",
+        "ff55eb1611cf0dd41438462ebd3c84252b61b277"
+      ]
     },
     {
       "date": "2026-09-08",
@@ -1795,6 +2447,42 @@
       "path": "mcp/examples/announcement/index.rst",
       "classification": "New page",
       "description": "Added documentation for using the Announcements feature, including how to list, read, publish, update and remove announcements through the connector."
+    },
+    {
+      "date": "2026-09-04",
+      "path": "use-omnia-in-sharepoint/index.rst",
+      "classification": "New page",
+      "description": "Added new page documenting how to use Omnia functionality within SharePoint, including webparts and font configuration.",
+      "sources": [
+        "bf8474308b68ea2261b9affd0d8cd600db137f3c",
+        "c949733462e782b677b00a244129f78bbcd6b948"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "path": "admin-settings/tenant-settings/settings/index.rst",
+      "classification": "Navigation update",
+      "description": "Added fonts-tenant settings section to navigation menu and updated screenshot to version 7.12.",
+      "sources": [
+        "c86d31cead8a53606c15d753252c62361c34a286"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "path": "admin-settings/tenant-settings/settings/fonts-tenant/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for Font - Tenant settings, covering how to add and apply custom fonts in Omnia.",
+      "sources": [
+        "17dc3992158f1e3a9cf52996a5b1eeb3f16eb407",
+        "4c212796c94b653ec1c9819414747c750839dbcc",
+        "58dc06c4b4c50c8cca4304f419dc491683dfea1f",
+        "a2884265ae3e5886d64e1a6830b5897a11cd3f6f",
+        "c0fcf4987858d9b9a55582c9f32fd0628f46a128",
+        "ced3feea5ba3a8f879a7d5e2065ffee1ab8ab34f",
+        "ed0c9f6e5d5363934fbcb27210ccfd12ad1bd22d",
+        "f0411bddc727fc03e2730f1c76d88ae1fcc3776c",
+        "f22265ca6f6da2447cac2360b19d3ac5d1e7207c"
+      ]
     }
   ]
 }

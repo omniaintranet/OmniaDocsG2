@@ -402,8 +402,14 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 21 September 2026
 -----------------
 
+* `Footer <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/footer/index.html>`__ — **Updated guidance**
+  Removed outdated version reference and HTML example screenshot from footer configuration instructions.
+
 * `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Added information**
   Added clarifications about Omnia 7.12 availability for app launcher settings and new Search box style option for header search.
+
+* `Header for Workspace <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/header/index.html>`__ — **Added information**
+  Added documentation of Omnia 7.12 search box style options (M365 or WCAG compliant) and version-specific guidance for app launcher and search settings.
 
 * `Home page for Workspace <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/workspace-home/index.html>`__ — **Added information**
   Added visual examples showing workspace home page appearance in different states and clarified that layout editing uses sections and blocks.
@@ -411,20 +417,53 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
   Added information about new Omnia 7.12 SharePoint integration features and clarified distinction from existing webparts.
 
+* `Left panel settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/left-panel-workspace/index.html>`__ — **New page**
+  Added new page for left panel settings, available in Omnia 7.12 and later, with reference to related navigation bar configuration.
+
 * `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Updated guidance**
   Removed security note about cache refresh schedules and permission requirements for cached AI insights in Page Rollup blocks.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/settings/index.html>`__ — **Added information**
+  Added note distinguishing settings for Omnia 7.11 and earlier from Omnia 7.12 and later versions.
 
 * `Settings (workspace) in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/workspace-settings-settings-712/index.html>`__ — **New page**
   New page documenting workspace settings for Omnia 7.12 and later, covering Chrome, Header, and Navigation bar configuration options with references to earlier versions.
 
+* `Workspace <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/index.html>`__ — **Navigation update**
+  Added left-panel-workspace section to the list of available workspace settings and updated the screenshot to Omnia 7.12.
+
 18 September 2026
 -----------------
+
+* `About Matomo event tracking <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/about-matomo-event-tracking/index.html>`__ — **Added information**
+  Added prerequisite information specifying that the Analytics for SPFx feature must be activated to track SharePoint pages.
+
+* `Block gallery <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/block-gallery/index.html>`__ — **Correction**
+  Removed outdated version constraint from block gallery introduction, indicating feature availability is no longer limited to Omnia 7.9 and later.
+
+* `Blocks for Event management <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/index.html>`__ — **Navigation update**
+  Added participant-counter-712 block reference to the Event management blocks table of contents.
+
+* `Editing text with the RTF editor <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/rtf-editor/index.html>`__ — **Updated guidance**
+  Added instructions for marking words and phrases to exclude from machine translation in Omnia 7.12 and later.
 
 * `Enterprise properties <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/properties/enterprise-properties/index.html>`__ — **Added information**
   Added a pointer to the Microsoft Search connectors page for the search paths and template mappings needed for external items.
 
+* `Event participant counter <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/event-participant-counter/index.html>`__ — **Added information**
+  Added version-specific guidance and new setting option to hide registered participant counts from readers.
+
+* `Event participant counter in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/participant-counter-712/index.html>`__ — **New page**
+  Added documentation for the Event participant counter block settings in Omnia 7.12.
+
+* `Event participant list <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/event-participant-list/index.html>`__ — **Updated screenshots**
+  Updated settings screenshot for Omnia 7.12 and removed an outdated user example image.
+
 * `Features (Tenant) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/features-tenant-7/index.html>`__ — **Added information**
   Added a pointer in the Integration section to the Microsoft Search connectors page for setup instructions for that feature.
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
+  Added activation instructions for SharePoint font feature and new documentation section for Matomo activity tracking with configuration examples.
 
 * `Microsoft Search connectors <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/microsoft-search-connectors/index.html>`__ — **New page**
   Added a guide for showing Microsoft 365 Copilot connector items in Omnia Search, covering Graph checks, setup, a template limitation and troubleshooting.
@@ -432,17 +471,161 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
   Added release notes for version 7.11.28, listing fixes and improvements to Rich Text Editor, rollups, Properties block, Digital Signage and approval workflow emails.
 
+* `Page collection settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-collections/page-collection-settings/index.html>`__ — **Added information**
+  Added clarification that Auto publish cannot be used with publishing approval and specified the two settings contained in Publish notifications.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Updated guidance**
+  Added security guidance warning that AI insights cached with non-Every load refresh schedules are not security trimmed.
+
+* `RTF editor settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/rtf-editor/index.html>`__ — **Added information**
+  Added information about the new "No translation" option in Omnia 7.12 and later for selecting words to exclude from machine translation.
+
 * `Search <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/index.html>`__ — **Navigation update**
   Added a Microsoft Search connectors section to the Search page's list of linked sections, placed after Search configuration.
 
 * `Search config <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/search-config/index.html>`__ — **Navigation update**
   Added a cross-reference to the Microsoft Search connectors page for Microsoft 365 Copilot connector external items in the search categories section.
 
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/index.html>`__ — **Updated screenshots**
+  Updated the screenshot image displaying Omnia 7.12 tenant settings options.
+
+* `Webparts <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/system/microsoft-365/system-webparts/index.html>`__ — **Updated guidance**
+  Clarified that only many of the Omnia blocks are available as webparts, not all of them.
+
+16 September 2026
+-----------------
+
+* `About semantic search <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/about-semantic-search/index.html>`__ — **Added information**
+  Added documentation of supported file formats for semantic search and updated version compatibility from 7.11 to 7.12.
+
+* `Event management <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/event-management/index.html>`__ — **Added information**
+  Added information about searching for publishing apps and documented the new 'Remove declined participants from the participant list' setting.
+
+* `Page type settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/page-type-settings/index.html>`__ — **Added information**
+  Added clarification that when an email rule first executes, it sends emails for all pages meeting the rule criteria that have not previously received emails.
+
+* `Publish - the approval workflow <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.html>`__ — **Updated guidance**
+  Removed version restriction from semantic search availability and added a reference link to semantic search documentation.
+
+15 September 2026
+-----------------
+
+* `Create a page <https://omnia-docs-g2.readthedocs.io/en/latest/pages/create-page/index.html>`__ — **Added information**
+  Added information about setting scheduled publishing dates in Omnia 7.12 and later when creating new pages with autopublish enabled.
+
+* `General assets and options <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/index.html>`__ — **Navigation update**
+  Added SharePoint page picker documentation entry to the general assets navigation menu.
+
+* `Html/Script blocks <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/html-script-block/index.html>`__ — **New page**
+  Added comprehensive documentation for Html/Script blocks, covering how to add, modify, and script custom content blocks on pages, page collections, and page types.
+
+* `Omnia MCP examples <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/index.html>`__ — **Navigation update**
+  Added navigation links for promoted-search-result and html-script-block documentation pages to the examples index.
+
+* `Page collection <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/page-collection/index.html>`__ — **Added information**
+  Added documentation for PageCollection.AddHtmlScriptBlock and PageCollection.UpdateHtmlScriptBlock actions to add and patch HTML/Script blocks on page collection landing pages.
+
+* `Page picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/page-picker/index.html>`__ — **Added information**
+  Added note about SharePoint page picker feature available in Omnia 7.12 and later with cross-reference to related documentation.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Added information**
+  Added guidance about accessing Omnia admin to edit default settings for the Show in dialog feature's rendering options.
+
+* `Page types <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/page-type/index.html>`__ — **Added information**
+  Added documentation for AddHtmlScriptBlock and UpdateHtmlScriptBlock actions on page types.
+
+* `Pages <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/page/index.html>`__ — **Added information**
+  Added documentation for Page.AddHtmlScriptBlock and Page.UpdateHtmlScriptBlock actions to manage HTML and script blocks on pages.
+
+* `Promoted search results <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/promoted-search-result/index.html>`__ — **New page**
+  New page documenting how to list, add, modify, and delete promoted search results for business profiles.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/index.html>`__ — **Added information**
+  Added promoted search results and Html/Script blocks to the list of supported MCP areas.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/hotfix-releases/versions.html>`__ — **Added information**
+  Added Release 7.11.29 and 7.11.28 entries documenting new capabilities for Html/Script blocks and promoted search results.
+
+* `Search <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/search/index.html>`__ — **Added information**
+  Added documentation of promoted search results feature, explaining what they are and conditions when they may not appear.
+
+* `SharePoint page picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/sharepoint-page-picker-picker/index.html>`__ — **New page**
+  Added documentation for the SharePoint page picker feature in Omnia 7.12 and later, with instructions for searching and browsing SharePoint pages.
+
 14 September 2026
 -----------------
 
+* `Hotfix releases for release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/hotfix-releases/index.html>`__ — **New page**
+  Added new index page for organizing and accessing hotfix releases within release 7.
+
+* `Omnia MCP <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/index.html>`__ — **New page**
+  New Omnia MCP release notes page documenting extension versions and providing links to MCP client integration setup and hotfixes.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/index.html>`__ — **New page**
+  New documentation page for Omnia MCP Release 7, covering compatibility, MCP clients, permissions model, administrator guidance, and supported features.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/hotfix-releases/versions.html>`__ — **New page**
+  Added new release notes page documenting the initial Omnia MCP release 7.11.27 with features and integration details.
+
+* `Release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/index.html>`__ — **Navigation update**
+  Added MCP release notes to the main release notes navigation menu.
+
 * `Setup MCP client integration <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/setup/index.html>`__ — **Added information**
   Added a step-by-step Microsoft Copilot Studio MCP setup guide with troubleshooting, plus notes on one-time client secret display and the optional Redirect URI.
+
+11 September 2026
+-----------------
+
+* `Default rendering <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/default-rendering/index.html>`__ — **New page**
+  Added documentation for Default Rendering settings, explaining fallback settings and configuration options for dialog properties in Omnia 7.12 and later.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added release notes for Omnia 7.11.27 documenting bug fixes and feature improvements including document search enhancements, bulk update improvements, and security updates.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/index.html>`__ — **Navigation update**
+  Added default-rendering settings link to the Settings documentation index.
+
+* `Settings (Web content management) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/webcontent-managament/settings/index.html>`__ — **Updated guidance**
+  Updated for Omnia 7.12 with clarified image scope, added SharePoint page query and rollup base query settings.
+
+* `SharePoint page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/sharepoint-page-rollup/index.html>`__ — **Added information**
+  Added complete description for Filter by expiration time setting and clarified that the block can rollup any types of SharePoint pages beyond team news.
+
+10 September 2026
+-----------------
+
+* `Blocks <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/index.html>`__ — **Navigation update**
+  Added SharePoint Page Rollup block entry to the blocks documentation index.
+
+* `In Development <https://omnia-docs-g2.readthedocs.io/en/latest/roadmap/index.html>`__ — **Added information**
+  Restructured roadmap from bullet points to narrative descriptions with expanded details about planned features and improvements.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+  Added release notes for version 7.11.7 documenting improvements to embedded tab loading time and link handler behavior.
+
+* `SharePoint page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/sharepoint-page-rollup/index.html>`__ — **New page**
+  Added documentation for the SharePoint page rollup block, a replacement for Team news rollup in Omnia 7.12 and later.
+
+* `Team news rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/team-news-rollup/index.html>`__ — **Updated guidance**
+  Clarified that Team news rollup is replaced by SharePoint page rollup in Omnia 7.12 and added a documentation link to the replacement block.
+
+9 September 2026
+----------------
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added release notes for Omnia 7.11.26 including improvements to Semantic Search, multilingual support, and various bug fixes.
+
+* `Search config <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/search-config/index.html>`__ — **Added information**
+  Updated screenshot to Omnia 7.12 version and added explanation of when to use SharePoint templates in search results.
+
+* `Targeting personas <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/targeting-personas/index.html>`__ — **New page**
+  Added documentation for targeting personas, a feature for testing targeting settings without using real users, including setup and configuration guidance.
+
+* `Team news rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/team-news-rollup/index.html>`__ — **Added information**
+  Added information about the block being renamed to SharePoint page rollup in Omnia 7.12 and later.
+
+* `User management - tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/index.html>`__ — **Navigation update**
+  Added targeting-personas link to user management navigation and updated screenshot to version 7.12.
 
 8 September 2026
 ----------------
@@ -518,3 +701,18 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Theme colours <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/theme/index.html>`__ — **New page**
   New page documenting how to read and manage primary and secondary theme colours for business profiles using the connector.
+
+4 September 2026
+----------------
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **New page**
+  Added new page documenting how to use Omnia functionality within SharePoint, including webparts and font configuration.
+
+3 September 2026
+----------------
+
+* `Font - Tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/fonts-tenant/index.html>`__ — **New page**
+  Added documentation for Font - Tenant settings, covering how to add and apply custom fonts in Omnia.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/index.html>`__ — **Navigation update**
+  Added fonts-tenant settings section to navigation menu and updated screenshot to version 7.12.
