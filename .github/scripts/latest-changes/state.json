@@ -1,26 +1,436 @@
 {
-  "version": 1,
-  "processed": {
-    "28": "2026-09-14",
-    "31": "2026-09-18",
-    "25": "2026-09-18",
-    "32": "2026-09-28",
-    "33": "2026-09-28",
-    "34": "2026-09-30",
-    "35": "2026-10-09",
-    "36": "2026-10-09",
-    "37": "2026-10-13",
-    "38": "2026-10-13",
-    "24": "2026-08-21",
-    "27": "2026-09-08",
-    "39": "2026-10-13",
-    "40": "2026-10-13",
-    "41": "2026-10-13",
-    "42": "2026-10-15",
-    "44": "2026-10-15",
-    "45": "2026-10-15"
+  "version": 2,
+  "processed_commits": {
+    "9e77f5595426e26f34350c288d2c19a7c78dfa1d": "2026-08-21",
+    "1483fad97a7c6e81f2e26f660f52e3935e627c5c": "2026-09-08",
+    "57ef4dbfd1a45e9cf69ecd9e259e6a8dbf20ed96": "2026-09-14",
+    "fc5043d72877c72e4437de024d6f73f5122f6174": "2026-09-18",
+    "3ec1b4698fcdbe1511ff294117fd8f97ce98c99e": "2026-09-18",
+    "9b63631a8b96960ac91f6a5f7b318a1cf40eda9f": "2026-09-28",
+    "ce1504ad0d723c5e2c59b14ee9b40ef23542266a": "2026-09-28",
+    "09078fa99aff89696fd301af71937c28654adf06": "2026-09-30",
+    "b8952bc46cf4ee333ed4030b51d34233acd1d46a": "2026-10-09",
+    "d4443ab0c445676e352f347e4e8eb542b04aae78": "2026-10-09",
+    "5644b6e09f7ac30ac61a0ee2e3eb19db0ad6225f": "2026-10-13",
+    "0e9c0ad080483d2a8e43b45bc4c2875bf8f1dde2": "2026-10-13",
+    "32e811cf087885c380125a6820a7716a265aabc4": "2026-10-13",
+    "6cc41c654cbaafa394e516516691f84e455e1ddb": "2026-10-13",
+    "ac61d2ec704aa7bd294da6a34e02fe335d49e182": "2026-10-13",
+    "1c23e52fcf5b9c44be18b7d9c17004f63a629dfd": "2026-10-15",
+    "8bdcebc7ddf2f5083d1aeee3a8546cacd5cfe086": "2026-10-15",
+    "e76d0087548b3d62ac5c05da9e874a165d6fc677": "2026-10-15",
+    "732f9a81d7f1d28dc828d9d93cc3024bec200f63": "2026-08-07",
+    "c5bf4e41ac8f07ffd9fb6ddd481ab3de7782c525": "2026-08-21",
+    "ad74ba736dae67fde0d9b443136979bc8f3eebd8": "2026-08-24",
+    "840ad9167629c982a5be3287e3e176d9dd4fd984": "2026-08-24",
+    "4da15f675b987f3f36ad1d30f7a8036d5c6f8305": "2026-08-27",
+    "f682c0ffeb2d86211eba501d21995ee53fb3ef72": "2026-09-01",
+    "62bc828db6d97af307180314e7019f7675ba43f8": "2026-09-02",
+    "2da81964f9a02bf10e7e29f6b3d293dcb53b76f0": "2026-09-02",
+    "27ee7d88dc1867e4ab635f90e62eaeddfc129ee8": "2026-09-02",
+    "c7477f47a31c53cf5acbed3db00a1d4eee88a8e1": "2026-09-03",
+    "7614f65bbf43f63278e119d10d350708639fe7f3": "2026-09-03",
+    "f55e1a499c1e29cde504eb9e7939b16b7f9d3e0f": "2026-09-03",
+    "0355ff02303eae859ce5d204f648b0c688840e55": "2026-09-04",
+    "66711a56ee550b286f352286acf4359a93df0942": "2026-09-11",
+    "351e34ac28a095dd43d062ffc363b927e3b27957": "2026-09-11",
+    "e827d70b1c384bf33abd7de368f932561594e2be": "2026-09-11",
+    "0ba7935127480f7858fb203e38a8b7b7beca0c60": "2026-09-11",
+    "513205188ed7a3f8e6159f9ef2c5c62c18a6c9bc": "2026-09-11",
+    "ee59ad9a40fafeba809944bd711d74aafaee1b72": "2026-09-11",
+    "c026c1c07363bfafe51d6786e21500264f0b8637": "2026-09-11",
+    "7ffd16d7e1e6dcc6daf265238a01eb0b3c3d4f99": "2026-09-11",
+    "77958564155e215095de0925da53aac728fa0263": "2026-09-11",
+    "fd90a1860dd43db079728d2f5c5edee291b91ea0": "2026-09-11",
+    "ea6f69528aff4e006566b5300368f8f930326a4f": "2026-09-11",
+    "6041fd4df9a1544da96c0ca3c5c773fba85a2972": "2026-09-11",
+    "0d4fcf7663610828726ed985d0bcbae8512bf9d4": "2026-09-14",
+    "33f2c010485d69568751f54082217687d49e65d6": "2026-09-14",
+    "4b6ba6a54f1fac65bbdd8f5e76d0d8d95b793f59": "2026-09-14",
+    "f27dee30a36ccc7f7c6f790aa69669261f3c8bf8": "2026-09-15",
+    "863b1d195e7cdabc11602513bf65ddaee08c0db7": "2026-09-15",
+    "05bdf6c5651a2c4ca62575136c2c53e4820b3133": "2026-09-18",
+    "58691f2a536e1792a4ce9ffe5e211464de94e477": "2026-09-18",
+    "95c5e8cdb725ca7ed2641a055755774a71bcccc1": "2026-09-18",
+    "d34fa8cfeb6cb471bbfc239003a676f3576ce4e4": "2026-09-18",
+    "bdee64190755407281ba98bcb1e7f2b35e739f7b": "2026-09-18",
+    "611bbd387d7ab44048247472eabe7694563b2072": "2026-09-18",
+    "efebb9c53eaf13573f3761c7f2f8430b10994d0b": "2026-09-21",
+    "30eff73a516861dc29d38a49eaea45688f32d870": "2026-09-21",
+    "112286d109d099209a7577c3d6df4ceae393497f": "2026-09-21",
+    "227199028650af76d1191fbd4eade3064c0293c3": "2026-09-28",
+    "df3fabf9c3fad4a642c40e22901dea2acb48ba12": "2026-09-28",
+    "46cd0efcd996dfec1c58e541d76a94a3fac7577d": "2026-10-05",
+    "ed14bb700122643782bb8f9904272be201755597": "2026-10-05",
+    "96b82a417bc8c65d11f398396c09c6baafc38415": "2026-10-05",
+    "a0fb2ad04887ee3ee4acfa7ef4a7b0d05fb20baa": "2026-10-05",
+    "9464e3b4539d5c6c90341c3569f9ae1c9f293230": "2026-10-05",
+    "8eac95136c34874aae1fc1f21ad145d508d32b6f": "2026-10-05",
+    "506987c7591e397d41d47320ada3af8857249f38": "2026-10-05",
+    "b00672bff0c4fdb4bff3ad9ac0cd1cdde3aa97f8": "2026-10-05",
+    "846dada8704a642e12a071f17ca7b6be06a1014a": "2026-10-05",
+    "c7b0f648b5c44a74b2693e7b8ad618816083dc29": "2026-10-05",
+    "10fe79c40e2f80f983e6cccb14d835d285d1e889": "2026-10-05",
+    "0efbdfc5ce47a1b1af37060085b8a84f424f45cc": "2026-10-06",
+    "a225e1b946bea4f48b6a8151fa726bf3539a54c9": "2026-10-06",
+    "f738c536595e2d3b1abaac4d6a6102d7742f1ffe": "2026-10-06",
+    "d195acd4575089c7c9da86c66790515af186a46d": "2026-10-06",
+    "8aae134b73465e9e522360f682425058611a6b82": "2026-10-06",
+    "d5325970913d4036f764c3f9f4cd22ac7d28dae4": "2026-10-06",
+    "2e661dfa9ba44e38622c5d4895220f56d2bc7771": "2026-10-06",
+    "6dc07d6b7225525bd539f0c00ef84992f499283d": "2026-10-06",
+    "af03396bbf01f0aaa1379e043bcea0df8a1d6363": "2026-10-06",
+    "b9d5a5ebc79377c297076bb2ece58942e1b29915": "2026-10-06",
+    "4d4db78adc3484340c1ccd21c38c4d0e45ac829e": "2026-10-06",
+    "082b0bcb78fe1ed73d562194ba9176b4374ad7e5": "2026-10-06",
+    "dbdb30b87cae12a14642cd584766b25b8ab8c9c7": "2026-10-06",
+    "aa881b4766495229bab35ca4c06c1e9ec534708b": "2026-10-06",
+    "94bbda197e8affb9fc60b746aea232128c3031f2": "2026-10-06",
+    "09d595fa892f1492542760d48a18d76314cf0fc2": "2026-10-06",
+    "5f0a39e5f5ddb8bd728835238e3429f58b21c2d5": "2026-10-06",
+    "3d6851fece7e7ffd7acf4556e9b05de94fd36033": "2026-10-08",
+    "2c24a1bb32dc8149723d5819f49d0ac52a4b09d6": "2026-10-08",
+    "f47d605f1157fe6c038a9ab5cd808153f1817e69": "2026-10-08",
+    "424b32339114bea6f116fef77743bb8f2868a3fe": "2026-10-08",
+    "92f8c330373016de7d7fbf208c108af870a62f53": "2026-10-09",
+    "ff52b6037a72e12ad486da095ff007be6446e16e": "2026-10-09",
+    "b16d69940ca4f2ce2ab2da065623cf693afeea2d": "2026-10-09",
+    "81d35e50a2f2977aed043216608346cc0dafea52": "2026-10-09",
+    "a47fe256491633d2c37d9874bf972e99a45cebfb": "2026-10-09",
+    "1c2d854372e1c1d76b043647f4391a7b83161d44": "2026-10-09",
+    "bf8703e2694ad3184f44281bceae832b694f6407": "2026-10-09",
+    "36faab5a4a40a3aca57a368903ec94eae1d7d792": "2026-10-09",
+    "d51ad8d698be7e169f90b7f389c7193c0850d18d": "2026-10-09",
+    "2fe3be486691e4e79ec6e29d485fa8c2d6d7a730": "2026-10-09",
+    "4b7cd619add0b45fdae822d931c01696deffef19": "2026-10-09",
+    "df5746adc6ee174504ca74918cf34e63affc11c0": "2026-10-09",
+    "fc2e21937cf8492832a2b0d1c840c34ba62693f9": "2026-10-09",
+    "aa3dfb6d0519ccbce0d776a981100fb00133b87e": "2026-10-09",
+    "f0af3549efee8113a03b213f9620b31e32f3c95f": "2026-10-09",
+    "69ea136f6306288b87f9b9939fe3b41833b453c9": "2026-10-09",
+    "18dfc245ddd87e1a4ccdc7675d6fba057b680105": "2026-10-09",
+    "de282998585e79d9b3ffa2ade0db0978e72fdb5b": "2026-10-09",
+    "2f2dfcd7729d92cf142af652ee53bd7a62ab194f": "2026-10-09",
+    "af57aa681c16d046a4fa0f11148c2e5ace454b3f": "2026-10-09",
+    "89780b93a608bd23491c455ca66c080df33ad909": "2026-10-12",
+    "89e5a5189d626d8b102ffbd9ad960eb3d498b827": "2026-10-12",
+    "900d7fd71e85d618193d1352ba53534b9e229929": "2026-10-12",
+    "8adcda33134c1482ea240a5b3b5b85f3aa3bbeb0": "2026-10-12",
+    "a33a48818d48648aa7efb801e5b2dee5f7110f70": "2026-10-12",
+    "97f6d99e66b8fe94e71dea95d1e08616532d73ac": "2026-10-12",
+    "a54bafc55b2de3720e9dc74ead5394679c79bcb1": "2026-10-12",
+    "80fc048b89c5fea12b8cc53f8243b3db2233760c": "2026-10-12",
+    "f3f8162035c6f466135ec0876aba3ea099622a51": "2026-10-12",
+    "82bdc9671171ae5e4f47695fb211a966ae1704ea": "2026-10-12",
+    "a953946676d0df8569c6715c665b5483588062af": "2026-10-12",
+    "9c40f05e75ae6bdeb2725d403a3e52e266a4c03e": "2026-10-12",
+    "d49be2bf4d298d3d10146977f23e2153ada92b28": "2026-10-12",
+    "d7e66057b6ddce2d9ccebb0629fcc15fd4a61dba": "2026-10-12",
+    "e1e4a037c37b4adcbf79d70ce453361666862b44": "2026-10-12",
+    "3143c22d3a60d7d060c30362b3324f97dd3f0d27": "2026-10-12",
+    "f2c41c21cf9add0824122b51c2b25f4a06e279c2": "2026-10-12",
+    "fdc45592941acb8e1a6c7c4f40dfd355511afcf3": "2026-10-12",
+    "92dc056319188d8639dc64eb5329b7df73f39cb6": "2026-10-12",
+    "9e9a14126ad5b4e9ad8f209b4588bcf3129d3bfa": "2026-10-12",
+    "42f0e37ddab845e0f92c6f5d49f86cc3bdd6946e": "2026-10-12",
+    "2eb32f964c49f30cfb87df81c6e2db18ca2079ee": "2026-10-13",
+    "b8c09b2201d90c15cf01593ff9993d5f4235dbaf": "2026-10-13",
+    "05d89fd29b60797586fe4d99be33836785e9f269": "2026-10-13",
+    "2a90027dbdd9b8b9403ea5c31ffa122cb08e1e7a": "2026-10-14",
+    "be5fbb6fe6151a58456b35edaa0f74ae27db212a": "2026-10-14",
+    "d5dc135345dab6089bf434ceb9a43dfe8a8e70fa": "2026-10-14",
+    "2c4cfb917d1160783c0d2aca72549e66ae9b8992": "2026-10-14",
+    "9b0ccdb0e85d6b19d901c025168c2e1ffc9346ca": "2026-10-14",
+    "63422421d01230a640d5dc5d083660c8fa428c77": "2026-10-14",
+    "4b0bfd98418e704a0156b28d401a3520ecfe7c08": "2026-10-14",
+    "2c91917b7a4cd253c814f6543420019b9bc5edbf": "2026-10-14",
+    "f64e3296cb7a342fc3b09d0cf921a9f375ef6ebe": "2026-10-14",
+    "c423512c22f82a87465f10439db4d5ffdce560b1": "2026-10-14",
+    "1294f9d6b295d135118379e9a3cef95e1ecb28d9": "2026-10-14",
+    "e48adc7c715a5cb2faa254feaf1d2b2e687dcd6c": "2026-10-14",
+    "d6d476054c6dcc38dc31c0d01676172dc5720837": "2026-10-14",
+    "9b4c75057200930bf243ec946f42500b862e2852": "2026-10-14",
+    "7800c3a2b8900c07d393a1194417d1ab7f65f3f0": "2026-10-14",
+    "572850cfdb8595ff4607f984a42286af9f05da23": "2026-10-14",
+    "6efc5c4806d4041bd9d17314b3de1d6af6d9bee5": "2026-10-14",
+    "327284e3df227a86c55c6e4e594508dd0254882d": "2026-10-14",
+    "a2626ab46306feb438f209cc6e7ac8a042e907c1": "2026-10-14",
+    "f325ccf421f3bc00ae388d536d3729007b8a9dfb": "2026-10-14",
+    "636d14d82091f4e50c7b54ff5362d73bcfa123ec": "2026-10-14",
+    "1c5080dd3ab4bb9ff1d1acac9d3a6caf2d54cec5": "2026-10-14",
+    "eb6355caf9d23fa7d547579311a4188735af7841": "2026-10-14",
+    "dc7f85b20e35ca0930e943fcaa1b700a47e6c555": "2026-10-14",
+    "d6e201d4dea08a033ab8949ab17f5c36be7f7faf": "2026-10-14",
+    "10545e2e3ec35461f42093db36b857575ca3afbb": "2026-10-14",
+    "a98ab27c5c1a2af267831482386ca141d44111a6": "2026-10-15",
+    "39690e018d7a1d93f6c0a8ddedacf1bb0282bc54": "2026-10-15",
+    "105257912b736fb624859d817657b185883354cf": "2026-10-15",
+    "3087082139148a416637340350e34ec530f1e051": "2026-10-15",
+    "abaf8cbad686fb6a90bda8f6b5e20b92b8cd25ba": "2026-10-15",
+    "d05473144f7d0255adee9651a47b712a27fca784": "2026-10-15",
+    "b09b95b90566331b1c3aa9fe7486ffefa8a4a978": "2026-10-15",
+    "a0a4feb9177a5a33ddb5a17f5f959e7348e867f2": "2026-10-15",
+    "0c0b7778cc04d1c593a7fa5a1f9b5630358c508e": "2026-10-15",
+    "5f6482aefac1f008f1523e6cca4018ecb4f278a3": "2026-10-15",
+    "37b68a06235a31d6649c760456726e49355fcc4c": "2026-10-15",
+    "cd44e2fbb5b771f658eb8e34675788aa30f760ba": "2026-10-15",
+    "fe5ae1b68923af9a420f319eb443aec3b6261ce8": "2026-10-15",
+    "aac1a8fd7fccdf0c54085c6c7f4b5d7a8dfdeac4": "2026-10-15",
+    "39a521ce42f0ff70ee71debbc3c8cdbfc8d8c4cf": "2026-10-15",
+    "53bfb41827dbb942a657b3f31da8c047f187a9ce": "2026-10-15",
+    "88f544eea0b062b503b9947b8420d48aaf0af8e6": "2026-10-15",
+    "d6eacb937c644f18667fee1cf5802fc01410694c": "2026-10-15",
+    "b32e519d8c62b732ed36f81d9197d0c6978907d4": "2026-10-15",
+    "fad33183375cfe9ad3e9c32b15f8b9fdce6a4329": "2026-10-15",
+    "67049d1df06110af71ab39f28099e96b0e077359": "2026-10-15",
+    "e9b3972e06a870c1be0aedc119ee05701cf33b1c": "2026-10-15",
+    "09044c9174108b5937810378e0cc19302538b7eb": "2026-10-15",
+    "7d426c2e28aeb1516025df9b08c9a5c99ef9d362": "2026-10-15",
+    "a5fcedd4785d793cabf449b02848ec657ce1aa8c": "2026-10-16",
+    "492b62d693f90c509e52e322275ec70202508666": "2026-10-16",
+    "b486f9ab7fb6a7145f590951b410ba65ce24c298": "2026-10-16",
+    "9e89c9f3db7e8ced27f11c493b5501b898e679f7": "2026-10-16",
+    "e9723b929bb4a8067622026df5a2bf4e490f4e72": "2026-10-16",
+    "2872bff0255a1495a477525308d5693b5a6f352b": "2026-10-16",
+    "adafd34ca91e4303e48411cf400edf7fedcc66c4": "2026-10-16",
+    "7ae4fe2090f6a8a0250130350ca2069241bdc7a6": "2026-10-16",
+    "8481859e4a7126385745c75e8f8fe69159a69653": "2026-10-16",
+    "315bd1ba1378c4a091bf5cf315a9ee84581ef0f6": "2026-10-16"
   },
   "entries": [
+    {
+      "date": "2026-10-16",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.11.33 release notes covering bug fixes and improvements to permissions, media support, navigation, analytics, sign-off exports, and security.",
+      "sources": [
+        "adafd34ca91e4303e48411cf400edf7fedcc66c4"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "path": "admin-settings/tenant-settings/document-management/documents-bulk-update/index.rst",
+      "classification": "Added information",
+      "description": "Added version notice indicating the page describes Omnia 7.11 and earlier functionality, with reference to updated documentation for version 7.12 and later.",
+      "sources": [
+        "e9723b929bb4a8067622026df5a2bf4e490f4e72"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "path": "admin-settings/tenant-settings/document-management/documents-bulk-update-712/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Documents bulk update feature in Omnia 7.12, including procedures for bulk updating document properties and handling removed properties.",
+      "sources": [
+        "2872bff0255a1495a477525308d5693b5a6f352b"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "path": "admin-settings/tenant-settings/document-management/document-types/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified semantic search options to specify default behavior applies to new documents, and updated related screenshot.",
+      "sources": [
+        "492b62d693f90c509e52e322275ec70202508666",
+        "b486f9ab7fb6a7145f590951b410ba65ce24c298"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "path": "admin-settings/tenant-settings/document-management/document-templates/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected capitalization in section headings and link text to use lowercase for common nouns instead of title case.",
+      "sources": [
+        "9e89c9f3db7e8ced27f11c493b5501b898e679f7"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/webcontent-managament/sharepoint-sync/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected spelling of 'experience' in the full page view setting description.",
+      "sources": [
+        "aac1a8fd7fccdf0c54085c6c7f4b5d7a8dfdeac4"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/webcontent-managament/settings/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected spelling errors and capitalization: fixed 'tha' to 'the' and capitalized 'if' for proper sentence grammar.",
+      "sources": [
+        "fe5ae1b68923af9a420f319eb443aec3b6261ce8"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/webcontent-managament/reindex-pages-semantic-search/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated title and guidance to clarify that semantic search reindexing applies to all content in the tenant, not just pages.",
+      "sources": [
+        "67049d1df06110af71ab39f28099e96b0e077359",
+        "fad33183375cfe9ad3e9c32b15f8b9fdce6a4329"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/webcontent-managament/omnia-search-renidex/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Omnia search reindex content feature, including procedures for reindexing tenant content and monitoring progress in Omnia 7.12 and later.",
+      "sources": [
+        "09044c9174108b5937810378e0cc19302538b7eb",
+        "53bfb41827dbb942a657b3f31da8c047f187a9ce",
+        "7d426c2e28aeb1516025df9b08c9a5c99ef9d362",
+        "88f544eea0b062b503b9947b8420d48aaf0af8e6",
+        "b32e519d8c62b732ed36f81d9197d0c6978907d4",
+        "d6eacb937c644f18667fee1cf5802fc01410694c",
+        "e9b3972e06a870c1be0aedc119ee05701cf33b1c"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/webcontent-managament/index.rst",
+      "classification": "Navigation update",
+      "description": "Added omnia-search-renidex section to the web content management navigation and reordered page-bulk-update below reindex-pages-semantic-search.",
+      "sources": [
+        "39a521ce42f0ff70ee71debbc3c8cdbfc8d8c4cf"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/semantic-search-full-reindex/index.rst",
+      "classification": "New page",
+      "description": "New page documenting the Semantic search full reindex feature for rebuilding search indexes after embedding model changes in Omnia 7.12 and later.",
+      "sources": [
+        "0c0b7778cc04d1c593a7fa5a1f9b5630358c508e",
+        "105257912b736fb624859d817657b185883354cf",
+        "39690e018d7a1d93f6c0a8ddedacf1bb0282bc54",
+        "abaf8cbad686fb6a90bda8f6b5e20b92b8cd25ba",
+        "d05473144f7d0255adee9651a47b712a27fca784"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/index.rst",
+      "classification": "Navigation update",
+      "description": "Added navigation links for semantic search reindexing and AI features logs sections; updated version reference to Omnia 7.12.",
+      "sources": [
+        "39690e018d7a1d93f6c0a8ddedacf1bb0282bc54",
+        "a98ab27c5c1a2af267831482386ca141d44111a6"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/ai-features-logs/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for AI features logs, covering index and query log viewing capabilities available in Omnia 7.12 and later.",
+      "sources": [
+        "3087082139148a416637340350e34ec530f1e051",
+        "39690e018d7a1d93f6c0a8ddedacf1bb0282bc54",
+        "5f6482aefac1f008f1523e6cca4018ecb4f278a3",
+        "a0a4feb9177a5a33ddb5a17f5f959e7348e867f2",
+        "b09b95b90566331b1c3aa9fe7486ffefa8a4a978"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "path": "admin-settings/tenant-settings/announcements/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed spelling errors and improved clarity throughout the page, including correcting typos and restructuring sections for better readability.",
+      "sources": [
+        "37b68a06235a31d6649c760456726e49355fcc4c",
+        "cd44e2fbb5b771f658eb8e34675788aa30f760ba"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "mcp-context/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for MCP context description page, explaining how to add and edit context descriptions for the tenant with links to related MCP resources.",
+      "sources": [
+        "eb6355caf9d23fa7d547579311a4188735af7841"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/media-picker/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that media picker settings apply to Omnia 7.11 and earlier, with reorganized settings in Omnia 7.12 linked separately.",
+      "sources": [
+        "1294f9d6b295d135118379e9a3cef95e1ecb28d9",
+        "2c91917b7a4cd253c814f6543420019b9bc5edbf",
+        "c423512c22f82a87465f10439db4d5ffdce560b1"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/media-picker-settings-712/index.rst",
+      "classification": "New page",
+      "description": "New page documenting media picker settings reorganization in Omnia 7.12, covering central image locations, crop ratios, and border style settings.",
+      "sources": [
+        "7800c3a2b8900c07d393a1194417d1ab7f65f3f0",
+        "9b4c75057200930bf243ec946f42500b862e2852",
+        "d6d476054c6dcc38dc31c0d01676172dc5720837",
+        "e48adc7c715a5cb2faa254feaf1d2b2e687dcd6c",
+        "f64e3296cb7a342fc3b09d0cf921a9f375ef6ebe"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/mcp-context/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how to add and edit MCP context descriptions for the tenant in admin settings, with guidance on using MCP for tenant context.",
+      "sources": [
+        "10545e2e3ec35461f42093db36b857575ca3afbb",
+        "dc7f85b20e35ca0930e943fcaa1b700a47e6c555"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/index.rst",
+      "classification": "Navigation update",
+      "description": "Added navigation links to image-scaling and mcp-context settings sections.",
+      "sources": [
+        "6efc5c4806d4041bd9d17314b3de1d6af6d9bee5",
+        "d6e201d4dea08a033ab8949ab17f5c36be7f7faf"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/image-scaling/index.rst",
+      "classification": "New page",
+      "description": "New page documenting image scaling settings, including file size limits and procedures for creating scaling configurations in tenant settings.",
+      "sources": [
+        "1c5080dd3ab4bb9ff1d1acac9d3a6caf2d54cec5",
+        "327284e3df227a86c55c6e4e594508dd0254882d",
+        "572850cfdb8595ff4607f984a42286af9f05da23",
+        "636d14d82091f4e50c7b54ff5362d73bcfa123ec",
+        "f325ccf421f3bc00ae388d536d3729007b8a9dfb"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/tenant-settings/settings/fonts-tenant/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that example images are from a test environment and a reminder to save changes after configuring fonts.",
+      "sources": [
+        "2a90027dbdd9b8b9403ea5c31ffa122cb08e1e7a",
+        "2c4cfb917d1160783c0d2aca72549e66ae9b8992",
+        "4b0bfd98418e704a0156b28d401a3520ecfe7c08",
+        "be5fbb6fe6151a58456b35edaa0f74ae27db212a",
+        "d5dc135345dab6089bf434ceb9a43dfe8a8e70fa"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "path": "admin-settings/business-group-settings/settings/fonts-bp/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated the business profile font settings screenshot to font-bp-create-712.png.",
+      "sources": [
+        "63422421d01230a640d5dc5d083660c8fa428c77",
+        "9b0ccdb0e85d6b19d901c025168c2e1ffc9346ca"
+      ]
+    },
     {
       "date": "2026-10-13",
       "path": "setup/recommended-ai-models/index.rst",
@@ -28,10 +438,394 @@
       "description": "Changed recommended models to GPT 6 Luna, GPT 6 Sol, GPT Image 2.5 Flare and Ada 002, added a capability level column, and updated deployment-name setup steps."
     },
     {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/user-management/targeting-personas/index.rst",
+      "classification": "Added information",
+      "description": "Added cross-reference link to targeting documentation when creating targeting filters for personas.",
+      "sources": [
+        "a953946676d0df8569c6715c665b5483588062af"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/system/oauth2-credentials/index.rst",
+      "classification": "New page",
+      "description": "Added new page documenting OAuth2 credentials for connecting MCP clients such as Claude, Microsoft Copilot Studio, and ChatGPT to Omnia.",
+      "sources": [
+        "89780b93a608bd23491c455ca66c080df33ad909",
+        "8adcda33134c1482ea240a5b3b5b85f3aa3bbeb0",
+        "a33a48818d48648aa7efb801e5b2dee5f7110f70"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/system/microsoft-365/system-webparts/index.rst",
+      "classification": "Added information",
+      "description": "Added information about expanded webpart availability in Omnia 7.12 and referenced comprehensive SharePoint integration documentation.",
+      "sources": [
+        "80fc048b89c5fea12b8cc53f8243b3db2233760c",
+        "82bdc9671171ae5e4f47695fb211a966ae1704ea"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/system/microsoft-365/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated screenshot and version reference to Omnia 7.12, and corrected a typo in the list rollup settings link name.",
+      "sources": [
+        "97f6d99e66b8fe94e71dea95d1e08616532d73ac",
+        "a54bafc55b2de3720e9dc74ead5394679c79bcb1",
+        "f3f8162035c6f466135ec0876aba3ea099622a51"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/system/index.rst",
+      "classification": "Navigation update",
+      "description": "Added oauth2-credentials section to the navigation menu and updated screenshot for Omnia 7.12.",
+      "sources": [
+        "89e5a5189d626d8b102ffbd9ad960eb3d498b827",
+        "900d7fd71e85d618193d1352ba53534b9e229929"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/tenant-settings/settings/text-styles/index.rst",
+      "classification": "Updated guidance",
+      "description": "Reorganized Text styles section to distinguish between Content styles and Page element styles, with new images illustrating each style type.",
+      "sources": [
+        "3143c22d3a60d7d060c30362b3324f97dd3f0d27",
+        "9c40f05e75ae6bdeb2725d403a3e52e266a4c03e",
+        "d49be2bf4d298d3d10146977f23e2153ada92b28",
+        "d7e66057b6ddce2d9ccebb0629fcc15fd4a61dba",
+        "e1e4a037c37b4adcbf79d70ce453361666862b44"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "path": "admin-settings/business-group-settings/settings/text-styles-bp/index.rst",
+      "classification": "Updated guidance",
+      "description": "Renamed text style feature sections from 'Rich text editor styles' to 'Content styles' and 'Apply everywhere' to 'Page element styles' for clarity.",
+      "sources": [
+        "42f0e37ddab845e0f92c6f5d49f86cc3bdd6946e",
+        "92dc056319188d8639dc64eb5329b7df73f39cb6",
+        "9e9a14126ad5b4e9ad8f209b4588bcf3129d3bfa",
+        "f2c41c21cf9add0824122b51c2b25f4a06e279c2",
+        "fdc45592941acb8e1a6c7c4f40dfd355511afcf3"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "path": "use-omnia-in-sharepoint/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed work-in-progress notice, expanded feature guidance to clarify SharePoint Brand Center support in Omnia 7.12, and refined section title for accuracy.",
+      "sources": [
+        "69ea136f6306288b87f9b9939fe3b41833b453c9",
+        "af57aa681c16d046a4fa0f11148c2e5ace454b3f"
+      ]
+    },
+    {
       "date": "2026-10-09",
       "path": "release-notes/7.0/versions.rst",
       "classification": "Added information",
       "description": "Added the 7.11.32 release notes, covering fixes for Teamwork and People Rollup, Page Bulk Update, Media Picker, identity sync, and Bing image search."
+    },
+    {
+      "date": "2026-10-09",
+      "path": "pages/publish-page-changes/index.rst",
+      "classification": "Added information",
+      "description": "Added information about combining scheduled publishing with auto publishing in Omnia 7.12 and later, with reference to page collection settings.",
+      "sources": [
+        "1c2d854372e1c1d76b043647f4391a7b83161d44"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "path": "pages/create-page/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified how autopublishing and scheduled publishing work together in Omnia 7.12 and later; updated related screenshot.",
+      "sources": [
+        "36faab5a4a40a3aca57a368903ec94eae1d7d792",
+        "bf8703e2694ad3184f44281bceae832b694f6407"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "path": "blocks/table-of-contents-block/index.rst",
+      "classification": "Added information",
+      "description": "Added explanation that new headings automatically appear in the navigation when content is added to the page; removed work-in-progress notice.",
+      "sources": [
+        "18dfc245ddd87e1a4ccdc7675d6fba057b680105",
+        "2f2dfcd7729d92cf142af652ee53bd7a62ab194f",
+        "de282998585e79d9b3ffa2ade0db0978e72fdb5b"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "path": "blocks/page-likes-and-comments/index.rst",
+      "classification": "Added information",
+      "description": "Documented new Deleted comment message setting and options for Omnia 7.12, including author control over sharing in write mode.",
+      "sources": [
+        "81d35e50a2f2977aed043216608346cc0dafea52",
+        "92f8c330373016de7d7fbf208c108af870a62f53",
+        "a47fe256491633d2c37d9874bf972e99a45cebfb",
+        "b16d69940ca4f2ce2ab2da065623cf693afeea2d",
+        "ff52b6037a72e12ad486da095ff007be6446e16e"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "path": "admin-settings/tenant-settings/announcements/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified status and type management in Omnia 7.12, which moved from the cogwheel to a separate menu option with version-specific procedures.",
+      "sources": [
+        "2fe3be486691e4e79ec6e29d485fa8c2d6d7a730",
+        "4b7cd619add0b45fdae822d931c01696deffef19",
+        "aa3dfb6d0519ccbce0d776a981100fb00133b87e",
+        "d51ad8d698be7e169f90b7f389c7193c0850d18d",
+        "df5746adc6ee174504ca74918cf34e63affc11c0",
+        "f0af3549efee8113a03b213f9620b31e32f3c95f",
+        "fc2e21937cf8492832a2b0d1c840c34ba62693f9"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "path": "blocks/page-rollup/index.rst",
+      "classification": "Correction",
+      "description": "Corrected typo in link reference and clarified text in the Show in dialog section.",
+      "sources": [
+        "424b32339114bea6f116fef77743bb8f2868a3fe"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "path": "blocks/button-link/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that Create page action button has configurable settings with accompanying screenshot.",
+      "sources": [
+        "2c24a1bb32dc8149723d5819f49d0ac52a4b09d6",
+        "3d6851fece7e7ffd7acf4556e9b05de94fd36033",
+        "f47d605f1157fe6c038a9ab5cd808153f1817e69"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "release-notes/mcp/7/index.rst",
+      "classification": "Added information",
+      "description": "Added page layouts and content inventory and version history to the list of supported MCP areas.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "release-notes/mcp/7/hotfix-releases/versions.rst",
+      "classification": "Added information",
+      "description": "Added Release 7.11.33 hotfix release notes with new features and fixes for Omnia MCP capabilities.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "release-notes/index.rst",
+      "classification": "Navigation update",
+      "description": "Added version 7.13 release notes to the table of contents.",
+      "sources": [
+        "a225e1b946bea4f48b6a8151fa726bf3539a54c9"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "release-notes/7.13/index.rst",
+      "classification": "Added information",
+      "description": "Expanded 7.13 release notes with comprehensive feature documentation across AI, Activity Hub, Event Management, Web Content Management, and Navigation.",
+      "sources": [
+        "a225e1b946bea4f48b6a8151fa726bf3539a54c9"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "pages/page-types/page-type-settings/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated SharePoint sync override screenshots to Omnia 7.12, removed legacy screenshot, and clarified that the Viva promote option is specific to page type settings.",
+      "sources": [
+        "af03396bbf01f0aaa1379e043bcea0df8a1d6363",
+        "b9d5a5ebc79377c297076bb2ece58942e1b29915"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "pages/page-collections/page-collection-settings/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated approval settings documentation for Omnia 7.12, including new approval bypass option and clarified multi-step approval behavior.",
+      "sources": [
+        "2e661dfa9ba44e38622c5d4895220f56d2bc7771",
+        "6dc07d6b7225525bd539f0c00ef84992f499283d",
+        "8aae134b73465e9e522360f682425058611a6b82",
+        "d195acd4575089c7c9da86c66790515af186a46d",
+        "d5325970913d4036f764c3f9f4cd22ac7d28dae4"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "pages/page-approval/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added note about version 7.12 and later providing additional approval options including user or group bypass capabilities.",
+      "sources": [
+        "f738c536595e2d3b1abaac4d6a6102d7742f1ffe"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/setup/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added troubleshooting steps for 401 Unauthorized errors and invalid tenant URL rejections.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/versioned-layout/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that layouts refer to tenant, business profiles and Publishing Apps, with cross-reference to page layout documentation.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/page/index.rst",
+      "classification": "Updated guidance",
+      "description": "Publishing and archiving now require preview approval before taking effect; enhanced image URL security requirements; added page layout customization capability.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/page-type/index.rst",
+      "classification": "Correction",
+      "description": "Corrected that page type publishing sends notifications the same as the Omnia interface, rather than no notifications.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/page-layout/index.rst",
+      "classification": "New page",
+      "description": "New documentation page for page layout management, covering page structure inheritance, previewing changes, and applying layout modifications.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/page-collection/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added publishing and discarding procedures for page collection drafts, including requirements and effects, and updated related guidance.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/index.rst",
+      "classification": "Added information",
+      "description": "Added explanations for tool validation, tenant scope rules, preview confirmations, and handling uncertain outcomes in the connector workflow guide.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/html-script-block/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified the process for changing blocks on page types and simplified page collection publishing guidance with links to related documentation.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/feature/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified timeout handling for feature activation and how repeated requests behave during active operations.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/document-management/review-approval/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified reviewer identification (name, email, or user ID) and default 14-day due date; added new review reminders section for handling documents at their review date.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/document-management/document/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added delete-draft capability and enhanced guidance on file downloads, property validation, and publishing workflows.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/content-inventory/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how to list Publishing App content, view version history, and check page dependencies and layouts.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "mcp/examples/capabilities/index.rst",
+      "classification": "New page",
+      "description": "New documentation page explaining how to list connector actions, preview high-impact changes requiring approval, and check the status of earlier operations.",
+      "sources": [
+        "dbdb30b87cae12a14642cd584766b25b8ab8c9c7"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "blocks/button-link/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated Create page action settings to document Navigation mode in Omnia 7.12, which replaces the Disable redirect to created page option.",
+      "sources": [
+        "09d595fa892f1492542760d48a18d76314cf0fc2",
+        "94bbda197e8affb9fc60b746aea232128c3031f2"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "path": "admin-settings/tenant-settings/webcontent-managament/sharepoint-sync/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for Enable full page view and Enable enhanced Copilot integration settings available in Omnia 7.12.",
+      "sources": [
+        "082b0bcb78fe1ed73d562194ba9176b4374ad7e5",
+        "4d4db78adc3484340c1ccd21c38c4d0e45ac829e",
+        "aa881b4766495229bab35ca4c06c1e9ec534708b"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "path": "release-notes/7.12/index.rst",
+      "classification": "Updated guidance",
+      "description": "Reorganized and expanded Release 7.12 content with detailed feature descriptions, audience guidance, and added images for clarity.",
+      "sources": [
+        "46cd0efcd996dfec1c58e541d76a94a3fac7577d",
+        "506987c7591e397d41d47320ada3af8857249f38",
+        "9464e3b4539d5c6c90341c3569f9ae1c9f293230",
+        "a0fb2ad04887ee3ee4acfa7ef4a7b0d05fb20baa",
+        "c7b0f648b5c44a74b2693e7b8ad618816083dc29"
+      ]
     },
     {
       "date": "2026-09-28",
