@@ -711,8 +711,209 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 3 September 2026
 ----------------
 
+* `Font - Business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/fonts-bp/index.html>`__ — **Updated guidance**
+  Clarified that font settings can be inherited from tenant or customized per business profile, with guidance referencing the tenant settings documentation.
+
 * `Font - Tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/fonts-tenant/index.html>`__ — **New page**
   Added documentation for Font - Tenant settings, covering how to add and apply custom fonts in Omnia.
 
 * `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/index.html>`__ — **Navigation update**
   Added fonts-tenant settings section to navigation menu and updated screenshot to version 7.12.
+
+2 September 2026
+----------------
+
+* `Font - Business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/fonts-bp/index.html>`__ — **New page**
+  Added documentation for font settings configuration at the business profile level in Omnia 7.12 and later.
+
+* `Requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index.html>`__ — **Added information**
+  Added clarification that when selecting Individual sign-off type with a group recipient, all group members must sign-off.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/index.html>`__ — **Added information**
+  Added text-styles and fonts business group settings to the documentation with updated screenshot reflecting Omnia 7.12.
+
+* `Sign-off requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/index.html>`__ — **Navigation update**
+  Added user sync sign-off requests section to navigation and updated screenshot for Omnia 7.12.
+
+* `Text styles <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/text-styles/index.html>`__ — **Updated guidance**
+  Clarified Omnia 7.12 text style settings for business profiles and Apply everywhere functionality with added configuration guidance.
+
+* `Text styles - Business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/text-styles-bp/index.html>`__ — **New page**
+  Added documentation for configuring text styles at the business profile level, including inheritance from tenant settings and applying built-in styles to page elements.
+
+* `User sync - sign-off requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/user-sync-sign-off-requests/index.html>`__ — **New page**
+  Added documentation for the user sync feature in sign-off requests, describing how group membership changes are automatically synchronized with active requests.
+
+1 September 2026
+----------------
+
+* `Editing text with the RTF editor <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/rtf-editor/index.html>`__ — **Added information**
+  Added Call to action feature documentation with instructions and examples for creating link buttons in RTF editor text, available in Omnia 7.12+.
+
+* `Semantic search - reindex content <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/webcontent-managament/reindex-pages-semantic-search/index.html>`__ — **New page**
+  New page documenting the semantic search reindex feature for managing page indexing in Omnia web content management.
+
+* `Theme for the business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/theme/index.html>`__ — **Added information**
+  Added Call to action style section with guidance on setting general button styles for the RTF editor in Omnia 7.12 and later.
+
+* `Web content management <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/webcontent-managament/index.html>`__ — **Navigation update**
+  Added link to semantic search reindexing section and updated screenshot for version 7.12.
+
+28 August 2026
+--------------
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added 7.11.24 release notes section documenting ten product improvements including controlled document publishing, Identity Picker performance, and translation handling.
+
+27 August 2026
+--------------
+
+* `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Updated guidance**
+  Replaced placeholder text with a direct link to the 7.12 Header settings documentation for App launcher configuration.
+
+* `Header settings in Omnia 7.12 and later <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-712/index.html>`__ — **New page**
+  New page documenting app launcher settings for Header in Omnia 7.12, including configuration options for display, query, colors, and sorting.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Updated guidance**
+  Expanded Show in dialog section with detailed settings, important usage restrictions, and configuration guidance for opening page content in dialogs.
+
+* `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **Correction**
+  Corrected step numbering in the document reindexing procedures section from 4 to 5.
+
+25 August 2026
+--------------
+
+* `Add link <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/add-link/index.html>`__ — **Added information**
+  Added User section describing how to link to colleague profiles in Omnia 7.12 and later using the people picker.
+
+* `Document library display <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/document-library-display/index.html>`__ — **Updated guidance**
+  Clarified the Query field description to specify adding a site URL, explained the Data type setting, and removed preliminary disclaimer.
+
+* `Document management <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/index.html>`__ — **Navigation update**
+  Added semantic search reindex section to the document management navigation menu.
+
+* `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **New page**
+  Added page documenting how to reindex documents for semantic search, available in Omnia 7.12 and later.
+
+24 August 2026
+--------------
+
+* `Add link <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/add-link/index.html>`__ — **Added information**
+  Added information about SharePoint page categories available in Omnia 7.12 and later, with example screenshot and admin configuration reference.
+
+* `Blocks <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/index.html>`__ — **Navigation update**
+  Added document-library-display block to the blocks navigation index.
+
+* `Document library display <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/document-library-display/index.html>`__ — **New page**
+  Added documentation for the Document library display block, which displays SharePoint document library folder structures with configurable display, filtering, and export options.
+
+* `General assets and options <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/index.html>`__ — **Navigation update**
+  Table of contents restructured or link order modified on the General assets and options overview page.
+
+* `Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/index.html>`__ — **Navigation update**
+  Separated older releases navigation into a new table of contents block with depth limitation for improved hierarchy.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/index.html>`__ — **Navigation update**
+  Added SharePoint page picker settings page to the navigation menu.
+
+* `SharePoint page picker settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/sharepoint-page-picker/index.html>`__ — **New page**
+  Added documentation for SharePoint page picker settings in Omnia 7.12, including configuration options for libraries and search categories with filters and search options.
+
+21 August 2026
+--------------
+
+* `AI features <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/index.html>`__ — **Added information**
+  Added a reference link to the Recommended AI models page for guidance on current model IDs and deployment recommendations.
+
+* `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Added information**
+  Added note about version 7.12 reorganizing app launcher options differently with new screenshot.
+
+* `Hotfix releases for release 5 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/hotfix-releases/index.html>`__ — **Navigation update**
+  Moved hotfix releases for release 5 into the older-releases section of the documentation hierarchy.
+
+* `Hotfix releases for release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/index.html>`__ — **Navigation update**
+  Moved the hotfix releases page for release 6 to the older-releases directory.
+
+* `Model configuration (AI) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index.html>`__ — **Updated guidance**
+  Added references to recommended AI models for deployment configuration and updated image-generation feature guidance and terminology.
+
+* `Older releases <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/index.html>`__ — **New page**
+  New page listing older releases for Omnia Feed versions 6, 5, 4, 3, and 2 with reference to the latest Release 7.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added release notes for version 7.11.23 documenting bug fixes and improvements across Omnia, Workplace, WCM, MS, Analytics, and Feed components.
+
+* `Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/index.html>`__ — **Navigation update**
+  Consolidated release notes for versions 2-6 under older-releases section to simplify navigation.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Added information**
+  Added documentation for Omnia 7.12 features including Show in dialog settings, new Card (WCAG) and Event card views, and updated display options with corrected screenshots.
+
+* `Permissions for the tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/permissions/index.html>`__ — **Updated guidance**
+  Marked Dall-E as legacy, recommended GPT Image instead for new deployments, and added GPT Image configuration instructions.
+
+* `Recommended AI models <https://omnia-docs-g2.readthedocs.io/en/latest/setup/recommended-ai-models/index.html>`__ — **New page**
+  Updated recommended AI models from GPT 6 and GPT Image 2.5 Flare to GPT-5.6 and GPT Image 2, with explicit deployment names for configuration.
+
+* `Release 2 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/2/index.html>`__ — **Navigation update**
+  Moved Release 2 documentation to an older-releases folder within the release notes structure.
+
+* `Release 3 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/3/index.html>`__ — **Navigation update**
+  Moved Release 3 documentation to the older-releases folder.
+
+* `Release 4 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/4/index.html>`__ — **Navigation update**
+  Moved Release 4 documentation to the older-releases subdirectory.
+
+* `Release 5 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/index.html>`__ — **Navigation update**
+  Moved Release 5 documentation from release-notes/omnia-feed/5/ to release-notes/omnia-feed/older-releases/5/ directory.
+
+* `Release 5.1 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/versions/5.1/index.html>`__ — **Navigation update**
+  Moved Release 5.1 notes to the older-releases folder structure.
+
+* `Release 5.2.20 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/hotfix-releases/versions.html>`__ — **Navigation update**
+  Moved release notes page to older-releases directory structure.
+
+* `Release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/index.html>`__ — **Navigation update**
+  Moved Release 6 page and images to older-releases directory structure.
+
+* `Release 6.1 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.1/index.html>`__ — **Navigation update**
+  Reorganized Release 6.1 release notes by moving it to the older-releases directory.
+
+* `Release 6.10 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.10/index.html>`__ — **Navigation update**
+  Moved Release 6.10 documentation to older releases folder structure.
+
+* `Release 6.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.12/index.html>`__ — **Navigation update**
+  Moved Release 6.12 page to the older-releases folder structure, reorganizing historical Omnia Feed documentation.
+
+* `Release 6.13 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.13/index.html>`__ — **Navigation update**
+  Release 6.13 page relocated to the older-releases directory structure.
+
+* `Release 6.13.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.html>`__ — **Navigation update**
+  Release notes page moved to older-releases folder to organize version history by release lifecycle.
+
+* `Release 6.3 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.3/index.html>`__ — **Navigation update**
+  Release 6.3 documentation moved to the older-releases section of the feed release notes structure.
+
+* `Release 6.6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.6/index.html>`__ — **Navigation update**
+  Moved Release 6.6 page to older-releases directory structure for better organization of historical release documentation.
+
+* `Release 6.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.7/index.html>`__ — **Navigation update**
+  Release 6.7 page moved to older-releases directory structure for archival organization.
+
+* `Release 6.8 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.8/index.html>`__ — **Navigation update**
+  Moved Release 6.8 page to older-releases directory structure for better organization of archived release notes.
+
+* `Settings (OpenAI) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/open-ai/settings-open-ai/index.html>`__ — **Updated guidance**
+  Added notice directing readers to current Omnia documentation for model IDs and deployment recommendations, as this page describes legacy Omnia 7.7.
+
+* `Setup <https://omnia-docs-g2.readthedocs.io/en/latest/setup/index.html>`__ — **Navigation update**
+  Added a link to the recommended AI models page in the Setup section's table of contents.
+
+* `Setup AI <https://omnia-docs-g2.readthedocs.io/en/latest/setup/setup-ai/index.html>`__ — **Updated guidance**
+  Reorganized Azure OpenAI and AI Search setup procedures with model deployment guidance, added image generation setup section, and updated UI references to Microsoft Foundry.
+
+* `Tabs - Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/omnia-feed/tabs-omnia-feed/index.html>`__ — **Updated screenshots**
+  Updated the images used on this page.
+
+* `Versions of the Omnia Feed 6 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/index.html>`__ — **Navigation update**
+  Moved Omnia Feed 6 release versions documentation to the older-releases directory for improved organization of historical release information.
