@@ -1,0 +1,50 @@
+name: Clean up merged hotfix release-note branches
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [master]
+
+permissions:
+  contents: write
+
+jobs:
+  delete-merged-branch:
+    if: >-
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      startsWith(github.event.pull_request.head.ref, 'hotfix-release-notes-')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete merged release-note branch
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const repository = `${context.repo.owner}/${context.repo.repo}`;
+            if (!pr?.merged || pr.base.ref !== 'master' ||
+                pr.head.repo?.full_name !== repository ||
+                !/^hotfix-release-notes-[0-9]+\.[0-9]+\.[0-9]+$/.test(pr.head.ref)) {
+              core.info('No eligible merged hotfix release-note branch to delete.');
+              return;
+            }
+
+            const ref = `heads/${pr.head.ref}`;
+            let branch;
+            try {
+              branch = await github.rest.git.getRef({ ...context.repo, ref });
+            } catch (error) {
+              if (error.status === 404) {
+                core.info('The merged branch has already been deleted.');
+                return;
+              }
+              throw error;
+            }
+
+            if (branch.data.object.sha !== pr.head.sha) {
+              core.warning('The branch changed after the merged PR; leaving it in place.');
+              return;
+            }
+
+            await github.rest.git.deleteRef({ ...context.repo, ref });
+            core.info(`Deleted merged release-note branch ${pr.head.ref}.`);
