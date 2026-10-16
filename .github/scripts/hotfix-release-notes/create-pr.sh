@@ -45,6 +45,14 @@ fi
 branch_name="hotfix-release-notes-${omnia_version}"
 pr_title="Release notes ${omnia_version}"
 
+report_pr_url() {
+  local pr_url
+  pr_url=$(gh pr view "$branch_name" --json url --jq '.url')
+  if [ -n "${GITHUB_OUTPUT:-}" ]; then
+    printf 'pr_url=%s\n' "$pr_url" >> "$GITHUB_OUTPUT"
+  fi
+}
+
 echo "Version: $omnia_version"
 echo "Branch: $branch_name"
 echo "Release notes file: $RELEASE_NOTES_FILE"
@@ -102,6 +110,9 @@ git add "$RELEASE_NOTES_FILE"
 
 if git diff --cached --quiet; then
   echo "No release-note changes detected."
+  if [ -n "$existing_pr" ]; then
+    report_pr_url
+  fi
   exit 0
 fi
 
@@ -111,6 +122,7 @@ if [ -n "$existing_pr" ]; then
   git push \
     --force-with-lease="refs/heads/${branch_name}:${remote_sha}" \
     --set-upstream origin "$branch_name"
+  report_pr_url
   echo "Draft PR #$existing_pr updated successfully."
   exit 0
 fi
@@ -124,4 +136,5 @@ gh pr create \
   --head "$branch_name" \
   --reviewer ChristianHDegn
 
+report_pr_url
 echo "Draft PR created successfully."

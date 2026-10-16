@@ -65,6 +65,7 @@ jobs:
           retention-days: 1
 
       - name: Create pull request for release notes
+        id: create-release-pr
         if: steps.detect-release.outputs.found == 'true' && steps.generate-release-notes.outputs.has_notes == 'true'
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -75,6 +76,7 @@ jobs:
         if: success() && steps.detect-release.outputs.found == 'true'
         env:
           GH_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          DOCUMENTATION_PR_URL: ${{ steps.create-release-pr.outputs.pr_url }}
           RELEASE_NOTES_URL: https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html
         run: bash .github/scripts/hotfix-release-notes/create-ready-project-item.sh
 
