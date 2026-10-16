@@ -79,6 +79,47 @@ class DigestTests(unittest.TestCase):
         self.assertNotIn('github', text.lower())
         self.assertNotIn('pull request', text.lower())
 
+    def test_navigation_updates_do_not_create_links_or_empty_dates(self):
+        pages = digest.pages_in(self.root)
+        navigation = {'date': '2026-10-12', 'path': 'guide/index.rst',
+                      'classification': 'Navigation update', 'description': 'Moved a link.'}
+        content = {**navigation, 'date': '2026-10-13',
+                   'classification': 'Added information', 'description': 'Added an example.'}
+        text = digest.render([navigation, content], pages)
+        self.assertNotIn('12 October 2026', text)
+        self.assertNotIn('Navigation update', text)
+        self.assertIn('Added an example.', text)
+        self.assertIn('No recent documentation updates', digest.render([navigation], pages))
+
+    def test_build_checks_only_reader_visible_links(self):
+        entries = [{'path': 'hidden/index.rst', 'classification': 'Navigation update'},
+                   {'path': 'guide/index.rst', 'classification': 'Added information'}]
+        self.state.write_text(json.dumps({'entries': entries}))
+        build = self.root / 'html'
+        page = build / digest.DIGEST.replace('.rst', '.html')
+        page.parent.mkdir(parents=True)
+        page.write_text('<a href="guide/index.html">Guide</a>')
+        target = build / 'guide/index.html'
+        target.parent.mkdir(parents=True)
+        target.write_text('Guide')
+        with patch.object(digest, 'STATE', self.state):
+            digest.check_build(build)
+            target.unlink()
+            with self.assertRaisesRegex(ValueError, 'guide/index.html'):
+                digest.check_build(build)
+
+    def test_navigation_tracking_allows_later_content_update(self):
+        files = {4: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '+link'}],
+                 5: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '+guidance'}]}
+        self.update([self.pr], files, lambda *args: {
+            'classification': 'Navigation update', 'description': 'Moved a link.'})
+        self.assertNotIn('Navigation update', (self.root / digest.DIGEST).read_text())
+        self.assertEqual(len(json.loads(self.state.read_text())['entries']), 1)
+        self.update([self.pr], files, lambda *args: self.fail('Repeated classification'))
+        self.update([self.pr, {**self.pr, 'number': 5}], files, lambda *args: {
+            'classification': 'Updated guidance', 'description': 'Updated the setup steps.'})
+        self.assertIn('Updated guidance', (self.root / digest.DIGEST).read_text())
+
     def test_release_history_uses_a_stable_reader_title(self):
         self.write('release-notes/7.0/versions.rst', '7.11.32\n=======\n\nRelease notes.\n')
         pages = digest.pages_in(self.root)
