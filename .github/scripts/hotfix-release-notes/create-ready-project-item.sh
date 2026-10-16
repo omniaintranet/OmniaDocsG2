@@ -33,6 +33,12 @@ if [[ ! "${RELEASE_NOTES_URL:-}" =~ ^https://omnia-docs-g2\.readthedocs\.io/ ]];
   exit 1
 fi
 
+if [ -n "${DOCUMENTATION_PR_URL:-}" ] &&
+  [[ ! "$DOCUMENTATION_PR_URL" =~ ^https://github\.com/omniaintranet/OmniaDocsG2/pull/[1-9][0-9]*$ ]]; then
+  echo "DOCUMENTATION_PR_URL must reference a pull request in omniaintranet/OmniaDocsG2." >&2
+  exit 1
+fi
+
 release_count=$(jq '.releases | length' "$INPUT_FILE")
 
 if [ "$release_count" -ne 1 ]; then
@@ -76,6 +82,9 @@ trap 'rm -f "$issue_body_file"' EXIT
     "$pending_issue_count"
   printf '[View the currently published Omnia hotfix release notes](%s). The draft below will not appear there until its pull request is approved and merged.\n\n' \
     "$RELEASE_NOTES_URL"
+  if [ -n "${DOCUMENTATION_PR_URL:-}" ]; then
+    printf '[Review the documentation pull request](%s).\n\n' "$DOCUMENTATION_PR_URL"
+  fi
   printf '## Generated draft release notes\n\n'
   printf '```text\n'
   cat "$GENERATED_FILE"

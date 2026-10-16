@@ -58,6 +58,10 @@ class ReleaseReviewTests(unittest.TestCase):
         env = dict(os.environ, TEST_PROMPT=shell_path(self.folder / "prompt.txt"),
             TEST_RESPONSE=shell_path(self.folder / "response.json"),
             GITHUB_OUTPUT=shell_path(self.folder / "outputs"), GH_TOKEN="offline-test",
+            RELEASE_NOTES_FILE=shell_path(self.folder / "versions.rst"),
+            TEST_EXISTING_PR=str(getattr(self, "existing_pr", False)).lower(),
+            TEST_NO_CHANGES=str(getattr(self, "no_changes", False)).lower(),
+            DOCUMENTATION_PR_URL=getattr(self, "pr_url", "https://github.com/omniaintranet/OmniaDocsG2/pull/43"),
             RELEASE_NOTES_URL="https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html")
         return subprocess.run([BASH, "-c", f'export PATH="{shell_path(self.bin)}:{shell_path(Path(BASH).parent)}:$PATH"; bash "{shell_path(path)}"'],
             cwd=ROOT, env=env, capture_output=True, text=True)
@@ -80,10 +84,53 @@ class ReleaseReviewTests(unittest.TestCase):
         rendered = self.run_script("create-ready-project-item.sh", notification=True)
         self.assertEqual(rendered.returncode, 0, rendered.stderr)
         self.assertIn("**1** pending manual security review", rendered.stdout)
+        self.assertIn("[Review the documentation pull request](https://github.com/omniaintranet/OmniaDocsG2/pull/43)", rendered.stdout)
         self.assertIn("Security-sensitive issues pending manual review", rendered.stdout)
         self.assertIn("Permissions change requires manual disclosure review", rendered.stdout)
         self.assertIn("Suggested release note (pending approval)", rendered.stdout)
         self.assertIn(self.response["pendingReviewIssues"][0]["suggestedText"], rendered.stdout)
+
+    def check_pr_output(self, existing=False, no_changes=False):
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        # Isolate git/gh mutations; exercise the production script and output path.
+        git = self.bin / "git"
+        git.write_text('#!/usr/bin/env bash\ncase "$1" in\n  config|fetch|checkout|add|commit|push) exit 0 ;;\n  rev-parse) printf \'%040d\\n\' 1 ;;\n  ls-remote) exit 2 ;;\n  diff) [ "$TEST_NO_CHANGES" = true ] ;;\n  *) echo "Unexpected mock git call: $*" >&2; exit 99 ;;\nesac\n')
+        git.chmod(0o755)
+        gh = self.bin / "gh"
+        gh.write_text('#!/usr/bin/env bash\ncase "$1 $2" in\n  "pr list") if [ "$TEST_EXISTING_PR" = true ]; then echo 43; fi ;;\n  "pr view"|"pr create") echo https://github.com/omniaintranet/OmniaDocsG2/pull/43 ;;\n  *) echo "Unexpected mock gh call: $*" >&2; exit 99 ;;\nesac\n')
+        gh.chmod(0o755)
+        (self.folder / "versions.rst").write_text("7.11.98\n========\n")
+        self.existing_pr = existing
+        self.no_changes = no_changes
+        result = self.run_script("create-pr.sh")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("pr_url=https://github.com/omniaintranet/OmniaDocsG2/pull/43", (self.folder / "outputs").read_text())
+
+    def test_new_pr_exports_link(self):
+        self.check_pr_output()
+
+    def test_updated_pr_exports_link(self):
+        self.check_pr_output(existing=True)
+
+    def test_unchanged_existing_pr_exports_link(self):
+        self.check_pr_output(existing=True, no_changes=True)
+
+    def test_notification_without_pr_link(self):
+        self.pr_url = ""
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        rendered = self.run_script("create-ready-project-item.sh", notification=True)
+        self.assertEqual(rendered.returncode, 0, rendered.stderr)
+        self.assertNotIn("Review the documentation pull request", rendered.stdout)
+
+    def test_notification_rejects_unrelated_pr_link(self):
+        self.pr_url = "https://github.com/another/repository/pull/43"
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        rendered = self.run_script("create-ready-project-item.sh", notification=True)
+        self.assertNotEqual(rendered.returncode, 0)
+        self.assertIn("must reference a pull request", rendered.stderr)
 
     def test_all_pending_has_no_public_notes(self):
         self.response = {"bullets": [], "omittedIssues": [], "pendingReviewIssues": [
