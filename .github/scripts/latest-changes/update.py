@@ -274,7 +274,10 @@ Added information: added context, explanations or examples.
 Correction: corrected factual information.
 Spelling / grammar: editorial fixes without a meaning change.
 Updated screenshots: changed images only.
-Navigation update: changed links or page location.
+Navigation update: only changed navigation links or page location, without substantive
+documentation changes. This category is excluded from the reader digest. When a
+change also updates guidance, information, corrections, or screenshots, use that
+substantive classification instead.
 Return ONLY a JSON object with exactly classification and description.
 Description is one concise English sentence, at most 180 characters, identifying
 what was changed. Use plain text, no links, markup, PRs, GitHub or git details.
@@ -311,10 +314,15 @@ def escape_rst(value):
     return re.sub(r'([\\`*_|<>])', r'\\\1', value)
 
 
+def reader_entries(entries):
+    # Retain navigation-only records internally so they are not classified again.
+    return [entry for entry in entries if entry['classification'] != 'Navigation update']
+
+
 def render(entries, pages):
     lines = [PAGE_TITLE, '=' * len(PAGE_TITLE), '',
              f'Browse documentation pages updated in the last {RETENTION_DAYS} days. Select a page title to read more.', '']
-    visible = [entry for entry in entries if entry['path'] in pages]
+    visible = [entry for entry in reader_entries(entries) if entry['path'] in pages]
     if not visible:
         lines += ['No recent documentation updates are listed yet.', '']
     days = sorted({entry['date'] for entry in visible}, reverse=True)
@@ -338,7 +346,7 @@ def check_build(build):
         raise ValueError('Digest HTML was not built')
     html = page.read_text(encoding='utf-8')
     from urllib.parse import quote
-    for entry in state['entries']:
+    for entry in reader_entries(state['entries']):
         target = entry['path'][:-4] + '.html'
         if not (build / target).is_file() or quote(target, safe='/') not in html:
             raise ValueError(f'Digest link was not built: {target}')

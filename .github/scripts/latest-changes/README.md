@@ -8,6 +8,9 @@ The report contains only linked documentation titles, a classification, and a
 short reader-facing description, grouped by the date changes reach the publishing
 branch, in Copenhagen time.
 It retains the last 90 calendar days and combines each page's changes on a day.
+Navigation-only updates are excluded from the reader digest. They remain in
+internal state to avoid repeated classification. Changes that also update page
+content are included under the applicable content classification.
 It covers **all documentation changes on the default branch**, including direct
 commits, browser edits, uploaded screenshots, and merged PRs, for every author.
 It follows the checked-out branch's first-parent history and compares each commit
