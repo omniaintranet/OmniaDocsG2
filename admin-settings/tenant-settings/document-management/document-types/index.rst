@@ -167,13 +167,13 @@ Options for semantic search
 ------------------------------
 For semantic search to be available in the tenant, the feature "Semantic search" must be active.
 
-When you select Semantic search, you also select one of these options:
+When you select Semantic search, you also select one of these options (image from Omnia 7.12):
 
-.. image:: document-types-publish-semantic-v78.png
+.. image:: document-types-publish-semantic-v712.png
 
-+ **Allow to be included in semantic search. Unchecked by default.**: An author can choose that a document of this type should be available for semantic search, in the publishing process. With this option, the default is that it's not (unchecked).
-+ **Allow to be included in semantic search. Checked by default.**: A document of this type is available for semantic search by default, in the publishing process. With this option an author can choose that it should not be, by unchecking the option.
-+ **Always include in semantic search. Unchecked by default.**: All documents of this type are always available for semantic search. No option is shown when publishing.The tenant feature "Semantic search" must be active for this functionality to be available.
++ **Allow to be included in semantic search. Unchecked for new documents.**: An author can choose that a document of this type should be available for semantic search, in the publishing process. With this option, the default is that it's not (unchecked) for new documents.
++ **Allow to be included in semantic search. Checked for new documents.**: A new document of this type is available for semantic search by default, in the publishing process. With this option an author can choose that it should not be, by unchecking the option.
++ **Always include in semantic search.**: All documents of this type are always available for semantic search. No option is shown when publishing.
 
 **Very important!** The semantic search will soon be developed further in Omnia but for now it does **not support security trimming**. 
 
