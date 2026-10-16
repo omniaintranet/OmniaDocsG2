@@ -216,11 +216,206 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.12/index.html>`__ — **Updated guidance**
   Reorganized and expanded Release 7.12 content with detailed feature descriptions, audience guidance, and added images for clarity.
 
+2 October 2026
+--------------
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
+  Added section documenting sign-off requests for SharePoint pages with explanation of how the feature works.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+  Added release notes documenting version 7.11.8 improvements to authentication flow, PDF link handling, and page variation matching.
+
+* `Sign-off requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/index.html>`__ — **Updated guidance**
+  Added prerequisites section clarifying required tenant features and updated scope to specify sign-off availability for Omnia and SharePoint pages.
+
+* `Templates <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/sign-off-templates-613/index.html>`__ — **Updated guidance**
+  Added separate procedures for adding SharePoint pages to sign-off templates, with reorganized and clearer step-by-step instructions for both Omnia and SharePoint workflows.
+
+30 September 2026
+-----------------
+
+* `Banner <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/banner/index.html>`__ — **Added information**
+  Documented the Omnia 7.12 banner editor updates including new layout options and reorganized settings interface with explanatory screenshots.
+
+* `Breadcrumb <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb/index.html>`__ — **Added information**
+  Added note clarifying this page covers Omnia 7.11 and earlier, with a link to Omnia 7.12+ breadcrumb settings.
+
+* `Breadcrumb settings for Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb-settings-712/index.html>`__ — **New page**
+  New documentation page for Breadcrumb block settings in Omnia 7.12 and later, covering style presets, query options, separators, fonts, and hover state configuration.
+
+* `Current navigation <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/current-navigation/index.html>`__ — **Navigation update**
+  Added notice clarifying this page applies to Omnia 7.11 and earlier, directing Omnia 7.12+ users to version-specific documentation.
+
+* `Current navigation in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/current-navigation-712/index.html>`__ — **New page**
+  Added documentation for Current navigation block settings in Omnia 7.12, including style presets, general configuration options, node indicators, and visual customization.
+
+* `Permissions for a business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/permissions/index.html>`__ — **Spelling / grammar**
+  Corrected capitalization of 'profile' in the page title from 'Profile' to 'profile' for consistency with documentation style.
+
+* `Permissions for the tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/permissions/index.html>`__ — **Added information**
+  Added information about Analytics and Targeting personas permission settings available in Omnia 7.12 and later.
+
+* `Using targeting personas <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index.html>`__ — **Updated guidance**
+  Added note that only targeting applies, not permissions, and relocated permission details to reference the tenant permissions page.
+
+29 September 2026
+-----------------
+
+* `Enterprise properties <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/property/index.html>`__ — **Added information**
+  Added that enterprise properties are organized under categories, with a new link to the category reference page.
+
+* `Enterprise property <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/property/enterprise-property/index.html>`__ — **Updated guidance**
+  Updated guidance on discovering term sets for taxonomy properties; added actions for listing property categories and SharePoint term groups.
+
+* `Enterprise property category <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/property/enterprise-property-category/index.html>`__ — **New page**
+  Added documentation for enterprise property categories, including how to list and create categories in Omnia admin.
+
+* `General assets and options <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/index.html>`__ — **Navigation update**
+  Added navigation link to 'The Everywhere Panel' documentation page in the General assets table of contents.
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
+  Added detailed guidance on Omnia 7.12 SharePoint integration features including full page experience, Everywhere panel, quick editing dialogs, and page type restrictions.
+
+* `Layouts <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/versioned-layout/index.html>`__ — **New page**
+  New documentation page explaining how to list, read, and manage versioned layouts through the MCP connector.
+
+* `Omnia MCP examples <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/index.html>`__ — **Added information**
+  Added versioned-layout example to the Examples per area index.
+
+* `Pages <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/page/index.html>`__ — **Added information**
+  Added guidance for setting date and person properties on pages, and clarified that page addresses support variations like language versions.
+
+* `Permissions for the tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/permissions/index.html>`__ — **Spelling / grammar**
+  Added trailing whitespace to the Users and groups section description paragraph.
+
+* `Publishing App <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/publishing-app/index.html>`__ — **Added information**
+  Added explanation that app kinds are displayed in the user's language with fallback to English when translations are unavailable.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/index.html>`__ — **Added information**
+  Expanded the list of supported MCP areas to include layouts, enterprise properties and categories, and SharePoint term sets.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/hotfix-releases/versions.html>`__ — **Added information**
+  Added Release 7.11.32 with features for layout management, page properties, enterprise categories, and fixes for page addressing and app display.
+
+* `Targeting personas <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/targeting-personas/index.html>`__ — **Added information**
+  Added clarification about page purpose and navigation link to related documentation on using targeting personas.
+
+* `The Everywhere panel <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/the-everywhere-panel/index.html>`__ — **New page**
+  Added documentation for The Everywhere panel, explaining its features, configuration in Omnia admin, audience targeting capabilities, and related settings pages.
+
+* `Using targeting personas <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/targeting-personas/using-targeting-personas/index.html>`__ — **New page**
+  New documentation page explaining how to use targeting personas in Omnia for testing purposes, including permission setup and step-by-step usage instructions.
+
 28 September 2026
 -----------------
 
+* `Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/content-builder/index.html>`__ — **Updated guidance**
+  Clarified that AI assistance creates suggested content rather than all content, and improved wording for clarity and tone.
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Updated guidance**
+  Clarified availability of webparts feature and reorganized Omnia 7.12 SharePoint integration content with new introductory section.
+
 * `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
   Added release notes for version 7.11.31, covering bidirectional People Rollup, Burmese language support, search improvements, and a Business Profile onboarding redirect fix.
+
+* `The full page experience <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/full-page-experience/index.html>`__ — **New page**
+  New page documenting the Omnia full page experience feature in SharePoint, including enablement, configuration, and usage of the Omnia full page experience block.
+
+* `Using Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/using-content-builder/index.html>`__ — **Added information**
+  Expanded with new sections for dividers, template conversion, duplicating areas, media objects, person objects, and complete table settings with multiple new instructional images.
+
+24 September 2026
+-----------------
+
+* `Blocks <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/index.html>`__ — **Navigation update**
+  Added content-builder block to the Blocks documentation table of contents.
+
+* `Blocks for pages <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-for-pages/index.html>`__ — **Navigation update**
+  Added content-builder block to the table of contents list of available blocks for pages.
+
+* `Bulk update and republish <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/bulk-update/index.html>`__ — **New page**
+  New documentation for bulk update and republish of controlled documents on SharePoint sites.
+
+* `Business profile <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/business-profile/index.html>`__ — **Updated guidance**
+  Added procedures and examples for listing business profiles in the tenant, including details about returned data and listing-specific considerations.
+
+* `Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/content-builder/index.html>`__ — **New page**
+  Added documentation for the Content builder block, an authoring tool available in Omnia 7.12 and later, including settings and configuration options.
+
+* `Controlled documents <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/document/index.html>`__ — **New page**
+  Added comprehensive documentation page for the controlled document connector covering discovery, creation, editing, and publishing operations.
+
+* `Controlled-document library <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/controlled-document-library/index.html>`__ — **New page**
+  New page documenting how to activate and manage controlled-document libraries on Teamwork apps through the connector.
+
+* `Document management <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/index.html>`__ — **New page**
+  Added documentation overview for Omnia document management, covering setup of document types, templates, libraries, and workflows for managing controlled documents.
+
+* `Document templates <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/document-template/index.html>`__ — **New page**
+  Added documentation for document templates covering listing, creating, and managing uploaded or linked templates through the connector.
+
+* `Document types <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/document-type/index.html>`__ — **New page**
+  Added comprehensive guide to document types covering listing, creating, configuring settings tabs, and managing document type hierarchies in the connector.
+
+* `General assets and options <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/index.html>`__ — **Navigation update**
+  Added using-content-builder link to the table of contents navigation.
+
+* `Omnia MCP examples <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/index.html>`__ — **Added information**
+  Expanded guidance on scope selection, explaining how the connector offers candidates as a list and indicates when there are more than 50.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Spelling / grammar**
+  Corrected spelling of 'placeholder' in the Placeholder image if empty option description.
+
+* `Process <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/process/index.html>`__ — **New page**
+  New page documenting the Process connector for listing, viewing, and displaying process steps in Omnia Management System.
+
+* `Property bag <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/property-bag/index.html>`__ — **New page**
+  New page explaining how to view Omnia's property bag settings at tenant, business profile, and Publishing App scopes.
+
+* `Publishing App <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/publishing-app/index.html>`__ — **Updated guidance**
+  Expanded guidance with new sections detailing how to list apps, view app details, and create apps, plus additional considerations for scopes, statuses, and connector actions.
+
+* `Publishing App template <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/publishing-app-template/index.html>`__ — **Updated guidance**
+  Added documentation for listing Publishing App templates, including examples and scope requirements; previously covered only template creation.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/index.html>`__ — **Added information**
+  Expanded the list of MCP supported areas to include property bags, Management System processes, document management, and Teamwork apps capabilities.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/mcp/7/hotfix-releases/versions.html>`__ — **Added information**
+  Added Release 7.11.31 section documenting new MCP capabilities for managing business profiles, Publishing Apps, document types, controlled documents, and related features.
+
+* `Retention <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/retention/index.html>`__ — **New page**
+  Added new documentation page for the Retention connector, covering listing documents under retention and terminating retention for selected documents.
+
+* `Review and approval <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/review-approval/index.html>`__ — **New page**
+  Added documentation for review and approval workflows on controlled documents, including tasks, approval procedures, review management, and related connector actions.
+
+* `Search <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/search/index.html>`__ — **Updated guidance**
+  Added procedures for requesting search diagnostics to understand why searches behave as they do, explaining that diagnostics are only returned when asked and extend result length.
+
+* `Teamwork apps <https://omnia-docs-g2.readthedocs.io/en/latest/mcp/examples/document-management/teamwork-app/index.html>`__ — **New page**
+  Added Teamwork apps documentation covering template creation, app provisioning, feature activation, and connector actions.
+
+* `Using Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/using-content-builder/index.html>`__ — **New page**
+  New page documenting the Content builder authoring tool for creating and formatting content with text, templates, media, and AI assistance, available in Omnia 7.12 and later.
+
+21 September 2026
+-----------------
+
+* `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Added information**
+  Added clarifications about Omnia 7.12 availability for app launcher settings and new Search box style option for header search.
+
+* `Home page for Workspace <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/workspace-home/index.html>`__ — **Added information**
+  Added visual examples showing workspace home page appearance in different states and clarified that layout editing uses sections and blocks.
+
+* `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
+  Added information about new Omnia 7.12 SharePoint integration features and clarified distinction from existing webparts.
+
+* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Updated guidance**
+  Removed security note about cache refresh schedules and permission requirements for cached AI insights in Page Rollup blocks.
+
+* `Settings (workspace) in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/workspace-settings-settings-712/index.html>`__ — **New page**
+  New page documenting workspace settings for Omnia 7.12 and later, covering Chrome, Header, and Navigation bar configuration options with references to earlier versions.
 
 18 September 2026
 -----------------
