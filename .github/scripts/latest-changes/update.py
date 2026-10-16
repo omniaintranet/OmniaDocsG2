@@ -429,7 +429,7 @@ def update(now, max_groups=MAX_GROUPS_PER_RUN):
         by_key[key] = {'date': group['date'], 'path': group['path'], **result, 'sources': sorted(sources)}
     for commit, files in history:
         sha = commit['sha']
-        if sha not in processed and all(sha in by_key.get(key, {}).get('sources', [])
+        if sha not in processed and required_groups[sha] and all(sha in by_key.get(key, {}).get('sources', [])
                                         for key in required_groups[sha]):
             processed[sha] = parse_time(commit['committed_at']).astimezone(ZONE).date().isoformat()
     entries = sorted(by_key.values(), key=lambda e: (e['date'], e['path']), reverse=True)

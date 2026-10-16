@@ -153,6 +153,19 @@ class DigestTests(unittest.TestCase):
         groups = digest.collect_groups(self.pr, files, pages, {}, lambda f: self.fail('Excluded change'))
         self.assertEqual(groups, {})
 
+    def test_generated_commits_do_not_change_files_on_quiet_days(self):
+        files = {number: [{'filename': path, 'status': 'modified', 'patch': '+generated'}
+                         for path in (digest.DIGEST, '.github/scripts/latest-changes/state.json')]
+                 for number in (4, 5)}
+        classifier = lambda *args: self.fail('Generated changes must not be classified')
+        self.update([self.pr], files, classifier)
+        state_before = self.state.read_text()
+        page_before = (self.root / digest.DIGEST).read_text()
+        self.update([self.pr, {**self.pr, 'number': 5}], files, classifier)
+        self.assertEqual(self.state.read_text(), state_before)
+        self.assertEqual((self.root / digest.DIGEST).read_text(), page_before)
+        self.assertEqual(json.loads(state_before)['processed_commits'], {})
+
     def test_new_page_classification_cannot_be_downgraded(self):
         group = {'new': True, 'changes': [{'diff': '+New guidance'}]}
         response = json.dumps({'classification': 'Spelling / grammar', 'description': 'Added guidance for configuration.'})
