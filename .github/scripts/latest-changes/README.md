@@ -41,7 +41,9 @@ until that count reaches zero to complete an immediate backfill. Otherwise the
 daily schedule continues it. Failed work is retried inside the 90-day window. Deleted
 pages are removed from the report; renamed pages' earlier links are migrated.
 Changes to the digest itself, automation, root navigation, and build settings
-are excluded. Images and shared includes are mapped to their referencing pages.
+are excluded and do not advance commit tracking. This prevents the generated
+digest/state commit from causing another commit on a quiet day. Images and
+shared includes are mapped to their referencing pages.
 
 ## Activation
 
