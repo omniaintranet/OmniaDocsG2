@@ -31,7 +31,9 @@ Classifications describe documentation changes, not changes to product behavior.
 Internal state records processed commit SHAs and per-entry source SHAs. It is never
 included in the public page. Failed classification, incomplete API results,
 missing build targets, or a concurrent branch update prevent publication. Each
-run classifies up to 60 page/date groups, newest first. Larger backfills resume
+run classifies up to 60 page/date groups, newest first, with at most three
+independent classifiers running concurrently. All selected results must validate
+before either generated file is written. Larger backfills resume
 on subsequent runs without duplicating entries or reclassifying finished pages,
 even when a single commit changes more than 60 pages. Each run reports remaining
 groups in its log and `remaining_groups` step output. Manually rerun the workflow
