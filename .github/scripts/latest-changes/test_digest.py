@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import subprocess
 import tempfile
+import threading
 import unittest
 from unittest.mock import patch
 
@@ -112,11 +113,18 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(previous, [{'date': '2026-10-13', 'path': 'guide/index.rst', **result}])
 
     def test_failure_leaves_both_files_unchanged(self):
+        self.write('second/index.rst', 'Second guide\n============\n')
         state_before = self.state.read_text()
         page_before = (self.root / digest.DIGEST).read_text()
-        files = {4: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '+example'}]}
+        files = {4: [{'filename': path, 'status': 'modified', 'patch': '+example'}
+                     for path in ['guide/index.rst', 'second/index.rst']]}
+        completed = threading.Event()
 
-        def failure(*args):
+        def failure(group, *args):
+            if group['path'] == 'second/index.rst':
+                completed.set()
+                return {'classification': 'Correction', 'description': 'Corrected a setting.'}
+            self.assertTrue(completed.wait(timeout=5))
             raise ValueError('Invalid classification')
 
         with self.assertRaises(ValueError):

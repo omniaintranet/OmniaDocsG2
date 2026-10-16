@@ -2,6 +2,7 @@
 
 import argparse
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 import json
 import os
@@ -20,6 +21,7 @@ PAGE_TITLES = {'release-notes/7.0/versions.rst': 'Omnia 7 release notes'}
 ZONE = ZoneInfo('Europe/Copenhagen')
 RETENTION_DAYS = 90
 MAX_GROUPS_PER_RUN = 60
+CLASSIFICATION_WORKERS = 3
 CATEGORIES = {
     'New page', 'Updated guidance', 'Added information', 'Correction',
     'Spelling / grammar', 'Updated screenshots', 'Navigation update',
@@ -398,13 +400,30 @@ def update(now, max_groups=MAX_GROUPS_PER_RUN):
                 groups[group_key] = group
     # All model work completes before either persisted file is touched.
     selected = sorted(groups.items(), reverse=True)[:max_groups]
-    for index, (key, group) in enumerate(selected, start=1):
-        print(f'Classifying documentation group {index} of {len(selected)}.', flush=True)
+    def evaluate(item):
+        key, group = item
         previous = by_key.get(key)
         reader_previous = {k: v for k, v in previous.items() if k != 'sources'} if previous else None
         reader_group = {k: v for k, v in group.items() if k != 'sources'}
         reader_group['changes'] = group_evidence(group['changes'], aliases)
         result = classify(reader_group, pages[group['path']], reader_previous)
+        return key, group, result
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=CLASSIFICATION_WORKERS) as executor:
+        futures = {executor.submit(evaluate, item): index for index, item in enumerate(selected)}
+        try:
+            for future in as_completed(futures):
+                results[futures[future]] = future.result()
+                print(f'Classified documentation group {len(results)} of {len(selected)}.', flush=True)
+        except BaseException:
+            for future in futures:
+                future.cancel()
+            raise
+    # Apply results in a stable order only after every selected group validates.
+    for index in sorted(results):
+        key, group, result = results[index]
+        previous = by_key.get(key)
         sources = set(previous.get('sources', [])) if previous else set()
         sources.update(group['sources'])
         by_key[key] = {'date': group['date'], 'path': group['path'], **result, 'sources': sorted(sources)}
