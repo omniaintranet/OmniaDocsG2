@@ -5,10 +5,10 @@ Omnia Feed 7.12 introduces support for authentication through the shared Omnia E
 .. note::
 
   Omnia Feed 7.12 supports authentication through both the **Omnia** and **Omnia Feed 2** Entra ID apps. From version 7.13, we plan to support only the Omnia app. We therefore recommend enabling the feature and switching to the Omnia app already in 7.12.
-
-**Customers using Intune** should review and update their rules and policies to include the Omnia app, ensuring they do not apply only to the Omnia Feed 2 app.
-
-Once the Omnia Feed 2 app is no longer used for authentication, its consent can be revoked.
+  
+  **Customers using Intune** should review and update their rules and policies to include the Omnia app, ensuring they do not apply only to the Omnia Feed 2 app.
+  
+  Once the Omnia Feed 2 app is no longer used for authentication, its consent can be revoked.
 
 Simplified architecture
 -----------------------
