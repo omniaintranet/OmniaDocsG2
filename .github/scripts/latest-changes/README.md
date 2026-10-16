@@ -5,25 +5,38 @@ manually. It updates `documentation-updates/index.rst` on the repository default
 Read the Docs publishes this page through the existing repository integration.
 
 The report contains only linked documentation titles, a classification, and a
-short reader-facing description, grouped by the merge date in Copenhagen time.
+short reader-facing description, grouped by the date changes reach the publishing
+branch, in Copenhagen time.
 It retains the last 90 calendar days and combines each page's changes on a day.
-The first run backfills that same period. It processes only merged PRs targeting
-the default branch whose merge commit is present in the checkout. Direct commits
-are outside the PR-based scope.
+It covers **all documentation changes on the default branch**, including direct
+commits, browser edits, uploaded screenshots, and merged PRs, for every author.
+It follows the checked-out branch's first-parent history and compares each commit
+with its first parent. This counts merged changes once rather than reporting
+every feature-branch commit again. Unmerged branches are excluded.
+
+The first run backfills the same 90-day period. Upgrading from the PR-only version
+preserves existing entries and seeds their processed merge SHAs, then backfills
+previously missed direct commits. Direct and merged changes affecting the same
+page/date are combined into one entry. Repeated edits use a complete net diff.
 
 Text changes are classified by GitHub Copilot CLI using the repository's existing
 workflow-token authentication pattern (`copilot-requests: write`). New pages and
-image-only updates have deterministic classifications. PR content is untrusted
+image-only updates have deterministic classifications. Commit content is untrusted
 data: the classifier is denied file, shell, web, and memory tools, has built-in
 MCP servers disabled, uses no repository instructions, and
 must return validated JSON. Invalid responses are retried up to three times.
 It never receives GitHub credentials in its prompt.
 Classifications describe documentation changes, not changes to product behavior.
 
-Internal state records processed PR numbers and reader entries. It is never
+Internal state records processed commit SHAs and per-entry source SHAs. It is never
 included in the public page. Failed classification, incomplete API results,
-missing build targets, or a concurrent branch update prevent publication. The
-next run retries unprocessed changes still inside the 90-day window. Deleted
+missing build targets, or a concurrent branch update prevent publication. Each
+run classifies up to 60 page/date groups, newest first. Larger backfills resume
+on subsequent runs without duplicating entries or reclassifying finished pages,
+even when a single commit changes more than 60 pages. Each run reports remaining
+groups in its log and `remaining_groups` step output. Manually rerun the workflow
+until that count reaches zero to complete an immediate backfill. Otherwise the
+daily schedule continues it. Failed work is retried inside the 90-day window. Deleted
 pages are removed from the report; renamed pages' earlier links are migrated.
 Changes to the digest itself, automation, root navigation, and build settings
 are excluded. Images and shared includes are mapped to their referencing pages.

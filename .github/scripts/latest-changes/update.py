@@ -1,9 +1,8 @@
-"""Generate a reader-only digest from merged documentation pull requests."""
+"""Generate a reader-only digest from all published documentation changes."""
 
 import argparse
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
-import difflib
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -20,6 +19,7 @@ PAGE_TITLE = 'Documentation updates'
 PAGE_TITLES = {'release-notes/7.0/versions.rst': 'Omnia 7 release notes'}
 ZONE = ZoneInfo('Europe/Copenhagen')
 RETENTION_DAYS = 90
+MAX_GROUPS_PER_RUN = 60
 CATEGORIES = {
     'New page', 'Updated guidance', 'Added information', 'Correction',
     'Spelling / grammar', 'Updated screenshots', 'Navigation update',
@@ -142,43 +142,85 @@ def merged_prs(repository, branch, cutoff, now):
     return sorted(found, key=lambda pr: (pr['merged_at'], pr['number']))
 
 
-def pr_files(repository, pr):
+def first_parent_commits(cutoff, now):
+    """Visit the checked-out publishing branch, counting a merge only once."""
+    since = datetime(cutoff.year, cutoff.month, cutoff.day, tzinfo=ZONE).isoformat()
+    history = command('git', 'log', '--first-parent', '--reverse',
+                      '--since-as-filter=' + since, '--format=%H%x00%P%x00%cI', 'HEAD')
+    commits = []
+    for line in history.splitlines():
+        sha, parents, committed_at = line.split('\0')
+        date = parse_time(committed_at)
+        if cutoff <= date.astimezone(ZONE).date() and date <= now:
+            commits.append({'sha': sha, 'parents': parents.split(), 'committed_at': committed_at})
+    return commits
+
+
+def commit_diff(commit, *options):
+    if commit['parents']:
+        return command('git', 'diff', '--no-ext-diff', '--no-textconv',
+                       *options, commit['parents'][0], commit['sha'], '--')
+    return command('git', 'show', '--format=', '--root', '--no-ext-diff',
+                   '--no-textconv', *options, commit['sha'], '--')
+
+
+def commit_files(commit):
+    fields = commit_diff(commit, '--name-status', '-z', '--find-renames').split('\0')
     files = []
-    page = 1
-    while True:
-        batch = api(f"repos/{repository}/pulls/{pr['number']}/files?per_page=100&page={page}")
-        files.extend(batch)
-        if len(batch) < 100:
-            break
-        if len(files) >= 3000:
-            raise ValueError('PR reaches the GitHub file limit; cannot safely report partial changes')
-        page += 1
+    index = 0
+    while index < len(fields) and fields[index]:
+        status, path = fields[index:index + 2]
+        index += 2
+        file = {'filename': path, 'status': {'A': 'added', 'D': 'removed'}.get(status[0], 'modified')}
+        if status.startswith(('R', 'C')):
+            file = {'filename': fields[index], 'previous_filename': path,
+                    'status': 'renamed' if status[0] == 'R' else 'added'}
+            index += 1
+        files.append(file)
     return files
 
 
-def change_evidence(repository, pr, file):
+def commit_evidence(commit, file):
     path = file['filename']
     item = {'path': path, 'status': file['status']}
     is_text = Path(path).suffix.lower() not in {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico', '.bmp'}
     if is_text:
-        patch = file.get('patch')
-        if patch is None:
-            # GitHub omits patches for large diffs. Retrieve full sides rather
-            # than guessing a classification from a filename.
-            def content(ref, name):
-                from urllib.parse import quote
-                return command('gh', 'api', '-H', 'Accept: application/vnd.github.raw+json',
-                               f'repos/{repository}/contents/{quote(name, safe="/")}?ref={ref}')
-            before = '' if file['status'] == 'added' else content(pr['base']['sha'], file.get('previous_filename', path))
-            after = content(pr['head']['sha'], path)
-            patch = ''.join(difflib.unified_diff(before.splitlines(True), after.splitlines(True)))
+        paths = [path]
+        if file.get('previous_filename'):
+            paths.append(file['previous_filename'])
+        if commit['parents']:
+            patch = command('git', 'diff', '--no-ext-diff', '--no-textconv', '--unified=3',
+                            commit['parents'][0], commit['sha'], '--', *paths)
+        else:
+            patch = command('git', 'show', '--format=', '--root', '--no-ext-diff',
+                            '--no-textconv', '--unified=3', commit['sha'], '--', *paths)
         item['diff'] = patch
     return item
 
 
-def collect_groups(pr, files, pages, dependencies, evidence, aliases=None):
+def group_evidence(changes, aliases):
+    """Use a complete net diff for repeated edits to a file on the same day."""
+    files = {}
+    for file in changes:
+        path = aliases.get(file['filename'], file['filename'])
+        files.setdefault(path, []).append(file)
+    evidence = []
+    for path, versions in files.items():
+        first, last = versions[0], versions[-1]
+        commit = {'sha': last['_commit']['sha'], 'parents': first['_commit']['parents'][:1]}
+        if len(versions) > 1 and not commit['parents']:
+            empty_tree = command('git', 'hash-object', '-w', '-t', 'tree', '--stdin', input='').strip()
+            commit['parents'] = [empty_tree]
+        file = {k: v for k, v in last.items() if k != '_commit'}
+        if first['filename'] != last['filename']:
+            file['previous_filename'] = first.get('previous_filename', first['filename'])
+        evidence.append(commit_evidence(commit, file))
+    return evidence
+
+
+def collect_groups(event, files, pages, dependencies, evidence, aliases=None):
     groups = {}
-    day = parse_time(pr['merged_at']).astimezone(ZONE).date().isoformat()
+    day = parse_time(event.get('committed_at') or event['merged_at']).astimezone(ZONE).date().isoformat()
     for file in files:
         if file['status'] == 'removed' or file['filename'] == DIGEST:
             continue
@@ -301,23 +343,30 @@ def check_build(build):
     print('Digest page and all documentation link targets were built.')
 
 
-def update(now):
+def update(now, max_groups=MAX_GROUPS_PER_RUN):
     repository = os.environ['GITHUB_REPOSITORY']
     branch = os.environ['DOCS_BRANCH']
     state = json.loads(STATE.read_text(encoding='utf-8'))
-    if state['version'] != 1:
+    if state['version'] not in {1, 2}:
         raise ValueError('Unsupported digest state version')
+    if max_groups < 1:
+        raise ValueError('At least one page/day group must be allowed')
     cutoff = cutoff_for(now)
     pages = pages_in(ROOT)
     dependencies = dependency_map(ROOT, pages)
     entries = [e for e in state['entries'] if e['date'] >= cutoff.isoformat()]
-    processed = {key: day for key, day in state['processed'].items() if day >= cutoff.isoformat()}
-    groups = {}
-    pending = [(pr, pr_files(repository, pr))
-               for pr in merged_prs(repository, branch, cutoff, now)
-               if str(pr['number']) not in processed]
+    processed = {key: day for key, day in state.get('processed_commits', {}).items() if day >= cutoff.isoformat()}
+    commits = first_parent_commits(cutoff, now)
+    if state['version'] == 1:
+        # Seed known PR merge SHAs so the broader backfill preserves existing
+        # PR entries. All direct commits remain eligible, regardless of author.
+        legacy = state.get('processed', {})
+        for pr in merged_prs(repository, branch, cutoff, now):
+            if str(pr['number']) in legacy:
+                processed[pr['merge_commit_sha']] = parse_time(pr['merged_at']).astimezone(ZONE).date().isoformat()
+    history = [(commit, commit_files(commit)) for commit in commits]
     aliases = {}
-    for pr, files in pending:
+    for commit, files in history:
         for file in files:
             if file['status'] == 'renamed':
                 old, new = file['previous_filename'], file['filename']
@@ -325,27 +374,54 @@ def update(now):
                 aliases[old] = new
     for entry in entries:
         entry['path'] = aliases.get(entry['path'], entry['path'])
-    for pr, files in pending:
-        collected = collect_groups(pr, files, pages, dependencies,
-                                   lambda file: change_evidence(repository, pr, file), aliases)
+    by_key = {(e['date'], e['path']): e for e in entries if e['path'] in pages}
+    groups = {}
+    required_groups = {}
+    for commit, files in history:
+        sha = commit['sha']
+        if sha in processed:
+            continue
+        # Resolve owners cheaply before retrieving full text diffs. Applied
+        # source SHAs make a large, partially processed commit resumable.
+        collected = collect_groups(commit, files, pages, dependencies, lambda file: file, aliases)
+        required_groups[sha] = set(collected)
         for group_key, group in collected.items():
+            if sha in by_key.get(group_key, {}).get('sources', []):
+                continue
+            group['changes'] = [{**file, '_commit': commit} for file in group['changes']]
+            group['sources'] = {sha}
             if group_key in groups:
                 groups[group_key]['changes'].extend(group['changes'])
                 groups[group_key]['new'] |= group['new']
+                groups[group_key]['sources'].add(sha)
             else:
                 groups[group_key] = group
-        processed[str(pr['number'])] = parse_time(pr['merged_at']).astimezone(ZONE).date().isoformat()
     # All model work completes before either persisted file is touched.
-    by_key = {(e['date'], e['path']): e for e in entries if e['path'] in pages}
-    for key, group in sorted(groups.items()):
-        if group['path'] in pages:
-            result = classify(group, pages[group['path']], by_key.get(key))
-            by_key[key] = {'date': group['date'], 'path': group['path'], **result}
+    selected = sorted(groups.items(), reverse=True)[:max_groups]
+    for index, (key, group) in enumerate(selected, start=1):
+        print(f'Classifying documentation group {index} of {len(selected)}.', flush=True)
+        previous = by_key.get(key)
+        reader_previous = {k: v for k, v in previous.items() if k != 'sources'} if previous else None
+        reader_group = {k: v for k, v in group.items() if k != 'sources'}
+        reader_group['changes'] = group_evidence(group['changes'], aliases)
+        result = classify(reader_group, pages[group['path']], reader_previous)
+        sources = set(previous.get('sources', [])) if previous else set()
+        sources.update(group['sources'])
+        by_key[key] = {'date': group['date'], 'path': group['path'], **result, 'sources': sorted(sources)}
+    for commit, files in history:
+        sha = commit['sha']
+        if sha not in processed and all(sha in by_key.get(key, {}).get('sources', [])
+                                        for key in required_groups[sha]):
+            processed[sha] = parse_time(commit['committed_at']).astimezone(ZONE).date().isoformat()
     entries = sorted(by_key.values(), key=lambda e: (e['date'], e['path']), reverse=True)
-    state = {'version': 1, 'processed': processed, 'entries': entries}
+    state = {'version': 2, 'processed_commits': processed, 'entries': entries}
     (ROOT / DIGEST).write_text(render(entries, pages), encoding='utf-8', newline='\n')
     STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
-    print(f'Digest contains {len(entries)} page entries; classified {len(groups)} page/day groups.')
+    remaining = len(groups) - len(selected)
+    print(f'Digest contains {len(entries)} page entries; classified {len(selected)} page/day groups; {remaining} groups remain.')
+    if output := os.environ.get('GITHUB_OUTPUT'):
+        with open(output, 'a', encoding='utf-8') as handle:
+            handle.write(f'remaining_groups={remaining}\n')
 
 
 if __name__ == '__main__':

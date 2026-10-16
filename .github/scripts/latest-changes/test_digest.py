@@ -3,7 +3,9 @@
 from datetime import datetime, timezone
 import importlib.util
 import json
+import os
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -30,13 +32,21 @@ class DigestTests(unittest.TestCase):
         file.parent.mkdir(parents=True, exist_ok=True)
         file.write_text(text, encoding='utf-8')
 
-    def update(self, prs, files, classifier):
+    def update(self, prs, files, classifier, max_groups=60, migration_prs=()):
+        commits = [{'sha': str(pr['number']), 'parents': ['parent'], 'committed_at': pr['merged_at']} for pr in prs]
+
+        def evidence(changes, aliases):
+            return [{'path': file['filename'], 'status': file['status'],
+                     **({'diff': file['patch']} if 'patch' in file else {})} for file in changes]
+
         with patch.object(digest, 'ROOT', self.root), patch.object(digest, 'STATE', self.state), \
              patch.dict(digest.os.environ, GITHUB_REPOSITORY='owner/docs', DOCS_BRANCH='master'), \
-             patch.object(digest, 'merged_prs', return_value=prs), \
-             patch.object(digest, 'pr_files', side_effect=lambda repo, pr: files[pr['number']]), \
+             patch.object(digest, 'merged_prs', return_value=migration_prs), \
+             patch.object(digest, 'first_parent_commits', return_value=commits), \
+             patch.object(digest, 'commit_files', side_effect=lambda commit: files[int(commit['sha'])]), \
+             patch.object(digest, 'group_evidence', side_effect=evidence), \
              patch.object(digest, 'classify', side_effect=classifier):
-            digest.update(self.now)
+            digest.update(self.now, max_groups=max_groups)
 
     def test_local_calendar_window(self):
         now = datetime(2026, 10, 12, 23, 30, tzinfo=timezone.utc)
@@ -114,19 +124,19 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(self.state.read_text(), state_before)
         self.assertEqual((self.root / digest.DIGEST).read_text(), page_before)
         self.update([self.pr], files, lambda *args: {'classification': 'Correction', 'description': 'Corrected a setting.'})
-        self.assertIn('4', json.loads(self.state.read_text())['processed'])
+        self.assertIn('4', json.loads(self.state.read_text())['processed_commits'])
 
     def test_expired_and_deleted_pages_are_removed(self):
         retained = {'date': '2026-07-16', 'path': 'guide/index.rst',
                     'classification': 'Added information', 'description': 'Added an example.'}
-        state = {'version': 1, 'processed': {'1': '2026-07-15', '2': '2026-07-16'}, 'entries': [
+        state = {'version': 2, 'processed_commits': {'1': '2026-07-15', '2': '2026-07-16'}, 'entries': [
             {'date': '2026-07-15', 'path': 'guide/index.rst'},
             retained,
             {'date': '2026-10-12', 'path': 'deleted/index.rst'}]}
         self.state.write_text(json.dumps(state))
         self.update([], {}, lambda *args: self.fail('No changes'))
         self.assertEqual(json.loads(self.state.read_text())['entries'], [retained])
-        self.assertEqual(json.loads(self.state.read_text())['processed'], {'2': '2026-07-16'})
+        self.assertEqual(json.loads(self.state.read_text())['processed_commits'], {'2': '2026-07-16'})
 
     def test_digest_and_automation_do_not_report_themselves(self):
         pages = digest.pages_in(self.root)
@@ -190,11 +200,13 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(len(calls[0]['changes']), 2)
         self.assertEqual(calls[0]['path'], 'guide/index.rst')
 
-    def test_missing_text_patch_retrieves_both_sides(self):
-        pr = {**self.pr, 'base': {'sha': 'before'}, 'head': {'sha': 'after'}}
-        with patch.object(digest, 'command', side_effect=['Old text\n', 'New text\n']) as command:
-            evidence = digest.change_evidence('owner/docs', pr, {'filename': 'guide/index.rst', 'status': 'modified'})
-        self.assertEqual(command.call_count, 2)
+    def test_text_patch_uses_complete_local_git_diff(self):
+        commit = {'sha': 'after', 'parents': ['before']}
+        with patch.object(digest, 'command', return_value='-Old text\n+New text\n') as command:
+            evidence = digest.commit_evidence(commit, {'filename': 'guide/index.rst', 'status': 'modified'})
+        self.assertEqual(command.call_count, 1)
+        self.assertIn('before', command.call_args.args)
+        self.assertIn('after', command.call_args.args)
         self.assertIn('-Old text', evidence['diff'])
         self.assertIn('+New text', evidence['diff'])
 
@@ -230,9 +242,118 @@ class DigestTests(unittest.TestCase):
             found = digest.merged_prs('owner/docs', 'master', digest.cutoff_for(self.now), self.now)
         self.assertEqual([p['number'] for p in found], [4])
 
-    def test_large_pr_fails_instead_of_silently_truncating(self):
-        with patch.object(digest, 'api', return_value=[{'filename': 'file'}] * 100), self.assertRaises(ValueError):
-            digest.pr_files('owner/docs', self.pr)
+    def test_large_changes_are_not_subject_to_the_api_file_limit(self):
+        names = ''.join(f'M\0guide/page-{index}.rst\0' for index in range(3001))
+        with patch.object(digest, 'command', return_value=names):
+            files = digest.commit_files({'sha': 'after', 'parents': ['before']})
+        self.assertEqual(len(files), 3001)
+
+    def test_migration_preserves_pr_entry_and_adds_direct_change_once(self):
+        old = {'date': '2026-10-13', 'path': 'guide/index.rst',
+               'classification': 'Added information', 'description': 'Added an example.'}
+        self.state.write_text(json.dumps({'version': 1, 'processed': {'4': '2026-10-13'}, 'entries': [old]}))
+        files = {4: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '+PR example'}],
+                 5: [{'filename': 'guide/index.rst', 'status': 'modified', 'patch': '+Direct edit'}]}
+        calls = []
+
+        def classify(group, page, previous):
+            calls.append(group)
+            self.assertEqual(previous, old)
+            return {'classification': 'Updated guidance', 'description': 'Added an example and corrected the steps.'}
+
+        prs = [self.pr, {**self.pr, 'number': 5}]
+        self.update(prs, files, classify, migration_prs=[{**self.pr, 'merge_commit_sha': '4'}])
+        self.assertEqual(len(calls), 1)
+        self.assertEqual([c['diff'] for c in calls[0]['changes']], ['+Direct edit'])
+        result = json.loads(self.state.read_text())
+        self.assertEqual(result['version'], 2)
+        self.assertEqual(set(result['processed_commits']), {'4', '5'})
+        self.assertEqual(len(result['entries']), 1)
+        self.update(prs, files, lambda *args: self.fail('Already processed'))
+
+    def test_large_commit_resumes_without_reclassifying_completed_pages(self):
+        self.write('second/index.rst', 'Second guide\n============\n')
+        files = {4: [{'filename': path, 'status': 'modified', 'patch': '+Example'}
+                     for path in ['guide/index.rst', 'second/index.rst']]}
+        calls = []
+
+        def classify(group, page, previous):
+            calls.append(group['path'])
+            return {'classification': 'Added information', 'description': 'Added an example.'}
+
+        self.update([self.pr], files, classify, max_groups=1)
+        self.assertNotIn('4', json.loads(self.state.read_text())['processed_commits'])
+        self.update([self.pr], files, classify, max_groups=1)
+        self.assertEqual(set(calls), {'guide/index.rst', 'second/index.rst'})
+        self.assertEqual(len(calls), 2)
+        self.assertIn('4', json.loads(self.state.read_text())['processed_commits'])
+        self.update([self.pr], files, lambda *args: self.fail('Already processed'), max_groups=1)
+
+
+class GitHistoryTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        self.git('init', '-q', '-b', 'master')
+        self.git('config', 'user.name', 'Digest test')
+        self.git('config', 'user.email', 'digest@example.invalid')
+        self.root_patch = patch.object(digest, 'ROOT', self.root)
+        self.root_patch.start()
+        self.addCleanup(self.root_patch.stop)
+
+    def git(self, *args, day=None):
+        env = os.environ.copy()
+        if day:
+            env.update(GIT_AUTHOR_DATE=day + 'T10:00:00Z', GIT_COMMITTER_DATE=day + 'T10:00:00Z')
+        return subprocess.run(['git', *args], cwd=self.root, env=env, check=True,
+                              capture_output=True, text=True, encoding='utf-8').stdout.strip()
+
+    def commit(self, text, day, path='guide with spaces.rst'):
+        (self.root / path).write_text(text, encoding='utf-8')
+        self.git('add', '--', path)
+        self.git('commit', '-qm', 'Update guide', day=day)
+        return self.git('rev-parse', 'HEAD')
+
+    def test_direct_edits_and_merge_net_diff_are_counted_once(self):
+        self.commit('Guide\n=====\n', '2026-07-01')
+        self.git('checkout', '-qb', 'feature')
+        feature = self.commit('Guide\n=====\n\nFeature guide.\n', '2026-10-11', 'feature.rst')
+        self.git('checkout', '-q', 'master')
+        direct = self.commit('Guide\n=====\n\nDirect update.\n', '2026-10-12')
+        self.git('merge', '--no-ff', '-qm', 'Merge feature', 'feature', day='2026-10-13')
+        merge = self.git('rev-parse', 'HEAD')
+        now = datetime(2026, 10, 14, tzinfo=timezone.utc)
+        commits = digest.first_parent_commits(digest.cutoff_for(now), now)
+        self.assertEqual([c['sha'] for c in commits], [direct, merge])
+        self.assertNotIn(feature, [c['sha'] for c in commits])
+        file = digest.commit_files(commits[0])[0]
+        self.assertEqual(file['filename'], 'guide with spaces.rst')
+        self.assertIn('+Direct update.', digest.commit_evidence(commits[0], file)['diff'])
+        merge_file = digest.commit_files(commits[1])[0]
+        self.assertEqual(merge_file['status'], 'added')
+        self.assertIn('+Feature guide.', digest.commit_evidence(commits[1], merge_file)['diff'])
+
+    def test_root_commit_and_repeated_edits_have_complete_net_evidence(self):
+        first = self.commit('Guide\n=====\n\nTemporary wording.\n', '2026-10-12')
+        self.commit('Guide\n=====\n\nFinal wording.\n', '2026-10-12')
+        now = datetime(2026, 10, 13, tzinfo=timezone.utc)
+        commits = digest.first_parent_commits(digest.cutoff_for(now), now)
+        self.assertEqual(commits[0]['sha'], first)
+        changes = [{**digest.commit_files(c)[0], '_commit': c} for c in commits]
+        evidence = digest.group_evidence(changes, {})
+        self.assertEqual(len(evidence), 1)
+        self.assertIn('+Final wording.', evidence[0]['diff'])
+        self.assertNotIn('Temporary wording', evidence[0]['diff'])
+
+    def test_rename_preserves_old_and_new_paths(self):
+        self.commit('Guide\n=====\n', '2026-10-12')
+        self.git('mv', 'guide with spaces.rst', 'renamed guide.rst')
+        self.git('commit', '-qm', 'Move guide', day='2026-10-13')
+        now = datetime(2026, 10, 14, tzinfo=timezone.utc)
+        commits = digest.first_parent_commits(digest.cutoff_for(now), now)
+        files = digest.commit_files(commits[-1])
+        self.assertEqual(files, [{'filename': 'renamed guide.rst', 'previous_filename': 'guide with spaces.rst', 'status': 'renamed'}])
 
 
 if __name__ == '__main__':
