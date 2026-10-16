@@ -68,7 +68,7 @@ I you selected to add a template for standard documents, continue this way:
 
 You can now either link to an existing, published controlled document (which was most likely published for the purpose of being a template), or prepare and upload a new document, to use as a template.
 
-Link to a published Document
+Link to a published document
 ----------------------------------
 To link to a published controlled document you have to know the Document ID (which you normally can see where the document is listed).
 
@@ -93,12 +93,12 @@ To upload a document to use as a template:
 
 3. Click "Save".
 
-Template for Controlled Documents
+Template for controlled documents
 **********************************
 When you are creating a template for controlled documents you don't use categories. Controlled documents are grouped by document types, which you don't work with here. See this page for more information: :doc:`Document Types </admin-settings/tenant-settings/document-management/document-types/index>`
 
 The rest of the steps are the same as above.
 
-Using a template in the Document Wizard
+Using a template in the document wizard
 *****************************************
-How to use a template in the Document Wizard is described on this page: :doc:`Using the Document Wizard </working-with-documents/using-the-document-wizard/index>`.
+How to use a template in the document wizard is described on this page: :doc:`Using the document wizard </working-with-documents/using-the-document-wizard/index>`.
