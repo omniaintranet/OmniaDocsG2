@@ -1,0 +1,43 @@
+name: Sync approved hotfix release notes to Prod
+
+on:
+  pull_request_review:
+    types: [submitted]
+  pull_request:
+    types: [closed]
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: Documentation release-note PR to synchronize
+        required: true
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: hotfix-release-notes
+  cancel-in-progress: false
+
+jobs:
+  sync-approved-notes:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.pull_request.head.repo.full_name == github.repository &&
+       startsWith(github.event.pull_request.head.ref, 'hotfix-release-notes-') &&
+       (github.event.review.state == 'approved' || github.event.pull_request.merged == true))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout trusted automation
+        uses: actions/checkout@v6
+        with:
+          ref: master
+      - name: Update approved release notes in Prod
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PROJECT_TOKEN: ${{ secrets.GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF }}
+          PR_NUMBER: ${{ inputs.pr_number || github.event.pull_request.number }}
+        run: python .github/scripts/hotfix-release-notes/sync-approved-release-notes.py
