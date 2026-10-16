@@ -528,7 +528,30 @@
     "f2e3b9d800e87256da615cbcbe5425779e6ee6b9": "2026-09-02",
     "6d5a932dfd471374a568ef41ab46d4ca39f92f89": "2026-09-02",
     "ed63fb0d98b4ab62831a0a0110a74f52df242d28": "2026-09-02",
-    "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03"
+    "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03",
+    "3888884ef00e8ae57b34d6fc749940d3c9ce638c": "2026-08-04",
+    "65300a6fbbc926b806231393a2683b9a7bf5624c": "2026-08-07",
+    "855d7230510dbd768ed2804746b3a235ade18a42": "2026-08-07",
+    "ad71be224283c886dc12bbcaed996593f8399328": "2026-08-07",
+    "87636cb602eaa0f66a2acf8a95ac282f4032c42b": "2026-08-07",
+    "b3bed32f9b0326ebf20930b8dc385e210a7d4312": "2026-08-07",
+    "f5a90b1cfca3a068004a22b1fcbb3a3bbd324846": "2026-08-07",
+    "85733468de907ee78292cdf3e11c9366046df39d": "2026-08-07",
+    "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5": "2026-08-13",
+    "94354b706d770d4f00c5081fae68e3ce1e58785f": "2026-08-13",
+    "cc851e7bbe558b21a64519a6778e6c1a71fa4611": "2026-08-13",
+    "e6784abb8e6a24811d23720d3f763814259d1842": "2026-08-18",
+    "c59968f871b31c72ae3a00142ba257bda250155b": "2026-08-18",
+    "99df75ced1ac9dd16d684725f7a6f9903459c721": "2026-08-18",
+    "66d6af4cc98d7d8d880624df1276eac4fc9b2bfe": "2026-08-18",
+    "5eadfb74c99d0abf3e352a9e416deb35f6f2a2d4": "2026-08-18",
+    "4c5a4638c897d907efb998cfe61c76382970cd7d": "2026-08-18",
+    "1f5831489b7403269ca64cc9a75bad54bc21f8a0": "2026-08-19",
+    "67e1813be52775da784e04a90c7aa3ef88609893": "2026-08-19",
+    "2bb79a7975023ca94b14ddf2376fa814d21ec331": "2026-08-19",
+    "b6352c88e4fc3ad73416ef729bff19552c8d261f": "2026-08-19",
+    "65606208a281410516201ada3fdafbb5355cad6c": "2026-08-19",
+    "455f2e7994f3769c37110bf003eada7a04c8cf77": "2026-08-19"
   },
   "entries": [
     {
@@ -3193,6 +3216,467 @@
       "description": "Updated the images used on this page.",
       "sources": [
         "f7a1bd39acedc71a7d111073bcb3ac9f978e075a"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
+      "classification": "Added information",
+      "description": "Added Release 7.11.6 notes documenting FAQ improvements, Layout Version Picker fix, and Sign In button styling update.",
+      "sources": [
+        "67e1813be52775da784e04a90c7aa3ef88609893"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
+      "classification": "Updated guidance",
+      "description": "Replaced bare link reference with a descriptive sentence explaining where to find Omnia Feed version 6 hotfix releases.",
+      "sources": [
+        "65606208a281410516201ada3fdafbb5355cad6c"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/older-releases/5/index.rst",
+      "classification": "Navigation update",
+      "description": "Hotfix releases section now displays as a direct link instead of an embedded table of contents.",
+      "sources": [
+        "1f5831489b7403269ca64cc9a75bad54bc21f8a0",
+        "65606208a281410516201ada3fdafbb5355cad6c"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed note about hotfix releases location and added dedicated section directing users to the hotfix releases page.",
+      "sources": [
+        "455f2e7994f3769c37110bf003eada7a04c8cf77",
+        "b6352c88e4fc3ad73416ef729bff19552c8d261f"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/7/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified hotfix releases section text and changed link label from generic 'here' to descriptive 'Hotfix releases'.",
+      "sources": [
+        "2bb79a7975023ca94b14ddf2376fa814d21ec331",
+        "65606208a281410516201ada3fdafbb5355cad6c",
+        "67e1813be52775da784e04a90c7aa3ef88609893"
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "path": "release-notes/omnia-feed/7/hotfix-releases/versions.rst",
+      "classification": "Added information",
+      "description": "Reorganized release notes into major version sections and added new hotfix releases 7.11.5, 7.11.3, 7.9.12, and 7.9.10.",
+      "sources": [
+        "67e1813be52775da784e04a90c7aa3ef88609893"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.8/index.rst",
+      "classification": "New page",
+      "description": "Added release notes for Omnia Feed 6.8 documenting configurable notifications, per-tab targeting, date queries, mobile app localization, colors, and performance improvements.",
+      "sources": [
+        "5eadfb74c99d0abf3e352a9e416deb35f6f2a2d4",
+        "66d6af4cc98d7d8d880624df1276eac4fc9b2bfe",
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.7/index.rst",
+      "classification": "New page",
+      "description": "Added Release 6.7 release notes for Omnia Feed documenting configurable notifications, tab targeting, user queries, localization, and performance improvements.",
+      "sources": [
+        "5eadfb74c99d0abf3e352a9e416deb35f6f2a2d4",
+        "66d6af4cc98d7d8d880624df1276eac4fc9b2bfe",
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.6/index.rst",
+      "classification": "Added information",
+      "description": "Added detailed release notes for version 6.6.0 including performance improvements, feature additions, and bug fixes.",
+      "sources": [
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.3/index.rst",
+      "classification": "New page",
+      "description": "Added Release 6.3 release notes for Omnia Feed with synchronization improvements and bug fixes.",
+      "sources": [
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.13/index.rst",
+      "classification": "Navigation update",
+      "description": "Removed the Versions navigation section and toctree list from the Release 6.13 page.",
+      "sources": [
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.12/index.rst",
+      "classification": "Navigation update",
+      "description": "Removed the Versions section containing navigation to related version pages.",
+      "sources": [
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.10/index.rst",
+      "classification": "Added information",
+      "description": "Added inline display of 6.10.0 release notes with complete feature list and fixes on the main release page.",
+      "sources": [
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.1/index.rst",
+      "classification": "New page",
+      "description": "Added release notes documentation for Omnia Feed version 6.1, including bug fixes, new notification settings, and stability improvements.",
+      "sources": [
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
+      "classification": "Navigation update",
+      "description": "The Omnia Feed Release 6 documentation now includes versions 6.1, 6.3, 6.7, and 6.8 in the table of contents and simplifies the hotfix releases navigation structure.",
+      "sources": [
+        "4c5a4638c897d907efb998cfe61c76382970cd7d",
+        "99df75ced1ac9dd16d684725f7a6f9903459c721",
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.rst",
+      "classification": "Added information",
+      "description": "Added Release 6.12.1 section to hotfix releases documentation with details about configuration options, activity feed, notifications, and other features.",
+      "sources": [
+        "c59968f871b31c72ae3a00142ba257bda250155b"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/index.rst",
+      "classification": "Correction",
+      "description": "Corrected page title from 'Hotfix releases for release 7' to 'Hotfix releases for release 6' to match the actual content.",
+      "sources": [
+        "66d6af4cc98d7d8d880624df1276eac4fc9b2bfe"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/5/versions/5.1/index.rst",
+      "classification": "New page",
+      "description": "Added release notes page for Omnia Feed version 5.1 documenting bug fixes, localization improvements, and performance enhancements.",
+      "sources": [
+        "4c5a4638c897d907efb998cfe61c76382970cd7d"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/5/index.rst",
+      "classification": "Navigation update",
+      "description": "Added Versions section to organize version-specific release notes separately from hotfix releases on the Release 5 page.",
+      "sources": [
+        "4c5a4638c897d907efb998cfe61c76382970cd7d"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/5/hotfix-releases/versions.rst",
+      "classification": "Navigation update",
+      "description": "Reorganized release notes file into hotfix-releases subdirectory and reordered release entries in reverse chronological sequence.",
+      "sources": [
+        "4c5a4638c897d907efb998cfe61c76382970cd7d"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/older-releases/5/hotfix-releases/index.rst",
+      "classification": "New page",
+      "description": "Added documentation index page for hotfix releases in Omnia Feed release 5.",
+      "sources": [
+        "4c5a4638c897d907efb998cfe61c76382970cd7d"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/index.rst",
+      "classification": "Navigation update",
+      "description": "Reorganized release notes version navigation to group by major versions and moved older releases to a separate section.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/omnia-feed/7/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Extended the title underline formatting to match reStructuredText markup standards.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "release-notes/7.12/index.rst",
+      "classification": "Correction",
+      "description": "Section heading corrected from \"Fluent Content\" to \"Content Builder\"; added note on improved performance for Omnia in SharePoint.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "general-assets/index.rst",
+      "classification": "Navigation update",
+      "description": "Added a new documentation entry for date-and-time-picker-712 to the general assets table of contents.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "general-assets/date-and-time-picker-712/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the date and time picker in Omnia 7.12 and later, including instructions for selecting dates and times with examples.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "blocks/index.rst",
+      "classification": "Navigation update",
+      "description": "Added divider block documentation reference to the blocks index navigation.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "path": "blocks/divider-block-712/index.rst",
+      "classification": "New page",
+      "description": "Added documentation for the Divider block feature in Omnia 7.12, including configuration options for display and style settings.",
+      "sources": [
+        "e6784abb8e6a24811d23720d3f763814259d1842"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/index.rst",
+      "classification": "New page",
+      "description": "Added new page listing versions of the Omnia Feed 6 release.",
+      "sources": [
+        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.6/index.rst",
+      "classification": "Navigation update",
+      "description": "Release 6.6 documentation relocated to versioned directory structure within release notes.",
+      "sources": [
+        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.3/index.rst",
+      "classification": "Navigation update",
+      "description": "Removed release notes for versions 6.1.1 and 6.2.2 from the page, leaving 6.3.0 as the primary release entry.",
+      "sources": [
+        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.13/index.rst",
+      "classification": "Navigation update",
+      "description": "Moved Omnia Feed 6.13 release notes to reorganized directory structure under versions folder.",
+      "sources": [
+        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.12/index.rst",
+      "classification": "Navigation update",
+      "description": "Reorganized Release 6.12 documentation and images into versioned subdirectory structure.",
+      "sources": [
+        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/versions/6.10/index.rst",
+      "classification": "Navigation update",
+      "description": "Page and related image moved to versioned directory structure under releases/6/versions/6.10.",
+      "sources": [
+        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
+      "classification": "Navigation update",
+      "description": "Changed toctree structure to explicitly list version entries and added hotfix releases section with navigation link.",
+      "sources": [
+        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.rst",
+      "classification": "New page",
+      "description": "Added release notes page documenting Omnia Feed hotfix releases including versions 6.13.7, 6.13.5, 6.7.1, 6.2.2, and 6.1.1 with fixes and improvements.",
+      "sources": [
+        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/index.rst",
+      "classification": "New page",
+      "description": "Added documentation index page for hotfix releases under release 6 with a table of contents for versions.",
+      "sources": [
+        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/older-releases/3/index.rst",
+      "classification": "Navigation update",
+      "description": "Release notes page renamed from version 3.1 to 3 in documentation path structure.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/versions/index.rst",
+      "classification": "Navigation update",
+      "description": "Reorganized release notes page location from 7.0/versions/ to 7/versions/ path structure.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/versions/7.12/index.rst",
+      "classification": "Navigation update",
+      "description": "Release 7.12 release notes page was reorganized and moved to a new documentation path structure.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/versions/7.11/index.rst",
+      "classification": "Navigation update",
+      "description": "Release 7.11 documentation page and associated images relocated to updated directory structure.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/index.rst",
+      "classification": "New page",
+      "description": "Added release notes page for Omnia Feed Release 7, documenting new features including SSO improvements, targeting support, mentions in comments, reminder system, and forms support.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f",
+        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/hotfix-releases/versions.rst",
+      "classification": "Navigation update",
+      "description": "File path changed from 7.0 hotfix releases directory to 7, updating the documentation location structure.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "path": "release-notes/omnia-feed/7/hotfix-releases/index.rst",
+      "classification": "Navigation update",
+      "description": "Hotfix releases documentation moved from the version 7.0 path to the version 7 path.",
+      "sources": [
+        "94354b706d770d4f00c5081fae68e3ce1e58785f"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "path": "setup/reusable-content/index.rst",
+      "classification": "Correction",
+      "description": "Removed duplicate text in the step introduction that read 'Follow these steps:Follow these steps to setup a reusable section:'.",
+      "sources": [
+        "ad71be224283c886dc12bbcaed996593f8399328"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
+      "classification": "Added information",
+      "description": "Added release notes for Omnia Feed app versions 7.11.5, 7.11.4, and 7.11.3 with details on bug fixes, SDK upgrades, and accessibility improvements.",
+      "sources": [
+        "87636cb602eaa0f66a2acf8a95ac282f4032c42b"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "path": "pages/page-types/section-settings/index.rst",
+      "classification": "Correction",
+      "description": "Clarified availability of the Reusable section type and corrected typo in admin reference; updated screenshots.",
+      "sources": [
+        "65300a6fbbc926b806231393a2683b9a7bf5624c",
+        "855d7230510dbd768ed2804746b3a235ade18a42"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "path": "admin-settings/business-group-settings/features-bp-7/index.rst",
+      "classification": "Correction",
+      "description": "Updated on-prem subscription requirement for Microsoft Clipchamp and updated associated screenshot.",
+      "sources": [
+        "85733468de907ee78292cdf3e11c9366046df39d",
+        "b3bed32f9b0326ebf20930b8dc385e210a7d4312",
+        "f5a90b1cfca3a068004a22b1fcbb3a3bbd324846"
+      ]
+    },
+    {
+      "date": "2026-08-04",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.11.20 release notes documenting 22 fixes and improvements including timezone handling, PDF file behavior, and Multi-Geo support.",
+      "sources": [
+        "3888884ef00e8ae57b34d6fc749940d3c9ce638c"
       ]
     }
   ]

@@ -917,3 +917,165 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Versions of the Omnia Feed 6 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/index.html>`__ — **Navigation update**
   Moved Omnia Feed 6 release versions documentation to the older-releases directory for improved organization of historical release information.
+
+19 August 2026
+--------------
+
+* `Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/index.html>`__ — **Updated guidance**
+  Removed note about hotfix releases location and added dedicated section directing users to the hotfix releases page.
+
+* `Release 5 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/index.html>`__ — **Navigation update**
+  Hotfix releases section now displays as a direct link instead of an embedded table of contents.
+
+* `Release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/index.html>`__ — **Updated guidance**
+  Replaced bare link reference with a descriptive sentence explaining where to find Omnia Feed version 6 hotfix releases.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/index.html>`__ — **Updated guidance**
+  Simplified hotfix releases section text and changed link label from generic 'here' to descriptive 'Hotfix releases'.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+  Added Release 7.11.6 notes documenting FAQ improvements, Layout Version Picker fix, and Sign In button styling update.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/hotfix-releases/versions.html>`__ — **Added information**
+  Reorganized release notes into major version sections and added new hotfix releases 7.11.5, 7.11.3, 7.9.12, and 7.9.10.
+
+18 August 2026
+--------------
+
+* `Blocks <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/index.html>`__ — **Navigation update**
+  Added divider block documentation reference to the blocks index navigation.
+
+* `Date and time picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/date-and-time-picker-712/index.html>`__ — **New page**
+  Added documentation for the date and time picker in Omnia 7.12 and later, including instructions for selecting dates and times with examples.
+
+* `Divider <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/divider-block-712/index.html>`__ — **New page**
+  Added documentation for the Divider block feature in Omnia 7.12, including configuration options for display and style settings.
+
+* `General assets and options <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/index.html>`__ — **Navigation update**
+  Added a new documentation entry for date-and-time-picker-712 to the general assets table of contents.
+
+* `Hotfix releases for release 5 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/hotfix-releases/index.html>`__ — **New page**
+  Added documentation index page for hotfix releases in Omnia Feed release 5.
+
+* `Hotfix releases for release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/index.html>`__ — **Correction**
+  Corrected page title from 'Hotfix releases for release 7' to 'Hotfix releases for release 6' to match the actual content.
+
+* `Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/index.html>`__ — **Navigation update**
+  Reorganized release notes version navigation to group by major versions and moved older releases to a separate section.
+
+* `Release 5 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/index.html>`__ — **Navigation update**
+  Added Versions section to organize version-specific release notes separately from hotfix releases on the Release 5 page.
+
+* `Release 5.1 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/versions/5.1/index.html>`__ — **New page**
+  Added release notes page for Omnia Feed version 5.1 documenting bug fixes, localization improvements, and performance enhancements.
+
+* `Release 5.2.20 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/5/hotfix-releases/versions.html>`__ — **Navigation update**
+  Reorganized release notes file into hotfix-releases subdirectory and reordered release entries in reverse chronological sequence.
+
+* `Release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/index.html>`__ — **Navigation update**
+  The Omnia Feed Release 6 documentation now includes versions 6.1, 6.3, 6.7, and 6.8 in the table of contents and simplifies the hotfix releases navigation structure.
+
+* `Release 6.1 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.1/index.html>`__ — **New page**
+  Added release notes documentation for Omnia Feed version 6.1, including bug fixes, new notification settings, and stability improvements.
+
+* `Release 6.10 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.10/index.html>`__ — **Added information**
+  Added inline display of 6.10.0 release notes with complete feature list and fixes on the main release page.
+
+* `Release 6.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.12/index.html>`__ — **Navigation update**
+  Removed the Versions section containing navigation to related version pages.
+
+* `Release 6.13 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.13/index.html>`__ — **Navigation update**
+  Removed the Versions navigation section and toctree list from the Release 6.13 page.
+
+* `Release 6.13.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.html>`__ — **Added information**
+  Added Release 6.12.1 section to hotfix releases documentation with details about configuration options, activity feed, notifications, and other features.
+
+* `Release 6.3 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.3/index.html>`__ — **New page**
+  Added Release 6.3 release notes for Omnia Feed with synchronization improvements and bug fixes.
+
+* `Release 6.6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.6/index.html>`__ — **Added information**
+  Added detailed release notes for version 6.6.0 including performance improvements, feature additions, and bug fixes.
+
+* `Release 6.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.7/index.html>`__ — **New page**
+  Added Release 6.7 release notes for Omnia Feed documenting configurable notifications, tab targeting, user queries, localization, and performance improvements.
+
+* `Release 6.8 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.8/index.html>`__ — **New page**
+  Added release notes for Omnia Feed 6.8 documenting configurable notifications, per-tab targeting, date queries, mobile app localization, colors, and performance improvements.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/index.html>`__ — **Spelling / grammar**
+  Extended the title underline formatting to match reStructuredText markup standards.
+
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.12/index.html>`__ — **Correction**
+  Section heading corrected from "Fluent Content" to "Content Builder"; added note on improved performance for Omnia in SharePoint.
+
+13 August 2026
+--------------
+
+* `Hotfix releases for release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/index.html>`__ — **New page**
+  Added documentation index page for hotfix releases under release 6 with a table of contents for versions.
+
+* `Hotfix releases for release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/hotfix-releases/index.html>`__ — **Navigation update**
+  Hotfix releases documentation moved from the version 7.0 path to the version 7 path.
+
+* `Release 3 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/3/index.html>`__ — **Navigation update**
+  Release notes page renamed from version 3.1 to 3 in documentation path structure.
+
+* `Release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/index.html>`__ — **Navigation update**
+  Changed toctree structure to explicitly list version entries and added hotfix releases section with navigation link.
+
+* `Release 6.10 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.10/index.html>`__ — **Navigation update**
+  Page and related image moved to versioned directory structure under releases/6/versions/6.10.
+
+* `Release 6.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.12/index.html>`__ — **Navigation update**
+  Reorganized Release 6.12 documentation and images into versioned subdirectory structure.
+
+* `Release 6.13 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.13/index.html>`__ — **Navigation update**
+  Moved Omnia Feed 6.13 release notes to reorganized directory structure under versions folder.
+
+* `Release 6.13.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.html>`__ — **New page**
+  Added release notes page documenting Omnia Feed hotfix releases including versions 6.13.7, 6.13.5, 6.7.1, 6.2.2, and 6.1.1 with fixes and improvements.
+
+* `Release 6.3 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.3/index.html>`__ — **Navigation update**
+  Removed release notes for versions 6.1.1 and 6.2.2 from the page, leaving 6.3.0 as the primary release entry.
+
+* `Release 6.6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/6.6/index.html>`__ — **Navigation update**
+  Release 6.6 documentation relocated to versioned directory structure within release notes.
+
+* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/index.html>`__ — **New page**
+  Added release notes page for Omnia Feed Release 7, documenting new features including SSO improvements, targeting support, mentions in comments, reminder system, and forms support.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/versions/7.11/index.html>`__ — **Navigation update**
+  Release 7.11 documentation page and associated images relocated to updated directory structure.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/hotfix-releases/versions.html>`__ — **Navigation update**
+  File path changed from 7.0 hotfix releases directory to 7, updating the documentation location structure.
+
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/versions/7.12/index.html>`__ — **Navigation update**
+  Release 7.12 release notes page was reorganized and moved to a new documentation path structure.
+
+* `Versions of the Omnia Feed 6 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/index.html>`__ — **New page**
+  Added new page listing versions of the Omnia Feed 6 release.
+
+* `Versions of the Omnia Feed 7 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/versions/index.html>`__ — **Navigation update**
+  Reorganized release notes page location from 7.0/versions/ to 7/versions/ path structure.
+
+7 August 2026
+-------------
+
+* `Features (Business Profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/features-bp-7/index.html>`__ — **Correction**
+  Updated on-prem subscription requirement for Microsoft Clipchamp and updated associated screenshot.
+
+* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+  Added release notes for Omnia Feed app versions 7.11.5, 7.11.4, and 7.11.3 with details on bug fixes, SDK upgrades, and accessibility improvements.
+
+* `Settings for sections <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/section-settings/index.html>`__ — **Correction**
+  Clarified availability of the Reusable section type and corrected typo in admin reference; updated screenshots.
+
+* `Setup reusable sections <https://omnia-docs-g2.readthedocs.io/en/latest/setup/reusable-content/index.html>`__ — **Correction**
+  Removed duplicate text in the step introduction that read 'Follow these steps:Follow these steps to setup a reusable section:'.
+
+4 August 2026
+-------------
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.11.20 release notes documenting 22 fixes and improvements including timezone handling, PDF file behavior, and Multi-Geo support.
