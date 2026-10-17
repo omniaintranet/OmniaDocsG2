@@ -551,9 +551,21 @@
     "2bb79a7975023ca94b14ddf2376fa814d21ec331": "2026-08-19",
     "b6352c88e4fc3ad73416ef729bff19552c8d261f": "2026-08-19",
     "65606208a281410516201ada3fdafbb5355cad6c": "2026-08-19",
-    "455f2e7994f3769c37110bf003eada7a04c8cf77": "2026-08-19"
+    "455f2e7994f3769c37110bf003eada7a04c8cf77": "2026-08-19",
+    "209004a8c5475a8c7e8ce1e468a5483a4e21bd3c": "2026-10-16",
+    "f3779c6548cc96f0bb90044806ea9db155adcdd9": "2026-10-16"
   },
   "entries": [
+    {
+      "date": "2026-10-16",
+      "path": "release-notes/omnia-feed/7/versions/7.12/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added Release 7.12 overview with guidance on Entra ID app migration, architecture changes, accessibility improvements, and Intune policy updates needed.",
+      "sources": [
+        "209004a8c5475a8c7e8ce1e468a5483a4e21bd3c",
+        "f3779c6548cc96f0bb90044806ea9db155adcdd9"
+      ]
+    },
     {
       "date": "2026-10-16",
       "path": "release-notes/7.0/versions.rst",

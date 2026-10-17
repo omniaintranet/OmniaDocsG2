@@ -21,6 +21,9 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
   Added Omnia 7.11.33 release notes covering bug fixes and improvements to permissions, media support, navigation, analytics, sign-off exports, and security.
 
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/versions/7.12/index.html>`__ — **Updated guidance**
+  Added Release 7.12 overview with guidance on Entra ID app migration, architecture changes, accessibility improvements, and Intune policy updates needed.
+
 15 October 2026
 ---------------
 
