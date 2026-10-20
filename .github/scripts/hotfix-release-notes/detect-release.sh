@@ -2,9 +2,10 @@
 
 set -euo pipefail
 
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/wait-for-rn-lib.sh"
+
 ORG="omniaintranet"
 PROJECT_NUMBER=8
-STATUS_PREFIX="Wait for RN"
 OUTPUT_FILE="/tmp/release.json"
 REQUESTED_STATUS="${RELEASE_STATUS:-}"
 
@@ -48,7 +49,7 @@ response=$(
 matches=$(
   printf '%s\n' "$response" |
     jq -s -c \
-      --arg prefix "$STATUS_PREFIX" \
+      --arg waitPattern "$WAIT_FOR_RN_PATTERN" \
       --arg requestedStatus "$REQUESTED_STATUS" '
       [
         .[]
@@ -58,7 +59,7 @@ matches=$(
         | select(.field.name == "Status")
         | select(
             if $requestedStatus == "" then
-              (.name // "") | startswith($prefix)
+              (.name // "") | test($waitPattern; "i")
             else
               .name == $requestedStatus
             end
@@ -85,6 +86,23 @@ if [ "$count" -eq 0 ]; then
     echo "The requested status has no project issues: $REQUESTED_STATUS"
   else
     echo "No releases waiting for release notes."
+    echo "Status columns seen on project items (none matched the Wait-for-RN pattern '$WAIT_FOR_RN_PATTERN'):"
+    printf '%s\n' "$response" |
+      jq -s -r '
+        [
+          .[]
+          | .data.organization.projectV2.items.nodes[]
+          | select(.content.number != null)
+          | .fieldValues.nodes[]
+          | select(.field.name == "Status")
+          | .name
+        ]
+        | unique
+        | if length == 0 then ["(none)"] else . end
+        | .[]
+        | "- \(.)"
+      '
+    echo "If the release column was renamed, extend .github/scripts/hotfix-release-notes/wait-for-rn-pattern.txt."
   fi
 
   if [ -n "${GITHUB_OUTPUT:-}" ]; then

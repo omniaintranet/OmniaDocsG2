@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/wait-for-rn-lib.sh"
+
 INPUT_FILE="/tmp/release-issues.json"
 OUTPUT_FILE="/tmp/generated-release-notes.rst"
 AUDIT_FILE="/tmp/release-notes-audit.json"
@@ -53,10 +55,7 @@ else
   exit 1
 fi
 
-component_versions=$(
-  printf '%s\n' "$status_name" |
-    sed -E 's/^Wait for RN([[:space:]]*-[[:space:]]*|[[:space:]]+)//; s/^[[:space:]]+//; s/[[:space:]]+$//'
-)
+component_versions=$(strip_wait_for_rn_prefix "$status_name")
 
 if [[ "$component_versions" == \(*\) ]]; then
   component_line="$component_versions"

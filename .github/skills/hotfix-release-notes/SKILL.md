@@ -1,6 +1,6 @@
 ---
 name: omnia-release-notes
-description: Draft customer-facing Omnia hotfix release notes from the Omnia GitHub organization project. Use when finding cards in a "Wait for RN" or named approved release status, reviewing their customer references and QA outcomes, or revising an Omnia 7.11.x release-note draft.
+description: Draft customer-facing Omnia hotfix release notes from the Omnia GitHub organization project. Use when finding cards in a "Wait for RN" (or close variant such as "Waiting for RN") or named approved release status, reviewing their customer references and QA outcomes, or revising an Omnia 7.11.x release-note draft.
 ---
 
 # Omnia Release Notes
@@ -9,7 +9,7 @@ Create concise public release notes from organization project `omniaintranet/8` 
 
 ## Retrieve the release
 
-1. If the user names a complete project status, use it exactly. Otherwise inspect project item statuses and find unique values beginning with `Wait for RN`.
+1. If the user names a complete project status, use it exactly. Otherwise inspect project item statuses and find unique values beginning with `Wait for RN` or a close variant such as `Waiting for RN` or `Awaiting release notes` (the automation matches these through `.github/scripts/hotfix-release-notes/wait-for-rn-pattern.txt`).
 2. If one matching status exists, proceed with it. If several exist and the intended release cannot be inferred safely, show the matches and ask which release to prepare.
 3. Retrieve every project item with that exact status. Record the GitHub repository, card number, title, labels, and URL for audit purposes.
 4. Read the full body and relevant recent comments for every issue. Prefer the implemented and QA-verified behavior over the initial title, proposed solution, or AI investigation.
@@ -70,7 +70,7 @@ Use this format:
 - Release-note bullet
 ```
 
-Derive the version line from the project status and remove the `Wait for RN - ` prefix.
+Derive the version line from the project status and remove the waiting label and its separator (for example `Wait for RN - ` or `Waiting for RN - `).
 
 Write short, customer-facing bullets in neutral English. Remove customer names unless essential. Name Omnia features consistently, such as Page Rollup, Document Bulk Update, Page Bulk Update, Quick Search, Semantic Search, Publishing App, and Controlled Documents.
 

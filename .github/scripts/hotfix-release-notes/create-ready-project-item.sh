@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/wait-for-rn-lib.sh"
+
 ORG="omniaintranet"
 PROJECT_NUMBER=8
 INPUT_FILE="/tmp/release-issues.json"
@@ -48,7 +50,7 @@ fi
 
 status_name=$(jq -r '.releases[0].statusName' "$INPUT_FILE")
 
-if [[ ! "$status_name" =~ ^Wait[[:space:]]+for[[:space:]]+RN ]]; then
+if ! is_wait_for_rn_status "$status_name"; then
   echo "The selected release is not a Wait for RN status." >&2
   exit 1
 fi
