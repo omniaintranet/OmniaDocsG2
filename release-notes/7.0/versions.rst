@@ -1,3 +1,18 @@
+7.12.2
+========================================
+(Omnia 7.12.2 / Workplace 7.12.2 / WCM 7.12.2 / MS 7.12.2 / Analytics 7.12.3 / Feed 7.11.6)
+
+- Publish dialog no longer becomes stuck when an ODM document type has been deleted; users can select another available document type
+- Added Show edit setting to page rollup dialogs and page-creation buttons to control edit-pencil visibility in Omnia and SharePoint
+- Scheduled publishing now validates against past dates when enabled; date/time properties gain an optional Only future dates setting (#57492)
+- Page rollup images in the Notification Panel now maintain correct size when switching between tabs (#60036)
+- Analytics data now loads correctly on first sign-in to a custom domain (#58382, #59681)
+- Create page dialog now handles collections with AI creation enabled but no field mapping configured
+- Media picker now correctly recognizes and displays YouTube short links (youtu.be) (#60417)
+- Closing Omnia Admin from Page Types now correctly restores the previous page state
+- Navigation between pages in different publishing apps no longer shows a transient access denied message for authorized readers
+
+
 7.11.33
 ========================================
 (Omnia 7.11.33 / Workplace 7.11.33 / WCM 7.11.33 / MS 7.11.33 / Analytics 7.11.4 / Feed 7.11.6)
