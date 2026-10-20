@@ -7,6 +7,8 @@ Use these settings to decide the default options for the rich text editor and th
 
 **Note!** For some blocks a custom RTF editor can be created. If that is done it will override these settings.
 
+More information about using the RTF editor is found here: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
+
 Both lists are handled the same way.
 
 1. Select and deselect options to be available in the editor and save when you're done (Image from Omnia 7.12).
