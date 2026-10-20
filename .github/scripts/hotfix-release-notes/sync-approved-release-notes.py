@@ -4,10 +4,16 @@ import json
 import os
 import re
 import subprocess
+from pathlib import Path
 
 REPOSITORY = "omniaintranet/OmniaDocsG2"
 NOTES_PATH = "release-notes/7.0/versions.rst"
 PUBLISHED_URL = "https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html"
+# Shared with the bash scripts: what counts as a "waiting for release notes" column.
+# The lookahead is the same end boundary wait-for-rn-lib.sh adds ("Wait for RNA" is not the column).
+WAIT_FOR_RN = re.compile(
+    Path(__file__).with_name("wait-for-rn-pattern.txt").read_text(encoding="utf-8").strip() + r"(?![A-Za-z0-9])",
+    re.IGNORECASE)
 
 
 def api(endpoint, *, query=None, variables=None, project=False):
@@ -133,8 +139,12 @@ def plan_update(project, items, pr, version, section):
     option = matching[0]
     if not re.search(r"\bOmnia\s+" + re.escape(version) + r"(?=\s|/|$)", option["name"]):
         raise ValueError("The release column does not match the PR version")
-    approved_name = re.sub(r"^Wait for RN(?=\s|$)", "Approved", option["name"], count=1)
-    if not re.match(r"^Approved(?=\s|$)", approved_name):
+    approved_name = option["name"]
+    label = WAIT_FOR_RN.match(approved_name)
+    if label:
+        # Same separator rule as strip_wait_for_rn_prefix, so "[Wait for RN] X" becomes "Approved - X".
+        approved_name = "Approved - " + re.sub(r"^[^A-Za-z0-9(]+", "", approved_name[label.end():]).rstrip()
+    if not re.match(r"^Approved(?![A-Za-z0-9])", approved_name):
         raise ValueError("Expected a Wait for RN or Approved release column")
     if any(other["id"] != option_id and other["name"] == approved_name for other in options):
         raise ValueError("An Approved column already exists separately; manual reconciliation required")

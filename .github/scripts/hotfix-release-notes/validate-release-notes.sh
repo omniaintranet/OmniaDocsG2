@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/wait-for-rn-lib.sh"
+
 if [ "$#" -ne 2 ]; then
   echo "Usage: $0 RELEASE_DATA_JSON GENERATED_RST" >&2
   exit 1
@@ -36,10 +38,7 @@ else
   exit 1
 fi
 
-component_versions=$(
-  printf '%s\n' "$status_name" |
-    sed -E 's/^Wait for RN([[:space:]]*-[[:space:]]*|[[:space:]]+)//; s/^[[:space:]]+//; s/[[:space:]]+$//'
-)
+component_versions=$(strip_wait_for_rn_prefix "$status_name")
 
 if [ -z "$component_versions" ]; then
   echo "Could not extract the component-version line from status: $status_name" >&2

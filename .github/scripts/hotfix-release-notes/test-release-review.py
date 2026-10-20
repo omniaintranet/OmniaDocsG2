@@ -55,6 +55,8 @@ class ReleaseReviewTests(unittest.TestCase):
             script = script.split("project_response=$(", 1)[0] + 'cat "$issue_body_file"\n'
         path = self.folder / name
         path.write_text(script, newline="\n")
+        for support in ("wait-for-rn-lib.sh", "wait-for-rn-pattern.txt"):
+            (self.folder / support).write_text((SCRIPTS / support).read_text(), newline="\n")
         env = dict(os.environ, TEST_PROMPT=shell_path(self.folder / "prompt.txt"),
             TEST_RESPONSE=shell_path(self.folder / "response.json"),
             GITHUB_OUTPUT=shell_path(self.folder / "outputs"), GH_TOKEN="offline-test",

@@ -113,6 +113,25 @@ class ApprovalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
 
+    def test_waiting_for_rn_name_variants_are_renamed_to_approved(self):
+        for name in ("Waiting for RN - Omnia 7.11.99 / WCM 7.11.99", "waiting for rn - Omnia 7.11.99 / WCM 7.11.99",
+                     "Awaiting release notes - Omnia 7.11.99 / WCM 7.11.99", "Wait-for-RN - Omnia 7.11.99 / WCM 7.11.99",
+                     "\u23f3 Waiting for RN - Omnia 7.11.99 / WCM 7.11.99", "[Wait for RN] Omnia 7.11.99 / WCM 7.11.99",
+                     "Wait for RN: Omnia 7.11.99 / WCM 7.11.99", "Wait for RN / Omnia 7.11.99 / WCM 7.11.99",
+                     "Wait for RN Omnia 7.11.99 / WCM 7.11.99"):
+            with self.subTest(name=name):
+                self.project["fields"]["nodes"][0]["options"][1]["name"] = name
+                plan = sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
+                self.assertTrue(plan["rename"])
+                self.assertEqual(plan["status"], "Approved - Omnia 7.11.99 / WCM 7.11.99")
+
+    def test_unrelated_waiting_column_is_rejected(self):
+        for name in ("Waiting for QA - Omnia 7.11.99", "Ready - Omnia 7.11.99", "Wait for RNA - Omnia 7.11.99"):
+            with self.subTest(name=name):
+                self.project["fields"]["nodes"][0]["options"][1]["name"] = name
+                with self.assertRaises(ValueError):
+                    sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
+
     def test_separate_approved_column_is_not_overwritten(self):
         options = self.project["fields"]["nodes"][0]["options"]
         options.append(dict(options[1], id="duplicate", name="Approved - Omnia 7.11.99 / WCM 7.11.99"))
