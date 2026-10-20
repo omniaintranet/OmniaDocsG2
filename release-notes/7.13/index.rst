@@ -3,91 +3,65 @@
 Release 7.13 (draft)
 ================================================
 
-.. REVIEW NOTE: Built from the existing 7.13 draft plus the commits that are in the dev branch but not in 7.12 (preview/main), as of 5 Oct 2026. Items marked "REVIEW" in rst comments need a fact check and are not rendered. Bug fixes, build and internal changes are left out on purpose.
+.. REVIEW NOTE: Built from the existing 7.13 draft plus the commits that are in the dev branch but not in 7.12 (preview/main), as of 20 Oct 2026. Items marked "REVIEW" in rst comments need a fact check and are not rendered. Bug fixes, build and internal changes are left out on purpose. Each section lists the key selling points only; smaller details are folded in or left out.
 
 AI
 ------------------------------------------------
+- Omnia Skills and Agent Studio: build Omnia Agents with their own skills, guardrails and audiences, including Ask Omnia, which uses Omnia MCP tools
+- Responsible AI: answers respect each user's permissions, guardrails check messages and answers, AI use is recorded, and content disclaimers can be shown
+- AI Insights in Page Rollup, Analytics Report, Metrics and Target Reach
 - Credit-based AI usage and subscription
-- AI Insights added to Page Rollup, Analytics Report, and Metrics blocks
-- AI action and prompts added to Target Reach
-- AI respects each user's permissions
-- Omnia Skills and Omnia Agents
-- Ask Omnia: a system agent that uses Omnia MCP tools
-- Object descriptions to improve AI context knowledge (Enterprise properties, page types, blocks, document types)
-- Admin customization of AI prompts (pre- and post-prompts), with consistent prompt editors
-- AI use is recorded, and content disclaimers can be shown
-- AI settings are hidden when no AI provider is configured
-- Rich text AI responses
-- Full undo/redo support on pages and page types
-
-.. REVIEW: Pre- and post-prompts. The 7.12 notes list Semantic Search pre- and post-prompts as already announced in 7.11.x. Confirm whether the 7.13 item is the same or an extension (for example prompts for other AI features).
-
-.. REVIEW: "AI respects each user's permissions" comes from the RBAC user-context work (#1056). Confirm it is the same as permission-trimmed Semantic Search below, or keep both.
-
-.. REVIEW: Rich text AI responses and undo/redo come from the earlier draft. They were not found in the dev commits, so confirm they are in 7.13.
+- Your choice of AI provider, including Microsoft AI Foundry with Azure RBAC authentication
+- Better AI context from object descriptions, and AI prompts that can be set per business profile
 
 Semantic Search
 ------------------------------------------------
-- Permission-trimmed semantic search results
-- Alignment of semantic search functionality (Page types/Document types, Page collections/Authoring sites)
-- Option to include all pages and documents
-
-.. REVIEW: "Include all" - confirm the wording (#2975).
+- Answers only from content each user is allowed to see
+- Choose what is searchable per page type, document type, page collection and authoring site, or include all pages and documents
 
 Smart Properties
 ------------------------------------------------
-- Smart properties for documents and app instances
-- Automatic smart properties for users
-- Deprecation of:
+- Smart properties for documents, app instances and users, filled in automatically
+- Smart property rules without AI for users, page types and document types
 
-  - Auto-summary
-  - Auto-tagging
+Free form views
+------------------------------------------------
+- Design rollups, search results and the high priority announcements banner with your own HTML and CSS templates
+- An editor with live preview, tokens, conditions and multilingual labels, so templates show exactly the information each audience needs
+
 
 Activity Hub
 ------------------------------------------------
-- Activity Hub in the mega menu and left panel
-- Chat: encrypted messages and image attachments, delete messages and conversations, emoji, chat notifications
-- Content Builder pages display in Activity Hub (web and mobile)
-- Notification links open in the configured panes
-- Configurable navigation content, panes and badges
-- Activity Hub administrator role with scoped access
-- Targeting personas in the Activity Hub feed
-- New Activity Panel block
-- Block height settings for feeds and chats
-- Activity Hub page views are reported to Matomo as page reads
-- WCAG improvements on web and mobile
-- Re-worked sign-in flow in the Omnia mobile app
+- One place for activities, tasks and chat, in the mega menu, the left panel and the Omnia mobile app
+- Secure chat with encrypted messages, image attachments and emoji
+- Reach the right people: channel collections, targeting personas, default and enforced subscriptions
+- Never miss what matters: digests of missed activities, review reminders for documents and pages, and rich push and Microsoft Teams notifications
+- Bring Activity Hub to any page with the Activity Panel and Activity Feed blocks
+- Omnia mobile app: create pages, edit your profile, sign up for events and watch videos without leaving the app
+- Administrators get a scoped Activity Hub administrator role, and page views are reported to Matomo
+
 
 Web Content Management
 ------------------------------------------------
-- Variation comparison dialog in the editor
-- Alert when viewing a draft that has never been published
-- Alternate layouts for publishing app layouts, as on the workspace home page
+- Compare variations side by side in the editor
+- Readers can translate comments and replies on request
+- A "Do not translate" list keeps product names and company terms in the original language when content is machine translated
+- An alert when viewing a draft that has never been published
 
 Event Management
 ------------------------------------------------
-- All-day events
-- Outlook busy status for events
-- Attendance mode (in person or online)
-- Own questions in event sign-up forms
-
-.. REVIEW: Attendance mode - confirm the options (in person / Microsoft Teams) from #1014.
+- All-day events, in-person or online (Teams) attendance, and Outlook busy status
+- Your own questions in event sign-up forms
 
 Navigation and Layout
 ------------------------------------------------
 - Single header layout with header settings
-- User menu action in the left panel
-- Quick access drawer for the left panel on mobile
+- User menu in the left panel
+- Faster navigation: quick links, menus and footer links open without reloading the page
 
-.. REVIEW: The left panel (Everywhere Panel) shipped in 7.12. Confirm the user menu action and the mobile drawer are new in 7.13 and not already part of 7.12.
 
 Miscellaneous
 ------------------------------------------------
-- It is now possible to make a FAQ block look the same as accordion sections.
-- The highlight of unread news can be applied to more views.
-- "Force to everyone" option for channel enforced subscriptions
-- Support for Microsoft Foundry
-- Support for RBAC over OAuth
-- No translation dictionary
-
-.. REVIEW: FAQ/accordion, unread news, Microsoft Foundry, RBAC over OAuth and No translation dictionary come from the earlier draft and were not found in the dev commits. Confirm they are in 7.13.
+- FAQ blocks can look the same as accordion sections
+- Unread news can be highlighted in more views
+- A font picker in the admin font settings
