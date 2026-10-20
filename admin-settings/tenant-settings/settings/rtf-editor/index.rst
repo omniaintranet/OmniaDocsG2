@@ -3,15 +3,15 @@ RTF editor settings
 
 Use these settings to decide the default options for the rich text editor and the limited rich text editor, in the tenant. 
 
-.. image:: rtf-editor-78.png
+.. image:: rtf-editor-712.png
 
 **Note!** For some blocks a custom RTF editor can be created. If that is done it will override these settings.
 
 Both lists are handled the same way.
 
-1. Select and deselect options to be available in the editor and save when you're done (Image from Omnia 7.11).
+1. Select and deselect options to be available in the editor and save when you're done (Image from Omnia 7.12).
 
-.. image:: rtf-editor-options-711.png
+.. image:: rtf-editor-options-712.png
 
 (All options are not shown in the image above, there's a lot more).
 
