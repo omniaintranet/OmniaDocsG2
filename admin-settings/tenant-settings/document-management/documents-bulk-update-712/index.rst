@@ -1,54 +1,70 @@
 Documents bulk update in Ommnia 7.12
 ======================================
 
-**Work in this page has just started.**
-
 This page describes how to work with this option in Omnia 7.12 and later. For Omnia 7.11 and earlier, see: :doc:`Documents bulk update </admin-settings/tenant-settings/document-management/documents-bulk-update/index>`
-
-
-**Text below is just working material. Will be edited soon.**
-
-
-
-This page describes the option for Omnia 7.11 and earlier. For 7.12 and later, see: (link to be added)
 
 Use this option to bulk update any of the defined document management properties. Note that not all properties can be updated this way. One example is Approver. 
 
+It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a document owner has left the organization and already has been removed from the AD. Also note that Bulk update never updates the template. The republish via Bulk update always uses the current template.
+
 Also note that the user executing the Bulk update must have access to the documents that should be updated. Documents that the user does not have access to are simply not shown in the list.
 
-.. image:: documents-bulk-update-1-v7.png
+The bulk update is organized in three claer steps:
 
-1. Select "Search Property".
-2. In "Property Value", add the value to be replaced.
-3. Click FIND.
+.. image:: documents-bulk-update-1-712.png
 
-A list of published documents that has the selected property defined is displayed.
+Step 1 - find documents
+*************************
 
-4. In "New Value", add the value that should replace the one you selected.
-5. Select all documents that should replace the value.
-6. Click REPLACE.
+You can add a property filter for the documents or add a KQL string. For the KQL option, add the string and click SEARCH.
 
-.. image:: documents-bulk-update-2-v7.png
+To add a filter, continue this way:
 
-Be aware that, if there are many documents selected, the update may take some time.
+1. Click FILTER.
+2. Click ADD FILTER.
+3. Add a property.
 
-When the update is finished, the update is noted in the document history of each document.
+.. image:: documents-bulk-update-property-712.png
 
-Bulk update removed properties
-*********************************
-It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a document owner has left the organization and already has been removed from the AD. This is how it's done:
++ Use "Poprerty value" to add the value to search for.
++ Use "Has value" ro simply search for documents that has any value for this property.
++ Use "Empty" for documenta that has no value for this property (yet).
 
-1. Select the property to be replaced (for example Document Owner).
-2. Enter the property to be replaced in the second Property Value field (for example a former colleague). Note that you can use FIND for a listing of for example the documents a former colleague are document owner of.
-3. Enter a new value (for example a colleauge) in the "New Value" field.
-4. Click REPLACE.
+4. Click OK.
 
-Heres's an example:
+.. image:: documents-bulk-update-2-712.png
 
-.. image:: bulk-update-owner-v7.png
+5. To add more properties for this search, repeat. (To remove a value, just click the x).
+6. Click SEARCH.
 
-Bulk update and templates
-***************************
-Note that Bulk update never updates the template. The republish via Bulk update always uses the current template.
+.. image:: documents-bulk-update-3-712.png
 
+Step 2 - select documents
+****************************
+Now a number of documents are listed. If the search didn't find any documents, click FIND DOCUMENTS and do needed changes, and the click SEARCH again.
+
+.. image:: documents-bulk-update-change-712.png
+
+When you have found what you're looking for, a list of documents is shown (image from a test enviroment):
+
+.. image:: documents-bulk-update-list-712.png
+
+7. Select all documents or just some the normal way.
+
+Step 3 - define the update
+*****************************
+
+In the final step, define the updates ypou want to do. In this exampl we add a scheduled publishing date to all docuemnts that hadn't any, but you can change almost anything for the documents in the list.
+
+Note the preview at the bottom:
+
+.. image:: documents-bulk-update-preview-712.png
+
+If you need to change anything, you can always to back and do that.
+
+When you're done with all settings:
+
+8. Click APPLY UPDATE.
+
+.. image:: documents-bulk-update-apply-712.png
 
