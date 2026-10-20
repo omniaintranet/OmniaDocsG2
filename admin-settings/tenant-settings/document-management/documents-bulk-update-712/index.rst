@@ -26,9 +26,9 @@ To add a filter, continue this way:
 
 .. image:: documents-bulk-update-property-712.png
 
-+ Use "Poprerty value" to add the value to search for.
++ Use "Poperty value" to add the value to search for.
 + Use "Has value" to simply search for documents that has any value for this property.
-+ Use "Empty" for documents that has no value for this property (yet).
++ Use "Empty" for documents that has no value for this property.
 
 For some properties you can search for a text string as well.
 
@@ -43,7 +43,7 @@ For some properties you can search for a text string as well.
 
 Step 2 - select documents
 ****************************
-Now a number of documents are listed. If the search didn't find any documents, click FIND DOCUMENTS and do needed changes, and then click SEARCH again.
+Now a number of documents are listed. If the search didn't find any documents, click FIND DOCUMENTS, do the changes and then click SEARCH again.
 
 .. image:: documents-bulk-update-change-712.png
 
@@ -56,7 +56,7 @@ When you have found what you're looking for, a list of documents is shown (image
 Step 3 - define the update
 *****************************
 
-In the final step, define the updates you want to do. In this exampl we add a scheduled publishing date to all docuemnts that hadn't any, but you can change almost anything for the documents in the list.
+In the final step, define the updates you want to do. In this example we add a scheduled publishing date to all docuemnts that hadn't any, but you can change almost anything for the documents in the list.
 
 Note the preview at the bottom:
 
