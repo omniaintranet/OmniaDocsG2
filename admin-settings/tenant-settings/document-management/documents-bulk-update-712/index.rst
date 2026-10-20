@@ -5,11 +5,11 @@ This page describes how to work with this option in Omnia 7.12 and later. For Om
 
 Use this option to bulk update any of the defined document management properties. Note that not all properties can be updated this way. One example is Approver. 
 
-It's possible to replace properties that are not longer present in the system. A good example when this is useful is when a document owner has left the organization and already has been removed from the AD. Also note that Bulk update never updates the template. The republish via Bulk update always uses the current template.
+It's possible to replace properties that are no longer present in the system. A good example when this is useful is when a document owner has left the organization and already has been removed from the AD. Also note that Bulk update never updates the template. The republish via Bulk update always uses the current template.
 
 Also note that the user executing the Bulk update must have access to the documents that should be updated. Documents that the user does not have access to are simply not shown in the list.
 
-The bulk update is organized in three claer steps:
+The bulk update is organized in three clear steps:
 
 .. image:: documents-bulk-update-1-712.png
 
