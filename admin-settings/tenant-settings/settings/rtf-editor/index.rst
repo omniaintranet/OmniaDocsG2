@@ -19,8 +19,6 @@ At the top you will see a preview of what the RTF editor will look like with the
 
 Most options should be self explanatory, but some options may need a description, see below.
 
-+ **Auto-clean pasted content**: Available in Omnia 7.11 and later. When this option is active, pasted text is always pasted as "Text only", the same way as if you had used the "Keep text only" icon. When this option is NOT selected, you can still use the "Keep text only" icon for this purpose. For more information, see the headings *Pasting text only* and *Pasting contents from Microsoft Word*, on this page: :doc:`Editing text with the RTF editor </general-assets/rtf-editor/index>`
-
 Language
 -----------
 **Important note!** This option should normally NOT be added to the RTF editor here. It's used in special cases only and will, for example, be added automatically to multi language fields.
@@ -84,6 +82,10 @@ The tenant feature "Text completion" must be activated for this functionality to
 See this page for more information about the settings: :doc:`OpenAI (Admin settings) </admin-settings/tenant-settings/settings/open-ai/index>`
 
 See the bottom of this page for information about how OpenAI can be used in the RTF editor: :doc:`Editing text with the RTF Editor </general-assets/rtf-editor/index>`
+
+Call to action
+----------------
+It’s used to create link buttons in the text, meaning not just clickable text, but a button.
 
 Reorder the options
 ---------------------
