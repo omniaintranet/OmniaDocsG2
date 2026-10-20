@@ -9,6 +9,8 @@ It's possible to replace properties that are no longer present in the system. A 
 
 Also note that the user executing the Bulk update must have access to the documents that should be updated. Documents that the user does not have access to are simply not shown in the list.
 
+Some more information about what happens when the changes are are found at the bottom of the page.
+
 The bulk update is organized in three clear steps:
 
 .. image:: documents-bulk-update-1-712.png
@@ -69,4 +71,12 @@ When you're done with all settings:
 8. Click APPLY UPDATE.
 
 .. image:: documents-bulk-update-apply-712.png
+
+More info about what the update does
+*****************************************
+This is what happens when the update is finished:
+
+1. Any updated document is republished, the file is overwritten with the existing URL.
+2. The edition stays the same, but the revision is increaesed by one.
+3, A document history entry is added.
 
