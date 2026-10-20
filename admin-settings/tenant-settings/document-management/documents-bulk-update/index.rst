@@ -1,7 +1,7 @@
 Documents bulk update
 =======================
 
-This page describes the option for Omnia 7.11 and earlier. For 7.12 and later, see: (link to be added)
+This page describes the option for Omnia 7.11 and earlier. For 7.12 and later, see: :doc:`Documents bulk update in Omnia 7.12 </admin-settings/tenant-settings/document-management/documents-bulk-update-712/index>` 
 
 Use this option to bulk update any of the defined document management properties. Note that not all properties can be updated this way. One example is Approver. 
 
