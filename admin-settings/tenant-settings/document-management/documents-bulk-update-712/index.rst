@@ -27,8 +27,10 @@ To add a filter, continue this way:
 .. image:: documents-bulk-update-property-712.png
 
 + Use "Poprerty value" to add the value to search for.
-+ Use "Has value" ro simply search for documents that has any value for this property.
-+ Use "Empty" for documenta that has no value for this property (yet).
++ Use "Has value" to simply search for documents that has any value for this property.
++ Use "Empty" for documents that has no value for this property (yet).
+
+For some properties you can search for a text string as well.
 
 4. Click OK.
 
@@ -41,7 +43,7 @@ To add a filter, continue this way:
 
 Step 2 - select documents
 ****************************
-Now a number of documents are listed. If the search didn't find any documents, click FIND DOCUMENTS and do needed changes, and the click SEARCH again.
+Now a number of documents are listed. If the search didn't find any documents, click FIND DOCUMENTS and do needed changes, and then click SEARCH again.
 
 .. image:: documents-bulk-update-change-712.png
 
@@ -54,13 +56,13 @@ When you have found what you're looking for, a list of documents is shown (image
 Step 3 - define the update
 *****************************
 
-In the final step, define the updates ypou want to do. In this exampl we add a scheduled publishing date to all docuemnts that hadn't any, but you can change almost anything for the documents in the list.
+In the final step, define the updates you want to do. In this exampl we add a scheduled publishing date to all docuemnts that hadn't any, but you can change almost anything for the documents in the list.
 
 Note the preview at the bottom:
 
 .. image:: documents-bulk-update-preview-712.png
 
-If you need to change anything, you can always to back and do that.
+If you need to change anything, you can always go back.
 
 When you're done with all settings:
 
