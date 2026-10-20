@@ -5,7 +5,7 @@ A number of useful process shapes are installed per default. You can also add ad
 
 .. image:: pm-shape-gallery-712.png
 
-The default shapes can not be edited or removed, but the ones you or someone else in you your organization add, can, noted by a pen and a dustbin.
+The default shapes can not be edited or removed, but the ones you or someone else in you your organization add can, noted by a pen and a dustbin.
 
 Note that when you add a shape to a process template, there's a number of settings you can do for the shape, see the heading "Settings for a shape" on this page: :doc:`The Drawing tab - authoring processes </working-with-processes/authoring-processes/working-with-drafts/drawing-tab/index>`
 
