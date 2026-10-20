@@ -1,35 +1,23 @@
 Shape gallery
 ===============
 
-A number of useful process shapes are installed per default. You can also add additional shapes.
+A number of useful process shapes are installed per default. You can also add additional shapes (image from a test environment in Omnia 7.12).
 
-.. image:: pm-shape-gallery-new.png
+.. image:: pm-shape-gallery-712.png
 
-In this example Can(Grey) and Pentagon (Regular) are added. That's why they can be edited.
+The default shapes can not be edited or removed, but the ones you or someone else in you your organization add, can, noted by a pen and a dustbin.
 
-Note that when you add a shape to a Process Template, there's a number of settings you can do for the shape, see the heading "Settings for a shape" on this page: :doc:`The Drawing tab - authoring processes </working-with-processes/authoring-processes/working-with-drafts/drawing-tab/index>`
-
-Edit or remove a shape
-************************
-A shape you have added can be edited or removed (the default shapes can not). Click the pen to edit or the dust bin to remove.
-
-.. image:: pm-shape-edit-delete-new.png
-
-Regarding the other added shapes that can't be removed, you can point at the i icon for more informaion.
-
-.. image:: pm-shape-edit-delete-icon.png
-
-As you can see from the message, a shape that is used in a Process Template can't be removed.
+Note that when you add a shape to a process template, there's a number of settings you can do for the shape, see the heading "Settings for a shape" on this page: :doc:`The Drawing tab - authoring processes </working-with-processes/authoring-processes/working-with-drafts/drawing-tab/index>`
 
 Adding a new shape
 ********************
 To add a new shape, click the plus.
 
-.. image:: pm-shape-clickplus-new.png
+.. image:: pm-shape-clickplus-712.png
 
 Use the following settings:
 
-.. image:: pm-shape-settings-new2.png
+.. image:: pm-shape-settings-712.png
 
 + **Title**: You can (should) add a title for the new shape, in any or all available languages. Default language for the tenant is mandatory.
 + **Freeform/Media**: Decide how to add the shape; Select "Freeform" to draw the shape, "Media" to upload an image.
