@@ -284,7 +284,7 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.folder = Path(self.temp.name)
         self.repo = self.folder / "repo"
-        sources = [".github/scripts/docs-review/docs_review.py"]
+        sources = [".github/scripts/docs-review/docs_review.py", "conf.py"]
         sources += [p.relative_to(ROOT).as_posix() for p in (ROOT / ".github/docs-review").rglob("*") if p.is_file()]
         for source in sources:
             target = self.repo / source
@@ -292,6 +292,8 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
             shutil.copyfile(ROOT / source, target)
         (self.repo / self.NOTES).parent.mkdir(parents=True)
         (self.repo / self.NOTES).write_text(self.PUBLISHED, newline="\n")
+        # A minimal site with the repository's conf.py, for the Sphinx build comparison.
+        (self.repo / "index.rst").write_text("Omnia\n=====\n\n.. toctree::\n\n   release-notes/7.0/versions\n", newline="\n")
         for args in (["init", "-q"], ["add", "-A"], ["commit", "-q", "-m", "Published"]):
             subprocess.run(["git", "-c", "user.name=Test", "-c", "user.email=test@example.invalid", *args],
                            cwd=self.repo, check=True, capture_output=True)
@@ -320,6 +322,13 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.assertEqual([(f["file"], f["line"], f["rule"], f["severity"]) for f in findings],
                          [(self.NOTES, 5, "Omnia.InternalLanguage", "error")])
         self.assertIn("must be fixed before publishing the generated release notes", summary)
+        self.assertIn("errors=1", outputs)
+
+    def test_broken_inline_reference_is_reported(self):
+        # The validator accepts inline roles; only the Sphinx build comparison finds the missing page.
+        findings, summary, outputs = self.review("- See :doc:`missing-page` for details")
+        self.assertEqual([(f["file"], f["line"], f["rule"], f["severity"]) for f in findings],
+                         [(self.NOTES, 5, "Build.BrokenReference", "error")])
         self.assertIn("errors=1", outputs)
 
     def test_clean_generated_notes_pass(self):
