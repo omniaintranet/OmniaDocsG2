@@ -53,9 +53,7 @@ Variation author
 *****************
 A variation author can be added for each variation. That is done in the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
-Omnia 7.8 and earlier: Note that there can be only one variation author for each variation, regardless of on how many pages the variation is used. In Omnia 7.9, several variation authors can be added for a variation. In Omnia 7.9 it's also possible to add a permission for editing a specific variation page, if needed.
-
-**Note!** In Omnia 7.8 and earlier, page collection administrators can always edit all variations as well.
+Several variation authors can be added for a variation. It's also possible to add a permission for editing a specific variation page, if needed.
 
 The variation author is notified through Email when a main page, with a variation of the variation authors type, is updated.
 
