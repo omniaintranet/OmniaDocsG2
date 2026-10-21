@@ -5,6 +5,7 @@ import importlib.util
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import tempfile
 import threading
@@ -14,6 +15,7 @@ from unittest.mock import patch
 spec = importlib.util.spec_from_file_location('digest', Path(__file__).with_name('update.py'))
 digest = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(digest)
+WORKFLOW = Path(__file__).resolve().parents[2] / 'workflows/latest-changes.yml'
 
 
 class DigestTests(unittest.TestCase):
@@ -228,6 +230,14 @@ class DigestTests(unittest.TestCase):
         self.assertIn('+Added an example.', prompt)
         self.assertLess(len(prompt), 40000)
 
+    def test_prompt_asks_for_customer_facing_wording_without_repository_instructions(self):
+        group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
+        response = json.dumps({'classification': 'Added information', 'description': 'Added an example.'})
+        with patch.object(digest, 'command', return_value=response) as command:
+            digest.classify(group, {'title': 'Guide', 'text': 'Guide\n=====\n'})
+        self.assertIn('No internal, sales or marketing', command.call_args.kwargs['input'])
+        self.assertIn('--no-custom-instructions', command.call_args.args)
+
     def test_overlong_model_description_is_corrected_before_publication(self):
         group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
         invalid = json.dumps({'classification': 'Added information', 'description': 'Long description. ' * 20})
@@ -350,6 +360,24 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(len(calls), 2)
         self.assertIn('4', json.loads(self.state.read_text())['processed_commits'])
         self.update([self.pr], files, lambda *args: self.fail('Already processed'), max_groups=1)
+
+
+class WorkflowTests(unittest.TestCase):
+    def test_digest_is_reviewed_before_it_is_published(self):
+        # A blocking review finding must stop the job before anything is committed,
+        # so state.json is not advanced and the next run classifies the changes again.
+        text = WORKFLOW.read_text(encoding='utf-8')
+        steps = re.findall(r'^      - name: (.+?)\s*$', text, re.M)
+        self.assertLess(steps.index('Update reader digest'), steps.index('Review the digest before publishing'))
+        self.assertLess(steps.index('Review the digest before publishing'), steps.index('Publish digest'))
+        review = text.split('- name: Review the digest before publishing', 1)[1].split('- name:', 1)[0]
+        self.assertIn('docs_review.py', review)
+        self.assertIn('--base HEAD', review)
+        for loophole in ('--no-fail', 'continue-on-error', 'if:'):
+            self.assertNotIn(loophole, review)
+        publish = text.split('- name: Publish digest', 1)[1]
+        self.assertNotIn('if:', publish)
+        self.assertNotIn('continue-on-error', publish)
 
 
 class GitHistoryTests(unittest.TestCase):
