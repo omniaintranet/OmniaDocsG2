@@ -1,0 +1,62 @@
+# Expected findings for each fixture: "<line> <rule>" (no line: "- <rule>").
+# A fixture missing here, or with an empty list, must produce no errors and no warnings.
+# Run: python .github/scripts/docs-review/test_docs_review.py
+
+tone-bad.rst.txt:
+  - 4 Omnia.InternalLanguage        # the exact "key selling point" case from the 7.12 draft
+  - 6 Omnia.InternalLanguage
+  - 7 Omnia.InternalLanguage
+  - 8 Omnia.InternalLanguage
+  - 9 Omnia.InternalLanguage
+  - 10 Omnia.InternalLanguage
+  - 10 Omnia.InternalLanguage
+  - 12 Omnia.Leftovers
+  - 14 Omnia.Leftovers
+  - 16 Omnia.Leftovers
+  - 18 Omnia.Leftovers
+  - 20 Omnia.Superlatives
+  - 20 Omnia.Superlatives
+  - 20 Omnia.Superlatives
+  - 20 Omnia.Superlatives
+  - 22 Omnia.FuturePromises
+  - 22 Omnia.FuturePromises
+  - 22 Omnia.FuturePromises
+  - 24 Omnia.DraftNote
+  - 26 Omnia.InternalLanguage       # in an rst comment: warning, not error
+
+tone-good.rst.txt: []
+
+confidential-bad.rst.txt:
+  - 4 Confidential.Email
+  - 6 Confidential.TenantHost
+  - 6 Confidential.TenantHost
+  - 8 Confidential.TenantHost
+  - 8 Confidential.TenantHost
+  - 10 Confidential.InternalHost
+  - 10 Confidential.InternalHost
+  - 12 Confidential.TestHost
+  - 14 Confidential.Guid
+  - 14 Confidential.IpAddress
+  - 16 Confidential.InternalLink
+  - 16 Confidential.InternalLink
+  - 18 Confidential.InternalLink
+  - 18 Confidential.InternalLink
+  - 20 Reference.GitHubNumber
+  - 21 Reference.GitHubNumber
+  - 21 Reference.InternalTicket
+  - 21 Reference.InternalTicket
+  - 22 Reference.CustomerNumber
+  - 22 Reference.CustomerNumber
+  - 26 Secrets.generic-api-key
+
+confidential-good.rst.txt:
+  - 17 Reference.CustomerNumber
+  - 18 Reference.CustomerNumber
+  - 18 Reference.CustomerNumber
+
+structure-bad.rst.txt:
+  - 7 Structure.ImageAlt
+  - 9 Structure.ImageAlt
+  - 23 Structure.HeadingLevel
+
+structure-good.rst.txt: []

@@ -1,0 +1,10 @@
+# gitleaks configuration of the documentation review: the default rules,
+# plus an allow-list for the review's own test fixtures, which contain fake secrets on purpose.
+title = "OmniaDocsG2 documentation review"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Documentation review fixtures"
+paths = ['''^\.github/docs-review/tests/''']

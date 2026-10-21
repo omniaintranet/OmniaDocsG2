@@ -1,0 +1,32 @@
+# Internal or sales language that must never be published.
+# Blocks the pull request. Add one phrase per line under "tokens".
+# Matching ignores case and only matches whole words.
+extends: existence
+message: "'%s' is internal or sales language. Describe what the feature does for the reader instead."
+level: error
+ignorecase: true
+nonword: false
+tokens:
+  - key selling points?
+  - unique selling points?
+  - selling points?
+  - USPs?
+  - upsell(?:s|ing)?
+  - up-sell(?:s|ing)?
+  - cross-sell(?:s|ing)?
+  - competitive (?:advantage|edge)s?
+  - sales pitch(?:es)?
+  - sales argument(?:s)?
+  - sales enablement
+  - win (?:more )?deals?
+  - close (?:more )?deals?
+  - talking points?
+  - beat the competition
+  - our competitors?
+  - monetiz(?:e|ation)
+  - revenue opportunit(?:y|ies)
+  - internal only
+  - for internal use
+  - do not publish
+  - do not share
+  - not for customers

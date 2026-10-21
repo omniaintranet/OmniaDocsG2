@@ -1,0 +1,21 @@
+# Promises about future releases. Reported, does not block.
+# Turned off for roadmap pages in ../../.vale.ini.
+extends: existence
+message: "'%s' promises a future change. Describe what is available now, or move the plan to the roadmap."
+level: warning
+ignorecase: true
+tokens:
+  - coming soon
+  - will be available
+  - will be added
+  - will be supported
+  - will be released
+  - in a future (?:release|version|update)
+  - in an upcoming (?:release|version|update)
+  - in a later (?:release|version|update)
+  - in the next (?:release|version|update)
+  - planned for
+  - is planned
+  - are planned
+  - on the roadmap
+  - later this year

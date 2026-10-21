@@ -1,0 +1,19 @@
+# Unfinished text in visible content. Blocks the pull request.
+# Notes in rst comments (".. REVIEW: ...") are not rendered and are not checked here.
+# Upper-case markers match exactly; (?i) makes a phrase ignore case.
+extends: existence
+message: "'%s' looks like an unfinished draft note. Finish the text or move the note into an rst comment."
+level: error
+ignorecase: false
+tokens:
+  - TODO
+  - TBD
+  - FIXME
+  - XXX
+  - WIP
+  - '(?i)lorem ipsum'
+  - '(?i)to be written'
+  - '(?i)add (?:a )?screenshot(?: here)?'
+  - '(?i)insert (?:a )?screenshot(?: here)?'
+  - '(?i)review note'
+  - '(?i)note to self'

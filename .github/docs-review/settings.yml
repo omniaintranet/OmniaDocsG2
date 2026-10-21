@@ -1,0 +1,50 @@
+# General settings of the documentation review (see README.md).
+
+# Files that are never reviewed (Sphinx does not build them either, see exclude_patterns in conf.py).
+exclude: ['_build/**', '.github/**', 'sample/**', 'samples/**']
+
+# Pages that are drafts. Draft notes in rst comments (".. REVIEW: ...") are expected there.
+# On other pages they are listed for information. A page is a draft when one of these
+# regular expressions matches one of its first 15 lines.
+drafts:
+  markers:
+    - '^:orphan:'
+    - '\(draft\)'
+
+# Rst comments that start with one of these words are draft notes.
+draft_note_words: [REVIEW, TODO, FIXME, TBD, DRAFT, NOTE TO SELF]
+
+# Turn off rules for whole files or folders without touching the page.
+# rule: a rule name, or a pattern such as "Confidential.*" or "*"
+# files: patterns relative to the repository root ("**" matches any folders)
+# reason: why (shown to nobody, but keep it for the next reader)
+suppress:
+  - rule: Omnia.FuturePromises
+    files: ['roadmap/**']
+    reason: Roadmap pages describe future plans on purpose.
+
+# Sphinx build. Only warnings that a pull request adds are reported, and they block it.
+build:
+  # Extra Sphinx options for both builds (-n reports every broken internal reference).
+  options: ['-n']
+  # Warnings that are never reported: they appear on every page or depend on the network.
+  ignore:
+    - '<rst_prolog>'                              # the empty raw directive in conf.py, once per page
+    - 'failed to reach any of the inventories'    # intersphinx inventory download
+    - "intersphinx inventory '.*' not fetchable"
+    - 'html_static_path entry .* does not exist'
+    - 'favicon file .* does not exist'
+
+# External links on changed lines, checked with Sphinx linkcheck. Reported as warnings.
+linkcheck:
+  enabled: true
+  timeout: 20
+  retries: 2
+  check_anchors: false
+  # Links that are never checked (regular expressions on the address)
+  ignore:
+    - '^https?://(?:[\w-]+\.)?(?:contoso|fabrikam|example)\.'
+    - '^https?://localhost'
+
+images:
+  extensions: [png, jpg, jpeg, gif, svg, webp, bmp]
