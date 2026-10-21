@@ -1,7 +1,7 @@
 Real-time visitor count
 ==============================================
 
-Use this block (called Analytics counter before) to display a simple analytics counter for a chosen website. Here's an example, just after setting up the block up, so not much has happened yet (image from Omnia 7.8).
+Use this block (called Analytics counter before) to display a simple analytics counter for a chosen website. Here's an example, just after setting up the block up, so not much has happened yet.
 
 .. image:: analytics-counter-example-78.png
 
