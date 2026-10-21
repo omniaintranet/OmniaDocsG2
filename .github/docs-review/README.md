@@ -14,6 +14,8 @@ Every pull request into `master` is checked by the workflow **Documentation revi
 GitHub Copilot can also review the wording of a pull request (see "Copilot review" below). It only comments and
 never blocks.
 
+The same rules also check the text that the repository's own automation writes (see "Automated updates" below).
+
 ## What is checked
 
 | Area | Rule | What it finds | Result |
@@ -110,6 +112,58 @@ wording, with suggested rewrites. Copilot reads the instructions from the pull r
 that file apply to the pull request that makes them. Request a review with **Reviewers > Copilot** on the pull
 request, or let a repository ruleset request it automatically.
 
+## Automated updates
+
+Two workflows write documentation without a person's pull request. Both run the same rules on the lines they
+change, before anything is published. They skip the Sphinx build comparison and the link check: the digest has its
+own build check, and the release-note validator allows no links or markup.
+
+| Workflow | What it writes | When a finding blocks |
+| --- | --- | --- |
+| **Documentation updates** (`latest-changes.yml`, daily) | `documentation-updates/index.rst`, pushed straight to `master` | The run fails before **Publish digest**: nothing is committed, the internal state is not advanced, and the next run classifies the same changes again. The findings are in the run's summary. |
+| **Hotfix Release Notes** (`hotfix-release-notes.yml`) | A draft pull request with the new release notes | The pull request still opens, so people can fix it. Its description starts with a **Caution** box and contains the review summary; the run shows a warning. If the review could not run, the description says so. |
+
+If the digest keeps failing on the same entry, the text comes from GitHub Copilot's description of a page change.
+Look at the run's summary: usually the finding is right and the next run words it differently. For a false alarm,
+use the options below (for example an `allow:` value or a phrase moved to "warning").
+
+The release-notes pull request is opened with the workflow's own token, and GitHub does not start other workflows
+for it, so the **Documentation review** check itself does not run there until someone pushes to the branch or
+closes and reopens the pull request.
+
+## Direct commits to master: repository ruleset
+
+Commits pushed straight to `master` (browser edits, uploads, local pushes) skip every pull request check. A
+repository ruleset can require a pull request with a green review for them. This is a repository setting:
+Christian Degn or Benny Eronson decides and applies it; the workflows do not change it.
+
+Steps (needs admin rights on the repository):
+
+1. **Settings > Rules > Rulesets > New ruleset > New branch ruleset.**
+2. **Ruleset name:** `Protect master`. **Enforcement status:** Active.
+3. **Target branches > Add target > Include default branch** (`master`).
+4. **Rules:** turn on
+   - **Restrict deletions** and **Block force pushes**;
+   - **Require a pull request before merging**, with **Required approvals** `0` (the check must pass, but nobody
+     has to approve) or `1` if every change should be approved by a second person;
+   - **Require status checks to pass > Add checks:** `Review changed documentation` (source: GitHub Actions). Leave
+     "Require branches to be up to date" off: `master` moves several times a day.
+5. **Bypass list:** the digest workflow pushes to `master` every day and needs to bypass the rule. GitHub does not
+   let the workflow's own token (`github-actions[bot]`) be a bypass actor, so choose one of these first:
+   - **A GitHub App** (recommended): create an app with *Contents: read and write* and *Pull requests: read and write*
+     on this repository, add it to the bypass list (**Add bypass > Apps**), store its id and private key as
+     repository secrets, and let `latest-changes.yml` push with a token from `actions/create-github-app-token`.
+     The same token in `hotfix-release-notes.yml` also makes the **Documentation review** check run on the
+     release-notes pull requests.
+   - **The digest opens a pull request** instead of pushing, and someone merges it every day. No bypass is needed,
+     but the digest is published later.
+   - Without either, the ruleset blocks the digest: its push fails safely and nothing is published.
+6. **Create**, then edit a page in the browser to check: GitHub now offers **Propose changes** on a new branch and
+   opens a pull request.
+
+Trade-off: browser edits and uploads then always go through a pull request (one more step, and a wait for the
+review check), and the digest needs the GitHub App or the pull request route above.
+
 ## Run the checks on your computer
 
 Needs Python 3.11 with `docs/requirements.txt` and `requirements.txt` from this folder installed,
@@ -127,6 +181,9 @@ python .github/scripts/docs-review/docs_review.py --base origin/master
 # review the files you name, completely
 python .github/scripts/docs-review/docs_review.py --files pages/delete-page/index.rst --no-fail
 
+# only your uncommitted changes, as the digest and release-note workflows do
+python .github/scripts/docs-review/docs_review.py --base HEAD --build never --linkcheck never
+
 # every page on the current checkout (slow; used for the baseline)
 python .github/scripts/docs-review/docs_review.py --all --no-fail
 ```
@@ -137,7 +194,9 @@ The summary is written to `_build/docs-review/summary.md`.
 
 - Screenshots are not checked automatically; they are listed for a person to look at.
 - Pull requests opened by the release-notes workflow with the default `GITHUB_TOKEN` do not start other workflows,
-  so this check does not run on them by itself. Commits pushed straight to `master` (for example "Refresh documentation
-  updates") are not reviewed at all.
+  so this check does not run on them by itself; the workflow adds its own review to the description instead (see
+  "Automated updates").
+- Commits that people push straight to `master` are not reviewed until a ruleset requires pull requests (see
+  "Direct commits to master").
 - The test examples live in `tests/fixtures/` as `.rst.txt` files: Sphinx builds every `.rst` file in the repository,
   including under `.github/`, so real `.rst` files there would be published.

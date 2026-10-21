@@ -6,11 +6,14 @@ Run: python .github/scripts/docs-review/test_docs_review.py
 """
 
 import collections
+import importlib.util
 import json
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import yaml
 
@@ -19,6 +22,7 @@ import docs_review  # noqa: E402
 
 TESTS = docs_review.CONFIG_DIR / "tests"
 FIXTURES = TESTS / "fixtures"
+DIGEST_SCRIPT = docs_review.ROOT / ".github" / "scripts" / "latest-changes" / "update.py"
 
 
 def expected_findings() -> dict:
@@ -70,6 +74,71 @@ class FixtureTest(unittest.TestCase):
         for name in ("tone-good.rst.txt", "confidential-good.rst.txt", "structure-good.rst.txt"):
             serious = [key for key, sev in self.severity.items() if key[0] == name and sev != "info"]
             self.assertEqual(serious, [], name)
+
+
+class DigestReviewTest(unittest.TestCase):
+    """latest-changes.yml reviews the digest with --base HEAD before it commits anything."""
+
+    PAGES = {"guide/index.rst": {"title": "Guide"}, "blocks/index.rst": {"title": "Blocks"}}
+
+    @classmethod
+    def setUpClass(cls):
+        spec = importlib.util.spec_from_file_location("digest", DIGEST_SCRIPT)
+        cls.digest = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(cls.digest)
+
+    def setUp(self):
+        temp = tempfile.TemporaryDirectory()
+        self.addCleanup(temp.cleanup)
+        self.temp = Path(temp.name)
+        self.repo = self.temp / "repo"
+        self.repo.mkdir()
+        patcher = mock.patch.object(docs_review, "ROOT", self.repo)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.git("init", "-q")
+        # Published before the review existed: unchanged lines are not reviewed again.
+        self.published = [self.entry("2026-10-01", "guide/index.rst", "Described the key selling point of guides.")]
+        self.write_digest(self.published)
+        self.git("add", "-A")
+        self.git("commit", "-q", "-m", "Published digest")
+
+    def git(self, *args):
+        subprocess.run(["git", "-c", "user.name=Test", "-c", "user.email=test@example.invalid", *args],
+                       cwd=self.repo, check=True, capture_output=True)
+
+    @staticmethod
+    def entry(date, path, description):
+        return {"date": date, "path": path, "classification": "Added information", "description": description}
+
+    def write_digest(self, entries):
+        path = self.repo / self.digest.DIGEST
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(self.digest.render(entries, self.PAGES), encoding="utf-8", newline="\n")
+
+    def review(self, new_entry):
+        self.write_digest([new_entry, *self.published])
+        out = self.temp / "out"
+        code = docs_review.main(["--base", "HEAD", "--build", "never", "--linkcheck", "never", "--out", str(out),
+                                 "--subject", "the documentation updates digest"])
+        findings = json.loads((out / "findings.json").read_text(encoding="utf-8"))
+        return code, findings, (out / "summary.md").read_text(encoding="utf-8")
+
+    def test_sales_language_in_a_new_entry_blocks_publication(self):
+        code, findings, text = self.review(
+            self.entry("2026-10-21", "blocks/index.rst", "Added the key selling point of the block gallery."))
+        self.assertEqual(code, 1)
+        lines = (self.repo / self.digest.DIGEST).read_text(encoding="utf-8").splitlines()
+        bad_line = next(n for n, line in enumerate(lines, 1) if "block gallery" in line)
+        self.assertEqual([(f["file"], f["line"], f["rule"], f["severity"]) for f in findings],
+                         [(self.digest.DIGEST, bad_line, "Omnia.InternalLanguage", "error")])
+        self.assertIn("must be fixed before publishing the documentation updates digest", text)
+
+    def test_clean_entry_passes(self):
+        code, findings, text = self.review(
+            self.entry("2026-10-21", "blocks/index.rst", "Added an example of the block gallery settings."))
+        self.assertEqual((code, findings), (0, []))
+        self.assertIn("nothing blocks the documentation updates digest", text)
 
 
 class HelperTest(unittest.TestCase):

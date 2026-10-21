@@ -2,7 +2,9 @@
 """Rule-based review of documentation changes (see .github/docs-review/README.md).
 
 Modes:
-  --base REF        review what the working tree changes compared with REF (pull requests)
+  --base REF        review what the working tree changes compared with REF (pull requests;
+                    --base HEAD reviews only uncommitted changes, used by the digest and
+                    release-note workflows before they publish)
   --all             review every page on the current checkout (baseline)
   --files F [F ...] review the given files completely (test fixtures)
 
@@ -63,8 +65,8 @@ class Finding:
 # ---------------------------------------------------------------- helpers
 
 
-def run(cmd: list[str], cwd: Path = ROOT, check: bool = True, env: dict | None = None) -> str:
-    result = subprocess.run(cmd, cwd=cwd, env=env, capture_output=True, text=True, encoding="utf-8", errors="replace")
+def run(cmd: list[str], cwd: Path | None = None, check: bool = True, env: dict | None = None) -> str:
+    result = subprocess.run(cmd, cwd=cwd or ROOT, env=env, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if check and result.returncode != 0:
         raise RuntimeError(f"{' '.join(cmd[:4])} ... failed ({result.returncode}):\n{result.stderr[-2000:]}")
     return result.stdout
@@ -444,7 +446,7 @@ class Review:
             common = ["--config", str(GITLEAKS_CONFIG), "--report-format", "json", "--report-path", str(report),
                       "--exit-code", "0", "--no-banner", "--redact"]
             results = []
-            if base:
+            if base and git("rev-list", "--count", f"{base}..HEAD").strip() != "0":
                 run([gitleaks, "git", "--log-opts", f"{base}..HEAD", *common, str(ROOT)])
                 results = json.loads(report.read_text(encoding="utf-8") or "[]")
             # Files given by name, and uncommitted files in a local review, are scanned as they are on disk.
@@ -646,15 +648,16 @@ def table(findings: list[Finding], link_base: str | None, limit: int = 60) -> li
     return rows
 
 
-def summary(review: Review, scope: str, link_base: str | None, commit: str | None) -> str:
+def summary(review: Review, scope: str, link_base: str | None, commit: str | None, subject: str | None = None) -> str:
     by_severity = {s: [f for f in sorted(review.findings, key=sort_key) if f.severity == s] for s in SEVERITIES}
     errors, warnings, infos = by_severity["error"], by_severity["warning"], by_severity["info"]
     readme = f"{link_base}/{README_PATH}" if link_base else README_PATH
     lines = [COMMENT_MARKER]
     if errors:
-        lines.append(f"## ❌ Documentation review: {len(errors)} problem(s) must be fixed before merging")
+        before = f"publishing {subject}" if subject else "merging"
+        lines.append(f"## ❌ Documentation review: {len(errors)} problem(s) must be fixed before {before}")
     else:
-        lines.append("## ✅ Documentation review: nothing blocks this pull request")
+        lines.append(f"## ✅ Documentation review: nothing blocks {subject or 'this pull request'}")
     lines += ["", f"{scope} Checked: audience and tone, confidentiality, structure. "
                   f"[What each check does, and what to do about a false alarm]({readme}).", ""]
     if errors:
@@ -675,7 +678,7 @@ def summary(review: Review, scope: str, link_base: str | None, commit: str | Non
         lines += ["No findings.", ""]
     for note in review.notes:
         lines += [f"> {note}", ""]
-    footer = "Errors block the check; warnings and information do not."
+    footer = f"Errors block {'publishing' if subject else 'the check'}; warnings and information do not."
     if commit:
         footer = f"Updated for commit {commit[:7]}. " + footer
     lines.append(f"<sub>{footer}</sub>")
@@ -720,6 +723,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--link-base", help="URL prefix for links to files, e.g. https://github.com/o/r/blob/<sha>")
     parser.add_argument("--commit", help="commit shown in the summary")
     parser.add_argument("--no-fail", action="store_true", help="exit 0 even when errors are found")
+    parser.add_argument("--subject", help="what is reviewed when it is not a pull request, "
+                                          "e.g. 'the documentation updates digest' (summary wording)")
     args = parser.parse_args(argv)
 
     config = Config()
@@ -735,8 +740,9 @@ def main(argv: list[str] | None = None) -> int:
             if config.is_doc(path) and letter != "D":
                 changed[path] = None if letter == "A" and path not in lines else lines.get(path, set())
         images = {p: s for p, s in status.items() if config.is_image(p) and s != "D"}
-        scope = (f"{len(changed)} changed page(s) and {len(images)} image(s) in this pull request."
-                 if changed or images else "This pull request changes no documentation pages or images.")
+        what = "this change" if args.subject else "this pull request"
+        scope = (f"{len(changed)} changed page(s) and {len(images)} image(s) in {what}."
+                 if changed or images else f"{what[0].upper()}{what[1:]} changes no documentation pages or images.")
     elif args.all:
         tracked = git("ls-files").splitlines()
         changed = {p: None for p in tracked if config.is_doc(p)}
@@ -780,7 +786,7 @@ def main(argv: list[str] | None = None) -> int:
     (out / "findings.json").write_text(json.dumps(
         [dataclasses.asdict(f) | {"area": f.area} for f in sorted(review.findings, key=sort_key)], indent=2),
         encoding="utf-8")
-    text = summary(review, scope, args.link_base, args.commit)
+    text = summary(review, scope, args.link_base, args.commit, args.subject)
     (out / "summary.md").write_text(text, encoding="utf-8")
     if args.step_summary and os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:

@@ -281,6 +281,9 @@ substantive classification instead.
 Return ONLY a JSON object with exactly classification and description.
 Description is one concise English sentence, at most 180 characters, identifying
 what was changed. Use plain text, no links, markup, PRs, GitHub or git details.
+Customers read it: use neutral, factual wording. No internal, sales or marketing
+language (such as selling points, upsell or competitive advantage), no superlatives,
+and no promises about future releases.
 If uncertain, describe the visible change conservatively; do not invent details.
 DATA:
 ''' + json.dumps(data, ensure_ascii=False)

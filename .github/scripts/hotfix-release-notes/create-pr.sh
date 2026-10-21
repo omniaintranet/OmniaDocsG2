@@ -5,6 +5,9 @@ set -euo pipefail
 INPUT_FILE="/tmp/release-issues.json"
 GENERATED_FILE="/tmp/generated-release-notes.rst"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
+# Written by review-release-notes.sh in the step before this one.
+REVIEW_DIR="/tmp/docs-review-release-notes"
+REVIEW_MARKER="<!-- release-notes-review -->"
 
 if [ ! -f "$INPUT_FILE" ]; then
   echo "Input file not found: $INPUT_FILE"
@@ -44,6 +47,29 @@ fi
 
 branch_name="hotfix-release-notes-${omnia_version}"
 pr_title="Release notes ${omnia_version}"
+
+# The pull request body: the instructions for the reviewer, then the documentation review.
+# Everything from REVIEW_MARKER on is replaced when the pull request is updated.
+write_review_section() {
+  printf '%s\n\n' "$REVIEW_MARKER"
+  if [ ! -s "$REVIEW_DIR/summary.md" ]; then
+    printf '> [!WARNING]\n> The documentation review did not run for these release notes. Check the wording, customer references and confidentiality by hand.\n'
+    return
+  fi
+  local errors=0
+  if [ -s "$REVIEW_DIR/findings.json" ]; then
+    errors=$(jq '[.[] | select(.severity == "error")] | length' "$REVIEW_DIR/findings.json")
+  fi
+  if [ "$errors" -gt 0 ]; then
+    printf '> [!CAUTION]\n> The documentation review found **%s problem(s) that must be fixed** before this pull request is marked ready. See "Must fix" below.\n\n' "$errors"
+  fi
+  cat "$REVIEW_DIR/summary.md"
+}
+
+write_pr_body() {
+  printf '%s\n\n' "Automatically generated draft release notes for Omnia ${omnia_version}. Before marking this PR ready, verify the wording, included issues, customer references, and absence of private customer information."
+  write_review_section
+}
 
 report_pr_url() {
   local pr_url
@@ -122,6 +148,16 @@ if [ -n "$existing_pr" ]; then
   git push \
     --force-with-lease="refs/heads/${branch_name}:${remote_sha}" \
     --set-upstream origin "$branch_name"
+  # Keep what people wrote above the review section; replace the review itself.
+  body_file=$(mktemp)
+  current_body=$(gh pr view "$branch_name" --json body --jq '.body')
+  if [[ "$current_body" == *"$REVIEW_MARKER"* ]]; then
+    printf '%s' "${current_body%%"$REVIEW_MARKER"*}" > "$body_file"
+  else
+    printf '%s\n\n' "$current_body" > "$body_file"
+  fi
+  write_review_section >> "$body_file"
+  gh pr edit "$branch_name" --body-file "$body_file" > /dev/null
   report_pr_url
   echo "Draft PR #$existing_pr updated successfully."
   exit 0
@@ -129,10 +165,13 @@ fi
 
 git push --set-upstream origin "$branch_name"
 
+body_file=$(mktemp)
+write_pr_body > "$body_file"
+
 gh pr create \
   --draft \
   --title "$pr_title" \
-  --body "Automatically generated draft release notes for Omnia ${omnia_version}. Before marking this PR ready, verify the wording, included issues, customer references, and absence of private customer information." \
+  --body-file "$body_file" \
   --head "$branch_name" \
   --reviewer ChristianHDegn
 
