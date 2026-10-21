@@ -3,11 +3,11 @@ User profile card
 
 The user profile card will be shown (if the option is activated here) whenever you click on a user name in Omnia. The user profile card is designed to align with user profile cards in other services in Microsoft 365.
 
-Here's an exmple from Omnia 7.8:
+Here's an exmple:
 
 .. image:: profile-card-example-78.png
 
-The user profile card also includes the possibility to browse who reports to whom in the organization. Here's an example from Omnia 7.8:
+The user profile card also includes the possibility to browse who reports to whom in the organization, for example:
 
 .. image:: profile-card-example-2-78.png
 
