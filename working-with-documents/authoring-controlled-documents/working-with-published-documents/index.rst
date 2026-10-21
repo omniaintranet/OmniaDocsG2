@@ -222,7 +222,7 @@ These are the same options as when you create a draft from a published document.
 
 Creating sign-off requests for documents
 *******************************************
-In Omnia 7.7 and later, sign-off requests can be created for controlled documents. To send a request for a single document, use the option on the PUBLISHED tab.
+Sign-off requests can be created for controlled documents. To send a request for a single document, use the option on the PUBLISHED tab.
 
 For this to be available, the tenant feature "Sign-off request for controlled documents" must be active and the option "Enable sign-off request" must be selected for the document type.
 
