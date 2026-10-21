@@ -1,0 +1,24 @@
+# Marketing superlatives in neutral documentation. Reported, does not block.
+extends: existence
+message: "'%s' is marketing language. Prefer a neutral description of what the feature does."
+level: warning
+ignorecase: true
+tokens:
+  - best-in-class
+  - best in class
+  - best of breed
+  - revolutionary
+  - revolutioni[sz]es?
+  - game-?changers?
+  - game-?changing
+  - world-class
+  - cutting-edge
+  - state-of-the-art
+  - industry-leading
+  - market-leading
+  - unparalleled
+  - unmatched
+  - groundbreaking
+  - second to none
+  - supercharge[sd]?
+  - next-level

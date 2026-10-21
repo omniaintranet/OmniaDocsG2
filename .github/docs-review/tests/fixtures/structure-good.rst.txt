@@ -1,0 +1,28 @@
+Page settings
+=============
+
+Layout
+------
+
+.. image:: layout-settings.png
+   :alt: The layout settings of a page
+
+.. figure:: layout-preview.png
+   :alt: A preview of the two-column layout
+   :width: 600px
+
+   The layout preview.
+
+Columns
+*******
+
+Width
+^^^^^
+
+Permissions
+-----------
+
+Owners
+******
+
+Owners can change every setting.

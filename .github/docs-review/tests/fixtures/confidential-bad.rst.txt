@@ -1,0 +1,26 @@
+Connect the tenant
+==================
+
+Contact christian.hansen@customer-company.com if the sync fails.
+
+Open https://acme.sharepoint.com/sites/intranet and https://acme-admin.sharepoint.com to check the settings.
+
+The test tenant is https://qapreprod2.omniacloud.net and the demo is at https://preciodemo.omniacloud.net.
+
+During development the service runs on http://localhost:44350 and https://omnia-build.internal/status.
+
+Our staging site is https://intranet-staging.acme-corp.com.
+
+The tenant id is 3f2c9a10-7d41-4b8e-9e0a-2c55d1f4a7b2 and the server is 10.20.30.40.
+
+See https://github.com/omniaintranet/OmniaMono/issues/4331 and https://dev.azure.com/omnia-source/Omnia/_workitems/edit/12879.
+
+The card is at https://trello.com/c/AbC123xy and the ticket at https://omnia.zendesk.com/agent/tickets/59036.
+
+- Fixed sorting in Page Rollup (#4331)
+- Fixed an issue reported in PR #4800 and AB#12345
+- Search now returns results for long queries (#59036, #166490)
+
+Set the value in the app settings::
+
+   client_secret = "Q8vT2mXz7RkL4pWn9YsB3cHd6JfG1aEu"

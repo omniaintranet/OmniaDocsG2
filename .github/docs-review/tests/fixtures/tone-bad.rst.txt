@@ -1,0 +1,26 @@
+Release 7.12
+============
+
+The new Page Rollup layout is the key selling point of this release.
+
+- Smart properties are a strong selling point for large customers.
+- Use the analytics widget to upsell the premium package.
+- The editor gives us a competitive advantage.
+- Our USP is the publishing workflow.
+- Add this to your sales pitch to win deals.
+
+TODO: describe the new settings.
+
+The search settings are TBD.
+
+FIXME the screenshot is outdated.
+
+Lorem ipsum dolor sit amet.
+
+Omnia offers a best-in-class, revolutionary editor that is a real game-changer for world-class intranets.
+
+Multilingual templates are coming soon and will be available in 7.14. Export to PDF is planned for a future release.
+
+.. REVIEW: check the exact wording with the product owner before publishing.
+
+.. Each section lists the key selling points only.

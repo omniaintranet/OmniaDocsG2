@@ -1,0 +1,93 @@
+# Confidentiality checks of the documentation review (see README.md).
+#
+# The review reads the raw .rst source, including rst comments and code samples:
+# this repository is public, so anything in the source can be read by anyone.
+#
+# Each pattern has:
+#   id        the rule name shown in the review comment
+#   severity  error (blocks the pull request), warning or info
+#   message   what the reader of the review comment should do
+#   regex     a Python regular expression that finds the text
+#   allow     optional: regular expressions for allowed matches (the whole match must fit one of them)
+# Matching ignores upper and lower case. Wrap regular expressions in single quotes.
+
+patterns:
+  - id: Confidential.Email
+    severity: error
+    message: Email address. Use a placeholder such as anna@contoso.com.
+    regex: '[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}'
+    allow:
+      - '[^@]+@(?:contoso|fabrikam|northwind|adventureworks|example)\.(?:com|org|net)'
+      - 'no-reply@(?:omniacloud\.net|sharepoint\.com)'
+      - '[^@]+@[^@]+\.(?:png|jpe?g|gif|svg|webp)'   # image file names such as icon@2x.png
+
+  - id: Confidential.TenantHost
+    severity: error
+    message: Real tenant or Azure host name. Use a placeholder tenant such as contoso.sharepoint.com.
+    regex: '(?<![\w.\-\]>}])[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)*\.(?:sharepoint\.com|onmicrosoft\.com|omniacloud\.net|azurewebsites\.net|cloudapp\.azure\.com|cloudapp\.net|(?:blob|file|queue|table)\.core\.windows\.net|search\.windows\.net|database\.windows\.net|servicebus\.windows\.net|vault\.azure\.net|azureedge\.net|azurefd\.net|trafficmanager\.net)'
+    allow:
+      # Placeholder tenants used in examples
+      - '(?:contoso|fabrikam|northwind|adventureworks|example|tenant|yourtenant|yourtenantname|your-tenant|mytenant|ourcompany|company)(?:-admin|-my)?\.[a-z.]+'
+      # Public Omnia service hosts
+      - 'auth\.omniacloud\.net'
+
+  - id: Confidential.InternalHost
+    severity: error
+    message: Local or internal host name. Readers cannot reach it; use a placeholder or remove it.
+    regex: '\blocalhost\b|\b127\.0\.0\.1\b|(?<![\w.-])[a-z0-9][a-z0-9.-]*\.(?:local|localhost|internal|intranet|corp|lan)(?![\w-])(?!\.\w)'
+
+  - id: Confidential.TestHost
+    severity: error
+    message: Development, test or demo host name. Use a placeholder such as contoso.omniacloud.net.
+    regex: '(?<![\w.-])(?:[a-z0-9-]+\.)*[a-z0-9-]*(?:dev|test|qa|staging|stage|preprod|uat|sandbox|demo)\d*\.(?:[a-z0-9-]+\.)*(?:com|net|se|io|cloud|dk|no|fi)\b'
+    allow:
+      - '(?:[a-z0-9-]+\.)*(?:contoso|fabrikam|example)\.[a-z.]+'
+      - 'dev\.azure\.com'   # reported as Confidential.InternalLink
+      # Public Microsoft hosts, such as the Teams Developer Portal dev.teams.microsoft.com
+      - '(?:[a-z0-9-]+\.)*(?:microsoft|office|azure|windows|live|bing)\.(?:com|net)'
+
+  - id: Confidential.InternalLink
+    severity: error
+    message: Link to an internal system that readers cannot open (private GitHub repository, Azure DevOps, Trello, Zendesk agent view).
+    regex: 'github\.com/omniaintranet/[\w-]+(?:\.[\w-]+)*|dev\.azure\.com/[\w-]+|[\w-]+\.visualstudio\.com|trello\.com/[bc]/\w+|[\w-]+\.zendesk\.com/agent/[\w/]*'
+    allow:
+      # Public repositories
+      - 'github\.com/omniaintranet/OmniaDocsG2'
+
+  - id: Confidential.Guid
+    severity: error
+    message: GUID (tenant, app or object id). Remove it or use a placeholder such as 00000000-0000-0000-0000-000000000000.
+    regex: '\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b'
+    allow:
+      - '0{8}-0{4}-0{4}-0{4}-0{12}'
+      # Well-known Microsoft application ids (SharePoint Online, Microsoft Graph, Azure AD Graph)
+      - '00000003-0000-0ff1-ce00-000000000000'
+      - '0000000[23]-0000-0000-c000-000000000000'
+
+  - id: Confidential.IpAddress
+    severity: error
+    message: IP address. Remove it, or use an address from a documentation range such as 192.0.2.10.
+    regex: '(?<![\w.])(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\.){3}(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(?![\w.]\d)'
+    allow:
+      - '0\.0\.0\.0'
+      - '192\.0\.2\.\d+'
+      - '198\.51\.100\.\d+'
+      - '203\.0\.113\.\d+'
+
+  - id: Reference.InternalTicket
+    severity: error
+    message: Internal ticket or card id. Public references may only be verified Zendesk or OIM numbers, written as (#59036).
+    regex: '\bAB#\d+|\b(?:OmniaMono|Omnia-TestAutomation|OmniaDocsG2)#\d+|\b(?:pull request|PR|GitHub issue|GH issue|card)\s*#\d+|\bGH-\d+\b'
+
+# Public "#" references, such as "(#59036)" at the end of a release-note bullet.
+# Only verified Zendesk or OIM numbers may appear (.github/skills/hotfix-release-notes/SKILL.md).
+# Zendesk and OIM numbers are much higher than internal GitHub card numbers, so a number below
+# min_customer_reference is reported as an error. Raise the limit when GitHub card numbers get close to it.
+# Numbers at or above the limit are listed for a human to verify.
+customer_references:
+  regex: '(?<![\w&/:;])#(\d+)(?=[\s),.;]|$)'
+  min_customer_reference: 10000
+  error_id: Reference.GitHubNumber
+  error_message: '#{number} looks like an internal GitHub card number. Public references may only be verified Zendesk or OIM numbers.'
+  info_id: Reference.CustomerNumber
+  info_message: 'Customer reference #{number}: check that it is a Zendesk or OIM number from the source card.'

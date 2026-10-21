@@ -1,0 +1,30 @@
+Connect the tenant
+==================
+
+Ask anna@contoso.com to approve the request. Notifications are sent from no-reply@omniacloud.net.
+
+Open https://contoso.sharepoint.com/sites/intranet and https://contoso-admin.sharepoint.com, or
+https://[yourtenantname]-admin.sharepoint.com for your own tenant.
+
+Omnia runs at https://contoso.omniacloud.net and signs in through https://auth.omniacloud.net.
+
+Microsoft Graph has the application id 00000003-0000-0000-c000-000000000000.
+
+Use an address from the documentation range, for example 192.0.2.10.
+
+The source of this documentation is https://github.com/omniaintranet/OmniaDocsG2.
+
+- Search now returns results for long queries (#59036)
+- Document Bulk Update handles large libraries (#59558, #166490)
+
+Colours in a sample style sheet are not references:
+
+.. code-block:: css
+
+   .title { color: #333; }
+
+.. vale off
+
+Write the address as admin@customer.com only in this quoted example.
+
+.. vale on

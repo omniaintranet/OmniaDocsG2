@@ -1,0 +1,31 @@
+Release 7.12
+============
+
+The new Page Rollup layout shows more information on each card and loads faster.
+
+- Smart properties fill in document metadata automatically.
+- Editors can preview a template in each language before they publish it.
+- Administrators can choose which page types are included in search.
+- The log file will be available for 14 days, and new headings will be added to the navigation automatically.
+
+Code samples are not checked for tone:
+
+.. code-block:: text
+
+   TODO: this placeholder is part of a sample configuration
+
+A sentence that must stay as it is can be wrapped in vale off and on comments:
+
+.. vale off
+
+The phrase "key selling point" is quoted here on purpose.
+
+.. vale on
+
+One rule can be turned off for a passage:
+
+.. vale Omnia.FuturePromises = NO
+
+The connector will be available in a future release.
+
+.. vale Omnia.FuturePromises = YES

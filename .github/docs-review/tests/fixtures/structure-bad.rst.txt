@@ -1,0 +1,26 @@
+Page settings
+=============
+
+Layout
+------
+
+.. image:: layout-settings.png
+
+.. figure:: layout-preview.png
+   :width: 600px
+
+   The layout preview.
+
+Columns
+*******
+
+Width
+^^^^^
+
+Permissions
+===========
+
+Owners
+^^^^^^
+
+Owners can change every setting.
