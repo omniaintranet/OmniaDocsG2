@@ -41,7 +41,7 @@ The following settings are available:
 
 .. image:: action-button-v7-settings-78.png
 
-The analytics option can be available in Omnia 7.8 and later, if analytics is active in the tenant. For more information, see below.
+The analytics option can be available, if analytics is active in the tenant. For more information, see below.
 
 Button Style
 --------------
