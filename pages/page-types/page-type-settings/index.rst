@@ -44,7 +44,7 @@ In this example, the page should be automatically archived one month after the a
 
 Note that if the value for the base property can be edited, which often is the case for Article date, the automatic archiving date is automatically recalculated if the value of the base property is edited.
 
-In Omnia 7.9, there's a small addition. Now you can set both plus and minus for the recalculation.
+You can set both plus and minus for the recalculation.
 
 Automatic termination
 -----------------------
@@ -108,7 +108,7 @@ The following settings can be available for a property (not all are shown in the
 
 Enable event tracking
 ************************
-This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant. 
+This option is available, if Matomo analytics is used in the tenant. 
 
 If analytics data is collected by Matomo, navigation is always tracked. Here you can add different Matomo events for pages, to also be tracked, if needed. Also note that analytics data collecting must be on for the business profile for this to work.
 
