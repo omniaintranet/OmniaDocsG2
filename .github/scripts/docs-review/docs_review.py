@@ -504,12 +504,19 @@ class Review:
             return
         ignore = [re.compile(p) for p in settings.get("ignore", [])]
         with tempfile.TemporaryDirectory() as tmp:
-            run([sys.executable, "-m", "sphinx", "-b", "linkcheck", "-q", "-j", "auto",
-                 "-D", f"linkcheck_timeout={settings.get('timeout', 20)}",
-                 "-D", f"linkcheck_retries={settings.get('retries', 2)}",
-                 "-D", f"linkcheck_anchors={1 if settings.get('check_anchors') else 0}",
-                 str(ROOT), tmp, *docs], check=False)
-            output = Path(tmp) / "output.json"
+            # -D cannot set linkcheck_timeout (its default is None, so the value stays a string),
+            # so a wrapper configuration runs the repository's conf.py and adds the link settings.
+            conf_dir = Path(tmp) / "conf"
+            conf_dir.mkdir()
+            (conf_dir / "conf.py").write_text("\n".join([
+                f"exec(compile(open({str(ROOT / 'conf.py')!r}, encoding='utf-8').read(), 'conf.py', 'exec'))",
+                f"linkcheck_timeout = {int(settings.get('timeout', 20))}",
+                f"linkcheck_retries = {int(settings.get('retries', 2))}",
+                f"linkcheck_anchors = {bool(settings.get('check_anchors', False))}",
+                ""]), encoding="utf-8")
+            run([sys.executable, "-m", "sphinx", "-b", "linkcheck", "-q", "-N", "-j", "auto", "-c", str(conf_dir),
+                 str(ROOT), str(Path(tmp) / "out"), *docs], check=False)
+            output = Path(tmp) / "out" / "output.json"
             ran = output.exists()
             rows = [json.loads(l) for l in output.read_text(encoding="utf-8").splitlines() if l.strip()] if ran else []
         if not ran:
@@ -525,19 +532,21 @@ class Review:
                      f"Link does not work: {row['uri']} ({str(reason)[:150]})")
 
 
+ANSI = re.compile(r"\x1b\[[0-9;]*m")
 WARNING_LINE = re.compile(r"^(?:(?P<loc>.*?)(?::(?P<line>\d+))?: )?(?P<sev>WARNING|ERROR|SEVERE|CRITICAL): (?P<msg>.*)$")
 
 
 def sphinx_warnings(src: Path, out: Path, options: list[str], ignore: list[re.Pattern]):
     warn_file = out.parent / (out.name + "-warnings.txt")
-    result = subprocess.run([sys.executable, "-m", "sphinx", "-b", "html", "-q", "-j", "auto", *options,
+    result = subprocess.run([sys.executable, "-m", "sphinx", "-b", "html", "-q", "-N", "-j", "auto", *options,
                              "-w", str(warn_file), str(src), str(out)],
                             cwd=src, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if result.returncode != 0:
         raise RuntimeError(f"Sphinx build of {src} failed:\n{result.stderr[-3000:]}")
     prefixes = {str(src) + os.sep, str(src).replace("\\", "/") + "/", str(src.resolve()) + os.sep}
     records: list[list] = []
-    for raw in warn_file.read_text(encoding="utf-8", errors="replace").splitlines():
+    text = ANSI.sub("", warn_file.read_text(encoding="utf-8", errors="replace"))
+    for raw in text.splitlines():
         match = WARNING_LINE.match(raw)
         if match:
             records.append([match.group("loc") or "", int(match.group("line")) if match.group("line") else None,

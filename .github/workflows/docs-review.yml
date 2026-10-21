@@ -1,0 +1,132 @@
+name: Documentation review
+
+# Checks the documentation that a pull request changes before it is published.
+# What each check does: .github/docs-review/README.md
+
+on:
+  pull_request:
+    branches: [master]
+
+permissions: {}
+
+concurrency:
+  group: docs-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+env:
+  VALE_VERSION: "3.24.0"
+  VALE_SHA256: 867534ddb678abca7f214bc4706ead0922bd5252ffe8035fc227013f66c8b214
+  GITLEAKS_VERSION: "8.30.1"
+  GITLEAKS_SHA256: 551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb
+
+jobs:
+  review:
+    name: Review changed documentation
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    # Runs code from the pull request (Sphinx runs conf.py), so it only gets read access.
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out the pull request merged into master
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: |
+            docs/requirements.txt
+            .github/docs-review/requirements.txt
+
+      - name: Install Sphinx, Vale and gitleaks
+        run: |
+          python -m pip install -r docs/requirements.txt -r .github/docs-review/requirements.txt
+          bin="$RUNNER_TEMP/bin"
+          mkdir -p "$bin"
+          curl -fsSL -o "$RUNNER_TEMP/vale.tar.gz" \
+            "https://github.com/errata-ai/vale/releases/download/v${VALE_VERSION}/vale_${VALE_VERSION}_Linux_64-bit.tar.gz"
+          echo "${VALE_SHA256}  $RUNNER_TEMP/vale.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/vale.tar.gz" -C "$bin" vale
+          curl -fsSL -o "$RUNNER_TEMP/gitleaks.tar.gz" \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          echo "${GITLEAKS_SHA256}  $RUNNER_TEMP/gitleaks.tar.gz" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/gitleaks.tar.gz" -C "$bin" gitleaks
+          echo "$bin" >> "$GITHUB_PATH"
+
+      - name: Test the review rules against the fixtures
+        run: python .github/scripts/docs-review/test_docs_review.py
+
+      - name: Review the changes
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+        run: >-
+          python .github/scripts/docs-review/docs_review.py
+          --base "$BASE_SHA"
+          --out "$RUNNER_TEMP/docs-review"
+          --annotations
+          --link-base "$REPO_URL/blob/$HEAD_SHA"
+          --commit "$HEAD_SHA"
+
+      - name: Keep the summary for the pull request comment
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: docs-review
+          path: ${{ runner.temp }}/docs-review/
+          if-no-files-found: ignore
+          retention-days: 7
+
+  comment:
+    name: Post the review summary
+    needs: review
+    # Pull requests from forks get a read-only token; they see the summary in the job instead.
+    if: >-
+      always() && needs.review.result != 'cancelled' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # Does not check out or run code from the pull request.
+    permissions:
+      pull-requests: write
+
+    steps:
+      - name: Get the summary
+        id: download
+        continue-on-error: true
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: docs-review
+          path: docs-review
+
+      - name: Create or update the summary comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          marker='<!-- docs-review-summary -->'
+          body=docs-review/summary.md
+          if [ ! -s "$body" ]; then
+            mkdir -p docs-review
+            printf '%s\n## ⚠️ Documentation review could not finish\n\nThe check stopped before it produced a summary. See the [job log](%s); a developer may need to look at it.\n' \
+              "$marker" "$RUN_URL" > "$body"
+          fi
+          id=$(gh api "repos/$REPO/issues/$PR/comments" --paginate \
+            --jq ".[] | select(.user.login == \"github-actions[bot]\" and (.body | startswith(\"$marker\"))) | .id" \
+            | head -n 1)
+          if [ -n "$id" ]; then
+            gh api --method PATCH "repos/$REPO/issues/comments/$id" -F "body=@$body" > /dev/null
+            echo "Updated comment $id"
+          else
+            gh api --method POST "repos/$REPO/issues/$PR/comments" -F "body=@$body" > /dev/null
+            echo "Created a new summary comment"
+          fi

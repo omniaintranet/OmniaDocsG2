@@ -43,6 +43,8 @@ patterns:
     allow:
       - '(?:[a-z0-9-]+\.)*(?:contoso|fabrikam|example)\.[a-z.]+'
       - 'dev\.azure\.com'   # reported as Confidential.InternalLink
+      # Public Microsoft hosts, such as the Teams Developer Portal dev.teams.microsoft.com
+      - '(?:[a-z0-9-]+\.)*(?:microsoft|office|azure|windows|live|bing)\.(?:com|net)'
 
   - id: Confidential.InternalLink
     severity: error

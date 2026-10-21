@@ -1,15 +1,17 @@
 # Promises about future releases. Reported, does not block.
-# Turned off for roadmap pages in ../../.vale.ini.
+# Turned off for roadmap pages (see "suppress" in ../../../settings.yml).
+# Plain "will be available" is not listed: the docs use it for current behaviour
+# ("the log file will be available for 14 days").
 extends: existence
 message: "'%s' promises a future change. Describe what is available now, or move the plan to the roadmap."
 level: warning
 ignorecase: true
 tokens:
   - coming soon
-  - will be available
-  - will be added
-  - will be supported
-  - will be released
+  - will be (?:added|available|released|supported|improved|updated) (?:soon|later)
+  - will be (?:available|released|supported|added) in (?:a |an |the )?(?:future|next|upcoming|later|coming)
+  - will be (?:available|released|supported|added) (?:from|in|with) (?:Omnia |version |release )?\d+\.\d+
+  - (?:more )?(?:information|details|content) will be added
   - in a future (?:release|version|update)
   - in an upcoming (?:release|version|update)
   - in a later (?:release|version|update)

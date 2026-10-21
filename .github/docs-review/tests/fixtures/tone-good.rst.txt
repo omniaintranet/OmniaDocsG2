@@ -6,6 +6,7 @@ The new Page Rollup layout shows more information on each card and loads faster.
 - Smart properties fill in document metadata automatically.
 - Editors can preview a template in each language before they publish it.
 - Administrators can choose which page types are included in search.
+- The log file will be available for 14 days, and new headings will be added to the navigation automatically.
 
 Code samples are not checked for tone:
 
@@ -25,6 +26,6 @@ One rule can be turned off for a passage:
 
 .. vale Omnia.FuturePromises = NO
 
-The connector will be available after the administrator approves it.
+The connector will be available in a future release.
 
 .. vale Omnia.FuturePromises = YES
