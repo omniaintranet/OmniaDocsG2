@@ -1,7 +1,7 @@
 Controlled documents library block
 =====================================
 
-This block is simply the controlled documents library with all it's functionality, available as a block you can place on any publishing page or make available through a tab in Microsoft Teams. The block is available in Omnia 7.7 and later.
+This block is simply the controlled documents library with all it's functionality, available as a block you can place on any publishing page or make available through a tab in Microsoft Teams. 
 
 Just be aware that the block will need the full page width.
 
