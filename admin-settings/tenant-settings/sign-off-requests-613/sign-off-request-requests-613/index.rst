@@ -88,7 +88,7 @@ The selected pages are now added to the list of pages, see above.
 
 To add or remove documents
 ----------------------------------------
-Only published, controlled documents can be signed off. This option is available in Omnia 7.7 and later. 
+Only published, controlled documents can be signed off. 
 
 **Prerequisites**: The tenant feature "Sign-off request for controlled documents" must be active. In the settings for the document type, the option "Enable sign-off request" must be selected. (Meaning sign-off requests can be available for some document types and not for others.)
 
