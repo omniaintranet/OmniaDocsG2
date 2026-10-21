@@ -72,6 +72,7 @@ jobs:
           --base "$BASE_SHA"
           --out "$RUNNER_TEMP/docs-review"
           --annotations
+          --step-summary
           --link-base "$REPO_URL/blob/$HEAD_SHA"
           --commit "$HEAD_SHA"
 

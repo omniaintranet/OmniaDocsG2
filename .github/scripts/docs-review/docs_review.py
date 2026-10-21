@@ -714,6 +714,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--linkcheck", choices=["auto", "never"], default="auto")
     parser.add_argument("--no-secrets", action="store_true", help="skip gitleaks")
     parser.add_argument("--annotations", action="store_true", help="print GitHub annotations")
+    parser.add_argument("--step-summary", action="store_true", help="add the summary to the GitHub job summary")
     parser.add_argument("--link-base", help="URL prefix for links to files, e.g. https://github.com/o/r/blob/<sha>")
     parser.add_argument("--commit", help="commit shown in the summary")
     parser.add_argument("--no-fail", action="store_true", help="exit 0 even when errors are found")
@@ -732,7 +733,8 @@ def main(argv: list[str] | None = None) -> int:
             if config.is_doc(path) and letter != "D":
                 changed[path] = None if letter == "A" and path not in lines else lines.get(path, set())
         images = {p: s for p, s in status.items() if config.is_image(p) and s != "D"}
-        scope = f"{len(changed)} changed page(s) and {len(images)} image(s) in this pull request."
+        scope = (f"{len(changed)} changed page(s) and {len(images)} image(s) in this pull request."
+                 if changed or images else "This pull request changes no documentation pages or images.")
     elif args.all:
         tracked = git("ls-files").splitlines()
         changed = {p: None for p in tracked if config.is_doc(p)}
@@ -772,7 +774,7 @@ def main(argv: list[str] | None = None) -> int:
         encoding="utf-8")
     text = summary(review, scope, args.link_base, args.commit)
     (out / "summary.md").write_text(text, encoding="utf-8")
-    if os.environ.get("GITHUB_STEP_SUMMARY"):
+    if args.step_summary and os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
             handle.write(text)
     if args.annotations:
