@@ -1,7 +1,7 @@
 Features (Business Profile)
 =============================================
 
-Note that available features can differ depending on how Omnia is set up in your implementration (images from Omnia 7.8).
+Note that available features can differ depending on how Omnia is set up in your implementration.
 
 For a description of a feature, and when using any option like activating, deactivating and updating, expand the feature:
 
@@ -23,7 +23,7 @@ Here you handle image and video providers - activating, upgrading, removing.
 
 System
 ******
-Normally, just a few features available here, for a business profile, for example (Omnia 7.8):
+Normally, just a few features available here, for a business profile, for example:
 
 .. image:: bp-features-system-78.png
 
