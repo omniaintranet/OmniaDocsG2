@@ -24,7 +24,7 @@ The tenant feature "Semantic search" must be active for this functionality to be
 
 These settings are available for semantic search:
 
-.. image:: settings-ai-engine-semantic.png
+.. image:: settings-ai-engine-semantic-712.png
 
 When you have created the services you need in Azure Open AI, you add services here.
 
