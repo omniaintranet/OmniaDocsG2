@@ -108,7 +108,7 @@ An action button can be used to open the user's profile card for editing, see th
 
 Create a custom user profile card
 ************************************
-You can create a custom user profile card for each user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. In Omnia 7.7 and later, the private view of the card can be used to edit the information shown in the public view. 
+You can create a custom user profile card for each user type if needed, and you can create different layouts for private card view and public card view. A private card view is simply when a user looks at his or her own card, a public card view is what everyone else can see. The private view of the card can also be used to edit the information shown in the public view. 
 
 To work with the user profile card layout, click this icon:
 
