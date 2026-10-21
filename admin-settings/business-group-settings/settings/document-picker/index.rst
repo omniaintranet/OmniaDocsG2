@@ -39,7 +39,7 @@ The following settings are available for search category:
 + **Hide filter per default**: If you select this options, filters are hidden but users can choose to display them. 
 + **Add filter**: If you are using a search category you can add filters to allow the users to filter the list in the document picker, see below for an example.
 
-In Omnia 7.8 and later search categories for semantic search can be available. See this page for more information about semenatic search: :doc:`About semantic search </general-assets/about-semantic-search/index>`
+Search categories for semantic search can be available. See this page for more information about semenatic search: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
 For a search box you can set some additional settings:
 
