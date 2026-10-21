@@ -1,13 +1,11 @@
 Model configuration (AI)
 =============================================
 
-This description applies to Omnia 7.8 and later.
-
 See this page for important information on how to set up AI in your tenant: :doc:`Setup AI </setup/setup-ai/index>`
 
 For current model IDs and deployment recommendations, see: :doc:`Recommended AI models </setup/recommended-ai-models/index>`
 
-In Omnia 7.8, the following settings are available here:
+The following settings are available here:
 
 .. image:: settings-ai-engine-all-78.png
 
@@ -42,8 +40,3 @@ GPT Image
 The tenant feature **GPT Image** must be active for this setting to be available. Add the name of the GPT Image deployment you're using here. For new deployments, see :doc:`Recommended AI models </setup/recommended-ai-models/index>`.
 
 Older Omnia versions can display a legacy **Dall-E** setting instead. Retain it only for an existing Dall-E configuration; it is not recommended for a new deployment.
-
-
-
-
-
