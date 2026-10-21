@@ -3,8 +3,6 @@ Directory for publishing apps
 
 Within a business profile several publishing apps can be active for different settings. To be able to create a publishing app, at least one template for that purpose must be available. If none are, create a template first.
 
-(Images from Omnia 7.9 in this description).
-
 Here you will see a list of publishing apps in the business profile, for example:
 
 .. image:: publishing-apps-apps-v79.png
@@ -13,7 +11,7 @@ Use this icon to close the menu to the left and work in full window mode:
 
 .. image:: publishing-apps-icon-v79.png
 
-You can click the link to go to an app. You can search for an app and use the headings "Title", "Template" and "CreateddDate" to sort the list in Omnia 7.7 and earlier, "URL" and "Created date" in Omnia 7.8 and later.
+You can click the link to go to an app. You can search for an app and use some of thethe headings to sort the list.
 
 The following actions, using the dot menu to the right, are available for an app:
 
