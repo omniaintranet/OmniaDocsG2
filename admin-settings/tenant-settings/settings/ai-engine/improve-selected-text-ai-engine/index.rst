@@ -1,8 +1,6 @@
 Improve selected text (AI settings)
 =============================================
 
-This is the functionality in Omnia 7.8 and later. If you have used this option in 7.7 for OpenAI, it works the same, but with one addition, see the bottom of the page.
-
 You can create a number of prompt settings here to be used by editors, for example:
 
 .. image:: improve-selected-text-78.png
@@ -30,7 +28,7 @@ See the bottom of this page for information about how OpenAI/AI can be used in t
 
 Using Improve selected text as a pre publishing policy
 *********************************************************
-The prompts set up here can also be used as pre publishing policies, in Omnia 7.8 and later. This can be used by editors to let AI review the page before publishing.
+The prompts set up here can also be used as pre publishing policies. This can be used by editors to let AI review the page before publishing.
 
 The setting is done on page collection level. For more info, see: :doc:`Page collection settings </pages/page-collections/page-collection-settings/index>`
 
