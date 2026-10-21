@@ -13,7 +13,7 @@ The user can click the team to see a list of news items from that team, for exam
 
 .. image:: team-news-example-2-new.png
 
-Note the name at the bottom of the post. You can click it to go to the colleague's profile card for contact information (in Omnia 7.8 and later).
+Note the name at the bottom of the post. You can click it to go to the colleague's profile card for contact information.
 
 Block Settings
 ****************
