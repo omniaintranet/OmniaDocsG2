@@ -1,7 +1,7 @@
 Welcome block
 ==================================
 
-This block is available in Omnia 7.8 and later. It can be used for various messages, on specific dates or occasions, to the logged in user.
+This block can be used for various messages, on specific dates or occasions, to the logged in user.
 
 **Prerequisite**: You have to make sure that the properties you would like to use in this block is set up in Omnia admin. The Welcome block only supports Omnia user properties. Additional properties, like First name and Last name, can be made available through the configuration of MS Graph user details property mappings. See this page for more information: :doc:`SharePoint user profiles sync </admin-settings/tenant-settings/system/microsoft-365/sharepoint-user-profiles-sync>`
 
