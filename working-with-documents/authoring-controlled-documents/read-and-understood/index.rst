@@ -3,7 +3,7 @@ Read and understood - notify and read receipt
 
 When a controlled document is published, the possibility to send a notification to some users can be available. When doing so, you can also choose read receipts, to make sure the notification has reached them. The notifications are sent when the document is approved for publishing.
 
-Note that, in Omnia 7.7 and later, an alternative way is to use sign-off requests for controlled documents. You then have a lot more options making sure colleagues are aware of important documents and updates. See below for more information.
+Note, an alternative way is to use sign-off requests for controlled documents. You then have a lot more options making sure colleagues are aware of important documents and updates. See below for more information.
 
 Sending notifications is always voluntary. The decision is made when the document is published. If any colleagues should be notified of the new edition, select "Notify people" and add people or groups to the field.
 
@@ -38,7 +38,7 @@ A green dot means that the recipient has read the message, a red that he or she 
 
 An alternative - using sign-off requests
 *********************************************
-In Omnia 7.7 and later, sign-off requests can be used for published controlled documents, as an alternative way of making sure collagues have read important information.
+Sign-off requests can be used for published controlled documents, as an alternative way of making sure collagues have read important information.
 
 For each document type a decision can be made to use read receipts or sign-off requests, or both (or neither).
 
