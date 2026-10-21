@@ -76,7 +76,7 @@ These settings are available on the Style tab, below the Actions tab:
 
 Analytics
 ----------
-This option is available in Omnia 7.8 and later, if Matomo analytics is used in the tenant.
+This option is available if Matomo analytics is used in the tenant.
 
 .. image:: action-button-analytics-v711.png
 
