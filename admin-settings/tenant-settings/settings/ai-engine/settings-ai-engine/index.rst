@@ -5,11 +5,9 @@ See this page for important information on how to set up AI in your tenant: :doc
 
 For current model IDs and deployment recommendations, see: :doc:`Recommended AI models </setup/recommended-ai-models/index>`
 
-The following settings are available here:
+A number of settings are available here, depending on set up in Omnia. Here's an example:
 
-.. image:: settings-ai-engine-all-78.png
-
-In Omnia 7.9 and later, image-generation settings are also available. The label depends on the Omnia version and the activated image-generation feature.
+.. image:: settings-ai-engine-all-712.png
 
 Text completion configuration
 *******************************
