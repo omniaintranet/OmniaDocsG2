@@ -3,6 +3,33 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+20 October 2026
+---------------
+
+* `Documents bulk update in Ommnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/documents-bulk-update-712/index.html>`__ — **Updated guidance**
+  Replaced incomplete working notes with complete three-step procedures and detailed instructions for bulk updating documents, now fully organized with images and examples.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.12.2 release notes documenting bug fixes and feature improvements across components.
+
+* `Process Templates <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/process-management/process-templates-omnia-7/index.html>`__ — **Correction**
+  Removed Omnia 7.8 version reference from Document rollup block recommendation.
+
+* `Release 7.13 (draft) <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.13/index.html>`__ — **Updated guidance**
+  Release notes were reorganized to focus on key selling points, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.
+
+* `RTF editor settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/rtf-editor/index.html>`__ — **Updated guidance**
+  Updated for Omnia 7.12 with new Call to action option explanation, removed version-specific Auto-clean pasted content guidance, and added link to RTF editor usage documentation.
+
+* `Settings (Process management) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/process-management/settings/index.html>`__ — **Added information**
+  Added new Media picker settings section for Omnia 7.12 with guidance on crop ratio configuration, and reorganized content into clearer General, Media picker, and Print sections.
+
+* `Shape gallery <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/process-management/shape-gallery/index.html>`__ — **Updated guidance**
+  Simplified shape editing guidance and updated screenshots from Omnia 7.12 test environment.
+
+* `User Management - business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/user-management-bp/index.html>`__ — **Updated screenshots**
+  Replaced the User Management business profile menu screenshot with an updated version.
+
 16 October 2026
 ---------------
 

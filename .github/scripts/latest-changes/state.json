@@ -553,9 +553,125 @@
     "65606208a281410516201ada3fdafbb5355cad6c": "2026-08-19",
     "455f2e7994f3769c37110bf003eada7a04c8cf77": "2026-08-19",
     "209004a8c5475a8c7e8ce1e468a5483a4e21bd3c": "2026-10-16",
-    "f3779c6548cc96f0bb90044806ea9db155adcdd9": "2026-10-16"
+    "f3779c6548cc96f0bb90044806ea9db155adcdd9": "2026-10-16",
+    "64a90f7fc4a943cbf33113bee5c7ad8e4920d4f8": "2026-10-20",
+    "7505556286a8d341f8074dbebb6ebfac90876b1e": "2026-10-20",
+    "789bca66ac19672c1c9c2cf53981eb2816a25ac7": "2026-10-20",
+    "18780ef65550cd6de8e71fe1c1ca9a788e3276a4": "2026-10-20",
+    "f1d4f0357adf7e448ba1646766ef58447d4e2a6c": "2026-10-20",
+    "c348d9193c1a6c06c563bbd6d151aa9b6c5f00b4": "2026-10-20",
+    "2e12fb5d93e978e0e150003bac2fa8c2ae80acef": "2026-10-20",
+    "e7eb9687b60d0e9789acf96e1916cda7977f8b5e": "2026-10-20",
+    "6a5205188e8dc69ddcafbf76c076234c4cb24ee1": "2026-10-20",
+    "a7126a7d0b68f95aebeb54fff96c46fb881f762b": "2026-10-20",
+    "32f21cba288492fca806320ffc4587ed8205481b": "2026-10-20",
+    "ca3f9b0891eaa97741e38fd6162c65c8e6c9a58c": "2026-10-20",
+    "aa3477c173985c2ce428eb301262058efda56252": "2026-10-20",
+    "9c55bc52d3283722a59651fc9c4face8be2cd923": "2026-10-20",
+    "683f302dc1b64f996782fcb9da51334e932e650e": "2026-10-20",
+    "f903f117eae5d880a3618ca637fac30e87f18112": "2026-10-20",
+    "1870d8dc5a4b399355b390a164ebda5302ce7fdc": "2026-10-20",
+    "0c09796eb3c27253403933daf5b796180210436b": "2026-10-20",
+    "01084fe356cf002049d11ae24e278fece5f9a868": "2026-10-20",
+    "11e9073041a27d73696c00c88d327f59b1713c67": "2026-10-20",
+    "efd2a28616e660bb1539355ab5d745e0af572d41": "2026-10-20",
+    "14e4240e3d9a55857f9f08fb523883f76dc06214": "2026-10-20"
   },
   "entries": [
+    {
+      "date": "2026-10-20",
+      "path": "release-notes/7.13/index.rst",
+      "classification": "Updated guidance",
+      "description": "Release notes were reorganized to focus on key selling points, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.",
+      "sources": [
+        "f903f117eae5d880a3618ca637fac30e87f18112"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.12.2 release notes documenting bug fixes and feature improvements across components.",
+      "sources": [
+        "32f21cba288492fca806320ffc4587ed8205481b"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/settings/rtf-editor/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated for Omnia 7.12 with new Call to action option explanation, removed version-specific Auto-clean pasted content guidance, and added link to RTF editor usage documentation.",
+      "sources": [
+        "01084fe356cf002049d11ae24e278fece5f9a868",
+        "0c09796eb3c27253403933daf5b796180210436b",
+        "11e9073041a27d73696c00c88d327f59b1713c67",
+        "1870d8dc5a4b399355b390a164ebda5302ce7fdc"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/process-management/shape-gallery/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified shape editing guidance and updated screenshots from Omnia 7.12 test environment.",
+      "sources": [
+        "9c55bc52d3283722a59651fc9c4face8be2cd923",
+        "aa3477c173985c2ce428eb301262058efda56252",
+        "ca3f9b0891eaa97741e38fd6162c65c8e6c9a58c"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/process-management/settings/index.rst",
+      "classification": "Added information",
+      "description": "Added new Media picker settings section for Omnia 7.12 with guidance on crop ratio configuration, and reorganized content into clearer General, Media picker, and Print sections.",
+      "sources": [
+        "6a5205188e8dc69ddcafbf76c076234c4cb24ee1",
+        "a7126a7d0b68f95aebeb54fff96c46fb881f762b"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/process-management/process-templates-omnia-7/index.rst",
+      "classification": "Correction",
+      "description": "Removed Omnia 7.8 version reference from Document rollup block recommendation.",
+      "sources": [
+        "683f302dc1b64f996782fcb9da51334e932e650e"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/document-management/documents-bulk-update/index.rst",
+      "classification": "Navigation update",
+      "description": "Completed cross-reference link to Omnia 7.12 Documents bulk update page, replacing placeholder text.",
+      "sources": [
+        "64a90f7fc4a943cbf33113bee5c7ad8e4920d4f8"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/tenant-settings/document-management/documents-bulk-update-712/index.rst",
+      "classification": "Updated guidance",
+      "description": "Replaced incomplete working notes with complete three-step procedures and detailed instructions for bulk updating documents, now fully organized with images and examples.",
+      "sources": [
+        "18780ef65550cd6de8e71fe1c1ca9a788e3276a4",
+        "2e12fb5d93e978e0e150003bac2fa8c2ae80acef",
+        "7505556286a8d341f8074dbebb6ebfac90876b1e",
+        "789bca66ac19672c1c9c2cf53981eb2816a25ac7",
+        "c348d9193c1a6c06c563bbd6d151aa9b6c5f00b4",
+        "e7eb9687b60d0e9789acf96e1916cda7977f8b5e",
+        "f1d4f0357adf7e448ba1646766ef58447d4e2a6c"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "path": "admin-settings/business-group-settings/user-management-bp/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Replaced the User Management business profile menu screenshot with an updated version.",
+      "sources": [
+        "14e4240e3d9a55857f9f08fb523883f76dc06214",
+        "efd2a28616e660bb1539355ab5d745e0af572d41"
+      ]
+    },
     {
       "date": "2026-10-16",
       "path": "release-notes/omnia-feed/7/versions/7.12/index.rst",
