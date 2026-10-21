@@ -16,7 +16,7 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
   Removed Omnia 7.8 version reference from Document rollup block recommendation.
 
 * `Release 7.13 (draft) <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.13/index.html>`__ — **Updated guidance**
-  Release notes were reorganized to focus on key selling points, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.
+  Release notes were reorganized to focus on key functionality, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.
 
 * `RTF editor settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/rtf-editor/index.html>`__ — **Updated guidance**
   Updated for Omnia 7.12 with new Call to action option explanation, removed version-specific Auto-clean pasted content guidance, and added link to RTF editor usage documentation.
