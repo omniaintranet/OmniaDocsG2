@@ -9,7 +9,7 @@ The following settings are available for the block:
 
 .. image:: html-settings-v75.png
 
-+ **Searchable**: I you would like the content in this field to be searchable, select this option (available in Omnia 7.5 and later).
++ **Searchable**: I you would like the content in this field to be searchable, select this option.
 + **ADD CONTENT**: You can choose to add some default content to the block. Content can also be edited and added using Write mode.
 
 To add default content, click ADD CONTENT.
