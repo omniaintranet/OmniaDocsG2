@@ -23,7 +23,7 @@ Click the ADD GROUP button to create a new Omnia group, and use these settings:
 
 .. image:: user-managament-groups-78-new.png
 
-Here you can add an image for the group using the Image picker, add a name and description and add Omnia users (members) to the group. The users must be added to the Users list first, see this page for more information: :doc:`Users (Omnia 7.8) </admin-settings/tenant-settings/user-management/users-78/index>`
+Here you can add an image for the group using the Image picker, add a name and description and add Omnia users (members) to the group. The users must be added to the Users list first, see this page for more information: :doc:`Users </admin-settings/tenant-settings/user-management/users-78/index>`
 
 You can also add users to the Owners group, if more than the tenant administrator should be able to edit the group. Users are added the same way to this group as to the Members group.
 
