@@ -115,8 +115,10 @@ request, or let a repository ruleset request it automatically.
 ## Automated updates
 
 Two workflows write documentation without a person's pull request. Both run the same rules on the lines they
-change, before anything is published. They skip the Sphinx build comparison and the link check: the digest has its
-own build check, and the release-note validator allows no links or markup.
+change, before anything is published. Neither runs the external link check: the digest links only to its own pages,
+and the release-note validator rejects links. The release notes also get the Sphinx build comparison (it finds inline
+references such as `` :doc:`missing-page` ``); the digest skips it because the digest workflow builds the site and
+checks every digest link itself.
 
 | Workflow | What it writes | When a finding blocks |
 | --- | --- | --- |

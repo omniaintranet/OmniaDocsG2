@@ -39,12 +39,13 @@ printf '\n\n' >> "$temp_file"
 cat "$RELEASE_NOTES_FILE" >> "$temp_file"
 mv "$temp_file" "$RELEASE_NOTES_FILE"
 
-# The validator already allows no links or markup beyond headings and bullets,
-# so the Sphinx build comparison and the link check add nothing here.
+# The Sphinx build comparison (about a minute) catches inline references the validator
+# lets through, such as :doc:`missing-page`. The validator rejects URLs, so the
+# external link check has nothing to do.
 status=0
 "$PYTHON" "$REVIEW_SCRIPT" \
   --base HEAD \
-  --build never \
+  --build always \
   --linkcheck never \
   --no-fail \
   --out "$REVIEW_DIR" \
