@@ -69,7 +69,7 @@ For more information on how to use targeting personas, see: :doc:`Using targetin
 
 Secrets
 ********
-A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's an example from Omnia 7.11: 
+A number of settings are available under Secrets. Exactly what is available here depends on the implementation. Here's an example: 
 
 .. image:: tenant-secrets-v711.png
 
