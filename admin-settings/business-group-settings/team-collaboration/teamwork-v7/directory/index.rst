@@ -1,7 +1,7 @@
 Teamwork directory
 ==================================
 
-Here Teamworks are listed, the "All" tab as an example (images from Omnia 7.9 in this description):
+Here Teamworks are listed, the "All" tab as an example:
 
 .. image:: teamwork-apps-new-v79.png
 
@@ -11,7 +11,7 @@ Use this icon to close the menu to the left and work in full window mode:
 
 .. image:: teamwork-icon-v79.png
 
-You can click the link to go to a teamwork. You can search for a teamwork and use the headings "Title", "Template", "Created date" and "Last Activity" to sort the list in Omnia 7.7 and earlier, "URL" and "Created date" in Omnia 7.8 and later.
+You can click the link to go to a teamwork. You can search for a teamwork and sort the list using some of the haeding.
 
 The following actions, using the dot menu to the right, are available for a teamwork (in the All, Orphaned and Inactive lists):
 
