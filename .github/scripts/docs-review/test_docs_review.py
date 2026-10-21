@@ -83,6 +83,24 @@ class HelperTest(unittest.TestCase):
         self.assertTrue(config.suppressed_by_settings("Omnia.FuturePromises", "roadmap/index.rst"))
         self.assertFalse(config.suppressed_by_settings("Omnia.FuturePromises", "pages/index.rst"))
 
+    def test_suppression_rule_patterns(self):
+        config = docs_review.Config()
+        config.suppress = [{"rule": "Confidential.*", "files": ["a/**"]}, {"rule": "*", "files": ["b.rst"]}]
+        self.assertTrue(config.suppressed_by_settings("Confidential.Guid", "a/x.rst"))
+        self.assertFalse(config.suppressed_by_settings("Omnia.Leftovers", "a/x.rst"))
+        self.assertTrue(config.suppressed_by_settings("Omnia.Leftovers", "b.rst"))
+
+    def test_secrets_cannot_be_suppressed(self):
+        config = docs_review.Config()
+        config.suppress = [{"rule": "*", "files": ["**"]}]
+        review = docs_review.Review(config, {})
+        review.files["x.rst"] = docs_review.RstFile("x.rst", ".. vale off\n\nclient_secret = ...\n", config)
+        for path in ("x.rst", "other.rst"):
+            review.add("Secrets.generic-api-key", "error", path, 3, "secret")
+            review.add("Omnia.Leftovers", "error", path, 3, "leftover")
+        self.assertEqual([(f.rule, f.file) for f in review.findings],
+                         [("Secrets.generic-api-key", "x.rst"), ("Secrets.generic-api-key", "other.rst")])
+
     def test_warning_parsing(self):
         line = r"C:\docs\blocks\index.rst:66: CRITICAL: Title level inconsistent:"
         match = docs_review.WARNING_LINE.match(line)

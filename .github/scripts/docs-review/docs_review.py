@@ -15,6 +15,7 @@ from __future__ import annotations
 import argparse
 import collections
 import dataclasses
+import fnmatch
 import json
 import os
 import re
@@ -140,8 +141,7 @@ class Config:
 
     def suppressed_by_settings(self, rule: str, path: str) -> bool:
         for entry in self.suppress:
-            rule_re = glob_to_regex(entry.get("rule", "*").replace(".", "/"))
-            if rule_re.match(rule.replace(".", "/")) and matches_any(path, entry.get("files", ["**"])):
+            if fnmatch.fnmatchcase(rule, entry.get("rule", "*")) and matches_any(path, entry.get("files", ["**"])):
                 return True
         return False
 
@@ -296,9 +296,10 @@ class Review:
 
     def add(self, rule: str, severity: str, path: str, line: int | None, message: str) -> None:
         rst = self.files.get(path)
-        if rst is not None and rst.suppressed(rule, line):
+        unsuppressable = rule.startswith("Secrets.")
+        if not unsuppressable and rst is not None and rst.suppressed(rule, line):
             return
-        if rst is None and self.config.suppressed_by_settings(rule, path):
+        if not unsuppressable and rst is None and self.config.suppressed_by_settings(rule, path):
             return
         self.findings.append(Finding(rule, severity, path, line, message))
 
@@ -446,12 +447,12 @@ class Review:
             if base:
                 run([gitleaks, "git", "--log-opts", f"{base}..HEAD", *common, str(ROOT)])
                 results = json.loads(report.read_text(encoding="utf-8") or "[]")
-            else:
-                for path in paths:
-                    run([gitleaks, "dir", *common, str((ROOT / path).resolve())])
-                    for item in json.loads(report.read_text(encoding="utf-8") or "[]"):
-                        item["File"] = path
-                        results.append(item)
+            # Files given by name, and uncommitted files in a local review, are scanned as they are on disk.
+            for path in paths:
+                run([gitleaks, "dir", *common, str((ROOT / path).resolve())])
+                for item in json.loads(report.read_text(encoding="utf-8") or "[]"):
+                    item["File"] = path
+                    results.append(item)
         seen = set()
         for item in results:
             path = item["File"].replace("\\", "/")
@@ -513,6 +514,7 @@ class Review:
                 f"linkcheck_timeout = {int(settings.get('timeout', 20))}",
                 f"linkcheck_retries = {int(settings.get('retries', 2))}",
                 f"linkcheck_anchors = {bool(settings.get('check_anchors', False))}",
+                f"linkcheck_ignore = {[p.pattern for p in ignore]!r}",
                 ""]), encoding="utf-8")
             run([sys.executable, "-m", "sphinx", "-b", "linkcheck", "-q", "-N", "-j", "auto", "-c", str(conf_dir),
                  str(ROOT), str(Path(tmp) / "out"), *docs], check=False)
@@ -758,7 +760,13 @@ def main(argv: list[str] | None = None) -> int:
         [p for p, s in status.items() if s == "A" and config.is_doc(p)]
     review.check_images(images, sorted(set(all_docs)))
     if not args.no_secrets:
-        review.check_secrets(diff_base, sorted(changed) if not diff_base else [])
+        if diff_base:
+            uncommitted = git("diff", "--name-only", "HEAD", "--").splitlines() + \
+                git("ls-files", "--others", "--exclude-standard").splitlines()
+            secret_paths = sorted(p for p in set(uncommitted) if (ROOT / p).is_file())
+        else:
+            secret_paths = sorted(changed)
+        review.check_secrets(diff_base, secret_paths)
     if diff_base:
         relevant = [p for p in status if config.is_doc(p) or config.is_image(p)
                     or p in ("conf.py", "docs/requirements.txt") or p.startswith("_templates/")]
