@@ -1,7 +1,7 @@
 User profile progress
 =====================================
 
-This block is available in Omnia 7.7 and later. It's meant to be used with the new settings for user types. The block is displaying the user profile progress as a percentage.
+This block is meant to be used with the settings for user types. The block is displaying the user profile progress as a percentage.
 
 The completeness impact for various user information blocks on the user profile card is set in the user type settings. It can be Low, Medium or High. For every information block that is completed, Low is 1 point, Medium is 2 and High 3. The aggregated points are then divided with the total points possible, to yield the percentage.
 
