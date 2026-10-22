@@ -9,7 +9,7 @@ Use these options to set a default setting for block headings and section headin
 
 .. image:: content-header-712.png
 
-+ **Title preview**: Here you see a Preview when you make changes.
++ **Title preview**: Here you see a preview when you make changes.
 
 Text
 *****
