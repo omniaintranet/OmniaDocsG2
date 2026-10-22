@@ -87,7 +87,7 @@ The settings are organized into five tabs, see the sections below.
 
 General
 --------
-The General tab contains the following settings (image from Omnia 7.8).
+The General tab contains the following settings:
 
 .. image:: document-type-general-v78-1.png
 
@@ -127,7 +127,7 @@ You can select any combination of options here. Be careful, this can not be chan
 
 Publish
 ---------
-On the Publish tab you can set the following (image from Omnia 7.10):
+On the Publish tab you can set the following:
 
 .. image:: document-types-publish-v710-new.png
 
