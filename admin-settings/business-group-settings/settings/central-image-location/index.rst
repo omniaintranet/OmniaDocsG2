@@ -1,29 +1,11 @@
-Media picker settings (Business Profile)
+Media picker settings (Business profile)
 ===========================================
 
-You can set central image locations for the editors to use through the media picker. One or more locations can be set up in the list:
+You can set central image locations for the editors to use through the media picker, for this business profile. In Omnia 7.12 and later, you can also set crop ratios and image style.
 
-.. image:: central-image-locations.png
+. image:: media-picker-settings-bp-712.png
 
-Click the pen to edit the settings for a central image location, or click the dust bin to delete it.
+You work with these settings the same way as the tenant settings. Only difference is these setting are only valid for this business profile. For more information, see: :doc:`Media picker settings </admin-settings/tenant-settings/settings/media-picker/index>`
 
-You can also go to the central media location from here, to handle the images there - by clicking this icon:
+Regarding the crop ratios and the image style, you can inherit the tenant settings, or create specific settings for this business profile. 
 
-.. image:: central-image-locations-new2.png
-
-This option was earlier called "Central image location". Now both images and videos can be handled centrally the same way, but the settings here remains the same.
-
-Also note that all editing and settings for a video must be handled in the SharePoint library, not in the Media Picker in Omnia (as is the case with videos from Microsoft Clipchamp).
-
-Add a new central image location
-**********************************
-To add a new central image location, click the plus:
-
-.. image:: central-image-locations-click-plus-new2.png
-
-Use these settings:
-
-.. image:: central-image-locations-settings-new.png
-
-+ **URL to image library**: Type or paste the URL here.
-+ **Display name**: Add the name to be shown in the lists.
