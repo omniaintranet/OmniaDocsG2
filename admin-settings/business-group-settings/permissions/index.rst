@@ -20,6 +20,8 @@ To add an administrator in any of the permissions lists, add the name the same w
 
 For more information on the people picker, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
+For Shared links, Announcements and Search, you can only add administrator(s). The rest of the options are described below.
+
 Business profile
 ---------------------
 Here, business profile administrators and business profiles readers can be handled:
