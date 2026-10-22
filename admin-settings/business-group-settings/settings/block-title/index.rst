@@ -1,6 +1,8 @@
 Content header (Business profile)
 =======================================
 
+This page describes the content header options in Omnia 7.11 and earlier. For Omnia 7.12 and later, see: :doc:`Content header in Omnia 7.12 </admin-settings/business-group-settings/settings/content-header-712/index>`
+
 Use these options to set a default setting for block headings and section headings. Authors can edit these settings when working with blocks and sections, if needed. 
 
 .. image:: content-header-new2.png
