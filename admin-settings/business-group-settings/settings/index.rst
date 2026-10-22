@@ -23,6 +23,7 @@ For detailed information, select settings here:
    document-picker/index
    sharepoint-page-picker/index
    event-management/index
+   content-flow-ai-prompts/index
    info-screen/index
    media-flow/index
    analytics/index
