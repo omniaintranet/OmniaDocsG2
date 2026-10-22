@@ -14,7 +14,7 @@ Every pull request into `master` is checked by the workflow **Documentation revi
 GitHub Copilot can also review the wording of a pull request (see "Copilot review" below). It only comments and
 never blocks.
 
-The same rules also check the text that the repository's own automation writes (see "Automated updates" below).
+The same rules also shape and check the text that the repository's own automation writes (see "Automated updates" below).
 
 ## What is checked
 
@@ -41,7 +41,9 @@ The same rules also check the text that the repository's own automation writes (
 | Structure | `Structure.HeadingLevel` | A heading that skips a level | Please check |
 
 Confidentiality rules read the whole source, including rst comments and code samples: the repository is public,
-so anyone can read them on GitHub. Tone rules read only the text that is shown on the site.
+so anyone can read them on GitHub. Tone rules read only the text that is shown on the site. Keep rst comments free
+of internal or sales language anyway: besides being public, they are part of the page changes that the
+documentation updates digest describes.
 
 ## Add or change a word or phrase
 
@@ -114,20 +116,37 @@ request, or let a repository ruleset request it automatically.
 
 ## Automated updates
 
-Two workflows write documentation without a person's pull request. Both run the same rules on the lines they
-change, before anything is published. Neither runs the external link check: the digest links only to its own pages,
-and the release-note validator rejects links. The release notes also get the Sphinx build comparison (it finds inline
-references such as `` :doc:`missing-page` ``); the digest skips it because the digest workflow builds the site and
-checks every digest link itself.
+Two workflows write documentation without a person's pull request, with GitHub Copilot writing the text. The rules
+shape that text in three steps:
 
-| Workflow | What it writes | When a finding blocks |
+1. **Rules in the prompt.** Both prompts include the rules, read from the files in this folder on every run
+   (`python .github/scripts/docs-review/docs_review.py --prompt-rules` prints them): the phrase lists with their
+   level, the confidentiality patterns, and "What to look for" from
+   `.github/instructions/docs-review.instructions.md`. A phrase added to a list reaches the prompts with the next run.
+2. **Review and rewording.** The same review then runs on the lines the workflow changed. Entries or bullets with an
+   **audience and tone** finding (`Omnia.*`, errors and warnings) go back to Copilot with the findings, to be
+   reworded, at most twice. A rewording that breaks the format, adds a link or changes a customer reference is
+   thrown away.
+3. **Report.** Audience and tone findings that are left do not block. **Confidentiality** errors (secrets included)
+   are never given back to Copilot: they need a person.
+
+| Workflow | What it writes | What happens with findings |
 | --- | --- | --- |
-| **Documentation updates** (`latest-changes.yml`, daily) | `documentation-updates/index.rst`, pushed straight to `master` | The run fails before **Publish digest**: nothing is committed, the internal state is not advanced, and the next run classifies the same changes again. The findings are in the run's summary. |
-| **Hotfix Release Notes** (`hotfix-release-notes.yml`) | A draft pull request with the new release notes | The pull request still opens, so people can fix it. Its description starts with a **Caution** box and contains the review summary; the run shows a warning. If the review could not run, the description says so. |
+| **Documentation updates** (`latest-changes.yml`, daily) | `documentation-updates/index.rst`, pushed straight to `master` | Audience and tone findings left after the rewording are published and listed under **Fix by hand** in the run's summary, with the reworded entries. A **confidentiality** error fails the run before **Publish digest**: nothing is committed, the internal state is not advanced, and the next run classifies the same changes again. |
+| **Hotfix Release Notes** (`hotfix-release-notes.yml`) | A draft pull request with the new release notes | The pull request always opens, so people can fix it. Its description lists the reworded bullets (before and after), starts with a **Caution** box when errors are left, and contains the review summary; the run shows a warning. If the review could not run, the description says so. |
 
-If the digest keeps failing on the same entry, the text comes from GitHub Copilot's description of a page change.
-Look at the run's summary: usually the finding is right and the next run words it differently. For a false alarm,
-use the options below (for example an `allow:` value or a phrase moved to "warning").
+Neither workflow runs the external link check: the digest links only to its own pages, and the release-note
+validator rejects links. The release notes also get the Sphinx build comparison (it finds inline references such as
+`` :doc:`missing-page` ``); the digest skips it because the digest workflow builds the site and checks every digest
+link itself. Build findings are reported, never reworded.
+
+**Correcting a digest entry by hand:** change its `description` in `.github/scripts/latest-changes/state.json`,
+not only on the page. The page is written from that file on every run, so a change made only on the page is
+overwritten by the next run (and reviewed again).
+
+If the digest fails on a confidentiality finding, look at the run's summary. A real tenant name, address or id in a
+description usually comes from the page itself: fix the page and the entry in `state.json`. For a false alarm,
+use the options below (for example an `allow:` value).
 
 The release-notes pull request is opened with the workflow's own token, and GitHub does not start other workflows
 for it, so the **Documentation review** check itself does not run there until someone pushes to the branch or
@@ -183,7 +202,10 @@ python .github/scripts/docs-review/docs_review.py --base origin/master
 # review the files you name, completely
 python .github/scripts/docs-review/docs_review.py --files pages/delete-page/index.rst --no-fail
 
-# only your uncommitted changes, as the digest and release-note workflows do
+# the rules as the digest and release-note workflows put them into their Copilot prompts
+python .github/scripts/docs-review/docs_review.py --prompt-rules
+
+# only your uncommitted changes, as the release-note workflow does (the digest adds --automated)
 python .github/scripts/docs-review/docs_review.py --base HEAD --build never --linkcheck never
 
 # every page on the current checkout (slow; used for the baseline)

@@ -103,6 +103,8 @@ Avoid vague claims such as `now returns the expected results`, which can imply t
 - Do not force variation at the expense of clarity or technical accuracy. Keep entries concise, factual, and customer-focused; avoid unnecessary verbosity.
 - **Before finalizing, review all entries together and rewrite repetitive sentence openings.** As a guideline, avoid starting more than two consecutive entries with the same phrase or sentence pattern.
 
+Published text must also pass the documentation review (`.github/docs-review/README.md`): no internal or sales language, unfinished text, superlatives, promises about future releases, or confidential data. Automation adds the current rules to its prompt (`python .github/scripts/docs-review/docs_review.py --prompt-rules`) and gives flagged bullets back for rewording; in an interactive chat, run that command and follow its output.
+
 When matching house style is uncertain, consult the published versions page:
 `https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html`.
 
