@@ -3,6 +3,126 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+22 October 2026
+---------------
+
+* `Accessibility <https://omnia-docs-g2.readthedocs.io/en/latest/accessability/index.html>`__ — **Updated guidance**
+  Screen reader support moved to the main accessibility features list for equal prominence with other capabilities.
+
+* `Content header (Business profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/block-title/index.html>`__ — **Added information**
+  Added note indicating this page applies to Omnia 7.11 and earlier versions, with a link to the Omnia 7.12 and later documentation.
+
+* `Content Header (Business profile) for Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/content-header-712/index.html>`__ — **New page**
+  New page documenting content header settings for administrators in Omnia 7.12, including text formatting, style, and icon configuration options.
+
+* `Document types <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/document-types/index.html>`__ — **Correction**
+  Removed Omnia version references from image captions in the General and Publish tabs sections.
+
+* `Permissions for a business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/permissions/index.html>`__ — **Added information**
+  Added clarification that only administrators can be added for Shared links, Announcements, and Search permissions.
+
+* `Working with sections and blocks <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/working-with-sections-and-blocks/index.html>`__ — **Correction**
+  Removed outdated version references and simplified Block gallery description to current functionality.
+
+21 October 2026
+---------------
+
+* `Action button <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/button-link/index.html>`__ — **Correction**
+  Removed version constraints from analytics option descriptions.
+
+* `Analytics (Matomo) settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/analytics/index.html>`__ — **Correction**
+  Removed outdated version-specific references to Omnia 7.7 and 7.8 to simplify documentation for current product versions.
+
+* `Content analysis (AI settings) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/content-analysis-ai-engine/index.html>`__ — **Correction**
+  Removed version-specific references and legacy OpenAI compatibility information to simplify the introduction.
+
+* `Controlled documents library block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/controlled-documents-library/index.html>`__ — **Correction**
+  Removed outdated version requirement statement from the controlled documents library block description.
+
+* `Directory for publishing apps <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/publishing-apps/publishing-v7/apps-v7/index.html>`__ — **Updated guidance**
+  Simplified the description of sorting options for the publishing apps list by removing version-specific details.
+
+* `Document picker settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/document-picker/index.html>`__ — **Correction**
+  Removed version reference from semantic search documentation, now applies to all current versions.
+
+* `Document rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/document-rollup/index.html>`__ — **Correction**
+  Removed outdated Omnia version references from Process documents, SharePoint library, and Analytics sections.
+
+* `Edit page variations <https://omnia-docs-g2.readthedocs.io/en/latest/pages/edit-page-variations/index.html>`__ — **Correction**
+  Removed version-specific notes comparing Omnia 7.8 and 7.9 differences, and updated the variation author section to describe current capabilities without historical limitations.
+
+* `Features (Business Profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/features-bp-7/index.html>`__ — **Correction**
+  Removed Omnia version references from explanatory notes to improve documentation accuracy across versions.
+
+* `Groups <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/groups-78/index.html>`__ — **Correction**
+  Removed outdated version-specific reference and simplified a link label.
+
+* `HTML/script <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/html-script/index.html>`__ — **Correction**
+  Removed version qualifier from the Searchable option in HTML/script block settings.
+
+* `Improve selected text (AI settings) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/improve-selected-text-ai-engine/index.html>`__ — **Correction**
+  Removed outdated references to Omnia 7.8 and earlier versions from the Improve selected text documentation.
+
+* `Logs (AI features) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/ai-features-logs/index.html>`__ — **Spelling / grammar**
+  Fixed a spelling error and removed the work-in-progress notice from the page introduction.
+
+* `Model configuration (AI) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index.html>`__ — **Updated guidance**
+  Removed Omnia version-specific language and updated screenshots to present unified AI model configuration guidance.
+
+* `Page collection settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-collections/page-collection-settings/index.html>`__ — **Correction**
+  Removed outdated version reference about the previous name for the AI generated content option.
+
+* `Page picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/page-picker/index.html>`__ — **Updated guidance**
+  Simplified the introduction to variation page picking by removing the version reference.
+
+* `Page type settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/page-type-settings/index.html>`__ — **Correction**
+  Removed outdated version qualifications for automatic archiving calculations and event tracking, treating these features as standard functionality.
+
+* `Permissions for the tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/permissions/index.html>`__ — **Correction**
+  Removed outdated Omnia version references from the Users and groups, Secrets, and AI search sections for clarity and timelessness.
+
+* `Publish - the approval workflow <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.html>`__ — **Correction**
+  Removed Omnia version references from documentation to simplify current guidance.
+
+* `Read and understood - notify and read receipt <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/read-and-understood/index.html>`__ — **Spelling / grammar**
+  Removed outdated version references indicating when read receipts and sign-off requests became available features.
+
+* `Real-time visitor count <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/analytics-counter/index.html>`__ — **Correction**
+  Removed outdated version reference from the analytics counter example description.
+
+* `Requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index.html>`__ — **Correction**
+  Removed outdated version requirement from the statement describing eligibility for document sign-off.
+
+* `Team news rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/team-news-rollup/index.html>`__ — **Correction**
+  Removed version qualifier from the profile card feature, confirming availability in current versions.
+
+* `Teamwork directory <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/team-collaboration/teamwork-v7/directory/index.html>`__ — **Correction**
+  Removed outdated Omnia 7.9 version reference from image descriptions and updated the sorting functionality description.
+
+* `User profile card <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/system/user-profile-card/index.html>`__ — **Correction**
+  Removed version-specific Omnia 7.8 references from example descriptions.
+
+* `User profile completion (Classic) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/user-profile-completion/index.html>`__ — **Correction**
+  Removed version qualifier that specified when the alternative user profile approach became available.
+
+* `User profile progress <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/user-profile-progress/index.html>`__ — **Correction**
+  Removed outdated version requirement and simplified terminology regarding user type settings compatibility.
+
+* `User types <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/user-types/index.html>`__ — **Correction**
+  Removed outdated version reference; private view of user profile cards can be used to edit public view information.
+
+* `Users <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/user-management/users-78/index.html>`__ — **Updated guidance**
+  Removed version-specific guidance and clarified that user management is also available in business profile settings.
+
+* `Using the Media picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/media-picker/index.html>`__ — **Spelling / grammar**
+  Removed Omnia version reference from the Media picker starting screen description.
+
+* `Welcome block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/welcome-block/index.html>`__ — **Correction**
+  Removed outdated version requirement from the block introduction.
+
+* `Working with published documents <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/working-with-published-documents/index.html>`__ — **Correction**
+  Removed outdated version reference from the sign-off requests feature description.
+
 20 October 2026
 ---------------
 
@@ -16,7 +136,7 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
   Removed Omnia 7.8 version reference from Document rollup block recommendation.
 
 * `Release 7.13 (draft) <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.13/index.html>`__ — **Updated guidance**
-  Release notes were reorganized to focus on key functionality, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.
+  Release notes were reorganized for clarity, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.
 
 * `RTF editor settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/rtf-editor/index.html>`__ — **Updated guidance**
   Updated for Omnia 7.12 with new Call to action option explanation, removed version-specific Auto-clean pasted content guidance, and added link to RTF editor usage documentation.
@@ -791,9 +911,6 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Recommended AI models <https://omnia-docs-g2.readthedocs.io/en/latest/setup/recommended-ai-models/index.html>`__ — **New page**
   Updated recommended AI models from GPT 6 and GPT Image 2.5 Flare to GPT-5.6 and GPT Image 2, with explicit deployment names for configuration.
-
-* `Settings (OpenAI) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/open-ai/settings-open-ai/index.html>`__ — **Updated guidance**
-  Added notice directing readers to current Omnia documentation for model IDs and deployment recommendations, as this page describes legacy Omnia 7.7.
 
 * `Setup AI <https://omnia-docs-g2.readthedocs.io/en/latest/setup/setup-ai/index.html>`__ — **Updated guidance**
   Reorganized Azure OpenAI and AI Search setup procedures with model deployment guidance, added image generation setup section, and updated UI references to Microsoft Foundry.

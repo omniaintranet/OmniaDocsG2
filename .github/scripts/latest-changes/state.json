@@ -575,14 +575,416 @@
     "01084fe356cf002049d11ae24e278fece5f9a868": "2026-10-20",
     "11e9073041a27d73696c00c88d327f59b1713c67": "2026-10-20",
     "efd2a28616e660bb1539355ab5d745e0af572d41": "2026-10-20",
-    "14e4240e3d9a55857f9f08fb523883f76dc06214": "2026-10-20"
+    "14e4240e3d9a55857f9f08fb523883f76dc06214": "2026-10-20",
+    "b55c97dc7e21efc2b9d49b165e9a75567af6c014": "2026-10-21",
+    "2b4927220f86dba8423df3509466060ad173f31e": "2026-10-21",
+    "83b74d98a2c72cb3cfbbf82a409c79d1b4c141ca": "2026-10-21",
+    "7d1df95fd19ab9dabfaa112002f6ea9eaeaf9774": "2026-10-21",
+    "f2367b625016185ee1295ce433a248bd599e8405": "2026-10-21",
+    "885077ee8013eb09c9850511e2bd286d2f9e8bd2": "2026-10-21",
+    "7bdf7aca1bef3be71ecc389ec0130b07ef3a7700": "2026-10-21",
+    "6e0c68a2dc5dbaef52e1f089f6e5e5f3514da404": "2026-10-21",
+    "64b815f89c4965475ba3d24fa90bb248ded57929": "2026-10-21",
+    "19da65494f451f96ed9041fd0de87db51b156559": "2026-10-21",
+    "ad521530259ba8b1c186e54e611ad799c6ec713d": "2026-10-21",
+    "2d2f53ae14215fbb76352e7e5fbb15eb757393ea": "2026-10-21",
+    "9b97b1537053ef7ef110180594ce5682ea31ade1": "2026-10-21",
+    "7041e851aefad81c3d8a1107b982498e09770e9a": "2026-10-21",
+    "464bbf4099e3f5907f965f62ef359bde7bfd32d3": "2026-10-21",
+    "79514c7e8d11e941368eef32fc91607437364b1c": "2026-10-21",
+    "4b586b4dcd3031bc8efc0d3e081dabeb31b2378d": "2026-10-21",
+    "fc76db467701ddc7407e0366bb0174be6e0ce6b3": "2026-10-21",
+    "9bbd6a81ad4bb707bc6219c6facef0334768d39e": "2026-10-21",
+    "8c0fae9e2b2f36f9ee6bfbb3ad3f52acbd4f8b91": "2026-10-21",
+    "42cb0fcf737e708962b2b1c7d2eff930e637c8b8": "2026-10-21",
+    "e202cba59830fc51f4690888f97c24498d88824e": "2026-10-21",
+    "a011a3e84242225849026b3fcd8f2c480806cc02": "2026-10-21",
+    "50cc5ab84acd9c0e1cddde5048bcc4be835b7165": "2026-10-21",
+    "bdbf24ee1a8c152ee638bcf7e24deb4dbeafc311": "2026-10-21",
+    "c97355e8b36f3347f936129a534418f70e3ae699": "2026-10-21",
+    "33f08e9d41993e8c7bd724eb0bba86063c8c7bfe": "2026-10-21",
+    "0db85397e2260fff25bc4efd1ea31330659cc308": "2026-10-21",
+    "eb4d1893dac7ede35f38063f0fe06c52b26e43c0": "2026-10-21",
+    "d6198c23fd3daa7adff83454cc626642879e33ad": "2026-10-21",
+    "93c6c2a632a03cb6f4dae11b74670d675caa6248": "2026-10-21",
+    "5563b33f78c88ae925948235590734773ae73904": "2026-10-21",
+    "2ef0a2cc83378fb4cf020077e5e4566ffa4351fa": "2026-10-21",
+    "0a66dc9e7f704489fd237e4f934aba632e5a471c": "2026-10-21",
+    "d16a773a43d5727a1f9ec1999c120347d72a315a": "2026-10-21",
+    "8b84fa0339a0a50c9c245ebceacc9be48ffc4cd1": "2026-10-21",
+    "a6181866fbef219ebd9bf067549baadbb66eefb0": "2026-10-21",
+    "5435ba15c5681767aa3632258b2c73f99edc6b08": "2026-10-21",
+    "ae5a39b065b525b05be4c6bf51e6213c398eec95": "2026-10-21",
+    "725f2d5870cb6cd2c06fd4009a72989c80a48bb3": "2026-10-21",
+    "bb8cb0b2a30395abc3f3abccfe8906472c1440cd": "2026-10-21",
+    "045aa2394f78313ecaf2e275595a3e19dbda9bab": "2026-10-21",
+    "47f48c43565e9ed3a6dc5675ebbee8d6edfd31d2": "2026-10-21",
+    "73cc21b5e3a43b5250c04ad9ac04080c7e6acc10": "2026-10-22",
+    "e137fb221d18fed0cf7a7b04cca475a43e4843f3": "2026-10-22",
+    "5bccfc7f638c36cc77bc0b0f68664703f54f1d4c": "2026-10-22",
+    "171ea768cc83a729b5cc9c36de7d74f6fcd4ce76": "2026-10-22",
+    "532810181c1f65905e7f9ab519f13e74485442e7": "2026-10-22",
+    "38e9d7042957da1bc6bbd5f4f9d81154de4002e9": "2026-10-22"
   },
   "entries": [
+    {
+      "date": "2026-10-22",
+      "path": "pages/page-types/working-with-sections-and-blocks/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version references and simplified Block gallery description to current functionality.",
+      "sources": [
+        "5bccfc7f638c36cc77bc0b0f68664703f54f1d4c"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/tenant-settings/document-management/document-types/index.rst",
+      "classification": "Correction",
+      "description": "Removed Omnia version references from image captions in the General and Publish tabs sections.",
+      "sources": [
+        "e137fb221d18fed0cf7a7b04cca475a43e4843f3"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/settings/content-header-712/index.rst",
+      "classification": "New page",
+      "description": "New page documenting content header settings for administrators in Omnia 7.12, including text formatting, style, and icon configuration options.",
+      "sources": [
+        "532810181c1f65905e7f9ab519f13e74485442e7"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/settings/block-title/index.rst",
+      "classification": "Added information",
+      "description": "Added note indicating this page applies to Omnia 7.11 and earlier versions, with a link to the Omnia 7.12 and later documentation.",
+      "sources": [
+        "38e9d7042957da1bc6bbd5f4f9d81154de4002e9"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/permissions/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that only administrators can be added for Shared links, Announcements, and Search permissions.",
+      "sources": [
+        "171ea768cc83a729b5cc9c36de7d74f6fcd4ce76"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "accessability/index.rst",
+      "classification": "Updated guidance",
+      "description": "Screen reader support moved to the main accessibility features list for equal prominence with other capabilities.",
+      "sources": [
+        "73cc21b5e3a43b5250c04ad9ac04080c7e6acc10"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "working-with-documents/authoring-controlled-documents/working-with-published-documents/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version reference from the sign-off requests feature description.",
+      "sources": [
+        "79514c7e8d11e941368eef32fc91607437364b1c"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "working-with-documents/authoring-controlled-documents/read-and-understood/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Removed outdated version references indicating when read receipts and sign-off requests became available features.",
+      "sources": [
+        "464bbf4099e3f5907f965f62ef359bde7bfd32d3"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.rst",
+      "classification": "Correction",
+      "description": "Removed Omnia version references from documentation to simplify current guidance.",
+      "sources": [
+        "42cb0fcf737e708962b2b1c7d2eff930e637c8b8"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "pages/page-types/page-type-settings/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version qualifications for automatic archiving calculations and event tracking, treating these features as standard functionality.",
+      "sources": [
+        "bb8cb0b2a30395abc3f3abccfe8906472c1440cd"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "pages/page-collections/page-collection-settings/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version reference about the previous name for the AI generated content option.",
+      "sources": [
+        "e202cba59830fc51f4690888f97c24498d88824e"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "pages/edit-page-variations/index.rst",
+      "classification": "Correction",
+      "description": "Removed version-specific notes comparing Omnia 7.8 and 7.9 differences, and updated the variation author section to describe current capabilities without historical limitations.",
+      "sources": [
+        "725f2d5870cb6cd2c06fd4009a72989c80a48bb3",
+        "a6181866fbef219ebd9bf067549baadbb66eefb0"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "general-assets/page-picker/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified the introduction to variation page picking by removing the version reference.",
+      "sources": [
+        "d6198c23fd3daa7adff83454cc626642879e33ad"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "general-assets/media-picker/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Removed Omnia version reference from the Media picker starting screen description.",
+      "sources": [
+        "0a66dc9e7f704489fd237e4f934aba632e5a471c"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/welcome-block/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version requirement from the block introduction.",
+      "sources": [
+        "d16a773a43d5727a1f9ec1999c120347d72a315a"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/user-profile-progress/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version requirement and simplified terminology regarding user type settings compatibility.",
+      "sources": [
+        "7041e851aefad81c3d8a1107b982498e09770e9a"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/team-news-rollup/index.rst",
+      "classification": "Correction",
+      "description": "Removed version qualifier from the profile card feature, confirming availability in current versions.",
+      "sources": [
+        "2ef0a2cc83378fb4cf020077e5e4566ffa4351fa"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/html-script/index.rst",
+      "classification": "Correction",
+      "description": "Removed version qualifier from the Searchable option in HTML/script block settings.",
+      "sources": [
+        "83b74d98a2c72cb3cfbbf82a409c79d1b4c141ca"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/document-rollup/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated Omnia version references from Process documents, SharePoint library, and Analytics sections.",
+      "sources": [
+        "045aa2394f78313ecaf2e275595a3e19dbda9bab",
+        "8b84fa0339a0a50c9c245ebceacc9be48ffc4cd1"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/controlled-documents-library/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version requirement statement from the controlled documents library block description.",
+      "sources": [
+        "f2367b625016185ee1295ce433a248bd599e8405"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/button-link/index.rst",
+      "classification": "Correction",
+      "description": "Removed version constraints from analytics option descriptions.",
+      "sources": [
+        "5435ba15c5681767aa3632258b2c73f99edc6b08",
+        "93c6c2a632a03cb6f4dae11b74670d675caa6248"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "blocks/analytics-counter/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version reference from the analytics counter example description.",
+      "sources": [
+        "bdbf24ee1a8c152ee638bcf7e24deb4dbeafc311"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/user-management/users-78/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed version-specific guidance and clarified that user management is also available in business profile settings.",
+      "sources": [
+        "2b4927220f86dba8423df3509466060ad173f31e"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/user-management/user-types/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version reference; private view of user profile cards can be used to edit public view information.",
+      "sources": [
+        "9bbd6a81ad4bb707bc6219c6facef0334768d39e"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/user-management/groups-78/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version-specific reference and simplified a link label.",
+      "sources": [
+        "5563b33f78c88ae925948235590734773ae73904",
+        "b55c97dc7e21efc2b9d49b165e9a75567af6c014"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/system/user-profile-card/index.rst",
+      "classification": "Correction",
+      "description": "Removed version-specific Omnia 7.8 references from example descriptions.",
+      "sources": [
+        "a011a3e84242225849026b3fcd8f2c480806cc02"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/sign-off-requests-613/sign-off-request-requests-613/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version requirement from the statement describing eligibility for document sign-off.",
+      "sources": [
+        "8c0fae9e2b2f36f9ee6bfbb3ad3f52acbd4f8b91"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/settings/user-profile-completion/index.rst",
+      "classification": "Correction",
+      "description": "Removed version qualifier that specified when the alternative user profile approach became available.",
+      "sources": [
+        "885077ee8013eb09c9850511e2bd286d2f9e8bd2"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed Omnia version-specific language and updated screenshots to present unified AI model configuration guidance.",
+      "sources": [
+        "0db85397e2260fff25bc4efd1ea31330659cc308",
+        "19da65494f451f96ed9041fd0de87db51b156559",
+        "2d2f53ae14215fbb76352e7e5fbb15eb757393ea",
+        "9b97b1537053ef7ef110180594ce5682ea31ade1",
+        "ad521530259ba8b1c186e54e611ad799c6ec713d",
+        "eb4d1893dac7ede35f38063f0fe06c52b26e43c0"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/improve-selected-text-ai-engine/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated references to Omnia 7.8 and earlier versions from the Improve selected text documentation.",
+      "sources": [
+        "64b815f89c4965475ba3d24fa90bb248ded57929"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/content-analysis-ai-engine/index.rst",
+      "classification": "Correction",
+      "description": "Removed version-specific references and legacy OpenAI compatibility information to simplify the introduction.",
+      "sources": [
+        "6e0c68a2dc5dbaef52e1f089f6e5e5f3514da404"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/settings/ai-engine/ai-features-logs/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed a spelling error and removed the work-in-progress notice from the page introduction.",
+      "sources": [
+        "7bdf7aca1bef3be71ecc389ec0130b07ef3a7700"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/tenant-settings/permissions/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated Omnia version references from the Users and groups, Secrets, and AI search sections for clarity and timelessness.",
+      "sources": [
+        "33f08e9d41993e8c7bd724eb0bba86063c8c7bfe",
+        "ae5a39b065b525b05be4c6bf51e6213c398eec95",
+        "c97355e8b36f3347f936129a534418f70e3ae699"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/business-group-settings/team-collaboration/teamwork-v7/directory/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated Omnia 7.9 version reference from image descriptions and updated the sorting functionality description.",
+      "sources": [
+        "fc76db467701ddc7407e0366bb0174be6e0ce6b3"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/business-group-settings/settings/document-picker/index.rst",
+      "classification": "Correction",
+      "description": "Removed version reference from semantic search documentation, now applies to all current versions.",
+      "sources": [
+        "47f48c43565e9ed3a6dc5675ebbee8d6edfd31d2"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/business-group-settings/settings/analytics/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version-specific references to Omnia 7.7 and 7.8 to simplify documentation for current product versions.",
+      "sources": [
+        "7d1df95fd19ab9dabfaa112002f6ea9eaeaf9774"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/business-group-settings/publishing-apps/publishing-v7/apps-v7/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified the description of sorting options for the publishing apps list by removing version-specific details.",
+      "sources": [
+        "4b586b4dcd3031bc8efc0d3e081dabeb31b2378d"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "path": "admin-settings/business-group-settings/features-bp-7/index.rst",
+      "classification": "Correction",
+      "description": "Removed Omnia version references from explanatory notes to improve documentation accuracy across versions.",
+      "sources": [
+        "50cc5ab84acd9c0e1cddde5048bcc4be835b7165"
+      ]
+    },
     {
       "date": "2026-10-20",
       "path": "release-notes/7.13/index.rst",
       "classification": "Updated guidance",
-      "description": "Release notes were reorganized to focus on key selling points, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.",
+      "description": "Release notes were reorganized for clarity, with bullets consolidated across all sections and updated to reflect content as of October 20, 2026.",
       "sources": [
         "f903f117eae5d880a3618ca637fac30e87f18112"
       ]
@@ -3286,15 +3688,6 @@
       "path": "blocks/page-rollup/index.rst",
       "classification": "Added information",
       "description": "Added documentation for Omnia 7.12 features including Show in dialog settings, new Card (WCAG) and Event card views, and updated display options with corrected screenshots.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/tenant-settings/settings/open-ai/settings-open-ai/index.rst",
-      "classification": "Updated guidance",
-      "description": "Added notice directing readers to current Omnia documentation for model IDs and deployment recommendations, as this page describes legacy Omnia 7.7.",
       "sources": [
         "7ba7c760f4902047fefea8d8987e5ab1331397e4"
       ]
