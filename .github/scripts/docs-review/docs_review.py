@@ -34,6 +34,7 @@ CONFIG_DIR = ROOT / ".github" / "docs-review"
 VALE_CONFIG = CONFIG_DIR / "vale" / ".vale.ini"
 VALE_STYLE = CONFIG_DIR / "vale" / "styles" / "Omnia"
 GITLEAKS_CONFIG = CONFIG_DIR / "gitleaks.toml"
+INSTRUCTIONS = ROOT / ".github" / "instructions" / "docs-review.instructions.md"
 README_PATH = ".github/docs-review/README.md"
 COMMENT_MARKER = "<!-- docs-review-summary -->"
 
@@ -60,6 +61,17 @@ class Finding:
     @property
     def area(self) -> str:
         return AREAS.get(self.rule.split(".", 1)[0], "Other")
+
+    # The policy for text that automation writes (README.md, "Automated updates"):
+    # a generator rewords audience and tone findings; confidentiality errors, secrets
+    # included, are never reworded and stop publication.
+    @property
+    def repairable(self) -> bool:
+        return self.area == "Audience and tone" and self.severity in ("error", "warning")
+
+    @property
+    def blocks_publication(self) -> bool:
+        return self.area == "Confidentiality" and self.severity == "error"
 
 
 # ---------------------------------------------------------------- helpers
@@ -146,6 +158,39 @@ class Config:
             if fnmatch.fnmatchcase(rule, entry.get("rule", "*")) and matches_any(path, entry.get("files", ["**"])):
                 return True
         return False
+
+
+# ---------------------------------------------------------------- rules for text generators
+
+
+def generation_rules() -> str:
+    """The review rules as instructions for a model that writes published text.
+
+    Read from the same files as the review (Vale styles, confidentiality.yml and the
+    "What to look for" part of the Copilot review instructions), so the prompt and the
+    check cannot drift apart.
+    """
+    lines = ["DOCUMENTATION REVIEW RULES. The text you write is published to customers and is checked against",
+             "these rules afterwards. Follow them while you write.", ""]
+    for path in sorted(VALE_STYLE.glob("*.yml")):
+        style = load_yaml(path)
+        verdict = "Must never appear" if style.get("level") == "error" else "Avoid"
+        case = "ignoring case" if style.get("ignorecase") else "case-sensitive"
+        message = style["message"].replace("'%s'", "A phrase from this list")
+        lines.append(f"Omnia.{path.stem}: {verdict}. {message}")
+        lines.append(f"  Phrases (regular expressions, {case}): " + "; ".join(str(t) for t in style.get("tokens", [])))
+    confidential = load_yaml(CONFIG_DIR / "confidentiality.yml")
+    lines += ["", "Confidentiality: none of these may appear:"]
+    for pattern in confidential.get("patterns", []):
+        lines.append(f"- {pattern['id']}: {pattern['message']}")
+    if refs := confidential.get("customer_references"):
+        lines.append(f"- {refs['error_id']}: a number such as (#{refs['min_customer_reference'] - 1}) below "
+                     f"{refs['min_customer_reference']} is an internal GitHub card number.")
+    lines.append("- Secrets: no passwords, keys, tokens or connection strings.")
+    instructions = INSTRUCTIONS.read_text(encoding="utf-8")
+    guidance = instructions.split("## What to look for", 1)[-1].split("\n## ", 1)[0].strip()
+    lines += ["", "What a reviewer also looks for (write so that a reviewer finds none of it):", guidance]
+    return "\n".join(lines) + "\n"
 
 
 # ---------------------------------------------------------------- rst parsing
@@ -648,9 +693,17 @@ def table(findings: list[Finding], link_base: str | None, limit: int = 60) -> li
     return rows
 
 
-def summary(review: Review, scope: str, link_base: str | None, commit: str | None, subject: str | None = None) -> str:
+def blocking(findings: list[Finding], automated: bool) -> list[Finding]:
+    """Errors that stop the check; for text written by automation only those that block publication."""
+    return [f for f in findings if f.severity == "error" and (f.blocks_publication or not automated)]
+
+
+def summary(review: Review, scope: str, link_base: str | None, commit: str | None, subject: str | None = None,
+            automated: bool = False) -> str:
     by_severity = {s: [f for f in sorted(review.findings, key=sort_key) if f.severity == s] for s in SEVERITIES}
     errors, warnings, infos = by_severity["error"], by_severity["warning"], by_severity["info"]
+    unblocked = [f for f in errors if f not in blocking(errors, automated)]
+    errors = blocking(errors, automated)
     readme = f"{link_base}/{README_PATH}" if link_base else README_PATH
     lines = [COMMENT_MARKER]
     if errors:
@@ -662,6 +715,10 @@ def summary(review: Review, scope: str, link_base: str | None, commit: str | Non
                   f"[What each check does, and what to do about a false alarm]({readme}).", ""]
     if errors:
         lines += [f"### Must fix ({len(errors)})", "", *table(errors, link_base), ""]
+    if unblocked:
+        lines += [f"### Fix by hand ({len(unblocked)}, published anyway)", "",
+                  "Text written by automation is published with these findings: only confidentiality findings "
+                  "block it. Correct the wording by hand.", "", *table(unblocked, link_base), ""]
     if warnings:
         lines += [f"### Please check ({len(warnings)}, does not block)", "", *table(warnings, link_base), ""]
     if infos:
@@ -674,11 +731,13 @@ def summary(review: Review, scope: str, link_base: str | None, commit: str | Non
         for path in review.images_to_check[:40]:
             lines.append(f"- [{path}]({link_base}/{path})" if link_base else f"- {path}")
         lines.append("")
-    if not (errors or warnings or infos or review.images_to_check):
+    if not (errors or unblocked or warnings or infos or review.images_to_check):
         lines += ["No findings.", ""]
     for note in review.notes:
         lines += [f"> {note}", ""]
     footer = f"Errors block {'publishing' if subject else 'the check'}; warnings and information do not."
+    if automated:
+        footer = "Confidentiality errors (secrets included) block publishing; other findings do not."
     if commit:
         footer = f"Updated for commit {commit[:7]}. " + footer
     lines.append(f"<sub>{footer}</sub>")
@@ -693,15 +752,17 @@ def escape_property(text: str) -> str:
     return escape_data(text).replace(":", "%3A").replace(",", "%2C")
 
 
-def print_annotations(findings: list[Finding]) -> None:
+def print_annotations(findings: list[Finding], automated: bool = False) -> None:
     kinds = {"error": "error", "warning": "warning", "info": "notice"}
+    stopping = blocking(findings, automated)
     for finding in sorted(findings, key=sort_key):
+        kind = kinds[finding.severity] if finding.severity != "error" or finding in stopping else "warning"
         props = [f"title={escape_property(finding.rule)}"]
         if not finding.file.startswith("("):
             props.insert(0, f"file={escape_property(finding.file)}")
             if finding.line:
                 props.insert(1, f"line={finding.line}")
-        print(f"::{kinds[finding.severity]} {','.join(props)}::{escape_data(finding.message)}")
+        print(f"::{kind} {','.join(props)}::{escape_data(finding.message)}")
 
 
 # ---------------------------------------------------------------- main
@@ -713,6 +774,8 @@ def main(argv: list[str] | None = None) -> int:
     mode.add_argument("--base", help="base branch or commit of the pull request")
     mode.add_argument("--all", action="store_true", help="review every page (baseline)")
     mode.add_argument("--files", nargs="+", help="review these files completely (fixtures)")
+    mode.add_argument("--prompt-rules", action="store_true",
+                      help="print the rules as instructions for a text generator, and exit")
     parser.add_argument("--out", default="_build/docs-review", help="folder for findings.json and summary.md")
     parser.add_argument("--build", choices=["auto", "always", "never"], default="auto",
                         help="compare Sphinx builds of the base and the change (default: when pages changed)")
@@ -725,7 +788,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-fail", action="store_true", help="exit 0 even when errors are found")
     parser.add_argument("--subject", help="what is reviewed when it is not a pull request, "
                                           "e.g. 'the documentation updates digest' (summary wording)")
+    parser.add_argument("--automated", action="store_true",
+                        help="text written by automation: only confidentiality errors (secrets included) block")
     args = parser.parse_args(argv)
+    if args.prompt_rules:
+        sys.stdout.write(generation_rules())
+        return 0
 
     config = Config()
     status: dict[str, str] = {}
@@ -784,20 +852,21 @@ def main(argv: list[str] | None = None) -> int:
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     (out / "findings.json").write_text(json.dumps(
-        [dataclasses.asdict(f) | {"area": f.area} for f in sorted(review.findings, key=sort_key)], indent=2),
+        [dataclasses.asdict(f) | {"area": f.area, "repairable": f.repairable, "blocks_publication": f.blocks_publication}
+         for f in sorted(review.findings, key=sort_key)], indent=2),
         encoding="utf-8")
-    text = summary(review, scope, args.link_base, args.commit, args.subject)
+    text = summary(review, scope, args.link_base, args.commit, args.subject, args.automated)
     (out / "summary.md").write_text(text, encoding="utf-8")
     if args.step_summary and os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
             handle.write(text)
     if args.annotations:
-        print_annotations(review.findings)
+        print_annotations(review.findings, args.automated)
 
     counts = collections.Counter(f.severity for f in review.findings)
     print(f"Documentation review: {counts['error']} error(s), {counts['warning']} warning(s), "
           f"{counts['info']} info. Summary: {out / 'summary.md'}")
-    return 1 if counts["error"] and not args.no_fail else 0
+    return 1 if blocking(review.findings, args.automated) and not args.no_fail else 0
 
 
 if __name__ == "__main__":

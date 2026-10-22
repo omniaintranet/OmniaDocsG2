@@ -10,6 +10,8 @@ AUDIT_FILE="/tmp/release-notes-audit.json"
 RESPONSE_FILE="/tmp/copilot-release-notes-response.txt"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
+REVIEW_SCRIPT=".github/scripts/docs-review/docs_review.py"
+PYTHON="${PYTHON:-python}"
 
 if [ ! -f "$INPUT_FILE" ]; then
   echo "Input file not found: $INPUT_FILE"
@@ -70,12 +72,23 @@ echo "Issues: $issue_count"
 skill_instructions=$(cat "$SKILL_FILE")
 release_data=$(cat "$INPUT_FILE")
 
+# The documentation review's rules, read from its rule files (.github/docs-review/README.md),
+# so the notes are written to pass the review that runs on them afterwards.
+if ! review_rules=$("$PYTHON" "$REVIEW_SCRIPT" --prompt-rules); then
+  echo "::warning title=Documentation review::The review rules could not be read; generating the release notes without them."
+  review_rules=""
+fi
+
 prompt=$(cat <<EOF
 You are generating customer-facing Omnia hotfix release notes.
 
 Follow these release-note instructions exactly:
 
 $skill_instructions
+
+Every bullet and every suggestedText must also pass the documentation review:
+
+$review_rules
 
 Release data:
 

@@ -48,6 +48,23 @@ jobs:
         if: steps.detect-release.outputs.found == 'true'
         run: npm install -g @github/copilot
 
+      # Before generation: the prompt includes the review rules (docs_review.py --prompt-rules).
+      - name: Set up Python for the documentation review
+        if: steps.detect-release.outputs.found == 'true'
+        continue-on-error: true
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install documentation review tools
+        if: steps.detect-release.outputs.found == 'true'
+        # Without the tools the notes are generated without the rules and the review reports
+        # that it could not finish; the PR still opens.
+        continue-on-error: true
+        run: |
+          python -m pip install -r docs/requirements.txt -r .github/docs-review/requirements.txt
+          bash .github/scripts/docs-review/install-tools.sh
+
       - name: Generate release notes
         id: generate-release-notes
         if: steps.detect-release.outputs.found == 'true'
@@ -64,28 +81,15 @@ jobs:
           if-no-files-found: error
           retention-days: 1
 
-      - name: Set up Python for the documentation review
-        if: steps.detect-release.outputs.found == 'true' && steps.generate-release-notes.outputs.has_notes == 'true'
-        continue-on-error: true
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.11"
-
-      - name: Install documentation review tools
-        if: steps.detect-release.outputs.found == 'true' && steps.generate-release-notes.outputs.has_notes == 'true'
-        # Without the tools the review reports that it could not finish; the PR still opens.
-        continue-on-error: true
-        run: |
-          python -m pip install -r docs/requirements.txt -r .github/docs-review/requirements.txt
-          bash .github/scripts/docs-review/install-tools.sh
-
-      # The same rules as the pull request check (.github/docs-review/README.md). The pull request
+      # The same rules as the pull request check (.github/docs-review/README.md). Copilot rewords
+      # bullets with audience and tone findings (a bounded number of times). The pull request
       # opened with github.token does not start docs-review.yml, so the result goes into its body.
       # Findings do not stop the run: people review the draft before it is marked ready.
       - name: Review generated release notes
         id: review-release-notes
         if: steps.detect-release.outputs.found == 'true' && steps.generate-release-notes.outputs.has_notes == 'true'
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           RELEASE_NOTES_FILE: release-notes/7.0/versions.rst
         run: bash .github/scripts/hotfix-release-notes/review-release-notes.sh
 

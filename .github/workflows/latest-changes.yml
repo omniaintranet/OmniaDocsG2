@@ -49,19 +49,16 @@ jobs:
           REMAINING_GROUPS: ${{ steps.digest.outputs.remaining_groups }}
         run: echo "Page/date groups remaining after this run = $REMAINING_GROUPS"
       # The same rules as the pull request check (.github/docs-review/README.md), on the
-      # lines this run changed. A blocking finding fails the run before "Publish digest":
+      # lines this run changed. Copilot rewords entries with audience and tone findings
+      # (a bounded number of times); what is left is reported and does not block.
+      # A confidentiality finding (secrets included) fails the run before "Publish digest":
       # nothing is committed, state.json is not advanced, and the next run classifies
       # the same changes again. Findings are in the job summary.
       - name: Review the digest before publishing
-        run: >-
-          python .github/scripts/docs-review/docs_review.py
-          --base HEAD
-          --build never
-          --linkcheck never
-          --out "$RUNNER_TEMP/docs-review"
-          --annotations
-          --step-summary
-          --subject "the documentation updates digest"
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python .github/scripts/latest-changes/update.py --review "$RUNNER_TEMP/docs-review"
       - name: Build documentation and verify digest links
         run: |
           python -m sphinx -b html . _build/html

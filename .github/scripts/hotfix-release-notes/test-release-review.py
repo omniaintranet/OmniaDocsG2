@@ -71,6 +71,7 @@ class ReleaseReviewTests(unittest.TestCase):
             TEST_PR_BODY=shell_path(self.folder / "pr-body.md"),
             TEST_EXISTING_BODY=getattr(self, "existing_body", "Automatically generated draft release notes."),
             DOCUMENTATION_PR_URL=getattr(self, "pr_url", "https://github.com/omniaintranet/OmniaDocsG2/pull/43"),
+            PYTHON=getattr(self, "python", shell_path(sys.executable)),
             RELEASE_NOTES_URL="https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html")
         return subprocess.run([BASH, "-c", f'export PATH="{shell_path(self.bin)}:{shell_path(Path(BASH).parent)}:$PATH"; bash "{shell_path(path)}"'],
             cwd=cwd, env=env, capture_output=True, text=True)
@@ -89,7 +90,12 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertNotIn("Improved the reliability of permission handling", notes)
         self.assertEqual(audit["pendingReviewIssues"][0]["suggestedText"], self.response["pendingReviewIssues"][0]["suggestedText"])
         self.assertIn("has_notes=true", (self.folder / "outputs").read_text())
-        self.assertIn("Sentence variation and readability", (self.folder / "prompt.txt").read_text())
+        prompt = (self.folder / "prompt.txt").read_text()
+        self.assertIn("Sentence variation and readability", prompt)
+        # The documentation review rules, read from the rule files at run time.
+        self.assertIn("DOCUMENTATION REVIEW RULES", prompt)
+        self.assertIn("key selling points?", prompt)
+        self.assertLess(prompt.index("DOCUMENTATION REVIEW RULES"), prompt.index("Release data:"))
         rendered = self.run_script("create-ready-project-item.sh", notification=True)
         self.assertEqual(rendered.returncode, 0, rendered.stderr)
         self.assertIn("**1** pending manual security review", rendered.stdout)
@@ -98,6 +104,13 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertIn("Permissions change requires manual disclosure review", rendered.stdout)
         self.assertIn("Suggested release note (pending approval)", rendered.stdout)
         self.assertIn(self.response["pendingReviewIssues"][0]["suggestedText"], rendered.stdout)
+
+    def test_generation_without_review_rules_still_works(self):
+        self.python = "false"
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("generating the release notes without them", result.stdout)
+        self.assertNotIn("DOCUMENTATION REVIEW RULES", (self.folder / "prompt.txt").read_text())
 
     def check_pr_output(self, existing=False, no_changes=False):
         result = self.generate()
@@ -274,22 +287,27 @@ class ReleaseReviewTests(unittest.TestCase):
 
 @unittest.skipUnless(VALE and GITLEAKS, "needs Vale and gitleaks (VALE_BIN, GITLEAKS_BIN), see .github/docs-review/README.md")
 class ReleaseNotesDocsReviewTests(unittest.TestCase):
-    """review-release-notes.sh with the real documentation review in a scratch repository."""
+    """review-release-notes.sh with the real documentation review in a scratch repository, Copilot mocked."""
 
     NOTES = "release-notes/7.0/versions.rst"
     PUBLISHED = "7.11.98\n========================================\n(Omnia 7.11.98)\n\n- Published before the review: a key selling point\n"
+    SALES = "- Quick Search now handles document filters, a key selling point"
+    FIXED = "- Quick Search now correctly handles document filters"
 
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.folder = Path(self.temp.name)
         self.repo = self.folder / "repo"
-        sources = [".github/scripts/docs-review/docs_review.py", "conf.py"]
+        sources = [".github/scripts/docs-review/docs_review.py", "conf.py", ".github/skills/hotfix-release-notes/SKILL.md",
+                   ".github/instructions/docs-review.instructions.md"]
+        sources += [f".github/scripts/hotfix-release-notes/{name}"
+                    for name in ("validate-release-notes.sh", "wait-for-rn-lib.sh", "wait-for-rn-pattern.txt")]
         sources += [p.relative_to(ROOT).as_posix() for p in (ROOT / ".github/docs-review").rglob("*") if p.is_file()]
         for source in sources:
             target = self.repo / source
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(ROOT / source, target)
+            target.write_bytes((ROOT / source).read_bytes().replace(b"\r\n", b"\n"))
         (self.repo / self.NOTES).parent.mkdir(parents=True)
         (self.repo / self.NOTES).write_text(self.PUBLISHED, newline="\n")
         # A minimal site with the repository's conf.py, for the Sphinx build comparison.
@@ -297,31 +315,101 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         for args in (["init", "-q"], ["add", "-A"], ["commit", "-q", "-m", "Published"]):
             subprocess.run(["git", "-c", "user.name=Test", "-c", "user.email=test@example.invalid", *args],
                            cwd=self.repo, check=True, capture_output=True)
+        # On its n-th call, Copilot answers with responses/<n>.json, or the last response after that.
+        self.bin = self.folder / "bin"
+        self.prompts = self.folder / "prompts"
+        self.responses = self.folder / "responses"
+        for folder in (self.bin, self.prompts, self.responses):
+            folder.mkdir()
+        copilot = self.bin / "copilot"
+        copilot.write_text('#!/usr/bin/env bash\nn=$(( $(ls "$TEST_PROMPTS" | wc -l) + 1 ))\ncat > "$TEST_PROMPTS/$n.txt"\n'
+                           'last=$(ls "$TEST_RESPONSES" | sort -n | tail -1)\n'
+                           'cat "$TEST_RESPONSES/$n.json" 2>/dev/null || cat "$TEST_RESPONSES/$last"\n', newline="\n")
+        copilot.chmod(0o755)
+        self.data = {"releases": [{"statusName": "Wait for RN - Omnia 7.11.99", "issues": [
+            {"repositoryWithOwner": "omniaintranet/test", "number": 1, "body": "", "comments": []}]}]}
+
+    def answer(self, *texts):
+        for n, text in enumerate(texts, 1):
+            (self.responses / f"{n}.json").write_text(json.dumps({"bullets": [{"bullet": 0, "text": text}]}))
 
     def review(self, bullet):
         (self.folder / "generated-release-notes.rst").write_text(
             f"7.11.99\n========================================\n(Omnia 7.11.99)\n\n{bullet}\n", newline="\n")
+        (self.folder / "release-notes-audit.json").write_text(json.dumps({"bullets": [{"text": bullet, "sourceIssues": [
+            {"repositoryWithOwner": "omniaintranet/test", "number": 1}]}], "omittedIssues": [], "pendingReviewIssues": []}))
+        (self.folder / "release-issues.json").write_text(json.dumps(self.data))
         script = (SCRIPTS / "review-release-notes.sh").read_text(encoding="utf-8")
-        for name in ("generated-release-notes.rst", "docs-review-release-notes"):
+        for name in ("generated-release-notes.rst", "docs-review-release-notes", "release-notes-audit.json", "release-issues.json"):
             script = script.replace("/tmp/" + name, shell_path(self.folder / name))
         path = self.folder / "review-release-notes.sh"
         path.write_text(script, encoding="utf-8", newline="\n")
         env = dict(os.environ, PYTHON=shell_path(sys.executable), RELEASE_NOTES_FILE=self.NOTES,
-                   GITHUB_OUTPUT=shell_path(self.folder / "outputs"), VALE_BIN=VALE, GITLEAKS_BIN=GITLEAKS)
+                   GITHUB_OUTPUT=shell_path(self.folder / "outputs"), VALE_BIN=VALE, GITLEAKS_BIN=GITLEAKS,
+                   TEST_PROMPTS=shell_path(self.prompts), TEST_RESPONSES=shell_path(self.responses))
         env.pop("GITHUB_STEP_SUMMARY", None)
-        result = subprocess.run([BASH, "-c", f'export PATH="{shell_path(Path(BASH).parent)}:$PATH"; bash "{shell_path(path)}"'],
+        result = subprocess.run([BASH, "-c", f'export PATH="{shell_path(self.bin)}:{shell_path(Path(BASH).parent)}:$PATH"; '
+                                             f'bash "{shell_path(path)}"'],
                                 cwd=self.repo, env=env, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertEqual((self.repo / self.NOTES).read_text(), self.PUBLISHED, "the release-notes file must be restored")
         review = self.folder / "docs-review-release-notes"
+        self.output = result.stdout + result.stderr
+        self.notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.audit = json.loads((self.folder / "release-notes-audit.json").read_text())
+        self.calls = sorted(self.prompts.iterdir(), key=lambda p: int(p.stem))
         return (json.loads((review / "findings.json").read_text()), (review / "summary.md").read_text(encoding="utf-8"),
                 (self.folder / "outputs").read_text())
 
-    def test_sales_language_in_generated_notes_is_reported(self):
-        findings, summary, outputs = self.review("- Quick Search now handles document filters, a key selling point")
+    def test_sales_language_is_given_back_and_reworded(self):
+        self.answer(self.FIXED)
+        findings, summary, outputs = self.review(self.SALES)
+        self.assertEqual(findings, [])
+        self.assertEqual(len(self.calls), 1)
+        prompt = self.calls[0].read_text()
+        self.assertIn("'key selling point' is internal or sales language", prompt)
+        self.assertIn("DOCUMENTATION REVIEW RULES", prompt)
+        self.assertIn(self.SALES, prompt)
+        self.assertIn(self.FIXED, self.notes)
+        self.assertEqual(self.audit["bullets"][0]["text"], self.FIXED)
+        self.assertIn("nothing blocks the generated release notes", summary)
+        self.assertIn("Reworded after the review (1)", summary)
+        self.assertIn(f"| {self.SALES} | {self.FIXED} |", summary)
+        self.assertIn("errors=0", outputs)
+
+    def test_findings_left_after_the_repair_rounds_are_reported(self):
+        self.answer("- Quick Search handles document filters, a key selling point",
+                    "- Quick Search handles filters, a key selling point")
+        findings, summary, outputs = self.review(self.SALES)
+        self.assertEqual(len(self.calls), 2)
         self.assertEqual([(f["file"], f["line"], f["rule"], f["severity"]) for f in findings],
                          [(self.NOTES, 5, "Omnia.InternalLanguage", "error")])
         self.assertIn("must be fixed before publishing the generated release notes", summary)
+        self.assertIn("Reworded after the review (2)", summary)
+        self.assertIn("errors=1", outputs)
+
+    def test_unchanged_answer_ends_the_repair(self):
+        self.answer(self.SALES)
+        findings, summary, outputs = self.review(self.SALES)
+        self.assertEqual(len(self.calls), 1)
+        self.assertIn("no usable rewording", self.output)
+        self.assertNotIn("Reworded after the review", summary)
+        self.assertIn("errors=1", outputs)
+
+    def test_rewrite_must_keep_its_customer_references(self):
+        self.data["releases"][0]["issues"][0]["body"] = "https://support.example/agent/tickets/59036"
+        self.answer(self.FIXED)
+        findings, summary, outputs = self.review(self.SALES + " (#59036)")
+        self.assertIn(self.SALES + " (#59036)", self.notes)
+        self.assertIn("no usable rewording", self.output)
+        self.assertIn("errors=1", outputs)
+
+    def test_rewrite_must_pass_the_release_note_validator(self):
+        self.answer(self.FIXED + " (see https://private.example/card)")
+        findings, summary, outputs = self.review(self.SALES)
+        self.assertIn(self.SALES, self.notes)
+        self.assertEqual(self.audit["bullets"][0]["text"], self.SALES)
+        self.assertIn("failed validation; keeping the previous text", self.output)
         self.assertIn("errors=1", outputs)
 
     def test_broken_inline_reference_is_reported(self):
@@ -329,11 +417,13 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         findings, summary, outputs = self.review("- See :doc:`missing-page` for details")
         self.assertEqual([(f["file"], f["line"], f["rule"], f["severity"]) for f in findings],
                          [(self.NOTES, 5, "Build.BrokenReference", "error")])
+        self.assertEqual(self.calls, [], "build findings are not reworded")
         self.assertIn("errors=1", outputs)
 
     def test_clean_generated_notes_pass(self):
-        findings, summary, outputs = self.review("- Quick Search now correctly handles document filters")
+        findings, summary, outputs = self.review(self.FIXED)
         self.assertEqual(findings, [])
+        self.assertEqual(self.calls, [])
         self.assertIn("nothing blocks the generated release notes", summary)
         self.assertIn("errors=0", outputs)
 

@@ -228,15 +228,52 @@ class DigestTests(unittest.TestCase):
             digest.classify(group, {'title': 'Long history', 'text': 'Existing text.\n' * 20000})
         prompt = command.call_args.kwargs['input']
         self.assertIn('+Added an example.', prompt)
-        self.assertLess(len(prompt), 40000)
+        self.assertLess(len(prompt), 40000 + len(digest.review_rules()))
 
     def test_prompt_asks_for_customer_facing_wording_without_repository_instructions(self):
         group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
         response = json.dumps({'classification': 'Added information', 'description': 'Added an example.'})
         with patch.object(digest, 'command', return_value=response) as command:
             digest.classify(group, {'title': 'Guide', 'text': 'Guide\n=====\n'})
-        self.assertIn('No internal, sales or marketing', command.call_args.kwargs['input'])
+        prompt = command.call_args.kwargs['input']
+        self.assertIn('neutral, factual wording', prompt)
+        self.assertIn('never quote, reword or describe', prompt)
         self.assertIn('--no-custom-instructions', command.call_args.args)
+
+    def test_prompt_contains_the_review_rules_from_the_rule_files(self):
+        group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
+        response = json.dumps({'classification': 'Added information', 'description': 'Added an example.'})
+        with patch.object(digest, 'command', return_value=response) as command:
+            digest.classify(group, {'title': 'Guide', 'text': 'Guide\n=====\n'})
+        prompt = command.call_args.kwargs['input']
+        self.assertIn(digest.docs_review().generation_rules(), prompt)
+        self.assertIn('key selling points?', prompt)   # a token of InternalLanguage.yml
+        self.assertLess(prompt.index('DOCUMENTATION REVIEW RULES'), prompt.index('DATA:'))
+
+    def test_reword_sends_findings_and_validates_the_new_text(self):
+        entry = {'classification': 'Updated guidance', 'description': 'Focused on the key selling points.'}
+        finding = {'message': "'key selling points' is internal or sales language."}
+        valid = json.dumps({'description': 'Focused the notes on the main new features.'})
+        with patch.object(digest, 'command', return_value=valid) as command:
+            self.assertEqual(digest.reword(entry, 'Release 7.13', [finding]), 'Focused the notes on the main new features.')
+        prompt = command.call_args.kwargs['input']
+        self.assertIn(finding['message'], prompt)
+        self.assertIn('DOCUMENTATION REVIEW RULES', prompt)
+        for response in ['{"description": "See https://example.com"}', '{"text": "Other schema"}', 'not json']:
+            with self.subTest(response=response), patch.object(digest, 'command', return_value=response), \
+                    self.assertRaises(ValueError):
+                digest.reword(entry, 'Release 7.13', [finding])
+
+    def test_render_maps_description_lines_to_entries(self):
+        pages = {**digest.pages_in(self.root), 'other/index.rst': {'title': 'Another guide'}}
+        entries = [{'date': '2026-10-13', 'path': 'guide/index.rst', 'classification': 'Added information',
+                    'description': 'Added an example.'},
+                   {'date': '2026-10-12', 'path': 'other/index.rst', 'classification': 'Correction',
+                    'description': 'Corrected a step.'}]
+        lines, owners = digest.render_lines(entries, pages)
+        self.assertEqual({lines[n - 1].strip(): key for n, key in owners.items()},
+                         {'Added an example.': ('2026-10-13', 'guide/index.rst'),
+                          'Corrected a step.': ('2026-10-12', 'other/index.rst')})
 
     def test_overlong_model_description_is_corrected_before_publication(self):
         group = {'new': False, 'changes': [{'diff': '+Added an example.'}]}
@@ -371,8 +408,8 @@ class WorkflowTests(unittest.TestCase):
         self.assertLess(steps.index('Update reader digest'), steps.index('Review the digest before publishing'))
         self.assertLess(steps.index('Review the digest before publishing'), steps.index('Publish digest'))
         review = text.split('- name: Review the digest before publishing', 1)[1].split('- name:', 1)[0]
-        self.assertIn('docs_review.py', review)
-        self.assertIn('--base HEAD', review)
+        self.assertIn('update.py --review', review)
+        self.assertIn('GITHUB_TOKEN', review)   # Copilot rewords flagged entries
         for loophole in ('--no-fail', 'continue-on-error', 'if:'):
             self.assertNotIn(loophole, review)
         publish = text.split('- name: Publish digest', 1)[1]

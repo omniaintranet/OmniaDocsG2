@@ -30,17 +30,23 @@ MCP servers disabled, uses no repository instructions, and
 must return validated JSON. Invalid responses are retried up to three times.
 It never receives GitHub credentials in its prompt.
 Classifications describe documentation changes, not changes to product behavior.
-The prompt asks for neutral, customer-facing wording without internal, sales or
-marketing language and without promises about future releases.
+The prompt asks for neutral, customer-facing wording and includes the rules of the
+documentation review, read from `.github/docs-review/` on every run, so a phrase
+added there reaches the prompt with the next run. Rst comments in the changes are
+not shown to readers, and the prompt forbids describing them.
 
 Internal state records processed commit SHAs and per-entry source SHAs. It is never
 included in the public page. Failed classification, incomplete API results,
-missing build targets, a blocking finding of the documentation review, or a
+missing build targets, a confidentiality finding of the documentation review, or a
 concurrent branch update prevent publication. The documentation review
-(`.github/docs-review/README.md`) checks the digest lines a run changed for
-internal or sales language, unfinished text, confidential data and secrets before
-the digest is committed; a blocked run leaves the state unchanged, so the next run
-classifies the same changes again. Each
+(`.github/docs-review/README.md`, "Automated updates") checks the digest lines a run
+changed before the digest is committed (`update.py --review`). Entries with audience
+and tone findings (internal or sales language, unfinished text, superlatives,
+promises) go back to Copilot with the findings and are reworded, at most twice;
+what is left is published and listed in the run's summary. Confidential data and
+secrets are never reworded: they fail the run, which leaves the state unchanged, so
+the next run classifies the same changes again. The page is always rendered from
+`state.json`: to correct an entry by hand, change its `description` there. Each
 run classifies up to 60 page/date groups, newest first, with at most three
 independent classifiers running concurrently. All selected results must validate
 before either generated file is written. Larger backfills resume
@@ -71,10 +77,12 @@ backfill. No new repository secret is required by this implementation.
 python -m unittest discover -s .github/scripts/latest-changes -p 'test_*.py'
 python -m sphinx -b html . _build/html
 python .github/scripts/latest-changes/update.py --check-build _build/html
-python .github/scripts/docs-review/docs_review.py --base HEAD --build never --linkcheck never
+python .github/scripts/docs-review/test_docs_review.py
 ```
 
-The last command needs Vale and gitleaks (see `.github/docs-review/README.md`).
+The last command needs Vale and gitleaks (see `.github/docs-review/README.md`); it
+also tests `update.py --review` with Copilot mocked. `update.py --review <folder>`
+itself calls Copilot when an entry has findings.
 
 For a live local run, use a clean checkout of the default branch, authenticated
 `gh`, and `copilot`, with `GITHUB_REPOSITORY=omniaintranet/OmniaDocsG2` and
