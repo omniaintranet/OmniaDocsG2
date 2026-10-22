@@ -5,7 +5,7 @@ When working on a layout, including a layout for a page type, you use sections a
 
 Regarding page types, you work the same way with local page types and tenant page types. For the very first steps when creating a new page type, see: :doc:`Create new page type </pages/page-types/create-new-page-type/index>`
 
-In this description, we use a page type as an example. You work the same way with other layouts. Images in this description from Omnia 7.9.
+In this description, we use a page type as an example. You work the same way with other layouts. 
 
 The first steps
 ******************************
@@ -15,7 +15,7 @@ You can really work the way you want, you don't need a section to add a block, f
 
 .. image:: sections-1.png
 
-2. select the base layout (image below using the new option Block gallery in Omnia 7.9).
+2. select the base layout (image below using the Block gallery).
 
 .. image:: sections-2.png
 
