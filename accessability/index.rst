@@ -5,6 +5,7 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 
 + Easy to navigate: Using available options in Omnia, administrators and editors can set up easy to use navigation. 
 + Easy to find what users are looking for: Omnia contains a number of search capabilities, that are both powerful and easy to use. One example is semantic search which, if implemented, offers the possibility to search in a much more natural way.
++ Full Screen reader support.
 + Navigate using the keyboard: All functionality is available from a keyboard.
 + Links: All text links are marked with underscore when the accessibility theme is active.
 + Accessibility theme: To make it easier for users to see and read content, administrators can set up the accessibility theme, see below. 
@@ -15,8 +16,6 @@ Omnia is WCAG 2.1aa compliant. It's up to administrators of a specific, customer
 + Readable and understandable: Omnia contains AI functionality to support editors in the process of adding text content that is both readable and understandable.
 + Input assistance: Omnia contains AI functionality that can assist users when creating text and images.
 + Compatibility: All features in Omnia are developed with compatibility in mind.
-
-As of Omnia 7.8 and later, Omnia has full screen reader support.  
 
 Activating the accessibility features
 **************************************
