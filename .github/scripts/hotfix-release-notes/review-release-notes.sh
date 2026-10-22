@@ -4,7 +4,8 @@
 #
 # Bullets with audience and tone findings go back to GitHub Copilot to be reworded, at most
 # REPAIR_ROUNDS times; each rewrite must pass the release-note validator and keep its customer
-# references, or it is discarded. Whatever is left never stops the run: create-pr.sh adds the
+# references, or it is discarded. Nothing is reworded while a confidentiality finding (secrets
+# included) is open. Whatever is left never stops the run: create-pr.sh adds the
 # summary to the pull request, which people review before it is marked ready, and marks
 # blocking findings at the top.
 # The release-notes file is restored afterwards, so create-pr.sh starts from the default branch.
@@ -171,7 +172,12 @@ status=0
 round=0
 while [ "$round" -lt "$REPAIR_ROUNDS" ] && [ -f "$AUDIT_FILE" ]; do
   # The Sphinx build is left out here: the rewording only changes the wording.
-  review --build never --no-secrets > /dev/null || { status=$?; break; }
+  review --build never > /dev/null || { status=$?; break; }
+  # Confidential data and secrets are never sent to Copilot, nor copied into the before/after table.
+  if ! jq -e 'all(.[]; .blocks_publication | not)' "$REVIEW_DIR/findings.json" > /dev/null; then
+    echo "Confidentiality findings: no rewording, a person must fix the notes."
+    break
+  fi
   flagged=$(flagged_bullets) || break
   [ "$flagged" = "[]" ] && break
   round=$((round + 1))

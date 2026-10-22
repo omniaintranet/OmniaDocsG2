@@ -412,6 +412,16 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.assertIn("failed validation; keeping the previous text", self.output)
         self.assertIn("errors=1", outputs)
 
+    def test_confidential_data_is_never_sent_for_rewording(self):
+        self.answer(self.FIXED)
+        bullet = self.SALES + " for tenant contoso-hr.sharepoint.de.example.omniacloud.net"
+        findings, summary, outputs = self.review(bullet)
+        self.assertEqual(self.calls, [])
+        self.assertIn("Confidentiality findings: no rewording", self.output)
+        self.assertIn(bullet, self.notes)
+        self.assertNotIn("Reworded after the review", summary)
+        self.assertEqual(sorted(f["rule"] for f in findings), ["Confidential.TenantHost", "Omnia.InternalLanguage"])
+
     def test_broken_inline_reference_is_reported(self):
         # The validator accepts inline roles; only the Sphinx build comparison finds the missing page.
         findings, summary, outputs = self.review("- See :doc:`missing-page` for details")
