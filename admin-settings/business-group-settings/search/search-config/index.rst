@@ -1,9 +1,9 @@
 Search config
 =======================================
 
-Here you can work with search categories and set default search template. Here's an example of search categories:
+Here you can work with search categories and set default search template. Here's an example of search categories (images from Omnia 7.12):
 
-.. image:: search-config-list-78.png
+.. image:: search-config-list-712.png
 
 To edit a search config, click the pen. To delete a search config, click the dust bin.
 
@@ -11,7 +11,7 @@ Search categories
 *******************
 To create a new search category, click the plus and use the settings available for the search provider. All settings listed below.
 
-.. image:: search-config-categories-78.png
+.. image:: search-config-categories-712.png
 
 + **Title**: Add a title for the search category.
 + **Search providers**: Select search provider for the category. The following is available: Comments, Shared links, SharePoint search, Microsoft search, Omnia search and Semantic search. **Note!** In Omnia on-prem only SharePoint search and Shared links can be used as search providers.
@@ -42,7 +42,7 @@ This search provider works for users that do not have a Microsoft 365 license. T
 + **User type**: Available for people. Here you can select one or more user types to be included, from the user types set up in Omnia admin. If no user type is selected, all types are included.
 + **ADD FILTER**: You can add one or more filters for specific search implementations.
 
-See above for descriptions if the rest of the settings.
+See above for descriptions of the rest of the settings.
 
 A note on semantic search
 ----------------------------
@@ -52,13 +52,17 @@ The tenant feature "Semantic search" must be active for this functionality to be
 
 For more, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
+Image/Icon sizes
+****************
+Available in Omnia 7.12 and later. Set the sizes if needed.
+
+.. image:: search-image-size.png
+
 Search templates
 *********************
 Search templates are created by developers and are simply listed here. A search template defines how to display a search result. If a search result happens to not match any search template, the default search template is used. You can set default search template by clicking any of the templates in the list.
 
-Image from Omnia 7.12:
-
-.. image:: search-templates-712.png
+.. image:: search-templates-712-new.png
 
 The SharePoint templates can be used when SharePoint sites, list items or pages should be part of the result in any Omnia search. 
 
