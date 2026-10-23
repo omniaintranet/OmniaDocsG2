@@ -5,7 +5,7 @@ Dall-E is an AI option that can create images. It can be activated as an image p
 
 For new implementations, it's generally recommended to use GPT Image instead.
 
-Here you can create predfined prompts to be used in Dall-E, for example:
+Here you can create predefined prompts to be used in Dall-E, for example:
 
 .. image:: dall-e-settings-79.png
 
