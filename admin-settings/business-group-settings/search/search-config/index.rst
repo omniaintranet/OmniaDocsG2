@@ -52,7 +52,7 @@ For more, see: :doc:`About semantic search </general-assets/about-semantic-searc
 
 Image/Icon sizes
 ****************
-Available in Omnia 7.12 and later. Set the sizes if needed.
+Available in Omnia 7.12 and later. Set the sizes for icons and other images used in search results, if needed.
 
 .. image:: search-image-size.png
 
