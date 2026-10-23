@@ -624,7 +624,20 @@
     "5bccfc7f638c36cc77bc0b0f68664703f54f1d4c": "2026-10-22",
     "171ea768cc83a729b5cc9c36de7d74f6fcd4ce76": "2026-10-22",
     "532810181c1f65905e7f9ab519f13e74485442e7": "2026-10-22",
-    "38e9d7042957da1bc6bbd5f4f9d81154de4002e9": "2026-10-22"
+    "38e9d7042957da1bc6bbd5f4f9d81154de4002e9": "2026-10-22",
+    "53c56806fb4ae1f9706c9b69ec80e237e5a86d42": "2026-10-22",
+    "851bf124d09b75e4dec2f678d62ad9dd3e0ed809": "2026-10-22",
+    "48a7e66a29263d2917db18e85cbcfb39e461b61b": "2026-10-22",
+    "b95473a234eb49ef9837df01ef10eca5f743bd26": "2026-10-22",
+    "3e037a43be0d816cc2ac1da8e0aaeefea837ab6b": "2026-10-22",
+    "644b4b4b61c4ebcf6b61fa358256a6e3ab09447f": "2026-10-22",
+    "87fe76c90c8b32089d26e92281a0091d54a386fc": "2026-10-22",
+    "c75c967ea3bf262860744359250703d911b417bc": "2026-10-22",
+    "7c66d6ac27bf8a61d0e4fa6cf17541d6edfa6f9d": "2026-10-22",
+    "812b45955361713b5d1c4921713ad24cee0467ca": "2026-10-22",
+    "7c0b6060b7f8c8297295d0764cdd44a4b8168fa0": "2026-10-22",
+    "e3546c482ff46155e7b26773bc4c6408e675a941": "2026-10-22",
+    "0b6ccd091858fbc64fddaf9144b8020320dd8633": "2026-10-22"
   },
   "entries": [
     {
@@ -647,11 +660,48 @@
     },
     {
       "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/settings/index.rst",
+      "classification": "Navigation update",
+      "description": "Added content-flow-ai-prompts settings to the business group settings navigation menu.",
+      "sources": [
+        "812b45955361713b5d1c4921713ad24cee0467ca"
+      ]
+    },
+    {
+      "date": "2026-10-22",
       "path": "admin-settings/business-group-settings/settings/content-header-712/index.rst",
       "classification": "New page",
-      "description": "New page documenting content header settings for administrators in Omnia 7.12, including text formatting, style, and icon configuration options.",
+      "description": "Completed documentation for content header settings in Omnia 7.12, including new options for element selection and custom style configuration alongside text and icon settings.",
       "sources": [
-        "532810181c1f65905e7f9ab519f13e74485442e7"
+        "3e037a43be0d816cc2ac1da8e0aaeefea837ab6b",
+        "48a7e66a29263d2917db18e85cbcfb39e461b61b",
+        "532810181c1f65905e7f9ab519f13e74485442e7",
+        "53c56806fb4ae1f9706c9b69ec80e237e5a86d42",
+        "851bf124d09b75e4dec2f678d62ad9dd3e0ed809",
+        "b95473a234eb49ef9837df01ef10eca5f743bd26"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/settings/content-flow-ai-prompts/index.rst",
+      "classification": "New page",
+      "description": "New page documenting how administrators can view, edit, and reset AI prompts for the Content flow block in Omnia 7.12 and later.",
+      "sources": [
+        "0b6ccd091858fbc64fddaf9144b8020320dd8633",
+        "7c0b6060b7f8c8297295d0764cdd44a4b8168fa0",
+        "7c66d6ac27bf8a61d0e4fa6cf17541d6edfa6f9d",
+        "e3546c482ff46155e7b26773bc4c6408e675a941"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "path": "admin-settings/business-group-settings/settings/central-image-location/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified to reference tenant settings for detailed procedures, clarified business profile scope, and noted crop ratios and image style features in Omnia 7.12.",
+      "sources": [
+        "644b4b4b61c4ebcf6b61fa358256a6e3ab09447f",
+        "87fe76c90c8b32089d26e92281a0091d54a386fc",
+        "c75c967ea3bf262860744359250703d911b417bc"
       ]
     },
     {

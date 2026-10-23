@@ -9,14 +9,20 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Accessibility <https://omnia-docs-g2.readthedocs.io/en/latest/accessability/index.html>`__ — **Updated guidance**
   Screen reader support moved to the main accessibility features list for equal prominence with other capabilities.
 
+* `Content flow AI prompts <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/content-flow-ai-prompts/index.html>`__ — **New page**
+  New page documenting how administrators can view, edit, and reset AI prompts for the Content flow block in Omnia 7.12 and later.
+
 * `Content header (Business profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/block-title/index.html>`__ — **Added information**
   Added note indicating this page applies to Omnia 7.11 and earlier versions, with a link to the Omnia 7.12 and later documentation.
 
 * `Content Header (Business profile) for Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/content-header-712/index.html>`__ — **New page**
-  New page documenting content header settings for administrators in Omnia 7.12, including text formatting, style, and icon configuration options.
+  Completed documentation for content header settings in Omnia 7.12, including new options for element selection and custom style configuration alongside text and icon settings.
 
 * `Document types <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/document-types/index.html>`__ — **Correction**
   Removed Omnia version references from image captions in the General and Publish tabs sections.
+
+* `Media picker settings (Business profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/central-image-location/index.html>`__ — **Updated guidance**
+  Simplified to reference tenant settings for detailed procedures, clarified business profile scope, and noted crop ratios and image style features in Omnia 7.12.
 
 * `Permissions for a business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/permissions/index.html>`__ — **Added information**
   Added clarification that only administrators can be added for Shared links, Announcements, and Search permissions.
