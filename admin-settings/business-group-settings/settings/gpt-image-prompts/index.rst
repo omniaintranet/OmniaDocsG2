@@ -7,8 +7,6 @@ Here you can add predefined prompts for GPT Image, authors can use. The business
 
 You can edit a prompt and delete it, the usual way. When editing, the same options are available as when creating a new prompt, see below.
 
-**A note about deleting prompts**: When you delete a prompt that is set as the default prompt, a message is shown where you can change your mind. When you delet a prompt that os NOT set as default, the prompt is deleted directly. If you delete the default prompt. there is simply no default prompt until you set one.
-
 Creating a new prompt
 *************************
 Click the plus and use the following settings:
