@@ -1,7 +1,7 @@
 The Everywhere panel
 ================================
 
-The Everywhere Panel, also called the left panel, is available on the left while users browse different pages, allowing quick access to intranet areas and content in both Omnia and SharePoint.
+The Everywhere panel, also called the left panel, is available on the left while users browse different pages, allowing quick access to intranet areas and content in both Omnia and SharePoint.
 
 Here's a simple example from a text environment:
 
@@ -15,5 +15,5 @@ Panel content is configured in Omnia admin under Workspace > Left panel. It supp
 
 For the left panel settings, see: :doc:`Left panel settings </admin-settings/business-group-settings/workplace/left-panel-workspace/index>`
 
-For the additional settings, see: :doc:`Left panel settings </admin-settings/business-group-settings/workplace/workspace-settings-settings-712/index>`
+For the additional settings, see: :doc:`Workspace settings </admin-settings/business-group-settings/workplace/workspace-settings-settings-712/index>`
 
