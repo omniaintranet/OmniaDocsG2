@@ -24,7 +24,7 @@ The following settings are available here:
 + **Image/Icon sizes**: Here you can set the size of the icon or image used in the search result list.
 + **Image ratio**: Here you can set the image ratio used in the search result list.
 
-If you make any changes, don't forget to save (the SAVE button is at the bottom).
+If you make any changes, don't forget to save (the SAVE button is at the bottom of the dialog).
 
 View more results
 ******************
