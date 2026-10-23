@@ -18,7 +18,7 @@ The following settings are available here:
 + **Always open in new tab**: Available in Omnia 7.12 and later. And yes, you know what it does.
 + **Multi line search prompt**: Available in Omnia 7.12 and later. Per default, the search line is single, with this option, multi lines.
 + **Custom help text**: Available in Omnia 7.12 and later. If a custom help text should be shown on the search line, add it here.
-+ Custom aria label**: Available in Omnia 7.12 and later. If a custom aria label should, add it here.
++ **Custom aria label**: Available in Omnia 7.12 and later. If a custom aria label should, add it here.
 + **Search categories**: One or more search categories can be added (if more than one is available).
 + **Row limit**: You can set row limit for each search category. Row Limit is the number of objects in a search results "page".
 + **Image/Icon sizes**: Here you can set the size of the icon or image used in the search result list.
