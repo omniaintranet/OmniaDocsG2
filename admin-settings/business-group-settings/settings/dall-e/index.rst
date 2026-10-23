@@ -1,7 +1,9 @@
 Dall-E settings
 =============================================
 
-Dall-E is an AI option that can create images. It can be activated as an image provider, through the feature available for the business profile, and can then be used in the image picker. Here you can create predfined promtpts to be used in Dall-E, for example:
+Dall-E is an AI option that can create images. It can be activated as an image provider, through the feature available for the business profile, and can then be used in the image picker. For new implementations, it's generally recommended to use GPT Image instead.
+
+Here you can create predfined prompts to be used in Dall-E, for example:
 
 .. image:: dall-e-settings-79.png
 
