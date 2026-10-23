@@ -34,8 +34,6 @@ A note on the Omnia search provider
 -------------------------------------
 This search provider works for users that do not have a Microsoft 365 license. The following settings are available:
 
-.. image:: omnia-search-provider.png
-
 + **Search result source**: The source can be pages or people.
 + **Scope**: It can be Tenant, Business profiles, Apps, Page collections or Channels.
 + **Exclude variations**: Available for pages. If no variations should be included in the search, select this option (mening only the main page will be included in the search).
