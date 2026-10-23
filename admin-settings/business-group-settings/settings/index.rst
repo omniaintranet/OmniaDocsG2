@@ -3,7 +3,7 @@ Settings
 
 Here the following settings can be edited (image from Omnia 7.12):
 
-.. image:: business-profile-settings-all-v712.png
+.. image:: business-profile-settings-all-v712-New.png
 
 For detailed information, select settings here:
 
