@@ -1,17 +1,15 @@
 Dall-E settings
 =============================================
 
-Dall-E is an AI option that can create images. It can be activated as an image provider, through the feature available for the business profile, and can then be used in the image picker. For new implementations, it's generally recommended to use GPT Image instead.
+Dall-E is an AI option that can create images. It can be activated as an image provider, through the feature available for the business profile, and can then be used in the image picker. 
+
+For new implementations, it's generally recommended to use GPT Image instead.
 
 Here you can create predfined prompts to be used in Dall-E, for example:
 
 .. image:: dall-e-settings-79.png
 
 As ususal, click the pen to edit, the dust bin to delete. All settings are available when editing.
-
-Omnia 7.9 and later: If needed, use the tenant settings to define the Dall-E deployment you're using in your tenant, see: :doc:`Dall-E settings (tenant) </admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index>`
-
-**A note about deleting prompts**: When you delete a prompt that is set as the default prompt, a message is shown where you can change your mind. When you delet a prompt that os NOT set as default, the prompt is deleted directly. If you delete the default prompt. there is simply no default prompt until you set one.
 
 Create a new Dall-E prompt
 ***************************
