@@ -19,6 +19,7 @@ For detailed information, select settings here:
    block-title/index
    content-header/index
    central-image-location/index
+   gpt-image-prompts/index
    media-Picker/index
    document-picker/index
    sharepoint-page-picker/index
