@@ -1,7 +1,7 @@
 GPT Image predefined prompts 
 ======================================
 
-Here you can add predefined prompts for GPT Image, authors can use.
+Here you can add predefined prompts for GPT Image, authors can use. The business profile feature GPT Image must be active for this option to be available.
 
 .. image:: gpt-image-prompts.png
 
