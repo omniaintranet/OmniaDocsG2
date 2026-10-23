@@ -19,7 +19,6 @@ For detailed information, select settings here:
    block-title/index
    content-header/index
    central-image-location/index
-   gpt-image-prompts/index
    media-Picker/index
    document-picker/index
    sharepoint-page-picker/index
@@ -29,6 +28,7 @@ For detailed information, select settings here:
    media-flow/index
    analytics/index
    system-layouts-bg/index
+   gpt-image-prompts/index
    dall-e/index
    default-rendering/index
 
