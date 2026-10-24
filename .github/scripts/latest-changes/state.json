@@ -637,9 +637,123 @@
     "812b45955361713b5d1c4921713ad24cee0467ca": "2026-10-22",
     "7c0b6060b7f8c8297295d0764cdd44a4b8168fa0": "2026-10-22",
     "e3546c482ff46155e7b26773bc4c6408e675a941": "2026-10-22",
-    "0b6ccd091858fbc64fddaf9144b8020320dd8633": "2026-10-22"
+    "0b6ccd091858fbc64fddaf9144b8020320dd8633": "2026-10-22",
+    "4386c9940fef6177e4811ae1984e928c4618ab13": "2026-10-23",
+    "29d3f5cf36dffbe296caa40c0cb3e4142534e95c": "2026-10-23",
+    "493200eb0823c724474302e2c766c7fdeabdd647": "2026-10-23",
+    "083e8950a2b3482d039c812c50d3e1016c1cacdd": "2026-10-23",
+    "b3340072bc14dee32c3739c8304b99df671df5b0": "2026-10-23",
+    "3108d6fb6cc11e97b7a829ca88b31c2930e96682": "2026-10-23",
+    "84b0ae6dbaccbe2fb1f095b8fab0a776277def82": "2026-10-23",
+    "f233ef1fa1c101aa26d37710c5f4ca48f29df238": "2026-10-23",
+    "609d65cb3f897e7c5a2562a289f8b7683d9a69db": "2026-10-23",
+    "c900e3467c94c28334d248d80309fc829118094e": "2026-10-23",
+    "150821569e9053424e8655f4d7e1cac47390ed0e": "2026-10-23",
+    "0425ceaa7b9f4643a3c05144313f8b7f80117bdd": "2026-10-23",
+    "773d248168f2c725c61d628d66e27b3c7e0ef148": "2026-10-23",
+    "dd1a54ceab553706354b3b1501f4a161e3c03726": "2026-10-23",
+    "3165e2c4e0d54bd1bf0cbe4ef73e8ca8705f2413": "2026-10-23",
+    "bbe4e4690f9e1f5f9358445563dd7ccdaec4bf43": "2026-10-23",
+    "1b2c98bf5f254d1fc50be02b32ec2d5272dc63ed": "2026-10-23",
+    "00e7579f25caf2f797e6fa02b77e85bf34da8def": "2026-10-23",
+    "4c0d7de547d554c5fe3f7ffd2145c655cc723154": "2026-10-23",
+    "c6ac886ebb38eb4cee877dca57b073b795ba1f87": "2026-10-23",
+    "23a21f396b0a68e1a1ce6caa56b4255ccdcbf090": "2026-10-23",
+    "e0c06a9004cb1d4934b9b4c13e698c4ca264994a": "2026-10-23",
+    "85ba65a52b7976c9e0fe0507c2c75e3021979c77": "2026-10-23",
+    "6feda5613a39829a7551410c1a3617a451f79147": "2026-10-23",
+    "4dec544c4c0ad49f1adc7571838b7b3004532bb3": "2026-10-23"
   },
   "entries": [
+    {
+      "date": "2026-10-23",
+      "path": "general-assets/the-everywhere-panel/index.rst",
+      "classification": "Correction",
+      "description": "Updated the link label to 'Workspace settings' to accurately reflect the destination page, and corrected the panel name capitalization.",
+      "sources": [
+        "4dec544c4c0ad49f1adc7571838b7b3004532bb3"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/workplace/left-panel-workspace/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that the Left panel is also called the Everywhere panel, and provided a reference link to related documentation.",
+      "sources": [
+        "6feda5613a39829a7551410c1a3617a451f79147"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/settings/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated the business profile settings screenshot and added a navigation link to GPT image prompts settings.",
+      "sources": [
+        "083e8950a2b3482d039c812c50d3e1016c1cacdd",
+        "29d3f5cf36dffbe296caa40c0cb3e4142534e95c",
+        "493200eb0823c724474302e2c766c7fdeabdd647",
+        "b3340072bc14dee32c3739c8304b99df671df5b0"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/settings/gpt-image-prompts/index.rst",
+      "classification": "New page",
+      "description": "Explains how to add and manage predefined prompts for GPT Image, including settings for title, prompt text, and default selection.",
+      "sources": [
+        "3108d6fb6cc11e97b7a829ca88b31c2930e96682",
+        "4386c9940fef6177e4811ae1984e928c4618ab13",
+        "609d65cb3f897e7c5a2562a289f8b7683d9a69db",
+        "84b0ae6dbaccbe2fb1f095b8fab0a776277def82",
+        "c900e3467c94c28334d248d80309fc829118094e",
+        "dd1a54ceab553706354b3b1501f4a161e3c03726"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/settings/dall-e/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that the Dall-E feature must be active in the business profile, and added recommendation to use GPT Image for new implementations.",
+      "sources": [
+        "0425ceaa7b9f4643a3c05144313f8b7f80117bdd",
+        "150821569e9053424e8655f4d7e1cac47390ed0e",
+        "773d248168f2c725c61d628d66e27b3c7e0ef148",
+        "f233ef1fa1c101aa26d37710c5f4ca48f29df238"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/search/search-statistics/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Simplified the description of the EXPORT LAST 30 DAYS feature by removing redundant phrasing.",
+      "sources": [
+        "85ba65a52b7976c9e0fe0507c2c75e3021979c77"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/search/search-config/index.rst",
+      "classification": "Added information",
+      "description": "Updated screenshots to Omnia 7.12 versions and added Image/Icon sizes settings section for configuring search result icon and image sizes.",
+      "sources": [
+        "00e7579f25caf2f797e6fa02b77e85bf34da8def",
+        "1b2c98bf5f254d1fc50be02b32ec2d5272dc63ed",
+        "3165e2c4e0d54bd1bf0cbe4ef73e8ca8705f2413",
+        "bbe4e4690f9e1f5f9358445563dd7ccdaec4bf43"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "path": "admin-settings/business-group-settings/search/quick-search-612/index.rst",
+      "classification": "Added information",
+      "description": "Added four new quick search settings for Omnia 7.12 and updated screenshots to reflect the current version.",
+      "sources": [
+        "23a21f396b0a68e1a1ce6caa56b4255ccdcbf090",
+        "4c0d7de547d554c5fe3f7ffd2145c655cc723154",
+        "c6ac886ebb38eb4cee877dca57b073b795ba1f87",
+        "e0c06a9004cb1d4934b9b4c13e698c4ca264994a"
+      ]
+    },
     {
       "date": "2026-10-22",
       "path": "pages/page-types/working-with-sections-and-blocks/index.rst",

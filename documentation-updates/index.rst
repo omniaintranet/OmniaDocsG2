@@ -3,6 +3,33 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+23 October 2026
+---------------
+
+* `Dall-E settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/dall-e/index.html>`__ — **Updated guidance**
+  Clarified that the Dall-E feature must be active in the business profile, and added recommendation to use GPT Image for new implementations.
+
+* `GPT Image predefined prompts <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/gpt-image-prompts/index.html>`__ — **New page**
+  Explains how to add and manage predefined prompts for GPT Image, including settings for title, prompt text, and default selection.
+
+* `Left panel settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/workplace/left-panel-workspace/index.html>`__ — **Added information**
+  Added clarification that the Left panel is also called the Everywhere panel, and provided a reference link to related documentation.
+
+* `Quick search settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/quick-search-612/index.html>`__ — **Added information**
+  Added four new quick search settings for Omnia 7.12 and updated screenshots to reflect the current version.
+
+* `Search config <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/search-config/index.html>`__ — **Added information**
+  Updated screenshots to Omnia 7.12 versions and added Image/Icon sizes settings section for configuring search result icon and image sizes.
+
+* `Search statistics <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/search/search-statistics/index.html>`__ — **Spelling / grammar**
+  Simplified the description of the EXPORT LAST 30 DAYS feature by removing redundant phrasing.
+
+* `Settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/index.html>`__ — **Updated screenshots**
+  Updated the business profile settings screenshot and added a navigation link to GPT image prompts settings.
+
+* `The Everywhere panel <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/the-everywhere-panel/index.html>`__ — **Correction**
+  Updated the link label to 'Workspace settings' to accurately reflect the destination page, and corrected the panel name capitalization.
+
 22 October 2026
 ---------------
 
