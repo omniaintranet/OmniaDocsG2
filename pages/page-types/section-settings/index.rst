@@ -103,7 +103,7 @@ Spacing
 ***********
 Here you can set the following:
 
-.. image:: page-types-spacing-77.png
+.. image:: page-types-spacing-712.png
 
 Available options depends on section type chosen.
 
