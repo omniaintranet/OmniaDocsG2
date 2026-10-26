@@ -207,7 +207,7 @@ The global settings are set in Omnia admin, see this page: :doc:`Content header 
 
 When selecting custom settings, the following is available:
 
-.. image:: page-types-settings-header-custom-new4.png
+.. image:: page-types-settings-header-custom-712.png
 
 This is the same settings as content header settings for the business profile, see: :doc:`Content header settings (Business profile) </admin-settings/business-group-settings/settings/block-title/index>`
 
