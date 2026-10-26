@@ -31,7 +31,11 @@ Display
 ---------
 Here you can edit some display settings. Should be self explanatory.
 
-.. image:: event-counter-settings-display-v712.png
+.. image:: event-counter-settings-display-v712-1.png
+
+And these:
+
+.. image:: event-counter-settings-display-v712-2.png
 
 Layout and Write
 *********************
