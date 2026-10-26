@@ -179,7 +179,7 @@ Effects
 --------
 Additional effects are avilable here, for all section types:
 
-.. image:: sections-effects-77.png
+.. image:: sections-effects-712.png
 
 Try them and see the effect - a preview is shown in the active section.
 
