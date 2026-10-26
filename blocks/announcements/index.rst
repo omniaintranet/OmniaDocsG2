@@ -9,20 +9,29 @@ An announcement displayed in a block can look like this for the user:
 
 Settings for the block
 ***********************
-The following settings are available for the Announcements block:
+The following settings are available for the Announcements block (image from Omnia 7.12):
 
-.. image:: announcements-settings-v75.png
+.. image:: announcements-settings-v712.png
 
 General
 ----------------
 Here you can set the following:
 
-.. image:: announcements-settings-general-v77.png
+.. image:: announcements-settings-general-v712.png
+
+Note! In Omnia 7.11 and earlier, there's no Display tag. All display settings are available, here, on the General tab.
 
 + **Title**: A title can be added for the block, if needed.
-+ **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority) or high priority announcements only. 
-+ **Hide block when no data**: As it says, select this to not show the block when there are no announcements to show for the logged in user.
+
+Display
+--------
+The following settings are available here in Omni 7.12 and later:
+
++ **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority), high priority announcements or modern announcements. Modern announcements are available in Omnia 7.12 and late.
++ **Heading element**: Available in Omnia 7.12 and later. You can choose anothert heading element if needed.
++ **Hide block when no data**: Available in Omnia 7.11 and earlier. As it says, select this to not show the block when there are no announcements to show for the logged in user.
 + **Padding**: Use this option to set some padding for the text within the block.
++ **No result text**: Available in Omnia 7.12 and later. If you would like another text to be shown when there's no announcements to show, add it here.
 
 Custom colors
 ----------------------
