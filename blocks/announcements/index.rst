@@ -19,7 +19,7 @@ Here you can set the following:
 
 .. image:: announcements-settings-general-v712.png
 
-Note! In Omnia 7.11 and earlier, there's no Display tag. All display settings are available, here, on the General tab.
+Note! In Omnia 7.11 and earlier, there's no Display tab. All display settings are available here, on the General tab.
 
 + **Title**: A title can be added for the block, if needed.
 
@@ -27,7 +27,9 @@ Display
 --------
 The following settings are available here in Omni 7.12 and later:
 
-+ **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority), high priority announcements or modern announcements. Modern announcements are available in Omnia 7.12 and late.
+.. image:: announcements-settings-display-v712.png
+
++ **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority), high priority announcements or modern announcements. Modern announcements are available in Omnia 7.12 and later.
 + **Heading element**: Available in Omnia 7.12 and later. You can choose anothert heading element if needed.
 + **Hide block when no data**: Available in Omnia 7.11 and earlier. As it says, select this to not show the block when there are no announcements to show for the logged in user.
 + **Padding**: Use this option to set some padding for the text within the block.
