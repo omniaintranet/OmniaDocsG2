@@ -31,17 +31,17 @@ When you have added one or more objects, you can reorder objects or delete them,
 
 When you click the dust bin, well no surprise, you remove the object. To reorder, grab the icon and move to another place. This will take some practice as you can't move an object anywhere.
 
-You can also delete or move whole sections. You can grab the icon here, or used the arrows to move up or down.
+You can also delete or move whole sections. You can grab the icon here, or use the arrows to move up or down.
 
 .. image:: content-builder-reorder-whole.png
 
 Add a divider
 ----------------
-You can add a diviver between objcets by clicking here:
+You can add a diviver between objects by clicking here:
 
 .. image:: object-dividier.png
 
-You can also set object size relaitive to each other - should the object to the left use more space than the object to the right, etc.
+You can also set object size relative to each other - should the object to the left use more space than the object to the right, etc.
 
 .. image:: object-size.png
 
@@ -83,7 +83,7 @@ To add text, just click and write. Then you can format the text.
 
 .. image:: content-builder-text.png
 
-The formats in the list to the left is set up in Omnia admin. Most of the other formats are general ones you easily recognize, just som words about som of them.
+The formats in the list to the left is set up in Omnia admin. Most of the other formats are general ones you easily recognize, just a few words about some of them.
 
 Add link
 ----------
@@ -141,7 +141,7 @@ To add a person object, click this button:
 
 .. image:: add-person-button.png
 
-To add media the person, just click the object and use the people picker. For more information, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
+To add media to the person, just click the object and use the people picker. For more information, see: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
 Table
 ********
