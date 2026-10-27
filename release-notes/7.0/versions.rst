@@ -7,10 +7,9 @@
 - Page review emails now send each recipient once, regardless of the email provider in use (#60461)
 - Event participants can now receive an email notification when someone cancels their participation in a managed event (#60356)
 - Viva Engage article distribution no longer requires a legacy Yammer token when the publisher's Entra ID token is available
-- Page Rollup filter defaults for current-user taxonomy terms and person properties are now applied to the first result query
 - Page Rollup Card view (WCAG) now loads page types like the standard Card view, enabling topic subscription and page-type chips without another rollup on the page
 - Card view and Card view (WCAG) now render rich-text summaries with proper formatting instead of displaying raw HTML tags
-- SharePoint Site Pages path queries in the Page Rollup now return results regardless of promoted state when the Only News Posts setting is disabled
+- SharePoint Site Pages path queries in the Page Rollup now return results regardless of promoted state when the 'Only News Posts' setting is disabled
 - Document approval from the Task list no longer times out; the approval is now completed in the background while the approver receives immediate feedback (#59582, #60517)
 - Sign-off Request detail dialogs now load and display their request data correctly
 - OPM Process search results now display process and step titles correctly in all search categories
@@ -28,7 +27,7 @@
 - Editors can now mark short quotations with semantic `<q>` tags, allowing screen readers and browsers to present quotation marks automatically
 - Page Rollup, Document Rollup and Workplace List Rollup export to Excel now announces progress to screen readers through a live region
 - Page property descriptions are now linked to their input fields with aria-describedby, so screen readers announce them when the field receives focus
-
+- Improved security validation of database queries, URL encoding, and request authentication to resolve findings from a security audit
 
 7.12.2
 ========================================
