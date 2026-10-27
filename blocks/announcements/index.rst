@@ -1,7 +1,7 @@
 Announcements
 ===========================================
 
-This page describes the settings for this in Omnia 7.11 and earlier. Fot 7.12 and later, see: (link to add)
+This page describes the settings for this in Omnia 7.11 and earlier. For 7.12 and later, see: :doc:`Announcements block in Omnia 7.12 </blocks/announcements/index>`  
 
 Announcements are created by administrators and will display important information in the whole tenant, or for a certain business profile. The priority (status) of an announcement can be Normal or High. Announcements can be displayed at the top or in a block, which is what's described here.
 
