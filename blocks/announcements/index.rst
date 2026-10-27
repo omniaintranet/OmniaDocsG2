@@ -13,13 +13,13 @@ Settings for the block
 ***********************
 The following settings are available for the Announcements block:
 
-.. image:: announcements-settings-v76.png
+.. image:: announcements-settings-v75.png
 
 General
 ----------------
 Here you can set the following:
 
-.. image:: announcements-settings-general-v76.png
+.. image:: announcements-settings-general-v75.png
 
 + **Title**: A title can be added for the block, if needed.
 + **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority), only normal or only high priority announcements 
@@ -30,7 +30,7 @@ Custom colors
 ----------------------
 Colors should be set centrally for consistency, but if needed, the following custom colors can be set here:
 
-.. image:: announcements-settings-general-colors-v76.png
+.. image:: announcements-settings-general-colors-v752.png
 
 Layout and Write
 *********************
