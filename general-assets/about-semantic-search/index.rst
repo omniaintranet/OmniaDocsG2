@@ -31,6 +31,8 @@ Semantic search directly support the following:
 + txt (interpreted as UTF-8)
 + SharePoint/Omnia pages through a special aspx indexing path
 
+**Note!** Page variations are not supported by semantic search. This applies to both variations edited by a variation author and variations created with automatic machine translation. Only the main page is indexed, so only the content of the main page is searched. Text that exists only on a variation, for example a translation, does not give any hits. A search result links to the main page, not to a specific variation. For more information about variations, see: :doc:`Language versions of a page </pages/language-versions-of-a-page/index>`
+
 **Very important!** The semantic search will soon be developed further in Omnia but for now (versions up to and including 7.12) it does **not support security trimming**. Therefore, the easiest way forward at this point, is to use semantic search only for common information that anyone in the organization have permission to read. 
 
 Also, there's a permission group available where you can add the colleagues or groups that should be able to use semantic search. For more information, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`

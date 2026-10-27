@@ -9,6 +9,8 @@ You can either set up a variation for editing by a variation author, or you can 
 
 **Note!** Machine translation is not available in Omnia on-prem.
 
+**Note!** Page variations are not supported by semantic search. Only the main page is indexed, so text that exists only on a variation does not give any hits. For more information, see: :doc:`About semantic search </general-assets/about-semantic-search/index>`
+
 If variation pages are edited by variation authors, there's still the possibility to use machine translation as a tool. Machine translation can, in that case, be set up to be a part of the RTF editor for text blocks.
 
 See this page for information about setting up the RTF editor: :doc:`RTF editor settings </admin-settings/tenant-settings/settings/rtf-editor/index>`
