@@ -61,7 +61,7 @@ To create a new crop ratio, do the following:
 
 Border style
 **************
-Here you can set a border radius around images:
+This a setting for rounded corners. Higher value = more rounded.
 
 .. image:: border-style-712.png
 
