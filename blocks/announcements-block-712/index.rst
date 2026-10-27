@@ -32,7 +32,7 @@ For the modern display, the following settings are available:
 
 .. image:: announcements-settings-display-modern-v712.png
 
-Settings for all announcements looks more or less as in earler Omnia versions, for example:
+Settings for all announcements looks more or less as in earlier Omnia versions, for example:
 
 .. image:: announcements-all-v712.png
 
