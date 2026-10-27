@@ -26,7 +26,7 @@ The following settings are available here:
 + **Announcement view type**: You can choose to display all announcements, only high priority announcements or announcements with a modern display. 
 + **Heading element**: You can choose another heading element if needed.
 + **Padding**: Use this option to set some padding for the text within the block.
-+ **No result text**: If you would like another text to be shown when there's no announcements to show, add it here.
++ **No result text**: If you would like another text to be displayed when there's no announcements to show, add it here.
 
 For the modern display, the following settings are available:
 
