@@ -233,7 +233,38 @@ class ReleaseReviewTests(unittest.TestCase):
 
     def test_missing_issue_is_rejected(self):
         self.response["pendingReviewIssues"] = []
-        self.assertNotEqual(self.generate().returncode, 0)
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Missing from the audit: omniaintranet/test#3", result.stderr)
+
+    def test_issue_in_several_bullets_is_accepted(self):
+        self.response["bullets"].append({"text": "- Quick Search now shows document previews",
+            "sourceIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 1}]})
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.assertIn("document previews", notes)
+
+    def test_issue_in_bullet_and_omitted_is_rejected(self):
+        self.response["omittedIssues"][0]["number"] = 1
+        self.response["bullets"][0]["sourceIssues"].append(
+            {"repositoryWithOwner": "omniaintranet/test", "number": 2})
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("In a bullet and also omitted or pending review: omniaintranet/test#1", result.stderr)
+
+    def test_issue_listed_twice_as_omitted_is_rejected(self):
+        self.response["omittedIssues"].append(dict(self.response["omittedIssues"][0]))
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Listed more than once under omittedIssues or pendingReviewIssues: omniaintranet/test#2", result.stderr)
+
+    def test_unknown_issue_is_rejected(self):
+        self.response["bullets"][0]["sourceIssues"].append(
+            {"repositoryWithOwner": "omniaintranet/test", "number": 99})
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Not in the release data: omniaintranet/test#99", result.stderr)
 
     def test_empty_pending_reason_is_rejected(self):
         self.response["pendingReviewIssues"][0]["reason"] = ""

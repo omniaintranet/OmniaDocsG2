@@ -99,7 +99,7 @@ Requirements:
 - Generate release notes only for the release in the supplied JSON.
 - Use the supplied issue bodies, labels, and recent comments as the source of truth. Prefer implemented and QA-verified behavior in recent comments over the initial proposal.
 - Do not invent functionality or ticket numbers.
-- Account for every supplied issue exactly once. Associate an included issue with exactly one release-note bullet, or list it once under omittedIssues or pendingReviewIssues.
+- Account for every supplied issue. An included issue is associated with at least one release-note bullet; when one issue contains several separate user-visible changes, write a separate bullet for each and list the issue as a source of each. Otherwise list the issue exactly once under omittedIssues or pendingReviewIssues. Never list an issue both in a bullet and under omittedIssues or pendingReviewIssues.
 - Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review and suggestedText containing a proposed customer-facing release-note bullet. The suggestion must be concise, factual, and safe for public disclosure, without vulnerability details or exploitation clues. It remains unapproved and separate from public bullets; apply the same customer-reference rules to it. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
 - Keep security-related suggestedText deliberately general: name only a broad improvement category, such as URL validation. Omit the affected workflow, vulnerable component, trigger, attack method, and prevented exploit. Do not name login redirects, domain restrictions, or other clues to the weakness. Review and generalize any such clues before returning the suggestion.
 - Review all bullets together for repetitive sentence openings before returning the response.
@@ -470,26 +470,31 @@ expected_issue_keys=$(
     | sort
   ' "$INPUT_FILE"
 )
-accounted_issue_keys=$(
-  jq -c '
-    [
-      (
-        .bullets[].sourceIssues[],
-        .omittedIssues[],
-        .pendingReviewIssues[]
-      )
-      | "\(.repositoryWithOwner)#\(.number)"
-    ]
+# An issue may back several bullets (separate user-visible changes), but it must
+# appear in at least one bullet or in exactly one omitted/pending entry, never both.
+audit_problems=$(
+  jq -c --argjson expected "$expected_issue_keys" '
+    def key: "\(.repositoryWithOwner)#\(.number)";
+    def dupes: group_by(.) | map(select(length > 1) | .[0]);
+    ([.bullets[].sourceIssues[] | key] | unique) as $bulleted
+    | ([.omittedIssues[], .pendingReviewIssues[] | key]) as $listed
+    | {
+        missing: ($expected - $bulleted - $listed),
+        conflicting: ($bulleted - ($bulleted - $listed)),
+        duplicated: ($listed | dupes),
+        unknown: (($bulleted + $listed) | unique - $expected)
+      }
   ' "$AUDIT_FILE"
 )
 
-if ! jq -e -n \
-  --argjson expected "$expected_issue_keys" \
-  --argjson accounted "$accounted_issue_keys" \
-  '($accounted | length) == ($accounted | unique | length)
-   and $expected == ($accounted | sort)' \
-  >/dev/null; then
-  echo "The release-note audit does not account for every source issue exactly once." >&2
+if ! jq -e '[.[] | length] | add == 0' <<< "$audit_problems" >/dev/null; then
+  echo "The release-note audit does not account for every source issue." >&2
+  jq -r '
+    (if (.missing | length) > 0 then "Missing from the audit: \(.missing | join(", "))" else empty end),
+    (if (.conflicting | length) > 0 then "In a bullet and also omitted or pending review: \(.conflicting | join(", "))" else empty end),
+    (if (.duplicated | length) > 0 then "Listed more than once under omittedIssues or pendingReviewIssues: \(.duplicated | join(", "))" else empty end),
+    (if (.unknown | length) > 0 then "Not in the release data: \(.unknown | join(", "))" else empty end)
+  ' <<< "$audit_problems" >&2
   exit 1
 fi
 
