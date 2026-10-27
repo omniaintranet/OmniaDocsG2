@@ -15,23 +15,34 @@ The following settings are available for the Announcements block:
 
 General
 ----------------
-Here you can set the following:
+Here you can set a title for the block, if needed:
 
 .. image:: announcements-settings-general-v712.png
 
-+ **Title**: A title can be added for the block, if needed.
-
 Display
 --------
-The following settings are available here in Omni 7.12 and later:
+The following settings are available here:
 
 .. image:: announcements-settings-display-v712.png
 
-+ **Announcement view type**: You can choose to display all announcements (meaning both normal and high priority), high priority announcements or modern announcements. Modern announcements are available in Omnia 7.12 and later.
-+ **Heading element**: Available in Omnia 7.12 and later. You can choose anothert heading element if needed.
-+ **Hide block when no data**: Available in Omnia 7.11 and earlier. As it says, select this to not show the block when there are no announcements to show for the logged in user.
++ **Announcement view type**: You can choose to display all announcements, only high priority announcements or announcements with a modern display. 
++ **Heading element**: You can choose anothert heading element if needed.
 + **Padding**: Use this option to set some padding for the text within the block.
-+ **No result text**: Available in Omnia 7.12 and later. If you would like another text to be shown when there's no announcements to show, add it here.
++ **No result text**: If you would like another text to be shown when there's no announcements to show, add it here.
+
+For the modern display, the following settings are available:
+
+.. image:: announcements-settings-display-modern-v712.png
+
+Settings for all announcements looks more or less as in earler Omnia versions, for example:
+
+.. image:: announcements-all-v712.png
+
+Here's an example for a modern display (from a test environment):
+
+.. image:: announcements-modern-v712.png
+
+"Border radius" is settings for rounded cornes. "Elevation" is what makes the messsages looks like they are somewhat raised. The rest of the settings are noted in the image above.
 
 Custom colors
 ----------------------
