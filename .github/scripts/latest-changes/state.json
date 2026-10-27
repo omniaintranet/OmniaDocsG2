@@ -662,9 +662,53 @@
     "e0c06a9004cb1d4934b9b4c13e698c4ca264994a": "2026-10-23",
     "85ba65a52b7976c9e0fe0507c2c75e3021979c77": "2026-10-23",
     "6feda5613a39829a7551410c1a3617a451f79147": "2026-10-23",
-    "4dec544c4c0ad49f1adc7571838b7b3004532bb3": "2026-10-23"
+    "4dec544c4c0ad49f1adc7571838b7b3004532bb3": "2026-10-23",
+    "1cc651ae437d9546ac808bc3ac11cc5e5b104c35": "2026-10-26",
+    "587e2caacba15b18bb38598d80d84a83d63506d7": "2026-10-26",
+    "2d31671c326c7942e4a05c80110734b7a125f80d": "2026-10-26",
+    "5cd1335936b1e3b336f21401a7e1cf7e75c66233": "2026-10-26",
+    "136f0c13969f37f1df4ebcfea5b2ed51753d1f34": "2026-10-26",
+    "94a7ad7710aae4fb567a622d94d840ad1093df56": "2026-10-26",
+    "e581e4d1081c7ae79935c34b3505b77338a98dbb": "2026-10-26",
+    "544a8c0b6b58bc143d90b95305372a174294a510": "2026-10-26",
+    "d3911c191eb2f53605c3306094a128f673147bc6": "2026-10-26",
+    "e720553bd7176ea8a346526042ab31b78ade2230": "2026-10-26"
   },
   "entries": [
+    {
+      "date": "2026-10-26",
+      "path": "pages/page-types/section-settings/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated screenshots in section settings documentation to reflect the current interface.",
+      "sources": [
+        "1cc651ae437d9546ac808bc3ac11cc5e5b104c35",
+        "2d31671c326c7942e4a05c80110734b7a125f80d",
+        "587e2caacba15b18bb38598d80d84a83d63506d7",
+        "5cd1335936b1e3b336f21401a7e1cf7e75c66233"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "path": "blocks/blocks-event-management/participant-counter-712/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Display settings section now includes two screenshots showing the available configuration options.",
+      "sources": [
+        "d3911c191eb2f53605c3306094a128f673147bc6",
+        "e720553bd7176ea8a346526042ab31b78ade2230"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "path": "blocks/announcements/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated settings layout with new Display tab, added new settings (Heading element, No result text), and clarified version-specific availability.",
+      "sources": [
+        "136f0c13969f37f1df4ebcfea5b2ed51753d1f34",
+        "544a8c0b6b58bc143d90b95305372a174294a510",
+        "94a7ad7710aae4fb567a622d94d840ad1093df56",
+        "e581e4d1081c7ae79935c34b3505b77338a98dbb"
+      ]
+    },
     {
       "date": "2026-10-23",
       "path": "general-assets/the-everywhere-panel/index.rst",

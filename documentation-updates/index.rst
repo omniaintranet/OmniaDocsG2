@@ -3,6 +3,18 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+26 October 2026
+---------------
+
+* `Announcements <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/announcements/index.html>`__ — **Updated guidance**
+  Updated settings layout with new Display tab, added new settings (Heading element, No result text), and clarified version-specific availability.
+
+* `Event participant counter in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/participant-counter-712/index.html>`__ — **Updated screenshots**
+  Display settings section now includes two screenshots showing the available configuration options.
+
+* `Settings for sections <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/section-settings/index.html>`__ — **Updated screenshots**
+  Updated screenshots in section settings documentation to reflect the current interface.
+
 23 October 2026
 ---------------
 
