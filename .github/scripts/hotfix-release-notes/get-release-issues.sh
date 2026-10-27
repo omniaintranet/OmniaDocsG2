@@ -87,74 +87,67 @@ response=$(
   -F projectNumber="$PROJECT_NUMBER"
 )
 
-releases='[]'
+# Large JSON (issue bodies and comments) goes through files and stdin, never
+# through jq arguments, which are capped at 128 KB each by the kernel.
+work_dir=$(mktemp -d)
+trap 'rm -rf "$work_dir"' EXIT
+
+printf '[]
+' > "$work_dir/releases.json"
 
 while IFS= read -r release; do
   status_id=$(echo "$release" | jq -r '.statusId')
   status_name=$(echo "$release" | jq -r '.statusName')
 
-  issues=$(
-    printf '%s\n' "$response" |
-      jq -s -c --arg statusId "$status_id" '
-        [
-          .[]
-          | .data.organization.projectV2.items.nodes[]
-          | select(
-              any(
-                .fieldValues.nodes[];
-                .field.name == "Status"
-                and .optionId == $statusId
-              )
+  printf '%s
+' "$response" |
+    jq -s -c --arg statusId "$status_id" '
+      [
+        .[]
+        | .data.organization.projectV2.items.nodes[]
+        | select(
+            any(
+              .fieldValues.nodes[];
+              .field.name == "Status"
+              and .optionId == $statusId
             )
-          | select(.content != null)
-          | select(.content.number != null)
-          | {
-              number: .content.number,
-              title: .content.title,
-              body: (.content.body // ""),
-              url: .content.url,
-              updatedAt: .content.updatedAt,
-              labels: [.content.labels.nodes[]?.name],
-              comments: [
-                .content.comments.nodes[]?
-                | {
-                    author: (.author.login // ""),
-                    createdAt: .createdAt,
-                    body: (.body // "")
-                  }
-              ],
-              repository: .content.repository.name,
-              repositoryWithOwner: .content.repository.nameWithOwner
-            }
-        ]
-      '
-  )
+          )
+        | select(.content != null)
+        | select(.content.number != null)
+        | {
+            number: .content.number,
+            title: .content.title,
+            body: (.content.body // ""),
+            url: .content.url,
+            updatedAt: .content.updatedAt,
+            labels: [.content.labels.nodes[]?.name],
+            comments: [
+              .content.comments.nodes[]?
+              | {
+                  author: (.author.login // ""),
+                  createdAt: .createdAt,
+                  body: (.body // "")
+                }
+            ],
+            repository: .content.repository.name,
+            repositoryWithOwner: .content.repository.nameWithOwner
+          }
+      ]
+    ' > "$work_dir/issues.json"
 
-  release_result=$(
-    jq -n \
-      --arg statusId "$status_id" \
-      --arg statusName "$status_name" \
-      --argjson issues "$issues" \
-      '{
-        statusId: $statusId,
-        statusName: $statusName,
-        issues: $issues
-      }'
-  )
+  jq -n     --arg statusId "$status_id"     --arg statusName "$status_name"     --slurpfile issues "$work_dir/issues.json"     '{
+      statusId: $statusId,
+      statusName: $statusName,
+      issues: $issues[0]
+    }' > "$work_dir/release-result.json"
 
-  releases=$(
-    jq -n \
-      --argjson existing "$releases" \
-      --argjson newRelease "$release_result" \
-      '$existing + [$newRelease]'
-  )
+  jq -n     --slurpfile existing "$work_dir/releases.json"     --slurpfile newRelease "$work_dir/release-result.json"     '$existing[0] + [$newRelease[0]]' > "$work_dir/releases.next.json"
+  mv "$work_dir/releases.next.json" "$work_dir/releases.json"
 
 done < <(jq -c '.releases[]' "$INPUT_FILE")
 
-jq -n \
-  --argjson releases "$releases" \
-  '{
-    releases: $releases
+jq -n   --slurpfile releases "$work_dir/releases.json"   '{
+    releases: $releases[0]
   }' > "$OUTPUT_FILE"
 
 total_issue_count=$(jq '[.releases[].issues | length] | add // 0' "$OUTPUT_FILE")
