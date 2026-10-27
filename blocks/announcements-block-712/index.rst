@@ -3,8 +3,6 @@ Announcements block in Omnia 7.12
 
 This page describes the date and time picker in Omnia 7.12 and later. For Omnia 7.11 and earlier, see: :doc:`Announcements block </blocks/announcements/index>`
 
-**This page is a work in progress.**
-
 Announcements are created by administrators and will display important information in the whole tenant, or for a certain business profile. The priority (status) of an announcement can be Normal or High. Announcements can be displayed at the top or in a block, which is what’s described here.
 
 Settings for the block
@@ -43,6 +41,8 @@ Here's an example for a modern display (from a test environment):
 .. image:: announcements-modern-v712.png
 
 "Border radius" is settings for rounded cornes. "Elevation" is what makes the messsages looks like they are somewhat raised. The rest of the settings are noted in the image above.
+
+Icon types and colors for status are set in Omnia admin.
 
 Custom colors
 ----------------------
