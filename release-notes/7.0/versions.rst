@@ -1,3 +1,34 @@
+7.12.6
+========================================
+(Omnia 7.12.6 / Workplace 7.12.6 / WCM 7.12.6 / MS 7.12.6 / Analytics 7.12.4 / Feed 7.11.6)
+
+- Custom block theming configured in a Section or Layout now applies correctly to nested Page Rollup blocks, including background and text colors (#59457)
+- Semantic Search with newer OpenAI reasoning models such as gpt-6-luna and gpt-6-sol now generates answers without HTTP 400 errors
+- Page review emails now send each recipient once, regardless of the email provider in use (#60461)
+- Event participants can now receive an email notification when someone cancels their participation in a managed event (#60356)
+- Viva Engage article distribution no longer requires a legacy Yammer token when the publisher's Entra ID token is available
+- Page Rollup Card view (WCAG) now loads page types like the standard Card view, enabling topic subscription and page-type chips without another rollup on the page
+- Card view and Card view (WCAG) now render rich-text summaries with proper formatting instead of displaying raw HTML tags
+- SharePoint Site Pages path queries in the Page Rollup now return results regardless of promoted state when the 'Only News Posts' setting is disabled
+- Document approval from the Task list no longer times out; the approval is now completed in the background while the approver receives immediate feedback (#59582, #60517)
+- Sign-off Request detail dialogs now load and display their request data correctly
+- OPM Process search results now display process and step titles correctly in all search categories
+- Page Rollup dialogs now load comments and likes correctly from pages in workspaces with no current publishing page
+- Image-free Page Rollup dialog titles, dates, and action buttons are now readable against the white dialog background
+- Banner link text now displays with consistent color in both edit mode and read mode (#60479)
+- Durable links to documents now open the document directly instead of showing an "Item does not exist" page
+- Newsletter emails are no longer sent with empty content when a page version changes during the approval workflow
+- Updated Mediaflow branding to display the current symbol in the media picker and business profile settings (#60291)
+- Page Rollup Card view (WCAG) now includes a "Show person as text" setting, consistent with the standard Card view
+- User profile links in rich-text content now display with the same styling as page and document links in view mode
+- Omnia Search now shows "Sort by relevance" selected by default, making the default sort behavior explicit to users (#59274)
+- Microsoft 365 profile links for users now open the correct profile page instead of Copilot chat (#60672)
+- OPM Process Rollup List view now applies configured column widths correctly, whether column headings are shown or hidden
+- Editors can now mark short quotations with semantic `<q>` tags, allowing screen readers and browsers to present quotation marks automatically
+- Page Rollup, Document Rollup and Workplace List Rollup export to Excel now announces progress to screen readers through a live region
+- Page property descriptions are now linked to their input fields with aria-describedby, so screen readers announce them when the field receives focus
+- Improved security validation of database queries, URL encoding, and request authentication to resolve findings from a security audit
+
 7.12.2
 ========================================
 (Omnia 7.12.2 / Workplace 7.12.2 / WCM 7.12.2 / MS 7.12.2 / Analytics 7.12.3 / Feed 7.11.6)
