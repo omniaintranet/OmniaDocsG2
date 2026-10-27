@@ -1,15 +1,13 @@
 Content builder
 ==================
 
-**This page is a work in progress. More information will be added soon.**
-
-This block is an authoring tool. It can be used instead of a text block and the RTF editor. Available in Omnia 7.12 and later.
+This block is an authoring tool. It can be used instead of a text block and the RTF editor. Available in Omnia 7.12 and later. It can also be called Content flow.
 
 It's easier and faster to create and edit content with the content builder. With that said it isn't a full replacer of the RTF editor, it's another way of working with content. And you can of course use both if you choose to do that.
 
-The Contenty builder can be added to page types can be created for content builder, for consistent look and feel, the same way as for pages with other blocks. See this page for more information: :doc:`Page types </pages/page-types/index>`
+The Content builder can be added to page types, for consistent look and feel, the same way as for pages with other blocks. See this page for more information: :doc:`Page types </pages/page-types/index>`
 
-This page describes the settings for the block. For information on how to use the conent builder's all options, see link below
+This page describes the settings for the block. For information on how to use the conent builder's all options, see link below.
 
 The following settings are available:
 
@@ -49,7 +47,7 @@ You can choose that a confirmation should be needed, before the block is deleted
 
 .. image:: content-builder-editor.png
 
-If not activem the block will be deleted directly, as it is with most other blocks.
+If not active, the block will be deleted directly, as it is with most other blocks.
 
 AI assistance
 *****************
