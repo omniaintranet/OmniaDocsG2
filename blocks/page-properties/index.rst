@@ -5,7 +5,7 @@ Use this block to show information about the page, for example when it was last 
 
 .. image:: page-properties-info-new2.png
 
-In Omnia 7.6.7 and later -  if the block does not contain any values, it's not shown.
+If the block does not contain any values, it's not shown.
 
 Settings
 ***********
