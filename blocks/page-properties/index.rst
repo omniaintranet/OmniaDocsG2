@@ -33,7 +33,7 @@ Here's an example with two properties:
 
 But that just an example, this block can be used for many purposes.
 
-For each property you add, you can set some options. Expand to set them:
+For each property you add, you can set some options. Expand to set them.
 
 For General Style you can set:
 
