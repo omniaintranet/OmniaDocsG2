@@ -35,7 +35,7 @@ But that just an example, this block can be used for many purposes.
 
 For each property you add, you can set some options. Expand to set them.
 
-For General Style you can set:
+For General Style a number of settings can be available, depending on property type:
 
 .. image:: page-properties-block-display-style-general-v712.png
 
