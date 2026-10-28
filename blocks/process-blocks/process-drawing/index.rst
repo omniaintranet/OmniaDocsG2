@@ -1,7 +1,7 @@
 Process drawing block
 ======================
 
-Use this block to display the process drawing for the process. The process is not set in the block, it's set on the Properties tab of the page, see this page for more information: :doc:`Displaying processes for users </working-with-processes/displaying-processes-for-users/index>`
+Use this block to display the process drawing for the process. The process is not set in the block, it's set on the Properties tab of the page, see this page for more information: :doc:`Displaying processes for users </working-with-processes-v7/displaying-processes-for-users-v7/index>`
 
 Settings
 ***********
