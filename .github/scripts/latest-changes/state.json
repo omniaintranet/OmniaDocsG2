@@ -672,9 +672,117 @@
     "e581e4d1081c7ae79935c34b3505b77338a98dbb": "2026-10-26",
     "544a8c0b6b58bc143d90b95305372a174294a510": "2026-10-26",
     "d3911c191eb2f53605c3306094a128f673147bc6": "2026-10-26",
-    "e720553bd7176ea8a346526042ab31b78ade2230": "2026-10-26"
+    "e720553bd7176ea8a346526042ab31b78ade2230": "2026-10-26",
+    "f091c5141bea6b0df0ea1d09d920183261be5472": "2026-10-27",
+    "28174c841528757b3f112361dbdca7d94decc0f3": "2026-10-27",
+    "ed15cef2868bab245423efe8fd8ed8da975cc701": "2026-10-27",
+    "a97d76d5bbfd07cf402b9a348c59808b77492b72": "2026-10-27",
+    "74dba016430256de3dbe87daa08e8574a5b0d34a": "2026-10-27",
+    "fc5e3a9997ca281ed92b3ea5819450f92c3b8eff": "2026-10-27",
+    "191181bace8ee4dff039a856664063f3903c9b61": "2026-10-27",
+    "1880a957ad7f45d3005a790ebd708cb57a906cc2": "2026-10-27",
+    "93def4385ce9a50ddd7dfec9db18de1f228f51a2": "2026-10-27",
+    "bf0d48cd9394b764c174a612e27f60c6117d2c58": "2026-10-27",
+    "2ad876b30aef0ec5a5362df15c3dc18d85137c1c": "2026-10-27",
+    "f7b1a4c3eccef8cab91b9abadbe44984bb0facc6": "2026-10-27",
+    "ccaae618f54baf82e5216c128705244a852e17cc": "2026-10-27",
+    "2e8a7650f12caf26b569e012ad1041580bee16a7": "2026-10-27",
+    "9e21182f2dc465bc28dc0e707921cfdc0b18a1d0": "2026-10-27",
+    "de03134babd7461c0b7c6d2ebff1ec79c7547745": "2026-10-27",
+    "fb3c48f1fec780078fabeeb29d5a908ad4c0ecae": "2026-10-27"
   },
   "entries": [
+    {
+      "date": "2026-10-27",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.12.6 release notes listing bug fixes and feature improvements.",
+      "sources": [
+        "f091c5141bea6b0df0ea1d09d920183261be5472"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "pages/page-collections/page-collection-settings/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that page variations are not supported by semantic search, and search results link only to the main page.",
+      "sources": [
+        "9e21182f2dc465bc28dc0e707921cfdc0b18a1d0"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "pages/language-versions-of-a-page/index.rst",
+      "classification": "Added information",
+      "description": "Added note explaining that page variations are not indexed by semantic search, so text existing only on variations will not appear in search results.",
+      "sources": [
+        "9e21182f2dc465bc28dc0e707921cfdc0b18a1d0"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "general-assets/using-content-builder/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed multiple spelling and grammar errors throughout the page, including verb forms, word spellings, prepositions, and article usage.",
+      "sources": [
+        "fb3c48f1fec780078fabeeb29d5a908ad4c0ecae"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "general-assets/about-semantic-search/index.rst",
+      "classification": "Added information",
+      "description": "Added information that semantic search does not support page variations; only the main page is indexed and appears in search results.",
+      "sources": [
+        "9e21182f2dc465bc28dc0e707921cfdc0b18a1d0"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "blocks/content-builder/index.rst",
+      "classification": "Added information",
+      "description": "Removed incomplete notice and added that the content builder block can also be called Content flow.",
+      "sources": [
+        "de03134babd7461c0b7c6d2ebff1ec79c7547745"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "blocks/announcements/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified page scope to Omnia 7.11 and earlier versions, removed 7.12+ specific settings, and updated screenshots.",
+      "sources": [
+        "28174c841528757b3f112361dbdca7d94decc0f3",
+        "74dba016430256de3dbe87daa08e8574a5b0d34a",
+        "ed15cef2868bab245423efe8fd8ed8da975cc701"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "blocks/announcements-block-712/index.rst",
+      "classification": "New page",
+      "description": "New documentation page for Announcements block in Omnia 7.12, covering block settings, display options including modern view, and custom color configuration.",
+      "sources": [
+        "1880a957ad7f45d3005a790ebd708cb57a906cc2",
+        "191181bace8ee4dff039a856664063f3903c9b61",
+        "2ad876b30aef0ec5a5362df15c3dc18d85137c1c",
+        "93def4385ce9a50ddd7dfec9db18de1f228f51a2",
+        "a97d76d5bbfd07cf402b9a348c59808b77492b72",
+        "bf0d48cd9394b764c174a612e27f60c6117d2c58",
+        "ccaae618f54baf82e5216c128705244a852e17cc",
+        "f7b1a4c3eccef8cab91b9abadbe44984bb0facc6",
+        "fc5e3a9997ca281ed92b3ea5819450f92c3b8eff"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "path": "admin-settings/tenant-settings/settings/media-picker-settings-712/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified the Border style setting description to explain it controls rounded corners and how higher values increase rounding.",
+      "sources": [
+        "2e8a7650f12caf26b569e012ad1041580bee16a7"
+      ]
+    },
     {
       "date": "2026-10-26",
       "path": "pages/page-types/section-settings/index.rst",

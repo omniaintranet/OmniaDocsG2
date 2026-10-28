@@ -3,6 +3,36 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+27 October 2026
+---------------
+
+* `About semantic search <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/about-semantic-search/index.html>`__ — **Added information**
+  Added information that semantic search does not support page variations; only the main page is indexed and appears in search results.
+
+* `Announcements <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/announcements/index.html>`__ — **Updated guidance**
+  Clarified page scope to Omnia 7.11 and earlier versions, removed 7.12+ specific settings, and updated screenshots.
+
+* `Announcements block in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/announcements-block-712/index.html>`__ — **New page**
+  New documentation page for Announcements block in Omnia 7.12, covering block settings, display options including modern view, and custom color configuration.
+
+* `Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/content-builder/index.html>`__ — **Added information**
+  Removed incomplete notice and added that the content builder block can also be called Content flow.
+
+* `Language versions of a page <https://omnia-docs-g2.readthedocs.io/en/latest/pages/language-versions-of-a-page/index.html>`__ — **Added information**
+  Added note explaining that page variations are not indexed by semantic search, so text existing only on variations will not appear in search results.
+
+* `Media picker settings in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/media-picker-settings-712/index.html>`__ — **Updated guidance**
+  Clarified the Border style setting description to explain it controls rounded corners and how higher values increase rounding.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.12.6 release notes listing bug fixes and feature improvements.
+
+* `Page collection settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-collections/page-collection-settings/index.html>`__ — **Added information**
+  Added clarification that page variations are not supported by semantic search, and search results link only to the main page.
+
+* `Using Content builder <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/using-content-builder/index.html>`__ — **Spelling / grammar**
+  Fixed multiple spelling and grammar errors throughout the page, including verb forms, word spellings, prepositions, and article usage.
+
 26 October 2026
 ---------------
 
