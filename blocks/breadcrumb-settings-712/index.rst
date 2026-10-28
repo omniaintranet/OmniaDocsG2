@@ -1,4 +1,4 @@
-Breadcrumb settings for Omnia 7.12
+Breadcrumb settings in Omnia 7.12
 =====================================
 
 This page describes the settings for the Breadcrum block in Omnia 7.12 and later. 
