@@ -21,7 +21,7 @@ Here you can add a title for the block, if needed.
 
 Display
 ---------
-Here you decide what show i the block.
+Here you decide what to show in the block.
 
 .. image:: page-properties-block-display-712.png
 
