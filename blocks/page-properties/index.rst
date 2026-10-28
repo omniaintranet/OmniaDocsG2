@@ -25,7 +25,7 @@ Here you decide what to show in the block.
 
 .. image:: page-properties-block-display-712.png
 
-Open the list, select a property and click the plus. Repeat for each property you woulöd like to add.
+Open the list, select a property and click the plus. Repeat for each property you would like to add.
 
 Here's an example with two properties:
 
