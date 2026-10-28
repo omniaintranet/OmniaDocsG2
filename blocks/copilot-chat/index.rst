@@ -1,13 +1,11 @@
 Copilot chat
 ===================
 
-**Important note!** This block is to be considered experimental for now. It will be developed further soon.
-
-Use this block for experimental Copilot chats. The primary purpose is to interact with Copilot in the same way you would across Microsoft 365 applications, enabling general conversations, brainstorming, and assistance beyond searching for information within Omnia.
+Use this block for Copilot chats. The primary purpose is to interact with Copilot in the same way you would across Microsoft 365 applications, enabling general conversations, brainstorming, and assistance beyond searching for information within Omnia.
 
 Prerequisites
 **************
-For this block to be available, the tenant feature "Experimental - Copilot chat" must be active. The block must also be added to one or more of the block dialogs.
+For this block to be available, the tenant feature "Copilot chat" must be active. The block must also be added to one or more of the block dialogs.
 
 For more information on block dialogs, see the heading "Block dialog" on this page: :doc:`Block gallery </admin-settings/tenant-settings/block-gallery/index>`
 
