@@ -41,7 +41,7 @@ For General Style a number of settings can be available, depending on property t
 
 + **Show label**: Decide to show the property label or not. 
 + **Show label icon with value**: Can be used for some properties, if there is a value (not really applicabale in this example).
-+ **Custom label**: Add a custom label here if needed, to be shown instead of the property lable.
++ **Custom label**: Add a custom label here if needed, to be shown instead of the property label.
 + **Date type**: For date type properties you can choose Default, Classic or Social.
 + **Hide avatar**: For people type properties you can choose to hide the avatar image.
 
