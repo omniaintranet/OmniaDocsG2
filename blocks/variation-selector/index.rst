@@ -11,11 +11,9 @@ The block will simply show a list of the available page variations when opened.
 
 Settings
 **********
-The only setting that can be done for the block is this:
+ Here you can decide if the block should be hidden if no variations exist for the page.
 
 .. image:: page-variation-setting-78.png
-
-+ **Hide if no variations exist for the page**: Select if the block should be hidden if no variations exist for the page. 
 
 If the block is part of a page type this setting can't be edited.
 
