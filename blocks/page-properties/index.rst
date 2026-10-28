@@ -1,7 +1,7 @@
 Page properties
 ===========================================
 
-Use this block to show information about the page, for example when it was last edited and by whom. Here's an example:
+Use this block to show information about the page. Here's an example:
 
 .. image:: page-properties-info-712.png
 
