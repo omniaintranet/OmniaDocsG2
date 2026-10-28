@@ -44,6 +44,7 @@ For General Style a number of settings can be available, depending on property t
 + **Custom label**: Add a custom label here if needed, to be shown instead of the property label.
 + **Date type**: For date type properties you can choose Default, Classic or Social.
 + **Hide avatar**: For people type properties you can choose to hide the avatar image.
++ **Format**: When you choose "Classic" as Deta type for a date type propertyy, you can add the format in this field if needed.
 
 For extra style, some color settings and icon settings are available. Should be self explanatory.
 
