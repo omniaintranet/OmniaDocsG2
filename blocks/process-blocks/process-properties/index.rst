@@ -12,12 +12,12 @@ You can set the following:
 + **Select properties**: Select a property from this list. You can add several properties, but just one at a time. Click the plus to add additional properties.
 + **Padding**: You can set some padding if needed.
 
-When you have added a property, you can set a few settings:
+When you have added a property, two settings are available:
 
 .. image:: process-properties-block-label-712.png
 
 + **Show label**: Decide to show the property label.
-+ **Date type**: You can change the date type if needed; Default, Classic or Social. If you choose Classic, you can also set date format, if needed.
++ **Date type**: You can change the date type if needed; Default, Classic or Social. If you choose Classic, you can also set date format, if some other format than default should be used.
 
 Layout and Advanced
 ********************
