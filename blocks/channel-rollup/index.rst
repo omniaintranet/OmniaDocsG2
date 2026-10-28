@@ -36,7 +36,7 @@ When the view Administration has been selected, you can also select to group the
 
 .. image:: channel-rollup-settings-display-2.png
 
-For more information about categories, see: :doc:`Publishing channels categories </aadmin-settings/tenant-settings/webcontent-managament/publishing-channels-categories/index>`
+For more information about categories, see: :doc:`Publishing channels categories </admin-settings/tenant-settings/webcontent-managament/publishing-channels-categories/index>`
 
 Filter
 --------
