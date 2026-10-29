@@ -1,0 +1,13 @@
+# Category headers for hotfix releases with more than 10 bullets, in the order they appear.
+# Copilot reuses these names exactly, so the wording stays the same across releases. Other is always last.
+# A new category that heads a group in a generated release is added at the end by the automation.
+# To rename or merge a category, change it here and in release-notes/7.0/versions.rst.
+Pages and blocks
+Page Rollup
+Search
+Documents and processes
+Email and notifications
+Integrations
+Accessibility
+Security
+Other

@@ -78,6 +78,12 @@ class ApprovalTests(unittest.TestCase):
         text = "7.12.0\n========\n(Omnia 7.12.0)\n\n- Newer\n\n" + SECTION + "\n\n7.11.98\n========\n(Omnia 7.11.98)\n\n- Older"
         self.assertEqual(sync.extract_release(text, "7.11.99"), SECTION)
 
+    def test_grouped_section_is_extracted_whole(self):
+        grouped = ("7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n"
+                   "**Page Rollup**\n\n- Page Rollup note (#59036)\n\n**Search**\n\n- Search note")
+        text = grouped + "\n\n7.11.98\n========\n(Omnia 7.11.98)\n\n- Older"
+        self.assertEqual(sync.extract_release(text, "7.11.99"), grouped)
+
     def test_missing_duplicate_or_empty_release_is_rejected(self):
         for text in ("Unrelated", SECTION + "\n\n" + SECTION, SECTION.split("- Final")[0]):
             with self.subTest(text=text):
