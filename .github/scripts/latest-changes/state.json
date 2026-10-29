@@ -689,9 +689,131 @@
     "2e8a7650f12caf26b569e012ad1041580bee16a7": "2026-10-27",
     "9e21182f2dc465bc28dc0e707921cfdc0b18a1d0": "2026-10-27",
     "de03134babd7461c0b7c6d2ebff1ec79c7547745": "2026-10-27",
-    "fb3c48f1fec780078fabeeb29d5a908ad4c0ecae": "2026-10-27"
+    "fb3c48f1fec780078fabeeb29d5a908ad4c0ecae": "2026-10-27",
+    "40b1b38300229a44162927d779642e2ba62eeca8": "2026-10-28",
+    "e38ee345bede1912ca96c138e9d5a79642ff5f6c": "2026-10-28",
+    "4c386320cc8e9a5e8a4641e3f9ecf64ea1170eff": "2026-10-28",
+    "01f22618bf4acf4a6b18829875e1a7a314ffeaa8": "2026-10-28",
+    "9eefe58833394ec00e96ce36d2435dd9a75b2042": "2026-10-28",
+    "6bf6cb7edb6c1b77da8075ab13bdb03143689246": "2026-10-28",
+    "88ae7b90067c9c7e08a7277fe429e47538026b58": "2026-10-28",
+    "fbe11fe57e2a6f525012133eae165c8441f53abd": "2026-10-28",
+    "75204c6bfd6af4b6ed5b93ff9c32bdb80493cd28": "2026-10-28",
+    "6551418da60de9c295b825f2058c15526e8e7ae0": "2026-10-28",
+    "4e5773ec66a58a26a53be26afacae5195f2c2702": "2026-10-28",
+    "c02ba961f1e68d0ba618e04575bf587a60301951": "2026-10-28",
+    "f5291090815e7489428ff2b4479ae8e3f06c94b4": "2026-10-28",
+    "ca659ffa35389481c449530cd30e6b790a15fcc7": "2026-10-28",
+    "59565b4975ba53c47b719a45115538845fe44f8b": "2026-10-28",
+    "df03673cc36db1b0999038b0c2966e39d8b9dd50": "2026-10-28",
+    "deb4e7a862b413fb2071cd337f55d59df461c670": "2026-10-28",
+    "80915cadaff9da2f772b0d624f4fb0b50345f775": "2026-10-28",
+    "b6d3f859ecf16f3b1898cc0bdb031a7818d4e85a": "2026-10-28",
+    "d41db91a3fdf6779dde0b91fdf781a564ff5f99e": "2026-10-28",
+    "6fd0e4f555390ff13f036f030f8d4f68408db3ff": "2026-10-28",
+    "b4c8991806b43e8abb2d1e693ba7028e5286898e": "2026-10-28",
+    "d897929cdd19f045710468156227898fe7d6fe20": "2026-10-28",
+    "dbda0fb9c5df170f167ab500b05b792b08ca9bbc": "2026-10-28",
+    "315240a7ea38457e0701a4f2a95c2517f38b0b97": "2026-10-28"
   },
   "entries": [
+    {
+      "date": "2026-10-28",
+      "path": "blocks/variation-selector/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified the settings documentation by consolidating the Hide if no variations option explanation into the introductory text.",
+      "sources": [
+        "c02ba961f1e68d0ba618e04575bf587a60301951",
+        "f5291090815e7489428ff2b4479ae8e3f06c94b4"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/process-blocks/process-properties/index.rst",
+      "classification": "Added information",
+      "description": "Added Date type setting to configure date display format as Default, Classic, or Social in process properties blocks.",
+      "sources": [
+        "80915cadaff9da2f772b0d624f4fb0b50345f775",
+        "b6d3f859ecf16f3b1898cc0bdb031a7818d4e85a",
+        "d41db91a3fdf6779dde0b91fdf781a564ff5f99e",
+        "deb4e7a862b413fb2071cd337f55d59df461c670"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/process-blocks/process-library/index.rst",
+      "classification": "Correction",
+      "description": "Updated page title and description to use the correct feature name 'Processes library'.",
+      "sources": [
+        "df03673cc36db1b0999038b0c2966e39d8b9dd50"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/process-blocks/process-drawing/index.rst",
+      "classification": "Navigation update",
+      "description": "Updated link reference to the v7 version of the Displaying processes for users page.",
+      "sources": [
+        "ca659ffa35389481c449530cd30e6b790a15fcc7"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/page-properties/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified Display section instructions and documented new configuration options for label icons, avatar visibility, and date formatting; refreshed screenshots.",
+      "sources": [
+        "01f22618bf4acf4a6b18829875e1a7a314ffeaa8",
+        "40b1b38300229a44162927d779642e2ba62eeca8",
+        "4c386320cc8e9a5e8a4641e3f9ecf64ea1170eff",
+        "4e5773ec66a58a26a53be26afacae5195f2c2702",
+        "59565b4975ba53c47b719a45115538845fe44f8b",
+        "6551418da60de9c295b825f2058c15526e8e7ae0",
+        "6bf6cb7edb6c1b77da8075ab13bdb03143689246",
+        "75204c6bfd6af4b6ed5b93ff9c32bdb80493cd28",
+        "88ae7b90067c9c7e08a7277fe429e47538026b58",
+        "9eefe58833394ec00e96ce36d2435dd9a75b2042",
+        "e38ee345bede1912ca96c138e9d5a79642ff5f6c",
+        "fbe11fe57e2a6f525012133eae165c8441f53abd"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/copilot-chat/index.rst",
+      "classification": "Updated guidance",
+      "description": "Copilot chat block is no longer experimental; feature name and prerequisites updated accordingly.",
+      "sources": [
+        "315240a7ea38457e0701a4f2a95c2517f38b0b97",
+        "dbda0fb9c5df170f167ab500b05b792b08ca9bbc"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/channel-rollup/index.rst",
+      "classification": "Navigation update",
+      "description": "Corrected an internal link path reference for Publishing channels categories.",
+      "sources": [
+        "d897929cdd19f045710468156227898fe7d6fe20"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/breadcrumb/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected product name spelling from Omni to Omnia in version reference text.",
+      "sources": [
+        "6fd0e4f555390ff13f036f030f8d4f68408db3ff"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "path": "blocks/breadcrumb-settings-712/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Page title rephrased from 'settings for' to 'settings in' for improved phrasing.",
+      "sources": [
+        "b4c8991806b43e8abb2d1e693ba7028e5286898e"
+      ]
+    },
     {
       "date": "2026-10-27",
       "path": "release-notes/7.0/versions.rst",

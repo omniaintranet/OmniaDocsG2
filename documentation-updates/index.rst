@@ -3,6 +3,30 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+28 October 2026
+---------------
+
+* `Breadcrumb <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb/index.html>`__ — **Spelling / grammar**
+  Corrected product name spelling from Omni to Omnia in version reference text.
+
+* `Breadcrumb settings in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb-settings-712/index.html>`__ — **Spelling / grammar**
+  Page title rephrased from 'settings for' to 'settings in' for improved phrasing.
+
+* `Copilot chat <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/copilot-chat/index.html>`__ — **Updated guidance**
+  Copilot chat block is no longer experimental; feature name and prerequisites updated accordingly.
+
+* `Page properties <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-properties/index.html>`__ — **Updated guidance**
+  Clarified Display section instructions and documented new configuration options for label icons, avatar visibility, and date formatting; refreshed screenshots.
+
+* `Page variation selector <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/variation-selector/index.html>`__ — **Updated guidance**
+  Simplified the settings documentation by consolidating the Hide if no variations option explanation into the introductory text.
+
+* `Process properties block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/process-blocks/process-properties/index.html>`__ — **Added information**
+  Added Date type setting to configure date display format as Default, Classic, or Social in process properties blocks.
+
+* `Processes library <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/process-blocks/process-library/index.html>`__ — **Correction**
+  Updated page title and description to use the correct feature name 'Processes library'.
+
 27 October 2026
 ---------------
 
@@ -450,7 +474,7 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Breadcrumb <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb/index.html>`__ — **Added information**
   Added note clarifying this page covers Omnia 7.11 and earlier, with a link to Omnia 7.12+ breadcrumb settings.
 
-* `Breadcrumb settings for Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb-settings-712/index.html>`__ — **New page**
+* `Breadcrumb settings in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/breadcrumb-settings-712/index.html>`__ — **New page**
   New documentation page for Breadcrumb block settings in Omnia 7.12 and later, covering style presets, query options, separators, fonts, and hover state configuration.
 
 * `Current navigation in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/current-navigation-712/index.html>`__ — **New page**
