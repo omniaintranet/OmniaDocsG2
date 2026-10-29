@@ -9,6 +9,8 @@ from pathlib import Path
 REPOSITORY = "omniaintranet/OmniaDocsG2"
 NOTES_PATH = "release-notes/7.0/versions.rst"
 PUBLISHED_URL = "https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html"
+# Approved notifications become issues here, where the other Project 8 issues live (private repo).
+ISSUE_OWNER, ISSUE_REPO = "omniaintranet", "OmniaMono"
 # Shared with the bash scripts: what counts as a "waiting for release notes" column.
 # The lookahead is the same end boundary wait-for-rn-lib.sh adds ("Wait for RNA" is not the column).
 WAIT_FOR_RN = re.compile(
@@ -99,7 +101,11 @@ PROJECT_QUERY = """query($cursor: String) {
         status: fieldValueByName(name: "Status") {
           ... on ProjectV2ItemFieldSingleSelectValue { optionId name }
         }
-        content { ... on DraftIssue { id title body } }
+        content {
+          __typename
+          ... on DraftIssue { id title body }
+          ... on Issue { id title body repository { nameWithOwner } }
+        }
       }
     }
   } }
@@ -125,6 +131,11 @@ def plan_update(project, items, pr, version, section):
     if len(matches) != 1:
         raise ValueError("Expected exactly one existing release notification in Prod")
     item = matches[0]
+    kind = item["content"].get("__typename")
+    if kind not in ("DraftIssue", "Issue"):
+        raise ValueError("The Prod notification is neither a draft nor an issue")
+    if kind == "Issue" and (item["content"].get("repository") or {}).get("nameWithOwner") != f"{ISSUE_OWNER}/{ISSUE_REPO}":
+        raise ValueError(f"The Prod notification is an issue outside {ISSUE_OWNER}/{ISSUE_REPO}")
     if not re.search(re.escape(pr["html_url"]) + r"(?=[)\s]|$)", item["content"]["body"]):
         raise ValueError("The Prod notification is not linked to this documentation PR")
     fields = [field for field in project["fields"]["nodes"] if field.get("name") == "Status"]
@@ -151,6 +162,7 @@ def plan_update(project, items, pr, version, section):
     rename = option["name"] != approved_name
     option["name"] = approved_name
     return {"item": item, "field_id": field["id"], "options": options, "rename": rename,
+            "convert": kind == "DraftIssue",
             "title": f"Release notes for Omnia {version} are approved",
             "body": approval_body(pr, section), "status": approved_name}
 
@@ -189,19 +201,37 @@ def sync(number, *, dry_run=False):
     if not dry_run:
         item = plan["item"]["content"]
         if item["title"] != plan["title"] or item["body"] != plan["body"]:
-            api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
-              updateProjectV2DraftIssue(input: {draftIssueId: $id, title: $title, body: $body}) {
-                draftIssue { id }
-              }
-            }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
+            if item["__typename"] == "Issue":
+                api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
+                  updateIssue(input: {id: $id, title: $title, body: $body}) { issue { id } }
+                }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
+            else:
+                api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
+                  updateProjectV2DraftIssue(input: {draftIssueId: $id, title: $title, body: $body}) {
+                    draftIssue { id }
+                  }
+                }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
         if plan["rename"]:
             api("graphql", query="""mutation($field: ID!, $options: [ProjectV2SingleSelectFieldOptionInput!]!) {
               updateProjectV2Field(input: {fieldId: $field, singleSelectOptions: $options}) {
                 projectV2Field { ... on ProjectV2SingleSelectField { id } }
               }
             }""", variables={"field": plan["field_id"], "options": plan["options"]}, project=True)
+        # Convert only after the column is Approved: detect-release.sh reads repository issues
+        # in Wait for RN columns, so the notification must never be an issue while it sits there.
+        if plan["convert"]:
+            repository = api("graphql", query="""query($owner: String!, $name: String!) {
+              repository(owner: $owner, name: $name) { id }
+            }""", variables={"owner": ISSUE_OWNER, "name": ISSUE_REPO}, project=True)["data"]["repository"]["id"]
+            api("graphql", query="""mutation($item: ID!, $repository: ID!) {
+              convertProjectV2DraftIssueItemToIssue(input: {itemId: $item, repositoryId: $repository}) {
+                item { id }
+              }
+            }""", variables={"item": plan["item"]["id"], "repository": repository}, project=True)
+    converted = (f"; {'would convert' if dry_run else 'converted'} to an {ISSUE_OWNER}/{ISSUE_REPO} issue"
+                 if plan["convert"] else "")
     print(("Dry run: would synchronize" if dry_run else "Synchronized") +
-          f" Omnia {version}: {plan['title']}; Status: {plan['status']}")
+          f" Omnia {version}: {plan['title']}; Status: {plan['status']}{converted}")
 
 
 if __name__ == "__main__":
