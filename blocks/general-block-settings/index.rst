@@ -54,9 +54,15 @@ The follwowing is available for header settings:
 + **Header level**: Use this to select the formatting of the header.
 + **Custom settings**: For Header, you can choose to use the global settings (set up in Omnia admin) or use custom settings for this block.
 
-Available custom settings for TEXT:
+Available custom settings for TEXT in Omnia 7.11 and earlier:
 
 .. image:: layout-header-custom-v78.png
+
+In Omnia 7,12 and later, a few settings are added when you select "Custom styles":
+
+.. image:: layout-header-custom-v712.png
+
+These are exactly the same as in the Content header setting for the business profile, see this page: :doc:`Content Header (Business profile) for Omnia 7.12 </admin-settings/business-group-settings/settings/content-header-712/index>`
 
 You can set these custom settings, for STYLE:
 
