@@ -25,7 +25,7 @@ def fixtures():
     options = [{"id": "unrelated", "name": "Investigation", "color": "BLUE", "description": "Keep this"},
                {"id": "release", "name": "Wait for RN - Omnia 7.11.99 / WCM 7.11.99", "color": "GRAY", "description": "Keep this too"}]
     project = {"fields": {"nodes": [{"id": "field", "name": "Status", "options": options}]}}
-    items = [{"id": "item", "status": {"optionId": "release"}, "content": {"id": "draft",
+    items = [{"id": "item", "status": {"optionId": "release"}, "content": {"__typename": "DraftIssue", "id": "draft",
               "title": "Release notes for Omnia 7.11.99 are now ready",
               "body": "Stale draft with pending wording\n[PR](" + pr["html_url"] + ")"}}]
     return pr, review, project, items
@@ -98,6 +98,7 @@ class ApprovalTests(unittest.TestCase):
         self.assertEqual(plan["options"][1], dict(original["fields"]["nodes"][0]["options"][1],
             name="Approved - Omnia 7.11.99 / WCM 7.11.99"))
         self.assertTrue(plan["rename"])
+        self.assertTrue(plan["convert"])
         self.assertIn(SECTION, plan["body"])
         self.assertNotIn("Stale draft", plan["body"])
         self.assertIn("publication still requires merging", plan["body"])
@@ -113,6 +114,22 @@ class ApprovalTests(unittest.TestCase):
             with self.subTest(items=items):
                 with self.assertRaises(ValueError):
                     sync.plan_update(self.project, items, self.pr, "7.11.99", SECTION)
+
+    def converted(self, repository="omniaintranet/OmniaMono"):
+        self.items[0]["content"].update(__typename="Issue", id="issue", repository={"nameWithOwner": repository})
+
+    def test_converted_issue_is_updated_without_converting_again(self):
+        self.converted()
+        plan = sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
+        self.assertFalse(plan["convert"])
+
+    def test_issue_outside_omniamono_or_other_content_is_rejected(self):
+        for content in ({"__typename": "Issue", "repository": {"nameWithOwner": "omniaintranet/OmniaDocsG2"}},
+                        {"__typename": "PullRequest"}):
+            with self.subTest(content=content):
+                self.items[0]["content"].update(content)
+                with self.assertRaises(ValueError):
+                    sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
 
     def test_wrong_release_column_is_rejected(self):
         self.project["fields"]["nodes"][0]["options"][1]["name"] = "Wait for RN - Omnia 7.11.98"
@@ -156,11 +173,16 @@ class ApprovalTests(unittest.TestCase):
             reads.append(endpoint)
             if query and query.startswith("mutation"):
                 calls.append((query, variables))
-                if "updateProjectV2DraftIssue" in query:
+                if "updateProjectV2DraftIssue" in query or "updateIssue" in query:
                     self.items[0]["content"].update(title=variables["title"], body=variables["body"])
+                elif "convertProjectV2DraftIssueItemToIssue" in query:
+                    self.converted()
                 else:
                     self.project["fields"]["nodes"][0]["options"] = deepcopy(variables["options"])
                 return {}
+            if query and "repository(" in query:
+                reads.append(variables)
+                return {"data": {"repository": {"id": "repo-omniamono"}}}
             if "/reviews?" in endpoint:
                 review_reads += 1
                 return [self.review] if approved and not (withdraw and review_reads > 1) else []
@@ -186,14 +208,28 @@ class ApprovalTests(unittest.TestCase):
                     self.assertEqual(len(calls), first_writes, "Repeating synchronization must not rewrite the item or field")
         return reads, calls
 
-    def test_approved_sync_updates_item_and_renames_column_once(self):
+    def test_approved_sync_updates_item_renames_column_and_converts_once(self):
         reads, calls = self.exercise_sync()
-        self.assertEqual(len(calls), 2)
+        self.assertEqual([next(m for m in ("updateProjectV2DraftIssue", "updateProjectV2Field", "convertProjectV2")
+                               if m in query) for query, _ in calls],
+                         ["updateProjectV2DraftIssue", "updateProjectV2Field", "convertProjectV2"],
+                         "The draft must leave the Wait for RN column before it becomes an issue")
+        self.assertEqual(calls[2][1], {"item": "item", "repository": "repo-omniamono"})
+        self.assertIn({"owner": "omniaintranet", "name": "OmniaMono"}, reads)
         self.assertTrue(any("ref=head123" in endpoint for endpoint in reads))
+
+    def test_merge_after_conversion_updates_the_issue(self):
+        self.converted()
+        self.project["fields"]["nodes"][0]["options"][1]["name"] = "Approved - Omnia 7.11.99 / WCM 7.11.99"
+        _, calls = self.exercise_sync(merged=True)
+        self.assertEqual(len(calls), 1)
+        self.assertIn("updateIssue", calls[0][0])
+        self.assertEqual(calls[0][1]["id"], "issue")
+        self.assertIn("APPROVED AND MERGED", calls[0][1]["body"])
 
     def test_merge_sync_reads_merged_content(self):
         reads, calls = self.exercise_sync(merged=True)
-        self.assertEqual(len(calls), 2)
+        self.assertEqual(len(calls), 3)
         self.assertTrue(any("ref=merge123" in endpoint for endpoint in reads))
         self.assertIn("APPROVED AND MERGED", calls[0][1]["body"])
 
