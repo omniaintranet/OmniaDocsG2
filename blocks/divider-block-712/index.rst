@@ -1,7 +1,7 @@
 Divider
 ==========
 
-In Omnia 7.12 and later, a divider block is available. The purpose is simply to to be able to create dividers on a page, if needed.
+In Omnia 7.12 and later, a divider block is available. The purpose is simply to be able to create dividers on a page, if needed.
 
 Display
 -------
