@@ -26,6 +26,10 @@ Some styling options are also available:
 
 .. image:: faq-settings-style-new.png
 
+In Omnia 7.12 and later you can alos choose a heading level. Heading levelse are set up in Omnia admin.
+
+.. image:: faq-settings-style-712.png
+
 LAYOUT and WRITE
 ********************
 The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
