@@ -58,7 +58,7 @@ Available custom settings for TEXT in Omnia 7.11 and earlier:
 
 .. image:: layout-header-custom-v78.png
 
-In Omnia 7,12 and later, a few settings are added when you select "Custom styles":
+In Omnia 7.12 and later, a few settings are added when you select "Custom styles":
 
 .. image:: layout-header-custom-v712.png
 
