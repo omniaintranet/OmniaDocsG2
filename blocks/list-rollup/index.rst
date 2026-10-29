@@ -61,6 +61,8 @@ Export
 --------
 Export to Excel can be available for users, if you select this option.
 
+**Important Note!** Not available for query builder, you most select a single list.
+
 .. image:: list-rollup-export-new.png
 
 When Export to Excel is active, you can set sorting for the rows, using "Sort by". 
