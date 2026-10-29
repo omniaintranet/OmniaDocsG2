@@ -5,15 +5,22 @@ The block can be used to show contents in an iFrame. The block is also an import
 
 Settings
 **********
-The following settings are available:
+The following settings are available (image from Omnia 7.12):
 
-.. image:: iframe-block-settings-78.png
+.. image:: iframe-block-settings-712.png
+
+In Omnia 7.11 and earlier:
 
 You can use the top field to add a property type Data for documents, when setting up the Share document functionality.
 
 The second field you can use to add an URL to content to display in the iFrame. You can also set width and height for the block.
 
 You can find more information about the Share document functionality here: :doc:`Share documents </general-assets/share-document/index>`
+
+Differences in Omnia 7.12 and later:
+
++ **URL**: You can either select an URL from a property of almost any kind, or add a custom URL.
++ **IFrame accessible title**: Providing a descriptive title here supports accessibility requirements. Screen readers can then announce the title when users navigate to the IFrame.
 
 Use the iFrame block on a section tab
 ********************************************
