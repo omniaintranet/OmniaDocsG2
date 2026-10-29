@@ -82,9 +82,34 @@ if ! tail -n +5 "$generated_file" | grep -q '^- '; then
   exit 1
 fi
 
-if ! tail -n +5 "$generated_file" | awk 'NF && $0 !~ /^- / { exit 1 }'; then
+# A category header such as **Page Rollup**; the same characters generate-release-notes.sh allows.
+category_header='^[*][*][A-Za-z0-9]([A-Za-z0-9 ,&/-]{0,38}[A-Za-z0-9])?[*][*]$'
+
+if ! tail -n +5 "$generated_file" | awk -v header="$category_header" 'NF && $0 !~ /^- / && $0 !~ header { exit 1 }'; then
   echo "Every release-note bullet must occupy one physical line." >&2
   exit 1
+fi
+
+# Category headers (SKILL.md, "Group long releases by category") group more than 10 bullets. The first
+# comes right below the component-version line; each is used once, stands between blank lines and
+# is followed by its bullets.
+if grep -Eq "$category_header" "$generated_file"; then
+  if ! tail -n +5 "$generated_file" | awk -v header="$category_header" '
+    { line[NR] = $0 }
+    $0 ~ header {
+      if (seen[$0]++ || (NR > 1 && line[NR - 1] != "")) exit 1
+    }
+    /^- / { bullets++ }
+    END {
+      if (line[1] !~ header || bullets <= 10) exit 1
+      for (n = 1; n <= NR; n++) {
+        if (line[n] ~ header && (line[n + 1] != "" || line[n + 2] !~ /^- /)) exit 1
+      }
+    }
+  '; then
+    echo "Category headers must group more than 10 bullets: each header once, between blank lines, followed by its bullets." >&2
+    exit 1
+  fi
 fi
 
 if grep -Eq '(^|[[:space:]])\.\.[[:space:]]+(raw|include|literalinclude)::|```|^# ' "$generated_file"; then

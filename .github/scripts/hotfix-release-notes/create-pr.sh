@@ -5,6 +5,9 @@ set -euo pipefail
 INPUT_FILE="/tmp/release-issues.json"
 GENERATED_FILE="/tmp/generated-release-notes.rst"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
+CATEGORIES_FILE="${CATEGORIES_FILE:-.github/skills/hotfix-release-notes/categories.txt}"
+# Written by generate-release-notes.sh: categories it added to CATEGORIES_FILE.
+NEW_CATEGORIES_FILE="/tmp/release-notes-new-categories.txt"
 # Written by review-release-notes.sh in the step before this one.
 REVIEW_DIR="/tmp/docs-review-release-notes"
 REVIEW_MARKER="<!-- release-notes-review -->"
@@ -52,6 +55,10 @@ pr_title="Release notes ${omnia_version}"
 # Everything from REVIEW_MARKER on is replaced when the pull request is updated.
 write_review_section() {
   printf '%s\n\n' "$REVIEW_MARKER"
+  if [ -s "$NEW_CATEGORIES_FILE" ]; then
+    printf '> [!NOTE]\n> New category headers, added to `%s`: %s. Keep them for later releases, or rename them to a listed category in both files.\n\n' \
+      "$CATEGORIES_FILE" "$(paste -sd ',' "$NEW_CATEGORIES_FILE" | sed 's/,/, /g')"
+  fi
   if [ ! -s "$REVIEW_DIR/summary.md" ]; then
     printf '> [!WARNING]\n> The documentation review did not run for these release notes. Check the wording, customer references and confidentiality by hand.\n'
     return
@@ -133,6 +140,9 @@ cat "$RELEASE_NOTES_FILE" >> "$temp_file"
 mv "$temp_file" "$RELEASE_NOTES_FILE"
 
 git add "$RELEASE_NOTES_FILE"
+if [ -s "$NEW_CATEGORIES_FILE" ]; then
+  git add "$CATEGORIES_FILE"
+fi
 
 if git diff --cached --quiet; then
   echo "No release-note changes detected."

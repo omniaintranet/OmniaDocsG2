@@ -15,6 +15,8 @@ JQ = os.environ.get("JQ_PATH") or shutil.which("jq")
 VALE = os.environ.get("VALE_BIN") or shutil.which("vale")
 GITLEAKS = os.environ.get("GITLEAKS_BIN") or shutil.which("gitleaks")
 REVIEW_MARKER = "<!-- release-notes-review -->"
+CATEGORIES = ".github/skills/hotfix-release-notes/categories.txt"
+HEADING = "7.11.99\n========================================\n(Omnia 7.11.99)\n\n"
 
 
 def shell_path(path):
@@ -52,8 +54,12 @@ class ReleaseReviewTests(unittest.TestCase):
         (self.folder / "release-issues.json").write_text(json.dumps(self.data))
         (self.folder / "response.json").write_text(json.dumps(self.response))
         script = (SCRIPTS / name).read_text()
+        categories = self.folder / "categories.txt"
+        if not categories.exists():
+            categories.write_text((ROOT / CATEGORIES).read_text(), newline="\n")
         for filename in ("release-issues.json", "generated-release-notes.rst", "release-notes-audit.json",
-                         "copilot-release-notes-response.txt", "docs-review-release-notes"):
+                         "copilot-release-notes-response.txt", "docs-review-release-notes",
+                         "release-notes-new-categories.txt"):
             script = script.replace("/tmp/" + filename, shell_path(self.folder / filename))
         if notification:
             # Exercise notification rendering, stopping before any GitHub mutation.
@@ -72,6 +78,7 @@ class ReleaseReviewTests(unittest.TestCase):
             TEST_EXISTING_BODY=getattr(self, "existing_body", "Automatically generated draft release notes."),
             DOCUMENTATION_PR_URL=getattr(self, "pr_url", "https://github.com/omniaintranet/OmniaDocsG2/pull/43"),
             PYTHON=getattr(self, "python", shell_path(sys.executable)),
+            CATEGORIES_FILE=shell_path(categories),
             RELEASE_NOTES_URL="https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html")
         return subprocess.run([BASH, "-c", f'export PATH="{shell_path(self.bin)}:{shell_path(Path(BASH).parent)}:$PATH"; bash "{shell_path(path)}"'],
             cwd=cwd, env=env, capture_output=True, text=True)
@@ -245,6 +252,98 @@ class ReleaseReviewTests(unittest.TestCase):
         notes = (self.folder / "generated-release-notes.rst").read_text()
         self.assertIn("document previews", notes)
 
+    def bullets(self, *categories):
+        """One public bullet per category, all from issue 1."""
+        self.response["bullets"] = [{"text": f"- Release note {n}", "category": category,
+            "sourceIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 1}]}
+            for n, category in enumerate(categories, 1)]
+
+    def assert_categories_unchanged(self):
+        self.assertEqual((self.folder / "categories.txt").read_text(), (ROOT / CATEGORIES).read_text())
+        self.assertEqual((self.folder / "release-notes-new-categories.txt").read_text(), "")
+
+    def test_ten_bullets_stay_flat(self):
+        self.bullets(*["Search"] * 5 + ["Teamwork"] * 5)
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((self.folder / "generated-release-notes.rst").read_text(),
+                         HEADING + "".join(f"- Release note {n}\n" for n in range(1, 11)))
+        # Teamwork heads no group, so it does not join the list.
+        self.assert_categories_unchanged()
+        prompt = (self.folder / "prompt.txt").read_text()
+        self.assertIn("Category names (categories.txt), in display order:\n\nPages and blocks\nPage Rollup\n", prompt)
+        self.assertIn("Group long releases by category", prompt)
+
+    def test_long_release_is_grouped_by_category(self):
+        # Listed categories in list order, then a new one, then Other; bullets keep their order in a group.
+        self.bullets("Search", "page rollup", "Teamwork", "", "Search", "Page Rollup", "**Accessibility**",
+                     "Teamwork", "Other", "Search", "Page Rollup")
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((self.folder / "generated-release-notes.rst").read_text(), HEADING + (
+            "**Page Rollup**\n\n- Release note 2\n- Release note 6\n- Release note 11\n\n"
+            "**Search**\n\n- Release note 1\n- Release note 5\n- Release note 10\n\n"
+            "**Accessibility**\n\n- Release note 7\n\n"
+            "**Teamwork**\n\n- Release note 3\n- Release note 8\n\n"
+            "**Other**\n\n- Release note 4\n- Release note 9\n"))
+        audit = json.loads((self.folder / "release-notes-audit.json").read_text())
+        self.assertEqual([b["category"] for b in audit["bullets"]][:7],
+                         ["Search", "Page Rollup", "Teamwork", "Other", "Search", "Page Rollup", "Accessibility"])
+        # The new category joins the list, so the next release reuses it.
+        self.assertEqual((self.folder / "categories.txt").read_text(), (ROOT / CATEGORIES).read_text() + "Teamwork\n")
+        self.assertEqual((self.folder / "release-notes-new-categories.txt").read_text(), "Teamwork\n")
+        self.assertIn("New release-note categories", result.stdout)
+
+    def test_long_release_in_one_category_stays_flat(self):
+        self.bullets(*["Teamwork"] * 11)
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertNotIn("**", (self.folder / "generated-release-notes.rst").read_text())
+        self.assert_categories_unchanged()
+
+    def test_category_with_markup_is_rejected(self):
+        self.bullets("Page `Rollup`")
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("required release-note audit JSON", result.stderr)
+
+    def test_new_category_is_named_in_the_pr(self):
+        self.bullets(*["Search"] * 6 + ["Teamwork"] * 5)
+        body = self.check_pr_output()
+        self.assertIn("> [!NOTE]\n> New category headers, added to `", body)
+        self.assertIn("categories.txt`: Teamwork. Keep them", body)
+
+    def test_pr_without_new_categories_has_no_note(self):
+        body = self.check_pr_output()
+        self.assertNotIn("New category headers", body)
+
+    def validate(self, lines):
+        notes = self.folder / "notes.rst"
+        notes.write_text(HEADING + lines, newline="\n")
+        (self.folder / "release-issues.json").write_text(json.dumps(self.data))
+        command = (f'export PATH="{shell_path(self.bin)}:{shell_path(Path(BASH).parent)}:$PATH"; '
+                   f'bash "{shell_path(SCRIPTS / "validate-release-notes.sh")}" '
+                   f'"{shell_path(self.folder / "release-issues.json")}" "{shell_path(notes)}"')
+        return subprocess.run([BASH, "-c", command], cwd=ROOT, capture_output=True, text=True)
+
+    def test_validator_checks_category_headers(self):
+        six = "".join(f"- Search note {n}\n" for n in range(6))
+        five = "".join(f"- Other note {n}\n" for n in range(5))
+        grouped = f"**Search**\n\n{six}\n**Other**\n\n{five}"
+        result = self.validate(grouped)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        for problem, lines in {
+            "ten bullets": f"**Search**\n\n{six}\n**Other**\n\n- a\n- b\n- c\n- d\n",
+            "bullet above the first header": f"- First\n\n{grouped}",
+            "no blank line before a header": f"**Search**\n\n{six}**Other**\n\n{five}",
+            "no blank line after a header": f"**Search**\n{six}\n**Other**\n\n{five}",
+            "header used twice": f"**Search**\n\n{six}\n**Search**\n\n{five}",
+            "header without bullets": f"**Search**\n\n{six}\n**Other**\n\n**Security**\n\n{five}",
+            "markup in a header": f"**Search**\n\n{six}\n**Other `x`**\n\n{five}",
+        }.items():
+            with self.subTest(problem):
+                self.assertNotEqual(self.validate(lines).returncode, 0)
+
     def test_issue_in_bullet_and_omitted_is_rejected(self):
         self.response["omittedIssues"][0]["number"] = 1
         self.response["bullets"][0]["sourceIssues"].append(
@@ -331,9 +430,10 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.folder = Path(self.temp.name)
         self.repo = self.folder / "repo"
         sources = [".github/scripts/docs-review/docs_review.py", "conf.py", ".github/skills/hotfix-release-notes/SKILL.md",
-                   ".github/instructions/docs-review.instructions.md"]
+                   ".github/instructions/docs-review.instructions.md", CATEGORIES]
         sources += [f".github/scripts/hotfix-release-notes/{name}"
-                    for name in ("validate-release-notes.sh", "wait-for-rn-lib.sh", "wait-for-rn-pattern.txt")]
+                    for name in ("validate-release-notes.sh", "wait-for-rn-lib.sh", "wait-for-rn-pattern.txt",
+                                 "render-release-notes.jq")]
         sources += [p.relative_to(ROOT).as_posix() for p in (ROOT / ".github/docs-review").rglob("*") if p.is_file()]
         for source in sources:
             target = self.repo / source
@@ -360,15 +460,17 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.data = {"releases": [{"statusName": "Wait for RN - Omnia 7.11.99", "issues": [
             {"repositoryWithOwner": "omniaintranet/test", "number": 1, "body": "", "comments": []}]}]}
 
-    def answer(self, *texts):
+    def answer(self, *texts, bullet=0):
         for n, text in enumerate(texts, 1):
-            (self.responses / f"{n}.json").write_text(json.dumps({"bullets": [{"bullet": 0, "text": text}]}))
+            (self.responses / f"{n}.json").write_text(json.dumps({"bullets": [{"bullet": bullet, "text": text}]}))
 
     def review(self, bullet):
-        (self.folder / "generated-release-notes.rst").write_text(
-            f"7.11.99\n========================================\n(Omnia 7.11.99)\n\n{bullet}\n", newline="\n")
-        (self.folder / "release-notes-audit.json").write_text(json.dumps({"bullets": [{"text": bullet, "sourceIssues": [
-            {"repositoryWithOwner": "omniaintranet/test", "number": 1}]}], "omittedIssues": [], "pendingReviewIssues": []}))
+        """bullet: one bullet's text, or (the generated lines below the heading, the audit's bullets)."""
+        lines, bullets = (f"{bullet}\n", [{"text": bullet}]) if isinstance(bullet, str) else bullet
+        (self.folder / "generated-release-notes.rst").write_text(HEADING + lines, newline="\n")
+        (self.folder / "release-notes-audit.json").write_text(json.dumps({"bullets": [
+            dict(b, sourceIssues=[{"repositoryWithOwner": "omniaintranet/test", "number": 1}]) for b in bullets],
+            "omittedIssues": [], "pendingReviewIssues": []}))
         (self.folder / "release-issues.json").write_text(json.dumps(self.data))
         script = (SCRIPTS / "review-release-notes.sh").read_text(encoding="utf-8")
         for name in ("generated-release-notes.rst", "docs-review-release-notes", "release-notes-audit.json", "release-issues.json"):
@@ -406,6 +508,26 @@ class ReleaseNotesDocsReviewTests(unittest.TestCase):
         self.assertIn("nothing blocks the generated release notes", summary)
         self.assertIn("Reworded after the review (1)", summary)
         self.assertIn(f"| {self.SALES} | {self.FIXED} |", summary)
+        self.assertIn("errors=0", outputs)
+
+    def test_flagged_bullet_in_a_grouped_release_is_reworded(self):
+        # Audit order: five Search bullets, then the flagged Page Rollup bullet (index 5) and five more.
+        search = [f"- Quick Search now shows result type {n} in the filter panel" for n in range(5)]
+        rollup = [f"- Page Rollup now shows column {n} in the list view" for n in range(5)]
+        bullets = ([{"text": t, "category": "Search"} for t in search] + [{"text": self.SALES, "category": "Page Rollup"}]
+                   + [{"text": t, "category": "Page Rollup"} for t in rollup])
+
+        def grouped(flagged):
+            return "**Page Rollup**\n\n" + "".join(f"{t}\n" for t in [flagged] + rollup) + "\n**Search**\n\n" + "".join(f"{t}\n" for t in search)
+
+        self.answer(self.FIXED, bullet=5)
+        findings, summary, outputs = self.review((grouped(self.SALES), bullets))
+        self.assertEqual(findings, [])
+        self.assertEqual(len(self.calls), 1)
+        self.assertIn('"bullet":5', self.calls[0].read_text())
+        self.assertEqual(self.notes, HEADING + grouped(self.FIXED))
+        self.assertEqual(self.audit["bullets"][5], dict(bullets[5], text=self.FIXED, sourceIssues=[
+            {"repositoryWithOwner": "omniaintranet/test", "number": 1}]))
         self.assertIn("errors=0", outputs)
 
     def test_findings_left_after_the_repair_rounds_are_reported(self):

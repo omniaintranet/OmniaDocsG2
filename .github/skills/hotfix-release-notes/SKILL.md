@@ -108,6 +108,28 @@ Published text must also pass the documentation review (`.github/docs-review/REA
 When matching house style is uncertain, consult the published versions page:
 `https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html`.
 
+### Group long releases by category
+
+When a release has more than 10 bullets in more than one category, group the bullets under short bold category headers. At 10 bullets or fewer, keep one flat list.
+
+```rst
+7.12.x
+========================================
+(Omnia 7.12.x / Workplace 7.12.x / WCM 7.12.x / MS 7.12.x / Analytics x / Feed x)
+
+**Page Rollup**
+
+- Release-note bullet
+
+**Search**
+
+- Release-note bullet
+```
+
+Take the category names from `.github/skills/hotfix-release-notes/categories.txt` and spell them exactly as listed there, so the headers read the same in every release. Choose the category a reader would look under for the change: a screen-reader improvement in the Page Rollup goes under Accessibility, a change to what the Page Rollup shows goes under Page Rollup. Name a new category only when none of the listed ones fits; keep it to one to four words in sentence case, with feature names such as Page Rollup capitalized as usual. A bullet that fits nowhere goes under Other.
+
+Groups follow the order of the category list, with Other last; bullets keep their order within a group. In automation, give each bullet its category and let the script write the headers. A new category that heads a group is added to the end of the list in the same pull request.
+
 ## Deliver the draft
 
 Choose the output wrapper requested by the caller:

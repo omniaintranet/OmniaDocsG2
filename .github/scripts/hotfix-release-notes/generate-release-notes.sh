@@ -8,7 +8,11 @@ INPUT_FILE="/tmp/release-issues.json"
 OUTPUT_FILE="/tmp/generated-release-notes.rst"
 AUDIT_FILE="/tmp/release-notes-audit.json"
 RESPONSE_FILE="/tmp/copilot-release-notes-response.txt"
+# Categories that head a group but were not in the category list; create-pr.sh names them in the pull request.
+NEW_CATEGORIES_FILE="/tmp/release-notes-new-categories.txt"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
+CATEGORIES_FILE="${CATEGORIES_FILE:-.github/skills/hotfix-release-notes/categories.txt}"
+RENDERER_FILE=".github/scripts/hotfix-release-notes/render-release-notes.jq"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
 REVIEW_SCRIPT=".github/scripts/docs-review/docs_review.py"
 PYTHON="${PYTHON:-python}"
@@ -25,6 +29,11 @@ fi
 
 if [ ! -f "$VALIDATOR_FILE" ]; then
   echo "Release-note validator not found: $VALIDATOR_FILE"
+  exit 1
+fi
+
+if [ ! -f "$CATEGORIES_FILE" ] || [ ! -f "$RENDERER_FILE" ]; then
+  echo "Release-note category list or renderer not found: $CATEGORIES_FILE, $RENDERER_FILE"
   exit 1
 fi
 
@@ -70,6 +79,7 @@ echo "$status_name"
 echo "Issues: $issue_count"
 
 skill_instructions=$(cat "$SKILL_FILE")
+category_names=$(grep -v -e '^[[:space:]]*#' -e '^[[:space:]]*$' "$CATEGORIES_FILE")
 release_data=$(cat "$INPUT_FILE")
 
 # The documentation review's rules, read from its rule files (.github/docs-review/README.md),
@@ -90,6 +100,10 @@ Every bullet and every suggestedText must also pass the documentation review:
 
 $review_rules
 
+Category names (categories.txt), in display order:
+
+$category_names
+
 Release data:
 
 $release_data
@@ -105,14 +119,16 @@ Requirements:
 - Review all bullets together for repetitive sentence openings before returning the response.
 - When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
+- Give every bullet a category, following "Group long releases by category": one of the category names above, spelled exactly as listed, or a new short name only when none of them fits. Do not write category headers yourself; the script groups the bullets when the release has more than 10.
 - Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
 - Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
-- Use the property names bullets, text, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, reason, and suggestedText exactly as shown. Emit issue numbers as JSON numbers, not strings.
+- Use the property names bullets, text, category, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, reason, and suggestedText exactly as shown. Emit issue numbers as JSON numbers, not strings.
 - Return only valid JSON matching this shape, without Markdown fences or commentary:
 {
   "bullets": [
     {
       "text": "- Customer-facing release-note text",
+      "category": "Page Rollup",
       "sourceIssues": [
         {
           "repositoryWithOwner": "owner/repository",
@@ -144,10 +160,10 @@ rm -f "$RESPONSE_FILE"
 extracted_response_file=$(mktemp)
 normalized_response_file=$(mktemp)
 canonical_response_file=$(mktemp)
-bullets_file=$(mktemp)
+layout_file=$(mktemp)
 review_input_file=$(mktemp)
 review_notes_file=$(mktemp)
-trap 'rm -f "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$bullets_file" "$review_input_file" "$review_notes_file"' EXIT
+trap 'rm -f "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$layout_file" "$review_input_file" "$review_notes_file"' EXIT
 
 printf '%s\n' "$prompt" |
   copilot \
@@ -228,10 +244,31 @@ fi
 
 # Canonicalize harmless model variations while retaining strict validation of
 # issue identities and complete source-issue accounting below.
-if ! jq '
+if ! jq --rawfile categories "$CATEGORIES_FILE" '
   def clean_text:
     gsub("[\\r\\n]+"; " ")
     | gsub("^[[:space:]]+|[[:space:]]+$"; "");
+
+  def category_names:
+    split("\n")
+    | map(clean_text)
+    | map(select(length > 0 and (startswith("#") | not)));
+
+  # A listed category in its listed spelling; no category at all means Other.
+  def category($names):
+    if type != "string" then .
+    else
+      clean_text
+      | gsub("^\\*+|\\*+$"; "")
+      | clean_text
+      | . as $category
+      | if . == "" then "Other"
+        else ([$names[] | select(ascii_downcase == ($category | ascii_downcase))][0] // .)
+        end
+    end;
+
+  ($categories | category_names) as $names
+  |
 
   def as_array:
     if type == "array" then . elif . == null then [] else [.] end;
@@ -306,6 +343,12 @@ if ! jq '
               then "- " + .
               else .
               end
+          ),
+          category: (
+            .category
+            // .group
+            // ""
+            | category($names)
           ),
           sourceIssues: [
             (
@@ -422,6 +465,8 @@ if ! jq -e '
   and all(
     .bullets[];
     (.text | type == "string" and startswith("- ") and (contains("\n") | not))
+    # Plain words only: a category becomes a bold RST header.
+    and (.category | type == "string" and test("^[A-Za-z0-9]([A-Za-z0-9 ,&/-]{0,38}[A-Za-z0-9])?$"))
     and (.sourceIssues | type == "array" and length > 0)
     and all(
       .sourceIssues[];
@@ -498,14 +543,21 @@ if ! jq -e '[.[] | length] | add == 0' <<< "$audit_problems" >/dev/null; then
   exit 1
 fi
 
-jq -r '.bullets[].text' "$AUDIT_FILE" > "$bullets_file"
+jq --rawfile categories "$CATEGORIES_FILE" -f "$RENDERER_FILE" "$AUDIT_FILE" > "$layout_file"
 
 {
   printf '%s\n' "$omnia_version"
   printf '%s\n' "========================================"
   printf '%s\n\n' "$component_line"
-  cat "$bullets_file"
+  jq -r '.lines[].text' "$layout_file"
 } > "$OUTPUT_FILE"
+
+# A new category that heads a group joins the list, so later releases reuse its wording.
+jq -r '.newCategories[]' "$layout_file" > "$NEW_CATEGORIES_FILE"
+if [ -s "$NEW_CATEGORIES_FILE" ]; then
+  echo "New release-note categories, added to $CATEGORIES_FILE: $(paste -sd ',' "$NEW_CATEGORIES_FILE" | sed 's/,/, /g')"
+  cat "$NEW_CATEGORIES_FILE" >> "$CATEGORIES_FILE"
+fi
 
 if [ "$(jq '.bullets | length' "$AUDIT_FILE")" -gt 0 ]; then
   bash "$VALIDATOR_FILE" "$INPUT_FILE" "$OUTPUT_FILE"

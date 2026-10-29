@@ -18,11 +18,14 @@ AUDIT_FILE="/tmp/release-notes-audit.json"
 REVIEW_DIR="/tmp/docs-review-release-notes"
 REVIEW_SCRIPT=".github/scripts/docs-review/docs_review.py"
 SKILL_FILE=".github/skills/hotfix-release-notes/SKILL.md"
+CATEGORIES_FILE="${CATEGORIES_FILE:-.github/skills/hotfix-release-notes/categories.txt}"
+RENDERER_FILE=".github/scripts/hotfix-release-notes/render-release-notes.jq"
 VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
 PYTHON="${PYTHON:-python}"
 REPAIR_ROUNDS="${REPAIR_ROUNDS:-2}"
 SUBJECT="the generated release notes"
-# The generated file has the heading, the component-version line and a blank line, then one bullet per line.
+# The generated file has the heading, the component-version line and a blank line, then the lines
+# render-release-notes.jq lays out: one bullet per line, grouped under category headers in long releases.
 FIRST_BULLET_LINE=5
 
 if [ ! -f "$GENERATED_FILE" ]; then
@@ -61,24 +64,30 @@ review() {
   "$PYTHON" "$REVIEW_SCRIPT" --base HEAD --linkcheck never --no-fail --out "$REVIEW_DIR" --subject "$SUBJECT" "$@"
 }
 
+# The rendered lines of an audit, with the index of the bullet on each line (null for headers).
+render() {
+  jq --rawfile categories "$CATEGORIES_FILE" -f "$RENDERER_FILE" "$1"
+}
+
 # Flagged bullets as [{"bullet": <index>, "text": "- ...", "findings": ["..."]}].
+# Findings on category headers and blank lines are left for people.
 flagged_bullets() {
-  local count
-  count=$(grep -c '^- ' "$GENERATED_FILE" || true)
+  render "$AUDIT_FILE" > "$work_dir/layout.json" || return 1
   jq -c \
     --arg file "$RELEASE_NOTES_FILE" \
     --argjson first "$FIRST_BULLET_LINE" \
-    --argjson count "$count" \
+    --slurpfile layout "$work_dir/layout.json" \
     --slurpfile audit "$AUDIT_FILE" '
     [
       .[]
-      | select(.repairable and .file == $file and .line != null)
-      | select(.line >= $first and .line < $first + $count)
+      | select(.repairable and .file == $file and .line != null and .line >= $first)
+      | .bullet = $layout[0].lines[.line - $first].bullet
+      | select(.bullet != null)
     ]
-    | group_by(.line)
+    | group_by(.bullet)
     | map({
-        bullet: (.[0].line - $first),
-        text: $audit[0].bullets[.[0].line - $first].text,
+        bullet: .[0].bullet,
+        text: $audit[0].bullets[.[0].bullet].text,
         findings: map(.message)
       })
   ' "$REVIEW_DIR/findings.json"
@@ -150,7 +159,7 @@ EOF
 
   {
     sed -n "1,$((FIRST_BULLET_LINE - 1))p" "$GENERATED_FILE"
-    jq -r '.bullets[].text' "$candidate_audit"
+    render "$candidate_audit" | jq -r '.lines[].text'
   } > "$candidate_notes"
 
   if ! bash "$VALIDATOR_FILE" "$INPUT_FILE" "$candidate_notes"; then
