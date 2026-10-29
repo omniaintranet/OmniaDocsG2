@@ -7,12 +7,13 @@ You can also add default content (image or video) to the block and set if it sho
 
 Settings
 ***************
-The following settings are available (expand General to see them):
+The following settings are available - expand General to see them (image from Omnia 7.12): 
 
-.. image:: media-settings-v75.png
+.. image:: media-settings-v712.png
 
 + **Title**: If a title should be shown for the block, add it in this field. 
 + **Default scaling**: You can select a default scaling here, but if you don't force (se below) this can be changed when an image is added. Possible scalings are set up in Omnia admin.
++ **Require alternative text for images**: Read the explanation for a description. Important setting for screen readers/accessibility.
 + **Multi-value**: If it should be possible to show more than one media item in the block, select this option and use the slider to set the maximum number.
 + **Force default scaling**: Use this setting to see to that all images are scaled the same when they are added - using the default scaling. With this option selected, page editors and authors can not select scaling and the dialog "This image has a bigger file size than recommended" is not shown.
 + **Crop ratios**: Use this list to set up which crop ratios editors should be able to choose from in this block. For more information, see below.
