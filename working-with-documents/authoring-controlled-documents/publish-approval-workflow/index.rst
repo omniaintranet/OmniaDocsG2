@@ -37,6 +37,8 @@ Available options here depends on a number of settings. These are some common op
 + **Require read receipt**: When notifying people, you can also select this option for read receipts to be sent to this controlled documents library.
 + **Preview document**: Click here to see a preview of how the approver will see the document, converted to PDF or not.
 
+**Note!** For a document that is encrypted with a sensitivity label, Omnia can't open the content of the file: merging with a document template and conversion to PDF are not possible, and placeholders in the document can't be replaced. The document type must be set up for encrypted documents, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
 Here's an example when a document has been published before. "Publish new revision", if allowed, can now be an alternative for simpler updates.
 
 .. image:: dm-revision-example-78.png

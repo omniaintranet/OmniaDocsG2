@@ -107,7 +107,7 @@ and these:
 + **Enable sign-off request**: If it should be posible for published controlled documents of this type to be added to sign-off requests, select this option. See this page for more information: :doc:`Sign-off requests </admin-settings/tenant-settings/sign-off-requests-613/index>`
 + **Sign-off request types**: Shown when "Enable sign-off request" is selected, so you can select a type if needed. These types can be set up under "Sign-off requests" in Omnia admin. For more information, see: :doc:`Sign-off types </admin-settings/tenant-settings/sign-off-requests-613/sign-off-types-613/index>` 
 + **Enable Create document feature in document rollup**: In the document rollup the “Create document icon” column can be added. A document can be created using this option only if it belongs to a document type that has this option selected. if not, the option is not shown.
-+ **Enable track changes when sending for comments**: Microsoft Word's options for tracking changes can be really useful when sending a document for comments. Select this option to automatically enable these options in Word.
++ **Enable track changes when sending for comments**: Microsoft Word's options for tracking changes can be really useful when sending a document for comments. Select this option to automatically enable these options in Word. Don't select it for document types used for encrypted documents, see *Document types for encrypted documents* below.
 + **Enable 'Show changes' button to document authors**: If the Draftable feature is activated, this option is available here. Select to enable the button "Show changes" for Draftable. See this page for more information about Draftable: :doc:`See changes in a controlled document </user-options/see-changes-in-controlled-document/index>`
 + **Enable 'Show changes' button in a document rollup**: If the Draftable feature is activated, this option can be made available in a document rollup. For more info about Draftable, see link above. For more information about document rollups, see: :doc:`The document rollup block</blocks/document-rollup/index>`
 
@@ -131,7 +131,7 @@ On the Publish tab you can set the following:
 
 .. image:: document-types-publish-v710-new.png
 
-+ **Replace tokens inside document on publishing**: When a document is published, the placeholders (tokens) will be replaced with metadata, but for a document that will be used as a template, you will probably not want that to happen. If you are creating a document type to be used for templates, deselect this option.
++ **Replace tokens inside document on publishing**: When a document is published, the placeholders (tokens) will be replaced with metadata, but for a document that will be used as a template, you will probably not want that to happen. If you are creating a document type to be used for templates, deselect this option. Also deselect it for document types used for encrypted documents, see *Document types for encrypted documents* below.
 + **Allow revisions**: Selecting this option you can allow authors to publish a revision of a document that does not require approval, for example for correcting typing errors. If this option is active, it's up to the author to decide if approval is needed or not. Approval is still needed for publication of a new edition of a document.
 + **Publishing approval**: Select if approval is to be used for this document type. If this option is NOT active, a document will be published immediately when an author clicks "Publish". If publishing approval is selected, you must also choose how approval will take place, see below.
 + **Allow scheduled publishing**: Available in Omnia 7.10 and later. To allow scheduled publishing for this document type, select this. Authors can then select to use scheduled publishing when suitable, when publishing documents of this type.
@@ -234,5 +234,25 @@ Then you can set the following:
 + **Calculated**: You can select to calculate the number of days, months or years from when the document was first published or when it was last published.
 + **Property**: Another way is to select a property for retention (if any are availble). Could for example be Retention date.
 
-When the set retention time has passed, the retention manager will receive an Email. The Email includes a link to a page where the document can be terminated (completely removed from the system), if needed. 
+When the set retention time has passed, the retention manager will receive an Email. The Email includes a link to a page where the document can be terminated (completely removed from the system), if needed.
 
+Document types for encrypted documents
+****************************************
+Documents can be protected with a Microsoft Purview sensitivity label that applies encryption (earlier called Microsoft AIP). Omnia can't open the content of an encrypted file. Features that read or change the content inside the file will therefore not work for such documents. Omnia does not detect that a document is encrypted, so you need to set this up in the document type.
+
+Create a separate document type for documents that will be encrypted, and set the following:
+
++ **Enable track changes when sending for comments** (General tab): Deselect this option. When it's selected, Omnia turns on track changes inside the Word file when it's sent for comments, which is not possible for an encrypted file.
++ **Enable 'Show changes' button to document authors** and **Enable 'Show changes' button in a document rollup** (General tab): Deselect these options. The comparison is done by Draftable, which can't read the content of an encrypted file.
++ **Replace tokens inside document on publishing** (Publish tab): Deselect this option. Placeholders can't be replaced inside an encrypted file. The document is published as it is.
++ **Conversion** (Publish tab): Deselect this option. Conversion to PDF is done by Microsoft 365, and an encrypted file can't be converted. If conversion fails, the document is not published.
++ **Semantic search** (Publish tab): Don't select this option. The content of an encrypted file can't be read, so the document can't be found with semantic search. The document's properties are not affected: it can still be found by its properties in document rollups and search.
++ **Do not allow the publishing of a document with unaccepted changes** (Publish tab): Deselect this option. The check reads the content of the Word file.
+
+**Note!** New document types have "Enable track changes when sending for comments" and "Replace tokens inside document on publishing" selected by default.
+
+Also note the following:
+
++ An encrypted document can't be merged with a document template. Apply the template before the label is applied.
++ The settings are used every time a document is sent for comments or published. If you change them for an existing document type, the change applies to the next edition of all documents of that type.
++ If a sensitivity label is applied to a draft, the published edition keeps the label, as long as the options above are deselected. Omnia does not apply, change or remove labels, and earlier editions are not changed.

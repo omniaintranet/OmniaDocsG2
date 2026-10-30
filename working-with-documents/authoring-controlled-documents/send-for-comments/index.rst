@@ -3,6 +3,8 @@ Send a draft for comments
 
 Authors can use the send for comments workflow to get input from one or more colleagues in an organized way, or even to get help to add or edit some part of the text. When the Workflow is active, all users that has been added as reviewers can edit the document, regardless of what access they normally have to the site. If it’s a Microsoft Word document; the option “Track changes” is automatically turned on so all comments/changes can be seen by everyone.
 
+**Note!** If the document is encrypted with a sensitivity label, track changes can't be turned on automatically. For such documents an administrator should set up a document type without this option, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
 The option can be run as many times as needed before the publishing of an edition, but there can only be one such workflow active at a time, for each document. On the other hand, using this workflow is optional. You, the author, can always choose to publish directly. 
 
 **Note!**

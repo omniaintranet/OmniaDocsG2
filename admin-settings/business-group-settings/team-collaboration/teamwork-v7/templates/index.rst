@@ -139,5 +139,5 @@ For Policies, the following options are available especially for teamwork templa
 .. image:: teamwork-templates-policies-teamwork-v7.png
 
 + **Naming policy**: Select a naming policy, if any is available. They are setup using the Naming policy tab, see: :doc:`Naming Policies (Teamwork) </admin-settings/business-group-settings/team-collaboration/teamwork-v7/naming-policies/index>`
-+ **Sensitivity label**: A prerequisite for "Let user decide" to make any sense is that Sensitivity Labels are created in Microsoft 365.
++ **Sensitivity label**: A prerequisite for "Let user decide" to make any sense is that Sensitivity Labels are created in Microsoft 365. This label is set for the team or site. For how controlled documents work with sensitivity labels that encrypt files, see: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 

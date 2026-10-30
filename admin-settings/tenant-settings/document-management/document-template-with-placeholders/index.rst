@@ -11,6 +11,8 @@ For more information on placeholders available for each application, see below. 
 
 Another, and most likely better, way is to use a dedicated document type for all templates and there set that the placeholders should not be replaced for documents of that type. In that case, place holders can be added as described below - escape characters are not needed. See the heading "Publish" on this page for more information: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
 
+.. note:: Placeholders can't be replaced in a document that is encrypted with a sensitivity label. Use a document type where "Replace tokens inside document on publishing" is deselected for such documents. See the heading "Document types for encrypted documents" on this page: :doc:`Document types </admin-settings/tenant-settings/document-management/document-types/index>`
+
 Make sure to use the internal name (or the short name) of the property, example:
 
 [[ODMPublished]]
