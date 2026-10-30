@@ -32,13 +32,12 @@ When you have added several objects to the mega menu this way, you can grab the 
 
 Display
 ------------
-The following is available here:
+The following is available here (image from Omnia 7.12):
 
-.. image:: mega-menu-block-display.png
+.. image:: mega-menu-block-display-712.png
 
 + **ADD STYLE**: Click here for some style settings. See below for more information.
-
-+ **Min width of column**: Set the minimum width of columns in the mega menu here.
++ **Column width**: Set the width of columns in the mega menu here.
 + **Enable dropdown menu**: If you disable this, all menu options, wihin the navigation depth you have decided, will always be shown.
 + **Static levels**: Defines the number of levels that will always be displayed in the menu.
 + **Max width**: As default, the menu's width is dynamic, meaning it adapts to the width needed. You can set a fixed width in pixels if you wish.
