@@ -35,7 +35,7 @@ Besides "Property type converter", explained above, several other settings can b
 
 + **Title**: if you would like to show another title for this property, add that title here.
 + **Icon type/Icon**: If an icon should be shown for the property, use these two fields to select icon. You also must choose to display the icon, see below.
-+ **Display**: Here you select to show label text, the label icon, and for a few properties "Text only" (meaning no icon or image). Default=not. In Omnia 7.12 "Show label icon with value" is also available, typically used when you don't want to show the propertyy label.
++ **Display**: Here you select to show label text, the label icon, and for a few properties "Text only" (meaning no icon or image). Default=not. In Omnia 7.12 "Show label icon with value" is also available, typically used when you don't want to show the property label.
 + **Allow edit**: For some properties you can allow the logged in user to edit the content in the property.
 + **ADD/CANCEL**: When you're finished with the settings, don't forget to add the property to the block.
  
