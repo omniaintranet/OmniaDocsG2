@@ -16,19 +16,19 @@ Settings
 *************************
 The following settings are available:
 
-.. image:: peoplerollup-settings-78.png
+.. image:: peoplerollup-settings-712.png
 
 General
 ----------------
 Here you can add a title to be displayed for the block:
 
-.. image:: peoplerollup-settings-general-75.png
+.. image:: peoplerollup-settings-general-712.png
 
 Query
 -----------
 Here you can work with the Query for what to display in the block.
 
-.. image:: peoplerollup-settings-query-78.png
+.. image:: peoplerollup-settings-query-712.png
 
 You can either pick specific users to display in the list, or use the query builder.
 
@@ -36,11 +36,9 @@ Pick users
 -------------
 You can pick a number of users to display in the rollup. In Omnia 7.10 and later, you can also allow authors to pick users in Write mode. **Note!* If you select this options, the ADD PAGE option is not available in the settings.
 
-.. image:: peoplerollup-settings-query-picker-710.png
+.. image:: peoplerollup-settings-pick-users-712.png
 
 To add one or more users, click ADD USER.
-
-.. image:: peoplerollup-settings-query-pick-710.png
 
 The people picker opens and you use it as described here: :doc:`Using the people picker </general-assets/using-people-picker/index>`
 
@@ -59,7 +57,7 @@ Selecting "Users" you can rollup all users as set up in User anagement; Entra ID
 2. If you selected Activity query, choose Activity period (also called Social period in some other blocks). This sets how old the item can be to be displayed in the list. The default is "No limit", but you can also select One week, Two weeks or One month. If you selected Upcoming birthdays query you choose the property to be used for birthdays and birthday period.
 3. Select property for the query.
 
-.. image:: query-property-1-v75.png
+.. image:: query-property-1-v712.png
 
 4. Set additional query parameters. Exactly what needs to be done depends on the property chosen.
 
@@ -84,15 +82,13 @@ The query type "Users" has it's own search engine and works a bit differently fr
 
 When you have selected "Users", the following settings are available:
 
-.. image:: query-users-1.png
+.. image:: query-users-1-712.png
 
 1. Select scope type; "Tenant", "Business profile" or "Group".
 2. If you chose business profile or group, select one or more business profiles or groups.
 3. Select one or more user types.
 
 To just list some from the scope or user type you selected, add one or more filters.
-
-.. image:: query-users-2.png
 
 There are a lot of possibilities for filtering. Here is a simple example, listing all office workers in the Copenhagen office and the Gothenburg office:
 
@@ -108,23 +104,25 @@ Display
 -----------
 You can set the type of view to be used for the list here (Card chosen as an example):
 
-.. image:: peoplerollup-settings-display-75.png
+.. image:: peoplerollup-settings-display-712.png
+
+(All options are not shown in the image above, but explained below).
 
 You can choose to display the list as a Card view or Roller view. 
 
 The following settings are available for the views:
 
 + **Add column**: This is not like columns in columns in a table. You should think: What information do I want to display about the people? You must always add at least one column or nothing will be shown!
++ **Show profile image**: Select this option to show the person's profile image.
++ **Open in new tab**: If you select this option, the person's information page is opened in a new tab instead of in a window, when clicked. (either the User profile card or the Delve page, depending on set up). 
 + **Show Email action**: Available for Card. Makes it possible to send an email directly from the card. **General note**: For a user to be able to receive emails, the acccount must be email enabled.
-+ **Show Chat action**: Available for Card. Makes it possible to start a MS Teams chat with the colleague directly from the card.
-+ **Show Call action**: Available for Card. Makes it possible to start a call with the colleague directly from the card. The system uses the unit's default app for calls. If Omnia is used through Teams, the call should normally be made through Teams automatically.
++ **Show chat action**: Available for Card. Makes it possible to start a MS Teams chat with the colleague directly from the card.
++ **Show call action**: Available for Card. Makes it possible to start a call with the colleague directly from the card. The system uses the unit's default app for calls. If Omnia is used through Teams, the call should normally be made through Teams automatically.
 + **Action alignment**: Available when any or all the above actions are selected. Use this option to set alignment for the actions.
 + **Adjust columns**: Use this option the order in which the selected columns are shown.
 + **Person name**: Select property to get the person name from.
-+ **Show profile image**: Select this option to show the person's profile image.
 + **Open in dialog**: If you select this option, the person's information page is opened in a dialog instead of in a window, when clicked (either the User profile card or the Delve page, depending on set up). 
 + **Dialog position**: Here you can set the position for the dialog; Center, Left or Right.
-+ **Open in new tab**: If you select this option, the person's information page is opened in a new tab instead of in a window, when clicked. (either the User profile card or the Delve page, depending on set up). 
 + **Auto cycle**: Available for Roller. Select this option to make the roller auto cycle through available persons.
 + **Slide height**: Set the height of the area to show the content in. Available for Roller view.
 + **Alignment option**: Set vertical alignment for the content. Available for Roller.
@@ -141,13 +139,9 @@ The following settings are available for the views:
 
 **Important note on "No paging"**: If you choose "No paging" and set "Item limit" to a specific number, that is the number of people that will be available in the list, regardless of how many that actually meets the search criteria.
 
-Here's an example with a simple Card View displaying the three icons:
-
-.. image:: people-rollup-mail-icon-new.png
-
 Filter
 -------
-Use these settings to add filters for the users to use. An example could be if a People rollup block displays all colleagues in different departments, you may want to display a filter for departments so user can display a list of only colleagues in a certain department. 
+Use these settings to add filters for the users to list. An example could be if a People rollup block displays all colleagues in different departments, you may want to display a filter for departments so user can display a list of only colleagues in a certain department. 
 
 Filter settings are the same for most blocks, see: :doc:`Filter options for blocks </blocks/general-block-settings/filter-options-block/index>`
 
