@@ -714,9 +714,103 @@
     "b4c8991806b43e8abb2d1e693ba7028e5286898e": "2026-10-28",
     "d897929cdd19f045710468156227898fe7d6fe20": "2026-10-28",
     "dbda0fb9c5df170f167ab500b05b792b08ca9bbc": "2026-10-28",
-    "315240a7ea38457e0701a4f2a95c2517f38b0b97": "2026-10-28"
+    "315240a7ea38457e0701a4f2a95c2517f38b0b97": "2026-10-28",
+    "6ba854b56a85966acf0d35d2e45fc999d3aa9be2": "2026-10-29",
+    "1ac883599b7dc7cff60dc44d59bc1a1c44abd401": "2026-10-29",
+    "cae12ac9962ffe4d57be22336e006b354efda2c3": "2026-10-29",
+    "41c78b12a35dade35ec9dd56c3331dddead1a509": "2026-10-29",
+    "8fb797feb64afabb283197d6d359d9f4464e7c0c": "2026-10-29",
+    "99baa98554e7c7fdb36ae7b609b6cf593c9cab0b": "2026-10-29",
+    "0a9140c079e12f9711e434b62e348eca305db06c": "2026-10-29",
+    "ba0c5a0d2068775076626c15a0fe15cf10223d68": "2026-10-29",
+    "d2e98b01329a8b5b357ffd53700e44bdadffb8f6": "2026-10-29",
+    "e51f38f3a45b71abd47a4f5d692544ce2e8122e3": "2026-10-29",
+    "f9a957559c99a43c7b621a3d0fb6e339391da2b0": "2026-10-29",
+    "98a3fcd32ae64e31ea83d2659876ef8114ec16cb": "2026-10-29",
+    "0d6b0f5d666a3c438b8affee5a51637d8aaa30b3": "2026-10-29",
+    "c34c3c5325faed024351352d1f1ecd1deec7fc9a": "2026-10-29",
+    "80e8f7d9fac431a8029dc96957ef6ab8312fc3b4": "2026-10-29"
   },
   "entries": [
+    {
+      "date": "2026-10-29",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Updated guidance",
+      "description": "Release notes for version 7.12.6 reorganized by feature area (Pages, Search, Documents, Email, Integrations, Accessibility, Security, Other) for improved readability.",
+      "sources": [
+        "d2e98b01329a8b5b357ffd53700e44bdadffb8f6"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/media/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for a new 'Require alternative text for images' setting that helps support screen readers and accessibility in the Media block.",
+      "sources": [
+        "0d6b0f5d666a3c438b8affee5a51637d8aaa30b3",
+        "80e8f7d9fac431a8029dc96957ef6ab8312fc3b4",
+        "c34c3c5325faed024351352d1f1ecd1deec7fc9a"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/list-rollup/index.rst",
+      "classification": "Added information",
+      "description": "Added a clarification note that Export to Excel is not available when using the query builder and requires selecting a single list.",
+      "sources": [
+        "98a3fcd32ae64e31ea83d2659876ef8114ec16cb"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/iframe/index.rst",
+      "classification": "Updated guidance",
+      "description": "Documented new IFrame block settings in Omnia 7.12: URL property selection and accessible title support for screen readers, with version-specific guidance.",
+      "sources": [
+        "e51f38f3a45b71abd47a4f5d692544ce2e8122e3",
+        "f9a957559c99a43c7b621a3d0fb6e339391da2b0"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/general-block-settings/index.rst",
+      "classification": "Added information",
+      "description": "Added details about header custom settings differences between Omnia 7.11 and earlier versus 7.12 and later versions, with a new screenshot for the 7.12+ interface.",
+      "sources": [
+        "0a9140c079e12f9711e434b62e348eca305db06c",
+        "8fb797feb64afabb283197d6d359d9f4464e7c0c",
+        "99baa98554e7c7fdb36ae7b609b6cf593c9cab0b",
+        "ba0c5a0d2068775076626c15a0fe15cf10223d68"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/faq/index.rst",
+      "classification": "Added information",
+      "description": "Added information about selecting heading levels for the FAQ block in Omnia 7.12 and later, with a new screenshot.",
+      "sources": [
+        "41c78b12a35dade35ec9dd56c3331dddead1a509",
+        "cae12ac9962ffe4d57be22336e006b354efda2c3"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/divider-block-712/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Removed duplicate word in the divider block description.",
+      "sources": [
+        "1ac883599b7dc7cff60dc44d59bc1a1c44abd401"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "path": "blocks/copilot-chat/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Improved wording in the Border radius setting description for clarity.",
+      "sources": [
+        "6ba854b56a85966acf0d35d2e45fc999d3aa9be2"
+      ]
+    },
     {
       "date": "2026-10-28",
       "path": "blocks/variation-selector/index.rst",

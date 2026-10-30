@@ -3,6 +3,33 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+29 October 2026
+---------------
+
+* `Copilot chat <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/copilot-chat/index.html>`__ — **Spelling / grammar**
+  Improved wording in the Border radius setting description for clarity.
+
+* `Divider <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/divider-block-712/index.html>`__ — **Spelling / grammar**
+  Removed duplicate word in the divider block description.
+
+* `FAQ block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/faq/index.html>`__ — **Added information**
+  Added information about selecting heading levels for the FAQ block in Omnia 7.12 and later, with a new screenshot.
+
+* `General block settings <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/general-block-settings/index.html>`__ — **Added information**
+  Added details about header custom settings differences between Omnia 7.11 and earlier versus 7.12 and later versions, with a new screenshot for the 7.12+ interface.
+
+* `IFrame block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/iframe/index.html>`__ — **Updated guidance**
+  Documented new IFrame block settings in Omnia 7.12: URL property selection and accessible title support for screen readers, with version-specific guidance.
+
+* `List rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/list-rollup/index.html>`__ — **Added information**
+  Added a clarification note that Export to Excel is not available when using the query builder and requires selecting a single list.
+
+* `Media <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/media/index.html>`__ — **Added information**
+  Added documentation for a new 'Require alternative text for images' setting that helps support screen readers and accessibility in the Media block.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Updated guidance**
+  Release notes for version 7.12.6 reorganized by feature area (Pages, Search, Documents, Email, Integrations, Accessibility, Security, Other) for improved readability.
+
 28 October 2026
 ---------------
 
