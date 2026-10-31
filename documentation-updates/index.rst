@@ -3,6 +3,33 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+30 October 2026
+---------------
+
+* `Creating a document template with place holders <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/document-template-with-placeholders/index.html>`__ — **Added information**
+  Added guidance explaining that placeholders cannot be replaced in documents encrypted with sensitivity labels and how to configure document types to work around this limitation.
+
+* `Document types <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/document-types/index.html>`__ — **Updated guidance**
+  Added guidance for configuring document types to work with Microsoft Purview encrypted documents, including which settings to deselect.
+
+* `Mega menu <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/mega-menu/index.html>`__ — **Updated guidance**
+  Clarified the Mega menu block setting from 'Min width of column' to 'Column width' and updated the display screenshot to show Omnia 7.12.
+
+* `People rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/people-rollup/index.html>`__ — **Updated screenshots**
+  Screenshots updated to reflect Omnia version 7.12, with clarification that not all setting options are visible in the display settings image.
+
+* `Properties block <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/properties-block/index.html>`__ — **Added information**
+  Added information about the 'Show label icon with value' display option available in Omnia 7.12, typically used when not showing the property label.
+
+* `Publish - the approval workflow <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.html>`__ — **Added information**
+  Added a note explaining that documents encrypted with sensitivity labels cannot be merged with templates or converted to PDF during publishing.
+
+* `Send a draft for comments <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-documents/authoring-controlled-documents/send-for-comments/index.html>`__ — **Added information**
+  Added information about track changes limitations for documents encrypted with sensitivity labels and how administrators can configure document types to address this.
+
+* `Teamwork templates <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/team-collaboration/teamwork-v7/templates/index.html>`__ — **Added information**
+  Added clarification that sensitivity labels are set for the team or site and linked to controlled documents documentation.
+
 29 October 2026
 ---------------
 

@@ -729,9 +729,91 @@
     "98a3fcd32ae64e31ea83d2659876ef8114ec16cb": "2026-10-29",
     "0d6b0f5d666a3c438b8affee5a51637d8aaa30b3": "2026-10-29",
     "c34c3c5325faed024351352d1f1ecd1deec7fc9a": "2026-10-29",
-    "80e8f7d9fac431a8029dc96957ef6ab8312fc3b4": "2026-10-29"
+    "80e8f7d9fac431a8029dc96957ef6ab8312fc3b4": "2026-10-29",
+    "4d9bba7272c073207e69bd410c319296d645632f": "2026-10-30",
+    "5fd56856999869c2381d3c6289893fa7d977eaac": "2026-10-30",
+    "b4b7e141f3a64e70575a9363707a395b992663b9": "2026-10-30",
+    "30f28a71419170a5759382762140b2b86e475b7f": "2026-10-30",
+    "28982d510003cd92320a9f43d5b8c752b1e27f0b": "2026-10-30",
+    "b0ca29c77ff13f0d60331bfa0647175acb60d232": "2026-10-30",
+    "23217410d855e21aeb6a6871564e777d1d20ff9b": "2026-10-30"
   },
   "entries": [
+    {
+      "date": "2026-10-30",
+      "path": "working-with-documents/authoring-controlled-documents/send-for-comments/index.rst",
+      "classification": "Added information",
+      "description": "Added information about track changes limitations for documents encrypted with sensitivity labels and how administrators can configure document types to address this.",
+      "sources": [
+        "23217410d855e21aeb6a6871564e777d1d20ff9b"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "working-with-documents/authoring-controlled-documents/publish-approval-workflow/index.rst",
+      "classification": "Added information",
+      "description": "Added a note explaining that documents encrypted with sensitivity labels cannot be merged with templates or converted to PDF during publishing.",
+      "sources": [
+        "23217410d855e21aeb6a6871564e777d1d20ff9b"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "blocks/properties-block/index.rst",
+      "classification": "Added information",
+      "description": "Added information about the 'Show label icon with value' display option available in Omnia 7.12, typically used when not showing the property label.",
+      "sources": [
+        "28982d510003cd92320a9f43d5b8c752b1e27f0b",
+        "b0ca29c77ff13f0d60331bfa0647175acb60d232"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "blocks/people-rollup/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Screenshots updated to reflect Omnia version 7.12, with clarification that not all setting options are visible in the display settings image.",
+      "sources": [
+        "30f28a71419170a5759382762140b2b86e475b7f",
+        "b4b7e141f3a64e70575a9363707a395b992663b9"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "blocks/mega-menu/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified the Mega menu block setting from 'Min width of column' to 'Column width' and updated the display screenshot to show Omnia 7.12.",
+      "sources": [
+        "4d9bba7272c073207e69bd410c319296d645632f",
+        "5fd56856999869c2381d3c6289893fa7d977eaac"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "admin-settings/tenant-settings/document-management/document-types/index.rst",
+      "classification": "Updated guidance",
+      "description": "Added guidance for configuring document types to work with Microsoft Purview encrypted documents, including which settings to deselect.",
+      "sources": [
+        "23217410d855e21aeb6a6871564e777d1d20ff9b"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "admin-settings/tenant-settings/document-management/document-template-with-placeholders/index.rst",
+      "classification": "Added information",
+      "description": "Added guidance explaining that placeholders cannot be replaced in documents encrypted with sensitivity labels and how to configure document types to work around this limitation.",
+      "sources": [
+        "23217410d855e21aeb6a6871564e777d1d20ff9b"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "path": "admin-settings/business-group-settings/team-collaboration/teamwork-v7/templates/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that sensitivity labels are set for the team or site and linked to controlled documents documentation.",
+      "sources": [
+        "23217410d855e21aeb6a6871564e777d1d20ff9b"
+      ]
+    },
     {
       "date": "2026-10-29",
       "path": "release-notes/7.0/versions.rst",
