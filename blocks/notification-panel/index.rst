@@ -40,7 +40,7 @@ You can also set some layout options for this notification panel as displayed in
 + **Tab alignment**: Use these settings to align the tab icons/text in the available space.
 + **Icon alignment**: If you have selected both Show Icons and Show Text you can use these settings to align the icons relative to the labels. If you have selected only "Show icon" or only "Show label", this option is not shown.
 + **Custom size**: Use this to set a minimum height and/or width for the navigation area in the block (does not affect the content area).
-+ **Border Radius**: Use the slider to set the border radius.
++ **Border Radius**: Use the slider to set rounded corners.
 
 Heres an example with the categories shown vertically, with icons (no labels):
 
