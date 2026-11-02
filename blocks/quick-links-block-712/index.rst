@@ -3,7 +3,7 @@ Quick links block for Omnia 7.12
 
 **Work on this page is just started.**
 
-Available in Omnia 7.12 and later.
+Available in Omnia 7.11 and earlier, but differently organized in Omnia 7.12 and later, described here. For Omnia 7.11 and earlier, see: :doc:`Quick links block </blocks/quick-links/index>`
 
 
 Text below is just working material.
