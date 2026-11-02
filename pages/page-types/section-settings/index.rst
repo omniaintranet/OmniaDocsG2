@@ -159,7 +159,7 @@ If it's a section with tabs, you can set all the common settings, and also:
 + **Tab alignment**: Here you can set alignment for the tab labels.
 + **Icon alignment**: If you are using an icon you can set icon alignment within the available space for the icon.
 + **Custom size**: If you would like to set minimum height and width for the tabs, select this option, and then use the sliders.
-+ **Border radius**: Use this slider to set the border radius between tabs in the section.
++ **Border radius**: Use this slider to set rounded corners.
 
 Style settings for accordion section
 ---------------------------------------
