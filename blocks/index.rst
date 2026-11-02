@@ -52,6 +52,7 @@ Blocks
    user-profile-completion/index
    qr-code/index
    quick-links/index
+   quick-links-block-712/index
    rating/index
    related-links/index
    rss-reader/index
