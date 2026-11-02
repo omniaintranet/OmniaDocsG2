@@ -55,24 +55,13 @@ You should primarily set colors centrally but you can change colors for some ele
 
 Style
 ------
-Just the possibility to set some padding for the whole is available here:
+Just the possibility to set some padding for the whole block is available here:
 
 .. image:: quick-links-settings-style-v712.png
 
 Layout and Write
 *********************
 The WRITE Tab is not used here. The LAYOUT tab contains general settings, see: :doc:`General block settings </blocks/general-block-settings/index>`
-
-
-
-
-
-
-
-
-
-
-
 
 
 
