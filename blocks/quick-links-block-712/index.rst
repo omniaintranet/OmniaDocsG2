@@ -1,8 +1,6 @@
 Quick links block for Omnia 7.12
 =====================================
 
-**Work on this page is just started.**
-
 Available in Omnia 7.11 and earlier, but differently organized in Omnia 7.12 and later, described here. For Omnia 7.11 and earlier, see: :doc:`Quick links block </blocks/quick-links/index>`
 
 Administrators can add and edit shared links using options in Omnia admin. Links can be shown either for the whole tenant or for a specific business profile. 
