@@ -3,7 +3,7 @@ Quick links
 
 Administrators can add and edit shared links using options in Omnia admin. Links can be shown either for the whole tenant or for a specific business profile. 
 
-This page scribes the settings for this block in Omnia 7.11 and earlier. In Omnia 7,12 and later, the settings are organized differently, see: (link to be added)
+This page scribes the settings for this block in Omnia 7.11 and earlier. In Omnia 7.12 and later, the settings are organized differently, see: :doc:`Quick links block in Omnia 7.12 </blocks/quick-links-block-712/index>`
 
 You can use this block to show shared links on any page.
 
