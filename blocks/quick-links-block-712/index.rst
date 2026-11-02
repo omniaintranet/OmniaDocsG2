@@ -21,7 +21,7 @@ Here you can add a title for the block, if needed:
 
 Query
 ----------
-Use the Query tab for settings about what to show in the block:
+Use the Query tab for settings on what to show in the block:
 
 .. image:: quick-links-settings-query-v712.png
 
