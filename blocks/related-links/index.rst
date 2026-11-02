@@ -25,7 +25,7 @@ When you click ADD CONTENT the the following is shown:
 
 When you click ADD LINK, the Add link general asset is opened. See this page for more information on how to add links: :doc:`Add link </general-assets/add-link/index>`
 
-Adding header is simple, just click and add.
+Adding a header is simple, just click and add.
 
 You can use the WRITE tab to set if editors should be able to edit the default content or not, see below.
 
