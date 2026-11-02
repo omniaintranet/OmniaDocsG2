@@ -529,7 +529,6 @@
     "6d5a932dfd471374a568ef41ab46d4ca39f92f89": "2026-09-02",
     "ed63fb0d98b4ab62831a0a0110a74f52df242d28": "2026-09-02",
     "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03",
-    "3888884ef00e8ae57b34d6fc749940d3c9ce638c": "2026-08-04",
     "65300a6fbbc926b806231393a2683b9a7bf5624c": "2026-08-07",
     "855d7230510dbd768ed2804746b3a235ade18a42": "2026-08-07",
     "ad71be224283c886dc12bbcaed996593f8399328": "2026-08-07",
@@ -4803,15 +4802,6 @@
         "85733468de907ee78292cdf3e11c9366046df39d",
         "b3bed32f9b0326ebf20930b8dc385e210a7d4312",
         "f5a90b1cfca3a068004a22b1fcbb3a3bbd324846"
-      ]
-    },
-    {
-      "date": "2026-08-04",
-      "path": "release-notes/7.0/versions.rst",
-      "classification": "Added information",
-      "description": "Added Omnia 7.11.20 release notes documenting 22 fixes and improvements including timezone handling, PDF file behavior, and Multi-Geo support.",
-      "sources": [
-        "3888884ef00e8ae57b34d6fc749940d3c9ce638c"
       ]
     }
   ]

@@ -1163,9 +1163,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Setup reusable sections <https://omnia-docs-g2.readthedocs.io/en/latest/setup/reusable-content/index.html>`__ — **Correction**
   Removed duplicate text in the step introduction that read 'Follow these steps:Follow these steps to setup a reusable section:'.
-
-4 August 2026
--------------
-
-* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
-  Added Omnia 7.11.20 release notes documenting 22 fixes and improvements including timezone handling, PDF file behavior, and Multi-Geo support.
