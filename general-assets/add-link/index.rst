@@ -65,11 +65,11 @@ If the page collection isn't present in the list, select "Others..." so you can 
 
 5. Save after each page link added.
 
-Note that you can also link to an anchor on a page, see above for more information. See above. Anchors can be created by authors in any parts of text on a page, can be set for block headings and are automatically created for sections, steps and accordion sections.
+Note that you can also link to an anchor on a page, see above for more information. Anchors can be created by authors in any parts of text on a page, can be set for block headings and are automatically created for sections, steps and accordion sections.
 
 Document
 *********
-Picking documents here is very similar to using the document picker, but there are som differences. Similar is that the way you can search and browse for documents depends on settings in Omnia admin. Here's an example:
+Picking documents here is very similar to using the document picker, but there are som differences. Just as for the document picker, the way you can search and browse for documents depends on settings in Omnia admin. Here's an example:
 
 .. image:: link-picker-documents-1.png
 
