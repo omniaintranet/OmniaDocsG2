@@ -45,7 +45,7 @@ For Style for the search box, the following settings are available:
 
 .. image:: search-block-settings-style-v75.png
 
-You can try out different style settings and see the result in the block on the fly.
+You can try out different style settings and see the result in the block on the fly. (Border radius is for rounded corners.)
 
 Layout and Write
 *********************
