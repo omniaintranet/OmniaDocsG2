@@ -35,13 +35,9 @@ The following is available here:
 
 .. image:: search-block-settings-categories-v75.png 
 
-You can inherit the search settings from the business profile and if that is what you want to do, you don't need to change anything, it's default.
+You can inherit the search settings from the business profile and then you don't need to change anything, it's default.
 
-But if you would like to set specific category settings for this block, deselect and the same settings as are available in Omnia admin, for Quick search and Advanced search, will be available (Quick search as an example):
-
-.. image:: search-block-settings-categories-settings-v75.png
-
-For details, see the link "Business profile Settings - Search" above.
+But if you would like to set specific category settings for this block, deselect and the same settings as are available in Omnia admin, for Quick search and Advanced search, will be available. For details, see the link "Business profile Settings - Search" above.
 
 Style
 --------
@@ -49,7 +45,7 @@ For Style for the search box, the following settings are available:
 
 .. image:: search-block-settings-style-v75.png
 
-You can try out different style settings and see the result in the block on the fly.
+You can try out different style settings and see the result in the block on the fly. (Border radius is for rounded corners.)
 
 Layout and Write
 *********************
