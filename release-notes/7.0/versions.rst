@@ -1,3 +1,56 @@
+7.12.9
+========================================
+(Omnia 7.12.9 / Workplace 7.12.9 / WCM 7.12.9 / MS 7.12.9 / Analytics 7.12.4 / Feed 7.11.6)
+
+**Pages and blocks**
+
+- Stepper sections can now be created empty in page types, allowing page authors to add and rename steps without inheriting locked starter steps from the page type
+- Layout background colors configured on page types now display correctly in the admin preview and persist after version changes (#59565)
+- The WCM Editor remains accessible after using Page Rollup's quick edit dialog; users no longer need to reload the page to see the editor buttons
+- The Compare icon on variation pages no longer appears for text blocks when the content cannot be edited or when comparing inherited content (#60696)
+- Page collection titles are now required and cannot be empty or contain only whitespace, preventing broken left navigation (#57639)
+
+**Page Rollup**
+
+- Page Rollup query settings now support a 'Current page' filter option for People properties, allowing rollups to filter by the same property value on the current page (#59299)
+- Page Rollup dialogs now display the selected variation's comments, reactions and counts instead of always showing the original page's data when switching variations
+
+**Search**
+
+- The Omnia search card in User Management > Synchronization now shows the actual start time of the most recent automatic synchronization, instead of only the end time of full-sync logs
+- Machine translation now correctly translates every FAQ section title in a page variation, including the first section, and applies shared text translations to all blocks that use it (#59595)
+- Omnia search now indexes block titles added or edited on pages and image captions in media blocks and rich text, making them searchable; page-type-owned titles remain page-type content and are not indexed (#60697)
+
+**Documents and processes**
+
+- PDF links in Document Picker, Related Links and Rich Text Editor now include the ?web=1 query parameter when set to open in browser or new tab, ensuring they open in SharePoint's web viewer
+- Archive feature for controlled documents is now available in sites using WCM limited access (Sites.Selected) configuration (#60052)
+- Document Rollup no longer fails to display results when a republished controlled document briefly appears in search results with incomplete data (#60226)
+- Publishing controlled documents no longer fails when SharePoint refuses to declare a published file as a record; the document completes as published and the declaration failure is logged (#60882, #60966)
+- Document Bulk Update jobs in ODM now display a 'Running' status chip while processing, making it clear which updates are in progress (#60657)
+- The Controlled Document Library feature version has been updated to enable manual record declaration on the Published library during feature activation and upgrade
+- The ODM Publish dialog now handles missing document types gracefully, allowing users to select a new document type without viewing stale property data
+- Completed approval tasks for document types with Scheduled Publishing enabled now open and display their outcome and comments instead of remaining in a loading state
+
+**Email and notifications**
+
+- Newsletter images are no longer dropped by Outlook when their base64-encoded data URL exceeds size limits; compression now measures the final data URL length instead of the original file size (#59601)
+
+**Accessibility**
+
+- Keyboard navigation in the left panel now correctly moves focus into opened tabs, allowing users to interact with tab contents using the keyboard
+
+**Other**
+
+- Anchor links now correctly resolve when the @ character is percent-encoded as %40 in the URL
+- Uploaded WOFF, WOFF2 and OTF custom fonts now load correctly as configured, instead of falling back to default fonts
+- The 'Upload file from computer' option is now available in the rich text editor's link picker during design mode when File storage is enabled
+- The Multi-Geo search feature is now hidden on on-premises deployments where it is not supported
+- Custom foreground and text color changes for block and section themes now apply immediately in Design and Write modes
+- Breadcrumb current indicator color now correctly follows theme changes when Primary or Secondary colors are selected, instead of remaining static
+- Quick edit dialogs opened from a Page Rollup with a dark background now display readable text and components regardless of the rollup's background color
+
+
 7.12.6
 ========================================
 (Omnia 7.12.6 / Workplace 7.12.6 / WCM 7.12.6 / MS 7.12.6 / Analytics 7.12.4 / Feed 7.11.6)
