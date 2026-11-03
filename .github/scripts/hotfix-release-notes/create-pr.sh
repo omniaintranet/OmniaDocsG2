@@ -8,6 +8,8 @@ VALIDATOR_FILE=".github/scripts/hotfix-release-notes/validate-release-notes.sh"
 CATEGORIES_FILE="${CATEGORIES_FILE:-.github/skills/hotfix-release-notes/categories.txt}"
 # Written by generate-release-notes.sh: categories it added to CATEGORIES_FILE.
 NEW_CATEGORIES_FILE="/tmp/release-notes-new-categories.txt"
+# Written by generate-release-notes.sh: customer references it removed from public bullets.
+REMOVED_REFERENCES_FILE="/tmp/release-notes-removed-references.txt"
 # Written by review-release-notes.sh in the step before this one.
 REVIEW_DIR="/tmp/docs-review-release-notes"
 REVIEW_MARKER="<!-- release-notes-review -->"
@@ -55,6 +57,10 @@ pr_title="Release notes ${omnia_version}"
 # Everything from REVIEW_MARKER on is replaced when the pull request is updated.
 write_review_section() {
   printf '%s\n\n' "$REVIEW_MARKER"
+  if [ -s "$REMOVED_REFERENCES_FILE" ]; then
+    printf '> [!NOTE]\n> Customer references removed from bullets because no source URL on the bullet'"'"'s own issues supports them: %s. Add one back only after checking the issue.\n\n' \
+      "$(paste -sd ',' "$REMOVED_REFERENCES_FILE" | sed 's/,/, /g')"
+  fi
   if [ -s "$NEW_CATEGORIES_FILE" ]; then
     printf '> [!NOTE]\n> New category headers, added to `%s`: %s. Keep them for later releases, or rename them to a listed category in both files.\n\n' \
       "$CATEGORIES_FILE" "$(paste -sd ',' "$NEW_CATEGORIES_FILE" | sed 's/,/, /g')"

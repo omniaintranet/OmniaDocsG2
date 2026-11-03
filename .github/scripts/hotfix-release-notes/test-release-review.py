@@ -36,7 +36,13 @@ class ReleaseReviewTests(unittest.TestCase):
         shutil.copyfile(JQ, self.bin / ("jq.exe" if os.name == "nt" else "jq"))
         (self.bin / ("jq.exe" if os.name == "nt" else "jq")).chmod(0o755)
         copilot = self.bin / "copilot"
-        copilot.write_text('#!/usr/bin/env bash\ncat > "$TEST_PROMPT"\ncat "$TEST_RESPONSE"\n')
+        # Call 1 writes prompt.txt and answers response.json; call n > 1 writes prompt.txt.<n> and
+        # answers response.json.<n> (one per entry in self.follow_ups), or response.json again.
+        copilot.write_text('#!/usr/bin/env bash\nn=$(( $(cat "$TEST_PROMPT.count" 2>/dev/null || echo 0) + 1 ))\n'
+                           'echo "$n" > "$TEST_PROMPT.count"\n'
+                           'if [ "$n" -eq 1 ]; then cat > "$TEST_PROMPT"; else cat > "$TEST_PROMPT.$n"; fi\n'
+                           'if [ -f "$TEST_RESPONSE.$n" ]; then cat "$TEST_RESPONSE.$n"; else cat "$TEST_RESPONSE"; fi\n',
+                           newline="\n")
         copilot.chmod(0o755)
         self.data = {"releases": [{"statusName": "Wait for RN - Omnia 7.11.99", "issues": [
             {"repositoryWithOwner": "omniaintranet/test", "number": n,
@@ -53,13 +59,15 @@ class ReleaseReviewTests(unittest.TestCase):
     def run_script(self, name, notification=False, cwd=ROOT):
         (self.folder / "release-issues.json").write_text(json.dumps(self.data))
         (self.folder / "response.json").write_text(json.dumps(self.response))
+        for n, follow_up in enumerate(getattr(self, "follow_ups", []), 2):
+            (self.folder / f"response.json.{n}").write_text(json.dumps(follow_up))
         script = (SCRIPTS / name).read_text()
         categories = self.folder / "categories.txt"
         if not categories.exists():
             categories.write_text((ROOT / CATEGORIES).read_text(), newline="\n")
         for filename in ("release-issues.json", "generated-release-notes.rst", "release-notes-audit.json",
                          "copilot-release-notes-response.txt", "docs-review-release-notes",
-                         "release-notes-new-categories.txt"):
+                         "release-notes-new-categories.txt", "release-notes-removed-references.txt"):
             script = script.replace("/tmp/" + filename, shell_path(self.folder / filename))
         if notification:
             # Exercise notification rendering, stopping before any GitHub mutation.
@@ -238,11 +246,92 @@ class ReleaseReviewTests(unittest.TestCase):
         self.response["pendingReviewIssues"][0]["number"] = 1
         self.assertNotEqual(self.generate().returncode, 0)
 
+    def copilot_calls(self):
+        count = self.folder / "prompt.txt.count"
+        return int(count.read_text()) if count.exists() else 0
+
+    def test_prompt_names_every_issue(self):
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("The release data holds 3 issue(s): omniaintranet/test#1, omniaintranet/test#2, "
+                      "omniaintranet/test#3.", (self.folder / "prompt.txt").read_text())
+        self.assertEqual(self.copilot_calls(), 1)
+
     def test_missing_issue_is_rejected(self):
+        # Copilot leaves the issue out of its first answer and of both follow-ups.
         self.response["pendingReviewIssues"] = []
+        self.follow_ups = [{"bullets": [], "omittedIssues": [], "pendingReviewIssues": []}] * 2
         result = self.generate()
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("Missing from the audit: omniaintranet/test#3", result.stderr)
+        self.assertIn("Follow-up requests for missing issues: 2.", result.stderr)
+        self.assertEqual(self.copilot_calls(), 3)
+        # Every answer is kept for the failure artifact.
+        responses = (self.folder / "copilot-release-notes-response.txt").read_text()
+        self.assertIn("===== Copilot response: all 3 issues =====", responses)
+        self.assertIn("===== Copilot response: follow-up 2 for 1 missing issue(s) =====", responses)
+
+    def test_missing_issue_is_asked_for_again(self):
+        pending = self.response["pendingReviewIssues"]
+        self.response["pendingReviewIssues"] = []
+        self.follow_ups = [{"bullets": [], "omittedIssues": [], "pendingReviewIssues": pending}]
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("does not account for 1 issue(s): omniaintranet/test#3", result.stdout)
+        self.assertIn("accounted for after 1 follow-up request(s)", result.stdout)
+        self.assertEqual(self.copilot_calls(), 2)
+        audit = json.loads((self.folder / "release-notes-audit.json").read_text())
+        self.assertEqual([i["number"] for i in audit["pendingReviewIssues"]], [3])
+        self.assertEqual([i["number"] for i in audit["omittedIssues"]], [2])
+        # The follow-up sends only the missing issue, with the bullets already written as context.
+        prompt = (self.folder / "prompt.txt.2").read_text()
+        release_data = prompt.split("Release data:\n\n", 1)[1].split("\n", 1)[0]
+        self.assertEqual([i["number"] for i in json.loads(release_data)["releases"][0]["issues"]], [3])
+        self.assertIn("Quick Search now correctly handles document filters", prompt.split("Release data:", 1)[0])
+        self.assertIn("The release data holds 1 issue(s): omniaintranet/test#3.", prompt)
+        self.assertIn("Account for every issue in the release data below, and for no other issue.", prompt)
+        self.assertNotIn("Account for every issue in the release data below", (self.folder / "prompt.txt").read_text())
+
+    def test_follow_up_can_join_an_existing_bullet(self):
+        self.response["pendingReviewIssues"] = []
+        bullet = self.response["bullets"][0]
+        self.follow_ups = [{"bullets": [dict(bullet, sourceIssues=bullet["sourceIssues"] + [
+            {"repositoryWithOwner": "omniaintranet/test", "number": 3}])],
+            "omittedIssues": [], "pendingReviewIssues": []}]
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        audit = json.loads((self.folder / "release-notes-audit.json").read_text())
+        self.assertEqual(len(audit["bullets"]), 1)
+        self.assertEqual([i["number"] for i in audit["bullets"][0]["sourceIssues"]], [1, 3])
+        notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.assertEqual(notes.count("Quick Search now correctly handles document filters"), 1)
+
+    def test_follow_up_adds_a_new_bullet(self):
+        self.response["pendingReviewIssues"] = []
+        self.follow_ups = [{"bullets": [{"text": "- Page Rollup now shows the page owner",
+            "sourceIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 3}]}],
+            "omittedIssues": [], "pendingReviewIssues": []}]
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.assertIn("- Quick Search now correctly handles document filters\n- Page Rollup now shows the page owner\n", notes)
+
+    def test_follow_up_naming_another_issue_is_rejected(self):
+        self.response["pendingReviewIssues"] = []
+        self.follow_ups = [{"bullets": [], "pendingReviewIssues": [], "omittedIssues": [
+            {"repositoryWithOwner": "omniaintranet/test", "number": n, "reason": "Internal maintenance"} for n in (2, 3)]}]
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("The follow-up answer names issues that were not missing: omniaintranet/test#2", result.stderr)
+
+    def test_other_audit_problems_get_no_follow_up(self):
+        # Issue 3 is missing, but issue 1 is also both a bullet and pending review: no second request.
+        self.response["pendingReviewIssues"][0]["number"] = 1
+        result = self.generate()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Missing from the audit: omniaintranet/test#3", result.stderr)
+        self.assertIn("In a bullet and also omitted or pending review: omniaintranet/test#1", result.stderr)
+        self.assertEqual(self.copilot_calls(), 1)
 
     def test_issue_in_several_bullets_is_accepted(self):
         self.response["bullets"].append({"text": "- Quick Search now shows document previews",
@@ -316,6 +405,14 @@ class ReleaseReviewTests(unittest.TestCase):
     def test_pr_without_new_categories_has_no_note(self):
         body = self.check_pr_output()
         self.assertNotIn("New category headers", body)
+        self.assertNotIn("Customer references removed", body)
+
+    def test_removed_reference_is_named_in_the_pr(self):
+        self.data["releases"][0]["issues"][1]["body"] = "https://support.example/agent/tickets/59036"
+        self.response["bullets"][0]["text"] += " (#59036)"
+        body = self.check_pr_output()
+        self.assertIn("> [!NOTE]\n> Customer references removed from bullets because no source URL on the bullet's own "
+                      "issues supports them: #59036. Add one back", body)
 
     def validate(self, lines):
         notes = self.folder / "notes.rst"
@@ -401,11 +498,39 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertIn("contain an email", result.stderr)
 
     def test_suggestion_cannot_borrow_another_issues_reference(self):
+        # The skill: remove a reference without evidence on the suggestion's own issue.
         self.data["releases"][0]["issues"][0]["body"] = "https://support.example/agent/tickets/59036"
         self.response["pendingReviewIssues"][0]["suggestedText"] += " (#59036)"
         result = self.generate()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("not supported by a trusted source URL", result.stderr)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Removed customer reference(s) #59036 from the suggestion for omniaintranet/test#3", result.stdout)
+        audit = json.loads((self.folder / "release-notes-audit.json").read_text())
+        self.assertEqual(audit["pendingReviewIssues"][0]["suggestedText"], "- Improved the reliability of permission handling")
+
+    def test_bullet_cannot_borrow_another_issues_reference(self):
+        self.data["releases"][0]["issues"][1]["body"] = "https://support.example/agent/tickets/59036"
+        self.response["bullets"][0]["text"] += " (#59036)"
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Removed customer reference(s) #59036 from the bullet from omniaintranet/test#1", result.stdout)
+        notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.assertIn("- Quick Search now correctly handles document filters\n", notes)
+        self.assertNotIn("59036", notes)
+
+    def test_bullet_keeps_references_from_its_own_issues(self):
+        # Zendesk and OIM URLs count; a GitHub issue URL never does.
+        self.data["releases"][0]["issues"][0]["body"] = "https://support.example/agent/tickets/59036"
+        self.data["releases"][0]["issues"][2]["comments"] = [{"author": "qa", "createdAt": "2026-11-03T08:00:00Z",
+            "body": "OIM https://oim.example/issues/166490 and https://github.com/omniaintranet/test/issues/77"}]
+        self.response["bullets"][0]["text"] += " (#59036, #77, #166490)"
+        self.response["bullets"][0]["sourceIssues"].append({"repositoryWithOwner": "omniaintranet/test", "number": 3})
+        self.response["pendingReviewIssues"] = []
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("Removed customer reference(s) #77 from the bullet from omniaintranet/test#1, omniaintranet/test#3",
+                      result.stdout)
+        notes = (self.folder / "generated-release-notes.rst").read_text()
+        self.assertIn("- Quick Search now correctly handles document filters (#59036, #166490)\n", notes)
 
     def test_verified_suggestion_reference_is_allowed(self):
         self.data["releases"][0]["issues"][2]["body"] = "https://support.example/agent/tickets/59036"
