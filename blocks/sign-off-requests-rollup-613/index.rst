@@ -75,7 +75,7 @@ See this page for more information about custom date filtering: :doc:`Custom dat
 
 Display
 ---------
-This tab contains settings for the view (image from Omnia 7.9):
+This tab contains settings for the view:
 
 .. image:: sign-off-requests-block-settings-display-79.png
 
