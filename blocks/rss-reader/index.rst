@@ -3,10 +3,6 @@ RSS reader
 
 Using this block, notes from a RSS reader source can be displayed on a page.
 
-It can look like this:
-
-.. image:: rss-reader-example.png
-
 Users can click the heading of an item to go to the source and read more.
 
 .. note:: The RSS Reader supports RSS 2.0 and Atom 1.0, or newer. RSS notes must also be uncompressed.
