@@ -63,7 +63,7 @@ Actions
 *************
 Here you can select some actions to be available as links. Default=none. Note, there are actions only the current user (the user shown on the card) can use, and actions for all other users. 
 
-.. image:: user-information-settings-actions-711.png
+.. image:: user-information-settings-actions-712.png
 
 LAYOUT and WRITE
 ******************
