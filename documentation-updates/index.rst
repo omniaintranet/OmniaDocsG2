@@ -3,6 +3,24 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+2 November 2026
+---------------
+
+* `Notification panel <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/notification-panel/index.html>`__ — **Spelling / grammar**
+  Changed 'border radius' to 'rounded corners' in the Border Radius setting description for clarity.
+
+* `Quick links <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/quick-links/index.html>`__ — **Added information**
+  Added version scope clarification and link to Omnia 7.12 Quick links settings documentation.
+
+* `Quick links block for Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/quick-links-block-712/index.html>`__ — **New page**
+  Documentation for the Quick links block in Omnia 7.12, covering settings for managing and displaying shared links.
+
+* `Related links <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/related-links/index.html>`__ — **Updated guidance**
+  Reorganized and simplified instructions for adding default content, links, and headers to the Related links block.
+
+* `Settings for sections <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/section-settings/index.html>`__ — **Correction**
+  Clarified that the Border radius setting controls rounded corners for the tab container, not spacing between tabs.
+
 30 October 2026
 ---------------
 

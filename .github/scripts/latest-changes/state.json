@@ -735,9 +735,87 @@
     "30f28a71419170a5759382762140b2b86e475b7f": "2026-10-30",
     "28982d510003cd92320a9f43d5b8c752b1e27f0b": "2026-10-30",
     "b0ca29c77ff13f0d60331bfa0647175acb60d232": "2026-10-30",
-    "23217410d855e21aeb6a6871564e777d1d20ff9b": "2026-10-30"
+    "23217410d855e21aeb6a6871564e777d1d20ff9b": "2026-10-30",
+    "8c7df1d92bf405833d723c489e86e3e482f29d1c": "2026-11-02",
+    "22442902b74add50ccf8ad7e646db193103099c2": "2026-11-02",
+    "d2418a25fb561d58fa139066f45d539c2ccf2eb4": "2026-11-02",
+    "830d193e533603ed2b1a3b6422b31a4baffae5ad": "2026-11-02",
+    "1996e4f1ee597cac5066f110f2561fea66a273c0": "2026-11-02",
+    "54901d9949b3cf76266fcd8728bc6b6f8dab313a": "2026-11-02",
+    "92166d96f80c648e6150848f26280cc79f286c21": "2026-11-02",
+    "55826d5515a4dcef4a5a200e089628694204d93a": "2026-11-02",
+    "a5266ef4c435648332e0ccaefb9dc76b846cf463": "2026-11-02",
+    "be867faf102e240fd6e6a68ebfbdd1cae188fe2e": "2026-11-02",
+    "a3545f5a416559b22bcccdcf480419aad59597f7": "2026-11-02",
+    "f91a1f909c81e81829384bf90dae0b7d7831a819": "2026-11-02",
+    "a2c8543f043c4fceed52969c4ce271e29c34663f": "2026-11-02",
+    "fc4f1d1c6cc2f37d77ddf49c4884f53ee86ba656": "2026-11-02",
+    "1029c89f78b6495ff8d7468c6e7419d8b043d9a9": "2026-11-02"
   },
   "entries": [
+    {
+      "date": "2026-11-02",
+      "path": "pages/page-types/section-settings/index.rst",
+      "classification": "Correction",
+      "description": "Clarified that the Border radius setting controls rounded corners for the tab container, not spacing between tabs.",
+      "sources": [
+        "8c7df1d92bf405833d723c489e86e3e482f29d1c"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "path": "blocks/related-links/index.rst",
+      "classification": "Updated guidance",
+      "description": "Reorganized and simplified instructions for adding default content, links, and headers to the Related links block.",
+      "sources": [
+        "1029c89f78b6495ff8d7468c6e7419d8b043d9a9",
+        "a2c8543f043c4fceed52969c4ce271e29c34663f",
+        "fc4f1d1c6cc2f37d77ddf49c4884f53ee86ba656"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "path": "blocks/quick-links/index.rst",
+      "classification": "Added information",
+      "description": "Added version scope clarification and link to Omnia 7.12 Quick links settings documentation.",
+      "sources": [
+        "92166d96f80c648e6150848f26280cc79f286c21",
+        "d2418a25fb561d58fa139066f45d539c2ccf2eb4"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "path": "blocks/quick-links-block-712/index.rst",
+      "classification": "New page",
+      "description": "Documentation for the Quick links block in Omnia 7.12, covering settings for managing and displaying shared links.",
+      "sources": [
+        "1996e4f1ee597cac5066f110f2561fea66a273c0",
+        "54901d9949b3cf76266fcd8728bc6b6f8dab313a",
+        "55826d5515a4dcef4a5a200e089628694204d93a",
+        "a3545f5a416559b22bcccdcf480419aad59597f7",
+        "a5266ef4c435648332e0ccaefb9dc76b846cf463",
+        "be867faf102e240fd6e6a68ebfbdd1cae188fe2e",
+        "f91a1f909c81e81829384bf90dae0b7d7831a819"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "path": "blocks/notification-panel/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Changed 'border radius' to 'rounded corners' in the Border Radius setting description for clarity.",
+      "sources": [
+        "22442902b74add50ccf8ad7e646db193103099c2"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "path": "blocks/index.rst",
+      "classification": "Navigation update",
+      "description": "Added Quick Links Block 712 documentation to the blocks navigation index.",
+      "sources": [
+        "830d193e533603ed2b1a3b6422b31a4baffae5ad"
+      ]
+    },
     {
       "date": "2026-10-30",
       "path": "working-with-documents/authoring-controlled-documents/send-for-comments/index.rst",
