@@ -21,7 +21,7 @@ The following settings are available:
 + **Title**: Type a text to be shown for the clickable link.
 + **Anchor name**: To create a custom link to an anchor, type the anchor name in this field.
 + **Open in new window**: If the link should be opened in a new window, select this option. If not selected the link opens in the same window.
-+ **Icon**: An Icon will be shown for each link. If you select "Automatic" the system will select the icon. Choosing "Built-in" you can select an icon from either "Font Awesome", "Microsoft" or "Flags", see below. If you select "Custom" you can use any image as an icon.
++ **Icon**: In most cases, an icon will be shown for each link. When adding a link in a text block, icons are mot available. If you select "Automatic" the system will select the icon. Choosing "Built-in" you can select an icon from either "Font Awesome", "Microsoft" or "Flags", see below. If you select "Custom" you can use any image as an icon.
 
 For information on how to use anchors, see: :doc:`Using anchors </general-assets/using-anchors/index>`
 
