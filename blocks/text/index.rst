@@ -45,15 +45,9 @@ When you select "Custom rich text" you can set the text tools that should be ava
 
 You work with these settings exactly the same way as when they are set up in Omnia admin, see :doc:`RTF editor settings </admin-settings/tenant-settings/settings/rtf-editor/index>` 
 
-Add default content
---------------------
-When you click "ADD TEXT" the following is shown:
-
-.. image:: text-block-add-v75.png
-
-Add the default content and save.
-
-Using the WRITE tab you can set if it should be possible for editors to overwrite the default content or not, see below.
+Add and edit default content
+---------------------------------
+You can add default content using ADD TEXT in the settings. Using the WRITE tab you can set if it should be possible for editors to overwrite the default content or not, see below.
 
 Layout
 ********
