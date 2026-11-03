@@ -13,6 +13,23 @@ sync = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(sync)
 
 SECTION = "7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n- Final reviewer-edited release note (#59036)"
+GENERATED = "7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n- Generated release note (#59036)"
+PR_URL = "https://github.com/omniaintranet/OmniaDocsG2/pull/99"
+DENIED = "gh: Resource not accessible by personal access token"
+
+
+def draft_body(notes=GENERATED):
+    """The notification body as create-ready-project-item.sh writes it."""
+    return ("> [!WARNING]\n> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be "
+            "reviewed before publication.\n\n"
+            "Generated from **2** source issues: **1** represented in **1** draft bullets, **0** omitted, and **1** "
+            "pending manual security review.\n\n"
+            f"[Review the documentation pull request]({PR_URL}).\n\n"
+            f"## Generated draft release notes\n\n```text\n{notes}\n```\n\n"
+            "## Issues not included in the draft\n\n- None. No issues were finally omitted.\n\n"
+            "## Security-sensitive issues pending manual review\n\n"
+            "- [omniaintranet/OmniaMono#60001](https://github.com/omniaintranet/OmniaMono/issues/60001) - Needs review\n\n"
+            "  Suggested release note (pending approval):\n\n  > - Improved security validation of URLs\n")
 
 
 def fixtures():
@@ -27,7 +44,7 @@ def fixtures():
     project = {"fields": {"nodes": [{"id": "field", "name": "Status", "options": options}]}}
     items = [{"id": "item", "status": {"optionId": "release"}, "content": {"__typename": "DraftIssue", "id": "draft",
               "title": "Release notes for Omnia 7.11.99 are now ready",
-              "body": "Stale draft with pending wording\n[PR](" + pr["html_url"] + ")"}}]
+              "body": draft_body()}}]
     return pr, review, project, items
 
 
@@ -100,7 +117,8 @@ class ApprovalTests(unittest.TestCase):
         self.assertTrue(plan["rename"])
         self.assertTrue(plan["convert"])
         self.assertIn(SECTION, plan["body"])
-        self.assertNotIn("Stale draft", plan["body"])
+        self.assertLess(plan["body"].index(SECTION), plan["body"].index("## Generated draft (recommendation)"))
+        self.assertNotIn("DRAFT - NOT APPROVED", plan["body"].split("## Generated draft (recommendation)")[0])
         self.assertIn("publication still requires merging", plan["body"])
         self.assertEqual(plan["title"], "Release notes for Omnia 7.11.99 are approved")
 
@@ -161,7 +179,9 @@ class ApprovalTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
 
-    def exercise_sync(self, *, merged=False, change_head=False, approved=True, dry_run=False, withdraw=False, close_pr=False):
+    def exercise_sync(self, *, merged=False, change_head=False, approved=True, dry_run=False, withdraw=False, close_pr=False,
+                      fail=None, repeat=True):
+        """fail: a mutation name whose call raises gh's permission error (the call is still recorded)."""
         self.pr["merged"] = merged
         calls = []
         reads = []
@@ -173,6 +193,8 @@ class ApprovalTests(unittest.TestCase):
             reads.append(endpoint)
             if query and query.startswith("mutation"):
                 calls.append((query, variables))
+                if fail and fail in query:
+                    raise sync.GitHubError(DENIED)
                 if "updateProjectV2DraftIssue" in query or "updateIssue" in query:
                     self.items[0]["content"].update(title=variables["title"], body=variables["body"])
                 elif "convertProjectV2DraftIssueItemToIssue" in query:
@@ -186,8 +208,11 @@ class ApprovalTests(unittest.TestCase):
             if "/reviews?" in endpoint:
                 review_reads += 1
                 return [self.review] if approved and not (withdraw and review_reads > 1) else []
+            if "/commits?" in endpoint:
+                return [{"sha": "first123"}, {"sha": "head123"}]
             if "/contents/" in endpoint:
-                return {"content": base64.b64encode((SECTION + "\n").encode()).decode()}
+                notes = GENERATED if "ref=first123" in endpoint else SECTION
+                return {"content": base64.b64encode((notes + "\n").encode()).decode()}
             pulls += 1
             result = deepcopy(self.pr)
             if change_head and pulls > 1:
@@ -200,9 +225,13 @@ class ApprovalTests(unittest.TestCase):
             if change_head:
                 with self.assertRaises(ValueError):
                     sync.sync("99")
+            elif fail:
+                with self.assertRaises(sync.SyncIncomplete) as failure:
+                    sync.sync("99")
+                return reads, calls, failure.exception
             else:
                 sync.sync("99", dry_run=dry_run)
-                if not dry_run and approved and not withdraw and not close_pr:
+                if repeat and not dry_run and approved and not withdraw and not close_pr:
                     first_writes = len(calls)
                     sync.sync("99")
                     self.assertEqual(len(calls), first_writes, "Repeating synchronization must not rewrite the item or field")
@@ -250,6 +279,160 @@ class ApprovalTests(unittest.TestCase):
             with self.subTest(changes=changes):
                 _, calls = self.exercise_sync(**changes)
                 self.assertEqual(calls, [])
+
+
+class KeptDraftTests(unittest.TestCase):
+    def setUp(self):
+        self.pr, _, self.project, self.items = fixtures()
+
+    def plan(self, **kwargs):
+        return sync.plan_update(deepcopy(self.project), self.items, self.pr, "7.11.99", SECTION, **kwargs)
+
+    def kept_section(self, body):
+        approved, marker, draft = body.partition("## Generated draft (recommendation)")
+        self.assertTrue(marker, "The body has no kept-draft section")
+        return approved, draft
+
+    def test_draft_is_kept_whole_below_the_approved_notes(self):
+        plan = self.plan()
+        approved, draft = self.kept_section(plan["body"])
+        self.assertIn(SECTION, approved)
+        self.assertNotIn(GENERATED, approved)
+        self.assertIn(GENERATED, draft)
+        # Christian, 2026-11-03: the security-review section stays as it is, with its suggested wording.
+        self.assertIn("### Security-sensitive issues pending manual review", draft)
+        self.assertIn("> - Improved security validation of URLs", draft)
+        self.assertIn("### Issues not included in the draft", draft)
+        self.assertIn("### Generated draft release notes", draft)
+        self.assertNotIn("\n## ", draft, "The draft's headings sit one level below the kept-draft heading")
+        self.assertEqual(plan["draft_source"], "kept from the notification")
+
+    def test_repeated_sync_neither_nests_nor_duplicates_the_draft(self):
+        body = self.plan()["body"]
+        for merged in (False, True):
+            self.items[0]["content"].update(body=body, title="Release notes for Omnia 7.11.99 are approved")
+            self.pr["merged"] = merged
+            again = self.plan()["body"]
+            if not merged:
+                self.assertEqual(again, body)
+            for marker in (sync.DRAFT_START, sync.DRAFT_END, "## Generated draft (recommendation)", GENERATED):
+                self.assertEqual(again.count(marker), 1, marker)
+            self.assertEqual(self.kept_section(again)[1], self.kept_section(body)[1])
+            body = again
+        self.assertIn("APPROVED AND MERGED", body)
+
+    def test_converted_issue_keeps_its_draft_section(self):
+        body = self.plan()["body"]
+        self.items[0]["content"].update(__typename="Issue", id="issue", body=body,
+                                        repository={"nameWithOwner": "omniaintranet/OmniaMono"})
+        self.pr["merged"] = True
+        plan = self.plan()
+        self.assertFalse(plan["convert"])
+        self.assertEqual(self.kept_section(plan["body"])[1], self.kept_section(body)[1])
+
+    def test_replaced_body_recovers_the_draft_from_the_pr(self):
+        # 7.12.9: an older sync had already replaced the draft with the approved notes.
+        self.items[0]["content"]["body"] = sync.approval_body(dict(self.pr, merged=True), SECTION)
+        plan = self.plan(recover_draft=lambda: "Recovered draft")
+        self.assertIn("Recovered draft", self.kept_section(plan["body"])[1])
+        self.assertEqual(plan["draft_source"], "recovered from the documentation PR's first commit")
+        self.assertNotIn("Generated draft (recommendation)", self.plan()["body"])
+
+    def test_draft_from_pr_reads_the_first_commit(self):
+        reads = []
+
+        def api(endpoint, **_):
+            reads.append(endpoint)
+            if "/commits?" in endpoint:
+                return [{"sha": "first123"}, {"sha": "fixup456"}]
+            return {"content": base64.b64encode(("Intro\n\n" + GENERATED + "\n").encode()).decode()}
+
+        with patch.object(sync, "api", side_effect=api):
+            draft = sync.draft_from_pr("repos/x/pulls/99", "7.11.99")
+        self.assertIn("ref=first123", reads[1])
+        self.assertIn(f"```text\n{GENERATED}\n```", draft)
+        self.assertIn(f"https://github.com/{sync.REPOSITORY}/commit/first123", draft)
+        self.assertIn("not available", draft)
+
+    def test_long_draft_is_cut_within_the_body_limit(self):
+        notes = GENERATED + "".join(f"\n- Generated bullet {n} " + "x" * 200 for n in range(400))
+        self.items[0]["content"]["body"] = draft_body(notes)
+        body = self.plan()["body"]
+        self.assertLessEqual(len(body), sync.MAX_BODY)
+        self.assertIn(SECTION, body)
+        self.assertEqual(body.count(sync.DRAFT_CUT), 1)
+        self.assertEqual(body.count("```") % 2, 0, "Every code fence is closed")
+        self.assertTrue(body.endswith(sync.DRAFT_END + "\n"))
+        self.items[0]["content"]["body"] = body
+        self.assertEqual(self.plan()["body"], body, "A cut draft is stable on the next sync")
+
+    def test_cut_draft_is_cut_again_without_a_second_note(self):
+        notes = GENERATED + "".join(f"\n- Generated bullet {n} " + "x" * 200 for n in range(400))
+        self.items[0]["content"]["body"] = draft_body(notes)
+        self.items[0]["content"]["body"] = self.plan()["body"]
+        longer = SECTION + "".join(f"\n- Approved bullet {n} " + "y" * 200 for n in range(50))
+        body = sync.plan_update(deepcopy(self.project), self.items, self.pr, "7.11.99", longer)["body"]
+        self.assertLessEqual(len(body), sync.MAX_BODY)
+        self.assertEqual(body.count(sync.DRAFT_CUT), 1)
+
+    def test_oversized_approved_notes_are_rejected(self):
+        huge = SECTION + "\n- " + "z" * sync.MAX_BODY
+        with self.assertRaises(ValueError):
+            sync.plan_update(deepcopy(self.project), self.items, self.pr, "7.11.99", huge)
+
+
+class FailureTests(unittest.TestCase):
+    """Readable failures that say what is done, and a safe re-run."""
+    setUp = ApprovalTests.setUp
+    exercise_sync = ApprovalTests.exercise_sync
+    converted = ApprovalTests.converted
+
+    def test_denied_conversion_names_the_permission_and_what_is_pending(self):
+        _, calls, failure = self.exercise_sync(fail="convertProjectV2")
+        self.assertEqual(len(calls), 3, "Notes and column are written before the conversion is tried")
+        self.assertIn(sync.TOKEN_SECRET, str(failure))
+        self.assertIn("Issues: Read and write on omniaintranet/OmniaMono", str(failure))
+        self.assertIn(DENIED, str(failure))
+        self.assertIn("Up to date in Project 8: the approved release notes", failure.summary)
+        self.assertIn("the release column `Approved - Omnia 7.11.99 / WCM 7.11.99`", failure.summary)
+        self.assertIn("Still pending: the conversion to an omniaintranet/OmniaMono issue", failure.summary)
+        self.assertIn("`pr_number` 99", failure.summary)
+        _, calls = self.exercise_sync(repeat=False)
+        self.assertEqual([("convertProjectV2" in query) for query, _ in calls], [True],
+                         "A re-run after the token fix only converts")
+
+    def test_denied_issue_update_names_the_permission(self):
+        self.converted()
+        self.project["fields"]["nodes"][0]["options"][1]["name"] = "Approved - Omnia 7.11.99 / WCM 7.11.99"
+        _, _, failure = self.exercise_sync(merged=True, fail="updateIssue")
+        self.assertIn(sync.ISSUE_ACCESS, str(failure))
+        self.assertIn("Nothing was changed in Project 8.", failure.summary)
+
+    def test_denied_column_rename_does_not_blame_issue_access(self):
+        _, calls, failure = self.exercise_sync(fail="updateProjectV2Field")
+        self.assertNotIn(sync.ISSUE_ACCESS, str(failure))
+        self.assertIn("Still pending: the release column", failure.summary)
+        self.assertNotIn("convertProjectV2", "".join(query for query, _ in calls))
+
+    def test_gh_error_text_replaces_the_traceback(self):
+        failed = sync.subprocess.CompletedProcess([], 1, stdout="", stderr=DENIED + "\n")
+        with patch.object(sync.subprocess, "run", return_value=failed):
+            with self.assertRaises(sync.GitHubError) as error:
+                sync.api("graphql", query="mutation { x }")
+        self.assertEqual(str(error.exception), DENIED)
+
+    def test_summary_and_annotation(self):
+        import os
+        import tempfile
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "summary.md"
+            with patch.dict(os.environ, {"GITHUB_STEP_SUMMARY": str(path)}):
+                sync.write_summary("First")
+                sync.write_summary("Second\n")
+            self.assertEqual(path.read_text(encoding="utf-8"), "First\n\nSecond\n\n")
+        with patch("builtins.print") as printed:
+            sync.annotate("100% done\nnext")
+        printed.assert_called_once_with("::error::100%25 done%0Anext")
 
 
 if __name__ == "__main__":
