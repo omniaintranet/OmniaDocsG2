@@ -4,13 +4,13 @@ Use this block to add text anywhere on a page. You can use it just to add a cont
 
 When adding text to the block some basic formatting can be available, depending on the type of text set for the block. Here's an example with the formatting options for rich text:
 
-.. image:: text-formatting-rich-v75.png
+.. image:: text-formatting-rich-v712.png
 
 Point at an icon and a tool tip will show what the option is for.
 
 See this page for more information on how to use the RTF editor: :doc:`RTF editor </general-assets/rtf-editor/index>`
 
-Available options for Rich Text is set up in Omnia admin, see: :doc:`RTF editor settings </admin-settings/tenant-settings/settings/rtf-editor/index>`
+Available options for Rich text is set up in Omnia admin, see: :doc:`RTF editor settings </admin-settings/tenant-settings/settings/rtf-editor/index>`
 
 Settings
 *********
