@@ -1,4 +1,5 @@
 """Offline checks for release-note review accounting; requires bash and jq."""
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -119,6 +120,38 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertIn("Permissions change requires manual disclosure review", rendered.stdout)
         self.assertIn("Suggested release note (pending approval)", rendered.stdout)
         self.assertIn(self.response["pendingReviewIssues"][0]["suggestedText"], rendered.stdout)
+
+    def test_approval_sync_keeps_every_section_of_the_rendered_draft(self):
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        rendered = self.run_script("create-ready-project-item.sh", notification=True)
+        self.assertEqual(rendered.returncode, 0, rendered.stderr)
+        spec = importlib.util.spec_from_file_location("approval_sync", SCRIPTS / "sync-approved-release-notes.py")
+        sync = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(sync)
+        self.assertTrue(rendered.stdout.startswith(sync.GENERATED_START), "The draft carries the sync's markers")
+        pr = {"merged": True, "html_url": "https://github.com/omniaintranet/OmniaDocsG2/pull/43"}
+        project = {"fields": {"nodes": [{"id": "field", "name": "Status", "options": [
+            {"id": "release", "name": "Wait for RN - Omnia 7.11.99", "color": "GRAY", "description": ""}]}]}}
+        items = [{"id": "item", "status": {"optionId": "release"}, "content": {
+            "__typename": "DraftIssue", "id": "draft", "title": "Release notes for Omnia 7.11.99 are now ready",
+            "body": rendered.stdout}}]
+        plan = sync.plan_update(project, items, pr, "7.11.99", HEADING + "- Approved wording")
+        approved, _, kept = plan["body"].partition("## Generated draft (recommendation)")
+        self.assertIn("- Approved wording", approved)
+        self.assertNotIn("Quick Search", approved)
+        # Christian, 2026-11-03/04: the kept draft holds everything, left-out and security-review issues included.
+        for part in ("Quick Search now correctly handles document filters",
+                     "### Issues not included in the draft",
+                     "[omniaintranet/test#2](https://github.com/omniaintranet/test/issues/2) - Internal maintenance",
+                     "### Security-sensitive issues pending manual review",
+                     "[omniaintranet/test#3](https://github.com/omniaintranet/test/issues/3) - "
+                     "Permissions change requires manual disclosure review",
+                     "> " + self.response["pendingReviewIssues"][0]["suggestedText"]):
+            self.assertIn(part, kept)
+        items[0]["content"]["body"] = plan["body"]
+        self.assertEqual(sync.plan_update(project, items, pr, "7.11.99", HEADING + "- Approved wording")["body"],
+                         plan["body"], "A repeated sync keeps the same draft")
 
     def test_generation_without_review_rules_still_works(self):
         self.python = "false"

@@ -18,9 +18,9 @@ PR_URL = "https://github.com/omniaintranet/OmniaDocsG2/pull/99"
 DENIED = "gh: Resource not accessible by personal access token"
 
 
-def draft_body(notes=GENERATED):
-    """The notification body as create-ready-project-item.sh writes it."""
-    return ("> [!WARNING]\n> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be "
+def draft_body(notes=GENERATED, *, extra="", markers=False):
+    """The notification body as create-ready-project-item.sh writes it (markers: as it does since they exist)."""
+    body = ("> [!WARNING]\n> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be "
             "reviewed before publication.\n\n"
             "Generated from **2** source issues: **1** represented in **1** draft bullets, **0** omitted, and **1** "
             "pending manual security review.\n\n"
@@ -29,7 +29,8 @@ def draft_body(notes=GENERATED):
             "## Issues not included in the draft\n\n- None. No issues were finally omitted.\n\n"
             "## Security-sensitive issues pending manual review\n\n"
             "- [omniaintranet/OmniaMono#60001](https://github.com/omniaintranet/OmniaMono/issues/60001) - Needs review\n\n"
-            "  Suggested release note (pending approval):\n\n  > - Improved security validation of URLs\n")
+            "  Suggested release note (pending approval):\n\n  > - Improved security validation of URLs\n" + extra)
+    return f"{sync.GENERATED_START}\n{body}\n{sync.GENERATED_END}\n" if markers else body
 
 
 def fixtures():
@@ -354,12 +355,45 @@ class KeptDraftTests(unittest.TestCase):
         self.assertIn(f"https://github.com/{sync.REPOSITORY}/commit/first123", draft)
         self.assertIn("not available", draft)
 
-    def test_long_draft_is_cut_within_the_body_limit(self):
+    def test_generator_markers_keep_the_whole_draft(self):
+        # The markers, not the heading text, decide: a draft whose headings were edited is still kept whole.
+        body = draft_body(markers=True).replace("## Generated draft release notes", "## Draft notes")
+        self.items[0]["content"]["body"] = body
+        _, draft = self.kept_section(self.plan()["body"])
+        for part in ("### Draft notes", GENERATED, "### Issues not included in the draft",
+                     "### Security-sensitive issues pending manual review", "Needs review",
+                     "> - Improved security validation of URLs"):
+            self.assertIn(part, draft)
+        self.assertNotIn(sync.GENERATED_START, draft)
+        self.assertNotIn(sync.GENERATED_END, draft)
+
+    def test_long_notes_are_left_out_before_the_issue_lists(self):
         notes = GENERATED + "".join(f"\n- Generated bullet {n} " + "x" * 200 for n in range(400))
-        self.items[0]["content"]["body"] = draft_body(notes)
+        self.items[0]["content"]["body"] = draft_body(notes, markers=True)
         body = self.plan()["body"]
         self.assertLessEqual(len(body), sync.MAX_BODY)
         self.assertIn(SECTION, body)
+        _, draft = self.kept_section(body)
+        self.assertEqual(draft.count(sync.NOTES_CUT), 1)
+        self.assertNotIn("Generated bullet", draft)
+        self.assertNotIn(sync.DRAFT_CUT, draft)
+        for part in ("### Issues not included in the draft", "### Security-sensitive issues pending manual review",
+                     "Needs review", "> - Improved security validation of URLs"):
+            self.assertIn(part, draft)
+        self.assertEqual(body.count("```") % 2, 0, "Every code fence is closed")
+        self.items[0]["content"]["body"] = body
+        self.assertEqual(self.plan()["body"], body, "A shortened draft is stable on the next sync")
+
+    def long_lists(self):
+        return "".join(f"\n- [omniaintranet/OmniaMono#{n}](https://github.com/omniaintranet/OmniaMono/issues/{n}) - "
+                       + "Needs review " * 20 for n in range(70000, 70300))
+
+    def test_long_lists_are_cut_within_the_body_limit(self):
+        self.items[0]["content"]["body"] = draft_body(extra=self.long_lists())
+        body = self.plan()["body"]
+        self.assertLessEqual(len(body), sync.MAX_BODY)
+        self.assertIn(SECTION, body)
+        self.assertEqual(body.count(sync.NOTES_CUT), 1, "The notes go first")
         self.assertEqual(body.count(sync.DRAFT_CUT), 1)
         self.assertEqual(body.count("```") % 2, 0, "Every code fence is closed")
         self.assertTrue(body.endswith(sync.DRAFT_END + "\n"))
@@ -367,8 +401,7 @@ class KeptDraftTests(unittest.TestCase):
         self.assertEqual(self.plan()["body"], body, "A cut draft is stable on the next sync")
 
     def test_cut_draft_is_cut_again_without_a_second_note(self):
-        notes = GENERATED + "".join(f"\n- Generated bullet {n} " + "x" * 200 for n in range(400))
-        self.items[0]["content"]["body"] = draft_body(notes)
+        self.items[0]["content"]["body"] = draft_body(extra=self.long_lists())
         self.items[0]["content"]["body"] = self.plan()["body"]
         longer = SECTION + "".join(f"\n- Approved bullet {n} " + "y" * 200 for n in range(50))
         body = sync.plan_update(deepcopy(self.project), self.items, self.pr, "7.11.99", longer)["body"]

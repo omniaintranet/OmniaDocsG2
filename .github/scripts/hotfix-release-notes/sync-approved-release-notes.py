@@ -22,6 +22,10 @@ MAX_BODY = 65000
 DRAFT_START = "<!-- hotfix-release-notes:generated-draft:start -->"
 DRAFT_END = "<!-- hotfix-release-notes:generated-draft:end -->"
 DRAFT_CUT = "<!-- hotfix-release-notes:generated-draft:cut -->"
+NOTES_CUT = "<!-- hotfix-release-notes:generated-draft:notes-left-out -->"
+# create-ready-project-item.sh writes the whole generated draft between these markers.
+GENERATED_START = "<!-- hotfix-release-notes:draft:start -->"
+GENERATED_END = "<!-- hotfix-release-notes:draft:end -->"
 DRAFT_HEADING = ("## Generated draft (recommendation)\n\n"
                  "The automatically generated draft, kept for comparison with the approved release notes above. "
                  "It is not approved.\n\n")
@@ -122,26 +126,49 @@ def demote_headings(text):
 def kept_draft(body):
     """The generated draft to keep, taken from the notification body, or None when the body no longer holds it.
 
-    A body written by this sync carries the draft between markers: it is reused as it is (idempotent).
-    A body still as create-ready-project-item.sh wrote it is the draft itself.
+    A body written by this sync carries the draft between its markers: it is reused as it is (idempotent).
+    A body still as create-ready-project-item.sh wrote it is the whole draft, every section included:
+    between the generator's markers, or (for drafts written before those markers) the body itself.
     """
     body = (body or "").replace("\r\n", "\n")
     start, end = body.find(DRAFT_START), body.rfind(DRAFT_END)
     if start != -1 and end > start:
         return body[start + len(DRAFT_START):end].strip("\n")
+    start, end = body.find(GENERATED_START), body.rfind(GENERATED_END)
+    if start != -1 and end > start:
+        return demote_headings(body[start + len(GENERATED_START):end].strip("\n"))
     if "**DRAFT - NOT APPROVED.**" in body and "## Generated draft release notes" in body:
         return demote_headings(body.strip())
     return None
 
 
+def leave_out_notes(draft, pr_url):
+    """Replace the draft's release-notes block with a pointer to the PR, keeping every other section.
+
+    The notes are the one part of the draft that is also in the documentation PR's first commit;
+    the left-out issues and the security-review issues are only here.
+    """
+    match = re.search(r"(?ms)^```text\n.*?^```[ \t]*$", draft)
+    if not match:
+        return draft
+    return (draft[:match.start()] + f"{NOTES_CUT}\n_The draft release notes are left out here to stay within GitHub's "
+            f"size limit for issue descriptions. They are in the first commit of the "
+            f"[documentation pull request]({pr_url})._" + draft[match.end():])
+
+
 def fit_draft(draft, room, pr_url):
-    """Cut the draft at a line boundary so it takes at most room characters, closing an open code fence."""
+    """Make the draft take at most room characters: first leave out its release-notes block, then
+    cut it at a line boundary, closing an open code fence."""
+    if len(draft) <= room:
+        return draft
+    draft = leave_out_notes(draft, pr_url)
     if len(draft) <= room:
         return draft
     if DRAFT_CUT in draft:
         draft = draft[:draft.find(DRAFT_CUT)].rstrip("\n")
-    note = (f"\n{DRAFT_CUT}\n_The draft was cut here to stay within GitHub's size limit for issue descriptions. "
-            f"The full draft release notes are in the first commit of the [documentation pull request]({pr_url})._")
+    note = (f"\n{DRAFT_CUT}\n_The draft was cut here to stay within GitHub's size limit for issue descriptions; "
+            f"the rest of it is not shown. Its release notes are in the first commit of the "
+            f"[documentation pull request]({pr_url})._")
     budget = room - len(note) - len("\n```")
     kept, size = [], 0
     for line in draft.split("\n"):
