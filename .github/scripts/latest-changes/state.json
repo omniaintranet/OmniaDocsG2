@@ -750,9 +750,95 @@
     "f91a1f909c81e81829384bf90dae0b7d7831a819": "2026-11-02",
     "a2c8543f043c4fceed52969c4ce271e29c34663f": "2026-11-02",
     "fc4f1d1c6cc2f37d77ddf49c4884f53ee86ba656": "2026-11-02",
-    "1029c89f78b6495ff8d7468c6e7419d8b043d9a9": "2026-11-02"
+    "1029c89f78b6495ff8d7468c6e7419d8b043d9a9": "2026-11-02",
+    "d1c5ba8abc6494a0228680d38c5373e30f485c51": "2026-11-03",
+    "05531dea49a8a9ed86c48329d29c463fe52dea20": "2026-11-03",
+    "3ac795a9f47ff16abcc7471b2f9bd290331f1f9c": "2026-11-03",
+    "8834dd01a25a02ebf088c3c9ee928d42d194c1f0": "2026-11-03",
+    "cfabc55c2d00da2403a7f87647e4d486613a1a38": "2026-11-03",
+    "f8674b1289611dcb33efa932a1a36a5925e27fce": "2026-11-03",
+    "2dc403613978026f85db575d819110a22afc3813": "2026-11-03",
+    "1722f4697e965be411660ef2cd9522c945a411de": "2026-11-03",
+    "2c3eae29a847e81cc509510ab19e7e98e72cc5f4": "2026-11-03",
+    "1c7fe7fb7808ebcbc6b0adb379aef33edf522d98": "2026-11-03",
+    "d6b73a18f1529ca9ad53bcee1c520cbc2f305103": "2026-11-03",
+    "158e88f1c1d3f587ecbdbaa5c123a460d000d401": "2026-11-03",
+    "a15eb286959afe593457ab1200c7ee56793b0002": "2026-11-03",
+    "7d6a8d7438b005103386fe6aea3feab7fd8d8082": "2026-11-03",
+    "1b254e82ecc9cc0312c20dec4d5412beb51f53cc": "2026-11-03"
   },
   "entries": [
+    {
+      "date": "2026-11-03",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.12.9 release notes documenting fixes and improvements to pages, blocks, search, documents, processes, email, notifications, and accessibility.",
+      "sources": [
+        "a15eb286959afe593457ab1200c7ee56793b0002"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "general-assets/add-link/index.rst",
+      "classification": "Added information",
+      "description": "Clarified that icons are not available when adding links in text blocks and improved phrasing for document picker settings consistency.",
+      "sources": [
+        "1b254e82ecc9cc0312c20dec4d5412beb51f53cc",
+        "7d6a8d7438b005103386fe6aea3feab7fd8d8082"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "blocks/user-information-block/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated screenshot showing the Actions settings for the User information block.",
+      "sources": [
+        "158e88f1c1d3f587ecbdbaa5c123a460d000d401",
+        "d6b73a18f1529ca9ad53bcee1c520cbc2f305103"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "blocks/text/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified procedures for adding and editing default content in the text block with updated screenshots.",
+      "sources": [
+        "1722f4697e965be411660ef2cd9522c945a411de",
+        "1c7fe7fb7808ebcbc6b0adb379aef33edf522d98",
+        "2c3eae29a847e81cc509510ab19e7e98e72cc5f4"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "blocks/sign-off-requests-rollup-613/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated Omnia 7.9 version reference from the Display tab settings description.",
+      "sources": [
+        "2dc403613978026f85db575d819110a22afc3813"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "blocks/search/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that border radius in the style settings creates rounded corners.",
+      "sources": [
+        "cfabc55c2d00da2403a7f87647e4d486613a1a38",
+        "f8674b1289611dcb33efa932a1a36a5925e27fce"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "path": "blocks/rss-reader/index.rst",
+      "classification": "Added information",
+      "description": "Added documentation for the Encoding setting, which configures the character set used to decode RSS feeds for proper text display.",
+      "sources": [
+        "05531dea49a8a9ed86c48329d29c463fe52dea20",
+        "3ac795a9f47ff16abcc7471b2f9bd290331f1f9c",
+        "8834dd01a25a02ebf088c3c9ee928d42d194c1f0",
+        "d1c5ba8abc6494a0228680d38c5373e30f485c51"
+      ]
+    },
     {
       "date": "2026-11-02",
       "path": "pages/page-types/section-settings/index.rst",

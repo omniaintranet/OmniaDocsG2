@@ -3,6 +3,30 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+3 November 2026
+---------------
+
+* `Add link <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/add-link/index.html>`__ — **Added information**
+  Clarified that icons are not available when adding links in text blocks and improved phrasing for document picker settings consistency.
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.12.9 release notes documenting fixes and improvements to pages, blocks, search, documents, processes, email, notifications, and accessibility.
+
+* `RSS reader <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/rss-reader/index.html>`__ — **Added information**
+  Added documentation for the Encoding setting, which configures the character set used to decode RSS feeds for proper text display.
+
+* `Search <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/search/index.html>`__ — **Added information**
+  Added clarification that border radius in the style settings creates rounded corners.
+
+* `Sign-off requests rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/sign-off-requests-rollup-613/index.html>`__ — **Correction**
+  Removed outdated Omnia 7.9 version reference from the Display tab settings description.
+
+* `Text <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/text/index.html>`__ — **Updated guidance**
+  Simplified procedures for adding and editing default content in the text block with updated screenshots.
+
+* `User information <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/user-information-block/index.html>`__ — **Updated screenshots**
+  Updated screenshot showing the Actions settings for the User information block.
+
 2 November 2026
 ---------------
 
