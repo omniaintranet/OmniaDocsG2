@@ -19,7 +19,7 @@ Use the small list (where is says "Now +") to select if it's before or after tod
 
 Use the broader list to select Days, Months or Years.
 
-Here's a simple example where pages published from a month ago to today, based on the property Artcle date, will be rolled up:
+Here's a simple example where pages published from a month ago to today, based on the property Article date, will be rolled up:
 
 .. image:: custom-date-filter-4-712.png
 
