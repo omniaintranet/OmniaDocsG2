@@ -1,7 +1,7 @@
 Creating a form using an action button
 ========================================================
 
-An action button can be placed on any publishing page, to make it possible to create a form to be used in a publishing app.
+An action button can be to make it possible to create a form to be used in a publishing app. See this page for more information on action buttons: :doc:`Action button </blocks/button-link/index>`
 
 You must be publishing app administrator for the app you create the form for, to be able to use the button. This is an important difference compaired to the options in Omnia admin, where you have to be business profile administrator to create and edit forms.
 
