@@ -7,11 +7,9 @@ You can set custom settings for the block headers on this page or page type, by 
 
 Then these settings becomes available:
 
-.. image:: page-toolbar-block-header-settings-76.png
+.. image:: page-toolbar-block-header-settings-712.png
 
 It is the settings set up for the business profile, in Omnia admin, you can edit specifically for this page. 
 
 See this page for more information: :doc:`Content Header </admin-settings/business-group-settings/settings/block-title/index>`
-
-
 
