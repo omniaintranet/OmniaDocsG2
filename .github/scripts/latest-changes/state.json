@@ -19,7 +19,6 @@
     "1c23e52fcf5b9c44be18b7d9c17004f63a629dfd": "2026-10-15",
     "8bdcebc7ddf2f5083d1aeee3a8546cacd5cfe086": "2026-10-15",
     "e76d0087548b3d62ac5c05da9e874a165d6fc677": "2026-10-15",
-    "732f9a81d7f1d28dc828d9d93cc3024bec200f63": "2026-08-07",
     "c5bf4e41ac8f07ffd9fb6ddd481ab3de7782c525": "2026-08-21",
     "ad74ba736dae67fde0d9b443136979bc8f3eebd8": "2026-08-24",
     "840ad9167629c982a5be3287e3e176d9dd4fd984": "2026-08-24",
@@ -529,13 +528,6 @@
     "6d5a932dfd471374a568ef41ab46d4ca39f92f89": "2026-09-02",
     "ed63fb0d98b4ab62831a0a0110a74f52df242d28": "2026-09-02",
     "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03",
-    "65300a6fbbc926b806231393a2683b9a7bf5624c": "2026-08-07",
-    "855d7230510dbd768ed2804746b3a235ade18a42": "2026-08-07",
-    "ad71be224283c886dc12bbcaed996593f8399328": "2026-08-07",
-    "87636cb602eaa0f66a2acf8a95ac282f4032c42b": "2026-08-07",
-    "b3bed32f9b0326ebf20930b8dc385e210a7d4312": "2026-08-07",
-    "f5a90b1cfca3a068004a22b1fcbb3a3bbd324846": "2026-08-07",
-    "85733468de907ee78292cdf3e11c9366046df39d": "2026-08-07",
     "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5": "2026-08-13",
     "94354b706d770d4f00c5081fae68e3ce1e58785f": "2026-08-13",
     "cc851e7bbe558b21a64519a6778e6c1a71fa4611": "2026-08-13",
@@ -4927,45 +4919,6 @@
       "description": "Hotfix releases documentation moved from the version 7.0 path to the version 7 path.",
       "sources": [
         "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "path": "setup/reusable-content/index.rst",
-      "classification": "Correction",
-      "description": "Removed duplicate text in the step introduction that read 'Follow these steps:Follow these steps to setup a reusable section:'.",
-      "sources": [
-        "ad71be224283c886dc12bbcaed996593f8399328"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
-      "classification": "Added information",
-      "description": "Added release notes for Omnia Feed app versions 7.11.5, 7.11.4, and 7.11.3 with details on bug fixes, SDK upgrades, and accessibility improvements.",
-      "sources": [
-        "87636cb602eaa0f66a2acf8a95ac282f4032c42b"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "path": "pages/page-types/section-settings/index.rst",
-      "classification": "Correction",
-      "description": "Clarified availability of the Reusable section type and corrected typo in admin reference; updated screenshots.",
-      "sources": [
-        "65300a6fbbc926b806231393a2683b9a7bf5624c",
-        "855d7230510dbd768ed2804746b3a235ade18a42"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "path": "admin-settings/business-group-settings/features-bp-7/index.rst",
-      "classification": "Correction",
-      "description": "Updated on-prem subscription requirement for Microsoft Clipchamp and updated associated screenshot.",
-      "sources": [
-        "85733468de907ee78292cdf3e11c9366046df39d",
-        "b3bed32f9b0326ebf20930b8dc385e210a7d4312",
-        "f5a90b1cfca3a068004a22b1fcbb3a3bbd324846"
       ]
     }
   ]

@@ -1190,18 +1190,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Versions of the Omnia Feed 6 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/index.html>`__ — **New page**
   Added new page listing versions of the Omnia Feed 6 release.
-
-7 August 2026
--------------
-
-* `Features (Business Profile) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/features-bp-7/index.html>`__ — **Correction**
-  Updated on-prem subscription requirement for Microsoft Clipchamp and updated associated screenshot.
-
-* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
-  Added release notes for Omnia Feed app versions 7.11.5, 7.11.4, and 7.11.3 with details on bug fixes, SDK upgrades, and accessibility improvements.
-
-* `Settings for sections <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/section-settings/index.html>`__ — **Correction**
-  Clarified availability of the Reusable section type and corrected typo in admin reference; updated screenshots.
-
-* `Setup reusable sections <https://omnia-docs-g2.readthedocs.io/en/latest/setup/reusable-content/index.html>`__ — **Correction**
-  Removed duplicate text in the step introduction that read 'Follow these steps:Follow these steps to setup a reusable section:'.
