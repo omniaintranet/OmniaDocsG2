@@ -9,7 +9,7 @@ It's meant to be faster and easier, so the options are limited compaired to crea
 
 **Note!** A page editor must still see to that the form you create is actually available for users, using a Forms block or a Forms rollup block.
 
-The button can be formatted in many ways. In this example a crude form is used. The options can also be set up in a number of ways, for examaple in what app the form will be created, so what is shown here it's just an example.
+The button can be formatted in many ways. In this example a crude form is used. The options can also be set up in a number of ways, for example in what app the form will be created, so what is shown here it's just an example.
 
 Here's how to create a form using an action button:
 
