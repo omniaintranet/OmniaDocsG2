@@ -14,23 +14,7 @@ A tenant administrator can:
 + Add colleagues to various permissions within the tenant.
 + Create business profiles and add business profile administrators.
 
-These permissions can be set for the tenant:
-
-.. image:: permissions-tenant-new.png
-
-**Directory Reader**: Can view all user profiles in the user directory (read-only access). This includes permissions to use the identity picker for selecting users and to access aggregated user information in the people rollup using the Users scope.
-
-**Shared links administrator (tenant)**: Can use all Shared links options for the tenant.
-
-.. image:: shared-links-tenant-new.png
-
-**Announcements administrator (tenant)**: Can use all announcements options for the tenant.
-
-.. image:: announcements-tenant.png
-
-**Block gallery editor**: If the block gallery is used, additional editors can be added here. Tenant administrators can always edit the block gallery.
-
-**Semantic search reader**: If Semantic search is activated in the tenant, the colleagues and groups that should be able to use semantic search must be added here. For more information about semantic search, see the heading *The semantic search reader setting* on this page: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
+For information about the different permissions that can be set for the tenant, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
 Business profile administrator
 --------------------------------
