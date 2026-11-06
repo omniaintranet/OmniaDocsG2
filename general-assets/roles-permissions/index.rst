@@ -26,31 +26,7 @@ A business profile administrator can:
 + Edit permissions for the business profile, including adding and removing business profile administrators.
 + Create publishing apps in the business profile and add publishing app administrators.
 
-These permissions can be set in the business profile:
-
-.. image:: permissions-bp.png
-
-**Business profile viewers**: To be able to access a business profile and use the various user options, user’s must be added to the Business profile viewers list. 
-
-**Workspace designer**: Can work with all workspace settings within the business profile.
-
-.. image:: workspace-settings.png
-
-**Workspace contributor**: Users/groups that should be able to comment on business profile announcements and be able to send organization wide posts, must be added as workspace contributors.
-
-**Workspace reader**: Can use the workspace navigation within the business profile.
-
-**Analytics readers**: All users that should have permission to see analytics data for the business profile must be added as “Analytics readers". That’s true for tenant administrators and business profile administrators as well. No administrator has automatic access to analytics. An analytics reader will also be added as a user within Matomo.
-
-**Shared links administrator (business profile)**: Can use the options for Shared links within the business profile. 
-
-**Announcements administrator (business profile)**: Can use the Announcements options within the business profile.
-
-.. image:: announcements-bp.png
-
-**Search administrator**: Can edit all settings for search within the business profile. 
-
-.. image:: search-settings.png
+For information about the different permissions that can be set for a bussiness profile, see: :doc:`Permissions for a business profile </admin-settings/business-group-settings/permissions/index>`
 
 Roles and permissions in a Publishing app
 ******************************************
