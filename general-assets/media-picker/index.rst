@@ -1,7 +1,7 @@
 Using the Media picker
 =========================
 
-The Media picker can be used to add an image or a video to a block, or to the page content through the RTF editor. Any image on the editor's computer can be selected, as well as from any central image location registered in Omnia admin. An image can be pasted from the clipboard as well. Besides that, additional providers can be set in Omnia admin.
+The Media picker can be used to add an image or a video to a block, or to the page content through the RTF editor. Any image on the editor's computer can be selected, as well as from any central image location registered in Omnia admin. An image can be pasted from the clipboard as well. Besides that, additional providers can be set up in Omnia admin.
 
 When the Media picker starts, something like the following is shown:
 
@@ -29,7 +29,7 @@ Note that videos can be handled in SharePoint media libraries as well, and some 
 
 Bing
 *******
-For Bing to be available, the feature "Bing" must be active. When selecting Bing you can search for any Bing image, or use the predefined search categories, if any is set up. Bing search categories can be set up by an administrator in Omnia admin.
+For Bing to be available, the feature with the same name must be active. You can search for any Bing image, or use the predefined search categories, if any is set up. Bing search categories can be set up by an administrator in Omnia admin.
 
 .. image:: media-picker-bing-search-v78.png
 
@@ -38,11 +38,11 @@ For Bing to be available, the feature "Bing" must be active. When selecting Bing
 + **Aspect**: If you just want to find images with a certain aspect, select aspect in this field: Square, Wide or Tall.
 + **Type**: If you just want to find images of a certain type - as defined by Bing, select type in this field: Clipart, Line or Photo.
 
-**Important note!** Omnia applies a filter to the Bing search automatically so only images that are free to use can be found through the Image picker.
+**Important note!** Omnia applies a filter to the Bing search automatically so only images that are free to use can be found through the image picker.
 
 Pexels
 **************************
-For Pexels to be available the feature "Pexels" must be active. Available search- or filtering fields depend on what the provider offer. For Pexels only a search field is available:
+For Pexels to be available the feature with the same name must be active. Available search- or filtering fields depend on what the provider offer. For Pexels only a search field is available:
 
 .. image:: media-picker-pexel-search-v78.png
 
@@ -55,7 +55,7 @@ For Unsplash only a search field is available (the same way as for Pexels, see a
 For Unsplash to be available, the prerequisites in Omnia are:
 
 1. The feature "Unsplash" must be active.
-2. Application ID and Client ID must be added under "Permissions" > "Secrets" > "Unsplash" for the tenant. (These settings are provided by Unsplash).
+2. Application ID and Client ID must be added under "Permissions" > "Secrets" > "Unsplash" for the tenant. These settings are provided by Unsplash.
 
 Mediaflow
 ************
@@ -64,7 +64,7 @@ This option requires a subscription to the Mediaflow service. Please find more i
 For Mediaflow to be available, the prerequisites in Omnia are:
 
 1. The feature "Mediaflow" must be active.
-2. Client ID, Client secret and Refresch token must be added under "Permissions" > "Secrets" > "MediaFlow" for a business profile. (These settings are provided by MediaFlow).
+2. Client ID, Client secret and Refresch token must be added under "Permissions" > "Secrets" > "MediaFlow" for a business profile. These settings are provided by MediaFlow.
 
 Also check the specific settings for MediaFlow to see if you need/want to edit them. See this link: :doc:`Mediaflow settings </admin-settings/business-group-settings/settings/media-flow/index>`.
 
@@ -80,7 +80,7 @@ When you have done that, Omnia's settings are shown, as described below.
 
 Using Dall-E to create images
 ******************************
-Dall-E can be used to create images in the Media picker. The be available, the tenant feature "Dall-E" must be active. 
+Dall-E can be used to create images in the Media picker. The be available, the tenant feature "Dall-E" must be active. A general recommendation is to use GPT Imagew instead. 
 
 Here's how to use Dall-E:
 
