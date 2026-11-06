@@ -28,7 +28,7 @@ A business profile administrator can:
 
 For information about the different permissions that can be set for a bussiness profile, see: :doc:`Permissions for a business profile </admin-settings/business-group-settings/permissions/index>`
 
-Roles and permissions in a Publishing app
+Roles and permissions in a publishing app
 ******************************************
 
 Publishing app administrator
@@ -53,7 +53,7 @@ The publishing app settings are available here:
 
 .. image:: contributors-app-new.png
 
-Roles and permissions in a Page Collection
+Roles and permissions in a page collection
 *********************************************
 
 Page collection administrator
