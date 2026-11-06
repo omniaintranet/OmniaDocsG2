@@ -70,7 +70,7 @@ Here's how:
 
 .. image:: clipboard-delete-one.png
 
-There's a quicker way if you want delete everything in the clipboard:
+There's a quicker way if you want to delete everything in the clipboard:
 
 1. See to that nothing is selected.
 2. Select CLEAR CLIPBOARD.
