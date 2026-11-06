@@ -161,6 +161,8 @@ Information
 ------------
 To the right in the Media picker, you can add an alt text and a caption for the image. Some information about the image is also shown.
 
+**Note!** Adding an alt text can be mandatory, depending on settings. It's important for accessibility.
+
 .. image:: media-picker-image-settings-v7-info-new.png
 
 Videos
