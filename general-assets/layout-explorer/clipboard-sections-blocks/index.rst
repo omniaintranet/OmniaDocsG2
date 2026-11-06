@@ -5,13 +5,11 @@ Using this feature, you can copy sections and blocks between pages or page types
 
 You can also use the clipboard to export block definitions to a block template.
 
-The omnia clipboard exists within a tenant, a domain and a computer. So if you're an editor using more than one computer, you will have a separate clipboards for each computer, even if you're working with the same tenant.
+The omnia clipboard exists within a tenant, a domain and a computer. So if you're an editor using more than one computer, you will have a separate clipboard for each computer, even if you're working with the same tenant.
 
 The clipboard is available here:
 
 .. image:: clipboard-76.png
-
-Layout templates, not visible in the image above, is only available when editing page types. The other three options are available for pages as well, as shown here.
 
 Add a section or block to the clipboard
 *****************************************
