@@ -757,9 +757,49 @@
     "158e88f1c1d3f587ecbdbaa5c123a460d000d401": "2026-11-03",
     "a15eb286959afe593457ab1200c7ee56793b0002": "2026-11-03",
     "7d6a8d7438b005103386fe6aea3feab7fd8d8082": "2026-11-03",
-    "1b254e82ecc9cc0312c20dec4d5412beb51f53cc": "2026-11-03"
+    "1b254e82ecc9cc0312c20dec4d5412beb51f53cc": "2026-11-03",
+    "a13c02df322e6fe3dee738357d94be8479c2ee62": "2026-11-05",
+    "87370b5697a3d5cc2bac4616bd5854944bf70da7": "2026-11-05",
+    "e317b49bd4272e10a36369e89fdd6275336480d5": "2026-11-05",
+    "f2f4f6edbdb4e6fe469e6615500b3070099e3209": "2026-11-05",
+    "77100d74416aa1bed818624612a3b981660fc8e8": "2026-11-05",
+    "f73ba2c6b3f19e9c4cab98032962b2ddf4dec760": "2026-11-05",
+    "2bb2ffb5718859f94809be285a5fd4cff57c99fa": "2026-11-05",
+    "8af557770a84efa7852e3be7eb182983bae94fac": "2026-11-05"
   },
   "entries": [
+    {
+      "date": "2026-11-05",
+      "path": "general-assets/layout-explorer/page-layout/block-header/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated screenshot to reflect the current Block header settings interface.",
+      "sources": [
+        "2bb2ffb5718859f94809be285a5fd4cff57c99fa",
+        "8af557770a84efa7852e3be7eb182983bae94fac"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "path": "general-assets/custom-date-filtering/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed confusing note about terminology differences across versions and clarified the UI label reference to match current interface labels.",
+      "sources": [
+        "77100d74416aa1bed818624612a3b981660fc8e8",
+        "e317b49bd4272e10a36369e89fdd6275336480d5",
+        "f2f4f6edbdb4e6fe469e6615500b3070099e3209",
+        "f73ba2c6b3f19e9c4cab98032962b2ddf4dec760"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "path": "general-assets/creating-form-button/index.rst",
+      "classification": "Added information",
+      "description": "Added a reference to Action button documentation in the introduction.",
+      "sources": [
+        "87370b5697a3d5cc2bac4616bd5854944bf70da7",
+        "a13c02df322e6fe3dee738357d94be8479c2ee62"
+      ]
+    },
     {
       "date": "2026-11-03",
       "path": "release-notes/7.0/versions.rst",

@@ -3,6 +3,18 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+5 November 2026
+---------------
+
+* `Block header <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/layout-explorer/page-layout/block-header/index.html>`__ — **Updated screenshots**
+  Updated screenshot to reflect the current Block header settings interface.
+
+* `Creating a form using an action button <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/creating-form-button/index.html>`__ — **Added information**
+  Added a reference to Action button documentation in the introduction.
+
+* `Custom date filtering <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/custom-date-filtering/index.html>`__ — **Updated guidance**
+  Removed confusing note about terminology differences across versions and clarified the UI label reference to match current interface labels.
+
 3 November 2026
 ---------------
 
