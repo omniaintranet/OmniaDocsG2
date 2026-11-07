@@ -765,9 +765,59 @@
     "77100d74416aa1bed818624612a3b981660fc8e8": "2026-11-05",
     "f73ba2c6b3f19e9c4cab98032962b2ddf4dec760": "2026-11-05",
     "2bb2ffb5718859f94809be285a5fd4cff57c99fa": "2026-11-05",
-    "8af557770a84efa7852e3be7eb182983bae94fac": "2026-11-05"
+    "8af557770a84efa7852e3be7eb182983bae94fac": "2026-11-05",
+    "02374d8e5b74e712ecacceead0fbe0197bf1f9c1": "2026-11-06",
+    "c3b2bee85aa0335097c49dfe64ddf1a7f2a4e9d1": "2026-11-06",
+    "66fe6ee30f5ab9aee6c96a3043aef2e058e4a023": "2026-11-06",
+    "91d1de47d0d465a0684882134f9a6eebe42a214b": "2026-11-06",
+    "0a68fc1588b370e72e9765cdd4acdb50e2ba86c8": "2026-11-06",
+    "6d730fc1070f97eef55387f0087795eb19451c30": "2026-11-06",
+    "b881469346739259c94fec1696a146d5d2bde559": "2026-11-06",
+    "10da9a4a5d175dd408fbafaf1c79aca9458baf0a": "2026-11-06",
+    "5411f20c27b351d36c7bcd38e7a7fbf5ee75369a": "2026-11-06"
   },
   "entries": [
+    {
+      "date": "2026-11-06",
+      "path": "general-assets/roles-permissions/index.rst",
+      "classification": "Updated guidance",
+      "description": "Detailed permission descriptions have been moved to dedicated permissions pages; this overview now provides links to those pages instead.",
+      "sources": [
+        "10da9a4a5d175dd408fbafaf1c79aca9458baf0a",
+        "5411f20c27b351d36c7bcd38e7a7fbf5ee75369a",
+        "6d730fc1070f97eef55387f0087795eb19451c30",
+        "b881469346739259c94fec1696a146d5d2bde559"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "path": "general-assets/media-picker/index.rst",
+      "classification": "Added information",
+      "description": "Added note that alt text for images may be mandatory and is important for accessibility.",
+      "sources": [
+        "0a68fc1588b370e72e9765cdd4acdb50e2ba86c8",
+        "91d1de47d0d465a0684882134f9a6eebe42a214b"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "path": "general-assets/layout-explorer/page-layout/block-header/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed grammatical errors and improved sentence clarity for better readability.",
+      "sources": [
+        "02374d8e5b74e712ecacceead0fbe0197bf1f9c1"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "path": "general-assets/layout-explorer/clipboard-sections-blocks/index.rst",
+      "classification": "Correction",
+      "description": "Removed guidance about layout template availability and corrected grammar errors including 'clipboards' to 'clipboard' and 'want delete' to 'want to delete'.",
+      "sources": [
+        "66fe6ee30f5ab9aee6c96a3043aef2e058e4a023",
+        "c3b2bee85aa0335097c49dfe64ddf1a7f2a4e9d1"
+      ]
+    },
     {
       "date": "2026-11-05",
       "path": "general-assets/layout-explorer/page-layout/block-header/index.rst",

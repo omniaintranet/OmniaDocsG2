@@ -3,6 +3,21 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+6 November 2026
+---------------
+
+* `Block header <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/layout-explorer/page-layout/block-header/index.html>`__ — **Spelling / grammar**
+  Fixed grammatical errors and improved sentence clarity for better readability.
+
+* `Clipboard for sections and blocks <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/layout-explorer/clipboard-sections-blocks/index.html>`__ — **Correction**
+  Removed guidance about layout template availability and corrected grammar errors including 'clipboards' to 'clipboard' and 'want delete' to 'want to delete'.
+
+* `Roles and permissions in Omnia <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/roles-permissions/index.html>`__ — **Updated guidance**
+  Detailed permission descriptions have been moved to dedicated permissions pages; this overview now provides links to those pages instead.
+
+* `Using the Media picker <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/media-picker/index.html>`__ — **Added information**
+  Added note that alt text for images may be mandatory and is important for accessibility.
+
 5 November 2026
 ---------------
 
