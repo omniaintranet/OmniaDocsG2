@@ -5,6 +5,8 @@ Some Omnia blocks can be used in any teamsite, including community sites, by usi
 
 There's also another way of doing this. If you’re using SharePoint pages in an Omnia implementation, you can use all blocks defined in the web parts section in Omnia admin, on ANY SharePoint page. These web parts (blocks) are described on this page, together with a general description on how to use them: :doc:`Web parts </admin-settings/tenant-settings/system/microsoft-365/system-webparts/index>`
 
+Besides, in Omnia 7.12 and later, integration between Omnia and SharePoint has been considerably enhanced. See this page for more information: :doc:`How to use Omnia in SharePoint </use-omnia-in-sharepoint/index>`
+
 Using Omnia web parts on a teamsite
 ***********************************
 As teamsites really are SharePoint sites, you can also opt to use the webparts on such pages. Here's how:
