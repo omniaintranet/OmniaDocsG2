@@ -13,19 +13,19 @@ Examples of what you can target
 **********************************
 As an example, targeting for the following options in Omnia nay be available:
 
-+ Action Menu objects.
++ Action menu objects.
 + Announcements.
 + Language.
-+ Mega Menu objects.
++ Mega menu objects.
 + Most blocks.
 + News articles.
-+ Page Variations.
-+ Promoted Search Results.
-+ Promoted Search Results.
-+ Publishing Channels (which works quite differently).
++ Page variations.
++ Promoted search results.
++ Promoted search results.
++ Publishing channels (which works quite differently).
 + Search categories.
 + Sections.
-+ Shared Links.
++ Shared links.
 + Teamwork templates.
 
 How to set up targeting
