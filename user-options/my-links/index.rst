@@ -7,7 +7,7 @@ The links list can be set up in many different ways, meaning what you see and av
 
 .. image:: my-links-78.png
 
-Links can be targeted to certain user groups, and only shown to them. A search field can be shown, which can be used to search for links. 
+Links can be targeted to certain user groups, and only shown to them. A search field can be shown, which can be used to search for links, as in the image above. 
 
 Options that can be available:
 
