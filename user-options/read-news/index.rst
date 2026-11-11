@@ -5,7 +5,7 @@ News is very often an important part of an Omnia implementation. How news articl
 
 Normally you can read both the latest news and older news. You can also find news articles through search using quick search and advanced search.
 
-A common solution is that the latest news is available at the start page. Here's an example:
+A common solution is that the latest news are available at the start page. Here's an example:
 
 .. image:: news-list-example-v78.png
 
