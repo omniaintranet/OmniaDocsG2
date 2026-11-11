@@ -3,7 +3,7 @@ My links
 
 Using My links (sometimes called only Links) a user can access sites, documents and more, that has been setup in Omnia admin.
 
-My links can be availabale in sevberal different ways, for example in the menu or in a block.
+My links can be availabale in several different ways, for example in the menu or in a block.
 
 .. image:: my-links-78.png
 
