@@ -17,6 +17,14 @@ Here's an example of a preview for a page:
 
 .. image:: quick-search-preview-page-preview-v78.png
 
+Semantic search
+------------------
+Semantic search can be available if set up. Here's an example:
+
+.. image:: quick-search-semantic.png
+
+More information canm be found here: :doc:`About semantic search </general-assets/about-semantic-search/index>`
+
 Advanced search
 ****************
 To search with more options, users can go to advanced search by clicking the "See more results" link (the text for this link can be edited), see above.
