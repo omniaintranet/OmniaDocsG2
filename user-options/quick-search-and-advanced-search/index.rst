@@ -18,7 +18,7 @@ Here's an example of a preview for a page:
 .. image:: quick-search-preview-page-preview-v78.png
 
 Semantic search
-^^^^^^^^^^^^^^^^
+----------------
 Semantic search can be available if set up. Here's an example:
 
 .. image:: quick-search-semantic.png
