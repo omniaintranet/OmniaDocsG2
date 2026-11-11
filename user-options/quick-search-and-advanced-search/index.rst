@@ -1,7 +1,7 @@
 Quick search and Advanced search
 ===========================================
 
-Using quick search users can find information in a quick and convenient way. How it will work is set up in Omnia admin. 
+Using quick search users can find information in a quick and convenient way. How it will work is set up in Omnia admin and in the block. 
 
 Here's an example of a search result:
 
@@ -9,17 +9,13 @@ Here's an example of a search result:
 
 Note the headings "People", "Official" and "Communities".
 
-Previews are available for pages and documents. For a preview, point at the page or document and click this icon:
+Previews can be available for pages and documents. For a preview, point at the page or document and click this icon:
 
 .. image:: quick-search-preview-page-v78.png
 
 Here's an example of a preview for a page:
 
 .. image:: quick-search-preview-page-preview-v78.png
-
-Also note that the totalt number of search results are shown for for each category:
-
-.. image:: quick-search-total-v78.png
 
 Advanced search
 ****************
