@@ -25,7 +25,7 @@ The administrator setting up the link can add additional information about a lin
 
 Show a link or not
 *******************
-To decide which non mandatory links should be available, the stars are used. In this image all links are shown (Show all links selected). Links with unfilled stars will not be shown (unless Show all links is selected). The links with a filled star will always be shown.
+It can be allowed to decide which non mandatory links that should be available. The stars are used for that purpose. Links with unfilled stars will not be shown (unless Show all links is selected). The links with a filled star will always be shown.
 
 .. image:: my-links-stars-78.png
 
@@ -33,7 +33,7 @@ To decide to show a link or not, just click the star.
 
 Add a personal link
 ********************
-Users can normally add personal links to their My links list. Here's an instruction:
+If allowed by settings, users can add personal links to their links list. Here's an instruction:
 
 1. Click "Add personal link".
 
