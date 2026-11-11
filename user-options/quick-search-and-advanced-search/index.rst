@@ -27,7 +27,7 @@ More information canm be found here: :doc:`About semantic search </general-asset
 
 Advanced search
 ****************
-To search with more options, users can go to advanced search by clicking the "See more results" link (the text for this link can be edited), see above.
+To search with more options, users can go to advanced search by clicking the "See more results" link (the text for this link can be edited).
 
 When conducting an advanced search more tabs are available at the top and refiners can be available. Note the number of search hits for each tab (category).
 
