@@ -1,7 +1,7 @@
 Quick links
 ===========================================
 
-Using Quick links (can be called something else, for example My links, or only Links) a user can access sites, documents and more, that has been setup in Omnia admin.
+Using Quick links (can be called something else, for example My links, or only Links) a user can access sites, apps, documents and more, that has been setup in Omnia admin.
 
 The links list can be set up in many different ways, meaning what you see and available options can differ. The list can also be displayed quite differently. Described here are some examples.
 
