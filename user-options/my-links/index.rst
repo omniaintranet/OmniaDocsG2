@@ -3,17 +3,17 @@ Quick links
 
 Using Quick links (can be called something else, for example My links, or only Links) a user can access sites, documents and more, that has been setup in Omnia admin.
 
-The links list can be set up in many different ways, meaning what you see and available options can differ. Described here are some examples.
+The links list can be set up in many different ways, meaning what you see and available options can differ. The list can also be displayed quite differently. Described here are some examples.
 
 .. image:: my-links-78.png
 
 Links can be targeted to certain user groups, and only shown to them. A search field can be shown, which can be used to search for links, as in the image above. 
 
-Options that can be available:
+Options that can be available, depending on settings:
 
-+ **Show all links**: When this option is selected all links, that the user is allowed to see, are shown. A user can select to show non mandatory links, or not. See below.
++ **Show all links**: When this option is selected all links, that the user is allowed to see, are shown. 
 + **Show categories**: Links can be categorized. If this option is selected categories (headings) are shown and the links are sorted by the categories. See below for more information.
-+ **Add personal link**: A user can add personal links as well, using this option. See below for an instruction.
++ **Add personal link**: If alloed by settings, a user can add personal links. See below for an instruction.
 
 In the above image "Apps" and "Business systems" are categories. Here's the same My links list without categories:
 
