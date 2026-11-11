@@ -14,7 +14,7 @@ Links can also be targeted to certain user groups, and only shown to them. A sea
 Options that can be available:
 
 + **Show all links**: When this option is selected all links, that the user is allowed to see, are shown. A user can select to show non mandatory links, or not. See below.
-+ **Show categories**: Links can be categorized. If this option is selected categories (headings) are shown and the links are sorted byt the categories. See below for more information.
++ **Show categories**: Links can be categorized. If this option is selected categories (headings) are shown and the links are sorted by the categories. See below for more information.
 + **Add personal link**: A user can add personal links as well, using this option. See below for an instruction.
 
 In the above image "Apps" and "Business systems" are categories. Here's the same My links list without categories:
