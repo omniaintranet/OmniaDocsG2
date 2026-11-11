@@ -528,9 +528,6 @@
     "6d5a932dfd471374a568ef41ab46d4ca39f92f89": "2026-09-02",
     "ed63fb0d98b4ab62831a0a0110a74f52df242d28": "2026-09-02",
     "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03",
-    "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5": "2026-08-13",
-    "94354b706d770d4f00c5081fae68e3ce1e58785f": "2026-08-13",
-    "cc851e7bbe558b21a64519a6778e6c1a71fa4611": "2026-08-13",
     "e6784abb8e6a24811d23720d3f763814259d1842": "2026-08-18",
     "c59968f871b31c72ae3a00142ba257bda250155b": "2026-08-18",
     "99df75ced1ac9dd16d684725f7a6f9903459c721": "2026-08-18",
@@ -774,9 +771,29 @@
     "6d730fc1070f97eef55387f0087795eb19451c30": "2026-11-06",
     "b881469346739259c94fec1696a146d5d2bde559": "2026-11-06",
     "10da9a4a5d175dd408fbafaf1c79aca9458baf0a": "2026-11-06",
-    "5411f20c27b351d36c7bcd38e7a7fbf5ee75369a": "2026-11-06"
+    "5411f20c27b351d36c7bcd38e7a7fbf5ee75369a": "2026-11-06",
+    "638a6f6446dee2a765dddc32405886b0ca2eee52": "2026-11-10",
+    "561de229f22424506710fcfe260db0b9d948e3dd": "2026-11-10"
   },
   "entries": [
+    {
+      "date": "2026-11-10",
+      "path": "general-assets/using-omnia-webparts-sharepoint/index.rst",
+      "classification": "Added information",
+      "description": "Added information about enhanced Omnia and SharePoint integration available in version 7.12 and later, with a link to related guidance.",
+      "sources": [
+        "561de229f22424506710fcfe260db0b9d948e3dd"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "path": "general-assets/targeting-in-omnia/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Standardized capitalization in the list of targetable items, changing from title case to sentence case.",
+      "sources": [
+        "638a6f6446dee2a765dddc32405886b0ca2eee52"
+      ]
+    },
     {
       "date": "2026-11-06",
       "path": "general-assets/roles-permissions/index.rst",
@@ -4864,151 +4881,6 @@
       "description": "Added documentation for the Divider block feature in Omnia 7.12, including configuration options for display and style settings.",
       "sources": [
         "e6784abb8e6a24811d23720d3f763814259d1842"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/index.rst",
-      "classification": "New page",
-      "description": "Added new page listing versions of the Omnia Feed 6 release.",
-      "sources": [
-        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.6/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 6.6 documentation relocated to versioned directory structure within release notes.",
-      "sources": [
-        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.3/index.rst",
-      "classification": "Navigation update",
-      "description": "Removed release notes for versions 6.1.1 and 6.2.2 from the page, leaving 6.3.0 as the primary release entry.",
-      "sources": [
-        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.13/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Omnia Feed 6.13 release notes to reorganized directory structure under versions folder.",
-      "sources": [
-        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.12/index.rst",
-      "classification": "Navigation update",
-      "description": "Reorganized Release 6.12 documentation and images into versioned subdirectory structure.",
-      "sources": [
-        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.10/index.rst",
-      "classification": "Navigation update",
-      "description": "Page and related image moved to versioned directory structure under releases/6/versions/6.10.",
-      "sources": [
-        "5fe83c0567cc1ed12b2d55e96fe0f0903814a1a5"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
-      "classification": "Navigation update",
-      "description": "Changed toctree structure to explicitly list version entries and added hotfix releases section with navigation link.",
-      "sources": [
-        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.rst",
-      "classification": "New page",
-      "description": "Added release notes page documenting Omnia Feed hotfix releases including versions 6.13.7, 6.13.5, 6.7.1, 6.2.2, and 6.1.1 with fixes and improvements.",
-      "sources": [
-        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/index.rst",
-      "classification": "New page",
-      "description": "Added documentation index page for hotfix releases under release 6 with a table of contents for versions.",
-      "sources": [
-        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/older-releases/3/index.rst",
-      "classification": "Navigation update",
-      "description": "Release notes page renamed from version 3.1 to 3 in documentation path structure.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/versions/index.rst",
-      "classification": "Navigation update",
-      "description": "Reorganized release notes page location from 7.0/versions/ to 7/versions/ path structure.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/versions/7.12/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 7.12 release notes page was reorganized and moved to a new documentation path structure.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/versions/7.11/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 7.11 documentation page and associated images relocated to updated directory structure.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/index.rst",
-      "classification": "New page",
-      "description": "Added release notes page for Omnia Feed Release 7, documenting new features including SSO improvements, targeting support, mentions in comments, reminder system, and forms support.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f",
-        "cc851e7bbe558b21a64519a6778e6c1a71fa4611"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/hotfix-releases/versions.rst",
-      "classification": "Navigation update",
-      "description": "File path changed from 7.0 hotfix releases directory to 7, updating the documentation location structure.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
-      ]
-    },
-    {
-      "date": "2026-08-13",
-      "path": "release-notes/omnia-feed/7/hotfix-releases/index.rst",
-      "classification": "Navigation update",
-      "description": "Hotfix releases documentation moved from the version 7.0 path to the version 7 path.",
-      "sources": [
-        "94354b706d770d4f00c5081fae68e3ce1e58785f"
       ]
     }
   ]

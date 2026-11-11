@@ -3,6 +3,15 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+10 November 2026
+----------------
+
+* `Using Omnia blocks (web parts) on a SharePoint page <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/using-omnia-webparts-sharepoint/index.html>`__ — **Added information**
+  Added information about enhanced Omnia and SharePoint integration available in version 7.12 and later, with a link to related guidance.
+
+* `Using targeting <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/targeting-in-omnia/index.html>`__ — **Spelling / grammar**
+  Standardized capitalization in the list of targetable items, changing from title case to sentence case.
+
 6 November 2026
 ---------------
 
@@ -1202,18 +1211,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.12/index.html>`__ — **Correction**
   Section heading corrected from "Fluent Content" to "Content Builder"; added note on improved performance for Omnia in SharePoint.
-
-13 August 2026
---------------
-
-* `Hotfix releases for release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/index.html>`__ — **New page**
-  Added documentation index page for hotfix releases under release 6 with a table of contents for versions.
-
-* `Release 6.13.7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.html>`__ — **New page**
-  Added release notes page documenting Omnia Feed hotfix releases including versions 6.13.7, 6.13.5, 6.7.1, 6.2.2, and 6.1.1 with fixes and improvements.
-
-* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/index.html>`__ — **New page**
-  Added release notes page for Omnia Feed Release 7, documenting new features including SSO improvements, targeting support, mentions in comments, reminder system, and forms support.
-
-* `Versions of the Omnia Feed 6 release <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/versions/index.html>`__ — **New page**
-  Added new page listing versions of the Omnia Feed 6 release.
