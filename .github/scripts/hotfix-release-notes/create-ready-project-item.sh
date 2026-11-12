@@ -73,7 +73,10 @@ pending_issue_count=$(jq '.pendingReviewIssues // [] | length' "$AUDIT_FILE")
 issue_body_file=$(mktemp)
 trap 'rm -f "$issue_body_file"' EXIT
 
+# The markers (invisible on GitHub) let sync-approved-release-notes.py keep this whole draft,
+# every section included, below the approved notes. Keep them in step with GENERATED_START/END there.
 {
+  printf '<!-- hotfix-release-notes:draft:start -->\n'
   printf '> [!WARNING]\n'
   printf '> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be reviewed before publication.\n\n'
   printf 'Generated from **%s** source issues: **%s** represented in **%s** draft bullets, **%s** omitted, and **%s** pending manual security review.\n\n' \
@@ -121,6 +124,7 @@ trap 'rm -f "$issue_body_file"' EXIT
       | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)\n\n  Suggested release note (pending approval):\n\n  > \($pending.suggestedText)\n"
     ' "$AUDIT_FILE"
   fi
+  printf '\n<!-- hotfix-release-notes:draft:end -->\n'
 } > "$issue_body_file"
 
 if [ "$(wc -c < "$issue_body_file")" -gt 60000 ]; then
