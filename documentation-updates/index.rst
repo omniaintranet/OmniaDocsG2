@@ -3,6 +3,24 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+11 November 2026
+----------------
+
+* `Edit a page <https://omnia-docs-g2.readthedocs.io/en/latest/pages/edit-page/index.html>`__ — **Correction**
+  Clarified that users must be a page collection administrator to edit the top page in a page collection.
+
+* `Page collections <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-collections/index.html>`__ — **Spelling / grammar**
+  Fixed typo in page collections description.
+
+* `Quick links <https://omnia-docs-g2.readthedocs.io/en/latest/user-options/my-links/index.html>`__ — **Updated guidance**
+  Renamed page to Quick links and updated guidance to clarify that features depend on administrator settings rather than being always available.
+
+* `Quick search and Advanced search <https://omnia-docs-g2.readthedocs.io/en/latest/user-options/quick-search-and-advanced-search/index.html>`__ — **Added information**
+  Added Semantic search section with example and explanation of how it works when configured.
+
+* `Read news <https://omnia-docs-g2.readthedocs.io/en/latest/user-options/read-news/index.html>`__ — **Spelling / grammar**
+  Corrected plural subject-verb agreement in a sentence about news availability on the start page.
+
 10 November 2026
 ----------------
 

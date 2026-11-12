@@ -773,9 +773,85 @@
     "10da9a4a5d175dd408fbafaf1c79aca9458baf0a": "2026-11-06",
     "5411f20c27b351d36c7bcd38e7a7fbf5ee75369a": "2026-11-06",
     "638a6f6446dee2a765dddc32405886b0ca2eee52": "2026-11-10",
-    "561de229f22424506710fcfe260db0b9d948e3dd": "2026-11-10"
+    "561de229f22424506710fcfe260db0b9d948e3dd": "2026-11-10",
+    "3b336c438580af5e6c2f501fdbdc2d5018d15256": "2026-11-11",
+    "cf2de72314a851d9926bf95d344331ad5cb5ea1f": "2026-11-11",
+    "08d2b743cae6c069638e83eab1370e19ce58d838": "2026-11-11",
+    "726926cda5401245a81fead7a1bdc27b5ef985b8": "2026-11-11",
+    "6cf8822da9ba40340dac25d1d6236838589bc3c9": "2026-11-11",
+    "7fe420a381b62d5e68f56ed36acdea12751b303c": "2026-11-11",
+    "d44f59a616c8d45955642c5a77d80c7cd9100f0e": "2026-11-11",
+    "c68cb0b73977255cb71776ab8720af87132951f1": "2026-11-11",
+    "811ad6a8b8e8615ec56bcef60e5d3e297d1dda54": "2026-11-11",
+    "7ee20fbef47895703fbc547c5daff8a54b5165d3": "2026-11-11",
+    "f0716a0a9f0fc721ee0e079486d4708bb5c8fb24": "2026-11-11",
+    "acc889caec25135b196c09828d1426a97254d90f": "2026-11-11",
+    "a9662606263213733b33f7587179c0737a35c97a": "2026-11-11",
+    "e50c3ff1ca68360464070ddcb2ce194a13265969": "2026-11-11",
+    "a2c5afeb916711df3d6c215093ce2625a946bdb1": "2026-11-11",
+    "6c25b0944a035542dd518f4f7580de6c1b741f3f": "2026-11-11",
+    "8325d43125a21ceacdec72c1261451dd663749f5": "2026-11-11",
+    "0689f52ea1f985f80daba08545092b3705982589": "2026-11-11"
   },
   "entries": [
+    {
+      "date": "2026-11-11",
+      "path": "user-options/read-news/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected plural subject-verb agreement in a sentence about news availability on the start page.",
+      "sources": [
+        "6c25b0944a035542dd518f4f7580de6c1b741f3f"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "path": "user-options/quick-search-and-advanced-search/index.rst",
+      "classification": "Added information",
+      "description": "Added Semantic search section with example and explanation of how it works when configured.",
+      "sources": [
+        "7ee20fbef47895703fbc547c5daff8a54b5165d3",
+        "a2c5afeb916711df3d6c215093ce2625a946bdb1",
+        "a9662606263213733b33f7587179c0737a35c97a",
+        "acc889caec25135b196c09828d1426a97254d90f",
+        "e50c3ff1ca68360464070ddcb2ce194a13265969",
+        "f0716a0a9f0fc721ee0e079486d4708bb5c8fb24"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "path": "user-options/my-links/index.rst",
+      "classification": "Updated guidance",
+      "description": "Renamed page to Quick links and updated guidance to clarify that features depend on administrator settings rather than being always available.",
+      "sources": [
+        "08d2b743cae6c069638e83eab1370e19ce58d838",
+        "3b336c438580af5e6c2f501fdbdc2d5018d15256",
+        "6cf8822da9ba40340dac25d1d6236838589bc3c9",
+        "726926cda5401245a81fead7a1bdc27b5ef985b8",
+        "7fe420a381b62d5e68f56ed36acdea12751b303c",
+        "811ad6a8b8e8615ec56bcef60e5d3e297d1dda54",
+        "c68cb0b73977255cb71776ab8720af87132951f1",
+        "cf2de72314a851d9926bf95d344331ad5cb5ea1f",
+        "d44f59a616c8d45955642c5a77d80c7cd9100f0e"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "path": "pages/page-collections/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed typo in page collections description.",
+      "sources": [
+        "0689f52ea1f985f80daba08545092b3705982589"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "path": "pages/edit-page/index.rst",
+      "classification": "Correction",
+      "description": "Clarified that users must be a page collection administrator to edit the top page in a page collection.",
+      "sources": [
+        "8325d43125a21ceacdec72c1261451dd663749f5"
+      ]
+    },
     {
       "date": "2026-11-10",
       "path": "general-assets/using-omnia-webparts-sharepoint/index.rst",
