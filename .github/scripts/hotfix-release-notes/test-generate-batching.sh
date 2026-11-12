@@ -18,6 +18,8 @@ mkdir -p "$test_dir/bin"
 
 # The fake model: logs the size of each prompt, then accounts for every issue named in the prompt with
 # one bullet each. FAKE_DROP_ISSUE leaves one issue out of its first answer (not of a follow-up).
+# FAKE_PENDING lists issue numbers (comma-separated) it marks security-sensitive; it still returns
+# the old per-issue suggestedText for them, to prove the script drops it.
 cat > "$test_dir/bin/copilot" <<'FAKE'
 #!/usr/bin/env bash
 prompt=$(cat)
@@ -28,17 +30,25 @@ esac
 list=$(printf '%s\n' "$prompt" | sed -n 's/^- The release data holds [0-9]* issue(s): \(.*\)\. Before returning.*/\1/p')
 drop="${FAKE_DROP_ISSUE:-}"
 case "$prompt" in *"did not account for"*) drop="" ;; esac
-answer=$(jq -n --arg list "$list" --arg drop "$drop" '
-  ($list | split(", ") | map(select(. != $drop)))
-  | map(capture("^(?<r>.+)#(?<n>[0-9]+)$"))
+pending="${FAKE_PENDING:-}"
+answer=$(jq -n --arg list "$list" --arg drop "$drop" --arg pending "$pending" '
+  ($pending | split(",") | map(select(length > 0))) as $p
+  | ($list | split(", ") | map(select(. != $drop)) | map(capture("^(?<r>.+)#(?<n>[0-9]+)$"))) as $issues
   | {
-      bullets: map({
-        text: "- Fixed problem \(.n) in the area.",
-        category: "Other",
-        sourceIssues: [{repositoryWithOwner: .r, number: (.n | tonumber)}]
-      }),
+      bullets: [$issues[] | select(.n as $n | any($p[]; . == $n) | not) |
+        {
+          text: "- Fixed problem \(.n) in the area.",
+          category: "Other",
+          sourceIssues: [{repositoryWithOwner: .r, number: (.n | tonumber)}]
+        }],
       omittedIssues: [],
-      pendingReviewIssues: []
+      pendingReviewIssues: [$issues[] | select(.n as $n | any($p[]; . == $n)) |
+        {
+          repositoryWithOwner: .r,
+          number: (.n | tonumber),
+          reason: "Manual security review required",
+          suggestedText: "- Improved security of problem \(.n)"
+        }]
     }')
 # FAKE_MODE=garbage: never an answer. garbage-once: no answer to the first request only.
 # cut-off-and-again: a fenced block that stops in the middle, then the whole answer again (7.12.12).
@@ -126,6 +136,8 @@ run_generate small "$test_dir/small.json"
 [ ! -e "$run_dir/prompts.log.context" ] && pass "small release: prompt carries no batch context" || fail "small release: unexpected batch context"
 grep -q "go in one request" "$run_log" && fail "small release: batching message printed" || pass "small release: no batching message"
 [ "$(grep -c '^- ' "$run_dir/generated-release-notes.rst")" -eq 3 ] && pass "small release: three bullets" || fail "small release: wrong bullet count"
+grep -q '^- General performance and security improvements' "$run_dir/generated-release-notes.rst" &&
+  fail "small release: general bullet without security issues" || pass "small release: no general bullet"
 
 # 2. A release over the budget (57 issues, as in the failed run): several requests, each under the budget.
 make_release 57 300 "$test_dir/large.json"
@@ -182,6 +194,34 @@ run_generate giveup "$test_dir/small.json" FAKE_MODE=garbage
 [ "$run_status" -ne 0 ] && [ "$(wc -l < "$run_dir/prompts.log")" -eq 2 ] && grep -q "Giving up" "$run_log" &&
   pass "retry: gives up after two attempts" || fail "retry: expected two requests, then a failure"
 [ -s "$run_dir/copilot-release-notes-response.txt" ] && pass "retry: the raw answers are kept for the upload" || fail "retry: no response file kept"
+
+# 9. Security-sensitive issues: exactly one general bullet, no per-issue security wording in the notes.
+run_generate pending "$test_dir/small.json" FAKE_PENDING=2,3
+[ "$run_status" -eq 0 ] || { fail "pending run failed"; cat "$run_log" >&2; }
+[ "$(grep -c '^- General performance and security improvements' "$run_dir/generated-release-notes.rst")" -eq 1 ] &&
+  pass "pending: exactly one general bullet" || fail "pending: expected exactly one general bullet"
+[ "$(grep -c '^- ' "$run_dir/generated-release-notes.rst")" -eq 2 ] &&
+  pass "pending: one public bullet plus the general one" || fail "pending: wrong bullet count"
+jq -e '.pendingReviewIssues | length == 2' "$run_dir/release-notes-audit.json" >/dev/null &&
+  pass "pending: two issues held for review" || fail "pending: wrong pending count"
+jq -e '[.pendingReviewIssues[] | has("suggestedText")] | any | not' "$run_dir/release-notes-audit.json" >/dev/null &&
+  pass "pending: stale per-issue suggestedText dropped" || fail "pending: suggestedText survived in the audit"
+grep -q "Improved security of problem" "$run_dir/generated-release-notes.rst" &&
+  fail "pending: per-issue security wording in the notes" || pass "pending: no per-issue security wording"
+
+# 10. Batched with security-sensitive issues across batches: still exactly one general bullet.
+run_generate pending-batched "$test_dir/large.json" FAKE_PENDING=5,25,45
+[ "$run_status" -eq 0 ] || { fail "pending batched run failed"; tail -20 "$run_log" >&2; }
+[ "$(grep -c '^- General performance and security improvements' "$run_dir/generated-release-notes.rst")" -eq 1 ] &&
+  pass "pending batched: one general bullet across batches" || fail "pending batched: general bullet count wrong"
+[ "$(grep -c '^- ' "$run_dir/generated-release-notes.rst")" -eq 55 ] &&
+  pass "pending batched: 54 public bullets plus the general one" || fail "pending batched: wrong bullet count"
+jq -e '.pendingReviewIssues | length == 3' "$run_dir/release-notes-audit.json" >/dev/null &&
+  pass "pending batched: three issues held for review" || fail "pending batched: wrong pending count"
+jq -e '([.pendingReviewIssues[].number] | sort) == [5, 25, 45]' "$run_dir/release-notes-audit.json" >/dev/null &&
+  pass "pending batched: the held issues are 5, 25 and 45" || fail "pending batched: wrong issues held"
+jq -e '([.bullets[].sourceIssues[].number] | sort) == ([range(1; 58)] - [5, 25, 45])' "$run_dir/release-notes-audit.json" >/dev/null &&
+  pass "pending batched: held issues stay out of public bullets" || fail "pending batched: a held issue leaked into a bullet"
 
 if [ "$failures" -gt 0 ]; then
   echo "$failures check(s) failed." >&2

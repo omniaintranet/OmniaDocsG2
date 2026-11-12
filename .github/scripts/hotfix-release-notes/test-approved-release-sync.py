@@ -13,7 +13,8 @@ sync = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(sync)
 
 SECTION = "7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n- Final reviewer-edited release note (#59036)"
-GENERATED = "7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n- Generated release note (#59036)"
+GENERATED = ("7.11.99\n========================================\n(Omnia 7.11.99 / WCM 7.11.99)\n\n"
+             "- Generated release note (#59036)\n- General performance and security improvements")
 PR_URL = "https://github.com/omniaintranet/OmniaDocsG2/pull/99"
 DENIED = "gh: Resource not accessible by personal access token"
 
@@ -22,14 +23,17 @@ def draft_body(notes=GENERATED, *, extra="", markers=False):
     """The notification body as create-ready-project-item.sh writes it (markers: as it does since they exist)."""
     body = ("> [!WARNING]\n> **DRAFT - NOT APPROVED.** These release notes were generated automatically and must be "
             "reviewed before publication.\n\n"
-            "Generated from **2** source issues: **1** represented in **1** draft bullets, **0** omitted, and **1** "
+            "Generated from **2** source issues: **1** represented in **2** draft bullets, **0** omitted, and **1** "
             "pending manual security review.\n\n"
             f"[Review the documentation pull request]({PR_URL}).\n\n"
             f"## Generated draft release notes\n\n```text\n{notes}\n```\n\n"
             "## Issues not included in the draft\n\n- None. No issues were finally omitted.\n\n"
             "## Security-sensitive issues pending manual review\n\n"
-            "- [omniaintranet/OmniaMono#60001](https://github.com/omniaintranet/OmniaMono/issues/60001) - Needs review\n\n"
-            "  Suggested release note (pending approval):\n\n  > - Improved security validation of URLs\n" + extra)
+            "These issues are held outside the public draft. The draft covers them with one general bullet, "
+            "\"General performance and security improvements\"; no per-issue release note is published for them. "
+            "Review whether that is enough for each issue, or whether an issue needs its own wording, under the "
+            "applicable disclosure policy.\n\n"
+            "- [omniaintranet/OmniaMono#60001](https://github.com/omniaintranet/OmniaMono/issues/60001) - Needs review" + extra)
     return f"{sync.GENERATED_START}\n{body}\n{sync.GENERATED_END}\n" if markers else body
 
 
@@ -300,9 +304,11 @@ class KeptDraftTests(unittest.TestCase):
         self.assertIn(SECTION, approved)
         self.assertNotIn(GENERATED, approved)
         self.assertIn(GENERATED, draft)
-        # Christian, 2026-11-03: the security-review section stays as it is, with its suggested wording.
+        # Christian, 2026-11-03/2026-11-12: the security-review section stays, now covered by the general bullet.
         self.assertIn("### Security-sensitive issues pending manual review", draft)
-        self.assertIn("> - Improved security validation of URLs", draft)
+        self.assertIn("covers them with one general bullet", draft)
+        self.assertIn("- General performance and security improvements", draft)
+        self.assertNotIn("Suggested release note", draft)
         self.assertIn("### Issues not included in the draft", draft)
         self.assertIn("### Generated draft release notes", draft)
         self.assertNotIn("\n## ", draft, "The draft's headings sit one level below the kept-draft heading")
@@ -362,8 +368,9 @@ class KeptDraftTests(unittest.TestCase):
         _, draft = self.kept_section(self.plan()["body"])
         for part in ("### Draft notes", GENERATED, "### Issues not included in the draft",
                      "### Security-sensitive issues pending manual review", "Needs review",
-                     "> - Improved security validation of URLs"):
+                     "covers them with one general bullet"):
             self.assertIn(part, draft)
+        self.assertNotIn("Suggested release note", draft)
         self.assertNotIn(sync.GENERATED_START, draft)
         self.assertNotIn(sync.GENERATED_END, draft)
 
@@ -378,7 +385,7 @@ class KeptDraftTests(unittest.TestCase):
         self.assertNotIn("Generated bullet", draft)
         self.assertNotIn(sync.DRAFT_CUT, draft)
         for part in ("### Issues not included in the draft", "### Security-sensitive issues pending manual review",
-                     "Needs review", "> - Improved security validation of URLs"):
+                     "Needs review", "covers them with one general bullet"):
             self.assertIn(part, draft)
         self.assertEqual(body.count("```") % 2, 0, "Every code fence is closed")
         self.items[0]["content"]["body"] = body
