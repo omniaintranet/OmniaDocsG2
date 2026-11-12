@@ -119,7 +119,7 @@ There's many, many blocks you can use. You add additional blocks, work with the 
 
 **Note!** When editing a page, blocks that belong to the page type may be locked, meaning they can not be moved or deleted, and settings for those blocks can't be edited. But content can be edited, if applicable, using Write mode. For more information on this, see *Lock a block or not*, below.
 
-There can also be section or block templates available, that you can use. A template is a section or a block with a number of pre defined settings.
+There can also be section or block templates available in the block gallery, set up in Omnia admin. A template is a section or a block with a number of pre defined settings.
 
 Copy a block from the clipboard
 ---------------------------------------------
