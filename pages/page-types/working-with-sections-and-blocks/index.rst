@@ -15,7 +15,7 @@ You can really work the way you want, you don't need a section to add a block, f
 
 .. image:: sections-1-712.png
 
-2. select the base layout (image below using the Block gallery).
+2. select the base layout (images below uses the Block gallery).
 
 .. image:: sections-2-712.png
 
