@@ -22,15 +22,15 @@ You can set permissions for all variation pages of a certain type in the page co
 4. Select "Enable variation specific permissions".
 5. Set permissions for editor and/or author for the variation.
 
-.. image:: permission-variation-page-collection-permissions-711.png
+.. image:: permission-variation-page-collection-permissions-712.png
 
 6. Save.
 
-Note that the variation you set permissions for is shown, in this example "Svenska".
+Note that the variation you set permissions for is shown, in this example "se" for svenska.
 
 Permission for a specific variation page
 ---------------------------------------------
-If needed, you can set permissions for a specific variation page. Here's an example of a case where that could be needed: The page collection is an employee handbook and two colleagues in Sweden are responsible for the handbook, but there is a variation in Denmark for the page regarding holidays. A local Danish colleague is appointed responsible for the Danish variation of the holidays page only. He or she should not be able to edit any other pages in the page collection. 
+If needed, you can set permissions for a specific variation page. An example where this may be needed could be if some information in an enployee handbook, for example regarding holidays, differs between countries. 
  
 This is how it's set up: 
 
@@ -40,12 +40,9 @@ This is how it's set up:
 4. Select "Enable variation specific permissions". 
 5. Add editor and/or author permissions for the variation.
 
-.. image:: page-permissions-variation-specific-page.png
+.. image:: page-permissions-variation-specific-page-712.png
 
 6. Save.
 
 Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected.
-
-
-
 
