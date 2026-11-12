@@ -184,20 +184,27 @@ merged_audit_file=$(mktemp)
 layout_file=$(mktemp)
 review_input_file=$(mktemp)
 review_notes_file=$(mktemp)
-trap 'rm -f "$response_file" "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$missing_input_file" "$merged_audit_file" "$layout_file" "$review_input_file" "$review_notes_file"' EXIT
+# The batch files of account_for_issues: listed here so that a failed request leaves none behind.
+batch_remaining_file=$(mktemp)
+batch_file=$(mktemp)
+trap 'rm -f "$batch_remaining_file" "$batch_file" "$response_file" "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$missing_input_file" "$merged_audit_file" "$layout_file" "$review_input_file" "$review_notes_file"' EXIT
 
-# Sends the prompt in $2 to Copilot and leaves its answer, normalized and checked for shape, in
-# $canonical_response_file. Every raw answer is appended to $RESPONSE_FILE under the label in $1;
-# the workflow uploads that file when generation fails.
-request_audit() {
+# One request. Sends the prompt in $2 to Copilot and leaves its answer, normalized and checked for shape,
+# in $canonical_response_file. Every raw answer is appended to $RESPONSE_FILE under the label in $1;
+# the workflow uploads that file when generation fails. Returns 1 when the answer is unusable (empty, no
+# JSON, wrong shape), which request_audit may ask again, and 2 when Copilot itself failed.
+# request_audit calls it in a condition, where `set -e` does not apply: every step here is checked.
+request_audit_once() {
   local label="$1" prompt="$2"
 
-  printf '%s\n' "$prompt" |
+  if ! printf '%s\n' "$prompt" |
     copilot \
       -s \
       --no-ask-user \
       --no-custom-instructions \
-      > "$response_file"
+      > "$response_file"; then
+    return 2
+  fi
 
   sed -i 's/\r$//' "$response_file"
 
@@ -209,7 +216,7 @@ request_audit() {
 
   if [ ! -s "$response_file" ]; then
     echo "Copilot returned an empty response."
-    exit 1
+    return 1
   fi
 
   # Copilot can wrap an otherwise valid JSON object in an introduction or a
@@ -231,14 +238,17 @@ request_audit() {
     {
       normalized_line = tolower($0)
 
-      if (!in_json && normalized_line ~ /^[[:space:]]*```json[[:space:]]*$/) {
-        if (found > 0) {
+      # Copilot can stream a cut-off block and then the whole answer again (7.12.12). The last block is
+      # the answer; an earlier one may be cut off, but a complete earlier one is ambiguous.
+      if (normalized_line ~ /^[[:space:]]*```json[[:space:]]*$/) {
+        if (complete) {
           invalid = 1
           exit
         }
 
-        found = 1
+        found++
         in_json = 1
+        text = ""
         next
       }
 
@@ -249,14 +259,16 @@ request_audit() {
       }
 
       if (in_json) {
-        print
+        text = text $0 "\n"
       }
     }
 
     END {
-      if (invalid || found != 1 || complete != 1 || in_json) {
+      if (invalid || found < 1 || !complete || in_json) {
         exit 1
       }
+
+      printf "%s", text
     }
   ' "$response_file" > "$extracted_response_file" &&
     jq -e -s '
@@ -272,7 +284,7 @@ request_audit() {
     echo "Normalized Copilot's formatted JSON response."
   else
     echo "Copilot did not return a JSON object for the release-note audit." >&2
-    exit 1
+    return 1
   fi
 
   # Canonicalize harmless model variations while retaining strict validation of
@@ -487,7 +499,7 @@ request_audit() {
     }
   ' "$normalized_response_file" > "$canonical_response_file" 2>/dev/null; then
     echo "Copilot returned an unsupported release-note audit structure." >&2
-    exit 1
+    return 1
   fi
 
   if ! jq -e '
@@ -534,8 +546,36 @@ request_audit() {
     )
     echo "Copilot did not return the required release-note audit JSON." >&2
     echo "Safe audit shape: $audit_shape" >&2
-    exit 1
+    return 1
   fi
+}
+
+# Asks Copilot as request_audit_once does, and asks again when the answer is unusable, up to
+# $MAX_REQUEST_ATTEMPTS requests in all: a long answer can come back cut off or garbled, and the next one
+# is usually fine. A failure of Copilot itself, such as the prompt budget, is not asked again.
+MAX_REQUEST_ATTEMPTS="${MAX_REQUEST_ATTEMPTS:-2}"
+request_audit() {
+  local label="$1" prompt="$2" attempt=1 status=0
+
+  while :; do
+    request_audit_once "$label" "$prompt" && status=0 || status=$?
+    if [ "$status" -eq 0 ]; then
+      return 0
+    fi
+
+    if [ "$status" -eq 2 ]; then
+      echo "Copilot failed ($label)." >&2
+      exit 1
+    fi
+
+    if [ "$attempt" -ge "$MAX_REQUEST_ATTEMPTS" ]; then
+      echo "Giving up on the request after $attempt attempt(s) ($label)." >&2
+      exit 1
+    fi
+
+    attempt=$((attempt + 1))
+    echo "The answer could not be used; asking again (attempt $attempt of $MAX_REQUEST_ATTEMPTS, $label)."
+  done
 }
 
 # A request must stay under the model's prompt budget (Copilot refuses a larger one: 57 issues in one
@@ -545,6 +585,8 @@ request_audit() {
 # third of the limit as margin for the output and for text that tokenizes worse than average.
 PROMPT_TOKEN_BUDGET="${PROMPT_TOKEN_BUDGET:-90000}"
 CHARS_PER_TOKEN="${CHARS_PER_TOKEN:-3}"
+# The answer grows with the issues too, and a long one is more likely to come back cut off.
+MAX_ISSUES_PER_REQUEST="${MAX_ISSUES_PER_REQUEST:-20}"
 # Per issue, on top of its JSON: its entry in the list of issues to account for.
 ISSUE_LIST_CHARS=80
 prompt_budget_chars=$((PROMPT_TOKEN_BUDGET * CHARS_PER_TOKEN))
@@ -563,8 +605,8 @@ count_fitting_issues() {
   ' "$1"
 }
 
-# A single issue that alone exceeds the capacity of a request is shortened for the request (its body and
-# its oldest comments), in steps, until it fits. Only the model sees the shortened issue; the checks
+# A single issue that alone exceeds the capacity of a request is shortened for the request (its body is cut
+# and its oldest comments are dropped), in steps, until it fits. Only the model sees the shortened issue; the checks
 # afterwards use the full data. $1 is a release file with that one issue, $2 the capacity.
 shorten_issue_to_fit() {
   local file="$1" capacity="$2" limits body_limit comment_limit comment_count issue_size
@@ -653,12 +695,10 @@ merge_answer_into_audit() {
 # earlier answers left out). The issues go out in as many requests as the prompt budget needs.
 account_for_issues() {
   local input="$1" label="$2" mode="$3"
-  local remaining_file batch_file total batch_number=0 count capacity empty_prompt
+  local remaining_file="$batch_remaining_file" total batch_number=0 count capacity empty_prompt
   local context extra written_bullets batch_label batch_keys remaining_count
 
   total=$(jq '.releases[0].issues | length' "$input")
-  remaining_file=$(mktemp)
-  batch_file=$(mktemp)
   cp "$input" "$remaining_file"
 
   while :; do
@@ -694,6 +734,9 @@ The release data below holds only some of this release's issues. The other issue
     fi
 
     count=$(count_fitting_issues "$remaining_file" "$capacity")
+    if [ "$count" -gt "$MAX_ISSUES_PER_REQUEST" ]; then
+      count="$MAX_ISSUES_PER_REQUEST"
+    fi
     jq -c --argjson n "$count" '.releases[0].issues |= .[:$n]' "$remaining_file" > "$batch_file"
     jq -c --argjson n "$count" '.releases[0].issues |= .[$n:]' "$remaining_file" > "$remaining_file.next"
     mv "$remaining_file.next" "$remaining_file"
@@ -707,7 +750,7 @@ The release data below holds only some of this release's issues. The other issue
     batch_label="$label"
     if [ "$count" -lt "$total" ]; then
       batch_label="$label, batch $batch_number ($count of $total issues)"
-      echo "The prompt budget (about $PROMPT_TOKEN_BUDGET tokens) does not take all $total issues in one request: sending batch $batch_number with $count issue(s)."
+      echo "Not all $total issues go in one request (prompt budget about $PROMPT_TOKEN_BUDGET tokens, at most $MAX_ISSUES_PER_REQUEST issues): sending batch $batch_number with $count issue(s)."
     fi
 
     request_audit "$batch_label" "$(build_prompt "$(jq -c . "$batch_file")" "$context" "$extra")"
@@ -722,7 +765,6 @@ The release data below holds only some of this release's issues. The other issue
     fi
   done
 
-  rm -f "$remaining_file" "$batch_file"
 }
 
 printf '{"bullets":[],"omittedIssues":[],"pendingReviewIssues":[]}\n' > "$AUDIT_FILE"
