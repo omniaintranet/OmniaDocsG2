@@ -95,7 +95,7 @@ For more information on targeting settings, see: :doc:`Using targeting </general
 
 Edit contents of a page variation
 --------------------------------------
-When more than one variation of the page exists, an editor can select variation to work with in the list. 
+When more than one variation of the page exists, an editor can select variation to work with in the list. (The list can be placed anywhere on the page, it's a block).
 
 .. image:: select-variation-711.png
 
