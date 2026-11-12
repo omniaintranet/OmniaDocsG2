@@ -19,7 +19,7 @@ One example where "Flat" is a relevant choice, is when creating a new page colle
 
 6. Click CREATE.
 
-The new page collection is created and placed in the editor's navigation. You can now add pages and everything elseyou need.
+The new page collection is created and placed in the editor's navigation. You can now add pages and everything else you need.
 
 For settings for the page collection, see :doc:`Settings for page collections </pages/page-collections/page-collection-settings/index>`
 
