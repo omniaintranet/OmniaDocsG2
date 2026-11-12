@@ -3,14 +3,14 @@ Permissions for variation pages
 
 A variation page is a copy of a source page that contain some sort of alternative content. It can for example be the source text in another language, but variations can really be used for a lot of purposes.
 
-As a variation is a page, normal permissions for pages within a page collection apply. Colleagues that are permitted to edit the source page, can edit the variations of that page as well, if no specific permissions are set up (see below). Page collection administrators can always edit all pages in a page collection, variation pages included, regardless if how other permissions are set up.
+As a variation is a page, normal permissions for pages within a page collection apply. Colleagues that are permitted to edit the source page, can edit the variations of that page as well, if no specific permissions are set up (see below). Page collection administrators can always edit all pages in a page collection, variation pages included, regardless if how other permissions are set up, as long as inheritance is not broken.
 
-If a variation page is created by machine translation, it can't be edited by anyone. This is an exception to the rule above.
+Variation authors can be added to a variation using the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
+
+Variation authors for the page collection can also be set the way described here, and if speecific permissions for a variation page is needed, it must be set for the page, as described here.
 
 Variation specific permissions
 **********************************
-You can set variation specific permissions if needed, using the navigation view. **Note**: Variation authors can also be set in the settings for the variation, using the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
-
 You can set permissions for all variation pages of a certain type in the page collection, this way:
 
 1. Open a page for editing.
