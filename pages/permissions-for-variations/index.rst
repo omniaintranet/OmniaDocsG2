@@ -9,7 +9,7 @@ If a variation page is created by machine translation, it can't be edited by any
 
 Variation specific permissions
 **********************************
-You can set variation specific permissions if needed, using the navigation view. **Note**: You can also set variation authors in the settings for the variation, using the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
+You can set variation specific permissions if needed, using the navigation view. **Note**: Variation authors can also be set in the settings for the variation, using the publishing app settings, see: :doc:`Publishing app settings </pages/page-settings/index>`
 
 You can set permissions for all variation pages of a certain type in the page collection, this way:
 
