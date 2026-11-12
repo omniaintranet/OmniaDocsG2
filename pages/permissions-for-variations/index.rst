@@ -38,11 +38,11 @@ This is how it's set up:
 2. Select the variation you would like to set permissions for.
 3. Break inheritance.
 4. Select "Enable variation specific permissions". 
+
+.. image:: page-permissions-variation-specific-page-712-frame.png
+
 5. Add editor and/or author permissions for the variation.
-
-.. image:: page-permissions-variation-specific-page-712.png
-
 6. Save.
 
-Now the variation of this page, Dansk in this example, can only be edited by the colleauge(s) you have selected.
+Now the variation of this page, can only be edited by the colleauge(s) you have selected.
 
