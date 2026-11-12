@@ -28,7 +28,7 @@ esac
 list=$(printf '%s\n' "$prompt" | sed -n 's/^- The release data holds [0-9]* issue(s): \(.*\)\. Before returning.*/\1/p')
 drop="${FAKE_DROP_ISSUE:-}"
 case "$prompt" in *"did not account for"*) drop="" ;; esac
-jq -n --arg list "$list" --arg drop "$drop" '
+answer=$(jq -n --arg list "$list" --arg drop "$drop" '
   ($list | split(", ") | map(select(. != $drop)))
   | map(capture("^(?<r>.+)#(?<n>[0-9]+)$"))
   | {
@@ -39,7 +39,26 @@ jq -n --arg list "$list" --arg drop "$drop" '
       }),
       omittedIssues: [],
       pendingReviewIssues: []
-    }'
+    }')
+# FAKE_MODE=garbage: never an answer. garbage-once: no answer to the first request only.
+# cut-off-and-again: a fenced block that stops in the middle, then the whole answer again (7.12.12).
+case "${FAKE_MODE:-}" in
+  garbage) echo "Sorry, I could not produce the release notes."; exit 0 ;;
+  garbage-once)
+    if [ ! -e "$FAKE_LOG.garbage" ]; then
+      : > "$FAKE_LOG.garbage"
+      echo "Sorry, I could not produce the release notes."
+      exit 0
+    fi
+    ;;
+  cut-off-and-again)
+    printf '```json\n'
+    printf '%s\n' "$answer" | head -n 9
+    printf '\n\n\n```json\n%s\n```\n' "$answer"
+    exit 0
+    ;;
+esac
+printf '%s\n' "$answer"
 FAKE
 chmod +x "$test_dir/bin/copilot"
 
@@ -105,7 +124,7 @@ run_generate small "$test_dir/small.json"
 [ "$run_status" -eq 0 ] || { fail "small release failed"; cat "$run_log" >&2; }
 [ "$(wc -l < "$run_dir/prompts.log")" -eq 1 ] && pass "small release: one request" || fail "small release: expected one request"
 [ ! -e "$run_dir/prompts.log.context" ] && pass "small release: prompt carries no batch context" || fail "small release: unexpected batch context"
-grep -q "does not take all" "$run_log" && fail "small release: batching message printed" || pass "small release: no batching message"
+grep -q "go in one request" "$run_log" && fail "small release: batching message printed" || pass "small release: no batching message"
 [ "$(grep -c '^- ' "$run_dir/generated-release-notes.rst")" -eq 3 ] && pass "small release: three bullets" || fail "small release: wrong bullet count"
 
 # 2. A release over the budget (57 issues, as in the failed run): several requests, each under the budget.
@@ -141,6 +160,28 @@ run_generate huge "$test_dir/huge.json"
 run_generate tight "$test_dir/small.json" PROMPT_TOKEN_BUDGET=6000
 [ "$run_status" -eq 0 ] || { fail "tight budget run failed"; tail -20 "$run_log" >&2; }
 [ "$(wc -l < "$run_dir/prompts.log")" -gt 1 ] && pass "tight budget: several requests" || fail "tight budget: expected several requests"
+
+# 6. The issue cap: small issues that fit the budget still go out 20 at a time.
+make_release 50 20 "$test_dir/many-small.json"
+run_generate cap "$test_dir/many-small.json"
+[ "$run_status" -eq 0 ] || { fail "cap run failed"; tail -20 "$run_log" >&2; }
+[ "$(wc -l < "$run_dir/prompts.log")" -eq 3 ] && pass "issue cap: 50 issues in 3 requests" || fail "issue cap: expected 3 requests"
+[ "$(grep -o "sending batch [0-9]* with [0-9]*" "$run_log" | awk '{print $5}' | sort -n | tail -n1)" -le 20 ] &&
+  pass "issue cap: no batch over 20 issues" || fail "issue cap: a batch holds more than 20 issues"
+
+# 7. An answer that streams a cut-off block and then the whole answer again is read (7.12.12).
+run_generate cutoff "$test_dir/small.json" FAKE_MODE=cut-off-and-again
+[ "$run_status" -eq 0 ] || { fail "cut-off answer run failed"; tail -20 "$run_log" >&2; }
+[ "$(grep -c '^- ' "$run_dir/generated-release-notes.rst")" -eq 3 ] && pass "cut-off answer: the complete block was used" || fail "cut-off answer: wrong bullet count"
+
+# 8. An unusable answer is asked for again once; a second one stops the run with the answer in the log file.
+run_generate retry "$test_dir/small.json" FAKE_MODE=garbage-once
+[ "$run_status" -eq 0 ] || { fail "retry run failed"; tail -20 "$run_log" >&2; }
+[ "$(wc -l < "$run_dir/prompts.log")" -eq 2 ] && grep -q "asking again" "$run_log" && pass "retry: asked again after an unusable answer" || fail "retry: expected a second request"
+run_generate giveup "$test_dir/small.json" FAKE_MODE=garbage
+[ "$run_status" -ne 0 ] && [ "$(wc -l < "$run_dir/prompts.log")" -eq 2 ] && grep -q "Giving up" "$run_log" &&
+  pass "retry: gives up after two attempts" || fail "retry: expected two requests, then a failure"
+[ -s "$run_dir/copilot-release-notes-response.txt" ] && pass "retry: the raw answers are kept for the upload" || fail "retry: no response file kept"
 
 if [ "$failures" -gt 0 ]; then
   echo "$failures check(s) failed." >&2
