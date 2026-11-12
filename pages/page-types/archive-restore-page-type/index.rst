@@ -1,7 +1,7 @@
 Delete or restore a local page type
 ======================================
 
-An unused page type can be deleted (archived). If the page type is used for any active page, it can't be deleted. If the pages are deleted, the page type can also be deleted.
+An unused page type can be deleted (archived). But, if the page type is used for any active page, it can't be deleted, the pages must be deleted first.
 
 Do the following to delete a local page type:
 
