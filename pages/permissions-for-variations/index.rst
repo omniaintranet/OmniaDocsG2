@@ -44,5 +44,5 @@ This is how it's set up:
 5. Add editor and/or author permissions for the variation.
 6. Save.
 
-Now the variation of this page, can only be edited by the colleauge(s) you have selected.
+Now the variation of this page can only be edited by the colleauge(s) you have selected.
 
