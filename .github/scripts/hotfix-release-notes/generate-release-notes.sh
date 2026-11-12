@@ -82,9 +82,6 @@ echo "Issues: $issue_count"
 
 skill_instructions=$(cat "$SKILL_FILE")
 category_names=$(grep -v -e '^[[:space:]]*#' -e '^[[:space:]]*$' "$CATEGORIES_FILE")
-# Compact JSON: the release data is by far the largest part of the prompt.
-release_data=$(jq -c . "$INPUT_FILE")
-
 # The documentation review's rules, read from its rule files (.github/docs-review/README.md),
 # so the notes are written to pass the review that runs on them afterwards.
 if ! review_rules=$("$PYTHON" "$REVIEW_SCRIPT" --prompt-rules); then
@@ -541,9 +538,195 @@ request_audit() {
   fi
 }
 
-request_audit "all $issue_count issues" "$(build_prompt "$release_data")"
+# A request must stay under the model's prompt budget (Copilot refuses a larger one: 57 issues in one
+# prompt were about 238,000 tokens against a limit of 136,000). The release data is by far the largest
+# part of the prompt, so a release whose data does not fit goes out in several requests of whole
+# issues. The size is estimated from the characters of the finished prompt; the defaults leave about a
+# third of the limit as margin for the output and for text that tokenizes worse than average.
+PROMPT_TOKEN_BUDGET="${PROMPT_TOKEN_BUDGET:-90000}"
+CHARS_PER_TOKEN="${CHARS_PER_TOKEN:-3}"
+# Per issue, on top of its JSON: its entry in the list of issues to account for.
+ISSUE_LIST_CHARS=80
+prompt_budget_chars=$((PROMPT_TOKEN_BUDGET * CHARS_PER_TOKEN))
 
-jq '{bullets, omittedIssues, pendingReviewIssues}' "$canonical_response_file" > "$AUDIT_FILE"
+# Prints how many of the leading issues of the release file $1 fit into $2 characters; at least one.
+count_fitting_issues() {
+  jq --argjson capacity "$2" --argjson extra "$ISSUE_LIST_CHARS" '
+    .releases[0].issues as $issues
+    | reduce range(0; $issues | length) as $n ({used: 0, count: 0, full: false};
+        ($issues[$n] | tojson | length) + $extra as $size
+        | if .full then .
+          elif .count > 0 and .used + $size > $capacity then .full = true
+          else .used += $size | .count += 1
+          end)
+    | .count
+  ' "$1"
+}
+
+# A single issue that alone exceeds the capacity of a request is shortened for the request (its body and
+# its oldest comments), in steps, until it fits. Only the model sees the shortened issue; the checks
+# afterwards use the full data. $1 is a release file with that one issue, $2 the capacity.
+shorten_issue_to_fit() {
+  local file="$1" capacity="$2" limits body_limit comment_limit comment_count issue_size
+  issue_size=$(jq '.releases[0].issues[0] | tojson | length' "$file")
+
+  for limits in "6000 1500 8" "3000 800 4" "1500 400 2" "800 200 1"; do
+    [ "$issue_size" -le "$capacity" ] && return 0
+    read -r body_limit comment_limit comment_count <<< "$limits"
+    jq -c --argjson body "$body_limit" --argjson comment "$comment_limit" --argjson keep "$comment_count" '
+      def cut($n): if type == "string" and length > $n then .[:$n] + " [shortened]" else . end;
+      .releases[0].issues[0] |= (
+        .body |= cut($body)
+        | .comments |= (.[-$keep:] | map(.body |= cut($comment)))
+      )
+    ' "$file" > "$file.next" && mv "$file.next" "$file"
+    issue_size=$(jq '.releases[0].issues[0] | tojson | length' "$file")
+  done
+
+  if [ "$issue_size" -gt "$capacity" ]; then
+    echo "::warning title=Release notes::An issue is larger than one request even after shortening it; the model may refuse the request."
+  fi
+}
+
+# Adds the answer in $canonical_response_file to the audit in $AUDIT_FILE. $1 is the JSON array of
+# issues the request was about. With a message in $2 the answer may name no other issue: the run stops
+# with the message followed by the issues named outside the request. Without a message the check of the
+# whole audit does that later. A bullet repeated from the bullets already written may repeat its
+# own sources. An empty audit takes the answer as it is.
+merge_answer_into_audit() {
+  local requested="$1" message="${2:-}" outside=""
+
+  if [ -n "$message" ]; then
+    outside=$(
+    jq -r --argjson requested "$requested" --slurpfile audit "$AUDIT_FILE" '
+      def key: "\(.repositoryWithOwner)#\(.number)";
+      $audit[0].bullets as $written
+      | [
+          (
+            .bullets[]
+            | .text as $text
+            | [$written[] | select(.text == $text) | .sourceIssues[] | key] as $known
+            | .sourceIssues[]
+            | key
+            | select(. as $issue | any($known[]; . == $issue) | not)
+          ),
+          (.omittedIssues[], .pendingReviewIssues[] | key)
+        ]
+      | unique - $requested
+      | join(", ")
+    ' "$canonical_response_file"
+    )
+  fi
+
+  if [ -n "$outside" ]; then
+    echo "$message $outside" >&2
+    exit 1
+  fi
+
+  if jq -e '[.[] | length] | add == 0' "$AUDIT_FILE" >/dev/null; then
+    jq '{bullets, omittedIssues, pendingReviewIssues}' "$canonical_response_file" > "$merged_audit_file"
+  else
+    jq --slurpfile answer "$canonical_response_file" '
+      reduce $answer[0].bullets[] as $bullet (
+        .;
+        (first(range(0; .bullets | length) as $n | select(.bullets[$n].text == $bullet.text) | $n) // null) as $index
+        | if $index == null then
+            .bullets += [$bullet]
+          else
+            .bullets[$index].sourceIssues |= (
+              . as $known
+              | . + [$bullet.sourceIssues[] | select(. as $issue | any($known[]; . == $issue) | not)]
+            )
+          end
+      )
+      | .omittedIssues += $answer[0].omittedIssues
+      | .pendingReviewIssues += $answer[0].pendingReviewIssues
+    ' "$AUDIT_FILE" > "$merged_audit_file"
+  fi
+
+  cat "$merged_audit_file" > "$AUDIT_FILE"
+}
+
+# Asks Copilot about every issue of the release file $1 and merges the answers into $AUDIT_FILE.
+# $2 is the label of the request in the log, $3 the mode: "initial" (the first request carries no context;
+# a later batch is told which bullets are already written) or "follow-up" (always told, for issues the
+# earlier answers left out). The issues go out in as many requests as the prompt budget needs.
+account_for_issues() {
+  local input="$1" label="$2" mode="$3"
+  local remaining_file batch_file total batch_number=0 count capacity empty_prompt
+  local context extra written_bullets batch_label batch_keys remaining_count
+
+  total=$(jq '.releases[0].issues | length' "$input")
+  remaining_file=$(mktemp)
+  batch_file=$(mktemp)
+  cp "$input" "$remaining_file"
+
+  while :; do
+    remaining_count=$(jq '.releases[0].issues | length' "$remaining_file")
+    [ "$remaining_count" -gt 0 ] || break
+
+    context=""
+    extra=""
+    if [ "$mode" = "follow-up" ] || [ "$batch_number" -gt 0 ]; then
+      written_bullets=$(jq -c '[.bullets[] | {text, category}]' "$AUDIT_FILE")
+      if [ "$mode" = "follow-up" ]; then
+        context="Release-note bullets already written for this release from its other issues (reference data; change none of them):
+
+$written_bullets
+
+The release data below holds only the issues that the previous answer did not account for."
+      else
+        context="Release-note bullets already written for this release from its other issues (reference data; change none of them):
+
+$written_bullets
+
+The release data below holds only some of this release's issues. The other issues are handled in separate requests, so account for the issues below only."
+      fi
+      extra="- Account for every issue in the release data below, and for no other issue.
+- When an issue below describes the same user-visible change as a bullet already written, return that bullet with its text copied exactly and only the issue below under sourceIssues; the script adds the issue to the existing bullet. Otherwise write a new bullet, and do not repeat the opening of a bullet already written."
+    fi
+
+    # The room left for issues once the instructions, rules and context are in the prompt.
+    empty_prompt=$(build_prompt '{"releases":[{"issues":[]}]}' "$context" "$extra")
+    capacity=$((prompt_budget_chars - ${#empty_prompt}))
+    if [ "$capacity" -lt 1 ]; then
+      capacity=1
+    fi
+
+    count=$(count_fitting_issues "$remaining_file" "$capacity")
+    jq -c --argjson n "$count" '.releases[0].issues |= .[:$n]' "$remaining_file" > "$batch_file"
+    jq -c --argjson n "$count" '.releases[0].issues |= .[$n:]' "$remaining_file" > "$remaining_file.next"
+    mv "$remaining_file.next" "$remaining_file"
+
+    if [ "$count" -eq 1 ]; then
+      shorten_issue_to_fit "$batch_file" "$capacity"
+    fi
+
+    batch_number=$((batch_number + 1))
+    batch_keys=$(jq -c '[.releases[0].issues[] | "\(.repositoryWithOwner)#\(.number)"]' "$batch_file")
+    batch_label="$label"
+    if [ "$count" -lt "$total" ]; then
+      batch_label="$label, batch $batch_number ($count of $total issues)"
+      echo "The prompt budget (about $PROMPT_TOKEN_BUDGET tokens) does not take all $total issues in one request: sending batch $batch_number with $count issue(s)."
+    fi
+
+    request_audit "$batch_label" "$(build_prompt "$(jq -c . "$batch_file")" "$context" "$extra")"
+    # The first answer of an initial pass is checked as a whole afterwards (audit_problems); every other
+    # answer may name only the issues it was asked about.
+    if [ "$mode" = "follow-up" ]; then
+      merge_answer_into_audit "$batch_keys" "The follow-up answer names issues that were not missing:"
+    elif [ "$batch_number" -gt 1 ]; then
+      merge_answer_into_audit "$batch_keys" "The answer for batch $batch_number names issues that are not in that batch:"
+    else
+      merge_answer_into_audit "$batch_keys"
+    fi
+  done
+
+  rm -f "$remaining_file" "$batch_file"
+}
+
+printf '{"bullets":[],"omittedIssues":[],"pendingReviewIssues":[]}\n' > "$AUDIT_FILE"
+account_for_issues "$INPUT_FILE" "all $issue_count issues" initial
 
 expected_issue_keys=$(
   jq -c '
@@ -609,62 +792,10 @@ while :; do
     .releases[0].issues |= map(select("\(.repositoryWithOwner)#\(.number)" as $key | any($missing[]; . == $key)))
   ' "$INPUT_FILE" > "$missing_input_file"
 
-  written_bullets=$(jq -c '[.bullets[] | {text, category}]' "$AUDIT_FILE")
-  follow_up_context="Release-note bullets already written for this release from its other issues (reference data; change none of them):
-
-$written_bullets
-
-The release data below holds only the issues that the previous answer did not account for."
-  follow_up_requirements="- Account for every issue in the release data below, and for no other issue.
-- When an issue below describes the same user-visible change as a bullet already written, return that bullet with its text copied exactly and only the issue below under sourceIssues; the script adds the issue to the existing bullet. Otherwise write a new bullet, and do not repeat the opening of a bullet already written."
-
-  request_audit \
+  account_for_issues \
+    "$missing_input_file" \
     "follow-up $follow_ups for $missing_count missing issue(s)" \
-    "$(build_prompt "$(cat "$missing_input_file")" "$follow_up_context" "$follow_up_requirements")"
-
-  # A follow-up may only add the missing issues. A copied bullet may repeat its own sources.
-  outside=$(
-    jq -r --argjson missing "$missing" --slurpfile audit "$AUDIT_FILE" '
-      def key: "\(.repositoryWithOwner)#\(.number)";
-      $audit[0].bullets as $written
-      | [
-          (
-            .bullets[]
-            | .text as $text
-            | [$written[] | select(.text == $text) | .sourceIssues[] | key] as $known
-            | .sourceIssues[]
-            | key
-            | select(. as $issue | any($known[]; . == $issue) | not)
-          ),
-          (.omittedIssues[], .pendingReviewIssues[] | key)
-        ]
-      | unique - $missing
-      | join(", ")
-    ' "$canonical_response_file"
-  )
-
-  if [ -n "$outside" ]; then
-    echo "The follow-up answer names issues that were not missing: $outside" >&2
-    exit 1
-  fi
-
-  jq --slurpfile follow_up "$canonical_response_file" '
-    reduce $follow_up[0].bullets[] as $bullet (
-      .;
-      (first(range(0; .bullets | length) as $n | select(.bullets[$n].text == $bullet.text) | $n) // null) as $index
-      | if $index == null then
-          .bullets += [$bullet]
-        else
-          .bullets[$index].sourceIssues |= (
-            . as $known
-            | . + [$bullet.sourceIssues[] | select(. as $issue | any($known[]; . == $issue) | not)]
-          )
-        end
-    )
-    | .omittedIssues += $follow_up[0].omittedIssues
-    | .pendingReviewIssues += $follow_up[0].pendingReviewIssues
-  ' "$AUDIT_FILE" > "$merged_audit_file"
-  cat "$merged_audit_file" > "$AUDIT_FILE"
+    follow-up
 done
 
 if [ "$follow_ups" -gt 0 ]; then
