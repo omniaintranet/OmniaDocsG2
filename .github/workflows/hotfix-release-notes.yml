@@ -78,7 +78,7 @@ jobs:
         with:
           name: copilot-release-notes-response-${{ github.run_id }}-${{ github.run_attempt }}
           path: /tmp/copilot-release-notes-response.txt
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 1
 
       # The same rules as the pull request check (.github/docs-review/README.md). Copilot rewords
