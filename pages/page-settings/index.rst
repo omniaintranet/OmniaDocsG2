@@ -138,7 +138,7 @@ and these settings can also be available:
 + **Variations**: Select to share comments, reactions and ratings across variations. This option is only available if one or more varations exists in the app. **Important note!** This option should be activated before any variation pages are created. If this option is activated later on, the comments from the main page are shown on all variation pages. If comments had been added to a variation page, they will no longer be displayed.  
 + **Document management**: You use this part for documents settings, both forstandard documents and for controlled documents. For more information, see below.
 + **Omnia search**: When the tenant feature "Page rollup accelerator powered by search" is activated, this option is available. Use it to reindex content for faster search, if needed. The accelerator mainly has effect on Omnia search, People rollup of Omnia users and Page rollup. Use "Logging" to see logs from this reindexing.
-**Semantic search**: If semantic search is used in the tenant, these settings are available. You can reindex content when needed and see logs for the reindexing already done. See this page for more information on semantic search: :doc:`About semantic search </general-assets/about-semantic-search/index>`
++ **Semantic search**: If semantic search is used in the tenant, these settings are available. You can reindex content when needed and see logs for the reindexing already done. See this page for more information on semantic search: :doc:`About semantic search </general-assets/about-semantic-search/index>`
 
 For more information about layouts for publishing, see this page: :doc:`Publishing layouts </admin-settings/business-group-settings/publishing-apps/publishing-65/layout/index>`
 
