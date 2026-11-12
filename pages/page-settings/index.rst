@@ -19,7 +19,7 @@ The following settings are available here:
 
 Permissions
 ************
-Use these settings to Edit permissions in the publishing app. 
+Use these settings to edit permissions in the publishing app. 
 
 .. image:: page-settings-permissions-711.png
 
