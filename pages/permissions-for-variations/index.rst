@@ -30,7 +30,7 @@ Note that the variation you set permissions for is shown, in this example "se" f
 
 Permission for a specific variation page
 ---------------------------------------------
-If needed, you can set permissions for a specific variation page. An example where this may be needed could be if some information in an enployee handbook, for example regarding holidays, differs between countries. 
+If needed, you can set permissions for a specific variation page. An example where this may be needed could be if some information in an employee handbook, for example regarding holidays, differs between countries. 
  
 This is how it's set up: 
 
