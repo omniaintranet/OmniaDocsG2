@@ -4,7 +4,7 @@ Send page as Email
 If you should need it, you can send a page through Email. To be able to do so the following must have been done:
 
 + The option "Enable send as Email" must be activated in the page collection settings.
-+ Email recipients must have been added for the page(s) you would like to send.
++ Email recipients must have been added for the page(s) you would like to send. Settings is per page.
 
 **Important note!** If sending as Email is activated, scheduling can't be used.
 
