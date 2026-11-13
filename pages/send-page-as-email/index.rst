@@ -6,7 +6,7 @@ If you should need it, you can send a page through Email. To be able to do so th
 + The option "Enable send as Email" must be activated in the page collection settings.
 + Email recipients must have been added for the page(s) you would like to send.
 
-**Important note!** Scheduled publishing will not work when "Enable send as Email" is activated. If "Enable scheduling" is active, it will automatically be deactivated.
+**Important note!** If sending as Email is activated, scheduling can't be used. If "Enable scheduling" is active, it will automatically be deactivated.
 
 Every time you publish such a page you will be able to send the page if you want, or just publish without sending.
 
