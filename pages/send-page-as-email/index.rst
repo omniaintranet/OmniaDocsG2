@@ -20,9 +20,9 @@ When sending a page through Email has been enabled, the following is available f
 
 (If "Enable send as Email" has not been activated, this tab is simply not shown.)
 
-Add all recipient's Emails here, using a people picker:
+Add all recipient's Emails here, using a people picker (image from a test environment):
 
-.. image:: send-as-email-recipients-add.png
+.. image:: send-as-email-recipients-add-712.png
 
 Any colleauge or group that has an Email address can be added to this list.
 
