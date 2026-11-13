@@ -1,3 +1,72 @@
+7.12.12
+========================================
+(Omnia 7.12.12 / Workplace 7.12.12 / WCM 7.12.12 / MS 7.12.12 / Analytics 7.12.4 / Feed 7.11.6)
+
+**Pages and blocks**
+
+- Publishing pages render correctly again for publishing apps with historical error status
+- Omnia Link nodes in the Mega menu block now open their target pages on the first click, without an intermediate 404 page (#60806)
+- Page navigation moves now prevent reordering a page to an invalid position and refuse self-target moves
+- Moving a page to another parent collection now works correctly- Automatic page translation output no longer includes the [eos] internal token marker (#60749)
+- Action button background color control is now hidden when Outline style is enabled (#61253)
+- Section header icons now persist in settings after page publish and re-edit (#60819)
+- WCM editor left navigation displays guide lines connecting the current page to its parent, with the path highlighted in the theme color (#59512)
+- Block gallery Add Content dialog now displays consistent background color when opened from blocks
+- Design mode now updates background color preview immediately even when the initial value is empty
+
+**Rollups**
+
+- People Rollup Roller view now applies custom theme colors to text and icons
+- Page Rollup in Community apps now shows results from the opened page's collection instead of the previous one after in-app navigation
+- Page Rollup in vertical tabbed sections no longer overflows its container
+- List rollup (single list) filters on SharePoint Lookup columns now use a dedicated lookup filter type with a values picker, and default-value settings now work for all column types backed by SharePoint list context properties (#60869)
+- Taxonomy and Person filters in List rollup now combine sibling filters consistently using the configured logical operator (#60869)
+- List Rollup now applies custom theme foreground color to list items, text, links, and chips (#60676)
+- Multi-value Lookup and multi-value Person columns now display all values in List rollup (#60869)
+
+**Search**
+
+- Search results for Shared Links now respect each link's 'Open in new tab' setting; category and promoted result controls provide additional configuration options (#59860)
+- Search statistics exports now complete successfully for business profiles with large search histories
+- Advanced Search document titles now wrap instead of overlapping adjacent columns
+- Publishing App Rollup and Community App Rollup search now returns results instead of staying in a loading state
+
+**Documents and processes**
+
+- Controlled documents now upload and publish correctly on sites using the SharePoint time zone (UTC-06:00) Mountain Time (Alberta) (#61361)
+- Creating a controlled document from an Omnia page or another ODM site now imports site-assigned default values for document properties
+- Changing the document location in the Create new document dialog now updates unedited property defaults and prompts the user to confirm when edited values would be overwritten
+- Template merge settings in the document metadata dialog no longer preselect a merge choice; users must pick an option before saving
+- Page bulk update now processes all matching pages when more than 2000 are selected for replace or recalculate
+- Controlled documents Drafts view handles users without library access gracefully instead of showing an error (#60663)
+- Sign-off Request pages correctly resolve all SharePoint page names when some pages are archived
+- Controlled document drafts with deleted document types can now be published by selecting a type that shares the same template
+- Controlled documents: Approved Date and Approved By are now preserved when a document is auto-published on its scheduled date
+- Controlled documents now preserve hyperlinks when converted to PDF and support PDF/A formats (PDF/A-1b, PDF/A-2b, and PDF/A-3b)
+
+**Email and notifications**
+
+- Publishing channel visibility can now be restricted to target user groups; the subscribe action button and 'Add channel' list respect these targeting settings (#60476)
+- Page feedback email body can now be customized through localization, matching the existing subject customization
+
+**On-prem**
+
+- On-prem feature activation now succeeds for features requiring Sites.Selected permissions
+- AI assistance in the content builder block is now hidden on SharePoint Server (on-prem) deployments
+
+**Other**
+
+- Teamwork and Publishing App creation no longer becomes stuck at 'Creating' status when temporary errors occur during provisioning
+- The Workplace left panel no longer overlaps SharePoint content in Files app and Site contents views
+- Users can now re-register for events after declining an invitation in Outlook and receive a new calendar invitation (#59693)
+- Omnia admin app listings can now be filtered by template and administrators for easier management at scale
+- Opening a SharePoint Communication Site or Yammer community publishing app now opens the external site instead of the Omnia URL
+- Feature consent dialog now displays the API or Service name for each required Azure AD permission, making same-named permissions from different services clearly distinct (#60946)
+- Omnia Admin now remains open after deleting a tenant page type from a child page
+- Microsoft Entra ID user synchronization no longer times out when the system contains a large number of old sync logs
+- General performance and security improvements
+
+
 7.12.9
 ========================================
 (Omnia 7.12.9 / Workplace 7.12.9 / WCM 7.12.9 / MS 7.12.9 / Analytics 7.12.4 / Feed 7.11.6)
