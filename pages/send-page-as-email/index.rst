@@ -14,7 +14,7 @@ Information about the page collection settings are described om this page: :doc:
 
 Adding Email recipients
 *************************
-When sending a page through Email has been enabled, the following is available for all pages in the page collection:
+When sending a page through Email has been enabled, the following is available for each page in the page collection:
 
 .. image:: send-as-email-recipients.png
 
