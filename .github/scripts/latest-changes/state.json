@@ -791,9 +791,107 @@
     "a2c5afeb916711df3d6c215093ce2625a946bdb1": "2026-11-11",
     "6c25b0944a035542dd518f4f7580de6c1b741f3f": "2026-11-11",
     "8325d43125a21ceacdec72c1261451dd663749f5": "2026-11-11",
-    "0689f52ea1f985f80daba08545092b3705982589": "2026-11-11"
+    "0689f52ea1f985f80daba08545092b3705982589": "2026-11-11",
+    "0e2abbe380dd6f1bf6efbbfc6ee9a4fd75abd0b4": "2026-11-12",
+    "452856bf52742e22cda67f53cbb7813ca5e9bb62": "2026-11-12",
+    "eb0cbb32a02345b116912a242cac8b70c70f8616": "2026-11-12",
+    "a84b82d3d18afeb3765744bd97b7f7474825f2bf": "2026-11-12",
+    "fe638aaca27e6bd868a85f8ab35a107d49d0c641": "2026-11-12",
+    "58ff6364a366df8b5de963d3f1744fe78b3ff0a7": "2026-11-12",
+    "0d45078f193efe2114425024a7562df911a4b495": "2026-11-12",
+    "8272ecc0194285840ba7fbd07f119a2ba28a17e5": "2026-11-12",
+    "97cf661322cf1f41756dab8ae5abc78f97318a43": "2026-11-12",
+    "08f4a526f664bd54ebd5aac6e34bf2f3bac66f88": "2026-11-12",
+    "91d225d45e8aea6f184fb5bfb24846666e11da32": "2026-11-12",
+    "08aba3d084ee6fc5381e34cd129657d7ba062f0b": "2026-11-12",
+    "e3cae9529856fe76dfb85d1e7febd4a1a6ae55b1": "2026-11-12",
+    "61d427f56ca75bda0bb7e729a45753f71a5ec430": "2026-11-12",
+    "a51afc7f3a6c01dae35382304e15239ab8b665a2": "2026-11-12",
+    "c47d67da6856bb8869741d2386c8da23804eb8bc": "2026-11-12",
+    "08067887aa224fcd74ee70172f71a9b185c4a365": "2026-11-12",
+    "b6541ab05bf97fd6b5ec20a70830c73a33e6fe88": "2026-11-12",
+    "a9623054918c445d6719701c0c300e17d0c8dcca": "2026-11-12",
+    "33b244d21c9d3e26adaa25132dd10cd30b1e200e": "2026-11-12",
+    "c53cda6fd4995c4bb9349bdf67a8c165e671a5ab": "2026-11-12",
+    "0ffa0f6d4ae88df13f9e4df1bfd5f8ca392ada4f": "2026-11-12",
+    "e961d5493c3586b38c5f294c60dee27165f419e2": "2026-11-12",
+    "a34a455c54bfb313918ff466dcdaa0b8ea6b290d": "2026-11-12",
+    "7265d3fff879abb23f81c836c89a2839941224fa": "2026-11-12"
   },
   "entries": [
+    {
+      "date": "2026-11-12",
+      "path": "pages/permissions-for-variations/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified how variation authors can be set through publishing app settings and simplified examples for setting variation-specific permissions.",
+      "sources": [
+        "08067887aa224fcd74ee70172f71a9b185c4a365",
+        "08aba3d084ee6fc5381e34cd129657d7ba062f0b",
+        "08f4a526f664bd54ebd5aac6e34bf2f3bac66f88",
+        "61d427f56ca75bda0bb7e729a45753f71a5ec430",
+        "91d225d45e8aea6f184fb5bfb24846666e11da32",
+        "97cf661322cf1f41756dab8ae5abc78f97318a43",
+        "a51afc7f3a6c01dae35382304e15239ab8b665a2",
+        "b6541ab05bf97fd6b5ec20a70830c73a33e6fe88",
+        "c47d67da6856bb8869741d2386c8da23804eb8bc",
+        "e3cae9529856fe76dfb85d1e7febd4a1a6ae55b1"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "path": "pages/page-types/working-with-sections-and-blocks/index.rst",
+      "classification": "Added information",
+      "description": "Added option to control section visibility when printing in device and visibility settings.",
+      "sources": [
+        "58ff6364a366df8b5de963d3f1744fe78b3ff0a7",
+        "a84b82d3d18afeb3765744bd97b7f7474825f2bf",
+        "eb0cbb32a02345b116912a242cac8b70c70f8616",
+        "fe638aaca27e6bd868a85f8ab35a107d49d0c641"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "path": "pages/page-types/create-new-page-type/index.rst",
+      "classification": "Correction",
+      "description": "Removed outdated version reference from the page introduction.",
+      "sources": [
+        "452856bf52742e22cda67f53cbb7813ca5e9bb62"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "path": "pages/page-types/archive-restore-page-type/index.rst",
+      "classification": "Correction",
+      "description": "Clarified that pages using a page type must be deleted first before the page type itself can be deleted.",
+      "sources": [
+        "0d45078f193efe2114425024a7562df911a4b495",
+        "8272ecc0194285840ba7fbd07f119a2ba28a17e5"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "path": "pages/page-settings/index.rst",
+      "classification": "Added information",
+      "description": "Added information about new Omnia 7.12 features for page variations, including ability to edit machine translations and semantic search settings.",
+      "sources": [
+        "0ffa0f6d4ae88df13f9e4df1bfd5f8ca392ada4f",
+        "33b244d21c9d3e26adaa25132dd10cd30b1e200e",
+        "7265d3fff879abb23f81c836c89a2839941224fa",
+        "a34a455c54bfb313918ff466dcdaa0b8ea6b290d",
+        "a9623054918c445d6719701c0c300e17d0c8dcca",
+        "c53cda6fd4995c4bb9349bdf67a8c165e671a5ab",
+        "e961d5493c3586b38c5f294c60dee27165f419e2"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "path": "pages/page-collections/create-new-page-collection/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Fixed spacing between words in the final sentence.",
+      "sources": [
+        "0e2abbe380dd6f1bf6efbbfc6ee9a4fd75abd0b4"
+      ]
+    },
     {
       "date": "2026-11-11",
       "path": "user-options/read-news/index.rst",

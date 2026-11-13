@@ -3,6 +3,27 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+12 November 2026
+----------------
+
+* `Create a new page collection <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-collections/create-new-page-collection/index.html>`__ — **Spelling / grammar**
+  Fixed spacing between words in the final sentence.
+
+* `Create a new page type <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/create-new-page-type/index.html>`__ — **Correction**
+  Removed outdated version reference from the page introduction.
+
+* `Delete or restore a local page type <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/archive-restore-page-type/index.html>`__ — **Correction**
+  Clarified that pages using a page type must be deleted first before the page type itself can be deleted.
+
+* `Permissions for variation pages <https://omnia-docs-g2.readthedocs.io/en/latest/pages/permissions-for-variations/index.html>`__ — **Updated guidance**
+  Clarified how variation authors can be set through publishing app settings and simplified examples for setting variation-specific permissions.
+
+* `Publishing app settings <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-settings/index.html>`__ — **Added information**
+  Added information about new Omnia 7.12 features for page variations, including ability to edit machine translations and semantic search settings.
+
+* `Working with sections and blocks <https://omnia-docs-g2.readthedocs.io/en/latest/pages/page-types/working-with-sections-and-blocks/index.html>`__ — **Added information**
+  Added option to control section visibility when printing in device and visibility settings.
+
 11 November 2026
 ----------------
 
