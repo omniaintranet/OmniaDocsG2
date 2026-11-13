@@ -54,8 +54,7 @@ class ReleaseReviewTests(unittest.TestCase):
             "sourceIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 1}]}],
             "omittedIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 2, "reason": "Internal maintenance"}],
             "pendingReviewIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 3,
-                "reason": "Permissions change requires manual disclosure review",
-                "suggestedText": "- Improved the reliability of permission handling"}]}
+                "reason": "Permissions change requires manual disclosure review"}]}
 
     def run_script(self, name, notification=False, cwd=ROOT):
         (self.folder / "release-issues.json").write_text(json.dumps(self.data))
@@ -100,14 +99,16 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         audit = json.loads((self.folder / "release-notes-audit.json").read_text())
         self.assertEqual(audit["pendingReviewIssues"][0]["number"], 3)
+        self.assertNotIn("suggestedText", audit["pendingReviewIssues"][0])
         notes = (self.folder / "generated-release-notes.rst").read_text()
         self.assertIn("Quick Search", notes)
+        self.assertEqual(notes.count("- General performance and security improvements"), 1)
         self.assertNotIn("Permissions", notes)
         self.assertNotIn("Improved the reliability of permission handling", notes)
-        self.assertEqual(audit["pendingReviewIssues"][0]["suggestedText"], self.response["pendingReviewIssues"][0]["suggestedText"])
         self.assertIn("has_notes=true", (self.folder / "outputs").read_text())
         prompt = (self.folder / "prompt.txt").read_text()
         self.assertIn("Sentence variation and readability", prompt)
+        self.assertNotIn("suggestedText", prompt)
         # The documentation review rules, read from the rule files at run time.
         self.assertIn("DOCUMENTATION REVIEW RULES", prompt)
         self.assertIn("key selling points?", prompt)
@@ -118,8 +119,8 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertIn("[Review the documentation pull request](https://github.com/omniaintranet/OmniaDocsG2/pull/43)", rendered.stdout)
         self.assertIn("Security-sensitive issues pending manual review", rendered.stdout)
         self.assertIn("Permissions change requires manual disclosure review", rendered.stdout)
-        self.assertIn("Suggested release note (pending approval)", rendered.stdout)
-        self.assertIn(self.response["pendingReviewIssues"][0]["suggestedText"], rendered.stdout)
+        self.assertIn("covers them with one general bullet", rendered.stdout)
+        self.assertNotIn("Suggested release note", rendered.stdout)
 
     def test_approval_sync_keeps_every_section_of_the_rendered_draft(self):
         result = self.generate()
@@ -147,7 +148,7 @@ class ReleaseReviewTests(unittest.TestCase):
                      "### Security-sensitive issues pending manual review",
                      "[omniaintranet/test#3](https://github.com/omniaintranet/test/issues/3) - "
                      "Permissions change requires manual disclosure review",
-                     "> " + self.response["pendingReviewIssues"][0]["suggestedText"]):
+                     "covers them with one general bullet"):
             self.assertIn(part, kept)
         items[0]["content"]["body"] = plan["body"]
         self.assertEqual(sync.plan_update(project, items, pr, "7.11.99", HEADING + "- Approved wording")["body"],
@@ -253,19 +254,20 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertNotEqual(rendered.returncode, 0)
         self.assertIn("must reference a pull request", rendered.stderr)
 
-    def test_all_pending_has_no_public_notes(self):
+    def test_all_pending_gets_only_the_general_bullet(self):
         self.response = {"bullets": [], "omittedIssues": [], "pendingReviewIssues": [
-            {"repositoryWithOwner": "omniaintranet/test", "number": n, "reason": "Manual security review required",
-             "suggestedText": "- Improved the reliability of the sign-in process"}
+            {"repositoryWithOwner": "omniaintranet/test", "number": n, "reason": "Manual security review required"}
             for n in (1, 2, 3)]}
         result = self.generate()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("has_notes=false", (self.folder / "outputs").read_text())
-        self.assertNotIn("- ", (self.folder / "generated-release-notes.rst").read_text())
+        self.assertIn("has_notes=true", (self.folder / "outputs").read_text())
+        self.assertEqual((self.folder / "generated-release-notes.rst").read_text(),
+                         HEADING + "- General performance and security improvements\n")
         rendered = self.run_script("create-ready-project-item.sh", notification=True)
         self.assertEqual(rendered.returncode, 0, rendered.stderr)
         self.assertIn("**3** pending manual security review", rendered.stdout)
-        self.assertEqual(rendered.stdout.count("Suggested release note (pending approval)"), 3)
+        self.assertEqual(rendered.stdout.count("covers them with one general bullet"), 1)
+        self.assertNotIn("Suggested release note", rendered.stdout)
 
     def test_all_omitted_has_no_public_notes(self):
         self.response = {"bullets": [], "pendingReviewIssues": [], "omittedIssues": [
@@ -274,6 +276,8 @@ class ReleaseReviewTests(unittest.TestCase):
         result = self.generate()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertIn("has_notes=false", (self.folder / "outputs").read_text())
+        self.assertNotIn("General performance and security improvements",
+                         (self.folder / "generated-release-notes.rst").read_text())
 
     def test_duplicate_pending_issue_is_rejected(self):
         self.response["pendingReviewIssues"][0]["number"] = 1
@@ -375,7 +379,10 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertIn("document previews", notes)
 
     def bullets(self, *categories):
-        """One public bullet per category, all from issue 1."""
+        """One public bullet per category, all from issue 1; no issue held for security review."""
+        self.response["omittedIssues"].append(
+            {"repositoryWithOwner": "omniaintranet/test", "number": 3, "reason": "Internal maintenance"})
+        self.response["pendingReviewIssues"] = []
         self.response["bullets"] = [{"text": f"- Release note {n}", "category": category,
             "sourceIssues": [{"repositoryWithOwner": "omniaintranet/test", "number": 1}]}
             for n, category in enumerate(categories, 1)]
@@ -421,6 +428,19 @@ class ReleaseReviewTests(unittest.TestCase):
         result = self.generate()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("**", (self.folder / "generated-release-notes.rst").read_text())
+        self.assert_categories_unchanged()
+
+    def test_general_bullet_creates_the_other_group(self):
+        # A security-sensitive issue in a grouped release: the general bullet heads the Other group.
+        self.bullets(*["Search"] * 11)
+        self.response["omittedIssues"] = [o for o in self.response["omittedIssues"] if o["number"] != 3]
+        self.response["pendingReviewIssues"] = [
+            {"repositoryWithOwner": "omniaintranet/test", "number": 3, "reason": "Manual security review required"}]
+        result = self.generate()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual((self.folder / "generated-release-notes.rst").read_text(), HEADING + (
+            "**Search**\n\n" + "".join(f"- Release note {n}\n" for n in range(1, 12)) +
+            "\n**Other**\n\n- General performance and security improvements\n"))
         self.assert_categories_unchanged()
 
     def test_category_with_markup_is_rejected(self):
@@ -505,40 +525,15 @@ class ReleaseReviewTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertNotIn("private.example", (self.folder / "release-notes-audit.json").read_text())
 
-
-    def test_missing_suggestion_is_rejected(self):
-        del self.response["pendingReviewIssues"][0]["suggestedText"]
-        result = self.generate()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("required release-note audit JSON", result.stderr)
-
-    def test_empty_suggestion_is_rejected(self):
-        self.response["pendingReviewIssues"][0]["suggestedText"] = "   "
-        result = self.generate()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("required release-note audit JSON", result.stderr)
-
-    def test_private_url_in_suggestion_is_rejected(self):
-        self.response["pendingReviewIssues"][0]["suggestedText"] += " https://private.example/secret"
-        result = self.generate()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("contain a URL", result.stderr)
-
-    def test_email_in_suggestion_is_rejected(self):
-        self.response["pendingReviewIssues"][0]["suggestedText"] += " person@example.test"
-        result = self.generate()
-        self.assertNotEqual(result.returncode, 0)
-        self.assertIn("contain an email", result.stderr)
-
-    def test_suggestion_cannot_borrow_another_issues_reference(self):
-        # The skill: remove a reference without evidence on the suggestion's own issue.
-        self.data["releases"][0]["issues"][0]["body"] = "https://support.example/agent/tickets/59036"
-        self.response["pendingReviewIssues"][0]["suggestedText"] += " (#59036)"
+    def test_stale_suggested_text_is_dropped(self):
+        # An answer that still carries the old per-issue suggestedText is accepted; the field is dropped.
+        self.response["pendingReviewIssues"][0]["suggestedText"] = "- Improved security validation of URLs"
         result = self.generate()
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("Removed customer reference(s) #59036 from the suggestion for omniaintranet/test#3", result.stdout)
         audit = json.loads((self.folder / "release-notes-audit.json").read_text())
-        self.assertEqual(audit["pendingReviewIssues"][0]["suggestedText"], "- Improved the reliability of permission handling")
+        self.assertNotIn("suggestedText", audit["pendingReviewIssues"][0])
+        self.assertNotIn("Improved security validation of URLs",
+                         (self.folder / "generated-release-notes.rst").read_text())
 
     def test_bullet_cannot_borrow_another_issues_reference(self):
         self.data["releases"][0]["issues"][1]["body"] = "https://support.example/agent/tickets/59036"
@@ -564,13 +559,6 @@ class ReleaseReviewTests(unittest.TestCase):
                       result.stdout)
         notes = (self.folder / "generated-release-notes.rst").read_text()
         self.assertIn("- Quick Search now correctly handles document filters (#59036, #166490)\n", notes)
-
-    def test_verified_suggestion_reference_is_allowed(self):
-        self.data["releases"][0]["issues"][2]["body"] = "https://support.example/agent/tickets/59036"
-        self.response["pendingReviewIssues"][0]["suggestedText"] += " (#59036)"
-        result = self.generate()
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertNotIn("#59036", (self.folder / "generated-release-notes.rst").read_text())
 
 
 @unittest.skipUnless(VALE and GITLEAKS, "needs Vale and gitleaks (VALE_BIN, GITLEAKS_BIN), see .github/docs-review/README.md")

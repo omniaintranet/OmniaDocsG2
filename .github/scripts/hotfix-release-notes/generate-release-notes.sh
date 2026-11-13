@@ -113,7 +113,7 @@ Follow these release-note instructions exactly:
 
 $skill_instructions
 
-Every bullet and every suggestedText must also pass the documentation review:
+Every bullet must also pass the documentation review:
 
 $review_rules
 
@@ -131,15 +131,14 @@ Requirements:
 - Use the supplied issue bodies, labels, and recent comments as the source of truth. Prefer implemented and QA-verified behavior in recent comments over the initial proposal.
 - Do not invent functionality or ticket numbers.
 - Account for every supplied issue. An included issue is associated with at least one release-note bullet; when one issue contains several separate user-visible changes, write a separate bullet for each and list the issue as a source of each. Otherwise list the issue exactly once under omittedIssues or pendingReviewIssues. Never list an issue both in a bullet and under omittedIssues or pendingReviewIssues.
-- Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review and suggestedText containing a proposed customer-facing release-note bullet. The suggestion must be concise, factual, and safe for public disclosure, without vulnerability details or exploitation clues. It remains unapproved and separate from public bullets; apply the same customer-reference rules to it. Do not put them in public bullets or treat them as finally omitted. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
-- Keep security-related suggestedText deliberately general: name only a broad improvement category, such as URL validation. Omit the affected workflow, vulnerable component, trigger, attack method, and prevented exploit. Do not name login redirects, domain restrictions, or other clues to the weakness. Review and generalize any such clues before returning the suggestion.
+- Put potentially security-sensitive issues under pendingReviewIssues with a concise, high-level reason for manual review. Do not put them in public bullets or treat them as finally omitted, and do not write release-note wording for them: the script covers every pending issue with one general bullet in the draft. Do not disclose technical details that could identify, reproduce, or exploit a weakness.
 - Review all bullets together for repetitive sentence openings before returning the response.
 - When several issues are consolidated into one bullet, associate every included source issue with that bullet. Consolidated issues are included, not omitted.
 - Put each release-note bullet on one physical line and begin its text with "- ". The script constructs the release heading and component-version line separately.
 - Give every bullet a category, following "Group long releases by category": one of the category names above, spelled exactly as listed, or a new short name only when none of them fits. Do not write category headers yourself; the script groups the bullets when the release has more than 10.
 - Give every omitted issue a short, reviewer-facing reason that explains why it is not suitable for public release notes. Do not include customer names, private URLs, email addresses, environment details, or implementation secrets in the reason.
 - Use repositoryWithOwner and number exactly as supplied. Do not invent or alter issue identifiers.
-- Use the property names bullets, text, category, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, reason, and suggestedText exactly as shown. Emit issue numbers as JSON numbers, not strings.
+- Use the property names bullets, text, category, sourceIssues, repositoryWithOwner, number, omittedIssues, pendingReviewIssues, and reason exactly as shown. Emit issue numbers as JSON numbers, not strings.
 - The release data holds $issue_list_count issue(s): $issue_list. Before returning, check that each of them appears in a bullet's sourceIssues, under omittedIssues or under pendingReviewIssues.
 ${extra_requirements}- Return only valid JSON matching this shape, without Markdown fences or commentary:
 {
@@ -166,8 +165,7 @@ ${extra_requirements}- Return only valid JSON matching this shape, without Markd
     {
       "repositoryWithOwner": "owner/repository",
       "number": 789,
-      "reason": "Security-sensitive change requires manual disclosure review",
-      "suggestedText": "- Improved security validation of URLs"
+      "reason": "Security-sensitive change requires manual disclosure review"
     }
   ]
 }
@@ -182,12 +180,10 @@ canonical_response_file=$(mktemp)
 missing_input_file=$(mktemp)
 merged_audit_file=$(mktemp)
 layout_file=$(mktemp)
-review_input_file=$(mktemp)
-review_notes_file=$(mktemp)
 # The batch files of account_for_issues: listed here so that a failed request leaves none behind.
 batch_remaining_file=$(mktemp)
 batch_file=$(mktemp)
-trap 'rm -f "$batch_remaining_file" "$batch_file" "$response_file" "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$missing_input_file" "$merged_audit_file" "$layout_file" "$review_input_file" "$review_notes_file"' EXIT
+trap 'rm -f "$batch_remaining_file" "$batch_file" "$response_file" "$extracted_response_file" "$normalized_response_file" "$canonical_response_file" "$missing_input_file" "$merged_audit_file" "$layout_file"' EXIT
 
 # One request. Sends the prompt in $2 to Copilot and leaves its answer, normalized and checked for shape,
 # in $canonical_response_file. Every raw answer is appended to $RESPONSE_FILE under the label in $1;
@@ -484,15 +480,6 @@ request_audit_once() {
               // .omission_reason
               // ""
               | if type == "string" then clean_reason else . end
-            ),
-            suggestedText: (
-              .suggestedText
-              // ""
-              | if type == "string" then clean_text else . end
-              | if type == "string" and (startswith("- ") | not)
-                then "- " + .
-                else .
-                end
             )
           }
       ]
@@ -531,10 +518,6 @@ request_audit_once() {
           and (contains("\n") | not)
           and (test("https?://|www\\.|@|[<>]"; "i") | not)
       )
-    )
-    and all(
-      .pendingReviewIssues[];
-      (.suggestedText | type == "string" and startswith("- ") and length > 2)
     )
   ' "$canonical_response_file" >/dev/null; then
     audit_shape=$(
@@ -844,8 +827,8 @@ if [ "$follow_ups" -gt 0 ]; then
   echo "Every source issue is accounted for after $follow_ups follow-up request(s)."
 fi
 
-# Customer references (SKILL.md, "Verify customer references before delivery"): a bullet or a suggestion
-# may cite only the Zendesk/OIM numbers found in URLs on its own source issues, by the URL rules of
+# Customer references (SKILL.md, "Verify customer references before delivery"): a bullet may cite
+# only the Zendesk/OIM numbers found in URLs on its own source issues, by the URL rules of
 # validate-release-notes.sh. In a long release Copilot can borrow a number from another issue
 # (7.12.9). Remove such numbers, as the skill says, and log each removal; the validator runs after.
 references_result=$(
@@ -888,15 +871,6 @@ references_result=$(
           .removed += [{where: "the bullet from \([.audit.bullets[$n].sourceIssues[] | key] | join(", "))", references: $result.removed}]
         else . end
     )
-    | reduce range(0; .audit.pendingReviewIssues | length) as $n (
-        .;
-        allowed([.audit.pendingReviewIssues[$n]]) as $allowed
-        | (.audit.pendingReviewIssues[$n].suggestedText | keep_references($allowed)) as $result
-        | .audit.pendingReviewIssues[$n].suggestedText = $result.text
-        | if ($result.removed | length) > 0 then
-            .removed += [{where: "the suggestion for \(.audit.pendingReviewIssues[$n] | key)", references: $result.removed}]
-          else . end
-      )
   ' "$AUDIT_FILE"
 )
 
@@ -907,6 +881,19 @@ jq -r '
 ' <<< "$references_result"
 jq -r '[.removed[] | select(.where | startswith("the bullet")) | .references[]] | unique[] | "#" + .' \
   <<< "$references_result" > "$REMOVED_REFERENCES_FILE"
+
+# One general bullet covers every security-sensitive issue (Christian, 2026-11-12): the draft says
+# improvements were made, without per-issue details. It is added once here, after every batch and
+# follow-up, so a batched release still gets exactly one; the Project card lists the issues for
+# manual review. It names no source issue, so it joins no issue's accounting.
+if [ "$(jq '.pendingReviewIssues | length' "$AUDIT_FILE")" -gt 0 ]; then
+  jq '.bullets += [{
+        text: "- General performance and security improvements",
+        category: "Other",
+        sourceIssues: []
+      }]' "$AUDIT_FILE" > "$merged_audit_file"
+  cat "$merged_audit_file" > "$AUDIT_FILE"
+fi
 
 jq --rawfile categories "$CATEGORIES_FILE" -f "$RENDERER_FILE" "$AUDIT_FILE" > "$layout_file"
 
@@ -928,25 +915,9 @@ if [ "$(jq '.bullets | length' "$AUDIT_FILE")" -gt 0 ]; then
   bash "$VALIDATOR_FILE" "$INPUT_FILE" "$OUTPUT_FILE"
   has_notes=true
 else
-  echo "No public bullets; all source issues are omitted or pending manual review."
+  echo "No public bullets; all source issues are omitted."
   has_notes=false
 fi
-
-# Validate each unapproved suggestion against only its own source issue. Never
-# copy these suggestions into the public release-note file automatically.
-while IFS= read -r pending_issue; do
-  jq --argjson pending "$pending_issue" '
-    .releases[0].issues |= map(select(
-      .repositoryWithOwner == $pending.repositoryWithOwner
-      and .number == $pending.number
-    ))
-  ' "$INPUT_FILE" > "$review_input_file"
-  {
-    sed -n '1,4p' "$OUTPUT_FILE"
-    jq -r '.suggestedText' <<< "$pending_issue"
-  } > "$review_notes_file"
-  bash "$VALIDATOR_FILE" "$review_input_file" "$review_notes_file"
-done < <(jq -c '.pendingReviewIssues[]' "$AUDIT_FILE")
 
 if [ -n "${GITHUB_OUTPUT:-}" ]; then
   printf 'has_notes=%s\n' "$has_notes" >> "$GITHUB_OUTPUT"

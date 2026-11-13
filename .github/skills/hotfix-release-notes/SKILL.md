@@ -54,8 +54,8 @@ Review changes involving authentication, authorization, account recovery, permis
 - Flag potentially security-sensitive entries for manual review rather than automatically publishing or excluding them. Keep pending entries separate from the public draft until that review determines how to communicate them.
 - Avoid technical details that could help identify, reproduce, or exploit a security weakness.
 - Prefer high-level, customer-focused descriptions of security-related improvements.
-- Make security-related suggested wording deliberately general, even in pending-review drafts. Describe only a broad improvement category, such as URL validation. Omit the specific workflow, vulnerable component, trigger, attack method, and prevented exploit; do not describe where or how the weakness can be used. For example, prefer `Improved security validation of URLs to fix a possible security issue (#60130)` over wording that identifies login redirects, domain checks, or unauthorized redirection. Use a reference only when verified for the associated source card. Review the suggestion specifically for clues that could direct a reader toward the weakness, and generalize them before delivery.
-- For every pending entry, include both a high-level reason for manual review and suggested customer-facing release-note wording. Keep the suggestion concise, factual, and free of technical details that could identify, reproduce, or exploit a weakness. Apply the same verified customer-reference rules. Label it as pending approval and keep it outside public release-note bullets until a reviewer approves inclusion. In structured automation output, put this wording in `suggestedText` on the pending entry.
+- Do not write per-issue release-note wording for security-sensitive changes, not even as a pending suggestion. Automation covers every pending entry with one general bullet in the draft, `General performance and security improvements`, and lists the entries separately for manual review. Never name the affected workflow, vulnerable component, trigger, attack method, or prevented exploit, and never describe where or how the weakness can be used.
+- For every pending entry, include a high-level reason for manual review. Keep it concise, factual, and free of technical details that could identify, reproduce, or exploit a weakness, and keep the entry outside public release-note bullets until a reviewer approves inclusion. In structured automation output, record the entry under `pendingReviewIssues` with its `reason`; there is no per-entry release-note wording.
 - During manual review, omit security-sensitive fixes when public disclosure is unnecessary, unless a security disclosure policy or customer communication requirement applies.
 
 ## Write in the established Omnia style
@@ -137,7 +137,7 @@ Choose the output wrapper requested by the caller:
 - In an interactive chat, return the finished notes as a `document` writing block. Keep the same writing-block ID when revising that release within a chat.
 - In automation that explicitly requests raw RST, return only the RST content without a writing block, code fence, audit summary, or commentary. Put every bullet on one physical line. If the caller says it constructs the heading separately, return only the requested RST bullet lines.
 
-When automation requests structured JSON, follow its schema and record security-sensitive entries separately as pending manual review, outside public bullets.
+When automation requests structured JSON, follow its schema and record security-sensitive entries separately as pending manual review, outside public bullets; the automation adds one general bullet for them.
 
 For interactive delivery, provide a compact audit summary outside the writing block:
 
@@ -145,6 +145,6 @@ For interactive delivery, provide a compact audit summary outside the writing bl
 - number of published bullets;
 - any consolidated cards;
 - omitted cards and the reason for omission;
-- potentially security-sensitive cards pending manual review, with a high-level reason and suggested release-note wording marked as pending approval; keep sensitive details out of the public notes.
+- potentially security-sensitive cards pending manual review, with a high-level reason; keep sensitive details out of the public notes.
 
 When the user requests only a wording revision or an omitted-item list, answer only that focused request unless the full draft is needed for clarity.

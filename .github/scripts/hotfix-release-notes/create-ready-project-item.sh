@@ -113,7 +113,7 @@ trap 'rm -f "$issue_body_file"' EXIT
   if [ "$pending_issue_count" -eq 0 ]; then
     printf -- '- None.\n'
   else
-    printf 'These issues and their suggested wording are held outside the public draft. Suggestions are not approved for publication. Review whether to use or revise the wording, or omit the change under the applicable disclosure policy.\n\n'
+    printf 'These issues are held outside the public draft. The draft covers them with one general bullet, "General performance and security improvements"; no per-issue release note is published for them. Review whether that is enough for each issue, or whether an issue needs its own wording, under the applicable disclosure policy.\n\n'
     jq -r --slurpfile releaseData "$INPUT_FILE" '
       .pendingReviewIssues[] as $pending
       | $releaseData[0].releases[0].issues[]
@@ -121,7 +121,7 @@ trap 'rm -f "$issue_body_file"' EXIT
           .repositoryWithOwner == $pending.repositoryWithOwner
           and .number == $pending.number
         )
-      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)\n\n  Suggested release note (pending approval):\n\n  > \($pending.suggestedText)\n"
+      | "- [\(.repositoryWithOwner)#\(.number)](\(.url)) - \($pending.reason)"
     ' "$AUDIT_FILE"
   fi
   printf '\n<!-- hotfix-release-notes:draft:end -->\n'
