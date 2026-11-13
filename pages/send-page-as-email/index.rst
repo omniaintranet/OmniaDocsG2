@@ -20,7 +20,7 @@ When sending a page through Email has been enabled, the following is available f
 
 (If "Enable send as Email" has not been activated, this tab is simply not shown.)
 
-Add all recipient's Emails here, with semicolon as devider:
+Add all recipient's Emails here, using a people picker:
 
 .. image:: send-as-email-recipients-add.png
 
