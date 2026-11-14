@@ -3,6 +3,18 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+13 November 2026
+----------------
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.12.12 release notes documenting fixes for pages, blocks, rollups, search, documents, processes, and other features.
+
+* `Reports <https://omnia-docs-g2.readthedocs.io/en/latest/pages/reports/index.html>`__ — **Spelling / grammar**
+  Corrected grammar in the introductory note, changing 'that Title' to 'A title' and adjusting punctuation.
+
+* `Send page as Email <https://omnia-docs-g2.readthedocs.io/en/latest/pages/send-page-as-email/index.html>`__ — **Updated guidance**
+  Email recipients are now added using a people picker instead of semicolon-separated text, and scheduling cannot be used when sending as Email is activated.
+
 12 November 2026
 ----------------
 

@@ -816,9 +816,53 @@
     "0ffa0f6d4ae88df13f9e4df1bfd5f8ca392ada4f": "2026-11-12",
     "e961d5493c3586b38c5f294c60dee27165f419e2": "2026-11-12",
     "a34a455c54bfb313918ff466dcdaa0b8ea6b290d": "2026-11-12",
-    "7265d3fff879abb23f81c836c89a2839941224fa": "2026-11-12"
+    "7265d3fff879abb23f81c836c89a2839941224fa": "2026-11-12",
+    "8664ba936bfd60a15bfd9f6fb5d736329da5ad90": "2026-11-13",
+    "53ea21ac6bfe82166dd0f8673152c62d9ae76f47": "2026-11-13",
+    "3a27906bec699421a86bf6ead3c026683672c8cb": "2026-11-13",
+    "01c63ca15d7f15d696e4426e2c6bdedd7b131caf": "2026-11-13",
+    "369550edfb504a2c92df498cd09def5570425e10": "2026-11-13",
+    "1f1ce991d2349e28b35792e778bc0e23b53279b1": "2026-11-13",
+    "2c7d9e1e383d4eedfa627f023278a5d068fa0827": "2026-11-13",
+    "6cf2908736da798c81b6117a6ce45c301c6b96a1": "2026-11-13",
+    "0637c72676a315a84d0fc532cf1d12b0e8b239c2": "2026-11-13",
+    "467abb90780f2cd03ab237cd1fb095b49b01920b": "2026-11-13"
   },
   "entries": [
+    {
+      "date": "2026-11-13",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.12.12 release notes documenting fixes for pages, blocks, rollups, search, documents, processes, and other features.",
+      "sources": [
+        "8664ba936bfd60a15bfd9f6fb5d736329da5ad90"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "path": "pages/send-page-as-email/index.rst",
+      "classification": "Updated guidance",
+      "description": "Email recipients are now added using a people picker instead of semicolon-separated text, and scheduling cannot be used when sending as Email is activated.",
+      "sources": [
+        "01c63ca15d7f15d696e4426e2c6bdedd7b131caf",
+        "0637c72676a315a84d0fc532cf1d12b0e8b239c2",
+        "1f1ce991d2349e28b35792e778bc0e23b53279b1",
+        "2c7d9e1e383d4eedfa627f023278a5d068fa0827",
+        "369550edfb504a2c92df498cd09def5570425e10",
+        "3a27906bec699421a86bf6ead3c026683672c8cb",
+        "467abb90780f2cd03ab237cd1fb095b49b01920b",
+        "6cf2908736da798c81b6117a6ce45c301c6b96a1"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "path": "pages/reports/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected grammar in the introductory note, changing 'that Title' to 'A title' and adjusting punctuation.",
+      "sources": [
+        "53ea21ac6bfe82166dd0f8673152c62d9ae76f47"
+      ]
+    },
     {
       "date": "2026-11-12",
       "path": "pages/permissions-for-variations/index.rst",
