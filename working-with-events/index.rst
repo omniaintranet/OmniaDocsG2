@@ -7,7 +7,7 @@ Prerequisite: The tenant feature "Event management" must be active for any event
 
 **Note!** Event manager is not a separate permission, it's a term we use for the person that creates and manages an event. The permission an event manager needs is Editor, for the page where the event is managed.
 
-Important event options:
+Important event options that can be available:
 
 + Users can register to a participant list. The list keeps track of available seats.
 + Users can register to a standby list if all seats are taken.
