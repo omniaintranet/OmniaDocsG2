@@ -6,7 +6,9 @@ source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/wait-for-rn-lib.sh"
 
 ORG="omniaintranet"
 PROJECT_NUMBER=8
-OUTPUT_FILE="/tmp/release.json"
+# The release closeout (sync-approved-release-notes.py) moves every item of an approved release column to
+# "Released", so the emptied column, still named "Wait for RN ...", is not found again. RELEASE_OUTPUT_FILE is for tests.
+OUTPUT_FILE="${RELEASE_OUTPUT_FILE:-/tmp/release.json}"
 REQUESTED_STATUS="${RELEASE_STATUS:-}"
 
 response=$(

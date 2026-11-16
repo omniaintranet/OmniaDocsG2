@@ -90,6 +90,38 @@ for pair in "Wait for RN - ($expected)|($expected)" "Waiting for RN ($expected)|
     fail "strip of '$name' gave '$(strip_wait_for_rn_prefix "$name")', expected '${pair#*|}'"
 done
 
+# detect-release.sh after the release closeout: the column keeps its "Wait for RN" name (it is no longer renamed to
+# "Approved - ..."), but its items are in "Released", so the release is not found again. gh is faked.
+work_dir=$(mktemp -d)
+trap 'rm -rf "$work_dir"' EXIT
+mkdir -p "$work_dir/bin"
+cat > "$work_dir/bin/gh" <<'FAKE'
+#!/usr/bin/env bash
+cat "$FAKE_GH_RESPONSE"
+FAKE
+chmod +x "$work_dir/bin/gh"
+column="[Wait for RN] Release Omnia 7.11.99 / WCM 7.11.99"
+board() { # $1: Status of the release's issue and pull request; the notification draft has no number
+  jq -n --arg status "$1" --arg column "$column" '{data: {organization: {projectV2: {items: {
+    pageInfo: {hasNextPage: false, endCursor: null},
+    nodes: [
+      {fieldValues: {nodes: [{name: $status, optionId: "o1", field: {name: "Status"}}]}, content: {number: 101}},
+      {fieldValues: {nodes: [{name: $status, optionId: "o1", field: {name: "Status"}}]}, content: {number: 200}},
+      {fieldValues: {nodes: [{name: $status, optionId: "o1", field: {name: "Status"}}]}, content: {}}
+    ]}}}}}'
+}
+detect() { # $1: Status of the items; prints the found= output
+  board "$1" > "$work_dir/response.json"
+  : > "$work_dir/output"
+  PATH="$work_dir/bin:$PATH" FAKE_GH_RESPONSE="$work_dir/response.json" GITHUB_OUTPUT="$work_dir/output"     RELEASE_OUTPUT_FILE="$work_dir/release.json" RELEASE_STATUS=""     bash "$(dirname "${BASH_SOURCE[0]}")/detect-release.sh" > /dev/null
+  cat "$work_dir/output"
+}
+[ "$(detect "$column")" = "found=true" ] || fail "detect-release should find the populated Wait for RN column"
+[ "$(jq -r '.releases[0].issueCount' "$work_dir/release.json")" = "2" ] ||
+  fail "detect-release should count the issue and the pull request"
+[ "$(detect "Released")" = "found=false" ] ||
+  fail "detect-release should not find the release again once its items are in Released"
+
 if [ "$failures" -ne 0 ]; then
   echo "$failures failure(s)." >&2
   exit 1

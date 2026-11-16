@@ -1,4 +1,10 @@
-"""Synchronize approved documentation PR content to the existing Prod release item."""
+"""Synchronize approved documentation PR content to the existing Prod release item, and close out the release.
+
+The closeout replaces the earlier rename of the release column to "Approved - ...". It creates (or reuses) the
+release milestone, sets it on the column's issues, closes them as completed and moves every item of the column,
+the release notification included, to Status "Released". It writes item field values only and never edits the
+Status field itself: updating that field resends every option and can wipe the Status of every item on the board.
+"""
 import base64
 import json
 import os
@@ -13,8 +19,24 @@ PUBLISHED_URL = "https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.
 # Approved notifications become issues here, where the other Project 8 issues live (private repo).
 ISSUE_OWNER, ISSUE_REPO = "omniaintranet", "OmniaMono"
 TOKEN_SECRET = "GH_PROJECT_TOKEN_HOTFIX_RELEASE_NOTES_WF"
-ISSUE_ACCESS = (f"The project token (secret {TOKEN_SECRET}) needs the repository permission "
-                f"Issues: Read and write on {ISSUE_OWNER}/{ISSUE_REPO}.")
+ISSUE_REPOSITORY = f"{ISSUE_OWNER}/{ISSUE_REPO}"
+
+
+def issue_access(repository):
+    """What the token needs for issue and milestone writes in a repository."""
+    return (f"The project token (secret {TOKEN_SECRET}) needs the repository permission "
+            f"Issues: Read and write on {repository}.")
+
+
+ISSUE_ACCESS = issue_access(ISSUE_REPOSITORY)
+# The closeout's target column, looked up by this exact name and never created.
+RELEASED = "Released"
+# Columns renamed by the earlier version of this script ("Approved - Omnia ...") are still recognised.
+APPROVED = re.compile(r"^Approved(?![A-Za-z0-9])")
+# Component parts the milestone name leaves out ("Release Omnia 7.12.13 / Workplace 7.12.13 / ..." keeps Omnia,
+# Analytics and Feed), as in the milestones of the manual closeouts (OmniaMono milestones #11-#33).
+MILESTONE_DROPPED = re.compile(r"(?:Workplace|WCM|MS) \d+\.\d+\.\d+", re.IGNORECASE)
+MILESTONE_PART = re.compile(r"[A-Za-z][A-Za-z0-9 .&-]* \d+\.\d+\.\d+")
 # GitHub rejects issue and draft-issue bodies over 65,536 characters; keep a margin.
 MAX_BODY = 65000
 # The generated draft (the recommendation) is kept below the approved notes between these markers,
@@ -48,17 +70,21 @@ class SyncIncomplete(Exception):
         self.summary = summary
 
 
-def api(endpoint, *, query=None, variables=None, project=False):
+def api(endpoint, *, query=None, variables=None, project=False, method=None, fields=None):
+    """One gh api call: GraphQL (query), REST with a JSON body (method and fields) or a REST read."""
     args = ["gh", "api", endpoint]
+    if method:
+        args += ["--method", method]
     if query:
         payload = {"query": query, "variables": variables or {}}
-        args += ["--input", "-"]
     else:
-        payload = None
+        payload = fields
+    if payload is not None:
+        args += ["--input", "-"]
     env = dict(os.environ)
     if project and env.get("PROJECT_TOKEN"):
         env["GH_TOKEN"] = env["PROJECT_TOKEN"]
-    result = subprocess.run(args, input=json.dumps(payload) if payload else None, capture_output=True,
+    result = subprocess.run(args, input=json.dumps(payload) if payload is not None else None, capture_output=True,
                             text=True, encoding="utf-8", env=env)
     if result.returncode:
         message = " ".join((result.stderr or result.stdout or "").split())
@@ -223,7 +249,7 @@ PROJECT_QUERY = """query($cursor: String) {
   organization(login: "omniaintranet") { projectV2(number: 8) {
     id
     fields(first: 100) { nodes { ... on ProjectV2SingleSelectField {
-      id name options { id name color description }
+      id name options { id name }
     } } }
     items(first: 100, after: $cursor) {
       pageInfo { hasNextPage endCursor }
@@ -235,7 +261,12 @@ PROJECT_QUERY = """query($cursor: String) {
         content {
           __typename
           ... on DraftIssue { id title body }
-          ... on Issue { id title body repository { nameWithOwner } }
+          ... on Issue {
+            id number title body state
+            repository { nameWithOwner }
+            milestone { id number title state }
+          }
+          ... on PullRequest { id number title repository { nameWithOwner } }
         }
       }
     }
@@ -255,6 +286,54 @@ def load_project():
         cursor = page["endCursor"]
 
 
+def version_pattern(version):
+    return re.compile(r"\bOmnia\s+" + re.escape(version) + r"(?=\s|/|\)|$)")
+
+
+def column_label(name):
+    """The Wait for RN label (or the legacy Approved label) at the start of a column name, or None."""
+    return WAIT_FOR_RN.match(name) or APPROVED.match(name)
+
+
+def is_release_column(name, version):
+    return bool(column_label(name) and version_pattern(version).search(name))
+
+
+def milestone_title(column_name, version):
+    """The release milestone's name: the column's component line without its label and the Workplace, WCM and MS parts.
+
+    "[Wait for RN] Release Omnia 7.12.13 / Workplace 7.12.13 / WCM 7.12.13 / MS 7.12.13 / Analytics 7.12.5 /
+    Feed 7.11.6" gives "Release Omnia 7.12.13 / Analytics 7.12.5 / Feed 7.11.6".
+    """
+    name = column_name.strip()
+    label = column_label(name)
+    if label:
+        name = re.sub(r"^[^A-Za-z0-9(]+", "", name[label.end():])
+    name = name.strip()
+    if name.startswith("(") and name.endswith(")"):
+        name = name[1:-1]
+    parts = [" ".join(part.split()) for part in name.split("/")]
+    error = f"Cannot derive the release milestone's name from the column `{column_name}`"
+    if not re.fullmatch(r"(?:Release )?Omnia " + re.escape(version), parts[0], re.IGNORECASE):
+        raise ValueError(f"{error}: it does not start with Omnia {version}")
+    kept = [part for part in parts[1:] if not MILESTONE_DROPPED.fullmatch(part)]
+    if not all(MILESTONE_PART.fullmatch(part) for part in kept):
+        raise ValueError(f"{error}: expected components such as `Analytics 7.12.5` between the slashes")
+    return " / ".join([f"Release Omnia {version}"] + kept)
+
+
+def repository_of(entry):
+    return entry["content"]["repository"]["nameWithOwner"]
+
+
+def describe(entry):
+    """A Project item for the run log: owner/repo#number, or the draft's title."""
+    content = entry.get("content") or {}
+    if content.get("number"):
+        return f"{repository_of(entry)}#{content['number']}"
+    return f"draft `{content.get('title') or entry['id']}`"
+
+
 def plan_update(project, items, pr, version, section, recover_draft=None):
     titles = {f"Release notes for Omnia {version} are now ready",
               f"Release notes for Omnia {version} are approved"}
@@ -265,42 +344,287 @@ def plan_update(project, items, pr, version, section, recover_draft=None):
     kind = item["content"].get("__typename")
     if kind not in ("DraftIssue", "Issue"):
         raise ValueError("The Prod notification is neither a draft nor an issue")
-    if kind == "Issue" and (item["content"].get("repository") or {}).get("nameWithOwner") != f"{ISSUE_OWNER}/{ISSUE_REPO}":
-        raise ValueError(f"The Prod notification is an issue outside {ISSUE_OWNER}/{ISSUE_REPO}")
+    if kind == "Issue" and (item["content"].get("repository") or {}).get("nameWithOwner") != ISSUE_REPOSITORY:
+        raise ValueError(f"The Prod notification is an issue outside {ISSUE_REPOSITORY}")
     if not re.search(re.escape(pr["html_url"]) + r"(?=[)\s]|$)", item["content"]["body"]):
         raise ValueError("The Prod notification is not linked to this documentation PR")
     fields = [field for field in project["fields"]["nodes"] if field.get("name") == "Status"]
     if len(fields) != 1 or not item.get("status"):
         raise ValueError("Cannot identify the release notification's Status option")
     field = fields[0]
-    option_id = item["status"]["optionId"]
-    options = [dict(option) for option in field["options"]]
-    matching = [option for option in options if option["id"] == option_id]
-    if len(matching) != 1:
+    options = field["options"]
+    released = [option for option in options if option["name"] == RELEASED]
+    if len(released) != 1:
+        raise ValueError(f'Expected exactly one Status option named "{RELEASED}" in Prod; this workflow never creates '
+                         "one, so add it in the board's UI")
+    released = released[0]
+    current = [option for option in options if option["id"] == item["status"]["optionId"]]
+    if len(current) != 1:
         raise ValueError("Cannot identify the release column")
-    option = matching[0]
-    if not re.search(r"\bOmnia\s+" + re.escape(version) + r"(?=\s|/|$)", option["name"]):
-        raise ValueError("The release column does not match the PR version")
-    approved_name = option["name"]
-    label = WAIT_FOR_RN.match(approved_name)
-    if label:
-        # Same separator rule as strip_wait_for_rn_prefix, so "[Wait for RN] X" becomes "Approved - X".
-        approved_name = "Approved - " + re.sub(r"^[^A-Za-z0-9(]+", "", approved_name[label.end():]).rstrip()
-    if not re.match(r"^Approved(?![A-Za-z0-9])", approved_name):
-        raise ValueError("Expected a Wait for RN or Approved release column")
-    if any(other["id"] != option_id and other["name"] == approved_name for other in options):
-        raise ValueError("An Approved column already exists separately; manual reconciliation required")
-    rename = option["name"] != approved_name
-    option["name"] = approved_name
+    current = current[0]
+    columns = [option for option in options if is_release_column(option["name"], version)]
+    if current["id"] == released["id"]:
+        # Moved by an earlier run (a re-run, or the merge sync after the approval sync): the column is found by
+        # its name, and Christian may already have deleted it.
+        if len(columns) > 1:
+            raise ValueError(f"More than one release column for Omnia {version}; manual reconciliation required")
+        column = columns[0] if columns else None
+    else:
+        if not version_pattern(version).search(current["name"]):
+            raise ValueError("The release column does not match the PR version")
+        if not column_label(current["name"]):
+            raise ValueError("Expected a Wait for RN or Approved release column")
+        if len(columns) != 1:
+            raise ValueError(f"More than one release column for Omnia {version}; manual reconciliation required")
+        column = current
     draft = kept_draft(item["content"]["body"])
     draft_source = "kept from the notification" if draft is not None else "not available"
     if draft is None and recover_draft:
         draft = recover_draft()
         draft_source = "recovered from the documentation PR's first commit"
-    return {"item": item, "field_id": field["id"], "options": options, "rename": rename,
+    return {"item": item, "project_id": project["id"], "field_id": field["id"], "released_id": released["id"],
+            "move": current["id"] != released["id"], "column": column["name"] if column else None,
+            "closeout": plan_closeout(items, item, column, version) if column else None,
             "convert": kind == "DraftIssue",
             "title": f"Release notes for Omnia {version} are approved",
-            "body": approval_body(pr, section, draft), "status": approved_name, "draft_source": draft_source}
+            "body": approval_body(pr, section, draft), "draft_source": draft_source}
+
+
+def plan_closeout(items, notification, column, version):
+    """What the closeout does with the release column's other items. Milestones are looked up separately."""
+    title = milestone_title(column["name"], version)
+    in_column, issues, others = [], [], []
+    for entry in items:
+        if entry["id"] == notification["id"] or (entry.get("status") or {}).get("optionId") != column["id"]:
+            continue
+        content = entry.get("content") or {}
+        kind = content.get("__typename")
+        if kind in ("Issue", "PullRequest") and not (content.get("id") and content.get("number") and
+                                                     (content.get("repository") or {}).get("nameWithOwner")):
+            kind = f"{kind} without its id, number or repository"
+        if kind == "Issue":
+            if entry["content"].get("state") not in ("OPEN", "CLOSED"):
+                raise ValueError(f"Cannot tell whether {describe(entry)} is open or closed")
+            issues.append(entry)
+        elif kind in ("PullRequest", "DraftIssue"):
+            others.append(entry)
+        else:
+            raise ValueError(f"An item in the release column has no readable content ({kind or 'none'}); the project "
+                             f"token (secret {TOKEN_SECRET}) may lack read access to its repository")
+        in_column.append(entry)
+    milestone = lambda entry: entry["content"].get("milestone")  # noqa: E731
+    assign = [entry for entry in issues if not milestone(entry)]
+    # An issue that already has another milestone (its own repository's, such as OmniaAnalytics#7) keeps it.
+    kept = [entry for entry in issues if milestone(entry) and milestone(entry)["title"] != title]
+    # The release notification gets the OmniaMono milestone and is closed too (Christian, 2026-11-16), once it is
+    # an issue; a draft is converted first. A milestone it already has is kept, as for any other issue.
+    note = notification["content"]
+    note_milestone = note.get("milestone") if note["__typename"] == "Issue" else None
+    note_assign = not note_milestone
+    note_close = note["__typename"] == "DraftIssue" or note.get("state") == "OPEN"
+    # OmniaMono always gets the milestone; another repository only for an issue without a milestone of its own.
+    create = sorted({ISSUE_REPOSITORY} | {repository_of(entry) for entry in assign}) if in_column or note_assign else []
+    # Repositories that already hold the milestone (an earlier run) are closed out too.
+    holding = {repository_of(entry) for entry in items
+               if (entry.get("content") or {}).get("__typename") == "Issue" and (milestone(entry) or {}).get("title") == title}
+    return {"title": title, "items": in_column, "assign": assign, "kept": kept, "others": others,
+            "note_assign": note_assign, "note_close": note_close,
+            "note_kept": note_milestone["title"] if note_milestone and note_milestone["title"] != title else None,
+            "close": [entry for entry in issues if entry["content"]["state"] == "OPEN"],
+            "already_closed": [entry for entry in issues if entry["content"]["state"] == "CLOSED"],
+            "create": create, "milestone_repos": sorted(set(create) | holding)}
+
+
+def find_milestone(repository, title):
+    """The repository's milestone with exactly this title (open or closed), or None."""
+    found, page = [], 1
+    while True:
+        try:
+            batch = api(f"repos/{repository}/milestones?state=all&per_page=100&page={page}", project=True)
+        except GitHubError as error:
+            raise GitHubError(f"Cannot read the milestones of {repository}: {error}. {issue_access(repository)}") from None
+        found += [milestone for milestone in batch if milestone.get("title") == title]
+        if len(batch) < 100:
+            break
+        page += 1
+    if len(found) > 1:
+        raise ValueError(f"{repository} has more than one milestone named `{title}`")
+    return found[0] if found else None
+
+
+def load_milestones(plan):
+    closeout = plan["closeout"]
+    if not closeout:
+        return {}
+    return {repository: find_milestone(repository, closeout["title"]) for repository in closeout["milestone_repos"]}
+
+
+MOVE_ITEM = """mutation($project: ID!, $item: ID!, $field: ID!, $option: String!) {
+  updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: $field,
+                                        value: {singleSelectOptionId: $option}}) {
+    projectV2Item { id }
+  }
+}"""
+
+
+def update_notification(plan):
+    item = plan["item"]["content"]
+    if item["__typename"] == "Issue":
+        api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
+          updateIssue(input: {id: $id, title: $title, body: $body}) { issue { id } }
+        }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
+    else:
+        api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
+          updateProjectV2DraftIssue(input: {draftIssueId: $id, title: $title, body: $body}) {
+            draftIssue { id }
+          }
+        }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
+
+
+def create_milestone(repository, title, milestones):
+    milestones[repository] = api(f"repos/{repository}/milestones", method="POST", fields={"title": title}, project=True)
+
+
+def set_milestone(entry, milestone):
+    api("graphql", query="""mutation($id: ID!, $milestone: ID!) {
+      updateIssue(input: {id: $id, milestoneId: $milestone}) { issue { id } }
+    }""", variables={"id": entry["content"]["id"], "milestone": milestone["node_id"]}, project=True)
+
+
+def close_issue(entry):
+    api("graphql", query="""mutation($id: ID!) {
+      closeIssue(input: {issueId: $id, stateReason: COMPLETED}) { issue { id } }
+    }""", variables={"id": entry["content"]["id"]}, project=True)
+
+
+def move_to_released(plan, entry):
+    api("graphql", query=MOVE_ITEM, variables={"project": plan["project_id"], "item": entry["id"],
+                                               "field": plan["field_id"], "option": plan["released_id"]}, project=True)
+
+
+def convert_notification(plan):
+    """Convert the draft; the item keeps its id and Status, and its content becomes the new OmniaMono issue."""
+    repository = api("graphql", query="""query($owner: String!, $name: String!) {
+      repository(owner: $owner, name: $name) { id }
+    }""", variables={"owner": ISSUE_OWNER, "name": ISSUE_REPO}, project=True)["data"]["repository"]["id"]
+    result = api("graphql", query="""mutation($item: ID!, $repository: ID!) {
+      convertProjectV2DraftIssueItemToIssue(input: {itemId: $item, repositoryId: $repository}) {
+        item { id content { ... on Issue { id number } } }
+      }
+    }""", variables={"item": plan["item"]["id"], "repository": repository}, project=True)
+    issue = ((((result.get("data") or {}).get("convertProjectV2DraftIssueItemToIssue") or {}).get("item") or {})
+             .get("content") or {})
+    if not issue.get("id"):
+        raise ValueError("the conversion did not return the new issue")
+    plan["item"]["content"] = dict(plan["item"]["content"], __typename="Issue", id=issue["id"],
+                                   number=issue.get("number"), repository={"nameWithOwner": ISSUE_REPOSITORY})
+
+
+def close_milestone(repository, milestones):
+    """Close the milestone once every issue on it is closed; re-read first, so a re-run never writes twice."""
+    milestone = api(f"repos/{repository}/milestones/{milestones[repository]['number']}", project=True)
+    if milestone["state"] == "closed":
+        return
+    if milestone.get("open_issues"):
+        raise ValueError(f"the milestone `{milestone['title']}` in {repository} still has {milestone['open_issues']} "
+                         "open issue(s) that are not in the release column, so it was left open")
+    api(f"repos/{repository}/milestones/{milestone['number']}", method="PATCH", fields={"state": "closed"}, project=True)
+
+
+def plan_writes(plan, milestones):
+    """Every write, in order: (description, repository whose Issues permission it needs or None, call).
+
+    Order: the notes; the milestones; milestone on each issue; close each issue; move the column's items, then the
+    notification, to Released; convert the notification (only after it left the Wait for RN column, because
+    detect-release.sh reads the repository issues in such columns), set the milestone on it and close it; close the
+    milestones.
+    Whatever is already done (read from the current state) is left out, so a re-run only finishes what is pending.
+    """
+    writes = []
+    note = plan["item"]["content"]
+    if note["title"] != plan["title"] or note["body"] != plan["body"]:
+        writes.append(("update the release notification with the approved release notes, the generated draft kept "
+                       "below them", ISSUE_REPOSITORY if note["__typename"] == "Issue" else None,
+                       lambda: update_notification(plan)))
+    closeout = plan["closeout"]
+    if closeout:
+        title = closeout["title"]
+        for repository in closeout["create"]:
+            if milestones.get(repository) is None:
+                writes.append((f"create the milestone `{title}` in {repository}", repository,
+                               lambda repository=repository: create_milestone(repository, title, milestones)))
+        for entry in closeout["assign"]:
+            writes.append((f"set the milestone on {describe(entry)}", repository_of(entry),
+                           lambda entry=entry: set_milestone(entry, milestones[repository_of(entry)])))
+        for entry in closeout["close"]:
+            writes.append((f"close {describe(entry)} as completed", repository_of(entry),
+                           lambda entry=entry: close_issue(entry)))
+        for entry in closeout["items"]:
+            writes.append((f"move {describe(entry)} to {RELEASED}", None,
+                           lambda entry=entry: move_to_released(plan, entry)))
+    if plan["move"]:
+        writes.append((f"move the release notification to {RELEASED}", None,
+                       lambda: move_to_released(plan, plan["item"])))
+    if plan["convert"]:
+        writes.append((f"convert the release notification to an {ISSUE_REPOSITORY} issue", ISSUE_REPOSITORY,
+                       lambda: convert_notification(plan)))
+    if closeout and closeout["note_assign"]:
+        writes.append(("set the milestone on the release notification", ISSUE_REPOSITORY,
+                       lambda: set_milestone(plan["item"], milestones[ISSUE_REPOSITORY])))
+    if closeout and closeout["note_close"]:
+        writes.append(("close the release notification as completed", ISSUE_REPOSITORY,
+                       lambda: close_issue(plan["item"])))
+    if closeout:
+        for repository in closeout["milestone_repos"]:
+            milestone = milestones.get(repository)
+            if (milestone is None and repository in closeout["create"]) or (milestone or {}).get("state") == "open":
+                writes.append((f"close the milestone `{title}` in {repository}", repository,
+                               lambda repository=repository: close_milestone(repository, milestones)))
+    return writes
+
+
+def closeout_notes(plan, version):
+    """What the closeout leaves as it is, for the run log and the job summary."""
+    closeout = plan["closeout"]
+    if not closeout:
+        return [f"The release column for Omnia {version} is no longer on the board; there is nothing more to close out."]
+    notes = [f"Release column: `{plan['column']}`. Milestone: `{closeout['title']}`."]
+    notes += [f"Kept its own milestone `{entry['content']['milestone']['title']}`: {describe(entry)}"
+              for entry in closeout["kept"]]
+    notes += [f"Moved to {RELEASED} only (not an issue: no milestone, not closed): {describe(entry)}"
+              for entry in closeout["others"]]
+    if closeout["already_closed"]:
+        notes.append("Already closed, left as they are: " + ", ".join(map(describe, closeout["already_closed"])))
+    if closeout["note_kept"]:
+        notes.append(f"The release notification kept its own milestone `{closeout['note_kept']}`.")
+    return notes
+
+
+def run_writes(writes, version, number):
+    """Make the writes in order; a failed write stops the ones after it and says what is done and what is pending."""
+    done = []
+    for description, repository, call in writes:
+        try:
+            call()
+        except (GitHubError, ValueError) as error:
+            denied = isinstance(error, GitHubError) and re.search(r"not accessible|forbidden|permission|\b403\b",
+                                                                  str(error), re.IGNORECASE)
+            # Issue and milestone writes need Issues access on their repository; the Project writes need only the
+            # project permission the token already uses.
+            hint = issue_access(repository) if repository and denied else ""
+            answer = f"GitHub answered: `{error}`." if isinstance(error, GitHubError) else f"Stopped: {error}."
+            summary = [f"### Omnia {version}: hotfix release notes sync incomplete",
+                       ("Done in this run:\n\n" + "\n".join(f"- {line}" for line in done)) if done else
+                       "Nothing was changed in Project 8 in this run.",
+                       f"Still pending: {description}. {answer}"]
+            if hint:
+                summary.append(hint)
+            summary.append(f"After fixing the cause, run this workflow again with `pr_number` {number}; "
+                           "steps that are already done are skipped.")
+            raise SyncIncomplete(f"Omnia {version}: {description} failed: {error}. {hint}".strip(),
+                                 "\n\n".join(summary)) from None
+        done.append(description)
+    return done
 
 
 def load_reviews(endpoint):
@@ -314,6 +638,12 @@ def load_reviews(endpoint):
         page += 1
 
 
+def prepare(endpoint, pr, version, section):
+    project, items = load_project()
+    plan = plan_update(project, items, pr, version, section, recover_draft=lambda: draft_from_pr(endpoint, version))
+    return plan, load_milestones(plan)
+
+
 def sync(number, *, dry_run=False):
     endpoint = f"repos/{REPOSITORY}/pulls/{number}"
     pr = api(endpoint)
@@ -325,8 +655,7 @@ def sync(number, *, dry_run=False):
     ref = pr["merge_commit_sha"] if pr.get("merged") else pr["head"]["sha"]
     content = api(f"repos/{REPOSITORY}/contents/{NOTES_PATH}?ref={ref}")
     section = extract_release(base64.b64decode(content["content"]).decode("utf-8-sig"), version)
-    project, items = load_project()
-    plan = plan_update(project, items, pr, version, section, recover_draft=lambda: draft_from_pr(endpoint, version))
+    plan, milestones = prepare(endpoint, pr, version, section)
     latest = api(endpoint)
     if latest["head"]["sha"] != pr["head"]["sha"] or latest.get("merged") != pr.get("merged"):
         raise ValueError("PR changed during synchronization; no Project updates made")
@@ -335,73 +664,26 @@ def sync(number, *, dry_run=False):
         print("Approval is no longer current; Prod is unchanged.")
         return
     if not dry_run:
-        write_project(plan, version, number)
-    converted = (f"; {'would convert' if dry_run else 'converted'} to an {ISSUE_OWNER}/{ISSUE_REPO} issue"
-                 if plan["convert"] else "")
-    message = (("Dry run: would synchronize" if dry_run else "Synchronized") +
-               f" Omnia {version}: {plan['title']}; Status: {plan['status']}{converted}; "
+        # Re-read the board and the milestones right before writing, so the writes follow the current state.
+        plan, milestones = prepare(endpoint, pr, version, section)
+    writes = plan_writes(plan, milestones)
+    notes = closeout_notes(plan, version)
+    if dry_run:
+        print(f"Dry run for Omnia {version}: {len(writes)} planned write(s), none made.")
+        for description, _, _ in writes:
+            print(f"- would {description}")
+        for note in notes:
+            print(note)
+        return
+    done = run_writes(writes, version, number)
+    converted = f"; converted to an {ISSUE_REPOSITORY} issue" if plan["convert"] else ""
+    message = (f"Synchronized Omnia {version}: {plan['title']}; Status: {RELEASED}{converted}; "
                f"generated draft: {plan['draft_source']}")
     print(message)
-    if not dry_run:
-        write_summary(message)
-
-
-def write_project(plan, version, number):
-    """Update the notes, then rename the column, then convert; a failed step stops the ones after it."""
-    item = plan["item"]["content"]
-    is_issue = item["__typename"] == "Issue"
-    steps = [("update", "the approved release notes, with the generated draft kept below them"),
-             ("rename", f"the release column `{plan['status']}`"),
-             ("convert", f"the conversion to an {ISSUE_OWNER}/{ISSUE_REPO} issue")]
-    current = 0
-    try:
-        if item["title"] != plan["title"] or item["body"] != plan["body"]:
-            if is_issue:
-                api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
-                  updateIssue(input: {id: $id, title: $title, body: $body}) { issue { id } }
-                }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
-            else:
-                api("graphql", query="""mutation($id: ID!, $title: String!, $body: String!) {
-                  updateProjectV2DraftIssue(input: {draftIssueId: $id, title: $title, body: $body}) {
-                    draftIssue { id }
-                  }
-                }""", variables={"id": item["id"], "title": plan["title"], "body": plan["body"]}, project=True)
-        current = 1
-        if plan["rename"]:
-            api("graphql", query="""mutation($field: ID!, $options: [ProjectV2SingleSelectFieldOptionInput!]!) {
-              updateProjectV2Field(input: {fieldId: $field, singleSelectOptions: $options}) {
-                projectV2Field { ... on ProjectV2SingleSelectField { id } }
-              }
-            }""", variables={"field": plan["field_id"], "options": plan["options"]}, project=True)
-        current = 2
-        # Convert only after the column is Approved: detect-release.sh reads repository issues
-        # in Wait for RN columns, so the notification must never be an issue while it sits there.
-        if plan["convert"]:
-            repository = api("graphql", query="""query($owner: String!, $name: String!) {
-              repository(owner: $owner, name: $name) { id }
-            }""", variables={"owner": ISSUE_OWNER, "name": ISSUE_REPO}, project=True)["data"]["repository"]["id"]
-            api("graphql", query="""mutation($item: ID!, $repository: ID!) {
-              convertProjectV2DraftIssueItemToIssue(input: {itemId: $item, repositoryId: $repository}) {
-                item { id }
-              }
-            }""", variables={"item": plan["item"]["id"], "repository": repository}, project=True)
-    except GitHubError as error:
-        name, pending = steps[current]
-        done = [description for _, description in steps[:current]]
-        # Writing an OmniaMono issue (the conversion, or updating a notification that is already an issue)
-        # needs Issues access on OmniaMono; the Project writes need only the project permission.
-        issue_write = name == "convert" or (name == "update" and is_issue)
-        denied = re.search(r"not accessible|forbidden|permission|\b403\b", str(error), re.IGNORECASE)
-        hint = ISSUE_ACCESS if issue_write and denied else ""
-        summary = [f"### Omnia {version}: hotfix release notes sync incomplete",
-                   ("Up to date in Project 8: " + "; ".join(done) + ".") if done else "Nothing was changed in Project 8.",
-                   f"Still pending: {pending}. GitHub answered: `{error}`."]
-        if hint:
-            summary.append(hint)
-        summary.append(f"After fixing the cause, run this workflow again with `pr_number` {number}; "
-                       "steps that are already done are skipped.")
-        raise SyncIncomplete(f"Omnia {version}: {pending} failed: {error}. {hint}".strip(),
-                             "\n\n".join(summary)) from None
+    lines = [f"- {line}" for line in done] or ["- Nothing to write: Prod was already up to date."]
+    for line in lines + notes:
+        print(line)
+    write_summary("\n\n".join([message, "Done in this run:\n\n" + "\n".join(lines), "\n\n".join(notes)]))
 
 
 def write_summary(text):
