@@ -24,7 +24,7 @@ If event management is connected to an Outlook calendar, this additional option 
 
 + The participant list displays a status icon to indicate if the registered user has accepted the event in his or her calendar. 
 
-**Note!** The service account used for event management can not be ADFS connected. If your organization uses AFDS, create and use a cloud-only account for this purpose instead.
+**Note!** The service account used for event management can not be ADFS connected. If your organization uses ADFS, create and use a cloud-only account for this purpose instead.
 
 **Note!** In Omnia on-prem, use personal Exchange calendars. Support for Exchange server 2016 and 2019.
 
