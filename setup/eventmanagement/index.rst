@@ -44,20 +44,22 @@ Connect to Outlook
 Follow these steps to enable integration with Outlook.
 
 14. Go to Omnia admin tenant settings > Permissions > Secrets.
-15. Click on Event management service account and fill in an account that should be used to read/write from event calendars in Outlook.
+15. Click on Event management service account and fill in an account that should be used to access the event calendars in Outlook.
 
 .. image:: events-management-service-account.png
 
 16. Go to Outlook > People.
-17. Create a new Group that can be used to host an event calendar.
+17. Create a new Group that can be used to host an event calendar. The Group provides the event calendar that Omnia will access.
 
 .. image:: outlook-newgroup.png
 
-18. Add the service account as a member to the new Group. (Note! If the service account doesn't have an Outlook license, you have to add the account to the group using Entra ID).
+18. Add the service account as a member to the new Group. 
 
-19. Go to Omnia admin in context of the publishing app.
+**Note!** If the service account doesn't have an Outlook license, you have to add the account to the group using Entra ID.
+
+19. Open Omnia admin in context of the publishing app.
 20. Go to the current business profile and click on Event management > Publishing apps.
-21. Select the publishing app and page collection where your event management solution is located and map the properties.
+21. Select the publishing app and page collection where the event management solution is located. Map the relevant event properties to the corresponding properties in the publishing app.
 
 .. image:: events-management-fieldmappings.png
 
