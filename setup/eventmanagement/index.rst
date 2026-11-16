@@ -43,7 +43,7 @@ Connect to Outlook
 -------------------
 Follow these steps to enable integration with Outlook.
 
-14. Go to Omnia Admin > Security > Secrets.
+14. Go to Omnia admin tenant settings > Permissions > Secrets.
 15. Click on Event management service account and fill in an account that should be used to read/write from event calendars in Outlook.
 
 .. image:: events-management-service-account.png
