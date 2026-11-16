@@ -30,7 +30,7 @@ Default properties for Event management are added automatically.
 
 .. image:: event-page-readmode.png
 
-11. Configure the page type settings according to needs. Make sure to configure which properties that should be displayed in new and edit forms respectively.
+11. Configure the page type settings according to needs. Make sure to configure properties that should be displayed in new and edit forms respectively.
 
 .. image:: event-pagetype-settings.png
 
