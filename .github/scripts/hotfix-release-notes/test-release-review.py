@@ -132,8 +132,8 @@ class ReleaseReviewTests(unittest.TestCase):
         spec.loader.exec_module(sync)
         self.assertTrue(rendered.stdout.startswith(sync.GENERATED_START), "The draft carries the sync's markers")
         pr = {"merged": True, "html_url": "https://github.com/omniaintranet/OmniaDocsG2/pull/43"}
-        project = {"fields": {"nodes": [{"id": "field", "name": "Status", "options": [
-            {"id": "release", "name": "Wait for RN - Omnia 7.11.99", "color": "GRAY", "description": ""}]}]}}
+        project = {"id": "project", "fields": {"nodes": [{"id": "field", "name": "Status", "options": [
+            {"id": "release", "name": "Wait for RN - Omnia 7.11.99"}, {"id": "released", "name": "Released"}]}]}}
         items = [{"id": "item", "status": {"optionId": "release"}, "content": {
             "__typename": "DraftIssue", "id": "draft", "title": "Release notes for Omnia 7.11.99 are now ready",
             "body": rendered.stdout}}]
