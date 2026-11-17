@@ -3,6 +3,18 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+16 November 2026
+----------------
+
+* `Event participant counter in Omnia 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/blocks-event-management/participant-counter-712/index.html>`__ — **Spelling / grammar**
+  Improved grammar and clarity in the explanation of how admins and editors can exceed participant limits.
+
+* `Setup Event management <https://omnia-docs-g2.readthedocs.io/en/latest/setup/eventmanagement/index.html>`__ — **Updated guidance**
+  Updated Secrets navigation path, clarified Outlook Group requirements, and provided more detailed instructions for event property mapping in the publishing app.
+
+* `Working with events <https://omnia-docs-g2.readthedocs.io/en/latest/working-with-events/index.html>`__ — **Updated guidance**
+  Clarified that listed event options can be available depending on configuration and added reference to more details below.
+
 13 November 2026
 ----------------
 
@@ -1199,21 +1211,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Tabs - Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/omnia-feed/tabs-omnia-feed/index.html>`__ — **Updated screenshots**
   Updated the images used on this page.
-
-19 August 2026
---------------
-
-* `Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/index.html>`__ — **Updated guidance**
-  Removed note about hotfix releases location and added dedicated section directing users to the hotfix releases page.
-
-* `Release 6 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/6/index.html>`__ — **Updated guidance**
-  Replaced bare link reference with a descriptive sentence explaining where to find Omnia Feed version 6 hotfix releases.
-
-* `Release 7 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/index.html>`__ — **Updated guidance**
-  Simplified hotfix releases section text and changed link label from generic 'here' to descriptive 'Hotfix releases'.
-
-* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
-  Added Release 7.11.6 notes documenting FAQ improvements, Layout Version Picker fix, and Sign In button styling update.
-
-* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/7/hotfix-releases/versions.html>`__ — **Added information**
-  Reorganized release notes into major version sections and added new hotfix releases 7.11.5, 7.11.3, 7.9.12, and 7.9.10.

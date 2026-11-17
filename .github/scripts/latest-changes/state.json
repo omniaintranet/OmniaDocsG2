@@ -528,12 +528,6 @@
     "6d5a932dfd471374a568ef41ab46d4ca39f92f89": "2026-09-02",
     "ed63fb0d98b4ab62831a0a0110a74f52df242d28": "2026-09-02",
     "28fb007ef840469c5ea86c9b76c28108b43cd757": "2026-09-03",
-    "1f5831489b7403269ca64cc9a75bad54bc21f8a0": "2026-08-19",
-    "67e1813be52775da784e04a90c7aa3ef88609893": "2026-08-19",
-    "2bb79a7975023ca94b14ddf2376fa814d21ec331": "2026-08-19",
-    "b6352c88e4fc3ad73416ef729bff19552c8d261f": "2026-08-19",
-    "65606208a281410516201ada3fdafbb5355cad6c": "2026-08-19",
-    "455f2e7994f3769c37110bf003eada7a04c8cf77": "2026-08-19",
     "209004a8c5475a8c7e8ce1e468a5483a4e21bd3c": "2026-10-16",
     "f3779c6548cc96f0bb90044806ea9db155adcdd9": "2026-10-16",
     "64a90f7fc4a943cbf33113bee5c7ad8e4920d4f8": "2026-10-20",
@@ -820,9 +814,47 @@
     "2c7d9e1e383d4eedfa627f023278a5d068fa0827": "2026-11-13",
     "6cf2908736da798c81b6117a6ce45c301c6b96a1": "2026-11-13",
     "0637c72676a315a84d0fc532cf1d12b0e8b239c2": "2026-11-13",
-    "467abb90780f2cd03ab237cd1fb095b49b01920b": "2026-11-13"
+    "467abb90780f2cd03ab237cd1fb095b49b01920b": "2026-11-13",
+    "f769217490eabd67e29f550f0541bf5b6a5e389e": "2026-11-16",
+    "d5d9fe8d5f74d70419a18071b955ec397cb8fc23": "2026-11-16",
+    "4b0b6d8aa16ea74355bae97cdaf47ab2a2016fee": "2026-11-16",
+    "217e4a59965e2c2e90e72425bbb07db74e03ebe8": "2026-11-16",
+    "21a25d42e6966472edf7b89949fe53c59294fc16": "2026-11-16",
+    "f50e2980a09b15903208646ed0d7f642d7277303": "2026-11-16",
+    "6a54a1d476cca64ab42896313e7a2add861eed17": "2026-11-16"
   },
   "entries": [
+    {
+      "date": "2026-11-16",
+      "path": "working-with-events/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that listed event options can be available depending on configuration and added reference to more details below.",
+      "sources": [
+        "217e4a59965e2c2e90e72425bbb07db74e03ebe8",
+        "4b0b6d8aa16ea74355bae97cdaf47ab2a2016fee",
+        "f769217490eabd67e29f550f0541bf5b6a5e389e"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "path": "setup/eventmanagement/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated Secrets navigation path, clarified Outlook Group requirements, and provided more detailed instructions for event property mapping in the publishing app.",
+      "sources": [
+        "21a25d42e6966472edf7b89949fe53c59294fc16",
+        "6a54a1d476cca64ab42896313e7a2add861eed17",
+        "f50e2980a09b15903208646ed0d7f642d7277303"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "path": "blocks/blocks-event-management/participant-counter-712/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Improved grammar and clarity in the explanation of how admins and editors can exceed participant limits.",
+      "sources": [
+        "d5d9fe8d5f74d70419a18071b955ec397cb8fc23"
+      ]
+    },
     {
       "date": "2026-11-13",
       "path": "release-notes/7.0/versions.rst",
@@ -4825,64 +4857,6 @@
       "description": "Updated the images used on this page.",
       "sources": [
         "f7a1bd39acedc71a7d111073bcb3ac9f978e075a"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
-      "classification": "Added information",
-      "description": "Added Release 7.11.6 notes documenting FAQ improvements, Layout Version Picker fix, and Sign In button styling update.",
-      "sources": [
-        "67e1813be52775da784e04a90c7aa3ef88609893"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
-      "classification": "Updated guidance",
-      "description": "Replaced bare link reference with a descriptive sentence explaining where to find Omnia Feed version 6 hotfix releases.",
-      "sources": [
-        "65606208a281410516201ada3fdafbb5355cad6c"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/older-releases/5/index.rst",
-      "classification": "Navigation update",
-      "description": "Hotfix releases section now displays as a direct link instead of an embedded table of contents.",
-      "sources": [
-        "1f5831489b7403269ca64cc9a75bad54bc21f8a0",
-        "65606208a281410516201ada3fdafbb5355cad6c"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/index.rst",
-      "classification": "Updated guidance",
-      "description": "Removed note about hotfix releases location and added dedicated section directing users to the hotfix releases page.",
-      "sources": [
-        "455f2e7994f3769c37110bf003eada7a04c8cf77",
-        "b6352c88e4fc3ad73416ef729bff19552c8d261f"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/7/index.rst",
-      "classification": "Updated guidance",
-      "description": "Simplified hotfix releases section text and changed link label from generic 'here' to descriptive 'Hotfix releases'.",
-      "sources": [
-        "2bb79a7975023ca94b14ddf2376fa814d21ec331",
-        "65606208a281410516201ada3fdafbb5355cad6c",
-        "67e1813be52775da784e04a90c7aa3ef88609893"
-      ]
-    },
-    {
-      "date": "2026-08-19",
-      "path": "release-notes/omnia-feed/7/hotfix-releases/versions.rst",
-      "classification": "Added information",
-      "description": "Reorganized release notes into major version sections and added new hotfix releases 7.11.5, 7.11.3, 7.9.12, and 7.9.10.",
-      "sources": [
-        "67e1813be52775da784e04a90c7aa3ef88609893"
       ]
     }
   ]
