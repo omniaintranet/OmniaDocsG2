@@ -1,7 +1,7 @@
 Test pages
 ====================================
 
-Only test pages here, for testing different documentaton format.
+Only test pages here, for testing different documentation format.
 
 
 .. toctree::
