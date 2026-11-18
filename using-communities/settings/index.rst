@@ -18,8 +18,8 @@ The existing communities are listed (image from a test environment).
 
 .. image:: communities-bp-712.png
 
-3. If there are no templates available, you must create at least one, as describe here: :doc:`Templates for communities </admin-settings/business-group-settings/communities/communities-65/templates/index>`. 
-4. Create a community site according to the description on this page: :doc:`Communities apps </admin-settings/business-group-settings/communities/communities-65/apps/index>`
+3. If there are no templates available, you must create at least one, as describe here: :doc:`Templates for communities </admin-settings/business-group-settings/communities/communities-v7/templates/index>`. 
+4. Create a community site according to the description on this page: :doc:`Directory of communities </admin-settings/business-group-settings/communities/communities-v7/directory/index>`
 5. When the site has been created, you can use the link (Title) in Communities to go to the site. 
 6. Setup access to the community some way, using the URL. (More information about that below.)
 
