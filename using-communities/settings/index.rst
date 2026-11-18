@@ -27,7 +27,7 @@ Setting up access to communities
 **********************************
 You set up access using the options available in Omnia. Here's an example using banners for access to the various communities available:
 
-.. image:: communities-acccess-example.png
+.. image:: communities-acccess-example-712.png
 
 (MY SUBSCRIPTIONS is an action button in this example.)
 
