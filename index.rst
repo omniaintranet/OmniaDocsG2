@@ -33,3 +33,4 @@ Topics
    release-notes/index
    roadmap/index
    contribute-to-doc/index
+   test-pages/index
