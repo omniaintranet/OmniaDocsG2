@@ -1,25 +1,25 @@
 Setting up a community
 ========================
 
-Setting up a community is pretty straight forward. You need to be either Tenant Administrator or Business Profile Administrator for the business profile where the community should be available.
+Setting up a community is pretty straight forward. You need to be either tenant administrator or business profile administrator for the business profile where the community should be available.
 
 You also need to have page editor permissions to a suitable page to set upp access to the community.
 
-Prerequisite: The Tenant feature “Communities” must be active for any community options to be available. Web Content Managament features must also be active for communities to work.
+Prerequisite: The tenant feature “Communities” must be active for any community options to be available. Web content managament features must also be active for communities to work.
 
 Creating a community
 **********************
 Do the following to create a community:
 
-1. Go to Omnia Admin.
-2. Open "Communities" in the Business Profile settings.
+1. Go to Omnia admin.
+2. Open "Communities" in the business profile settings.
 
 .. image:: communities-bp-new.png
 
-3. Create at least one template, as describe here: :doc:`Templates for Communities </admin-settings/business-group-settings/communities/communities-65/templates/index>`. 
-4. Create a community site according to the description on this page: :doc:`Communities Apps </admin-settings/business-group-settings/communities/communities-65/apps/index>`
+3. Create at least one template, as describe here: :doc:`Templates for communities </admin-settings/business-group-settings/communities/communities-65/templates/index>`. 
+4. Create a community site according to the description on this page: :doc:`Communities apps </admin-settings/business-group-settings/communities/communities-65/apps/index>`
 5. When the site has been created, you can use the link (Title) in Communities to go to the site. (To get the URL, you can also right click on the title and copy the link address).
-6. Setup access to the community some way, using the Url. (More information about that below.)
+6. Setup access to the community some way, using the URL. (More information about that below.)
 
 Setting up access to communities
 **********************************
@@ -55,7 +55,7 @@ To enable activity points, do the following:
 
 .. image:: community-page-edit-settings.png
 
-4. Click "Enable Activity Tracking". and "Enable Activity Points". 
+4. Click "Enable activity tracking". and "Enable activity points". 
 
 .. image:: community-page-edit-activity.png
 
@@ -104,13 +104,13 @@ To activate and create badges, do the following:
 
 .. image:: badges-badges-settings.png
 
-+ **Icon Type**: Select an icon type for the badge.
++ **Icon type**: Select an icon type for the badge.
 + **Icon**: if you selected "Font Awesome", "Microsoft" or "Flags", use the list to select an icon.
 + **ADD ICON**: If you selected "Custom" above you can use any image as the icon. Click ADD ICON and use the Media Picker to select an image. When you have added an image it's shown here and you can edit it or remove it.
-+ **Background Color**: You can add a background color for the icon if you wish.
-+ **Title**: Add a Title (name) for the badge here.
++ **Background color**: You can add a background color for the icon if you wish.
++ **Title**: Add a title (name) for the badge here.
 + **Description**: You can also type a description if you wish.
-+ **Activity Points Required**: Set the number of activitye points required to acquire this badge.
++ **Activity points required**: Set the number of activity points required to acquire this badge.
 
 9. Click the tick to save the badge.
 
@@ -128,6 +128,6 @@ Two page types are installed when a community is created:
 
 .. image:: communities-page-types.png
 
-If you have page collection permissions you can edit these page types to your needs, the same way as you can edit any other page type, see: :doc:`Page Types </pages/page-types/index>`
+If you have page collection permissions you can edit these page types to your needs, the same way as you can edit any other page type, see: :doc:`Page types </pages/page-types/index>`
 
 
