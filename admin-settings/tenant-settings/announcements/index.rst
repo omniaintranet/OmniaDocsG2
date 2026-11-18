@@ -1,7 +1,7 @@
 Announcements
 ===========================================
 
-Here a user with the approrpiate permissions can create announcements that can be displayed over the whole tenant. Tenant administrators can always create announcements. Also, any user can be granted this permission. This is set under "Permissions" for the tenant, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
+Here a user with the appropriate permissions can create announcements that can be displayed over the whole tenant. Tenant administrators can always create announcements. Also, any user can be granted this permission. This is set under "Permissions" for the tenant, see: :doc:`Permissions for the tenant </admin-settings/tenant-settings/permissions/index>`
 
 Tenant announcements can also be shown through the Announcements block. For more information about the block, see: :doc:`The Announcements block </blocks/announcements/index>`
 
