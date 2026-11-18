@@ -126,10 +126,5 @@ The settings for the Ninja badge looks like this:
 
 Community page types
 **********************
-Two page types are installed when a community is created:
-
-.. image:: communities-page-types.png
-
-If you have page collection permissions you can edit these page types to your needs, the same way as you can edit any other page type, see: :doc:`Page types </pages/page-types/index>`
-
+Two page types are availble in tenant settings > Web content management > Page types, that can be used for all communities.
 
