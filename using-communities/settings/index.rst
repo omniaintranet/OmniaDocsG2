@@ -47,7 +47,7 @@ To enable activity points, do the following:
 
 1. Go to the community and edit the start page.
 
-.. image:: community-page-edit.png
+.. image:: community-page-edit-712.png
 
 2. Click "Edit".
 
