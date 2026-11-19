@@ -1,5 +1,7 @@
-Test page AI generated Announcement settings
+Announcement settings
 ================================================
+
+(This is an AI generated test).
 
 This page explains how to manage tenant-wide announcements in Omnia Workplace. It covers the announcement list and its **Status and Types** settings. It does not cover the separate display settings for an Announcements block placed on a page.
 
