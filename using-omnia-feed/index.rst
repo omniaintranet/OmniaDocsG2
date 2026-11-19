@@ -14,8 +14,6 @@ Any number of tabs can be set up for access to different resources. A tab can be
 
 Settings are found in Omnia admin. There are settings for the tenant, mainly used by AM and the Omnia Feed team to set up the tenant, and then settings for each business profile, where for example the tabs are set up. See this page for more information: :doc:`Omnia Feed - business profile settings </admin-settings/business-group-settings/omnia-feed/index>`
 
-For an implementation example, see this page: :doc:`Omnia Feed - implementation example </using-omnia-feed/omnia-feed-implemenation-example/index>`
-
 The Omnia Feed app
 *******************
 The Omnia Feed app can be downloaded from the usual sources, for example App Store for iPhone.  
