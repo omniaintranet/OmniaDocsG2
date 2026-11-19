@@ -55,7 +55,7 @@ To make a template available in an author's dialog, also add it through **Block 
 Deleting a template does **not** automatically remove its entry from existing block dialog configurations. After deleting a template, review each relevant dialog layout and remove the stale entry there.
 
 What authors see
-********************'
+********************
 In the modern dialog, authors can search the configured list and select a block or template to add it to the page layout. Blocks are filtered for the current layout and context; for example, the SPFx dialog only shows SPFx-compatible blocks, and top-container areas only show blocks allowed in that context. As a result, a block configured in the gallery may not appear in every authoring context.
 
 
