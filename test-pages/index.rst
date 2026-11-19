@@ -8,4 +8,5 @@ Only test pages here, for testing different documentation format.
    :titlesonly:
 
    test-page-announcements/index
+   block-gallery-ai-test/index
 
