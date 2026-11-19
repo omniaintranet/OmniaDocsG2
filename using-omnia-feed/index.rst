@@ -5,10 +5,6 @@ With Omnia Feed users can stay connected to the organization's Omnia intranet wh
 
 Omnia Feed can be set up in many different ways to make it possible for users to read information from their organization's intranet, on their mobile device. A good example is news, but it can be any page(s) really, and anything that can be accessed by a link. 
 
-Here's an example:
-
-.. image:: omnia-feed-test-v7-700.png
-
 Any number of tabs can be set up for access to different resources. A tab can be set up for:
 
 + A rollup (similar to a Page rollup) to list news or other pages. Sign-off requests can be shown here as well.
