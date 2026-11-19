@@ -24,42 +24,6 @@ Regardless of how Omnia Feed is set up, using settings, a user can log out and s
 
 Regarding the feed, note that sign-off requests, that needs actions from you, can be part of the feed.
 
-App settings
----------------
-The settings are available here:
-
-.. image:: omnia-feed-settings-menu-v7-700.png
-
-Available settings are the following:
-
-.. image:: omnia-feed-settings-available-v7-700.png
-
-Logging out is simply done by selecting "Sign out".
-
-To select another business profile (if available), select the active business profile and choose another one on this page:
-
-.. image:: omnia-feed-settings-bp-v7-700.png
-
-Also note that the app version is displayed here:
-
-.. image:: omnia-feed-settings-version-v7-700.png
-
-Select another language
---------------------------
-When you start the app for the first time you are most likely able to select language. When using the app you can always change language in the settings:
-
-.. image:: omnia-feed-settings-language-700.png
-
-All languages set up in the tenant are available, for example:
-
-.. image:: omnia-feed-settings-language-select-700.png
-
-Clearing all notifications
----------------------------
-All notifications that are pushed to your device are stored there. If you don't want to save them for later, they can be deleted from the device. They will still be available through the intranet the usual way.
-
-.. image:: omnia-feed-settings-language-clear-700.png
-
 Microsoft Authenticator or similar
 ---------------------------------------------
 If your organization is using Microsoft Authenticator, a company portal, or similar, Omnia Feed will request permission to access the contacts list. This is required for the Omnia app to work with Microsoft Authenticator and similar solutions.
