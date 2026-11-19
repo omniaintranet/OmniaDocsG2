@@ -3,6 +3,24 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+18 November 2026
+----------------
+
+* `Announcements <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/announcements/index.html>`__ — **Spelling / grammar**
+  Corrected spelling of "appropriate" in the introductory paragraph.
+
+* `Setting up a community <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/settings/index.html>`__ — **Updated guidance**
+  Simplified the community page types section to clarify that page types are available in tenant settings rather than editable per community.
+
+* `Test page AI generated Announcement settings <https://omnia-docs-g2.readthedocs.io/en/latest/test-pages/test-page-announcements/index.html>`__ — **New page**
+  New page explaining how to manage tenant-wide announcements, including creating and editing announcements, and configuring announcement types and statuses.
+
+* `Test page AI generated Announcement settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/test-page-announcements/index.html>`__ — **New page**
+  New page explaining how to manage tenant-wide announcements, including creating, editing, and configuring announcement types and statuses.
+
+* `Test pages <https://omnia-docs-g2.readthedocs.io/en/latest/test-pages/index.html>`__ — **New page**
+  New test pages section for documentation format examples and testing.
+
 16 November 2026
 ----------------
 
@@ -1178,36 +1196,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `SharePoint page picker settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/sharepoint-page-picker/index.html>`__ — **New page**
   Added documentation for SharePoint page picker settings in Omnia 7.12, including configuration options for libraries and search categories with filters and search options.
-
-21 August 2026
---------------
-
-* `AI features <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/index.html>`__ — **Added information**
-  Added a reference link to the Recommended AI models page for guidance on current model IDs and deployment recommendations.
-
-* `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Added information**
-  Added note about version 7.12 reorganizing app launcher options differently with new screenshot.
-
-* `Model configuration (AI) <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index.html>`__ — **Updated guidance**
-  Added references to recommended AI models for deployment configuration and updated image-generation feature guidance and terminology.
-
-* `Older releases <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/older-releases/index.html>`__ — **New page**
-  New page listing older releases for Omnia Feed versions 6, 5, 4, 3, and 2 with reference to the latest Release 7.
-
-* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
-  Added release notes for version 7.11.23 documenting bug fixes and improvements across Omnia, Workplace, WCM, MS, Analytics, and Feed components.
-
-* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Added information**
-  Added documentation for Omnia 7.12 features including Show in dialog settings, new Card (WCAG) and Event card views, and updated display options with corrected screenshots.
-
-* `Permissions for the tenant <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/permissions/index.html>`__ — **Updated guidance**
-  Marked Dall-E as legacy, recommended GPT Image instead for new deployments, and added GPT Image configuration instructions.
-
-* `Recommended AI models <https://omnia-docs-g2.readthedocs.io/en/latest/setup/recommended-ai-models/index.html>`__ — **New page**
-  Updated recommended AI models from GPT 6 and GPT Image 2.5 Flare to GPT-5.6 and GPT Image 2, with explicit deployment names for configuration.
-
-* `Setup AI <https://omnia-docs-g2.readthedocs.io/en/latest/setup/setup-ai/index.html>`__ — **Updated guidance**
-  Reorganized Azure OpenAI and AI Search setup procedures with model deployment guidance, added image generation setup section, and updated UI references to Microsoft Foundry.
-
-* `Tabs - Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/omnia-feed/tabs-omnia-feed/index.html>`__ — **Updated screenshots**
-  Updated the images used on this page.

@@ -1,7 +1,6 @@
 {
   "version": 2,
   "processed_commits": {
-    "9e77f5595426e26f34350c288d2c19a7c78dfa1d": "2026-08-21",
     "1483fad97a7c6e81f2e26f660f52e3935e627c5c": "2026-09-08",
     "57ef4dbfd1a45e9cf69ecd9e259e6a8dbf20ed96": "2026-09-14",
     "fc5043d72877c72e4437de024d6f73f5122f6174": "2026-09-18",
@@ -19,7 +18,6 @@
     "1c23e52fcf5b9c44be18b7d9c17004f63a629dfd": "2026-10-15",
     "8bdcebc7ddf2f5083d1aeee3a8546cacd5cfe086": "2026-10-15",
     "e76d0087548b3d62ac5c05da9e874a165d6fc677": "2026-10-15",
-    "c5bf4e41ac8f07ffd9fb6ddd481ab3de7782c525": "2026-08-21",
     "ad74ba736dae67fde0d9b443136979bc8f3eebd8": "2026-08-24",
     "840ad9167629c982a5be3287e3e176d9dd4fd984": "2026-08-24",
     "4da15f675b987f3f36ad1d30f7a8036d5c6f8305": "2026-08-27",
@@ -427,12 +425,6 @@
     "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
     "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
     "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16",
-    "5ebe99a5719564229b180cbb284c2ae5af537c96": "2026-08-21",
-    "f7a1bd39acedc71a7d111073bcb3ac9f978e075a": "2026-08-21",
-    "7ba7c760f4902047fefea8d8987e5ab1331397e4": "2026-08-21",
-    "0565235705aca340b389ad02739b2c39e375b236": "2026-08-21",
-    "15fb05cf5c65fda7f2a84834466eadf31fd1d5f0": "2026-08-21",
-    "94aaaeafbea425ca5b095a432eb575169ccd5d9d": "2026-08-21",
     "0b902dcb8bdd24430a5f3150e3f0f83f7b90acb0": "2026-08-24",
     "1f5fefdc1f60ed19b5a74361b6c9f376a8d305e4": "2026-08-24",
     "2d33ae8b354cf93042c21dfc09a8fccb6b36f670": "2026-08-24",
@@ -821,9 +813,87 @@
     "217e4a59965e2c2e90e72425bbb07db74e03ebe8": "2026-11-16",
     "21a25d42e6966472edf7b89949fe53c59294fc16": "2026-11-16",
     "f50e2980a09b15903208646ed0d7f642d7277303": "2026-11-16",
-    "6a54a1d476cca64ab42896313e7a2add861eed17": "2026-11-16"
+    "6a54a1d476cca64ab42896313e7a2add861eed17": "2026-11-16",
+    "e23e3f87fe751fd280d3a45eaa6cf293e4974c51": "2026-11-18",
+    "fa2aeab3a4dcc97fd5e10ea52c53104b00126ab5": "2026-11-18",
+    "044e269dd19518226fe5adccff5fe3a749e38e66": "2026-11-18",
+    "77a2493d6ce1fb3dd139528d2fe40f233e37234a": "2026-11-18",
+    "71f3fb8d31845440ece2e733dd9386ccde825722": "2026-11-18",
+    "315ea3334c976a8d6d08d13ede545f68a3c068ea": "2026-11-18",
+    "e42e5f0d5cc936e1d4eccb3ec7b6c6c741153d8a": "2026-11-18",
+    "bbf726cb852c8b270afed8a5fda4b1fa0e3ccb61": "2026-11-18",
+    "aa0cccb83efceba48468827ecda63d3a9621cd2c": "2026-11-18",
+    "93a819516cf8dee7209cf906f598325d388dac54": "2026-11-18",
+    "b0c4e3e3a53d65891e4a8f035c085b64ea565340": "2026-11-18",
+    "571d052feb15dcfe8b206c5270ab081035b6f955": "2026-11-18",
+    "66782cc59c8713f9d82e4328f395011d68ce7339": "2026-11-18",
+    "9c314bc56b782db1d425a31ccc1ccd5a3e03ea85": "2026-11-18",
+    "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd": "2026-11-18"
   },
   "entries": [
+    {
+      "date": "2026-11-18",
+      "path": "using-communities/settings/index.rst",
+      "classification": "Updated guidance",
+      "description": "Simplified the community page types section to clarify that page types are available in tenant settings rather than editable per community.",
+      "sources": [
+        "044e269dd19518226fe5adccff5fe3a749e38e66",
+        "315ea3334c976a8d6d08d13ede545f68a3c068ea",
+        "71f3fb8d31845440ece2e733dd9386ccde825722",
+        "77a2493d6ce1fb3dd139528d2fe40f233e37234a",
+        "aa0cccb83efceba48468827ecda63d3a9621cd2c",
+        "bbf726cb852c8b270afed8a5fda4b1fa0e3ccb61",
+        "e23e3f87fe751fd280d3a45eaa6cf293e4974c51",
+        "e42e5f0d5cc936e1d4eccb3ec7b6c6c741153d8a",
+        "fa2aeab3a4dcc97fd5e10ea52c53104b00126ab5"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "path": "test-pages/test-page-announcements/index.rst",
+      "classification": "New page",
+      "description": "New page explaining how to manage tenant-wide announcements, including creating and editing announcements, and configuring announcement types and statuses.",
+      "sources": [
+        "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "path": "test-pages/index.rst",
+      "classification": "New page",
+      "description": "New test pages section for documentation format examples and testing.",
+      "sources": [
+        "66782cc59c8713f9d82e4328f395011d68ce7339",
+        "9c314bc56b782db1d425a31ccc1ccd5a3e03ea85"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "path": "admin-settings/test-page-announcements/index.rst",
+      "classification": "New page",
+      "description": "New page explaining how to manage tenant-wide announcements, including creating, editing, and configuring announcement types and statuses.",
+      "sources": [
+        "b0c4e3e3a53d65891e4a8f035c085b64ea565340"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "path": "admin-settings/tenant-settings/announcements/index.rst",
+      "classification": "Spelling / grammar",
+      "description": "Corrected spelling of \"appropriate\" in the introductory paragraph.",
+      "sources": [
+        "93a819516cf8dee7209cf906f598325d388dac54"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "path": "admin-settings/index.rst",
+      "classification": "Navigation update",
+      "description": "Added navigation link to test-page-announcements in the Admin settings section.",
+      "sources": [
+        "571d052feb15dcfe8b206c5270ab081035b6f955"
+      ]
+    },
     {
       "date": "2026-11-16",
       "path": "working-with-events/index.rst",
@@ -4576,287 +4646,6 @@
       "description": "Added SharePoint page picker settings page to the navigation menu.",
       "sources": [
         "88e11b85659aac54aba42e3e143239f08413c300"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "setup/setup-ai/index.rst",
-      "classification": "Updated guidance",
-      "description": "Reorganized Azure OpenAI and AI Search setup procedures with model deployment guidance, added image generation setup section, and updated UI references to Microsoft Foundry.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "setup/recommended-ai-models/index.rst",
-      "classification": "New page",
-      "description": "Updated recommended AI models from GPT 6 and GPT Image 2.5 Flare to GPT-5.6 and GPT Image 2, with explicit deployment names for configuration.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "setup/index.rst",
-      "classification": "Navigation update",
-      "description": "Added a link to the recommended AI models page in the Setup section's table of contents.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/index.rst",
-      "classification": "New page",
-      "description": "New page listing older releases for Omnia Feed versions 6, 5, 4, 3, and 2 with reference to the latest Release 7.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Omnia Feed 6 release versions documentation to the older-releases directory for improved organization of historical release information.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.8/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 6.8 page to older-releases directory structure for better organization of archived release notes.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.7/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 6.7 page moved to older-releases directory structure for archival organization.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.6/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 6.6 page to older-releases directory structure for better organization of historical release documentation.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.3/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 6.3 documentation moved to the older-releases section of the feed release notes structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.13/index.rst",
-      "classification": "Navigation update",
-      "description": "Release 6.13 page relocated to the older-releases directory structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.12/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 6.12 page to the older-releases folder structure, reorganizing historical Omnia Feed documentation.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.10/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 6.10 documentation to older releases folder structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/versions/6.1/index.rst",
-      "classification": "Navigation update",
-      "description": "Reorganized Release 6.1 release notes by moving it to the older-releases directory.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 6 page and images to older-releases directory structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/versions.rst",
-      "classification": "Navigation update",
-      "description": "Release notes page moved to older-releases folder to organize version history by release lifecycle.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/6/hotfix-releases/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved the hotfix releases page for release 6 to the older-releases directory.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/5/versions/5.1/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 5.1 notes to the older-releases folder structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/5/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 5 documentation from release-notes/omnia-feed/5/ to release-notes/omnia-feed/older-releases/5/ directory.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/5/hotfix-releases/versions.rst",
-      "classification": "Navigation update",
-      "description": "Moved release notes page to older-releases directory structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/5/hotfix-releases/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved hotfix releases for release 5 into the older-releases section of the documentation hierarchy.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/4/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 4 documentation to the older-releases subdirectory.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/3/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 3 documentation to the older-releases folder.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/older-releases/2/index.rst",
-      "classification": "Navigation update",
-      "description": "Moved Release 2 documentation to an older-releases folder within the release notes structure.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/omnia-feed/index.rst",
-      "classification": "Navigation update",
-      "description": "Consolidated release notes for versions 2-6 under older-releases section to simplify navigation.",
-      "sources": [
-        "5ebe99a5719564229b180cbb284c2ae5af537c96"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "release-notes/7.0/versions.rst",
-      "classification": "Added information",
-      "description": "Added release notes for version 7.11.23 documenting bug fixes and improvements across Omnia, Workplace, WCM, MS, Analytics, and Feed components.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "blocks/page-rollup/index.rst",
-      "classification": "Added information",
-      "description": "Added documentation for Omnia 7.12 features including Show in dialog settings, new Card (WCAG) and Event card views, and updated display options with corrected screenshots.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/tenant-settings/settings/header/header-65/index.rst",
-      "classification": "Added information",
-      "description": "Added note about version 7.12 reorganizing app launcher options differently with new screenshot.",
-      "sources": [
-        "0565235705aca340b389ad02739b2c39e375b236",
-        "15fb05cf5c65fda7f2a84834466eadf31fd1d5f0",
-        "94aaaeafbea425ca5b095a432eb575169ccd5d9d"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/tenant-settings/settings/ai-engine/settings-ai-engine/index.rst",
-      "classification": "Updated guidance",
-      "description": "Added references to recommended AI models for deployment configuration and updated image-generation feature guidance and terminology.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/tenant-settings/settings/ai-engine/index.rst",
-      "classification": "Added information",
-      "description": "Added a reference link to the Recommended AI models page for guidance on current model IDs and deployment recommendations.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/tenant-settings/permissions/index.rst",
-      "classification": "Updated guidance",
-      "description": "Marked Dall-E as legacy, recommended GPT Image instead for new deployments, and added GPT Image configuration instructions.",
-      "sources": [
-        "7ba7c760f4902047fefea8d8987e5ab1331397e4"
-      ]
-    },
-    {
-      "date": "2026-08-21",
-      "path": "admin-settings/business-group-settings/omnia-feed/tabs-omnia-feed/index.rst",
-      "classification": "Updated screenshots",
-      "description": "Updated the images used on this page.",
-      "sources": [
-        "f7a1bd39acedc71a7d111073bcb3ac9f978e075a"
       ]
     }
   ]
