@@ -1,3 +1,45 @@
+7.12.15
+========================================
+(Omnia 7.12.15 / Workplace 7.12.15 / WCM 7.12.15 / MS 7.12.15 / Analytics 7.12.5 / Feed 7.11.6)
+
+**Pages and blocks**
+
+- Copying Action Button blocks no longer causes original block content to be reset to design-mode defaults (#60937)
+- Profile card Properties block horizontal layout now correctly applies row spacing (#61380)
+- Page links in navigation and breadcrumb now open correctly on tenants with WCM service path prefixes
+- Copying a page no longer causes the original page to appear blank for first-time viewers
+
+**Search**
+
+- Document rollup filter panel can now be scrolled vertically when displayed in side panel format on larger screens
+- Semantic Search full reindex creates indexes with the correct vector dimensions for the configured embedding model, supporting models with dimensions other than 1536
+
+**Documents and processes**
+
+- Event Management is now supported on on-premises deployments, with shared mailbox calendar mapping
+- Process Step Status block now renders in Team Collaboration apps and allows users to view and change step status
+- Controlled Documents approval publishing with PDF conversion succeeds on sites without manual Microsoft Graph permission grants
+- Saving edits to Viva Engage Teamwork apps no longer fails with a null SharePoint URL error
+- Closing the publishing channel Edit blade without saving now discards unsaved subscriber targeting changes
+- App provisioning no longer displays an overlapping 404 layout and prevents edit mode while creation is in progress
+
+**Email and notifications**
+
+- Sign-off request blocks in the Notification panel now respect the "Open in new tab" setting (#61317)
+
+**Accessibility**
+
+- Rollup row headers in multi-column views render bold only when accessibility features are enabled; single-column views remain unchanged
+
+**Media Rollup**
+
+- Media rollup block now includes WebP images in the default image query on 7.12 and later
+
+**Other**
+
+- General performance and security improvements
+
+
 7.12.12
 ========================================
 (Omnia 7.12.12 / Workplace 7.12.12 / WCM 7.12.12 / MS 7.12.12 / Analytics 7.12.4 / Feed 7.11.6)
