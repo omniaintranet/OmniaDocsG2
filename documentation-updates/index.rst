@@ -3,6 +3,12 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+19 November 2026
+----------------
+
+* `Using Omnia Feed <https://omnia-docs-g2.readthedocs.io/en/latest/using-omnia-feed/index.html>`__ — **Updated guidance**
+  Removed detailed app settings sections including language selection and notification management guidance.
+
 18 November 2026
 ----------------
 
@@ -12,14 +18,8 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `Setting up a community <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/settings/index.html>`__ — **Updated guidance**
   Simplified the community page types section to clarify that page types are available in tenant settings rather than editable per community.
 
-* `Test page AI generated Announcement settings <https://omnia-docs-g2.readthedocs.io/en/latest/test-pages/test-page-announcements/index.html>`__ — **New page**
-  New page explaining how to manage tenant-wide announcements, including creating and editing announcements, and configuring announcement types and statuses.
-
 * `Test page AI generated Announcement settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/test-page-announcements/index.html>`__ — **New page**
   New page explaining how to manage tenant-wide announcements, including creating, editing, and configuring announcement types and statuses.
-
-* `Test pages <https://omnia-docs-g2.readthedocs.io/en/latest/test-pages/index.html>`__ — **New page**
-  New test pages section for documentation format examples and testing.
 
 16 November 2026
 ----------------

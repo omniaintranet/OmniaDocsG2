@@ -828,9 +828,23 @@
     "571d052feb15dcfe8b206c5270ab081035b6f955": "2026-11-18",
     "66782cc59c8713f9d82e4328f395011d68ce7339": "2026-11-18",
     "9c314bc56b782db1d425a31ccc1ccd5a3e03ea85": "2026-11-18",
-    "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd": "2026-11-18"
+    "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd": "2026-11-18",
+    "15f7be8e47e20397fce6fee8a4ee261c708a475c": "2026-11-19",
+    "4f3ea825708d8187017a07ea047d95337e498f2a": "2026-11-19",
+    "d73cda32f0d24d4776ea4651fb3cd189adcb4a92": "2026-11-19"
   },
   "entries": [
+    {
+      "date": "2026-11-19",
+      "path": "using-omnia-feed/index.rst",
+      "classification": "Updated guidance",
+      "description": "Removed detailed app settings sections including language selection and notification management guidance.",
+      "sources": [
+        "15f7be8e47e20397fce6fee8a4ee261c708a475c",
+        "4f3ea825708d8187017a07ea047d95337e498f2a",
+        "d73cda32f0d24d4776ea4651fb3cd189adcb4a92"
+      ]
+    },
     {
       "date": "2026-11-18",
       "path": "using-communities/settings/index.rst",
@@ -846,25 +860,6 @@
         "e23e3f87fe751fd280d3a45eaa6cf293e4974c51",
         "e42e5f0d5cc936e1d4eccb3ec7b6c6c741153d8a",
         "fa2aeab3a4dcc97fd5e10ea52c53104b00126ab5"
-      ]
-    },
-    {
-      "date": "2026-11-18",
-      "path": "test-pages/test-page-announcements/index.rst",
-      "classification": "New page",
-      "description": "New page explaining how to manage tenant-wide announcements, including creating and editing announcements, and configuring announcement types and statuses.",
-      "sources": [
-        "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd"
-      ]
-    },
-    {
-      "date": "2026-11-18",
-      "path": "test-pages/index.rst",
-      "classification": "New page",
-      "description": "New test pages section for documentation format examples and testing.",
-      "sources": [
-        "66782cc59c8713f9d82e4328f395011d68ce7339",
-        "9c314bc56b782db1d425a31ccc1ccd5a3e03ea85"
       ]
     },
     {
