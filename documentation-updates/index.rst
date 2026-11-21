@@ -3,6 +3,15 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+20 November 2026
+----------------
+
+* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
+  Added Omnia 7.12.15 release notes documenting fixes and improvements for pages, search, documents, processes, and other features.
+
+* `Using communities <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/index.html>`__ — **Updated screenshots**
+  Updated the community start page example screenshot and removed a redundant description of the latest contributions display.
+
 19 November 2026
 ----------------
 

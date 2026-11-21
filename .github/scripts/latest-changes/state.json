@@ -831,9 +831,31 @@
     "4ed1e07c6cf48151c925bf220b9c9704fb20fcdd": "2026-11-18",
     "15f7be8e47e20397fce6fee8a4ee261c708a475c": "2026-11-19",
     "4f3ea825708d8187017a07ea047d95337e498f2a": "2026-11-19",
-    "d73cda32f0d24d4776ea4651fb3cd189adcb4a92": "2026-11-19"
+    "d73cda32f0d24d4776ea4651fb3cd189adcb4a92": "2026-11-19",
+    "42f43596a9f72bb71b202abae3f4351a01d40219": "2026-11-20",
+    "41eb1f64adff80afc81d519d0ba070b7257c326b": "2026-11-20",
+    "9e0182846c019a4a460c1b0be23b587075e88bc7": "2026-11-20"
   },
   "entries": [
+    {
+      "date": "2026-11-20",
+      "path": "using-communities/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated the community start page example screenshot and removed a redundant description of the latest contributions display.",
+      "sources": [
+        "41eb1f64adff80afc81d519d0ba070b7257c326b",
+        "42f43596a9f72bb71b202abae3f4351a01d40219"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "path": "release-notes/7.0/versions.rst",
+      "classification": "Added information",
+      "description": "Added Omnia 7.12.15 release notes documenting fixes and improvements for pages, search, documents, processes, and other features.",
+      "sources": [
+        "9e0182846c019a4a460c1b0be23b587075e88bc7"
+      ]
+    },
     {
       "date": "2026-11-19",
       "path": "using-omnia-feed/index.rst",
