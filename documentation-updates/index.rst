@@ -1193,15 +1193,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **New page**
   Added page documenting how to reindex documents for semantic search, available in Omnia 7.12 and later.
-
-24 August 2026
---------------
-
-* `Add link <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/add-link/index.html>`__ — **Added information**
-  Added information about SharePoint page categories available in Omnia 7.12 and later, with example screenshot and admin configuration reference.
-
-* `Document library display <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/document-library-display/index.html>`__ — **New page**
-  Added documentation for the Document library display block, which displays SharePoint document library folder structures with configurable display, filtering, and export options.
-
-* `SharePoint page picker settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/sharepoint-page-picker/index.html>`__ — **New page**
-  Added documentation for SharePoint page picker settings in Omnia 7.12, including configuration options for libraries and search categories with filters and search options.

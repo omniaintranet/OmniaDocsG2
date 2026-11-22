@@ -18,8 +18,6 @@
     "1c23e52fcf5b9c44be18b7d9c17004f63a629dfd": "2026-10-15",
     "8bdcebc7ddf2f5083d1aeee3a8546cacd5cfe086": "2026-10-15",
     "e76d0087548b3d62ac5c05da9e874a165d6fc677": "2026-10-15",
-    "ad74ba736dae67fde0d9b443136979bc8f3eebd8": "2026-08-24",
-    "840ad9167629c982a5be3287e3e176d9dd4fd984": "2026-08-24",
     "4da15f675b987f3f36ad1d30f7a8036d5c6f8305": "2026-08-27",
     "f682c0ffeb2d86211eba501d21995ee53fb3ef72": "2026-09-01",
     "62bc828db6d97af307180314e7019f7675ba43f8": "2026-09-02",
@@ -425,30 +423,6 @@
     "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
     "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
     "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16",
-    "0b902dcb8bdd24430a5f3150e3f0f83f7b90acb0": "2026-08-24",
-    "1f5fefdc1f60ed19b5a74361b6c9f376a8d305e4": "2026-08-24",
-    "2d33ae8b354cf93042c21dfc09a8fccb6b36f670": "2026-08-24",
-    "6b9234d4f674a3539ec5d3427a2b88beac964913": "2026-08-24",
-    "88e11b85659aac54aba42e3e143239f08413c300": "2026-08-24",
-    "dfd5bf101a377c20c9072471db12ee2dab28a4f6": "2026-08-24",
-    "1b1f8cb930c28c938b8266c411c0796833f07032": "2026-08-24",
-    "c4cd748d4da1c1a8de8d94620ba4646d3322da66": "2026-08-24",
-    "348643a3e6b5ae4b0028d8019657114cadb70bf4": "2026-08-24",
-    "6d931abb79d35a70638b2dcf57d38048863b2290": "2026-08-24",
-    "df6891513b7795744037d76c1087913972467c4c": "2026-08-24",
-    "98897d97184de4ae99ba87d88f1e1e4618bff442": "2026-08-24",
-    "516fea7429063e6222e9aacc4d0aa7466a780e46": "2026-08-24",
-    "bbd798698243f3332228f7524c02b71633a9afce": "2026-08-24",
-    "aa6c1cce5be4155eedc82111eca34dd542e609d7": "2026-08-24",
-    "617c25061bc114625f73b9b715255caec947c228": "2026-08-24",
-    "05626f2d4554304d4ecaa51133b956df312acadb": "2026-08-24",
-    "0bff0546aecf6d067a3328d3b87a8bda0f308855": "2026-08-24",
-    "f7de60e1a77b219c142f25f9e8ee188ace0c7e8d": "2026-08-24",
-    "2a0052530b04222215e1df08f19f49511c74dd73": "2026-08-24",
-    "a9761e8dbe6b9e7392f81784d4358c20ce5076fe": "2026-08-24",
-    "4ef8778580e1794c711e52d0ed0d4d5e5509fab8": "2026-08-24",
-    "d495e5f4af061a5abb9a7aa3a97a324f6c10fbfa": "2026-08-24",
-    "dae46af03717238898220bf8646aaca8374322db": "2026-08-24",
     "e98e12575a4db4cf21927fec208c3b43fc86bd9e": "2026-08-25",
     "64621ea863f3f346aea6fd749f619e09466812b2": "2026-08-25",
     "f20512cd2065b80a736155290f36e19c43b6faf5": "2026-08-25",
@@ -4583,86 +4557,6 @@
       "description": "Added semantic search reindex section to the document management navigation menu.",
       "sources": [
         "9524540966dc3fcd16147dedbc38aa0f21a93746"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "release-notes/omnia-feed/index.rst",
-      "classification": "Navigation update",
-      "description": "Separated older releases navigation into a new table of contents block with depth limitation for improved hierarchy.",
-      "sources": [
-        "0b902dcb8bdd24430a5f3150e3f0f83f7b90acb0",
-        "1f5fefdc1f60ed19b5a74361b6c9f376a8d305e4",
-        "2d33ae8b354cf93042c21dfc09a8fccb6b36f670"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "general-assets/index.rst",
-      "classification": "Navigation update",
-      "description": "Table of contents restructured or link order modified on the General assets and options overview page.",
-      "sources": [
-        "1b1f8cb930c28c938b8266c411c0796833f07032",
-        "6b9234d4f674a3539ec5d3427a2b88beac964913"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "general-assets/add-link/index.rst",
-      "classification": "Added information",
-      "description": "Added information about SharePoint page categories available in Omnia 7.12 and later, with example screenshot and admin configuration reference.",
-      "sources": [
-        "348643a3e6b5ae4b0028d8019657114cadb70bf4",
-        "516fea7429063e6222e9aacc4d0aa7466a780e46",
-        "98897d97184de4ae99ba87d88f1e1e4618bff442",
-        "bbd798698243f3332228f7524c02b71633a9afce",
-        "c4cd748d4da1c1a8de8d94620ba4646d3322da66"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "blocks/index.rst",
-      "classification": "Navigation update",
-      "description": "Added document-library-display block to the blocks navigation index.",
-      "sources": [
-        "05626f2d4554304d4ecaa51133b956df312acadb"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "blocks/document-library-display/index.rst",
-      "classification": "New page",
-      "description": "Added documentation for the Document library display block, which displays SharePoint document library folder structures with configurable display, filtering, and export options.",
-      "sources": [
-        "0bff0546aecf6d067a3328d3b87a8bda0f308855",
-        "2a0052530b04222215e1df08f19f49511c74dd73",
-        "4ef8778580e1794c711e52d0ed0d4d5e5509fab8",
-        "a9761e8dbe6b9e7392f81784d4358c20ce5076fe",
-        "d495e5f4af061a5abb9a7aa3a97a324f6c10fbfa",
-        "dae46af03717238898220bf8646aaca8374322db",
-        "f7de60e1a77b219c142f25f9e8ee188ace0c7e8d"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "admin-settings/business-group-settings/settings/sharepoint-page-picker/index.rst",
-      "classification": "New page",
-      "description": "Added documentation for SharePoint page picker settings in Omnia 7.12, including configuration options for libraries and search categories with filters and search options.",
-      "sources": [
-        "617c25061bc114625f73b9b715255caec947c228",
-        "6d931abb79d35a70638b2dcf57d38048863b2290",
-        "aa6c1cce5be4155eedc82111eca34dd542e609d7",
-        "df6891513b7795744037d76c1087913972467c4c",
-        "dfd5bf101a377c20c9072471db12ee2dab28a4f6"
-      ]
-    },
-    {
-      "date": "2026-08-24",
-      "path": "admin-settings/business-group-settings/settings/index.rst",
-      "classification": "Navigation update",
-      "description": "Added SharePoint page picker settings page to the navigation menu.",
-      "sources": [
-        "88e11b85659aac54aba42e3e143239f08413c300"
       ]
     }
   ]
