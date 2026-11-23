@@ -23,6 +23,6 @@ Select page for more information:
 
    discussions/index
    knowledge-articles/index
-   subscriptions/index
+   subscriptions/subscribe/index
    settings/index
 
