@@ -1,35 +1,28 @@
 Create a knowledge article
 ============================
 
+**This page i being updated.**
+
 Communities can be set up in several ways but in the default setup, all users of the tenant can create and edit knowledge articles. The same permissions apply as for authors of publishing pages, meaning all options in Write mode are available.
 
 To create a knowledge article in a community, do the following:
 
-1. Click "CREATE ARTICLE".
+1. Click "CREATE ARTICLE" (or something similar).
 
-.. image:: create-article-1.png
+.. image:: create-article-create-712.png
 
 2. Type a title for the article. The title will be used for the name of the page, for example shown on the start page for knowledge articles, and as the heading for the page. You can edit the title later if needed.
 
 As the knowledge article actually is a page, an Url is automatically created.
 
-.. image:: create-article-2.png
-
-3. You can also tag the article, for example for subscriptions. You can add one or more existing tags from the list, or type a new tag in the field.
-
-.. image:: create-article-3.png
-
-When you create a new tag, it becomes available for tagging in all communities in the tenant.
-
-4. Click "CREATE".
-
-.. image:: create-article-4.png
-
-5. The next step is to add content to the page.
+3. Click "CREATE".
+4. The next step is to add content to the page.
 
 What you actually can add depends on the template. Here's a common one:
 
-.. image:: create-article-5.png
+.. image:: create-article-5-712.png
+
+**Editing will contuinue from here very soon. **
 
 6. To add an image or a video, click ADD MEDIA in one of those areas.
 
@@ -94,6 +87,9 @@ Here's an example with a preview for mobile phone:
 This is a simple walk through on how to create a knowledge article. Knowledge articles are Omnia pages and therefore have the same author options (Write mode) as other pages.
 
 Concerning all options for publishing (for example information on how to schedule publishing, if that is available), see: :doc:`Publish page changes </pages/publish-page-changes/index>`
+
+
+When you create a new tag, it becomes available for tagging in all communities in the tenant.
 
 
 

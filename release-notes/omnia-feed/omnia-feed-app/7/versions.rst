@@ -1,3 +1,21 @@
+Release 7.12
+============
+Release 7.12.3
+--------------
+
+- When your session expires on My Feed, the app now takes you back to sign in instead of showing an unknown error.
+- Fixed images not loading in some page details.
+- Improved signing out from the "App update required" dialog.
+- Fixed My Feed loading forever when page layouts could not be downloaded.
+- Improved how people, such as page contacts and comment authors, are shown.
+- Smaller, more optimized app and general stability improvements.
+
+Release 7.12.1
+---------------
+
+- Compatibility fix for the activity feed
+- Improved support for rich text in the summary field 
+
 Release 7.11
 ============
 Release 7.11.8
