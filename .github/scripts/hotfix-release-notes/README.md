@@ -21,7 +21,9 @@ incorrect field definitions and conflicting item values stop planning before
 any writes. Correct values are skipped. Missing values are set before the items
 leave the release column, so reruns can finish after an interrupted closeout,
 including after a milestone assignment succeeded. Only item field values are
-written, never field definitions. There is no historical backfill.
+written, never field definitions. If the notification is moved manually and the
+release column is deleted after a failed write, a rerun cannot finish its pending
+Release order, milestone assignment, or closure. There is no historical backfill.
 
 For a read-only plan, set `PR_NUMBER` and `SYNC_DRY_RUN=true` when invoking the
 script. Its output lists the number and items it would update. Offline tests:
