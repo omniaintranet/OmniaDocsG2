@@ -1,9 +1,9 @@
 """Synchronize approved documentation PR content to the existing Prod release item, and close out the release.
 
 The closeout replaces the earlier rename of the release column to "Approved - ...". It creates (or reuses) the
-release milestone, sets it on the column's issues, closes them as completed and moves every item of the column,
-the release notification included, to Status "Released". It writes item field values only and never edits the
-Status field itself: updating that field resends every option and can wipe the Status of every item on the board.
+release milestone, sets it and Release order on the column's issues, closes them as completed and moves every item of the column,
+the release notification included, to Status "Released". It writes item field values only and never edits
+field definitions: updating a field can wipe its values across the board.
 """
 import base64
 import json
@@ -250,13 +250,16 @@ PROJECT_QUERY = """query($cursor: String) {
     id
     fields(first: 100) { nodes { ... on ProjectV2SingleSelectField {
       id name options { id name }
-    } } }
+    } ... on ProjectV2Field { id name dataType } } }
     items(first: 100, after: $cursor) {
       pageInfo { hasNextPage endCursor }
       nodes {
         id
         status: fieldValueByName(name: "Status") {
           ... on ProjectV2ItemFieldSingleSelectValue { optionId name }
+        }
+        releaseOrder: fieldValueByName(name: "Release order") {
+          ... on ProjectV2ItemFieldNumberValue { number }
         }
         content {
           __typename
@@ -378,16 +381,46 @@ def plan_update(project, items, pr, version, section, recover_draft=None):
             raise ValueError(f"More than one release column for Omnia {version}; manual reconciliation required")
         column = current
     draft = kept_draft(item["content"]["body"])
+    order_fields = [field for field in project["fields"]["nodes"] if field.get("name") == "Release order"]
+    if len(order_fields) != 1 or order_fields[0].get("dataType") != "NUMBER":
+        raise ValueError('Expected exactly one NUMBER field named "Release order" in Prod')
+    closeout = plan_closeout(items, item, column, version) if column else None
+    if closeout:
+        closeout["order"] = release_order(version)
+        # Include issues that already got this release's milestone, so a failed write can be retried.
+        targets = [entry for entry in closeout["items"]
+                   if entry["content"].get("__typename") == "Issue" and
+                   (not entry["content"].get("milestone") or entry["content"]["milestone"]["title"] == closeout["title"])]
+        if closeout["note_assign"] or (item["content"].get("milestone") or {}).get("title") == closeout["title"]:
+            targets.append(item)
+        closeout["order_assign"] = []
+        for entry in targets:
+            current_order = (entry.get("releaseOrder") or {}).get("number")
+            if current_order is None:
+                closeout["order_assign"].append(entry)
+            elif current_order != closeout["order"]:
+                raise ValueError(f"Release order conflict on {describe(entry)}: existing {current_order}, "
+                                 f"expected {closeout['order']}; manual reconciliation required")
     draft_source = "kept from the notification" if draft is not None else "not available"
     if draft is None and recover_draft:
         draft = recover_draft()
         draft_source = "recovered from the documentation PR's first commit"
     return {"item": item, "project_id": project["id"], "field_id": field["id"], "released_id": released["id"],
             "move": current["id"] != released["id"], "column": column["name"] if column else None,
-            "closeout": plan_closeout(items, item, column, version) if column else None,
+            "closeout": closeout, "order_field_id": order_fields[0]["id"],
             "convert": kind == "DraftIssue",
             "title": f"Release notes for Omnia {version} are approved",
             "body": approval_body(pr, section, draft), "draft_source": draft_source}
+
+
+def release_order(version):
+    """Board 8 uses the Omnia version, shared by the PR and release milestone, not Analytics or Feed."""
+    if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", version):
+        raise ValueError(f"Invalid Omnia version for Release order: {version}")
+    major, minor, patch = map(int, version.split("."))
+    if minor >= 1000 or patch >= 1000 or major * 1000000 + minor * 1000 + patch > 2**53 - 1:
+        raise ValueError(f"Omnia version cannot be encoded safely as Release order: {version}")
+    return major * 1000000 + minor * 1000 + patch
 
 
 def plan_closeout(items, notification, column, version):
@@ -502,6 +535,14 @@ def move_to_released(plan, entry):
                                                "field": plan["field_id"], "option": plan["released_id"]}, project=True)
 
 
+def set_release_order(plan, entry):
+    api("graphql", query="""mutation($project: ID!, $item: ID!, $field: ID!, $number: Float!) {
+      updateProjectV2ItemFieldValue(input: {projectId: $project, itemId: $item, fieldId: $field,
+                                          value: {number: $number}}) { projectV2Item { id } }
+    }""", variables={"project": plan["project_id"], "item": entry["id"], "field": plan["order_field_id"],
+                     "number": plan["closeout"]["order"]}, project=True)
+
+
 def convert_notification(plan):
     """Convert the draft; the item keeps its id and Status, and its content becomes the new OmniaMono issue."""
     repository = api("graphql", query="""query($owner: String!, $name: String!) {
@@ -534,8 +575,9 @@ def close_milestone(repository, milestones):
 def plan_writes(plan, milestones):
     """Every write, in order: (description, repository whose Issues permission it needs or None, call).
 
-    Order: the notes; the milestones; milestone on each issue; close each issue; move the column's items, then the
-    notification, to Released; convert the notification (only after it left the Wait for RN column, because
+    Order: the notes; the milestones; milestone and Release order on each issue; close each issue; move the
+    column's items, then the notification (with its Release order), to Released; convert the notification
+    (only after it left the Wait for RN column, because
     detect-release.sh reads the repository issues in such columns), set the milestone on it and close it; close the
     milestones.
     Whatever is already done (read from the current state) is left out, so a re-run only finishes what is pending.
@@ -556,12 +598,19 @@ def plan_writes(plan, milestones):
         for entry in closeout["assign"]:
             writes.append((f"set the milestone on {describe(entry)}", repository_of(entry),
                            lambda entry=entry: set_milestone(entry, milestones[repository_of(entry)])))
+        for entry in closeout["order_assign"]:
+            if entry["id"] != plan["item"]["id"]:
+                writes.append((f"set Release order to {closeout['order']} on {describe(entry)}", None,
+                               lambda entry=entry: set_release_order(plan, entry)))
         for entry in closeout["close"]:
             writes.append((f"close {describe(entry)} as completed", repository_of(entry),
                            lambda entry=entry: close_issue(entry)))
         for entry in closeout["items"]:
             writes.append((f"move {describe(entry)} to {RELEASED}", None,
                            lambda entry=entry: move_to_released(plan, entry)))
+    if closeout and any(entry["id"] == plan["item"]["id"] for entry in closeout["order_assign"]):
+        writes.append((f"set Release order to {closeout['order']} on the release notification", None,
+                       lambda: set_release_order(plan, plan["item"])))
     if plan["move"]:
         writes.append((f"move the release notification to {RELEASED}", None,
                        lambda: move_to_released(plan, plan["item"])))
@@ -588,7 +637,7 @@ def closeout_notes(plan, version):
     closeout = plan["closeout"]
     if not closeout:
         return [f"The release column for Omnia {version} is no longer on the board; there is nothing more to close out."]
-    notes = [f"Release column: `{plan['column']}`. Milestone: `{closeout['title']}`."]
+    notes = [f"Release column: `{plan['column']}`. Milestone: `{closeout['title']}`. Release order: {closeout['order']}."]
     notes += [f"Kept its own milestone `{entry['content']['milestone']['title']}`: {describe(entry)}"
               for entry in closeout["kept"]]
     notes += [f"Moved to {RELEASED} only (not an issue: no milestone, not closed): {describe(entry)}"

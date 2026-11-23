@@ -47,7 +47,8 @@ def fixtures():
     options = [{"id": "unrelated", "name": "Investigation"},
                {"id": "release", "name": "Wait for RN - Omnia 7.11.99 / WCM 7.11.99"},
                {"id": "released", "name": "Released"}]
-    project = {"id": "project", "fields": {"nodes": [{"id": "field", "name": "Status", "options": options}]}}
+    project = {"id": "project", "fields": {"nodes": [{"id": "field", "name": "Status", "options": options},
+               {"id": "order-field", "name": "Release order", "dataType": "NUMBER"}]}}
     items = [{"id": "item", "status": {"optionId": "release"}, "content": {"__typename": "DraftIssue", "id": "draft",
               "title": "Release notes for Omnia 7.11.99 are now ready",
               "body": draft_body()}}]
@@ -222,11 +223,12 @@ class ApprovalTests(unittest.TestCase):
         reads, calls = self.exercise_sync()
         self.assertEqual([name for name, _ in calls],
                          ["updateProjectV2DraftIssue", "create-milestone", "updateProjectV2ItemFieldValue",
+                          "updateProjectV2ItemFieldValue",
                           "convertProjectV2DraftIssueItemToIssue", "set-milestone", "closeIssue", "close-milestone"],
                          "The draft must leave the Wait for RN column before it becomes an issue")
-        self.assertEqual(calls[3][1], {"item": "item", "repository": "repo-omniamono"})
-        self.assertEqual(calls[4][1]["id"], "converted-issue", "The milestone goes on the new issue")
-        self.assertEqual(calls[5][1]["id"], "converted-issue")
+        self.assertEqual(calls[4][1], {"item": "item", "repository": "repo-omniamono"})
+        self.assertEqual(calls[5][1]["id"], "converted-issue", "The milestone goes on the new issue")
+        self.assertEqual(calls[6][1]["id"], "converted-issue")
         self.assertIn({"owner": "omniaintranet", "name": "OmniaMono"}, reads)
         self.assertTrue(any("ref=head123" in endpoint for endpoint in reads))
 
@@ -245,7 +247,7 @@ class ApprovalTests(unittest.TestCase):
 
     def test_merge_sync_reads_merged_content(self):
         reads, calls = self.exercise_sync(merged=True)
-        self.assertEqual(len(calls), 7)
+        self.assertEqual(len(calls), 8)
         self.assertTrue(any("ref=merge123" in endpoint for endpoint in reads))
         self.assertIn("APPROVED AND MERGED", calls[0][1]["body"])
 
@@ -339,7 +341,10 @@ class FakeGitHub:
         if name in ("updateProjectV2DraftIssue", "updateIssue"):
             self.issue(variables["id"]).update(title=variables["title"], body=variables["body"])
         elif name == "updateProjectV2ItemFieldValue":
-            self.item(variables["item"])["status"] = {"optionId": variables["option"]}
+            if "number" in variables:
+                self.item(variables["item"])["releaseOrder"] = {"number": variables["number"]}
+            else:
+                self.item(variables["item"])["status"] = {"optionId": variables["option"]}
         elif name == "convertProjectV2DraftIssueItemToIssue":
             self.item(variables["item"])["content"].update(
                 __typename="Issue", id="converted-issue", number=500, state="OPEN", milestone=None,
@@ -550,7 +555,7 @@ class FailureTests(unittest.TestCase):
         self.assertIn("Nothing was changed in Project 8 in this run.", failure.summary)
 
     def test_denied_move_does_not_blame_issue_access(self):
-        _, calls, failure = self.exercise_sync(fail="updateProjectV2ItemFieldValue")
+        _, calls, failure = self.exercise_sync(fail=lambda name, details: name == "updateProjectV2ItemFieldValue" and "option" in details)
         self.assertNotIn(sync.ISSUE_ACCESS, str(failure))
         self.assertIn("Still pending: move the release notification to Released", failure.summary)
         self.assertNotIn("convertProjectV2DraftIssueItemToIssue", [name for name, _ in calls])
@@ -667,11 +672,11 @@ class CloseoutTests(unittest.TestCase):
         self.assertEqual(closed, ["issue-open", "issue-other-milestone", "issue-analytics", "issue-feed", "converted-issue"],
                          "Every open issue is closed; the already closed one is not touched")
         self.assertNotIn("reopenIssue", " ".join(names))
-        moved = [details["item"] for name, details in calls if name == "updateProjectV2ItemFieldValue"]
+        moved = [details["item"] for name, details in calls if name == "updateProjectV2ItemFieldValue" and "option" in details]
         self.assertEqual(moved, ["open", "closed", "other-milestone", "analytics", "feed", "pr", "draft-item", "item"],
                          "Every item of the column moves, the notification last")
         self.assertTrue(all(details["option"] == "released" and details["field"] == "field" and details["project"] == "project"
-                            for name, details in calls if name == "updateProjectV2ItemFieldValue"))
+                            for name, details in calls if name == "updateProjectV2ItemFieldValue" and "option" in details))
         for item in self.items:
             with self.subTest(item=item["id"]):
                 self.assertEqual(item["status"]["optionId"], "unrelated" if item["id"] == "unrelated" else "released")
@@ -765,6 +770,104 @@ class CloseoutTests(unittest.TestCase):
             with self.assertRaisesRegex(sync.GitHubError, "Issues: Read and write on omniaintranet/OmniaFeed"):
                 sync.sync("99")
         self.assertEqual(fake.calls, [])
+
+
+class ReleaseOrderTests(unittest.TestCase):
+    setUp = CloseoutTests.setUp
+    content = CloseoutTests.content
+    status = CloseoutTests.status
+    options = CloseoutTests.options
+    exercise_sync = CloseoutTests.exercise_sync
+    exercise_sync_expecting = CloseoutTests.exercise_sync_expecting
+
+    def test_release_order_uses_omnia_version(self):
+        for version, expected in (("7.11.33", 7011033), ("7.12.9", 7012009), ("7.12.12", 7012012)):
+            self.assertEqual(sync.release_order(version), expected)
+        for version in ("7.12", "7.12.1000", "7.1000.1", "9007199255.0.0"):
+            with self.assertRaises(ValueError):
+                sync.release_order(version)
+
+    def test_missing_duplicate_or_wrong_field_type_stops_without_writes(self):
+        for fields in ([], [{"id": "order-field", "name": "Release order", "dataType": "TEXT"}],
+                       [{"id": "order-field", "name": "Release order", "options": []}],
+                       [{"id": "a", "name": "Release order", "dataType": "NUMBER"}] * 2):
+            self.setUp()
+            self.project["fields"]["nodes"][1:] = fields
+            _, calls = self.exercise_sync_expecting(ValueError, 'NUMBER field named "Release order"')
+            self.assertEqual(calls, [])
+
+    def test_number_writes_cover_milestoned_issues_and_notification(self):
+        _, calls = self.exercise_sync()
+        orders = [details for name, details in calls if name == "updateProjectV2ItemFieldValue" and "number" in details]
+        self.assertEqual([d["item"] for d in orders], ["open", "closed", "feed", "item"])
+        self.assertTrue(all(d["number"] == 7011099 and d["field"] == "order-field" and d["project"] == "project"
+                            for d in orders))
+        first_move = next(i for i, (_, d) in enumerate(calls) if "option" in d)
+        self.assertTrue(all(i < first_move for i, (_, d) in enumerate(calls) if "number" in d and "item" in d and d["item"] != "item"))
+
+    def test_existing_correct_value_and_release_milestone_are_idempotent(self):
+        self.items[1]["releaseOrder"] = {"number": 7011099.0}
+        self.content("closed")["milestone"] = {"id": "ms-mono", "number": 40, "title": MILESTONE, "state": "OPEN"}
+        _, calls = self.exercise_sync()
+        orders = [d["item"] for _, d in calls if "item" in d and "number" in d]
+        self.assertEqual(orders, ["closed", "feed", "item"])
+
+    def test_conflicting_issue_or_notification_stops_before_any_write(self):
+        for index in (0, 1):
+            self.setUp()
+            self.items[index]["releaseOrder"] = {"number": 7011098}
+            _, calls = self.exercise_sync_expecting(ValueError, "existing 7011098, expected 7011099")
+            self.assertEqual(calls, [])
+
+    def test_failed_number_write_can_be_retried_after_milestone_assignment(self):
+        _, _, failure = self.exercise_sync(fail=lambda name, d: name == "updateProjectV2ItemFieldValue" and
+                                           d.get("item") == "feed" and "number" in d)
+        self.assertIn("Still pending: set Release order to 7011099 on omniaintranet/OmniaFeed#5", failure.summary)
+        self.assertNotIn(sync.ISSUE_ACCESS, str(failure))
+        self.assertEqual(self.status("feed"), "release")
+        _, calls = self.exercise_sync()
+        self.assertEqual([d["item"] for _, d in calls if "item" in d and "number" in d], ["feed", "item"])
+
+    def test_failed_notification_number_write_is_retried(self):
+        self.exercise_sync(fail=lambda name, d: name == "updateProjectV2ItemFieldValue" and
+                           d.get("item") == "item" and "number" in d)
+        _, calls = self.exercise_sync()
+        self.assertEqual([d["item"] for _, d in calls if "item" in d and "number" in d], ["item"])
+
+    def test_notification_with_its_own_milestone_keeps_its_release_order(self):
+        self.items[0]["content"].update(__typename="Issue", id="notification", number=500, state="OPEN",
+                                         milestone={"title": "Other release"},
+                                         repository={"nameWithOwner": sync.ISSUE_REPOSITORY})
+        self.items[0]["releaseOrder"] = {"number": 123}
+        self.exercise_sync()
+        self.assertEqual(self.items[0]["releaseOrder"]["number"], 123)
+
+    def test_other_milestone_values_are_preserved(self):
+        self.items[3]["releaseOrder"] = {"number": 123}
+        self.exercise_sync()
+        self.assertEqual(self.items[3]["releaseOrder"]["number"], 123)
+
+    def test_dry_run_shows_release_order_and_writes_nothing(self):
+        fake = FakeGitHub(self)
+        with patch.object(sync, "api", side_effect=fake.api), \
+                patch.object(sync, "load_project", side_effect=lambda: deepcopy((self.project, self.items))), \
+                patch("builtins.print") as printed:
+            sync.sync("99", dry_run=True)
+        output = "\n".join(str(call.args[0]) for call in printed.call_args_list)
+        self.assertIn("would set Release order to 7011099 on omniaintranet/OmniaMono#101", output)
+        self.assertIn("would set Release order to 7011099 on the release notification", output)
+        self.assertEqual(fake.calls, [])
+
+    def test_number_mutation_only_updates_item_value(self):
+        plan = sync.plan_update(self.project, self.items, self.pr, "7.11.99", SECTION)
+        with patch.object(sync, "api") as api:
+            sync.set_release_order(plan, self.items[1])
+        kwargs = api.call_args.kwargs
+        self.assertIn("updateProjectV2ItemFieldValue", kwargs["query"])
+        self.assertIn("value: {number: $number}", kwargs["query"])
+        self.assertNotIn("updateProjectV2Field(", kwargs["query"])
+        self.assertTrue(kwargs["project"])
+        self.assertEqual(kwargs["variables"]["number"], 7011099)
 
 
 if __name__ == "__main__":
