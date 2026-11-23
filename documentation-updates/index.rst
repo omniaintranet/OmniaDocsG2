@@ -1181,15 +1181,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **Correction**
   Corrected step numbering in the document reindexing procedures section from 4 to 5.
-
-25 August 2026
---------------
-
-* `Add link <https://omnia-docs-g2.readthedocs.io/en/latest/general-assets/add-link/index.html>`__ — **Added information**
-  Added User section describing how to link to colleague profiles in Omnia 7.12 and later using the people picker.
-
-* `Document library display <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/document-library-display/index.html>`__ — **Updated guidance**
-  Clarified the Query field description to specify adding a site URL, explained the Data type setting, and removed preliminary disclaimer.
-
-* `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **New page**
-  Added page documenting how to reindex documents for semantic search, available in Omnia 7.12 and later.

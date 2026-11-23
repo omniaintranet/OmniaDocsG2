@@ -423,18 +423,6 @@
     "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
     "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
     "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16",
-    "e98e12575a4db4cf21927fec208c3b43fc86bd9e": "2026-08-25",
-    "64621ea863f3f346aea6fd749f619e09466812b2": "2026-08-25",
-    "f20512cd2065b80a736155290f36e19c43b6faf5": "2026-08-25",
-    "d7a40324a3f6af7faa26f355c00932320aa6c3b7": "2026-08-25",
-    "6e8d6e86e88f57aadbbc2f9db78f41126332f607": "2026-08-25",
-    "9524540966dc3fcd16147dedbc38aa0f21a93746": "2026-08-25",
-    "7dd1291adcd24a3b9add37cd479a081169738f0c": "2026-08-25",
-    "be266e5a8924e3825158040e55a68e9cbb05a476": "2026-08-25",
-    "aec23eb5b78d4cde466755403981a7bc1e5164d5": "2026-08-25",
-    "cbb25377cf73bfaf6d49e4edea998258686b5678": "2026-08-25",
-    "5bdaf1631039effcbed85b2aa81a21e8dfb108d3": "2026-08-25",
-    "9c662735ad90d755eaf4160f6b73fc664cbab91b": "2026-08-25",
     "f21a56e5be713125fb6bbc2ce9158bf7bc44de50": "2026-08-27",
     "aca08fb6fb6b7b2bc98bb662b048e0b8c95fe74a": "2026-08-27",
     "699b92b7710c52757a43d1d9bc26414f2c1ef950": "2026-08-27",
@@ -4513,50 +4501,6 @@
       "sources": [
         "aca08fb6fb6b7b2bc98bb662b048e0b8c95fe74a",
         "f21a56e5be713125fb6bbc2ce9158bf7bc44de50"
-      ]
-    },
-    {
-      "date": "2026-08-25",
-      "path": "general-assets/add-link/index.rst",
-      "classification": "Added information",
-      "description": "Added User section describing how to link to colleague profiles in Omnia 7.12 and later using the people picker.",
-      "sources": [
-        "64621ea863f3f346aea6fd749f619e09466812b2",
-        "6e8d6e86e88f57aadbbc2f9db78f41126332f607",
-        "d7a40324a3f6af7faa26f355c00932320aa6c3b7",
-        "f20512cd2065b80a736155290f36e19c43b6faf5"
-      ]
-    },
-    {
-      "date": "2026-08-25",
-      "path": "blocks/document-library-display/index.rst",
-      "classification": "Updated guidance",
-      "description": "Clarified the Query field description to specify adding a site URL, explained the Data type setting, and removed preliminary disclaimer.",
-      "sources": [
-        "e98e12575a4db4cf21927fec208c3b43fc86bd9e"
-      ]
-    },
-    {
-      "date": "2026-08-25",
-      "path": "admin-settings/tenant-settings/document-management/semantic-search-reindex/index.rst",
-      "classification": "New page",
-      "description": "Added page documenting how to reindex documents for semantic search, available in Omnia 7.12 and later.",
-      "sources": [
-        "5bdaf1631039effcbed85b2aa81a21e8dfb108d3",
-        "7dd1291adcd24a3b9add37cd479a081169738f0c",
-        "9c662735ad90d755eaf4160f6b73fc664cbab91b",
-        "aec23eb5b78d4cde466755403981a7bc1e5164d5",
-        "be266e5a8924e3825158040e55a68e9cbb05a476",
-        "cbb25377cf73bfaf6d49e4edea998258686b5678"
-      ]
-    },
-    {
-      "date": "2026-08-25",
-      "path": "admin-settings/tenant-settings/document-management/index.rst",
-      "classification": "Navigation update",
-      "description": "Added semantic search reindex section to the document management navigation menu.",
-      "sources": [
-        "9524540966dc3fcd16147dedbc38aa0f21a93746"
       ]
     }
   ]
