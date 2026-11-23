@@ -13,7 +13,7 @@ This is how a community start page can look when set up with knowledge articles,
 
 Top contributors can also be displayed, if the community is set up to use activity tracking and activity points.
 
-You can click on any post in the list to go to that discussion, comment or knowledge article. Regarding top contributors, or any other people list that may be available, you can click the name to see more information about that colleague. The user profile card will then open, if it's used within your organization. If it's not, the colleague's delve page will be displayed.
+You can normally click on any post in the list to go to that discussion, comment or knowledge article. Regarding top contributors, or any other people list that may be available, you can click the name to see more information about that colleague. The user profile card will then open, if it's used within your organization. If it's not, the colleague's delve page will be displayed.
 
 Select page for more information:
 
