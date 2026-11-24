@@ -796,9 +796,81 @@
     "d73cda32f0d24d4776ea4651fb3cd189adcb4a92": "2026-11-19",
     "42f43596a9f72bb71b202abae3f4351a01d40219": "2026-11-20",
     "41eb1f64adff80afc81d519d0ba070b7257c326b": "2026-11-20",
-    "9e0182846c019a4a460c1b0be23b587075e88bc7": "2026-11-20"
+    "9e0182846c019a4a460c1b0be23b587075e88bc7": "2026-11-20",
+    "97419ff4854155a63f59d6969eb3331898849ffa": "2026-11-23",
+    "44303cc1257a6cc17be564c0d8e8f844d83d5504": "2026-11-23",
+    "9036fbcb245ab5de44c39485764af769c1335d28": "2026-11-23",
+    "762c407e955724c622489169c4c3b9f56f356b01": "2026-11-23",
+    "cb13372f236752fc5fcb15853f81b15610b3fa28": "2026-11-23",
+    "c018626ef91c640834cafca137da70f9c73f6c37": "2026-11-23",
+    "417409c96ab99c309d7e7f57ce07c79b044e11bb": "2026-11-23",
+    "f4d7f52041def36e7deaca7ceed5b43f72b36ed1": "2026-11-23",
+    "4c37f23126de14ccae8eb145eea390fd901fc9c1": "2026-11-23",
+    "58bf4587d38c126b0646da36b130d3d8b4fa7cde": "2026-11-23",
+    "be109494aae41cd25256dc9d538201f1b989caf6": "2026-11-23",
+    "0b4d22bf60d87f1b713869cb602d042c001abac4": "2026-11-23"
   },
   "entries": [
+    {
+      "date": "2026-11-23",
+      "path": "using-communities/subscriptions/subscribe/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified subscription button terminology (Follow/Unfollow) and simplified tag subscription procedures with hover preview.",
+      "sources": [
+        "c018626ef91c640834cafca137da70f9c73f6c37",
+        "cb13372f236752fc5fcb15853f81b15610b3fa28"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "path": "using-communities/knowledge-articles/create-article/index.rst",
+      "classification": "Updated guidance",
+      "description": "Knowledge article creation steps were consolidated and tagging guidance was moved from the sequential workflow to a separate section at the end.",
+      "sources": [
+        "4c37f23126de14ccae8eb145eea390fd901fc9c1",
+        "58bf4587d38c126b0646da36b130d3d8b4fa7cde"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "path": "using-communities/index.rst",
+      "classification": "Updated guidance",
+      "description": "Clarified that clicking posts in a community list is normally possible, indicating there may be exceptions or conditions where this is not available.",
+      "sources": [
+        "417409c96ab99c309d7e7f57ce07c79b044e11bb",
+        "f4d7f52041def36e7deaca7ceed5b43f72b36ed1"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "path": "using-communities/discussions/start-discussion/index.rst",
+      "classification": "Updated guidance",
+      "description": "Updated screenshots and simplified the description of the discussion text field by removing mention of formatting, links, and images.",
+      "sources": [
+        "762c407e955724c622489169c4c3b9f56f356b01",
+        "9036fbcb245ab5de44c39485764af769c1335d28"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "path": "using-communities/discussions/index.rst",
+      "classification": "Updated screenshots",
+      "description": "Updated discussion page screenshots and clarified that only the number of comments, not likes, is displayed for each discussion.",
+      "sources": [
+        "44303cc1257a6cc17be564c0d8e8f844d83d5504",
+        "97419ff4854155a63f59d6969eb3331898849ffa"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "path": "release-notes/omnia-feed/omnia-feed-app/7/versions.rst",
+      "classification": "Added information",
+      "description": "Added release notes for Omnia Feed App versions 7.12.3 and 7.12.1 with bug fixes and improvements.",
+      "sources": [
+        "0b4d22bf60d87f1b713869cb602d042c001abac4",
+        "be109494aae41cd25256dc9d538201f1b989caf6"
+      ]
+    },
     {
       "date": "2026-11-20",
       "path": "using-communities/index.rst",

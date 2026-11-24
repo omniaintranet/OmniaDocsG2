@@ -3,6 +3,27 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+23 November 2026
+----------------
+
+* `Create a knowledge article <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/knowledge-articles/create-article/index.html>`__ — **Updated guidance**
+  Knowledge article creation steps were consolidated and tagging guidance was moved from the sequential workflow to a separate section at the end.
+
+* `Discussions <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/discussions/index.html>`__ — **Updated screenshots**
+  Updated discussion page screenshots and clarified that only the number of comments, not likes, is displayed for each discussion.
+
+* `How to subscribe in a community <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/subscriptions/subscribe/index.html>`__ — **Updated guidance**
+  Clarified subscription button terminology (Follow/Unfollow) and simplified tag subscription procedures with hover preview.
+
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+  Added release notes for Omnia Feed App versions 7.12.3 and 7.12.1 with bug fixes and improvements.
+
+* `Start a discussion <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/discussions/start-discussion/index.html>`__ — **Updated guidance**
+  Updated screenshots and simplified the description of the discussion text field by removing mention of formatting, links, and images.
+
+* `Using communities <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/index.html>`__ — **Updated guidance**
+  Clarified that clicking posts in a community list is normally possible, indicating there may be exceptions or conditions where this is not available.
+
 20 November 2026
 ----------------
 
@@ -678,7 +699,7 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `How to use Omnia in SharePoint <https://omnia-docs-g2.readthedocs.io/en/latest/use-omnia-in-sharepoint/index.html>`__ — **Added information**
   Added section documenting sign-off requests for SharePoint pages with explanation of how the feature works.
 
-* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
   Added release notes documenting version 7.11.8 improvements to authentication flow, PDF link handling, and page variation matching.
 
 * `Sign-off requests <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/sign-off-requests-613/index.html>`__ — **Updated guidance**
@@ -1014,7 +1035,7 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 * `In Development <https://omnia-docs-g2.readthedocs.io/en/latest/roadmap/index.html>`__ — **Added information**
   Restructured roadmap from bullet points to narrative descriptions with expanded details about planned features and improvements.
 
-* `Release 7.11 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
+* `Release 7.12 <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/omnia-feed/omnia-feed-app/7/versions.html>`__ — **Added information**
   Added release notes for version 7.11.7 documenting improvements to embedded tab loading time and link handler behavior.
 
 * `SharePoint page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/sharepoint-page-rollup/index.html>`__ — **New page**
