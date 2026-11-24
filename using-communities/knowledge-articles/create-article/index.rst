@@ -1,9 +1,9 @@
 Create a knowledge article
 ============================
 
-**This page i being updated.**
-
 Communities can be set up in several ways but in the default setup, all users of the tenant can create and edit knowledge articles. The same permissions apply as for authors of publishing pages, meaning all options in Write mode are available.
+
+This is a simple walk through on how to create a knowledge article. Knowledge articles are Omnia pages and therefore have the same author options (Write mode) as other pages.
 
 To create a knowledge article in a community, do the following:
 
@@ -22,77 +22,53 @@ What you actually can add depends on the template. Here's a common one:
 
 .. image:: create-article-5-712.png
 
-**Editing will contuinue from here very soon. **
+5. Add content, the same way as you would any other page. 
 
-6. To add an image or a video, click ADD MEDIA in one of those areas.
+See this page for more information: :doc:`Create a page </pages/create-page/index>`
 
-.. image:: create-article-6.png
+To add images, you use the media picker. Find more information here: :doc:`The media picker </general-assets/media-picker/index>`
 
-The media picker starts and you use it this way: :doc:`The media picker </general-assets/media-picker/index>`
+You never have to add content in all blocks if you don't want to - if you don't add media or text in a block, the block is normally not shown for readers.
 
-You never have to add media if you don't want to, and the same goes for other blocks in the template - if you don't add media or text in a block, the block is not shown for readers.
+6. Edit the heading if it should not be the same as the page name.
+7. At the bottom of the page you can decide if you allow likes and comments for the page, which you normally should do (meaning no changes are needed).
 
-7. You can edit the heading if it should not be the same as the page name.
+.. image:: create-article-9-712.png
 
-.. image:: create-article-7.png
-
-Just click in the field to edit.
-
-8. To add content to a text field, click in the field and start typing.
-
-.. image:: create-article-8.png
-
-Note that a number of options for formatting are available (which can differ from what is shown in the image above). It can also be possible to add links to the text (the link icon) or even to add images or videos to the text (the image icon).
-
-9. At the bottom of the page you can decide if you allow likes and comments for the page, which you normally should do (meaning no changes are needed).
-
-.. image:: create-article-9.png
-
-Other areas that may be available, as Ratings and Related content, that are part of the template we use here; you should not do anything with them (or you even may not). They are there to be displayed for readers.
+Other areas that may be available, as Ratings and Related content, that are part of the template we use here; you should not do anything with them, or you even are not allowed to, depending on how the template is set up. They are there to be displayed for readers.
 
 When you're done adding content:
 
-10: Click "NEXT".
+8: Click "NEXT".
 
-.. image:: create-article-10.png
+.. image:: create-article-10-712.png
 
-Here you can add the page's properties. There can be more properties here depending on how the template is set up, but these two will most likely always be available:
+Here you can add the page's properties and tags There can be more properties here depending on how the template is set up.
 
-.. image:: create-article-11.png
+.. image:: create-article-11-712.png
 
-11. Add or remove tags in the top field, and edit the page title if needed.
+9. Add or remove tags in the field, and for other properties as needed.
 
-12. When you're done here, click NEXT in the low right corner.
+Remember, if you create a new tag, it becomes available for tagging in all communities in the tenant.
+
+10. When you're done here, click NEXT in the low right corner.
 
 As the last step before publishing the knowledge page, you can preview it to see how it will look for readers.
 
-.. image:: create-article-12.png
+11. Use the icons at the top to preview the page in different sizes. 
 
-13. Use the icons at the top to preview the page in different sizes. 
-
-.. image:: create-article-13.png
+.. image:: create-article-13-712.png
 
 Here's an example with a preview for mobile phone:
 
-.. image:: create-article-14.png
+.. image:: create-article-14-712.png
 
-14. If you want to edit anything before publishing, click Write here:
+12. If you want to edit anything before publishing, click Write here:
 
-.. image:: create-article-15.png
+.. image:: create-article-15-712.png
 
-15. To publish the knowledge article, click PUBLISH.
+13. To publish the knowledge article, click PUBLISH.
 
-.. image:: create-article-16.png
-
-This is a simple walk through on how to create a knowledge article. Knowledge articles are Omnia pages and therefore have the same author options (Write mode) as other pages.
+.. image:: create-article-16-712.png
 
 Concerning all options for publishing (for example information on how to schedule publishing, if that is available), see: :doc:`Publish page changes </pages/publish-page-changes/index>`
-
-
-When you create a new tag, it becomes available for tagging in all communities in the tenant.
-
-
-
-
-
-
