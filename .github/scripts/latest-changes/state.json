@@ -18,7 +18,6 @@
     "1c23e52fcf5b9c44be18b7d9c17004f63a629dfd": "2026-10-15",
     "8bdcebc7ddf2f5083d1aeee3a8546cacd5cfe086": "2026-10-15",
     "e76d0087548b3d62ac5c05da9e874a165d6fc677": "2026-10-15",
-    "4da15f675b987f3f36ad1d30f7a8036d5c6f8305": "2026-08-27",
     "f682c0ffeb2d86211eba501d21995ee53fb3ef72": "2026-09-01",
     "62bc828db6d97af307180314e7019f7675ba43f8": "2026-09-02",
     "2da81964f9a02bf10e7e29f6b3d293dcb53b76f0": "2026-09-02",
@@ -423,28 +422,6 @@
     "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
     "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
     "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16",
-    "f21a56e5be713125fb6bbc2ce9158bf7bc44de50": "2026-08-27",
-    "aca08fb6fb6b7b2bc98bb662b048e0b8c95fe74a": "2026-08-27",
-    "699b92b7710c52757a43d1d9bc26414f2c1ef950": "2026-08-27",
-    "279ecf3665fb28e7b06d60dcc8ade47ba4579fbe": "2026-08-27",
-    "9db15923e94c1244177af71dd3505e1b3de7340d": "2026-08-27",
-    "f4a15b3b7da8d76b4aeaf2029b2de801d2b722df": "2026-08-27",
-    "4d6b7a8c144989c4844448f71c947811bae90abd": "2026-08-27",
-    "adc65f5b74f4957ba7ce9fb81ec292755f71753c": "2026-08-27",
-    "1ce9cd5974775064a1c0afb834ce16dfcfa7c7ce": "2026-08-27",
-    "05653932e318649335fb8a444e4e6d431d6bdaaf": "2026-08-27",
-    "d0efe788c680975a81b34808ca321535c539979e": "2026-08-27",
-    "c9132a7a705b584bc281e719245ea485ce5f900c": "2026-08-27",
-    "dc7d36fa776975c985e28dfd3cac288785f652ad": "2026-08-27",
-    "0b482941d714d2cc372b25f6ce1f9e3656b16f6d": "2026-08-27",
-    "c487eeb2b0a724b7bbbd4dc5511a0525ccd3bdab": "2026-08-27",
-    "62c0109c35ce6b8dd86eabc38e14b855331fb298": "2026-08-27",
-    "fb4559d9e620753382d62b8672ce8ab0b2b232f7": "2026-08-27",
-    "8e326e5ec601636288fa38227c292cbd7c8b6b58": "2026-08-27",
-    "5c582ce39b49c9cecc9d7ca7ed6300ab6059be33": "2026-08-27",
-    "a82b8e097568a68b6576e29acba9a9e62ef09a33": "2026-08-27",
-    "fa84f2dc6961cd8681e605fa63aac2f5a6d0768b": "2026-08-27",
-    "8577813ad964b491ffe7df8d6f6c6fdae06cb043": "2026-08-27",
     "5c5058995c37546cec5534b93d05d09203c20388": "2026-08-28",
     "0369cdea63e0cf2bbaf40a163367076e906c342f": "2026-09-01",
     "c3df25984ae15a3486f0948a15c7d9358c57161f": "2026-09-01",
@@ -808,9 +785,23 @@
     "4c37f23126de14ccae8eb145eea390fd901fc9c1": "2026-11-23",
     "58bf4587d38c126b0646da36b130d3d8b4fa7cde": "2026-11-23",
     "be109494aae41cd25256dc9d538201f1b989caf6": "2026-11-23",
-    "0b4d22bf60d87f1b713869cb602d042c001abac4": "2026-11-23"
+    "0b4d22bf60d87f1b713869cb602d042c001abac4": "2026-11-23",
+    "6f242632aa4825873cfd6122a7f70b7903f46d21": "2026-11-24",
+    "97dd725475a6930900131d062dfd4950d7030483": "2026-11-24",
+    "d53c737db56f6f5635706715b1fb37f69c6b0df5": "2026-11-24"
   },
   "entries": [
+    {
+      "date": "2026-11-24",
+      "path": "using-communities/knowledge-articles/create-article/index.rst",
+      "classification": "Updated guidance",
+      "description": "Reorganized and simplified the step-by-step instructions for creating knowledge articles with updated screenshots and clearer cross-references.",
+      "sources": [
+        "6f242632aa4825873cfd6122a7f70b7903f46d21",
+        "97dd725475a6930900131d062dfd4950d7030483",
+        "d53c737db56f6f5635706715b1fb37f69c6b0df5"
+      ]
+    },
     {
       "date": "2026-11-23",
       "path": "using-communities/subscriptions/subscribe/index.rst",
@@ -4519,60 +4510,6 @@
       "description": "Added 7.11.24 release notes section documenting ten product improvements including controlled document publishing, Identity Picker performance, and translation handling.",
       "sources": [
         "5c5058995c37546cec5534b93d05d09203c20388"
-      ]
-    },
-    {
-      "date": "2026-08-27",
-      "path": "blocks/page-rollup/index.rst",
-      "classification": "Updated guidance",
-      "description": "Expanded Show in dialog section with detailed settings, important usage restrictions, and configuration guidance for opening page content in dialogs.",
-      "sources": [
-        "0b482941d714d2cc372b25f6ce1f9e3656b16f6d",
-        "5c582ce39b49c9cecc9d7ca7ed6300ab6059be33",
-        "62c0109c35ce6b8dd86eabc38e14b855331fb298",
-        "8577813ad964b491ffe7df8d6f6c6fdae06cb043",
-        "8e326e5ec601636288fa38227c292cbd7c8b6b58",
-        "a82b8e097568a68b6576e29acba9a9e62ef09a33",
-        "c487eeb2b0a724b7bbbd4dc5511a0525ccd3bdab",
-        "fa84f2dc6961cd8681e605fa63aac2f5a6d0768b",
-        "fb4559d9e620753382d62b8672ce8ab0b2b232f7"
-      ]
-    },
-    {
-      "date": "2026-08-27",
-      "path": "admin-settings/tenant-settings/settings/header/header-712/index.rst",
-      "classification": "New page",
-      "description": "New page documenting app launcher settings for Header in Omnia 7.12, including configuration options for display, query, colors, and sorting.",
-      "sources": [
-        "05653932e318649335fb8a444e4e6d431d6bdaaf",
-        "1ce9cd5974775064a1c0afb834ce16dfcfa7c7ce",
-        "4d6b7a8c144989c4844448f71c947811bae90abd",
-        "699b92b7710c52757a43d1d9bc26414f2c1ef950",
-        "9db15923e94c1244177af71dd3505e1b3de7340d",
-        "adc65f5b74f4957ba7ce9fb81ec292755f71753c",
-        "c9132a7a705b584bc281e719245ea485ce5f900c",
-        "d0efe788c680975a81b34808ca321535c539979e",
-        "dc7d36fa776975c985e28dfd3cac288785f652ad",
-        "f4a15b3b7da8d76b4aeaf2029b2de801d2b722df"
-      ]
-    },
-    {
-      "date": "2026-08-27",
-      "path": "admin-settings/tenant-settings/settings/header/header-65/index.rst",
-      "classification": "Updated guidance",
-      "description": "Replaced placeholder text with a direct link to the 7.12 Header settings documentation for App launcher configuration.",
-      "sources": [
-        "279ecf3665fb28e7b06d60dcc8ade47ba4579fbe"
-      ]
-    },
-    {
-      "date": "2026-08-27",
-      "path": "admin-settings/tenant-settings/document-management/semantic-search-reindex/index.rst",
-      "classification": "Correction",
-      "description": "Corrected step numbering in the document reindexing procedures section from 4 to 5.",
-      "sources": [
-        "aca08fb6fb6b7b2bc98bb662b048e0b8c95fe74a",
-        "f21a56e5be713125fb6bbc2ce9158bf7bc44de50"
       ]
     }
   ]

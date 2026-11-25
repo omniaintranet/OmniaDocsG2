@@ -3,6 +3,12 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+24 November 2026
+----------------
+
+* `Create a knowledge article <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/knowledge-articles/create-article/index.html>`__ — **Updated guidance**
+  Reorganized and simplified the step-by-step instructions for creating knowledge articles with updated screenshots and clearer cross-references.
+
 23 November 2026
 ----------------
 
@@ -1187,18 +1193,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
   Added 7.11.24 release notes section documenting ten product improvements including controlled document publishing, Identity Picker performance, and translation handling.
-
-27 August 2026
---------------
-
-* `Header - Tenant settings <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-65/index.html>`__ — **Updated guidance**
-  Replaced placeholder text with a direct link to the 7.12 Header settings documentation for App launcher configuration.
-
-* `Header settings in Omnia 7.12 and later <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/settings/header/header-712/index.html>`__ — **New page**
-  New page documenting app launcher settings for Header in Omnia 7.12, including configuration options for display, query, colors, and sorting.
-
-* `Page rollup <https://omnia-docs-g2.readthedocs.io/en/latest/blocks/page-rollup/index.html>`__ — **Updated guidance**
-  Expanded Show in dialog section with detailed settings, important usage restrictions, and configuration guidance for opening page content in dialogs.
-
-* `Semantic search reindex <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/tenant-settings/document-management/semantic-search-reindex/index.html>`__ — **Correction**
-  Corrected step numbering in the document reindexing procedures section from 4 to 5.
