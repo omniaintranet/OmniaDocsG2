@@ -13,3 +13,6 @@ This is how it's done:
 3. Do the changes and save.
 
 When editing you can do all that is available when creating a knowledge article, see: :doc:`Create knowledge article </using-communities/knowledge-articles/create-article/index>`
+
+As a knowledge article is an Omnia page, all page options available for Write mode van also be available for a knowledge article, see: :doc:`Edit a page </pages/edit-page/index>`
+
