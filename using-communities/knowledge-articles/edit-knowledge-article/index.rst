@@ -1,7 +1,7 @@
 Edit a knowledge article
 ==========================
 
-A community can be set up in sevaral ways but in the default setup any colleague can edit a published Knowledge article. All colleagues have author permissions for the knowledge pages in the tenant.
+A community can be set up in sevaral ways but in the default setup any colleague can edit a published Knowledge article. 
 
 This is how it's done:
 
