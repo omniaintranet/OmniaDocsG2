@@ -422,7 +422,6 @@
     "b42db935bd22f2b303db66d7d0bd0f4c52e1087a": "2026-09-21",
     "8e4d2901d8607b75816478423a70d8cad9071e58": "2026-09-21",
     "9d583fe2b3f564444dc7e549b1ebbaa615dda506": "2026-10-16",
-    "5c5058995c37546cec5534b93d05d09203c20388": "2026-08-28",
     "0369cdea63e0cf2bbaf40a163367076e906c342f": "2026-09-01",
     "c3df25984ae15a3486f0948a15c7d9358c57161f": "2026-09-01",
     "6b2bc971fb00fcbedafba235f9192505a8b125e3": "2026-09-01",
@@ -788,9 +787,21 @@
     "0b4d22bf60d87f1b713869cb602d042c001abac4": "2026-11-23",
     "6f242632aa4825873cfd6122a7f70b7903f46d21": "2026-11-24",
     "97dd725475a6930900131d062dfd4950d7030483": "2026-11-24",
-    "d53c737db56f6f5635706715b1fb37f69c6b0df5": "2026-11-24"
+    "d53c737db56f6f5635706715b1fb37f69c6b0df5": "2026-11-24",
+    "fcf3ec3fad7dd83947719ec1ed088a38debdff22": "2026-11-25",
+    "fbc67cf6b506d56059b3d05884542feeb721066e": "2026-11-25"
   },
   "entries": [
+    {
+      "date": "2026-11-25",
+      "path": "using-communities/knowledge-articles/edit-knowledge-article/index.rst",
+      "classification": "Added information",
+      "description": "Added clarification that knowledge articles have the same page editing options available in Write mode as other Omnia pages.",
+      "sources": [
+        "fbc67cf6b506d56059b3d05884542feeb721066e",
+        "fcf3ec3fad7dd83947719ec1ed088a38debdff22"
+      ]
+    },
     {
       "date": "2026-11-24",
       "path": "using-communities/knowledge-articles/create-article/index.rst",
@@ -4501,15 +4512,6 @@
         "5d6675567270e4c7157252a066d558089bdbdfd6",
         "6b2bc971fb00fcbedafba235f9192505a8b125e3",
         "c3df25984ae15a3486f0948a15c7d9358c57161f"
-      ]
-    },
-    {
-      "date": "2026-08-28",
-      "path": "release-notes/7.0/versions.rst",
-      "classification": "Added information",
-      "description": "Added 7.11.24 release notes section documenting ten product improvements including controlled document publishing, Identity Picker performance, and translation handling.",
-      "sources": [
-        "5c5058995c37546cec5534b93d05d09203c20388"
       ]
     }
   ]

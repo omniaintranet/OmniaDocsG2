@@ -3,6 +3,12 @@ Documentation updates
 
 Browse documentation pages updated in the last 90 days. Select a page title to read more.
 
+25 November 2026
+----------------
+
+* `Edit a knowledge article <https://omnia-docs-g2.readthedocs.io/en/latest/using-communities/knowledge-articles/edit-knowledge-article/index.html>`__ — **Added information**
+  Added clarification that knowledge articles have the same page editing options available in Write mode as other Omnia pages.
+
 24 November 2026
 ----------------
 
@@ -1187,9 +1193,3 @@ Browse documentation pages updated in the last 90 days. Select a page title to r
 
 * `Theme for the business profile <https://omnia-docs-g2.readthedocs.io/en/latest/admin-settings/business-group-settings/settings/theme/index.html>`__ — **Added information**
   Added Call to action style section with guidance on setting general button styles for the RTF editor in Omnia 7.12 and later.
-
-28 August 2026
---------------
-
-* `Omnia 7 release notes <https://omnia-docs-g2.readthedocs.io/en/latest/release-notes/7.0/versions.html>`__ — **Added information**
-  Added 7.11.24 release notes section documenting ten product improvements including controlled document publishing, Identity Picker performance, and translation handling.
